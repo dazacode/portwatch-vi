@@ -24,6 +24,7 @@ import { CommitFeed } from "@/components/opening/commit-feed"
 import { Leaders } from "@/components/opening/leaders"
 import { Button } from "@/components/ui/button"
 import { useFullscreen } from "@/components/use-fullscreen"
+import { WatchingButton } from "@/components/watching/button"
 import type { Broadcast } from "@/lib/broadcast"
 import { cn } from "@/lib/utils"
 
@@ -213,6 +214,7 @@ export function Opening({
           >
             {still ? <Play aria-hidden="true" /> : <Pause aria-hidden="true" />}
           </Button>
+          <WatchingButton className={glass} />
           <HolidayToggle greet size="icon-lg" className={glass} />
           {canFull && (
             <Button

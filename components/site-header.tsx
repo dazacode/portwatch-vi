@@ -3,6 +3,7 @@ import { HeaderShell } from "@/components/header-shell"
 import { HolidayToggle } from "@/components/holiday/toggle"
 import { NavLink } from "@/components/nav-link"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { WatchingButton } from "@/components/watching/button"
 import { Wordmark } from "@/components/wordmark"
 import { SITE } from "@/lib/site"
 
@@ -31,6 +32,7 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="ml-auto flex items-center">
+          <WatchingButton size="sm" />
           <HolidayToggle />
           <ThemeToggle />
         </div>

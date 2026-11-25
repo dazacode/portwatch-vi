@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import type { Metadata, Viewport } from "next"
 import { Schibsted_Grotesk, Yellowtail } from "next/font/google"
 import { BoardNotice } from "@/components/board/notice"
@@ -5,6 +6,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { Splash } from "@/components/splash"
 import { ThemeProvider } from "@/components/theme-provider"
+import { WatchingBeat } from "@/components/watching/beat"
 import { holidayScript } from "@/lib/holidays"
 import { SITE } from "@/lib/site"
 import { cn } from "@/lib/utils"
@@ -51,7 +53,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </main>
           <SiteFooter />
           <BoardNotice />
+          <WatchingBeat />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
