@@ -3,6 +3,7 @@ import { Schibsted_Grotesk, Yellowtail } from "next/font/google"
 import { BoardNotice } from "@/components/board/notice"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
+import { Splash } from "@/components/splash"
 import { ThemeProvider } from "@/components/theme-provider"
 import { SITE } from "@/lib/site"
 import { cn } from "@/lib/utils"
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={cn("font-sans antialiased", sans.variable, script.variable)}
     >
       <body className="flex min-h-dvh flex-col">
+        <Splash />
         <ThemeProvider>
           <a
             href="#main"
