@@ -798,16 +798,17 @@
       "tier": "tracked",
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "DexNom Runtime, a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running: it's at the same point as Belobug's build, with the open world close to the retail game, playable through missions at about 3-4 fps and rarely crashing.",
+      "summary": "DexNom Runtime, a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it: the open world looks close to the retail game, and it plays through missions at about 3-4 fps, rarely crashing.",
       "highlights": [
         "Platform: AMD Radeon RX 7900 XTX, Windows x64",
-        "At the same point as Belobug's build: the open world looks close to the retail game and plays through missions",
+        "Ray-traced lighting working, seen by PortWatch: the first AMD build on our board to get it",
+        "The open world looks close to the retail game and plays through missions",
         "Translates 25,742 of the 25,758 shaders in its test archive; all 2,191 vertex shaders pass Microsoft's DXIL validator (its report)",
         "Builds from source with its own Setup.cmd; no prebuilt downloads; GPL-3.0"
       ],
       "blockers": [
         "About 3.5-4 fps indoors in Chapter 1's city (its test report)",
-        "Interior lighting is wrong (overexposed doorways, dark objects) and the game's ray-traced lighting is off by default",
+        "Its README still calls ray-traced lighting experimental, and its test report finds interior lighting wrong (overexposed doorways, dark objects)",
         "Tested on one AMD card only; not yet reproduced by others"
       ],
       "provenOn": null,
@@ -818,7 +819,7 @@
         "world": 1,
         "playable": 1,
         "story": 0.5,
-        "render": 0.81,
+        "render": 0.9,
         "fps": 3,
         "stability": 0.7
       },
@@ -6764,6 +6765,11 @@
       "date": "2026-11-25",
       "kind": "new",
       "text": "DexNom joins the race at #2 with 76.9% (“Playable”), verified by PortWatch: DexNom/VIctory, an AMD Radeon fork of VIctory tested on an RX 7900 XTX, is at the same point as Belobug's build, with a close-to-retail open world played through missions."
+    },
+    {
+      "date": "2026-11-25",
+      "kind": "up",
+      "text": "DexNom takes #1 at 78%: PortWatch has seen its build running with ray-traced lighting, the first AMD build on our board to get it. Rendering goes from 0.81 to 0.9."
     }
   ],
   "history": [
@@ -6801,9 +6807,9 @@
     },
     {
       "date": "2026-11-25",
-      "leader": 77.4,
-      "leaderId": "belobug",
-      "top3": 72.8,
+      "leader": 78,
+      "leaderId": "dexnom",
+      "top3": 73.2,
       "furthest": "playable",
       "tracked": 38
     }
