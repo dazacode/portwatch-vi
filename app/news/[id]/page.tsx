@@ -3,7 +3,7 @@ import { notFound } from "next/navigation"
 import { Breadcrumb } from "@/components/breadcrumb"
 import { Container } from "@/components/container"
 import { JsonLd } from "@/components/json-ld"
-import { utcDay } from "@/lib/format"
+import { utcDay, utcTime } from "@/lib/format"
 import { articleLd, articleMeta, PAGES, pageMeta } from "@/lib/seo"
 import { getTracker } from "@/lib/tracker"
 
@@ -35,7 +35,11 @@ export default async function Page({ params }: Props) {
       <h1 className="mt-2 text-3xl font-bold">{article.title}</h1>
       <p className="mt-2 text-lg text-muted-foreground">{article.dek}</p>
       <p className="mt-2 text-sm text-muted-foreground">
-        {article.category}, <time dateTime={article.date}>{utcDay(article.date)}</time>
+        {article.category},{" "}
+        <time dateTime={article.publishedAt ?? article.date}>
+          {utcDay(article.publishedAt ?? article.date)}
+          {article.publishedAt && `, ${utcTime(article.publishedAt)}`}
+        </time>
       </p>
       <div className="pane mt-6 space-y-4 p-5 sm:p-7">
         {article.body.map((p) => (

@@ -235,8 +235,12 @@ describe("filters", () => {
   const make = (id: string, patch: Partial<Effort>, name = id) => effort({ id, name, ...patch })
   const efforts = [
     make("a", { stats: { stars: 5, commits7d: 100, createdAt: "2026-11-20T20:00:00Z" } }, "Alpha"),
-    make("b", { stats: { stars: 9, createdAt: "2026-11-20T08:00:00Z" }, repo: "x/b" }),
-    make("c", { repo: null }),
+    make("b", {
+      stats: { stars: 9, createdAt: "2026-11-20T08:00:00Z" },
+      repo: "x/b",
+      gpu: ["NVIDIA", "Intel", "Banana"],
+    }),
+    make("c", { repo: null, gpu: ["AMD"] }),
     make("d", {
       repo: "x/d",
       nuked: { at: "2026-11-23", note: "" },
@@ -268,6 +272,14 @@ describe("filters", () => {
     expect(ids({ status: "private" })).toEqual(["c"])
     expect(ids({ code: "private" })).toEqual(["c"])
     expect(ids({ code: "public" })).toEqual(["b", "a", "d"])
+  })
+  it("filters by graphics card, and drops brands it doesn't know", () => {
+    expect(entries.find((e) => e.id === "b")?.gpus).toEqual(["NVIDIA", "Intel"])
+    expect(ids({ gpu: "AMD" })).toEqual(["c"])
+    expect(ids({ gpu: "Intel" })).toEqual(["b"])
+    expect(ids({ gpu: "Mac" })).toEqual([])
+    expect(parseFilters(new URLSearchParams("gpu=Banana"))).toEqual(NO_FILTERS)
+    expect(toQuery({ ...NO_FILTERS, gpu: "NVIDIA" })).toBe("gpu=NVIDIA")
   })
   it("sorts with unknown values last and ties in rank order", () => {
     expect(ids({ sort: "stars" })).toEqual(["b", "a", "c", "d"])

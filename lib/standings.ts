@@ -1,4 +1,5 @@
 import { utcDay } from "@/lib/format"
+import { GPUS, type Gpu } from "@/lib/gpu"
 import type { Milestone } from "@/lib/milestones"
 import { STAGE_ORDER } from "@/lib/stages.mjs"
 import type { Activity, Effort, Evidence, Standing, Tracker } from "@/lib/tracker"
@@ -31,7 +32,7 @@ export const ORIGIN_LABEL: Record<Origin["kind"], string> = {
 /** The part of a project the filters read. Small enough to send to the browser. */
 export type Entry = Pick<
   Standing,
-  "id" | "name" | "claimedStage" | "isPrivate" | "rating" | "score" | "stars" | "commits7d"
+  "id" | "name" | "claimedStage" | "isPrivate" | "rating" | "score" | "stars" | "commits7d" | "gpus"
 > & {
   repo: string | null
   /** Place among projects that are not offline or inactive. Null is not ranked: a private build, unless they are ranked too. */
@@ -210,6 +211,7 @@ export const toEntry = (p: Project): Entry => ({
   score: p.score,
   stars: p.stars,
   commits7d: p.commits7d,
+  gpus: p.gpus,
   origin: p.origin,
 })
 
@@ -231,6 +233,8 @@ export type Filters = {
   stage: string
   status: Status | "all"
   code: Code
+  /** Builds that have run on this brand of graphics card. */
+  gpu: Gpu | "all"
   sort: Sort
   ranks: Ranks
 }
@@ -240,6 +244,7 @@ export const NO_FILTERS: Filters = {
   stage: "all",
   status: "all",
   code: "all",
+  gpu: "all",
   sort: "rank",
   ranks: "public",
 }
@@ -258,6 +263,7 @@ export const parseFilters = (params: Pick<URLSearchParams, "get">): Filters => (
   ),
   status: oneOf(params.get("status"), [...STATUSES, "all"], "all"),
   code: oneOf(params.get("code"), ["all", "public", "private"], "all"),
+  gpu: oneOf(params.get("gpu"), [...GPUS, "all"], "all"),
   sort: oneOf(params.get("sort"), Object.keys(SORTS) as Sort[], "rank"),
   ranks: oneOf(params.get("ranks"), ["public", "everyone"], "public"),
 })
@@ -288,7 +294,8 @@ export function applyFilters<T extends Entry>(entries: T[], f: Filters): T[] {
       (!q || e.name.toLowerCase().includes(q) || e.repo?.toLowerCase().includes(q)) &&
       (f.stage === "all" || e.claimedStage === f.stage) &&
       (f.status === "all" || e.status === f.status) &&
-      (f.code === "all" || e.isPrivate === (f.code === "private"))
+      (f.code === "all" || e.isPrivate === (f.code === "private")) &&
+      (f.gpu === "all" || e.gpus.includes(f.gpu))
   )
   if (f.sort === "rank") return found
   const value = VALUE[f.sort]

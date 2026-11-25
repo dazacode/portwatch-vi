@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { GpuTags } from "@/components/gpu-tags"
 import { Ladder } from "@/components/ladder"
 import { ProjectDates } from "@/components/standings/project-dates"
 import { TableCell, TableRow } from "@/components/ui/table"
@@ -33,6 +34,7 @@ export function ProjectRow({ project: p, strong = false }: { project: Project; s
         {p.pick && <span className="mt-0.5 block text-xs text-foreground">{p.pick}</span>}
         {p.reason && <span className="mt-0.5 block text-xs text-foreground">{p.reason}.</span>}
         <span className="mt-0.5 block text-xs text-muted-foreground sm:hidden">{p.stage}</span>
+        <GpuTags gpus={p.gpus} className="mt-1" />
         <span
           className={cn(
             "mt-1 block max-w-2xl text-muted-foreground",

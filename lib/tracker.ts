@@ -7,6 +7,7 @@ import localOverrides from "@/data/overrides.json"
 import localTracker from "@/data/tracker.json"
 import { loadData } from "@/lib/data"
 import { plainTitle } from "@/lib/format"
+import { type Gpu, gpusOf } from "@/lib/gpu"
 import { hideInActivity, hideInNews, hideInTracker } from "@/lib/hide"
 import { LADDER } from "@/lib/ladder"
 import type { Channel } from "@/lib/live/types"
@@ -32,6 +33,8 @@ export type Effort = {
   findingsSource?: string
   /** The code is private for now, but the project says it will publish it once the build is out. */
   publicLater?: boolean
+  /** Graphics cards it has run on, main one first. Missing when nobody has said. */
+  gpu?: string[]
   /** What upstream scores it, before our findings. Null when upstream doesn't list it. */
   sourceScore?: number | null
   nuked?: { at: string; note: string }
@@ -130,6 +133,8 @@ export type Activity = {
 export type NewsArticle = {
   id: string
   date: string
+  /** When it went up. Older articles only have the day. */
+  publishedAt?: string
   category: string
   title: string
   dek: string
@@ -255,6 +260,8 @@ export type Standing = {
   findings: { text: string; url?: string }[]
   findingsSource: string | null
   summary: string
+  /** The graphics cards it has run on, main one first. Empty when nobody has said. */
+  gpus: Gpu[]
 }
 
 const evidenceSum = (s: Standing) => s.checks.reduce((sum, c) => sum + c.confidence, 0)
@@ -298,6 +305,7 @@ export function getStandings(tracker: Tracker, evidence: Evidence[]): Standing[]
         checks: v.stages,
         findings: e.findings ?? [],
         findingsSource: e.findingsSource ?? null,
+        gpus: gpusOf(e.gpu),
         summary: e.summary,
       }
     })

@@ -17,6 +17,7 @@ import {
 import { NativeSelect, NativeSelectOption } from "@/components/ui/native-select"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { getRanks, setRanks, useRanks } from "@/components/use-ranks"
+import { GPUS, gpuTitle } from "@/lib/gpu"
 import type { Frame } from "@/lib/race"
 import {
   applyFilters,
@@ -142,9 +143,12 @@ function ExplorerView({
     filters.stage !== "all",
     filters.status !== "all",
     filters.code !== "all",
+    filters.gpu !== "all",
     filters.sort !== "rank",
   ].filter(Boolean).length
   const open = opened || active > 0
+  // A brand is offered once a project in this view has run on it.
+  const gpus = GPUS.filter((g) => entries.some((e) => e.gpus.includes(g)))
 
   return (
     <>
@@ -207,6 +211,21 @@ function ExplorerView({
               {STATUSES.map((s) => (
                 <NativeSelectOption key={s} value={s}>
                   {STATUS_LABEL[s]} ({count((e) => e.status === s)})
+                </NativeSelectOption>
+              ))}
+            </NativeSelect>
+          </Field>
+          <Field id="standings-gpu" label="Graphics card">
+            <NativeSelect
+              className="w-full sm:w-fit"
+              id="standings-gpu"
+              value={filters.gpu}
+              onChange={(e) => set({ gpu: e.target.value as Filters["gpu"] })}
+            >
+              <NativeSelectOption value="all">Any card</NativeSelectOption>
+              {gpus.map((g) => (
+                <NativeSelectOption key={g} value={g} title={gpuTitle(g)}>
+                  {g} ({count((e) => e.gpus.includes(g))})
                 </NativeSelectOption>
               ))}
             </NativeSelect>

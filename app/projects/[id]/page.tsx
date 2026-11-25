@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/breadcrumb"
 import { Confidence } from "@/components/confidence"
 import { Container } from "@/components/container"
 import { Goals } from "@/components/goals"
+import { GpuTags } from "@/components/gpu-tags"
 import { ScoreBreakdown } from "@/components/score-breakdown"
 import { ago, utcDay } from "@/lib/format"
 import { pageMeta, projectMeta } from "@/lib/seo"
@@ -68,6 +69,7 @@ export default async function Page({ params }: Props) {
         page={{ name: s.name, path: `/projects/${s.id}` }}
       />
       <h1 className="mt-2 text-3xl font-bold">{s.name}</h1>
+      <GpuTags gpus={s.gpus} className="mt-2" />
       <p className="mt-2 max-w-prose text-muted-foreground">{s.summary}</p>
       <dl className="mt-6 flex flex-wrap gap-x-12 gap-y-4">
         <div>

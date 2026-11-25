@@ -6,7 +6,7 @@ import { Stories, StoriesFallback } from "@/components/digest/stories"
 import { DigestSummary } from "@/components/digest/summary"
 import { getBoard } from "@/lib/board"
 import { getDigest, getSummary, toStories } from "@/lib/digest"
-import { utcDay } from "@/lib/format"
+import { utcDay, utcTime } from "@/lib/format"
 import { PAGES, pageMeta } from "@/lib/seo"
 import { getNews, getTracker } from "@/lib/tracker"
 
@@ -75,7 +75,11 @@ export default async function Page() {
                     {n.dek}
                   </span>
                   <span className="mt-1.5 block text-xs text-muted-foreground">
-                    {n.category}, {utcDay(n.date)}
+                    {n.category},{" "}
+                    <time dateTime={n.publishedAt ?? n.date}>
+                      {utcDay(n.publishedAt ?? n.date)}
+                      {n.publishedAt && `, ${utcTime(n.publishedAt)}`}
+                    </time>
                   </span>
                 </li>
               ))}

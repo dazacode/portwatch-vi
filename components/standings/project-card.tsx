@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { GpuTags } from "@/components/gpu-tags"
 import { Ladder } from "@/components/ladder"
 import { ProjectDates } from "@/components/standings/project-dates"
 import { compact } from "@/lib/format"
@@ -57,6 +58,7 @@ export function ProjectCard({
       </div>
       {p.pick && <p className="mt-2 text-sm">{p.pick}</p>}
       {p.reason && !p.isPrivate && <p className="mt-2 text-sm">{p.reason}.</p>}
+      <GpuTags gpus={p.gpus} className="mt-3" />
       <p className="mt-3 text-sm text-muted-foreground">{p.summary}</p>
       <div className="mt-auto grid gap-1.5 pt-4 text-xs text-muted-foreground">
         <p className="empty:hidden">
