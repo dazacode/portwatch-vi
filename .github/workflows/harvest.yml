@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: harvest
+  group: data-write
   cancel-in-progress: true
 
 jobs:

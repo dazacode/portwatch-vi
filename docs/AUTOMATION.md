@@ -26,7 +26,7 @@ the project too, or it comes back).
 
 `harvest.yml` runs every 30 minutes and has two jobs in one script:
 
-- **News.** Google News and Bing News for ten GTA VI/port queries, then the full feeds of sixteen PC
+- **News.** Google News and Bing News for ten GTA VI/port queries, then the full feeds of fourteen PC
   and gaming outlets, Hacker News, Reddit, Bluesky, Mastodon, Lemmy and 4chan /g/. Only a story with
   GTA VI **and** port work in its text survives. Social posts need a stronger signal than an outlet
   does, or every "I built a PC for this" gets in. Stories are deduplicated by title and URL, kept 21

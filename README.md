@@ -22,6 +22,7 @@ shadcn/ui on Base UI, Tailwind) and live stream tracking. The scout and scoring 
 - `data/news.json`: every scraped story, headline and discussion, newest first
 - `data/activity.json`: public commits, pull requests and newly found repositories per project
 - `data/tracker.json`: projects, scores and headlines, rewritten by `scripts/scout.mjs`
+- `app/news/`, `app/activity/`: the story feed and the public commit/PR log
 - `lib/scoring.mjs`: the scoring rules, shared by the site and the scout
 
 How the automation works, and why, is in [docs/AUTOMATION.md](docs/AUTOMATION.md).
