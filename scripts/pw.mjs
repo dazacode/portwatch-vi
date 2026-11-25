@@ -25,6 +25,8 @@ const COMMANDS = {
   schema: read.schema,
   set: write.set,
   rebase: write.rebase,
+  added: write.added,
+  private: write.added,
   find: write.find,
   pick: write.pick,
   news: write.news,
@@ -53,6 +55,7 @@ Read
 Write (all support --dry-run)
   set <id> k=v...     set claim fields; prints the score delta
   rebase <id>         move a lapsed patch onto upstream's values
+  added new <id> ...  add a project only we publish; private builds have repo null
   find <id>           add or edit a sourced finding
   pick set|clear      place a project first by hand
   news add|list|...   articles

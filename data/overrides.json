@@ -998,6 +998,52 @@
           "text": "Rico joins as a private build on VIctory: past the prologue and in Jason’s first mission, “Gone Fishing”. 30 fps is reported, but the pictures show it only on the pause map; a cutscene reads 1 fps."
         }
       ]
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "3D world and audio not functional",
+          "Runs in a boot and UI loop, no open world"
+        ],
+        "highlights": [
+          "Continuous 780-frame boot with no crash",
+          "Recompiles RDNA2 shaders live",
+          "Archives and licences load"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 0.5,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "ASTRAL",
+        "summary": "Go recompiler that starts the game engine, loads all of its archives and holds a continuous native boot with live RDNA2 shader recompilation. The 3D world and audio are not there yet, and it calls itself not playable.",
+        "basedOn": [],
+        "id": "gta-vi-astral",
+        "repo": "Archivist-Atlas/gta-vi-astral",
+        "stats": {
+          "stars": 1,
+          "createdAt": "2026-11-24T10:35:42Z",
+          "pushedAt": "2026-11-24T18:05:18Z"
+        }
+      },
+      "changes": [
+        {
+          "date": "2026-11-25",
+          "kind": "new",
+          "text": "ASTRAL: first values from its README (boot, menus); no world yet."
+        }
+      ]
     }
   ],
   "pick": {
@@ -1005,9 +1051,23 @@
     "at": "2026-11-25",
     "reason": "Placed first by us, not by score: the picture closest to the console of any build, driving the “Gone Fishing” boat at 4.5 fps. Nobody outside has tested it."
   },
-  "ignored": [],
+  "ignored": [
+    {
+      "repo": "ethan00013/keylime",
+      "reason": "Runtime tool, not a full port",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "daeken/XSXEmu",
+      "reason": "Experimental emulator, no playable GTA VI",
+      "seenAt": "2026-11-25"
+    }
+  ],
   "decided": [
     "ka1qux/victory-ka1qux",
-    "crt4ever/DumbFloridaMoron"
+    "crt4ever/DumbFloridaMoron",
+    "Archivist-Atlas/gta-vi-astral",
+    "daeken/XSXEmu",
+    "ethan00013/keylime"
   ]
 }

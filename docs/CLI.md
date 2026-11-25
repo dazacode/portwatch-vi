@@ -130,6 +130,22 @@ An added project also takes `repo`, `branch`, `basedOn`, `related`, `evidence`, 
 `avatar`, `byline`, `approach`, `target`, `nuked`, `stats`, `name` and `id`. `stats`, `id`, `repo`
 and `branch` are upstream-owned on a tracked project and cannot be patched.
 
+## Projects only we publish
+
+A project upstream does not list, including a private build with no code, is an `added` entry. `set`
+writes that entry directly; there is no patch to conflict.
+
+```sh
+./pw added list
+./pw added new rico --file effort.json      # id, name, summary, gta, blockers, stats
+./pw added rm rico
+```
+
+The file is an effort object, the same shape as a `candidate track` file. A private build (`"repo":
+null`) must also carry `basedOn` (the ids it builds on) and `evidence` (how we know it works). Defaults
+are `tier: "tracked"`, `verification: "self-reported"` and an empty `stats`. A private build is unranked
+on the site; give it its `repo` when the code goes public, and it joins the race on that code.
+
 ## Goals: Playable and Story beaten
 
 Upstream's `playable` stage shows as **Runnable** on our site: a character can be moved, at any speed.
@@ -222,6 +238,9 @@ write saves the previous file to `data/.pw/backups/` (last 10, git-ignored); cop
 
 The CLI never commits or pushes. The site reads `data/overrides.json` from `main`, so a commit of that
 file alone needs no deploy. GitHub tells the site, and the next visit shows it.
+
+The hourly editor ([EDITOR.md](EDITOR.md)) does the same steps itself, for the parts that can be read from
+the harvest; a person still owns the standing rules and anything that needs eyes.
 
 ```sh
 git pull                                  # the site reads upstream live, so start from the newest copy

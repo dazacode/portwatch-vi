@@ -10,6 +10,7 @@ describe("due", () => {
     ["00:05:30", ["pulse.yml"]],
     ["00:10:02", ["pulse.yml", "upstream-sync.yml"]],
     ["00:20:00", ["pulse.yml", "scout.yml"]],
+    ["00:35:00", ["pulse.yml", "editor.yml"]],
     ["01:20:00", ["pulse.yml"]],
     ["03:20:00", ["pulse.yml", "scout.yml"]],
     ["13:30:00", ["pulse.yml", "harvest.yml"]],
@@ -25,6 +26,7 @@ describe("due", () => {
       "harvest.yml": 48,
       "upstream-sync.yml": 96,
       "scout.yml": 8,
+      "editor.yml": 24,
     })
   })
 

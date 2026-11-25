@@ -234,6 +234,55 @@ describe("pw read commands", () => {
     expect((await call(["check", "--json"])).code).toBe(0)
   })
 
+  it("adds a private build with no repo, then sets it", async () => {
+    const file = path.join(root, "private.json")
+    await writeFile(
+      file,
+      JSON.stringify({
+        name: "Private One",
+        basedOn: ["alpha"],
+        evidence: "Streamed live",
+        summary: "A private build.",
+        blockers: [],
+        gta: { world: 1, playable: 1, fps: 2 },
+      })
+    )
+    const result = await call(["added", "new", "private-one", "--file", file, "--json"])
+    expect(result.code).toBe(0)
+    const entry = (await readOverrides()).added[0].effort
+    expect(entry.repo).toBe(null)
+    expect(entry.gta.world).toBe(1)
+    expect(entry.verification).toBe("self-reported")
+    const set = await call(["set", "private-one", "gta.fps=4", "--json"])
+    expect(set.code).toBe(0)
+    expect((await call(["check", "--json"])).code).toBe(0)
+  })
+
+  it("needs basedOn and evidence for a private build", async () => {
+    const file = path.join(root, "private.json")
+    await writeFile(file, JSON.stringify({ name: "Bare", summary: "A build." }))
+    const result = await call(["added", "new", "bare", "--file", file, "--json"])
+    expect(result.code).toBe(2)
+    expect(json(result).error.message).toContain("basedOn")
+  })
+
+  it("refuses an id that is already listed", async () => {
+    const file = path.join(root, "private.json")
+    await writeFile(file, JSON.stringify({ name: "Alpha again", repo: "one/alpha", summary: "A copy." }))
+    const result = await call(["added", "new", "alpha", "--file", file, "--json"])
+    expect(result.code).toBe(2)
+    expect(json(result).error.message).toContain("already listed")
+  })
+
+  it("removes an added project", async () => {
+    const file = path.join(root, "private.json")
+    await writeFile(file, JSON.stringify({ name: "Gone", basedOn: ["alpha"], evidence: "Stream", summary: "Gone." }))
+    await call(["added", "new", "gone", "--file", file, "--json"])
+    const result = await call(["added", "rm", "gone", "--json"])
+    expect(result.code).toBe(0)
+    expect((await readOverrides()).added).toHaveLength(0)
+  })
+
   it("reaches a goal only with linked evidence", async () => {
     const claim = ["loads", "boots", "menu", "world", "playable"].map((k) => `gta.${k}=1`)
     await call(["set", "alpha", ...claim, "gta.fps=24", "gta.render=0.75"])

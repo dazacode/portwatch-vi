@@ -1,6 +1,6 @@
 # Daily editor playbook
 
-The GitHub Actions scout (every 3 hours) does the mechanical work: stats, discovery, spam and copy filtering, headlines and the DMCA watch. Once a day, a scheduled Claude session on the maintainer's PC follows this playbook to do the parts that need judgement. It updates scores, reviews candidates, verifies leads, keeps the countdown accurate and writes news, then commits `data/tracker.json`.
+The GitHub Actions scout (every 3 hours) does the mechanical work: stats, discovery, spam and copy filtering, headlines and the DMCA watch. The hourly editor ([docs/EDITOR.md](docs/EDITOR.md)) follows this playbook in Actions; a person still owns the standing rules and anything that needs eyes. It updates scores, reviews candidates, verifies leads, keeps the countdown accurate and writes news, then commits `data/overrides.json`.
 
 In this fork, make the data edits with `pnpm pw` instead of by hand; [docs/CLI.md](docs/CLI.md) maps each step to a command and says which file it writes. Upstream's PowerShell snippets still describe the checks.
 
@@ -46,7 +46,7 @@ In this fork, make the data edits with `pnpm pw` instead of by hand; [docs/CLI.m
    - `flag` (fake, lure, copy): add it to the matching `flagged[]` cluster's `members` and raise `count`.
 
    Remove each decided candidate from `candidates`, and add a `changes` entry for promotions.
-   5b. **Board moderation and tips.** This step needs the local file `.env.local`, which git ignores, containing `SUPABASE_URL=...` and `SUPABASE_SECRET_KEY=...`. If the file is missing, skip this step and say so in the summary. Never print, commit or copy the key anywhere. Use PowerShell to read the file and call the REST API, sending the key only in the `apikey` header. Always pass `-UserAgent 'portwatch-editor'` to `Invoke-RestMethod`/`Invoke-WebRequest`: PowerShell's default user agent looks like a browser, and Supabase answers secret-key requests from browsers with 401.
+   5b. **Board moderation and tips.** The board was removed (see Owner decisions), so skip this step.
    - **Held posts.** `GET {SUPABASE_URL}/rest/v1/threads?status=eq.pending&select=id,board,title,body,author,created_at` and the same for `posts` (`select=id,thread_id,body,author,created_at`). These were held because they contain a link. Approve (`PATCH .../threads?id=eq.<id>` or `.../posts?id=eq.<id>` with body `{"status":"visible"}`) only when the link is harmless: a GitHub repo, a reputable news article, or a tracked project. Hide (`{"status":"hidden"}`) anything that points at downloads, leaked files, executables, torrents, file hosts, Discord or Telegram invites, shortened links, scams or crypto promotion. When unsure, leave it pending and mention it in the summary.
    - **Abuse.** Read visible threads and posts created since `scout.lastEditorRun` (`created_at=gt.<iso>`). Hide spam, harassment, personal information about anyone, and posts that ask for or offer leaked files.
    - **Tips.** Treat claims in board posts ("project X boots", "new repo Y") as leads for step 2. Verify them independently before they change anything on the site, and never quote board posts in articles.
@@ -60,11 +60,11 @@ In this fork, make the data edits with `pnpm pw` instead of by hand; [docs/CLI.m
 
    The `id` becomes the article's public URL (`news/<id>.html`, built at deploy and listed in the sitemap), so use only lowercase letters, digits and hyphens, and never change an id once it's published. For `image`, use the main source's `og:image`. Fetch the page with `curl -sL -A "Mozilla/5.0"` and read `<meta property="og:image">`; use `null` if there isn't one. Add new articles to the front of `news` and keep at most 40.
 7. **Finish.**
-   - Set `scout.lastEditorRun` and `updated` to the current UTC time in ISO format.
-   - Validate the JSON: `powershell -NoProfile -Command "Get-Content -Raw data/tracker.json | ConvertFrom-Json | Out-Null"`. It must succeed.
-   - Run `git add data/tracker.json` and `git commit -m "editor: daily review <YYYY-MM-DD>"`.
+   - Set `scout.lastEditorRun` and `updated` to the current UTC time in ISO format (the pages read the tracker's `updated`; the automated editor keeps its own `data/editor.json` instead).
+   - Validate: `./pw check` must exit 0, or 3 with only upstream lapses.
+   - Commit only `data/overrides.json` (and `data/editor.json` for the automated editor), never `data/tracker.json`. Message: `editor: daily review <YYYY-MM-DD>`; the automated editor uses `editor: <UTC time> UTC`.
    - Run `git pull --rebase origin main`, then `git push origin main`. The scout may have committed in between. If the rebase conflicts, run `git rebase --abort`, keep a copy of your edited file, run `git fetch origin` and `git reset --hard origin/main`, re-apply your edits to the fresh file, then commit and push again.
-   - End with a short summary: what changed, what was verified, what was skipped and why.
+   - End with a short summary: what changed, what was verified, what was skipped and why. The automated editor writes this into the Actions job summary.
 
 ## Owner decisions
 

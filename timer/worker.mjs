@@ -5,7 +5,7 @@ const API = "https://api.github.com/repos"
 const MINUTE = 60_000
 
 /**
- * Minutes between runs, and how far past the hour the first one is. The last three share a queue on GitHub
+ * Minutes between runs, and how far past the hour the first one is. The last four share a queue on GitHub
  * that only holds one waiting run, so they start apart. Harvest takes about six minutes.
  */
 export const JOBS = [
@@ -13,6 +13,7 @@ export const JOBS = [
   { workflow: "harvest.yml", every: 30, at: 0 },
   { workflow: "upstream-sync.yml", every: 15, at: 10 },
   { workflow: "scout.yml", every: 180, at: 20 },
+  { workflow: "editor.yml", every: 60, at: 35 },
 ]
 
 /** What is due in the five minutes that start at this time. */

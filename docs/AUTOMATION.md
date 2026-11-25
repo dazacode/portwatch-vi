@@ -12,7 +12,8 @@ What upstream did by hand, and what runs it here. Limits were checked on 24 Nove
 | Claims                                         | Claude editor on a PC, plus the owner | Upstream's, read live, plus `overrides.json`    | Vercel ISR, 60 s       |
 | Score and ranking                              | The claim                             | Our own, from claims and evidence               | When a page is built   |
 | Publishing data                                | Full deploy each run                  | Read from the repo at runtime, no deploy        | Webhook, seconds       |
-| Articles                                       | Claude and the owner                  | Off; set `NEWS_DESK=1` to write them            | GitHub Actions         |
+| Articles                                       | Claude and the owner                  | Automated editor, at most two a day; `NEWS_DESK=1` is the older route | GitHub Actions, 1 h    |
+| Findings, re-scores, candidates, private builds | Claude editor on a PC, plus the owner | Automated editor through `./pw` with the playbook's guardrails | GitHub Actions, 1 h    |
 | Pinned message, dashboard, board               | Owner                                 | Removed                                         |                        |
 
 Our own scout is off, because upstream's does the same work. If upstream stops, set the repository
@@ -20,10 +21,11 @@ variable `OWN_SCOUT` to 1, disable `upstream-sync.yml` and set `UPSTREAM_DATA=of
 `ANTHROPIC_API_KEY` it reviews at most 12 projects a run, and a milestone only rises if the model quotes
 text that is really in the repo.
 
-Two things still need a person: our own findings (`data/overrides.json`), and removing a
-channel that turns out to be a problem (delete it from `channels.json`; if a README links it, remove
-the project too, or it comes back). Findings, articles, candidates and hand placements go through
-`pnpm pw`; see [docs/CLI.md](CLI.md).
+Two things still need a person: an owner decision that changes the standing rules, and moderation that
+needs eyes (a challenge recording, a pull request, a channel that turns out to be a problem — delete it
+from `channels.json`, and if a README links it remove the project too, or it comes back). Everything else
+is automated: findings, re-scores, candidate reviews, private builds and articles go through the editor in
+[docs/EDITOR.md](EDITOR.md), and every one of them through `pnpm pw`; see [docs/CLI.md](CLI.md).
 
 ## How data reaches the site
 
@@ -41,7 +43,8 @@ To change the secret, change it there and on Vercel, then redeploy.
 GitHub doesn't run this fork's schedules, so `timer/worker.mjs`, a Cloudflare Worker, starts the same workflows
 on a five-minute tick. It leaves a job that has just run, so it does no harm if GitHub's schedules wake up.
 It has no address. Its secret `GH_TOKEN` is a fine-grained token for this repository with Actions read and
-write; when it expires the jobs stop, and the Worker's cron list shows failures.
+write; when it expires the jobs stop, and the Worker's cron list shows failures. It also starts the hourly
+editor, which is described in [EDITOR.md](EDITOR.md).
 
 ## News and activity harvesting
 

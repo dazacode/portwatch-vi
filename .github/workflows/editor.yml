@@ -1,0 +1,68 @@
+name: Editor
+
+# The overnight editorial pass: findings, re-scores, candidate reviews, private builds and articles,
+# always through ./pw. Everything it writes is in data/overrides.json plus its own data/editor.json.
+# The rules are EDITOR.md's. A model is needed: ANTHROPIC_API_KEY, or the keyless free route.
+on:
+  schedule:
+    # Off the quarter hours, when GitHub is busiest and drops scheduled runs.
+    - cron: "35 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print the plan and write nothing"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# Same group as every other data writer, so two jobs never push at once.
+concurrency:
+  group: data-write
+  cancel-in-progress: false
+
+jobs:
+  edit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          package-manager-cache: false
+
+      - name: Install
+        run: pnpm install --prod --frozen-lockfile --ignore-scripts
+
+      - name: Editorial pass
+        id: edit
+        run: node scripts/editor.mjs ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Variables, not secrets: the free route needs no key. FREE_AI=off turns it off.
+          FREE_AI: ${{ vars.FREE_AI }}
+          FREE_AI_BASE_URL: ${{ vars.FREE_AI_BASE_URL }}
+          FREE_AI_MODEL: ${{ vars.FREE_AI_MODEL }}
+          EDITOR_MODEL: ${{ vars.EDITOR_MODEL }}
+
+      - name: Commit
+        if: ${{ !inputs.dry_run }}
+        run: |
+          # EDITOR.md rule 1: the editor identity, never a person's.
+          git config user.name "viportlive-editor[bot]"
+          git config user.email "41898282+4lwayz@users.noreply.github.com"
+          git add data/overrides.json
+          [ -f data/editor.json ] && git add data/editor.json
+          if git diff --cached --quiet; then echo "Nothing changed."; exit 0; fi
+          git commit -m "editor: $(date -u '+%F %H:%M') UTC"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((attempt * 5))
+          done
+          echo "::error::push kept being refused"; exit 1

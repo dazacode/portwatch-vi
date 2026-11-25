@@ -7,7 +7,7 @@ import { draft, loadState, preview } from '../lib/data.mjs';
 import { addChange, setField } from '../lib/mutate.mjs';
 import { invalid, notFound } from '../lib/errors.mjs';
 import { clip, isDate, pct, slug, stageIndex, today } from '../lib/format.mjs';
-import { ladderWarning } from '../lib/validate.mjs';
+import { ADDED_FIELDS, ladderWarning, parseField } from '../lib/validate.mjs';
 import { rankOf, scoreView } from '../lib/score.mjs';
 import { NEWS_CATEGORIES, newsIssues } from './read.mjs';
 
@@ -470,6 +470,84 @@ export const candidate = {
     }
 
     throw invalid(`Unknown candidate action "${action}".`);
+  },
+};
+
+const kebab = (id) => /^[a-z0-9]+(-[a-z0-9]+)*$/.test(id);
+
+const PRIVATE_DEFAULTS = () => ({
+  tier: 'tracked',
+  verification: 'self-reported',
+  repo: null,
+  related: [],
+  basedOn: [],
+  highlights: [],
+  blockers: [],
+  gta: { loads: 0, boots: 0, menu: 0, world: 0, playable: 0, story: 0, render: 0, fps: 0, stability: 'unknown' },
+  stats: {},
+  assessedAt: today(),
+  assessedBy: 'claude',
+  claims: [],
+});
+
+export const added = {
+  summary: 'List, add or remove a project only we publish, including a private build with no repo.',
+  usage: 'list | new <id> --file effort.json | rm <id>',
+  value: ['file'],
+  async run({ out, flags }, [action, ...rest]) {
+    const state = await loadState(flags);
+    if (action === 'list') {
+      const rows = state.overrides.added.map(({ effort }) => [effort.id, effort.name, effort.repo ?? 'private', effort.tier ?? '']);
+      out.table(rows, ['id', 'name', 'repo', 'tier']);
+      return { count: rows.length, added: state.overrides.added.map((a) => a.effort?.id) };
+    }
+
+    const overrides = draft(state);
+    if (action === 'rm') {
+      const id = rest[0];
+      const at = overrides.added.findIndex((a) => a.effort?.id === id);
+      if (at === -1) throw notFound(`"${id}" is not one of our added projects.`);
+      const [entry] = overrides.added.splice(at, 1);
+      out.line(`removed ${id}`);
+      return { id, overrides, changes: [{ path: `added.${id}`, from: entry.effort.id, to: null }] };
+    }
+
+    if (action !== 'new') throw invalid('Use `./pw added new <id> --file effort.json`.');
+    const id = rest[0];
+    const file = flags.file?.at(-1);
+    if (!id || !file) throw invalid('Use `./pw added new <id> --file effort.json`.');
+    if (!kebab(id)) throw invalid('id is kebab-case.');
+    if (state.effective.efforts.some((e) => e.id === id)) throw invalid(`Id "${id}" is already listed.`);
+
+    let text;
+    try {
+      text = await readFile(path.resolve(file), 'utf8');
+    } catch {
+      throw notFound(`Cannot read ${file}.`);
+    }
+    const input = fromJson(text, file);
+    const { changes: told = [], ...fields } = input.effort ?? input;
+    const effort = PRIVATE_DEFAULTS();
+    for (const [field, value] of Object.entries(fields)) {
+      if (!ADDED_FIELDS.has(field) || field === 'id') {
+        if (!['id', 'claims', 'changes'].includes(field)) out.warn(`ignored unknown field "${field}"`);
+        continue;
+      }
+      effort[field] = parseField(field, typeof value === 'string' ? value : JSON.stringify(value));
+    }
+    effort.id = id;
+    if (!effort.name) throw invalid('The file needs a name.');
+    if (!effort.summary) throw invalid('The file needs a summary.');
+    if (!effort.repo && (!effort.basedOn.length || !effort.evidence)) {
+      throw invalid('A private build (repo null) needs basedOn (the ids it builds on) and evidence (how we know).');
+    }
+    if (effort.repo && state.effective.efforts.some((e) => e.repo?.toLowerCase() === effort.repo.toLowerCase())) {
+      throw invalid(`${effort.repo} is already listed.`);
+    }
+
+    overrides.added.push({ effort, changes: told });
+    out.line(`added ${id}: ${effort.name}`);
+    return { effort: id, overrides, changes: [{ path: `added.${id}`, from: null, to: id }] };
   },
 };
 
