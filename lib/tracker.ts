@@ -51,7 +51,7 @@ export type Effort = {
 
 export type Evidence = {
   effortId: string
-  kind: "challenge" | "tester" | "contributor" | "rule"
+  kind: "challenge" | "tester" | "contributor" | "free" | "rule"
   outcome: "reached" | "failed"
   stage: string
   quote: string

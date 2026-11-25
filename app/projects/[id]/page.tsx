@@ -51,6 +51,7 @@ const KIND: Record<Evidence["kind"], string> = {
   challenge: "Live challenge",
   tester: "Independent tester",
   contributor: "Tester who contributed code",
+  free: "Independent tester, read by a free AI model",
   rule: "Independent tester, matched by text rules",
 }
 

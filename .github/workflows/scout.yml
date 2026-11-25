@@ -51,6 +51,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FREE_AI: ${{ vars.FREE_AI }}
 
       - name: Follow the stream channels projects link to
         run: node scripts/channels.mjs

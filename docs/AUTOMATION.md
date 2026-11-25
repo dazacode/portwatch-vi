@@ -186,6 +186,16 @@ happened just now, and the two are labelled differently ("Milestone" versus "Bre
   Claude, up to 25 reports a run. A reading is dropped unless its quote is in the report, the commit
   is in the repo, and it isn't a copy. Text rules only record successes: they misread failures. People
   are stored as a short hash, to count each once.
+- Without `ANTHROPIC_API_KEY`, what text rules can't read goes to a free model: Pollinations only, up to 10
+  reports a run, one from each project in turn, newest first (`scripts/lib/free-reader.mjs`). Logs, links,
+  names and paths are taken out first. It weighs as little as a text rule, records no failures and never
+  counts past In the world. Its quote must be on one line of the report, about that stage, and neither
+  negated nor someone else's result. Reports that name another project's code, or speak to whoever scores
+  them, are never sent. `FREE_AI=off` turns it off.
+  Tested on 25 November 2026, its answers against readings Claude wrote down first. 15 real reports:
+  12 right, 2 wrong (both about another project's build) and 1 missed. After fixing those, 12 unseen ones:
+  10 right, none wrong, 2 missed. Of 4 made-up traps one worked, a note telling readers what to quote;
+  the rules on what is never sent come from these. A person who simply lies still gets through, as with text rules.
 - Live challenges. `/verify` issues a code and three in-game actions per project, every ten minutes,
   derived from `CHALLENGE_SECRET`, so nothing is stored. Submissions arrive as issues. **To approve
   one: watch the recording, check the code, the actions and the terminal, then add the `verified`

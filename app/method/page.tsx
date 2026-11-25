@@ -34,6 +34,11 @@ const EVIDENCE = [
     "Tester who contributed code",
     "The same, from someone whose code the project has merged.",
   ],
+  [
+    WEIGHTS.free,
+    "Read by a free AI model",
+    "The same, when a free AI model has read the report. Its quote must be in the report, and it never counts past In the world.",
+  ],
   [WEIGHTS.rule, "Matched by text rules", "The same, when only text rules have read the report."],
 ].map(([weight, ...rest]) => [Math.round(Number(weight) * 100), ...rest])
 const percent = (n: number) => `${Math.round(n * 100)}%`

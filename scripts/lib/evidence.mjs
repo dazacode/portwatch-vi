@@ -20,13 +20,17 @@ const NEGATED = /\b(?:not|never|n['’]t|cannot|unable|until|before|while|should
 // Someone else's result, quoted or cited.
 const CITED = /^\s*>|\b(?:reported|according|someone|others?|testers?|users?|#\d+)\b[^.\n]{0,50}$/i;
 
+/** Whether the words on a line in front of a result take it back, or say it is someone else's. */
+export const isNegated = (before) => NEGATED.test(before.slice(-70));
+export const isCited = (before) => CITED.test(before.slice(-90));
+
 const plain = (body) => body.replace(/```[\s\S]*?```/g, '\n').replace(/<!--[\s\S]*?-->/g, '').replace(/\r/g, '');
 
 function find(text) {
   for (const [stage, re] of REACHED) {
     for (const m of text.matchAll(new RegExp(re.source, 'gi'))) {
       const line = text.slice(text.lastIndexOf('\n', m.index) + 1, m.index);
-      if (NEGATED.test(line.slice(-70)) || CITED.test(line.slice(-90))) continue;
+      if (isNegated(line) || isCited(line)) continue;
       return { stage, quote: m[0].replace(/\s+/g, ' ').trim().slice(0, 160) };
     }
   }
