@@ -1039,14 +1039,14 @@
       "gpu": [
         "NVIDIA"
       ],
-      "summary": "A build shown on darkworldhm's Rumble stream on 25 Nov, running GTA VI's free roam at about 12-15 fps, swinging between 5 and 18: the highest frame rate on our board. It's as far into the story as the leading builds and hasn't crashed so far. The picture looks alright, with some texture or ray-tracing glitches. Reportedly on an NVIDIA RTX 50-series card. Code not public, and what it builds on isn't known.",
+      "summary": "A build shown on darkworldhm's Rumble stream on 25 Nov, running GTA VI's free roam at about 12-15 fps, swinging between 5 and 24: the highest frame rate on our board. It's as far into the story as the leading builds and hasn't crashed so far. The picture looks alright, with some texture or ray-tracing glitches. Reportedly on an NVIDIA RTX 50-series card. Code not public, and what it builds on isn't known.",
       "highlights": [
-        "About 12-15 fps in free roam, up to 18: the highest frame rate on our board",
+        "About 12-15 fps in free roam, up to 24: the highest frame rate on our board",
         "As far into the story as the leading builds",
         "No crashes seen so far"
       ],
       "blockers": [
-        "Frame rate swings between about 5 and 18 fps",
+        "Frame rate swings between about 5 and 24 fps",
         "Some texture or ray-tracing glitches",
         "Code is private, so nobody outside can test or reproduce it"
       ],
@@ -7099,6 +7099,11 @@
       "date": "2026-11-25",
       "kind": "new",
       "text": "darkworldhm joins as a private build at 79.5% and leads our overall number: his Rumble stream shows GTA VI's free roam at about 12-15 fps and up to 18, the highest frame rate on our board, reportedly on an RTX 50-series card."
+    },
+    {
+      "date": "2026-11-25",
+      "kind": "up",
+      "text": "darkworldhm's build now peaks at 24 fps in free roam, up from 18; its average stays at about 12-15 fps."
     }
   ],
   "history": [
