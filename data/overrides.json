@@ -356,9 +356,25 @@
           {
             "text": "A team update reported on X puts optimization, stability and shader speed ahead of 1-2 fps clips, and says XCL is for many games, not one.",
             "url": "https://x.com/kozikfc/status/2125402207776383396"
+          },
+          {
+            "text": "On 25 November the README's Discord invite was changed to a second server at 04:31 UTC, without a pull request, and was back on the original by 06:05. A commenter calls the second server a scam. Lead developer ivall says the collaborator believed ivall had lost access and created a new server, and that it is under control.",
+            "url": "https://github.com/xcl-dev/xcl/issues/2137"
+          },
+          {
+            "text": "A Solana coin using XCL's name was promoted in a Discord server on 25 November. Collaborator Austin Ayers calls it a phishing attempt with a fake Discord and fake socials. Who ran it is disputed and not confirmed here. The README doesn't mention a coin.",
+            "url": "https://x.com/AustinAyers/status/2125469360483652085"
+          },
+          {
+            "text": "ivall says no developer was hacked and that “some people were just impersonating us”.",
+            "url": "https://github.com/xcl-dev/xcl/commit/6ea813a61f7d324e2fcbeb0c6a068edcd37e818b#commitcomment-211751630"
+          },
+          {
+            "text": "XCL is still active: main was last pushed at 06:05 UTC on 25 November and pull requests are still being updated. The newest merged code is from 02:15; the commits after it edit the README. This site lists a project as inactive after 7 days with nothing new.",
+            "url": "https://github.com/xcl-dev/xcl/commits/main"
           }
         ],
-        "findingsSource": "From XCL’s README, pull requests and issues, and the linked posts on X, on 25 November. Code read as text, not run."
+        "findingsSource": "From XCL’s README, pull requests, issues and commits, and the linked posts on X, on 25 November. Code read as text, not run."
       }
     }
   ],
