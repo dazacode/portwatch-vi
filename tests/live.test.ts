@@ -1,0 +1,133 @@
+import { describe, expect, it } from "vitest"
+import { isBoard, isLure, isPortStream } from "@/lib/live/filter"
+import { parseRumble } from "@/lib/live/rumble"
+import { assemble } from "@/lib/live/snapshot"
+import type { Channel, SourceResult, Stream } from "@/lib/live/types"
+import { parseWatching } from "@/lib/live/watching"
+
+describe("isPortStream", () => {
+  it.each([
+    "GTA 6 recomp - fixing shadows",
+    "GTA VI PC port dev stream",
+    "Working on a Grand Theft Auto VI emulator",
+    "GTA6 recompilation day 4",
+  ])("accepts %s", (title) => expect(isPortStream(title)).toBe(true))
+
+  it.each([
+    "GTA VI story mode blind playthrough",
+    "Minecraft recomp",
+    "GTA 6 PC port FREE DOWNLOAD",
+    "GTA VI recomp, link in description",
+    "GTA 6 emulator giveaway",
+    "GTA 6 recomp discord.gg/abc",
+  ])("rejects %s", (title) => expect(isPortStream(title)).toBe(false))
+
+  it("does not read ordinary words as lures", () => {
+    expect(isLure("Keyboard input and freeways are working")).toBe(false)
+  })
+})
+
+const card = (status: string, title = "GTA 6 &amp; chill") => `
+  <div class="videostream thumbnail__grid--item" data-video-id="1">
+    <img class="thumbnail__image " draggable="false" src="x.jpg" alt="${title}">
+    <div class="videostream__badge videostream__status videostream__status--${status}">x</div>
+    <a class="videostream__link link" draggable="false" href="/v7abc-gta.html?e9s=src"></a>
+  </div>`
+const page = (cards: string) => `<title>someone</title><nav id="main-menu"></nav>${cards}`
+
+describe("parseRumble", () => {
+  it("reads the live card and skips finished ones", () => {
+    expect(parseRumble(page(card("duration", "old") + card("live")))).toEqual({
+      title: "GTA 6 & chill",
+      path: "/v7abc-gta.html",
+    })
+  })
+  it("is null when nothing is live", () => {
+    expect(parseRumble(page(card("duration")))).toBeNull()
+    expect(parseRumble(page(card("upcoming")))).toBeNull()
+  })
+  it("ignores live class names that only appear in CSS", () => {
+    expect(parseRumble(page("<style>.videostream__status--live{}</style>"))).toBeNull()
+  })
+  it("is undefined for a page that isn't a channel, such as a bot challenge", () => {
+    expect(parseRumble("<html>Just a moment...</html>")).toBeUndefined()
+  })
+})
+
+const channel = (handle: string, platform: Channel["platform"]): Channel => ({
+  platform,
+  handle,
+  name: handle,
+  effortId: null,
+  addedBy: "manual",
+})
+const stream = (over: Partial<Stream>): Stream => ({
+  id: "x",
+  platform: "twitch",
+  handle: "a",
+  name: "a",
+  title: "t",
+  url: "u",
+  startedAt: null,
+  viewers: null,
+  effortId: null,
+  origin: "search",
+  embed: null,
+  ...over,
+})
+const off: SourceResult = { state: "off", streams: [] }
+
+describe("assemble", () => {
+  it("reports unknown, not offline, when a platform is off or a channel failed", () => {
+    const snap = assemble(
+      [channel("a", "twitch"), channel("user/b", "rumble"), channel("user/c", "rumble")],
+      {
+        twitch: off,
+        youtube: off,
+        kick: off,
+        rumble: { state: "ok", streams: [], unknown: ["user/b"] },
+      },
+      "2026-11-24T00:00:00Z"
+    )
+    expect(snap.channels.map((c) => c.live)).toEqual([null, null, false])
+  })
+  it("puts tracked channels above bigger search results and ignores handle case", () => {
+    const snap = assemble(
+      [channel("Dev", "twitch")],
+      {
+        twitch: {
+          state: "ok",
+          streams: [
+            stream({ id: "big", handle: "big", viewers: 9000 }),
+            stream({ id: "dev", handle: "dev", viewers: 3, origin: "tracked" }),
+          ],
+        },
+        youtube: off,
+        kick: off,
+        rumble: off,
+      },
+      "2026-11-24T00:00:00Z"
+    )
+    expect(snap.streams.map((s) => s.id)).toEqual(["dev", "big"])
+    expect(snap.channels[0].live).toBe(true)
+  })
+})
+
+describe("isBoard", () => {
+  it("separates round-the-clock boards from people working", () => {
+    expect(isBoard("GTA 6 PC Port Race LIVE 24/7: VIctory vs XCL")).toBe(true)
+    expect(isBoard("GTA 6 on PC? LIVE Port Tracker")).toBe(true)
+    expect(isBoard("GTA 6 recomp, fixing shadows")).toBe(false)
+  })
+})
+
+describe("parseWatching", () => {
+  it.each([
+    ["543 watching", 543],
+    ["4.6K watching", 4600],
+    ["1,204 watching", 1204],
+    ['{"text":"176 watching"}', 176],
+    ["12K views", null],
+    [undefined, null],
+  ])("%s", (text, n) => expect(parseWatching(text)).toBe(n))
+})

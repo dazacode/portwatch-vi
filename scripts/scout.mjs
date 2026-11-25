@@ -31,7 +31,8 @@ const { summary } = await runScout(data, { token: env.GITHUB_TOKEN, env, assess 
 // News desk (needs ANTHROPIC_API_KEY): Claude searches the web and writes up anything meaningful.
 // The scout runs every 3 hours; the news desk runs at most every 11 hours to keep costs down.
 const newsDue = !data.scout.lastNewsRun || Date.now() - Date.parse(data.scout.lastNewsRun) > 11 * 36e5;
-if (env.ANTHROPIC_API_KEY && newsDue) {
+// Off unless asked for: this site links to outlets' headlines instead of publishing its own articles.
+if (env.NEWS_DESK === '1' && env.ANTHROPIC_API_KEY && newsDue) {
   data.scout.lastNewsRun = new Date().toISOString();
   console.log('Writing news…');
   try {

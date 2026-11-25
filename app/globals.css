@@ -1,0 +1,139 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-heading: var(--font-sans);
+    --font-sans: var(--font-sans);
+    --color-live: var(--live);
+    --color-stripe-1: var(--stripe-1);
+    --color-stripe-2: var(--stripe-2);
+    --color-stripe-3: var(--stripe-3);
+    --color-step-1: var(--step-1);
+    --color-step-2: var(--step-2);
+    --color-step-3: var(--step-3);
+    --color-step-4: var(--step-4);
+    --color-step-5: var(--step-5);
+    --color-sky-1: var(--sky-1);
+    --color-sky-2: var(--sky-2);
+    --color-sky-3: var(--sky-3);
+    --color-sun: var(--sun);
+    --color-sun-low: var(--sun-low);
+    --color-sea: var(--sea);
+    --color-shade: var(--shade);
+    --font-script: var(--font-script);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+    --background: oklch(0.982 0.012 55);
+    --foreground: oklch(0.25 0.06 305);
+    --card: oklch(0.995 0.005 55);
+    --card-foreground: oklch(0.25 0.06 305);
+    --popover: oklch(0.995 0.005 55);
+    --popover-foreground: oklch(0.25 0.06 305);
+    --primary: oklch(0.55 0.22 357);
+    --primary-foreground: oklch(0.99 0.008 55);
+    --secondary: oklch(0.93 0.04 195);
+    --secondary-foreground: oklch(0.28 0.06 240);
+    --muted: oklch(0.945 0.025 30);
+    --muted-foreground: oklch(0.46 0.055 320);
+    --accent: oklch(0.93 0.04 195);
+    --accent-foreground: oklch(0.28 0.06 240);
+    --destructive: oklch(0.55 0.2 27);
+    --border: oklch(0.88 0.035 25);
+    --input: oklch(0.88 0.035 25);
+    --ring: oklch(0.6 0.12 200);
+    --live: oklch(0.58 0.23 15);
+    --stripe-1: oklch(0.68 0.2 357);
+    --stripe-2: oklch(0.79 0.14 60);
+    --stripe-3: oklch(0.75 0.11 195);
+    --step-1: oklch(0.72 0.12 205);
+    --step-2: oklch(0.66 0.14 260);
+    --step-3: oklch(0.6 0.2 320);
+    --step-4: oklch(0.63 0.23 357);
+    --step-5: oklch(0.72 0.17 45);
+    --sky-1: oklch(0.8 0.1 220);
+    --sky-2: oklch(0.85 0.09 350);
+    --sky-3: oklch(0.86 0.11 60);
+    --sun: oklch(0.93 0.1 90);
+    --sun-low: oklch(0.7 0.2 10);
+    --sea: oklch(0.62 0.1 205);
+    --shade: oklch(0.3 0.08 300);
+    --radius: 0.25rem;
+}
+
+.dark {
+    --background: oklch(0.175 0.045 295);
+    --foreground: oklch(0.95 0.018 330);
+    --card: oklch(0.215 0.05 295);
+    --card-foreground: oklch(0.95 0.018 330);
+    --popover: oklch(0.235 0.055 295);
+    --popover-foreground: oklch(0.95 0.018 330);
+    --primary: oklch(0.74 0.19 350);
+    --primary-foreground: oklch(0.18 0.05 320);
+    --secondary: oklch(0.3 0.06 230);
+    --secondary-foreground: oklch(0.94 0.03 195);
+    --muted: oklch(0.255 0.055 300);
+    --muted-foreground: oklch(0.75 0.05 320);
+    --accent: oklch(0.3 0.06 230);
+    --accent-foreground: oklch(0.94 0.03 195);
+    --destructive: oklch(0.7 0.19 22);
+    --border: oklch(0.8 0.1 330 / 18%);
+    --input: oklch(0.8 0.1 330 / 24%);
+    --ring: oklch(0.8 0.13 195);
+    --live: oklch(0.7 0.22 12);
+    --stripe-1: oklch(0.7 0.23 350);
+    --stripe-2: oklch(0.79 0.16 60);
+    --stripe-3: oklch(0.8 0.13 195);
+    --step-1: oklch(0.8 0.13 195);
+    --step-2: oklch(0.7 0.15 265);
+    --step-3: oklch(0.68 0.21 320);
+    --step-4: oklch(0.7 0.22 355);
+    --step-5: oklch(0.79 0.16 60);
+    --sky-1: oklch(0.22 0.09 285);
+    --sky-2: oklch(0.45 0.19 330);
+    --sky-3: oklch(0.72 0.19 35);
+    --sun: oklch(0.88 0.15 85);
+    --sun-low: oklch(0.65 0.25 355);
+    --sea: oklch(0.27 0.09 265);
+    --shade: oklch(0.14 0.05 290);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  html {
+    @apply font-sans;
+    }
+}

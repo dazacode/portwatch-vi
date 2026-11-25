@@ -6,9 +6,9 @@ import Anthropic from '@anthropic-ai/sdk';
 const MODEL = 'claude-opus-5-5';
 const MAX_ARTICLES = 2;
 const CATEGORIES = ['Leak', 'Takedown', 'Legal', 'Security', 'Official', 'Port'];
-const UA = 'Mozilla/5.0 (compatible; PortWatchVI-news/1.0)';
+const UA = 'Mozilla/5.0 (compatible; VIPortLive-news/1.0)';
 
-const SYSTEM = `You are the news desk for PortWatch VI, a fan-run tracker of community efforts to run the leaked Xbox Series build of Grand Theft Auto VI on PC.
+const SYSTEM = `You are the news desk for VIPortLive, a fan-run tracker of community efforts to run the leaked Xbox Series build of Grand Theft Auto VI on PC.
 
 Find meaningful developments from roughly the last three days and write short news articles about them. Meaningful means things like: Rockstar or Take-Two takedowns, DMCA notices, account bans or lawsuits; new leaks confirmed by reputable outlets; court cases; scams and malware aimed at people looking for the game; official announcements (a PC version, statements about the leak); a port project reaching a real milestone that reputable outlets have reported.
 

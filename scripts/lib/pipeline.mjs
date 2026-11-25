@@ -1,6 +1,6 @@
 // The scout pipeline (runs every 3 hours). Pure data-in / data-out: the caller loads and saves tracker.json.
 // Runs in Node (GitHub Actions) and in a browser (local testing).
-import { scoreEffort, overall, isPrivateBuild } from '../../assets/js/scoring.js';
+import { scoreEffort, overall, isPrivateBuild } from '../../lib/scoring.mjs';
 import * as core from './core.mjs';
 
 const lc = (s) => String(s || '').toLowerCase();

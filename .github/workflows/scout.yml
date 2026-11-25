@@ -2,13 +2,11 @@ name: Scout
 
 on:
   schedule:
-    - cron: '17 */3 * * *' # every 3 hours, at 00:17, 03:17, 06:17 … UTC
+    - cron: "17 */3 * * *"
   workflow_dispatch: {}
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: scout
@@ -20,15 +18,14 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
-
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
 
-      - name: Install
-        run: npm install --no-audit --no-fund
-
-      - name: Scout GitHub, Reddit, Hacker News and X
+      - name: Refresh projects, find new ones, collect headlines and takedowns
         run: node scripts/scout.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -37,20 +34,18 @@ jobs:
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
 
-      - name: Commit updated data
-        run: |
-          git config user.name "portwatch-scout[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/tracker.json
-          if git diff --cached --quiet; then
-            echo "No changes."
-          else
-            git commit -m "scout: update $(date -u '+%F %H:%M') UTC"
-            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
-            git push
-          fi
+      - name: Follow the stream channels projects link to
+        run: node scripts/channels.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  deploy:
-    needs: scout
-    uses: ./.github/workflows/pages.yml
-    secrets: inherit # the deploy's Cloudflare mirror step needs the Cloudflare secrets
+      # The site reads data/ from the repo at runtime, so this commit needs no deploy.
+      - name: Commit data
+        run: |
+          git config user.name "viportlive-scout[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "scout: update $(date -u '+%F %H:%M') UTC"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push

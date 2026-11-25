@@ -1,7 +1,7 @@
 // Source adapters and heuristics for the scout.
 // Uses only fetch + Web Crypto so it runs in Node 20+ and in a browser (for local testing).
 
-export const UA = 'PortWatchVI-scout/1.0 (+https://github.com)';
+export const UA = 'VIPortLive-scout/1.0 (+https://github.com)';
 const IN_NODE = typeof window === 'undefined';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -252,7 +252,7 @@ const xmlText = (s) => String(s || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$
 const tagOf = (block, tag) => block.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, 'i'))?.[1] || '';
 
 export async function newsFeed(url, feedName) {
-  const res = await fetch(url, { headers: IN_NODE ? { 'User-Agent': 'Mozilla/5.0 (compatible; PortWatchVI/1.0)' } : {} });
+  const res = await fetch(url, { headers: IN_NODE ? { 'User-Agent': 'Mozilla/5.0 (compatible; VIPortLive/1.0)' } : {} });
   if (!res.ok) throw new Error(`${feedName} ${res.status}`);
   const xml = await res.text();
   return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/gi)].map(([, b]) => {
