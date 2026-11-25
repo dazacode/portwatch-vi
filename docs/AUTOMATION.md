@@ -8,6 +8,7 @@ What upstream did by hand, and what runs it here. Limits were checked on 24 Nove
 | New streams                                    | Not tracked                           | Category and keyword search with a title filter | Vercel ISR                               |
 | Which channels to follow                       | Not tracked                           | Links in project READMEs, added and dropped     | GitHub Actions, 3 h                      |
 | Repo stats, new projects, takedowns, headlines | Scout                                 | Same scout                                      | GitHub Actions, 3 h                      |
+| News, commits and pull requests                | Not tracked                           | Harvester over feeds, GitHub and communities    | GitHub Actions, 30 min                   |
 | Scores                                         | Claude editor on a PC, plus the owner | Claude review inside the scout                  | GitHub Actions, with `ANTHROPIC_API_KEY` |
 | Publishing data                                | Full deploy each run                  | Read from the repo at runtime, no deploy        | Vercel ISR, 5 min                        |
 | Articles                                       | Claude and the owner                  | Off; set `NEWS_DESK=1` to write them            | GitHub Actions                           |
@@ -20,6 +21,28 @@ really in the repo, and each run reviews at most 12 projects.
 Two things still need a person: scores for private builds, which have no repo to read, and removing a
 channel that turns out to be a problem (delete it from `channels.json`; if a README links it, remove
 the project too, or it comes back).
+
+## News and activity harvesting
+
+`harvest.yml` runs every 30 minutes and has two jobs in one script:
+
+- **News.** Google News and Bing News for ten GTA VI/port queries, then the full feeds of sixteen PC
+  and gaming outlets, Hacker News, Reddit, Bluesky, Mastodon, Lemmy and 4chan /g/. Only a story with
+  GTA VI **and** port work in its text survives. Social posts need a stronger signal than an outlet
+  does, or every "I built a PC for this" gets in. Stories are deduplicated by title and URL, kept 21
+  days, capped at 400 and filed under Takedown, Legal, Security, Official, Leak, Port or Community.
+- **Activity.** Every board project's last 25 commits and 30 pull requests from the public GitHub
+  API, GitHub's pull-request search across all of GitHub, and a repository search that lists new
+  public projects in `activity.json` without promoting them onto the board. The board still needs
+  the scout's review to score something.
+
+Both write only when something changed, so quiet runs make no commit. The site reads the two data
+files from the repo at runtime, so a harvest commit reaches it inside the ISR window without a
+deploy. No keys beyond `GITHUB_TOKEN` are required; Reddit's own keys are optional.
+
+Limits: 30 search calls a minute, 1,000 REST calls an hour for the Actions token. A run uses about
+90, well inside both. Outlet and RSS feeds are read directly and only when they answer; a blocked
+source is logged in the run summary and its stories simply expire.
 
 ## Live status without a cron job
 

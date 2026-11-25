@@ -11,6 +11,7 @@ shadcn/ui on Base UI, Tailwind) and live stream tracking. The scout and scoring 
 | -------------------------------------------- | ---------------------------------------------------------- |
 | `pnpm test` / `pnpm lint` / `pnpm typecheck` | Checks, also run in CI                                     |
 | `pnpm scout:dry`                             | Runs the project scout without saving (set `GITHUB_TOKEN`) |
+| `pnpm harvest:dry`                           | Runs the news/commit/PR harvester without saving           |
 | `pnpm channels:dry`                          | Shows which stream channels would be added or dropped      |
 
 ## Where things are
@@ -18,6 +19,8 @@ shadcn/ui on Base UI, Tailwind) and live stream tracking. The scout and scoring 
 - `lib/live/`: one file per platform, the title filter, and the snapshot that joins them
 - `data/channels.json`: channels being followed. Entries with `"addedBy": "manual"` are yours; the
   `"readme"` ones are managed by `scripts/channels.mjs`
+- `data/news.json`: every scraped story, headline and discussion, newest first
+- `data/activity.json`: public commits, pull requests and newly found repositories per project
 - `data/tracker.json`: projects, scores and headlines, rewritten by `scripts/scout.mjs`
 - `lib/scoring.mjs`: the scoring rules, shared by the site and the scout
 

@@ -3,17 +3,34 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { Confidence } from "@/components/confidence"
 import { Container } from "@/components/container"
-import { utcDay } from "@/lib/format"
-import { type Evidence, getEvidence, getStandings, getTracker, LADDER } from "@/lib/tracker"
+import { ago, utcDay } from "@/lib/format"
+import {
+  type Evidence,
+  getActivity,
+  getEvidence,
+  getStandings,
+  getTracker,
+  LADDER,
+} from "@/lib/tracker"
 
 export const revalidate = 300
 
 type Props = { params: Promise<{ id: string }> }
 
 async function getProject(id: string) {
-  const [tracker, evidence] = await Promise.all([getTracker(), getEvidence()])
+  const [tracker, evidence, activity] = await Promise.all([
+    getTracker(),
+    getEvidence(),
+    getActivity(),
+  ])
   const standing = getStandings(tracker, evidence).find((s) => s.id === id)
-  return standing && { standing, evidence: evidence.filter((e) => e.effortId === id) }
+  return (
+    standing && {
+      standing,
+      evidence: evidence.filter((e) => e.effortId === id),
+      activity: activity.projects[id],
+    }
+  )
 }
 
 export async function generateStaticParams() {
@@ -37,7 +54,7 @@ const stageName = (key: string) => LADDER.find((m) => m.key === key)?.label ?? k
 export default async function Page({ params }: Props) {
   const project = await getProject((await params).id)
   if (!project) notFound()
-  const { standing: s, evidence } = project
+  const { standing: s, evidence, activity } = project
   return (
     <Container className="pt-8">
       <Link
@@ -117,6 +134,55 @@ export default async function Page({ params }: Props) {
           )}
         </section>
       </div>
+      {activity && (activity.pulls.length > 0 || activity.commits.length > 0) && (
+        <section className="mt-10">
+          <h2 className="mb-2 text-lg font-semibold">Public activity</h2>
+          <p className="text-sm text-muted-foreground">
+            Scraped from the project’s public repository. {activity.openPrs} open pull
+            {activity.openPrs === 1 ? " request" : " requests"} right now.
+          </p>
+          {activity.pulls.length > 0 && (
+            <ul className="mt-4">
+              {activity.pulls.slice(0, 12).map((p) => (
+                <li key={p.number} className="border-b py-2 text-sm">
+                  <a
+                    href={p.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline-offset-4 hover:underline"
+                  >
+                    #{p.number} {p.title}
+                  </a>
+                  <span className="block text-xs text-muted-foreground">
+                    {p.state}
+                    {p.draft ? " draft" : ""} · {p.author || "unknown"} · {utcDay(p.at)}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
+          {activity.commits.length > 0 && (
+            <ul className="mt-4">
+              {activity.commits.slice(0, 12).map((c) => (
+                <li key={c.sha} className="border-b py-2 text-sm">
+                  <a
+                    href={c.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-mono underline-offset-4 hover:underline"
+                  >
+                    {c.sha}
+                  </a>{" "}
+                  <span className="text-muted-foreground">{c.message}</span>
+                  <span className="block text-xs text-muted-foreground">
+                    {c.author || "unknown"} · {ago(c.at, new Date().toISOString())}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
+      )}
     </Container>
   )
 }

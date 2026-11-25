@@ -96,6 +96,7 @@ export async function hnSearch(query, sinceEpoch) {
     title: h.title || '',
     text: `${h.title || ''} ${h.url || ''} ${h.story_text || ''}`,
     link: `https://news.ycombinator.com/item?id=${h.objectID}`,
+    date: h.created_at,
     score: h.points || 0,
   }));
 }
@@ -131,6 +132,7 @@ export async function redditSearch({ subreddit, query, token }) {
     title: d.title || '',
     text: `${d.title || ''} ${d.url || ''} ${d.selftext || ''}`,
     link: `https://www.reddit.com${d.permalink}`,
+    date: d.created_utc ? new Date(d.created_utc * 1000).toISOString() : null,
     score: d.score || 0,
   }));
 }
@@ -172,6 +174,7 @@ export async function fourchanSearch(board, { maxThreads = 8 } = {}) {
       title: decode4(t.sub || t.com || '').slice(0, 120),
       text: posts.map((p) => decode4(p.com)).join(' '),
       link: `https://boards.4chan.org/${board}/thread/${t.no}`,
+      date: new Date((t.last_modified || t.time || Date.now() / 1000) * 1000).toISOString(),
       score: t.replies || 0,
     });
   }
@@ -188,6 +191,7 @@ export async function blueskySearch(query) {
     title: String(post.record?.text || '').slice(0, 120),
     text: JSON.stringify([post.record, post.embed]), // links live in facets and embeds
     link: `https://bsky.app/profile/${post.author?.handle}/post/${String(post.uri || '').split('/').pop()}`,
+    date: post.indexedAt,
     score: (post.likeCount || 0) + (post.repostCount || 0),
   }));
 }
@@ -201,6 +205,7 @@ export async function mastodonTag(tag, instance = 'mastodon.social') {
     title: decode4(s.content).slice(0, 120),
     text: `${decode4(s.content)} ${s.card?.url || ''}`,
     link: s.url,
+    date: s.created_at,
     score: (s.favourites_count || 0) + (s.reblogs_count || 0),
   }));
 }
@@ -215,6 +220,7 @@ export async function lemmySearch(query, instance = 'lemmy.world') {
     title: post.name || '',
     text: `${post.name || ''} ${post.url || ''} ${post.body || ''}`,
     link: post.ap_id,
+    date: post.published,
     score: counts?.score || 0,
   }));
 }

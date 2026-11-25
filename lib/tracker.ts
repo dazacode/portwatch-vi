@@ -1,6 +1,8 @@
+import localActivity from "@/data/activity.json"
 import localChannels from "@/data/channels.json"
 import localEvidence from "@/data/evidence.json"
 import localMilestones from "@/data/milestones.json"
+import localNews from "@/data/news.json"
 import localTracker from "@/data/tracker.json"
 import { plainTitle } from "@/lib/format"
 import type { Channel } from "@/lib/live/types"
@@ -42,9 +44,79 @@ export type StageCheck = {
   verified: boolean
 }
 
+export type FeedItem = {
+  id: string
+  title: string
+  url: string
+  outlet: string
+  date: string
+  via: string
+  category: string
+  score?: number
+}
+
+export type NewsFile = { updated: string | null; items: FeedItem[] }
+
+export type ActivityCommit = {
+  projectId: string | null
+  repo: string
+  sha: string
+  message: string
+  author: string
+  at: string
+  url: string
+}
+
+export type PullRequest = {
+  projectId: string | null
+  repo: string
+  number: number
+  title: string
+  state: "open" | "merged" | "closed"
+  draft: boolean
+  author: string
+  at: string
+  url: string
+}
+
+export type PublicRepo = {
+  repo: string
+  description: string
+  stars: number
+  pushedAt: string
+  language: string | null
+  url: string
+}
+
+export type ProjectActivity = {
+  openPrs: number
+  commits: ActivityCommit[]
+  pulls: PullRequest[]
+}
+
+export type Activity = {
+  updated: string | null
+  projects: Record<string, ProjectActivity>
+  feed: (PullRequest | ActivityCommit)[]
+  discovered: PublicRepo[]
+}
+
+export type NewsArticle = {
+  id: string
+  date: string
+  category: string
+  title: string
+  dek: string
+  body: string[]
+  sources: { outlet: string; title: string; url: string }[]
+  image: string | null
+  by: string
+}
+
 export type Tracker = {
   updated: string
   efforts: Effort[]
+  news: NewsArticle[]
   changes: { date: string; kind: string; text: string }[]
   headlines: { title: string; outlet: string; link: string; date: string }[]
   dmca: { url: string; date: string; repoCount: number; gta6: boolean; tracked: string[] }[]
@@ -82,6 +154,8 @@ export const getMilestones = () => load("milestones.json", localMilestones as Mi
 export const getEvidence = async () =>
   (await load("evidence.json", localEvidence as unknown as { items: Evidence[] })).items
 export const getChannels = () => load("channels.json", localChannels as Channel[])
+export const getNews = () => load("news.json", localNews as unknown as NewsFile)
+export const getActivity = () => load("activity.json", localActivity as unknown as Activity)
 
 export const LADDER = MILESTONES.filter((m) => m.key !== "groundwork" && m.key !== "complete")
 

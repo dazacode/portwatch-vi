@@ -5,18 +5,26 @@ import { StandingsTable } from "@/components/standings-table"
 import { getBroadcast } from "@/lib/broadcast"
 import { utcDay, utcTime } from "@/lib/format"
 import { getSnapshot } from "@/lib/live/snapshot"
-import { getAnswer, getChanges, getEvidence, getStandings, getTracker } from "@/lib/tracker"
+import {
+  getAnswer,
+  getChanges,
+  getEvidence,
+  getNews,
+  getStandings,
+  getTracker,
+} from "@/lib/tracker"
 
 export const revalidate = 60
 
 const more = "text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground"
 
 export default async function Page() {
-  const [tracker, evidence, snapshot, broadcast] = await Promise.all([
+  const [tracker, evidence, snapshot, broadcast, feed] = await Promise.all([
     getTracker(),
     getEvidence(),
     getSnapshot(),
     getBroadcast(),
+    getNews(),
   ])
   const standings = getStandings(tracker, evidence)
   const answer = getAnswer(tracker)
@@ -59,10 +67,10 @@ export default async function Page() {
               </Link>
             </div>
             <ul>
-              {tracker.headlines.slice(0, 6).map((h) => (
-                <li key={h.link} className="border-b py-2.5 text-sm">
+              {feed.items.slice(0, 6).map((h) => (
+                <li key={h.id} className="border-b py-2.5 text-sm">
                   <a
-                    href={h.link}
+                    href={h.url}
                     target="_blank"
                     rel="noreferrer"
                     className="underline-offset-4 hover:underline"
