@@ -419,11 +419,104 @@
           "text": "victory-amd joins the race at 57.1% (“Playable”): myokex's AMD fork of hyphennn's victory-fork, with JoshuuDev's fix on top. Its READMEs report the prologue's first room with the player moving at 2 to 3 fps on a Radeon RX 7800 XT (self-reported)."
         }
       ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "blockers": [
+          "About 2 fps; anything the sun or a lamp does not reach is dark, as ray-traced light does not run",
+          "README reports no crash in 24 runs of 4 to 25 minutes; not confirmed by others, so not scored",
+          "Tested on one PC only; the first room’s walls arrive 10 to 25 seconds into the opening shot"
+        ],
+        "highlights": [
+          "Rooms, exteriors, characters and HUD drawn from a save, lit by the sun and lamps",
+          "A 25-minute play session, from the first room to the next objective (earlier build)",
+          "Stale copies of game memory measured and cut from 5.4% of pages to 0.1%"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.5,
+          "fps": 2,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": [],
+        "id": "victory-ka1qux",
+        "name": "victory-ka1qux",
+        "repo": "ka1qux/victory-ka1qux",
+        "branch": "main",
+        "basedOn": [
+          "victory-gta6"
+        ],
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "An AMD-focused fork of hyphennn's victory-fork, developed on one Radeon RX 7800 XT. Its README reports the world drawn with textures and direct light, and a 25-minute session to the next objective, at about 2 fps. Self-reported.",
+        "provenOn": null,
+        "findings": [
+          {
+            "text": "README: rooms, exteriors, characters with skin, hair and clothes, HUD and prompts are drawn from a save on an RX 7800 XT. Light that the sun or a lamp does not give directly is missing.",
+            "url": "https://github.com/ka1qux/victory-ka1qux/blob/5fa126bb/README.md"
+          },
+          {
+            "text": "README: a median of 0.50 s a frame over a ten-minute run, about 2 fps. victory-fork's speed defaults gave about 3.5 fps in one run on an earlier build, but are left off because an earlier version of them cost characters their skin.",
+            "url": "https://github.com/ka1qux/victory-ka1qux/blob/5fa126bb/README.md"
+          },
+          {
+            "text": "README: no crash or device removal in the last 24 runs, of 4 to 25 minutes each. Nobody else has reported the same yet.",
+            "url": "https://github.com/ka1qux/victory-ka1qux/blob/5fa126bb/README.md"
+          },
+          {
+            "text": "Its own code includes splitting dispatches of more than 65,535 groups into parts (the game asks for 115,200 in its indirect-light pass), with tests for the split.",
+            "url": "https://github.com/ka1qux/victory-ka1qux/commit/2c150419"
+          },
+          {
+            "text": "Compared with victory-fork it was 137 commits ahead and none behind. 39 of them, merges aside, are ka1qux's, some applying other people's pull requests, which the README credits by number.",
+            "url": "https://github.com/ka1qux/victory-ka1qux/commits/5fa126bb"
+          },
+          {
+            "text": "The 47-second video shared on X shows the opening scenes, lit, with shadows going black, one shot blown out to white and the first room's walls arriving late. A title bar reads 2 fps. It shows cutscenes, not the player in control.",
+            "url": "https://x.com/middwestindigo/status/2125431379068649697"
+          },
+          {
+            "text": "The same post says the work targets AMD RDNA3 cards and that updates will be fewer because of Rockstar's DMCA. Its reply links this repo.",
+            "url": "https://x.com/middwestindigo/status/2125431480604090691"
+          }
+        ],
+        "findingsSource": "From the public README, commits and CI at 5fa126bb, and the post on X, on 25 November. Code read as text, not run.",
+        "stats": {
+          "archived": false,
+          "createdAt": "2026-11-25T02:50:22Z",
+          "forks": 7,
+          "openIssues": 0,
+          "pushedAt": "2026-11-25T05:14:13Z",
+          "stars": 35,
+          "missing": false,
+          "commits7d": 100
+        }
+      },
+      "changes": [
+        {
+          "date": "2026-11-25",
+          "kind": "new",
+          "text": "victory-ka1qux joins the race at 56.9% (“Playable”): an AMD-focused fork of hyphennn's victory-fork. Its README reports the world drawn and a 25-minute play session at about 2 fps on a Radeon RX 7800 XT (self-reported)."
+        }
+      ]
     }
   ],
   "pick": {
     "id": "cgbj",
     "at": "2026-11-25",
     "reason": "Placed first by us, not by score: the picture closest to the console of any build, driving the “Gone Fishing” boat at 4.5 fps. Nobody outside has tested it."
-  }
+  },
+  "ignored": [],
+  "decided": [
+    "ka1qux/victory-ka1qux"
+  ]
 }
