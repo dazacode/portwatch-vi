@@ -275,6 +275,91 @@
           }
         ]
       }
+    },
+    {
+      "id": "xcl",
+      "from": {
+        "summary": "Wine-style layer running game code natively. On its main branch GTA VI gets past its menus into the world for several testers, but the screen stays on a loading spinner and a GPU watchdog ends the run. Unverified.",
+        "highlights": [
+          "Several testers' runs reach GTA VI's world: the game's own state reads \"Game Running\", peds and vehicles spawned",
+          "Menus at 30 fps; past them the intro video plays and the world streams in",
+          "All 26,698 RDNA2 programs in GTA VI's shader pack become HLSL; samples compile to DXIL"
+        ],
+        "blockers": [
+          "In the world the screen stays on a loading spinner; no picture of gameplay yet",
+          "The game's GPU watchdog ends each run 3 to 14 minutes in, on AMD and NVIDIA",
+          "Pipeline builds fall behind at world load, and BCPack-compressed textures aren't decoded yet"
+        ],
+        "assessedAt": "2026-11-24",
+        "assessedBy": "claude"
+      },
+      "to": {
+        "summary": "Wine-style layer running game code natively. A draft branch drew GTA VI's radar over a grey world on one RTX 5090; on main, testers' runs stop on a loading spinner. Not playable; its 65% is its own estimate. Unverified.",
+        "highlights": [
+          "A draft branch reaches the world in about 65 seconds and draws the radar, on one RTX 5090",
+          "Menus at 30 fps; several testers' runs reach GTA VI's world (“Game Running”, peds and vehicles spawned)",
+          "All 26,698 RDNA2 programs in GTA VI's shader pack become HLSL; samples compile to DXIL"
+        ],
+        "blockers": [
+          "Not playable: the README says the world's picture is incomplete and runs there don't last long",
+          "The draft branch isn't for merging; no tester who posted results on it has reported the radar",
+          "Shader compile time is the biggest obstacle; the game's GPU watchdog or hangs end runs on AMD and NVIDIA"
+        ],
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude"
+      }
+    },
+    {
+      "id": "xcl",
+      "from": {
+        "findings": null,
+        "findingsSource": null
+      },
+      "to": {
+        "findings": [
+          {
+            "text": "The project moved from a personal account to the xcl-dev organisation on GitHub, which the team says helps it coordinate. The old address redirects there.",
+            "url": "https://x.com/kozikfc/status/2125281767502250169"
+          },
+          {
+            "text": "“65%” is XCL's own figure. It entered the README at 04:53 UTC on 25 November in a pull request whose author calls it an estimate rather than a measurement, about 17 minutes before the post saying XCL leads at 65%. The same collaborator wrote both.",
+            "url": "https://github.com/xcl-dev/xcl/pull/2110"
+          },
+          {
+            "text": "That post gives no evidence for leading. 65% is XCL's estimate of the way to playable; this site's scale starts Playable at 50% and puts XCL at 35%. Entries such as CGBJ, ZETTROX and hyphennn are already past Playable, also self-reported.",
+            "url": "https://x.com/AustinAyers/status/2125457109517013054"
+          },
+          {
+            "text": "The README's 14 fps is one 300-second run on an RTX 5090, with menus and loading screens included. The heaviest scene ran at 5.1 fps, and four other runs averaged 9.3 to 13.2.",
+            "url": "https://github.com/xcl-dev/xcl/pull/2110"
+          },
+          {
+            "text": "The draft branch behind it reaches the world at about 65 seconds, with the radar drawn and the scene still grey, after about an hour of filling shader caches. An earlier revision gave 2 to 3.5 frames a second in the world.",
+            "url": "https://github.com/xcl-dev/xcl/pull/2057"
+          },
+          {
+            "text": "Testers on that draft branch got less far: an RTX 3080 without the caches reached no HUD, an RTX 5080 on Linux saw loading artwork then a uniform screen, and an RX 9070 saw the prologue's first title card in one run of four before a GPU hang.",
+            "url": "https://github.com/xcl-dev/xcl/pull/2057"
+          },
+          {
+            "text": "On an RX 6700 XT, main plus open pull requests and local changes drew the world for about four and a half minutes at 0.5 to 3 fps, once. The saved frames were almost black, and a repeat hung after 19 seconds.",
+            "url": "https://github.com/xcl-dev/xcl/issues/675#issuecomment-7152834098"
+          },
+          {
+            "text": "The official roadmap's goal is still to get the game past world loading, and it names shader and pipeline compile time as the biggest obstacle.",
+            "url": "https://github.com/xcl-dev/xcl/issues/1833"
+          },
+          {
+            "text": "BCPack textures now decode for BC1 and BC3 to BC7, checked byte for byte against a reference decoder, the README says. Earlier runs had those requests refused.",
+            "url": "https://github.com/xcl-dev/xcl/blob/6020a33b/README.md"
+          },
+          {
+            "text": "A team update reported on X puts optimization, stability and shader speed ahead of 1-2 fps clips, and says XCL is for many games, not one.",
+            "url": "https://x.com/kozikfc/status/2125402207776383396"
+          }
+        ],
+        "findingsSource": "From XCL’s README, pull requests and issues, and the linked posts on X, on 25 November. Code read as text, not run."
+      }
     }
   ],
   "added": [
