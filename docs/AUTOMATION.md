@@ -11,7 +11,7 @@ What upstream did by hand, and what runs it here. Limits were checked on 24 Nove
 | News, commits and pull requests                | Not tracked                           | Harvester over feeds, GitHub and communities    | GitHub Actions, 30 min |
 | Claims                                         | Claude editor on a PC, plus the owner | Upstream's, read live, plus `overrides.json`    | Vercel ISR, 60 s       |
 | Score and ranking                              | The claim                             | Our own, from claims and evidence               | When a page is built   |
-| Publishing data                                | Full deploy each run                  | Read from the repo at runtime, no deploy        | Vercel ISR, 5 min      |
+| Publishing data                                | Full deploy each run                  | Read from the repo at runtime, no deploy        | Webhook, seconds       |
 | Articles                                       | Claude and the owner                  | Off; set `NEWS_DESK=1` to write them            | GitHub Actions         |
 | Pinned message, dashboard, board               | Owner                                 | Removed                                         |                        |
 
@@ -24,6 +24,17 @@ Two things still need a person: our own findings (`data/overrides.json`), and re
 channel that turns out to be a problem (delete it from `channels.json`; if a README links it, remove
 the project too, or it comes back). Findings, articles, candidates and hand placements go through
 `pnpm pw`; see [docs/CLI.md](CLI.md).
+
+## How data reaches the site
+
+`lib/data.ts` asks GitHub's commit feed for the newest commit that touched `data/`, and reads the files at
+that commit. The answer is kept for 60 seconds. GitHub's push webhook calls `/api/refresh`, which checks the
+signature against `REFRESH_SECRET`, waits for the commit to be in the feed, and drops what was kept, so the
+next visitor gets the new data. If the webhook fails, the 60 seconds still apply. If the feed fails, the
+branch is read, and after that the copy in the build.
+
+The webhook is in the repository's settings: JSON, push events only, to `https://viportlive.com/api/refresh`.
+To change the secret, change it there and on Vercel, then redeploy.
 
 ## News and activity harvesting
 

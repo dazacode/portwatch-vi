@@ -202,7 +202,7 @@ write saves the previous file to `data/.pw/backups/` (last 10, git-ignored); cop
 ## Publish
 
 The CLI never commits or pushes. The site reads `data/overrides.json` from `main`, so a commit of that
-file alone needs no deploy and shows up in about ten minutes.
+file alone needs no deploy. GitHub tells the site, and the next visit shows it.
 
 ```sh
 git pull                                  # the site reads upstream live, so start from the newest copy

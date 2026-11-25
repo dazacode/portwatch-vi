@@ -1,9 +1,10 @@
 import { afterEach, describe, expect, it, vi } from "vitest"
+import { newestCommit } from "@/lib/atom"
 import { applyOverrides, isTracker } from "@/lib/overrides.mjs"
 import { rate, shareOf } from "@/lib/rating.mjs"
 import type { Effort, Tracker } from "@/lib/tracker"
 import { type Evidence, getEvidence, getRecords, getStandings, getTracker } from "@/lib/tracker"
-import { getUpstream, newestCommit } from "@/lib/upstream"
+import { getUpstream } from "@/lib/upstream"
 import { verify } from "@/lib/verification.mjs"
 
 const PLAYABLE = { loads: 1, boots: 1, menu: 1, world: 1, playable: 1, fps: 0 }

@@ -1,3 +1,4 @@
+import { newestCommit } from "@/lib/atom"
 import { isTracker } from "@/lib/overrides.mjs"
 import { SOURCE } from "@/lib/site"
 import type { Tracker } from "@/lib/tracker"
@@ -15,9 +16,6 @@ async function get(url: string, revalidate: number) {
   if (!res.ok) throw new Error(`${url} answered ${res.status}`)
   return res
 }
-
-/** The newest commit in a feed of commits. */
-export const newestCommit = (atom: string) => atom.match(/Commit\/([0-9a-f]{40})\b/)?.[1] ?? null
 
 /**
  * Upstream's tracker as it was last published. Their commit feed says which commit is the newest, and a

@@ -1,5 +1,6 @@
 import { z } from "zod"
 import localDigest from "@/data/digest.json"
+import { loadData } from "@/lib/data"
 import { isHostile, noteId, plain, unsafe } from "@/lib/digest-safety.mjs"
 import { isHidden } from "@/lib/hide"
 import { type Story, TOPICS } from "@/lib/stories"
@@ -53,32 +54,8 @@ export function parseDigest(value: unknown): Digest | null {
   return parsed.success ? parsed.data : null
 }
 
-// The same as in lib/tracker.ts: read from the repo on Vercel, so a new digest needs no deploy.
-const {
-  VERCEL_GIT_REPO_OWNER: owner,
-  VERCEL_GIT_REPO_SLUG: slug,
-  VERCEL_GIT_COMMIT_REF: commit,
-} = process.env
-const DATA_URL =
-  process.env.DATA_URL ??
-  (owner && slug && commit
-    ? `https://raw.githubusercontent.com/${owner}/${slug}/${commit}/data`
-    : null)
-
-export async function getDigest(): Promise<Digest | null> {
-  if (!DATA_URL) return parseDigest(localDigest)
-  try {
-    const res = await fetch(`${DATA_URL}/digest.json`, {
-      next: { revalidate: 300 },
-      signal: AbortSignal.timeout(8000),
-    })
-    if (!res.ok) throw new Error(String(res.status))
-    return parseDigest(await res.json())
-  } catch (err) {
-    console.error("[data] digest.json: using the bundled copy,", err)
-    return parseDigest(localDigest)
-  }
-}
+export const getDigest = async () =>
+  parseDigest(await loadData<unknown>("digest.json", localDigest))
 
 const HOUR = 36e5
 /** A summary older than this is not shown. */

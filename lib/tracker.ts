@@ -5,6 +5,7 @@ import localMilestones from "@/data/milestones.json"
 import localNews from "@/data/news.json"
 import localOverrides from "@/data/overrides.json"
 import localTracker from "@/data/tracker.json"
+import { loadData } from "@/lib/data"
 import { plainTitle } from "@/lib/format"
 import { hideInActivity, hideInNews, hideInTracker } from "@/lib/hide"
 import { LADDER } from "@/lib/ladder"
@@ -158,31 +159,6 @@ export type Tracker = {
   pick?: { id: string; at: string; reason: string } | null
 }
 
-// On Vercel the data is read from the repo, so a scout commit reaches the site without a deploy.
-const {
-  VERCEL_GIT_REPO_OWNER: owner,
-  VERCEL_GIT_REPO_SLUG: slug,
-  VERCEL_GIT_COMMIT_REF: ref,
-} = process.env
-const DATA_URL =
-  process.env.DATA_URL ??
-  (owner && slug && ref ? `https://raw.githubusercontent.com/${owner}/${slug}/${ref}/data` : null)
-
-async function load<T>(file: string, fallback: T): Promise<T> {
-  if (!DATA_URL) return fallback
-  try {
-    const res = await fetch(`${DATA_URL}/${file}`, {
-      next: { revalidate: 300 },
-      signal: AbortSignal.timeout(8000),
-    })
-    if (!res.ok) throw new Error(String(res.status))
-    return (await res.json()) as T
-  } catch (err) {
-    console.error(`[data] ${file}: using the bundled copy,`, err)
-    return fallback
-  }
-}
-
 type Overrides = {
   patches: object[]
   added: object[]
@@ -197,20 +173,20 @@ type Overrides = {
 export async function getRecords(): Promise<Tracker> {
   const [live, overrides] = await Promise.all([
     getUpstream(),
-    load<Overrides>("overrides.json", localOverrides),
+    loadData<Overrides>("overrides.json", localOverrides),
   ])
-  const tracker = live ?? (await load("tracker.json", localTracker as unknown as Tracker))
+  const tracker = live ?? (await loadData("tracker.json", localTracker as unknown as Tracker))
   return applyOverrides(tracker, overrides).tracker as Tracker
 }
 export const getTracker = async () => hideInTracker(await getRecords())
-export const getMilestones = () => load("milestones.json", localMilestones as Milestone[])
+export const getMilestones = () => loadData("milestones.json", localMilestones as Milestone[])
 export const getEvidence = async () =>
-  (await load("evidence.json", localEvidence as unknown as { items: Evidence[] })).items
-export const getChannels = () => load("channels.json", localChannels as Channel[])
+  (await loadData("evidence.json", localEvidence as unknown as { items: Evidence[] })).items
+export const getChannels = () => loadData("channels.json", localChannels as Channel[])
 export const getNews = async () =>
-  hideInNews(await load("news.json", localNews as unknown as NewsFile))
+  hideInNews(await loadData("news.json", localNews as unknown as NewsFile))
 export const getActivity = async () =>
-  hideInActivity(await load("activity.json", localActivity as unknown as Activity))
+  hideInActivity(await loadData("activity.json", localActivity as unknown as Activity))
 
 export { LADDER }
 
