@@ -33,6 +33,8 @@ jobs:
           git checkout -q --orphan pulse
           git rm -rfq .
           cp "$RUNNER_TEMP/pulse.json" pulse.json
-          git add pulse.json
+          # Vercel reads each branch's own vercel.json, so this branch has to opt out itself.
+          echo '{"git":{"deploymentEnabled":false}}' > vercel.json
+          git add pulse.json vercel.json
           git commit -qm "pulse"
           git push -qf origin pulse
