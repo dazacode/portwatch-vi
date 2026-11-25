@@ -299,7 +299,7 @@
         "findings": null
       },
       "to": {
-        "findingsSource": "Mastodon, 2026-11-25",
+        "findingsSource": "Bluesky, 2026-11-25",
         "findings": [
           {
             "text": "On 25 November at 03:16 UTC its creator, NotRexed, posted: “Ignore my other posts. Something’s coming soon.” The post names no project and gives no date. Two days earlier they had posted that they quit.",
@@ -316,6 +316,10 @@
           {
             "text": "The GTA6Modding Discord also went dark alongside Leonida's GitHub repositories.",
             "url": "https://mastodon.social/@newisty/117676628007508231"
+          },
+          {
+            "text": "Project Leonida’s Discord server was closed by Rockstar and Take‑Two.",
+            "url": "https://bsky.app/profile/redpixelgate.bsky.social/post/3n35n5c37zz2v"
           }
         ]
       }
@@ -1154,6 +1158,42 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "does not reach open world",
+          "no game data provided"
+        ],
+        "highlights": [],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Americas",
+        "summary": "Xbox Series GTA VI on Windows, early, not playable, reaches first-run screens",
+        "basedOn": [],
+        "id": "americas",
+        "repo": "Wertrex/Americas",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-25T14:52:25Z",
+          "pushedAt": "2026-11-25T15:28:34Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -1174,6 +1214,26 @@
     ]
   },
   "ignored": [
+    {
+      "repo": "RickyDivjakovski/Revenge",
+      "reason": "readme says not playable, no GTA VI",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "grzegorz2047/TrinityXSX",
+      "reason": "readme describes PS5 compatibility, not GTA VI",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "valouddsite/Xboxx",
+      "reason": "readme states it does not run Xbox games",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "xcl-dev/xcl",
+      "reason": "readme describes generic Xbox Series compatibility, not GTA VI",
+      "seenAt": "2026-11-25"
+    },
     {
       "repo": "DexNom/VIctory",
       "reason": "README describes generic Xbox Series support, no GTA VI.",
@@ -1222,6 +1282,11 @@
     "realblastex/flamingo",
     "DexNom/VIctory",
     "Itsbatt/victory-unified",
-    "kfedora/GTAVI-Xbox2PC"
+    "kfedora/GTAVI-Xbox2PC",
+    "xcl-dev/xcl",
+    "valouddsite/Xboxx",
+    "grzegorz2047/TrinityXSX",
+    "RickyDivjakovski/Revenge",
+    "Wertrex/Americas"
   ]
 }
