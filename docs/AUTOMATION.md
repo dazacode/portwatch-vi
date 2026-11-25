@@ -36,6 +36,13 @@ branch is read, and after that the copy in the build.
 The webhook is in the repository's settings: JSON, push events only, to `https://viportlive.com/api/refresh`.
 To change the secret, change it there and on Vercel, then redeploy.
 
+## What starts the jobs
+
+GitHub doesn't run this fork's schedules, so `timer/worker.mjs`, a Cloudflare Worker, starts the same workflows
+on a five-minute tick. It leaves a job that has just run, so it does no harm if GitHub's schedules wake up.
+It has no address. Its secret `GH_TOKEN` is a fine-grained token for this repository with Actions read and
+write; when it expires the jobs stop, and the Worker's cron list shows failures.
+
 ## News and activity harvesting
 
 `harvest.yml` runs every 30 minutes and has two jobs in one script:
