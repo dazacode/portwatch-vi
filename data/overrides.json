@@ -919,6 +919,79 @@
           "text": "Zortos joins as a private build at 20% (“First frame”): an XCL-based build that draws the Rockstar logo and loading art on stream before the run ends. No menu or world seen; no public code found."
         }
       ]
+    },
+    {
+      "effort": {
+        "id": "rico",
+        "name": "Rico",
+        "repo": null,
+        "basedOn": [
+          "marvis"
+        ],
+        "evidence": "Live streams on Discord, pictures on X",
+        "byline": "Streamed live · private code, built on VIctory",
+        "tier": "tracked",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "Rico's private build, under VIctory's window title. It is past the prologue and in Jason's first mission, “Gone Fishing”. 30 fps is reported, but the pictures show it only on the pause map; the one frame in the world reads 1 fps. Self-reported.",
+        "highlights": [
+          "Past the prologue, in Jason’s first mission, “Gone Fishing”",
+          "Pause map draws at 30 fps",
+          "Cutscene characters draw lit and textured"
+        ],
+        "blockers": [
+          "30 fps is shown only on the pause map; a cutscene reads 1 fps (1,322.7 ms a frame)",
+          "Water was broken at the time, by Rico’s own message in a picture",
+          "No public code or recording found, so nobody outside can test it"
+        ],
+        "provenOn": null,
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0.1,
+          "render": 0.5,
+          "fps": 1,
+          "stability": "unknown"
+        },
+        "verification": "self-reported",
+        "findings": [
+          {
+            "text": "A post of 25 November, 10:39 UTC, says Rico “just reached 30 FPS gameplay”. Both its pictures show the pause-menu map, at 30 fps with 225 and 307 draws a frame. Menus run at 30 fps on VIctory too, so this isn’t a gameplay speed. We score the world’s figure.",
+            "url": "https://x.com/yeaneboy/status/2125539755668689168"
+          },
+          {
+            "text": "Those pictures show “Gone Fishing”, Jason’s first mission, under way, with the objective “Catch up to the plane”. That is past the prologue. VIPortLive also saw this on the stream, and that cutscenes still drop.",
+            "url": "https://x.com/yeaneboy/status/2125539755668689168"
+          },
+          {
+            "text": "A post 13 minutes earlier shows a cutscene at 1 fps (1,322.7 ms, 2,684 draws a frame): two officers by a car, lit and textured, with blurring and blocky patches. It doesn’t name Rico, but the desktop looks the same. It calls the port close to finished; one such frame doesn’t show that.",
+            "url": "https://x.com/yeaneboy/status/2125536383293145390"
+          },
+          {
+            "text": "The window title reads VIctory in every picture. Which version or fork it is isn’t shown, and no public code was found.",
+            "url": "https://x.com/yeaneboy/status/2125539755668689168"
+          },
+          {
+            "text": "In messages visible in the pictures, Rico claims “20 plus fps” and says the water is broken after going back to an earlier version. The fps isn’t shown in any picture.",
+            "url": "https://x.com/yeaneboy/status/2125539755668689168"
+          }
+        ],
+        "findingsSource": "From two posts on X by yeaneboy and what VIPortLive saw on the stream, on 25 November. No recording was found.",
+        "stats": {},
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": []
+      },
+      "changes": [
+        {
+          "date": "2026-11-25",
+          "kind": "new",
+          "text": "Rico joins as a private build on VIctory: past the prologue and in Jason’s first mission, “Gone Fishing”. 30 fps is reported, but the pictures show it only on the pause map; a cutscene reads 1 fps."
+        }
+      ]
     }
   ],
   "pick": {
