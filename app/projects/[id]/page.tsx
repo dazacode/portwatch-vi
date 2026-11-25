@@ -1,9 +1,13 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
+import { Breadcrumb } from "@/components/breadcrumb"
 import { Confidence } from "@/components/confidence"
 import { Container } from "@/components/container"
+import { ScoreBreakdown } from "@/components/score-breakdown"
 import { ago, utcDay } from "@/lib/format"
+import { pageMeta, projectMeta } from "@/lib/seo"
+import { SOURCE } from "@/lib/site"
 import {
   type Evidence,
   getActivity,
@@ -39,7 +43,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const project = await getProject((await params).id)
-  return { title: project?.standing.name ?? "Project" }
+  return project ? pageMeta(projectMeta(project.standing)) : notFound()
 }
 
 const KIND: Record<Evidence["kind"], string> = {
@@ -56,16 +60,23 @@ export default async function Page({ params }: Props) {
   if (!project) notFound()
   const { standing: s, evidence, activity } = project
   return (
-    <Container className="pt-8">
-      <Link
-        href="/standings"
-        className="text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground"
-      >
-        Standings
-      </Link>
+    <Container className="pt-8 wrap-anywhere">
+      <Breadcrumb
+        parent={{ name: "Standings", path: "/standings" }}
+        page={{ name: s.name, path: `/projects/${s.id}` }}
+      />
       <h1 className="mt-2 text-3xl font-bold">{s.name}</h1>
       <p className="mt-2 max-w-prose text-muted-foreground">{s.summary}</p>
       <dl className="mt-6 flex flex-wrap gap-x-12 gap-y-4">
+        <div>
+          <dt className="text-sm text-muted-foreground">Score</dt>
+          <dd className="text-4xl font-extrabold">{s.rating}%</dd>
+          <dd className="text-sm">
+            <Link href="/method" className="underline underline-offset-4">
+              How it is worked out
+            </Link>
+          </dd>
+        </div>
         <div>
           <dt className="text-sm text-muted-foreground">Claimed</dt>
           <dd className="text-4xl font-extrabold">{s.score}%</dd>
@@ -75,6 +86,19 @@ export default async function Page({ params }: Props) {
           <dt className="text-sm text-muted-foreground">Verified</dt>
           <dd className="text-4xl font-extrabold">{s.verified}%</dd>
           <dd className="text-sm">{s.verifiedStage ?? "Nothing yet"}</dd>
+        </div>
+        <div>
+          <dt className="text-sm text-muted-foreground">{SOURCE.name}</dt>
+          <dd className="text-4xl font-extrabold">
+            {s.sourceScore === null ? "–" : `${s.sourceScore}%`}
+          </dd>
+          <dd className="text-sm">
+            {s.sourceScore === null
+              ? "Not listed there"
+              : s.sourceScore === s.score
+                ? "The same claim"
+                : "We have newer findings"}
+          </dd>
         </div>
       </dl>
       <p className="mt-4 flex flex-wrap gap-x-5 text-sm">
@@ -89,7 +113,41 @@ export default async function Page({ params }: Props) {
           </Link>
         )}
       </p>
+      {s.findings.length > 0 && (
+        <section className="mt-10">
+          <h2 className="mb-2 text-lg font-semibold">Findings</h2>
+          <p className="mb-3 max-w-prose text-sm text-muted-foreground">
+            {s.findingsSource ?? "From the project’s own reports."}
+          </p>
+          <ul className="pane px-5 py-1 *:last:border-0">
+            {s.findings.map((f) => (
+              <li key={f.text} className="border-b py-3 text-sm">
+                {f.text}
+                {f.url && (
+                  <>
+                    {" "}
+                    <a
+                      href={f.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline underline-offset-4 hover:text-foreground"
+                    >
+                      Source
+                    </a>
+                  </>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       <div className="mt-10 grid gap-x-12 gap-y-10 lg:grid-cols-2">
+        {s.parts.length > 0 && (
+          <section>
+            <h2 className="mb-4 text-lg font-semibold">How the score adds up</h2>
+            <ScoreBreakdown parts={s.parts} />
+          </section>
+        )}
         <section>
           <h2 className="mb-4 text-lg font-semibold">How sure we are</h2>
           <Confidence stages={s.checks} claimed={s.steps} />
@@ -104,7 +162,7 @@ export default async function Page({ params }: Props) {
                 : "Reports in its issues are read every three hours."}
             </p>
           ) : (
-            <ul>
+            <ul className="pane px-5 py-1 mt-3 *:last:border-0">
               {evidence.map((e) => (
                 <li key={e.url + e.at} className="border-b py-3 text-sm">
                   <p className="flex flex-wrap justify-between gap-x-4">
@@ -142,7 +200,7 @@ export default async function Page({ params }: Props) {
             {activity.openPrs === 1 ? " request" : " requests"} right now.
           </p>
           {activity.pulls.length > 0 && (
-            <ul className="mt-4">
+            <ul className="pane px-5 py-1 mt-4 *:last:border-0">
               {activity.pulls.slice(0, 12).map((p) => (
                 <li key={p.number} className="border-b py-2 text-sm">
                   <a
@@ -155,14 +213,14 @@ export default async function Page({ params }: Props) {
                   </a>
                   <span className="block text-xs text-muted-foreground">
                     {p.state}
-                    {p.draft ? " draft" : ""} · {p.author || "unknown"} · {utcDay(p.at)}
+                    {p.draft ? " draft" : ""}, {p.author || "unknown"}, {utcDay(p.at)}
                   </span>
                 </li>
               ))}
             </ul>
           )}
           {activity.commits.length > 0 && (
-            <ul className="mt-4">
+            <ul className="pane px-5 py-1 mt-4 *:last:border-0">
               {activity.commits.slice(0, 12).map((c) => (
                 <li key={c.sha} className="border-b py-2 text-sm">
                   <a
@@ -175,7 +233,7 @@ export default async function Page({ params }: Props) {
                   </a>{" "}
                   <span className="text-muted-foreground">{c.message}</span>
                   <span className="block text-xs text-muted-foreground">
-                    {c.author || "unknown"} · {ago(c.at, new Date().toISOString())}
+                    {c.author || "unknown"}, {ago(c.at, new Date().toISOString())}
                   </span>
                 </li>
               ))}

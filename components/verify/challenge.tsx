@@ -51,7 +51,7 @@ export function Challenge({
     : ""
 
   return (
-    <div className="border p-4 sm:p-6">
+    <div className="pane p-5 sm:p-6">
       <label htmlFor="project" className="text-sm font-medium">
         Project
       </label>

@@ -3,11 +3,17 @@ import localChannels from "@/data/channels.json"
 import localEvidence from "@/data/evidence.json"
 import localMilestones from "@/data/milestones.json"
 import localNews from "@/data/news.json"
+import localOverrides from "@/data/overrides.json"
 import localTracker from "@/data/tracker.json"
 import { plainTitle } from "@/lib/format"
+import { hideInActivity, hideInNews, hideInTracker } from "@/lib/hide"
+import { LADDER } from "@/lib/ladder"
 import type { Channel } from "@/lib/live/types"
 import type { Milestone } from "@/lib/milestones"
-import { isPrivateBuild, MILESTONES, overall, scoreEffort } from "@/lib/scoring.mjs"
+import { applyOverrides } from "@/lib/overrides.mjs"
+import { rate } from "@/lib/rating.mjs"
+import { isPrivateBuild, overall, scoreEffort } from "@/lib/scoring.mjs"
+import { getUpstream } from "@/lib/upstream"
 import { verify } from "@/lib/verification.mjs"
 
 export type Effort = {
@@ -18,9 +24,25 @@ export type Effort = {
   summary: string
   blockers: string[]
   verification: string
+  /** Concrete observations from the newest footage, each with its source. */
+  findings?: { text: string; url?: string }[]
+  /** Where the findings above come from. */
+  findingsSource?: string
+  /** The code is private for now, but the project says it will publish it once the build is out. */
+  publicLater?: boolean
+  /** What upstream scores it, before our findings. Null when upstream doesn't list it. */
+  sourceScore?: number | null
   nuked?: { at: string; note: string }
   gta: Record<"loads" | "boots" | "menu" | "world" | "playable" | "fps", number>
-  stats: { stars?: number; commits7d?: number | null; missing?: boolean }
+  stats: {
+    stars?: number
+    commits7d?: number | null
+    missing?: boolean
+    missingStatus?: number
+    createdAt?: string
+    pushedAt?: string
+    archived?: boolean
+  }
 }
 
 export type Evidence = {
@@ -113,8 +135,18 @@ export type NewsArticle = {
   by: string
 }
 
+/** The Xbox build's executable: a countdown until it is out, a count up from then on. */
+export type Exe = {
+  status: string
+  expected?: string
+  expectedAt?: string
+  releasedAt?: string
+  source?: string
+}
+
 export type Tracker = {
   updated: string
+  exe: Exe
   efforts: Effort[]
   news: NewsArticle[]
   changes: { date: string; kind: string; text: string }[]
@@ -122,6 +154,8 @@ export type Tracker = {
   dmca: { url: string; date: string; repoCount: number; gta6: boolean; tracked: string[] }[]
   flagged: { id: string; pattern: string; reason: string }[]
   scout: { lastRun: string }
+  /** The project we place first ourselves, where private builds are ranked too. Always marked. */
+  pick?: { id: string; at: string; reason: string } | null
 }
 
 // On Vercel the data is read from the repo, so a scout commit reaches the site without a deploy.
@@ -149,15 +183,38 @@ async function load<T>(file: string, fallback: T): Promise<T> {
   }
 }
 
-export const getTracker = () => load("tracker.json", localTracker as unknown as Tracker)
+type Overrides = { patches: object[]; added: object[]; pick?: object }
+
+/** Unfiltered, with our findings on top. For dates and counts, never for text that is shown. */
+export async function getRecords(): Promise<Tracker> {
+  const [live, overrides] = await Promise.all([
+    getUpstream(),
+    load<Overrides>("overrides.json", localOverrides),
+  ])
+  const tracker = live ?? (await load("tracker.json", localTracker as unknown as Tracker))
+  return applyOverrides(tracker, overrides).tracker as Tracker
+}
+export const getTracker = async () => hideInTracker(await getRecords())
 export const getMilestones = () => load("milestones.json", localMilestones as Milestone[])
 export const getEvidence = async () =>
   (await load("evidence.json", localEvidence as unknown as { items: Evidence[] })).items
 export const getChannels = () => load("channels.json", localChannels as Channel[])
-export const getNews = () => load("news.json", localNews as unknown as NewsFile)
-export const getActivity = () => load("activity.json", localActivity as unknown as Activity)
+export const getNews = async () =>
+  hideInNews(await load("news.json", localNews as unknown as NewsFile))
+export const getActivity = async () =>
+  hideInActivity(await load("activity.json", localActivity as unknown as Activity))
 
-export const LADDER = MILESTONES.filter((m) => m.key !== "groundwork" && m.key !== "complete")
+export { LADDER }
+
+/** One line of the sum behind our score. A null note was never measured. */
+export type ScorePart = {
+  key: string
+  label: string
+  claimed: number
+  counted: number
+  max: number
+  note: string | null
+}
 
 export type Standing = {
   id: string
@@ -167,6 +224,12 @@ export type Standing = {
   nuked: string | null
   missing: boolean
   tier: Effort["tier"]
+  /** Our score: the claim, discounted by how little of it others have seen. The ranking is by this. */
+  rating: number
+  parts: ScorePart[]
+  /** What upstream scores it. Null when upstream doesn't list it. */
+  sourceScore: number | null
+  /** What it claims. */
   score: number
   stage: string
   /** One value per LADDER step: 0, 0.5 or 1. */
@@ -179,12 +242,15 @@ export type Standing = {
   verifiedStage: string | null
   claimedStage: string
   checks: StageCheck[]
+  /** Concrete observations from the newest footage, each with its source. */
+  findings: { text: string; url?: string }[]
+  findingsSource: string | null
   summary: string
 }
 
 const evidenceSum = (s: Standing) => s.checks.reduce((sum, c) => sum + c.confidence, 0)
 
-/** Verified first, then the evidence gathered so far. A claim only breaks what is left. */
+/** By our score. Equal scores go by evidence, then the claim, then stars. */
 export function getStandings(tracker: Tracker, evidence: Evidence[]): Standing[] {
   return tracker.efforts
     .map((e): Standing => {
@@ -193,6 +259,7 @@ export function getStandings(tracker: Tracker, evidence: Evidence[]): Standing[]
         evidence.filter((x) => x.effortId === e.id),
         s.score
       )
+      const ours = rate(e, v.stages)
       return {
         id: e.id,
         name: e.name,
@@ -201,6 +268,9 @@ export function getStandings(tracker: Tracker, evidence: Evidence[]): Standing[]
         nuked: e.nuked?.at ?? null,
         missing: e.stats.missing ?? false,
         tier: e.tier,
+        rating: ours.score,
+        parts: ours.parts,
+        sourceScore: e.sourceScore ?? null,
         score: s.score,
         stage: s.reachedLabel,
         steps: LADDER.map((m) => e.gta[m.key as keyof Effort["gta"]] ?? 0),
@@ -211,13 +281,15 @@ export function getStandings(tracker: Tracker, evidence: Evidence[]): Standing[]
         verifiedStage: LADDER.find((m) => m.key === v.reached)?.label ?? null,
         claimedStage: s.reached,
         checks: v.stages,
+        findings: e.findings ?? [],
+        findingsSource: e.findingsSource ?? null,
         summary: e.summary,
       }
     })
     .sort(
       (a, b) =>
         Number(Boolean(a.nuked)) - Number(Boolean(b.nuked)) ||
-        b.verified - a.verified ||
+        b.rating - a.rating ||
         evidenceSum(b) - evidenceSum(a) ||
         b.score - a.score ||
         (b.stars ?? 0) - (a.stars ?? 0)
@@ -232,6 +304,17 @@ export function getAnswer(tracker: Tracker) {
     leader: leader ? { name: leader.effort.name as string, score: leader.score as number } : null,
   }
 }
+
+/** What the opening clock counts from (released) or to. Null without a usable date. */
+export function getDrop({ exe }: Pick<Tracker, "exe">) {
+  const released = exe.status === "released" && Boolean(exe.releasedAt)
+  const at = (released ? exe.releasedAt : exe.expectedAt) ?? exe.expected
+  if (!at || !Number.isFinite(Date.parse(at))) return null
+  const source = exe.source?.startsWith("https://") ? exe.source : null
+  return { at, released, source }
+}
+
+export type Drop = NonNullable<ReturnType<typeof getDrop>>
 
 const CHANGE_KINDS = new Set(["up", "down", "claim", "removed"])
 

@@ -12,7 +12,8 @@ permissions:
 
 concurrency:
   group: data-write
-  cancel-in-progress: true
+  # The group is shared, so cancelling would stop a sync, a scout or a challenge halfway.
+  cancel-in-progress: false
 
 jobs:
   harvest:
@@ -40,5 +41,34 @@ jobs:
           git add data/news.json data/activity.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "harvest: $(date -u '+%F %H:%M') UTC"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
+
+      # Runs after the harvest is safely pushed, and can't fail it. No key: see docs/AUTOMATION.md.
+      - uses: pnpm/action-setup@v4
+        continue-on-error: true
+
+      - name: Summarise with a free AI model
+        id: digest
+        continue-on-error: true
+        timeout-minutes: 7
+        run: |
+          pnpm install --prod --frozen-lockfile --ignore-scripts
+          node scripts/digest.mjs
+        # Variables, not secrets: nothing here needs a key.
+        env:
+          FREE_AI: ${{ vars.FREE_AI }}
+          FREE_AI_BASE_URL: ${{ vars.FREE_AI_BASE_URL }}
+          FREE_AI_MODEL: ${{ vars.FREE_AI_MODEL }}
+
+      - name: Commit digest
+        if: steps.digest.outcome == 'success'
+        continue-on-error: true
+        run: |
+          git config user.name "viportlive-harvest[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/digest.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "digest: $(date -u '+%F %H:%M') UTC"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push

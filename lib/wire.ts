@@ -117,8 +117,7 @@ export function wireItems(
     const at = Date.parse(p.at)
     if (now - at > PULL_MS) continue
     const opening = p.state === "open"
-    const who =
-      p.projectId === "upstream" ? "PortWatch (upstream)" : p.projectId ? "A project" : p.repo
+    const who = p.projectId ? "A project" : p.repo
     out.push({
       id: `${p.repo}:${p.number}:${p.state}:${bucket(at)}`,
       kind: opening ? "pull" : "merge",

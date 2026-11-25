@@ -1,13 +1,20 @@
 import { unstable_cache } from "next/cache"
+import { type BoardEvent, getBoard, isRecent } from "@/lib/board"
+import { type Breakdown, getBreakdowns, getDigest, getNote } from "@/lib/digest"
 import { plainTitle } from "@/lib/format"
+import { isHidden } from "@/lib/hide"
 import type { Stream } from "@/lib/live/types"
 import { compareToLast, gain, headline, type Milestone, rate } from "@/lib/milestones"
-import { SITE, UPSTREAM_NAME, UPSTREAM_REPO } from "@/lib/site"
+import { SITE } from "@/lib/site"
+import { getProjects, type Project, reporters } from "@/lib/standings"
 import {
   type ActivityCommit,
+  type Drop,
   getActivity,
+  getDrop,
   getEvidence,
   getMilestones,
+  getNews,
   getStandings,
   getTracker,
   LADDER,
@@ -29,7 +36,13 @@ export type Commit = {
   url: string
 }
 
-type Base = { id: string; projectId: string | null; level: number }
+type Base = {
+  id: string
+  projectId: string | null
+  level: number
+  /** A line an AI model wrote about exactly this item. Shown under it, never instead of it. */
+  note?: string
+}
 
 export type Slide =
   | (Base & {
@@ -47,23 +60,71 @@ export type Slide =
     })
   | (Base & {
       kind: "race"
-      rows: { id: string; name: string; score: number; verified: number; next: string }[]
+      rows: { id: string; name: string; score: number; rating: number; next: string }[]
     })
   | (Base & { kind: "commit"; commit: Commit })
   | (Base & { kind: "update"; text: string; date: string })
   | (Base & { kind: "trailer"; stream: Stream })
   | (Base & { kind: "wire"; item: WireItem })
+  | (Base & { kind: "board"; event: BoardEvent })
+  | (Base & { kind: "breakdown"; breakdown: Breakdown })
 
-export type Broadcast = { at: string; slides: Slide[]; commits: Commit[] }
+export type Leader = {
+  id: string
+  name: string
+  stage: string
+  rating: number
+  score: number
+  steps: number[]
+  isPrivate: boolean
+  /** We placed it first ourselves. */
+  picked: boolean
+  /** People outside the project who have reported on it. */
+  reporters: number
+}
+
+const toLeader = ({
+  id,
+  name,
+  stage,
+  rating,
+  score,
+  steps,
+  isPrivate,
+  pick,
+  checks,
+}: Project): Leader => ({
+  id,
+  name,
+  stage,
+  rating,
+  score,
+  steps,
+  isPrivate,
+  picked: pick !== null,
+  reporters: reporters(checks),
+})
+
+export type Broadcast = {
+  at: string
+  drop: Drop | null
+  leaders: Leader[]
+  /** The same, with private builds ranked too. */
+  everyone: Leader[]
+  slides: Slide[]
+  /** The last commit of each project. */
+  commits: Commit[]
+  /** Every recent commit, newest first, as it happens. */
+  feed: Commit[]
+}
+
+const FEED_LENGTH = 40
 
 /** Atom feeds first: instant and keyless. The token path and the pulse branch are fallbacks. */
 const liveCommits = unstable_cache(
   async (): Promise<Commit[]> => {
     const tracker = await getTracker()
-    const targets = [
-      ...tracker.efforts,
-      { id: "upstream", name: UPSTREAM_NAME, repo: UPSTREAM_REPO },
-    ]
+    const targets = tracker.efforts
     const live = await recentCommitsFast(targets, 10).catch(() => [])
     if (live.length) return live
     const token = process.env.GITHUB_TOKEN
@@ -84,30 +145,42 @@ const liveCommits = unstable_cache(
       pulse[e.id] ? [{ ...pulse[e.id], projectId: e.id, name: e.name }] : []
     )
   },
-  ["pulse"],
+  ["pulse-2"],
   { revalidate: 15 }
 )
 
-async function getCommits(tracker: Tracker): Promise<Commit[]> {
+async function getFeed(tracker: Tracker): Promise<Commit[]> {
   const live = await liveCommits().catch((err) => {
     console.error("[broadcast] no commits:", err instanceof Error ? err.message : err)
     return [] as Commit[]
   })
-  const names = new Set([...tracker.efforts.filter((e) => !e.nuked).map((e) => e.id), "upstream"])
-  const seen = new Set<string>()
+  const names = new Set(tracker.efforts.filter((e) => !e.nuked).map((e) => e.id))
   return live
-    .filter((c) => names.has(c.projectId))
+    .filter((c) => names.has(c.projectId) && !isHidden(c))
     .map((c) => ({ ...c, message: plainTitle(c.message) }))
     .sort((a, b) => Date.parse(b.at) - Date.parse(a.at))
-    .filter((c) => {
-      if (seen.has(c.projectId)) return false
-      seen.add(c.projectId)
-      return true
-    })
 }
 
+function firstBy<T>(list: T[], key: (item: T) => string): T[] {
+  const seen = new Set<string>()
+  return list.filter((item) => {
+    const k = key(item)
+    if (seen.has(k)) return false
+    seen.add(k)
+    return true
+  })
+}
+
+const lastPerProject = (feed: Commit[]) => firstBy(feed, (c) => c.projectId)
+// Forks carry each other's history, so the same commit can arrive from several projects.
+const shownFeed = (feed: Commit[]) => firstBy(feed, (c) => c.sha).slice(0, FEED_LENGTH)
+
 export async function getWire(): Promise<WireItem[]> {
-  return wireItems(await liveCommits(), (await getActivity()).feed.filter(isPull), Date.now())
+  return wireItems(
+    (await liveCommits()).filter((c) => !isHidden(c)),
+    (await getActivity()).feed.filter(isPull),
+    Date.now()
+  )
 }
 
 const isPull = (item: PullRequest | ActivityCommit): item is PullRequest => "number" in item
@@ -150,18 +223,39 @@ export function interleave<T>(...lists: T[][]): T[] {
   ).flat()
 }
 
+const noted = (slide: Slide, note: string | null): Slide => (note ? { ...slide, note } : slide)
+
+export const breakdownSlides = (breakdowns: Breakdown[]): Slide[] =>
+  breakdowns.map((breakdown) => ({
+    kind: "breakdown",
+    id: breakdown.id,
+    projectId: null,
+    level: 50,
+    breakdown,
+  }))
+
 export async function getBroadcast(): Promise<Broadcast> {
-  const [tracker, milestones, evidence] = await Promise.all([
+  const [tracker, milestones, evidence, activity, news, digest] = await Promise.all([
     getTracker(),
     getMilestones(),
     getEvidence(),
+    getActivity(),
+    getNews(),
+    getDigest(),
   ])
-  const [commits, wire] = await Promise.all([getCommits(tracker), getWire()])
+  const [feed, wire, board] = await Promise.all([getFeed(tracker), getWire(), getBoard()])
+  const commits = lastPerProject(feed)
   const standings = getStandings(tracker, evidence).filter((s) => !s.nuked)
   const checks = new Map(standings.map((s) => [s.id, s.checks]))
   const sure = (m: Milestone) =>
     checks.get(m.id)?.find((c) => c.stage === m.stageTo)?.confidence ?? 0
   const scoreOf = new Map(standings.map((s) => [s.id, s.score]))
+  // The same ranking as /standings: public code only.
+  const sources = { tracker, activity, milestones, evidence }
+  const ranked = getProjects(standings, sources).filter((p) => p.rank !== null)
+  const everyone = getProjects(standings, sources, { withPrivate: true }).filter(
+    (p) => p.rank !== null
+  )
 
   const moves = milestones
     .map((m, i) => milestoneSlide(m, milestones.slice(0, i), sure(m)))
@@ -171,53 +265,87 @@ export async function getBroadcast(): Promise<Broadcast> {
     kind: "race",
     id: "race",
     projectId: null,
-    level: standings[0]?.score ?? 0,
-    rows: standings.slice(0, 5).map(({ id, name, score, verified, checks: list }) => {
+    level: ranked[0]?.score ?? 0,
+    rows: ranked.slice(0, 5).map(({ id, name, score, rating, checks: list }) => {
       const gap = list.find((c) => !c.verified)
       const label = LADDER.find((m) => m.key === gap?.stage)?.label.toLowerCase()
       return {
         id,
         name,
         score,
-        verified,
+        rating,
         next: gap && gap.people ? `${Math.round(gap.confidence * 100)}% sure of “${label}”` : "",
       }
     }),
   }
   const pushes = commits.slice(0, 4).map(
-    (commit): Slide => ({
-      kind: "commit",
-      id: `commit:${commit.projectId}:${commit.sha}`,
-      projectId: commit.projectId,
-      level: scoreOf.get(commit.projectId) ?? 0,
-      commit,
-    })
+    (commit): Slide =>
+      noted(
+        {
+          kind: "commit",
+          id: `commit:${commit.projectId}:${commit.sha}`,
+          projectId: commit.projectId,
+          level: scoreOf.get(commit.projectId) ?? 0,
+          commit,
+        },
+        getNote(digest, { url: commit.url })
+      )
   )
   const updates = tracker.changes
-    .filter((c) => ["claim", "removed", "down"].includes(c.kind))
+    // Projects that went down have a slide of their own.
+    .filter((c) => c.kind === "claim" || (c.kind === "down" && !/ is nuked\b/.test(c.text)))
     .slice(-3)
     .reverse()
     .map(
-      (c): Slide => ({
-        kind: "update",
-        id: `update:${c.date}:${c.text.slice(0, 60)}`,
-        projectId: null,
-        level: 30,
-        text: plainTitle(c.text).replace(/“[-*]\s+/g, "“"),
-        date: c.date,
-      })
+      (c): Slide =>
+        noted(
+          {
+            kind: "update",
+            id: `update:${c.date}:${c.text.slice(0, 60)}`,
+            projectId: null,
+            level: 30,
+            text: plainTitle(c.text).replace(/“[-*]\s+/g, "“"),
+            date: c.date,
+          },
+          getNote(digest, { date: c.date, text: c.text })
+        )
     )
 
   const breaking = wire
     .filter((w) => w.severity >= 2)
     .slice(0, 3)
     .map(
-      (item): Slide => ({
-        kind: "wire",
-        id: `wire:${item.id}`,
-        projectId: item.projectId,
-        level: (item.projectId && scoreOf.get(item.projectId)) || 45,
-        item,
+      (item): Slide =>
+        noted(
+          {
+            kind: "wire",
+            id: `wire:${item.id}`,
+            projectId: item.projectId,
+            level: (item.projectId && scoreOf.get(item.projectId)) || 45,
+            item,
+          },
+          getNote(digest, { url: item.url })
+        )
+    )
+
+  // A join that is a milestone as well is told once.
+  const told = new Set(
+    moves.flatMap((m) => (m.kind === "milestone" && m.debut ? [m.projectId] : []))
+  )
+  const boardSlides = board
+    .filter((e) => isRecent(e, 2, Date.now()) && !(e.kind === "joined" && told.has(e.projectId)))
+    // Two of each, or a busy day of joins would hide a shutdown.
+    .filter(
+      (e, i, all) =>
+        all.slice(0, i).filter((x) => (x.kind === "joined") === (e.kind === "joined")).length < 2
+    )
+    .map(
+      (event): Slide => ({
+        kind: "board",
+        id: `board:${event.id}`,
+        projectId: event.projectId,
+        level: scoreOf.get(event.projectId) ?? 0,
+        event,
       })
     )
 
@@ -227,13 +355,23 @@ export async function getBroadcast(): Promise<Broadcast> {
 
   return {
     at: new Date().toISOString(),
-    slides: interleave(breaking, moves, [race, ...pushes], interleave(updates, trailers)),
+    drop: getDrop(tracker),
+    leaders: ranked.slice(0, 5).map(toLeader),
+    everyone: everyone.slice(0, 5).map(toLeader),
+    slides: [
+      ...boardSlides,
+      ...breakdownSlides(getBreakdowns(digest, news, tracker)),
+      ...interleave(breaking, moves, [race, ...pushes], interleave(updates, trailers)),
+    ],
     commits,
+    feed: shownFeed(feed),
   }
 }
 
-/** Just the commits, for the independently polled list. */
-export async function getLiveCommits(): Promise<{ at: string; commits: Commit[] }> {
-  const commits = await getCommits(await getTracker())
-  return { at: new Date().toISOString(), commits }
+export type Pulse = { at: string; commits: Commit[]; feed: Commit[] }
+
+/** Just the commits, for the independently polled lists. */
+export async function getLiveCommits(): Promise<Pulse> {
+  const feed = await getFeed(await getTracker())
+  return { at: new Date().toISOString(), commits: lastPerProject(feed), feed: shownFeed(feed) }
 }

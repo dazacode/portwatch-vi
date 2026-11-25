@@ -1,4 +1,4 @@
-import { LADDER } from "@/lib/tracker"
+import { LADDER } from "@/lib/ladder"
 import { cn } from "@/lib/utils"
 
 const said = (v: number) => (v >= 1 ? "yes" : v > 0 ? "partly" : "no")

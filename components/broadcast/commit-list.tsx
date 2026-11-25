@@ -3,12 +3,10 @@
 import { useEffect, useState } from "react"
 import useSWR from "swr"
 import { Button } from "@/components/ui/button"
-import type { Commit } from "@/lib/broadcast"
+import type { Commit, Pulse } from "@/lib/broadcast"
 import { ago } from "@/lib/format"
 
 const SHORT = 6
-
-type Pulse = { at: string; commits: Commit[] }
 
 async function fetcher(url: string): Promise<Pulse> {
   const res = await fetch(url)
@@ -20,7 +18,7 @@ export function CommitList({ commits, at }: { commits: Commit[]; at: string }) {
   const [all, setAll] = useState(false)
   // The list refreshes itself; the clock ticks separately so "12 s ago" stays honest.
   const { data } = useSWR<Pulse>("/api/pulse", fetcher, {
-    fallbackData: { at, commits },
+    fallbackData: { at, commits, feed: [] },
     refreshInterval: 15_000,
     keepPreviousData: true,
   })
@@ -34,11 +32,11 @@ export function CommitList({ commits, at }: { commits: Commit[]; at: string }) {
   if (!pulse.commits.length) return null
   return (
     <section className="mt-6" aria-labelledby="commits">
-      <h2 id="commits" className="border-b pb-1.5 text-sm font-medium">
+      <h2 id="commits" className="text-sm font-medium">
         Last commit in every project{" "}
-        <span className="font-normal text-muted-foreground">· live, {ago(pulse.at, now)}</span>
+        <span className="font-normal text-muted-foreground">checked {ago(pulse.at, now)}</span>
       </h2>
-      <ul>
+      <ul className="pane px-5 py-1 mt-3 *:last:border-0">
         {(all ? pulse.commits : pulse.commits.slice(0, SHORT)).map((c) => (
           <li key={c.projectId} className="border-b">
             <a

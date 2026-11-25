@@ -1,5 +1,5 @@
+import { LADDER } from "@/lib/ladder"
 import type { StageCheck } from "@/lib/tracker"
-import { LADDER } from "@/lib/tracker"
 import { cn } from "@/lib/utils"
 
 const people = (n: number) => (n === 1 ? "1 person" : `${n} people`)

@@ -5,6 +5,7 @@
 import { createHash } from 'node:crypto';
 import { readFile, writeFile } from 'node:fs/promises';
 import { checkReading, commitsIn, disqualify, GPU, isCopy, readByRule } from './lib/evidence.mjs';
+import { readTracker } from './lib/tracker.mjs';
 
 const MAX_PAGES = 3;
 const MAX_READS = 25; // Claude calls per run
@@ -54,7 +55,7 @@ async function realCommit(repo, body) {
   return null;
 }
 
-const { efforts, scout } = await read('tracker.json');
+const { efforts, scout } = await readTracker();
 const state = await read('evidence.json');
 const done = new Set(state.read);
 const items = new Map(state.items.map((e) => [e.url + (e.kind === 'challenge' ? e.at : ''), e]));

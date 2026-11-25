@@ -1,8 +1,10 @@
 import type { Metadata } from "next"
-import Link from "next/link"
 import { notFound } from "next/navigation"
+import { Breadcrumb } from "@/components/breadcrumb"
 import { Container } from "@/components/container"
+import { JsonLd } from "@/components/json-ld"
 import { utcDay } from "@/lib/format"
+import { articleLd, articleMeta, PAGES, pageMeta } from "@/lib/seo"
 import { getTracker } from "@/lib/tracker"
 
 export const revalidate = 300
@@ -17,32 +19,31 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = await find((await params).id)
-  return { title: article?.title ?? "Article", description: article?.dek }
+  return article ? pageMeta(articleMeta(article)) : notFound()
 }
 
 export default async function Page({ params }: Props) {
   const article = await find((await params).id)
   if (!article) notFound()
   return (
-    <Container className="max-w-2xl pt-8">
-      <Link
-        href="/news"
-        className="text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground"
-      >
-        News
-      </Link>
-      <p className="mt-4 text-xs uppercase tracking-wide text-muted-foreground">
-        {article.category} · {utcDay(article.date)}
-      </p>
-      <h1 className="mt-1 text-3xl font-bold">{article.title}</h1>
+    <Container className="max-w-2xl pt-8 wrap-anywhere">
+      <JsonLd data={articleLd(article)} />
+      <Breadcrumb
+        parent={{ name: "News", path: PAGES.news.path }}
+        page={{ name: article.title, path: `/news/${article.id}` }}
+      />
+      <h1 className="mt-2 text-3xl font-bold">{article.title}</h1>
       <p className="mt-2 text-lg text-muted-foreground">{article.dek}</p>
-      <div className="mt-6 space-y-4">
+      <p className="mt-2 text-sm text-muted-foreground">
+        {article.category}, <time dateTime={article.date}>{utcDay(article.date)}</time>
+      </p>
+      <div className="pane mt-6 space-y-4 p-5 sm:p-7">
         {article.body.map((p) => (
           <p key={p.slice(0, 40)}>{p}</p>
         ))}
       </div>
       {article.sources.length > 0 && (
-        <div className="mt-8 border-t pt-4 text-sm">
+        <div className="mt-8 text-sm">
           <h2 className="font-medium">Sources</h2>
           <ul className="mt-2 space-y-1 text-muted-foreground">
             {article.sources.map((s) => (

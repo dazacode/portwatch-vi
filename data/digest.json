@@ -1,0 +1,3413 @@
+{
+ "version": 1,
+ "updated": "2026-11-25T02:45:11.528Z",
+ "now": {
+  "hash": "682ffb2645ea7acf",
+  "at": "2026-11-25T02:39:55.824Z",
+  "by": "Pollinations, gpt-oss-20b",
+  "points": [
+   {
+    "text": "XCL reports 30 fps in GTA VI and now shows it loading into the world, though the team declined to say more for fear of being nuked.",
+    "sources": [
+     "article:2026-11-24-xcl-30fps-in-game"
+    ]
+   },
+   {
+    "text": "The tracker records that omonkey joined the board, claiming the stage \"playable\".",
+    "sources": [
+     "project:omonkey"
+    ]
+   },
+   {
+    "text": "The tracker records that Five Star Recomp now claims the stage \"menu\", up from \"boots\".",
+    "sources": [
+     "project:five-star-recomp"
+    ]
+   }
+  ]
+ },
+ "breakdowns": {
+  "hash": "79656662f02d895e",
+  "at": "2026-11-25T02:39:55.824Z",
+  "by": "Pollinations, gpt-oss-20b",
+  "items": [
+   {
+    "topic": "Takedown",
+    "headline": "Take-Two Takedown of Leonida",
+    "sentences": [
+     {
+      "text": "The linked article reports that Take-Two filed a DMCA notice against Leonida, disabling 3,007 forks on GitHub.",
+      "sources": [
+       "article:2026-11-24-take-two-dmca-leonida-forks"
+      ]
+     },
+     {
+      "text": "The linked article says Leonida’s 179,000-member Discord server vanished, with members claiming Discord banned it.",
+      "sources": [
+       "article:2026-11-23-leonida-discord-down"
+      ]
+     },
+     {
+      "text": "The Verge reports that Take-Two shut down the GTA VI PC recompilation project.",
+      "sources": [
+       "story:2026-11-24-news.google.com-gta-vi-pc-recompilation-project-shut-down-by-take"
+      ]
+     }
+    ]
+   },
+   {
+    "topic": "Security",
+    "headline": "Fakes and scams to avoid",
+    "sentences": [
+     {
+      "text": "Hardware Busters reports that Project Leonida went dark as fake builds began spreading malware.",
+      "sources": [
+       "story:2026-11-24-news.google.com-project-leonida-the-gta-6-pc-recompilation-effort-goes-dark-as-fake-builds-start-spreading"
+      ]
+     },
+     {
+      "text": "Limapagi claims that a GTA 6 Xbox leak has raised concerns about PC ports and malware.",
+      "sources": [
+       "story:2026-11-22-news.google.com-gta-6-xbox-leak-raises-pc-port-and-malware-concerns"
+      ]
+     }
+    ]
+   },
+   {
+    "topic": "Leak",
+    "headline": "Leaked Xbox Build Sparks Port Efforts",
+    "sentences": [
+     {
+      "text": "SSBCrack reports that a GTA 6 leaker released an Xbox build executable, raising fears of an unofficial PC port.",
+      "sources": [
+       "story:2026-11-24-news.google.com-gta-6-leaker-releases-xbox-build-executable-raising-fears-of-an-unofficial-pc-port"
+      ]
+     },
+     {
+      "text": "LevelUp says CyberLeek leaked the executable file and modders are already working on a playable PC version.",
+      "sources": [
+       "story:2026-11-24-news.google.com-cyberleek-leaks-gta-6s-executable-file-and-modders-are-already-working-on-a-playable-pc-ve"
+      ]
+     },
+     {
+      "text": "Digg reports that Cyberleek claims it leaked a GTA 6 development build minus the file that runs it.",
+      "sources": [
+       "story:2026-11-24-news.google.com-cyberleek-claims-it-leaked-a-gta-6-development-build-minus-the-file-that-runs-it"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "notes": {
+  "commit:2bdf047": {
+   "hash": "55cb931b7f1ae306",
+   "text": null,
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:45:11.528Z"
+  },
+  "commit:67ac601": {
+   "hash": "83f11b214055d121",
+   "text": "GTA6-COMPAT-LAYER's commit says docs entry 24 boots through #113, crash cleared, shader phases 0-5.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:45:11.528Z"
+  },
+  "commit:c96b4f2": {
+   "hash": "bd6fc317051157ca",
+   "text": null,
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:45:11.528Z"
+  },
+  "commit:99e4743": {
+   "hash": "7481c289fa4a1ad7",
+   "text": null,
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:45:11.528Z"
+  },
+  "commit:097f753": {
+   "hash": "2e12418e4bcf9f64",
+   "text": null,
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:45:11.528Z"
+  },
+  "commit:71ae558": {
+   "hash": "b62e9140b0d46077",
+   "text": null,
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:45:11.528Z"
+  },
+  "commit:891cd65": {
+   "hash": "d360dfe147b123db",
+   "text": "Five Star Recomp's commit says merge lane-world: mesh phase loops leave together, ended waves meet barriers, matching ExecuteIndirects in pipeline trace.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:45:11.528Z"
+  },
+  "commit:90b529f": {
+   "hash": "61694faf67f29480",
+   "text": "ZETTROX's commit says ztrx has its own README and a launcher for normal play.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:45:11.528Z"
+  }
+ },
+ "stories": {
+  "2026-11-25-bsky.app-as-for-the-ethics-of-this-whole-ordeal-using-ai-to-recomp-gta-6-to-work-on-pc-look-i-hate-": {
+   "hash": "5481eac54271b88d",
+   "topic": "Community",
+   "importance": 1,
+   "weight": 0,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-25-bsky.app-so-theres-a-bit-of-an-ongoing-situation-about-the-whole-gta-6-leak-being-recomped-to-pc-us": {
+   "hash": "d3e8cb158654abd1",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 22,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-25-boards.4chan.org-gta-6-recompilation": {
+   "hash": "ccdb423e1d7d3dea",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 26,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-25-news.google.com-unofficial-gta-6-pc-ports-are-already-being-shut-down-as-take": {
+   "hash": "8e1448388504f4d6",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 72,
+   "similar": 1,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-25-bsky.app-rockstar-games-shutting-down-unofficial-gta-6-pc-ports": {
+   "hash": "1062620b48bfe517",
+   "topic": "Official",
+   "importance": null,
+   "weight": 16,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-25-news.google.com-gta-6-leak-raises-prospect-of-unofficial-pc-port-and-earlier-official-release": {
+   "hash": "fdc92594ec7c0ef5",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-25-bsky.app-gta-6-is-running-on-pc-rn-rn-ask-me-how": {
+   "hash": "cdea9cbd109c8c9e",
+   "topic": "Community",
+   "importance": null,
+   "weight": 2,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-25-bsky.app-modders-an-nimos-compiten-por-portar-una-versi-n-filtrada-de-xbox-de-gta-6-a-pc-mediante-r": {
+   "hash": "d5f4395c39f02094",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 26,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-25-bsky.app-wahh-wahh-the-cia-got-hacked-okay-but-is-gta-6-running-on-pc-yet-or": {
+   "hash": "2f2bdf364f93b11e",
+   "topic": "Community",
+   "importance": null,
+   "weight": 2,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-25-bsky.app-take-two-reportedly-hits-2-900-github-forks-of-the-leonida-gta-6-pc-port-with-a-dmca-the-p": {
+   "hash": "770be19b2fff7e68",
+   "topic": "Takedown",
+   "importance": null,
+   "weight": 24,
+   "lead": "2026-11-24-happygamer.com-take-two-reportedly-hits-2-900-github-forks-of-the-leonida-gta-6-pc-port-with-a-dmca",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-btw-rockstar-and-take-two-did-a-dmca-today-that-nuked-the-leonida-project-in-the-process-t": {
+   "hash": "debe1f4f9de10375",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 58,
+   "summary": null,
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-24-news.google.com-gta-6-on-pc-update-what-we-know-about-when-it-releases": {
+   "hash": "6d0fecf98d0d36b7",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-site-mostra-ao-vivo-progresso-dos-ports-de-gta-6-para-o-pc-acompanhe-canaltech-com-br-game": {
+   "hash": "2c5ea26de683531d",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 26,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-news.google.com-gta-6-project-leonida-collapses-after-creator-quits-but-other-pc-efforts-go-on": {
+   "hash": "fe39fb89e0305937",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-rockstar-has-shut-down-a-teen-run-gta-6-pc-recompilation-project-and-banned-its-discord-co": {
+   "hash": "6b92e1346486fdcb",
+   "topic": "Official",
+   "importance": null,
+   "weight": 6,
+   "lead": "2026-11-24-news.google.com-gta-vi-pc-recompilation-project-shut-down-by-take",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-a-recompilation-project-attempting-to-port-the-xbox-version-of-grand-theft-auto-vi-to-pc-h": {
+   "hash": "edcd920bd29822db",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-project-leonida-a-fan-effort-to-bring-the-leaked-gta-6-build-to-pc-went-offline-alongside-": {
+   "hash": "7f623147d400d833",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 22,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-take-two-reportedly-shuts-down-a-gta-6-pc-recompilation-project-gta-6-only-launched-on-nov": {
+   "hash": "4399769f40d79da7",
+   "topic": "Official",
+   "importance": null,
+   "weight": 6,
+   "lead": "2026-11-24-news.google.com-take-two-reportedly-shuts-down-a-gta-6-pc-recompilation-project",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-theres-a-race-to-make-an-ai-coded-gta-vi-port-after-the-xbox-series-version-leaked-but-the": {
+   "hash": "242de9e8effac00c",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 22,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-take-two-reportedly-shuts-down-a-gta-6-pc-recompilation-project": {
+   "hash": "6395acc13eb8b701",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 78,
+   "similar": 3,
+   "summary": "Happy Gamer reports Take-Two shut down a GTA 6 PC recompilation project.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-rockstar-reportedly-kills-project-leonida-a-15-year-olds-gta-6-pc-port-effort-along-with-i": {
+   "hash": "94810773a32be784",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 72,
+   "similar": 1,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-news.google.com-unauthorized-gta-6-pc-port-shut-down-by-rockstar-games-parent-company": {
+   "hash": "fb3af64f2312b701",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-gta-6-pc-modding-projects-got-nuked-just-days-before-developers-expected-playable-ports-fo": {
+   "hash": "20a0e20b4654aef4",
+   "topic": "Takedown",
+   "importance": null,
+   "weight": 24,
+   "lead": "2026-11-24-news.google.com-gta-6-pc-ports-nuked-just-days-before-devs-expected-it-to-be-playable",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-how-to-play-grand-theft-auto-vi-in-the-cloud-and-with-remote-play-news-xbox-com-en": {
+   "hash": "84f6ae3e2bb2f927",
+   "topic": "Community",
+   "importance": null,
+   "weight": 2,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-now-that-an-illicit-xbox-build-of-gta-6-is-out-in-the-wild-anonymous-modders-are-racing-to": {
+   "hash": "70fa7ca3865cb468",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 22,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-gta-6-port-para-pc-no-github-foi-desativado-ap-s-reclama-o-dmca-da-take": {
+   "hash": "1db17a858ff6af4c",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 58,
+   "summary": "A GTA 6 PC port on GitHub was reportedly deactivated after a Take-Two DMCA complaint.",
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-24-bsky.app-the-race-to-port-gta-6-to-pc-explained-article": {
+   "hash": "dbd24f8cf0ec186d",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-gta-6-pc-port-oficialmente-encerrada-pela-rockstar": {
+   "hash": "6f1d618863e355ae",
+   "topic": "Official",
+   "importance": null,
+   "weight": 16,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-unofficial-gta-6-pc-ports-are-already-racing-rockstar-on-tuesday-november-24-2026-rockstar": {
+   "hash": "919fe880f776cba8",
+   "topic": "Official",
+   "importance": null,
+   "weight": 16,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-i-just-got-to-port-gellhorn-in-gta-vi-and-while-the-car-stealing-and-drug-chasing-is-fun-t": {
+   "hash": "ec2a450112e2060a",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-o-project-leonida-port-de-gta-vi-para-pc-feito-por-f-s-acabou-em-4-dias-o-criador-diz-que-": {
+   "hash": "83fb070a074c872a",
+   "topic": "Official",
+   "importance": null,
+   "weight": 16,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-take-two-interactive-filed-a-copyright-takedown-notice-against-leonida-an-unofficial-proje": {
+   "hash": "04da8492b10defd8",
+   "topic": "Takedown",
+   "importance": null,
+   "weight": 24,
+   "lead": "2026-11-24-news.google.com-can-rockstar-shut-down-the-gta-6-pc-ports-take-two-has-now-filed-a-takedown-against-leonid",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-github-pulled-leonida-a-community-effort-to-recompile-gta-6-for-pc-while-its-teenage-lead-": {
+   "hash": "b70d4b37227f5625",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-gta-6-recomp-leonida-banned-from-github-while-lead-dev-was-in-school-view-article": {
+   "hash": "f3008d8f47c19fec",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-vi-is-great-on-ps5-but-could-be-better-on-pc": {
+   "hash": "a3b6ff286686e0a3",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-the-race-to-port-gta-6-to-pc-explained-gta-6-could-be-a-pc-game-illegally-in-a-matter-of-d": {
+   "hash": "f0df4dbc24311a93",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 26,
+   "summary": "The race to port GTA 6 to PC, explained",
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-bsky.app-right-now-theres-like-4-streams-of-people-using-claude-code-to-port-gta-6-to-pc-and-theyre": {
+   "hash": "aa5d73cf01262be4",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-tl-dr-take-two-has-shut-down-leonida-a-fan-project-aimed-at-recompiling-grand-theft-auto-v": {
+   "hash": "662841a644a9245d",
+   "topic": "Takedown",
+   "importance": null,
+   "weight": 24,
+   "lead": "2026-11-24-news.google.com-gta-6-pc-port-on-github-shut-down-following-take",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-une-version-xbox-de-gta-6-pirat-e-et-diffus-e-la-course-assist-e-par-ia-pour-la-porter-au-": {
+   "hash": "ffd22381f01c7790",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-take-two-issued-a-dmca-takedown-that-removed-the-leonida-gta-vi-pc-recompilation-project-a": {
+   "hash": "54975a396f225eae",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 58,
+   "summary": "Take-Two reportedly issued a DMCA takedown removing the Leonida GTA VI PC recompilation project.",
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-24-bsky.app-the-race-to-port-gta-6-to-the-pc-explained-things-are-moving-fast-www-pcgamer-com-games-gr": {
+   "hash": "227403d2dd3d668b",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-videogameschronicle.com-gta-6-has-more-framerate-drops-on-ps5-than-xbox-series-x-according-to-analysis": {
+   "hash": "8344b9cf4621606f",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-the-race-to-port-gta-6-to-pc-explained": {
+   "hash": "73a37bc9823b05b5",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-24-news.google.com-gta-6-on-pc-rockstar-and-take": {
+   "hash": "de3bbf81bdc1c090",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-work-faster-itz-komal01-if-youre-wondering-how-the-gta-6-pc-ports-are-being-made-this-is-n": {
+   "hash": "501f2372616cf511",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-pc-port-officially-shut-down-by-rockstar": {
+   "hash": "48ecd54378d877eb",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-gta-vi-pc-recompilation-project-shut-down-by-take-two-leonida-a-fan-project-by-15-year": {
+   "hash": "fe39800fd00399b5",
+   "topic": "Official",
+   "importance": null,
+   "weight": 6,
+   "lead": "2026-11-24-news.google.com-gta-vi-pc-recompilation-project-shut-down-by-take",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-gta-vi-pc-recompilation-project-shut-down-by-take-two-game-modding-communities-are-racing-": {
+   "hash": "872f0d5fb88138df",
+   "topic": "Official",
+   "importance": null,
+   "weight": 6,
+   "lead": "2026-11-24-news.google.com-gta-vi-pc-recompilation-project-shut-down-by-take",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-when-will-gta-6-be-available-on-xbox-game-pass-and-cloud-gaming": {
+   "hash": "5c81e769f25b875b",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-a-gta-6-on-pc-recompilation-project-has-been-shut-down-by-take-two-today-modders-are-racin": {
+   "hash": "4c22190be05733a2",
+   "topic": "Official",
+   "importance": null,
+   "weight": 6,
+   "lead": "2026-11-24-news.google.com-gta-vi-pc-recompilation-project-shut-down-by-take",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-vi-pc-recompilation-project-shut-down-by-take": {
+   "hash": "859bd19da308d1cd",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 80,
+   "similar": 4,
+   "summary": "The Verge reports a GTA VI PC recompilation project was shut down.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-bsky.app-programadores-independentes-criaram-projetos-n-o-oficiais-de-recompila-o-de-grand-theft-au": {
+   "hash": "553f2ef5e57a9efb",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-pc-port-on-github-shut-down-following-take": {
+   "hash": "135286655a24dc24",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 72,
+   "similar": 1,
+   "summary": "PCMag reports a GTA 6 PC port on GitHub was shut down.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-a-list-of-amd-graphics-cards-for-the-unofficial-launch-of-gta-6-on-pc-has-been-published": {
+   "hash": "05fa45a5ae0dc373",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-mastodon.social-one-does-not-simply-port-gta-6-to-pc-a-15-year-old-kid-tried-anyway-https-tech-yahoo-com-g": {
+   "hash": "d17efa53b43fec1e",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-cyberleek-pushes-gta-6-pc-efforts-forward-with-the-xbox-build-exe-release": {
+   "hash": "49d57c2711c08fa7",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 44,
+   "similar": 4,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-mod-shop-locations-how-to-customize-your-car-and-more": {
+   "hash": "4a396eea796341b2",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-crazy-secretive-gta-6-voice-actor-reveals-details-of-rockstars-humongous-nda": {
+   "hash": "669d8e8e44b09df1",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-crazy-es-gibt-so-viele-teams-die-an-einem-inoffiziellen-pc-port-von-gta6-arbeiten-dass-es-": {
+   "hash": "3eb9266c22e6ef41",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-mastodon.cl-gta-6-en-pc-recibe-su-primer-golpe-legal-take-two-borra-leonida-y-sus-3-007-copias-en-gith": {
+   "hash": "4d6905affda159be",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 58,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-news.google.com-hacker-who-leaked-gta-6-released": {
+   "hash": "398498be4bcafe36",
+   "topic": "Leak",
+   "importance": 2,
+   "weight": 28,
+   "similar": 2,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-bsky.app-i-actually-did-think-it-was-very-possible-for-people-to-vibecode-a-gta-vi-port-in-the-shor": {
+   "hash": "fd7e55a6f06dc270",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-take-two-has-had-leonida-an-unofficial-gta-vi-port-for-pc-taken-down-on-github-github-says": {
+   "hash": "d2533d509e965291",
+   "topic": "Takedown",
+   "importance": null,
+   "weight": 24,
+   "lead": "2026-11-24-news.google.com-gta-6-leonida-pc-port-taken-down-by-rockstar-heres-what-happened",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-rockstar-shuts-down-teenagers-gta-6-recompilation-project": {
+   "hash": "c51e210989f1ee9c",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-24-news.google.com-take-two-reportedly-shuts-down-a-gta-6-pc-recompilation-project",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-rockstar-shuts-down-teenagers-gta-6-pc-recompilation-project": {
+   "hash": "9a07e6cb02a0fcd2",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-24-news.google.com-take-two-reportedly-shuts-down-a-gta-6-pc-recompilation-project",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-rockstar-shuts-down-teenagers-gta-6-pc-project": {
+   "hash": "4d87a774a4f9f443",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-leaker-releases-xbox-build-executable-raising-fears-of-an-unofficial-pc-port": {
+   "hash": "e99e702b87f85e6a",
+   "topic": "Leak",
+   "importance": 5,
+   "weight": 70,
+   "similar": 5,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-gta-6-sparks-privacy-concerns-over-what-rockstar-games-and-take": {
+   "hash": "18216844475e2823",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-eu-vi-os-caras-n-o-param-daqui-a-pouco-fazem-um-port-de-gta-vi-pra-rodar-em-pentium-4": {
+   "hash": "0c5a2dfc9a7f9ab3",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-pc-port-projects-shut-down-after-leaked-executable": {
+   "hash": "2b198327a83f87b6",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 82,
+   "similar": 5,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-gta-6-launches-at-79-99-on-ps5-and-xbox-pc-undated": {
+   "hash": "bf1a2b54f941a965",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-pc-recompile-odds-hit-63-on-manifold-as-traders-pile-in-before-nov-30": {
+   "hash": "922e2a71c14a4925",
+   "topic": "Community",
+   "importance": 2,
+   "weight": 0,
+   "summary": null,
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-24-news.google.com-project-leonida-the-gta-6-pc-recompilation-effort-goes-dark-as-fake-builds-start-spreading": {
+   "hash": "db8425284568d475",
+   "topic": "Security",
+   "importance": 5,
+   "weight": 68,
+   "similar": 1,
+   "summary": "Hardware Busters says Project Leonida went dark as fake builds spread malware.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-gta-6-leaker-releases-key-file-as-community-act-to-build-pc-port": {
+   "hash": "98ee22344849c7bd",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-to-run-gta-6-on-pc-via-project-victory-you-will-need-at-least-an-rtx-2080-ti-or-rx-6700-xt": {
+   "hash": "186ecad4269c6f84",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-catastrophic-gta-6-leak-officially-kickstarts-race-for-pc-port": {
+   "hash": "a707ce7e050b8001",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-reportedly-reaches-in-game-rendering-on-pc-just-a-day-after-xbox-executable-leak": {
+   "hash": "d901e4dfb0fdadab",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-bsky.app-watch-gta-vi-get-ported-live-what-a-time-www-youtube-com-watch-v-zbsx": {
+   "hash": "30d75ba21d667b2e",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-pushsquare.com-gta-6-performs-better-on-xbox-series-x-than-base-ps5-despite-all-of-sonys-marketing": {
+   "hash": "15f9310bffb647d0",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-techradar.com-gta-6-dev-says-rockstar-evolved-the-hud-by-pushing-the-design-language-forward-keeping-the": {
+   "hash": "9ec096a4faf2e5d0",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-community-efforts-to-port-gta-6-to-pc-and-mac-show-early-success": {
+   "hash": "354dbbfd980a93fc",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-24-news.google.com-gta-6-rakes-in-approximately-3-7-billion-on-launch-day-hacked-leak-raises-specter-of-unoff": {
+   "hash": "a0b01e524c0859cf",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-rockstar-takedown-forces-gta-6-pc-port-project-to-shut-down-after-xbox-build-leak": {
+   "hash": "c7e0d192da91a646",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 66,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-gta-6-recomp-leaders-bail-out-as-take-two-cracks-down-on-illicit-efforts-to-get-the-game-r": {
+   "hash": "6ca8b26d8de8e758",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 72,
+   "similar": 1,
+   "summary": "PC Gamer reports recomp leaders bail out as Take-Two cracks down on efforts to run the game on PC.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-bsky.app-hackersk-skupina-cyberleek-tvrd-e-zve-ejnila-v-echny-soubory-pro-verzi-gta-vi-na-xbox": {
+   "hash": "54ff82671ebcb7e8",
+   "topic": "Community",
+   "importance": null,
+   "weight": 2,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-unofficial-gta-6-pc-ports-are-already-going-offline": {
+   "hash": "a3bc12c794cb3462",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-modders-have-launched-gta-6-on-pc-at-around-4-fps": {
+   "hash": "8ae0c37ce96600a6",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-lemmy.ca-rockstar-shuts-down-gta-6-pc-ports-after-xbox-build-leaks-im-a-15-year-old-kid-managing-sc": {
+   "hash": "0b46754a489e2dfb",
+   "topic": "Official",
+   "importance": null,
+   "weight": 6,
+   "lead": "2026-11-24-news.google.com-rockstar-shuts-down-gta-6-pc-ports-after-xbox-build-leaks",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-benchmark-finds-gta-6-ps5-performance-inferior-to-xbox-series-x-with-more-framerate-drops": {
+   "hash": "d896b630f1a0e418",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-on-pc-who-are-the-modders-behind-leonida-the-story-of-the-project-the-ai-and-the-15-": {
+   "hash": "44dc2dae9ca12d72",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-leaker-releases-final-xbox-build-file-despite-missing-15-million-memecoin-target": {
+   "hash": "00378b5fda7979a7",
+   "topic": "Leak",
+   "importance": 4,
+   "weight": 48,
+   "similar": 1,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-rockstar-shuts-down-gta-6-pc-ports-after-xbox-build-leaks": {
+   "hash": "4c95eb8d108dd5a1",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 72,
+   "similar": 1,
+   "summary": "Metro reports Rockstar shuts down GTA 6 PC ports after an Xbox build leaked.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-gta-6-leonida-pc-port-taken-down-by-rockstar-heres-what-happened": {
+   "hash": "968eb55a0a0cd343",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 76,
+   "similar": 2,
+   "summary": "The Times of India asks whether Rockstar took down the Leonida PC port.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-gta-vi-pc-port-project-leonida-vanishes-as-15-year": {
+   "hash": "8e558a82651ea5e3",
+   "topic": "Takedown",
+   "importance": 3,
+   "weight": 42,
+   "summary": null,
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-24-news.google.com-remote-play-brings-gta-6-to-pcs-without-an-official-port": {
+   "hash": "9c378497543b2503",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-when-will-it-be-released-on-pc": {
+   "hash": "cebf00d52aa918a1",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-msn.com-take-two-halts-gta-vi-pc-recompilation-efforts": {
+   "hash": "076010d8537d9392",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-o-grupo-g6-modding-conhecido-por-trabalhar-em-um-port-n-o-oficial-de-grand-theft-auto-vi-g": {
+   "hash": "f422c7aa97b9d58c",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-pc-port-boots-3-hours-after-exe-leak-looks-rough": {
+   "hash": "1fcc733396bd39cf",
+   "topic": "Port",
+   "importance": 4,
+   "weight": 46,
+   "summary": "Shattered reports a GTA 6 PC port booted three hours after the exe leak and looks rough.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-gta-vi-reportedly-boots-on-pc-hours-after-leaked-xbox-builds-executable-surfaces": {
+   "hash": "564af434f913eed2",
+   "topic": "Port",
+   "importance": 5,
+   "weight": 68,
+   "similar": 2,
+   "summary": "Yahoo Tech reports GTA VI boots on PC hours after a leaked Xbox build executable surfaced.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-rockstar-allegedly-takes-down-grand-theft-auto-6-leonida-a-pc-recompilation-project": {
+   "hash": "a097b139b5a85166",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 78,
+   "similar": 3,
+   "summary": "OC3D says Rockstar allegedly took down the GTA 6 Leonida PC recompilation project.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-i-quit-creator-of-gta-6s-unofficial-pc-project-steps-away-but-community-developers-are-car": {
+   "hash": "edf5eb268f6611f0",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-rockstar-shuts-down-discord-server-trying-to-port-gta-6-to-pc": {
+   "hash": "4acb8ca29b1916b1",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-pcgamer.com-gta-6-might-play-best-when-it-hits-pc-but-itll-be-best-played-with-a-controller": {
+   "hash": "51397e3052c637d3",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-there-was-child-labor-involved-in-the-unofficial-pc-port-of-gta-vi-i-hope-the-kid-is-okay-": {
+   "hash": "d8e062dde5b767b8",
+   "topic": "Official",
+   "importance": null,
+   "weight": 16,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-the-hacker-who-leaked-gta-6-in-2022-has-been-sentenced-judge-calls-him-a-very-talented-you": {
+   "hash": "62b5ce4ea3458369",
+   "topic": "Legal",
+   "importance": 3,
+   "weight": 40,
+   "summary": "LevelUp reports the hacker who leaked GTA 6 in 2022 has been sentenced.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-gta-6-decompile-market-sits-at-a-coin-flip-after-xbox-exe-leak": {
+   "hash": "29b3825d16fa1ca5",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-rockstar-nukes-15-year-olds-gta-6-recompilation-project-discord-and-github-servers-taken-d": {
+   "hash": "66d155216d481c1d",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 56,
+   "lead": "2026-11-24-news.google.com-rockstar-reportedly-kills-project-leonida-a-15-year-olds-gta-6-pc-port-effort-along-with-i",
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-news.google.com-cyberleek-leaks-gta-6s-executable-file-and-modders-are-already-working-on-a-playable-pc-ve": {
+   "hash": "681b9b105c09a754",
+   "topic": "Leak",
+   "importance": 5,
+   "weight": 66,
+   "similar": 3,
+   "summary": "LevelUp says a leaker released GTA 6's executable and modders are working on a playable PC version.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-gta-6-exe-leak-57-mb-file-0-playable-pc-builds": {
+   "hash": "ae0d25ef54285556",
+   "topic": "Leak",
+   "importance": 3,
+   "weight": 30,
+   "summary": "Shattered reports the GTA 6 exe leak is a 57 MB file with no playable PC builds.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-gta-vi-unofficial-pc-port-race-cgbj-reaches-in-game-victory-hits-the-main-menu-at-30fps": {
+   "hash": "dce54697f0b1b9ab",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 40,
+   "similar": 1,
+   "summary": "StupidDOPE reports CGBJ reached in-game and VIctory hit the main menu at 30fps.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-a-leaked-xbox-build-of-gta-vi-worked-on-pc-consuming-around-38gb-of-ram": {
+   "hash": "faef23eb17ac80dc",
+   "topic": "Leak",
+   "importance": 3,
+   "weight": 30,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-unofficial-gta-6-pc-ports-are-already-getting-shut-down": {
+   "hash": "f1148fb4db8b4bca",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-25-news.google.com-unofficial-gta-6-pc-ports-are-already-being-shut-down-as-take",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-rockstar-shuts-down-unofficial-gta-6-pc-port-project": {
+   "hash": "4dc8f9e5e6e524ab",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-an-unofficial-gta-6-pc-port-is-making-progress-and-developers-have-the-first-in": {
+   "hash": "6fee9511b6371467",
+   "topic": "Official",
+   "importance": null,
+   "weight": 16,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-hacker-who-leaked-gta-6-footage-sentenced-to-seven-years-in-prison-but-immediately-release": {
+   "hash": "61655faef3402ac9",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-hacker-who-leaked-gta-6-released",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-rockstar-squashes-leonida-the-biggest-gta-6-pc-recompilation-effort": {
+   "hash": "33858214382a69b3",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-24-news.google.com-project-leonida-the-gta-6-pc-recompilation-effort-goes-dark-as-fake-builds-start-spreading",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-msn.com-gta-6-pc-vibe-coders-beg-ai-to-make-no-mistakes-which-will-definitely-work": {
+   "hash": "8a9a2e373c2d7307",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-cyberleek-claims-it-leaked-a-gta-6-development-build-minus-the-file-that-runs-it": {
+   "hash": "2a2e8f1ee53e329a",
+   "topic": "Leak",
+   "importance": 4,
+   "weight": 48,
+   "similar": 1,
+   "summary": "Cyberleek claims it leaked a GTA 6 development build without the executable.",
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-24-news.google.com-gta-vi-cyberleek-is-distributing-the-games-executable-file": {
+   "hash": "6faeafdff3098582",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-cyberleek-leaks-gta-6s-executable-file-and-modders-are-already-working-on-a-playable-pc-ve",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-unofficial-gta-6-pc-port-effort-suffers-setback-as-rockstar-seemingly-takes-down-project-l": {
+   "hash": "b6c4b5a10ae05956",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-24-news.google.com-rockstar-allegedly-takes-down-grand-theft-auto-6-leonida-a-pc-recompilation-project",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-is-already-booting-on-pc-after-cyberleek-leaks-the-missing-file": {
+   "hash": "950bfa1a7a133d75",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-cyberleek-leaks-gta-6s-executable-file-and-modders-are-already-working-on-a-playable-pc-ve",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6s-unofficial-pc-project-says-it-can-reach-the-first-missions-opening-but-the-game-is-": {
+   "hash": "7eef30f35554e20f",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-on-pc-leonida-gone-two-rivals-load-the-game-world": {
+   "hash": "55480bc671a0ee8a",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-waiting-for-gta-6-on-pc-these-5-games-capture-some-of-its-magic": {
+   "hash": "a2a9e3ecb33ad710",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-pc-ports-nuked-just-days-before-devs-expected-it-to-be-playable": {
+   "hash": "4bf65bc885583a2e",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 72,
+   "similar": 1,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-gta-6-this-website-lets-you-track-the-pc-recompilation-live": {
+   "hash": "6113a8b284dd3e1e",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-news.google.com-hackers-leak-gta-6-xbox-file-fueling-pc-speculation": {
+   "hash": "dabb480024006f2a",
+   "topic": "Leak",
+   "importance": 3,
+   "weight": 30,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-bsky.app-how-long-until-we-have-an-unofficial-pc-port-of-gta-vi-www-resetera-com-threads-16": {
+   "hash": "13d729e5d0e17e81",
+   "topic": "Official",
+   "importance": null,
+   "weight": 16,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-leaker-cyberleek-releases-the-xbox-build-executable-for-gta-6": {
+   "hash": "c4cc74bcab708b23",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-gta-6-leaker-releases-xbox-build-executable-raising-fears-of-an-unofficial-pc-port",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-like-watching-the-mona-lisa-getting-painted-unofficial-gta-6-pc-port-makes-rapid-progress-": {
+   "hash": "8492fcef9afad5c5",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 40,
+   "similar": 1,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-news.google.com-gta-6-unofficial-pc-port-closer-than-ever-as-notorious-leaker-reportedly-drops-xbox-build": {
+   "hash": "0887b899ca43bbac",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-cracked-within-a-week-hinting-at-earlier-pc-release": {
+   "hash": "0b5c3657455c732a",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-grand-theft-auto-6-unofficial-pc-port-cgbj-now-reaches-in": {
+   "hash": "11e03eddf876c972",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-24-news.google.com-gta-vi-unofficial-pc-port-race-cgbj-reaches-in-game-victory-hits-the-main-menu-at-30fps",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-a-2-000-pc-with-a-ryzen-7-9700x-and-rtx-5070-could-run-gta-6-at-1440p-and-60-fps": {
+   "hash": "9226bc8d7e11f90a",
+   "topic": "Community",
+   "importance": null,
+   "weight": 16,
+   "similar": 1,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-eurogamer.net-gta-6-players-are-already-starting-to-get-very-good-at-heists-despite-all-the-new-challeng": {
+   "hash": "48bdd164b07016ce",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-el-balad.com-cyberleek-releases-gta-6-xbox-build-file-leonida-github-gta-vi": {
+   "hash": "bfb0d6e14cb32cb7",
+   "topic": "Leak",
+   "importance": 5,
+   "weight": 64,
+   "similar": 2,
+   "summary": "El-Balad says a leaker released a GTA 6 Xbox build file and mentions Leonida on GitHub.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-victory-developers-have-made-saves-and-gamepad-support-work-in-the-pc-version-of-gta-vi": {
+   "hash": "340bcd09ede29065",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-news.google.com-the-torch-passes-to-the-open-source-recomp-and-emulation-projects-gta-6-leaker-cyberleek-c": {
+   "hash": "db0d77491b351d8b",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 36,
+   "similar": 1,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-cool-can-we-know-go-back-to-using-gpus-for-what-they-were-meant-to-like-playing-the-gta-vi": {
+   "hash": "b069282cd5d089c1",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-unofficial-gta-6-pc-port-scrapped-as-rockstar-allegedly-takes-down-discord-server-hours-af": {
+   "hash": "f773ac00ba3e57d5",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-24-news.google.com-rockstar-allegedly-takes-down-grand-theft-auto-6-leonida-a-pc-recompilation-project",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-vi-is-coming-to-pc-thanks-to-major-leak": {
+   "hash": "0a053d7adfef2f74",
+   "topic": "Official",
+   "importance": 5,
+   "weight": 48,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-news.google.com-rockstar-is-trying-to-have-the-unofficial-pc-port-for-gta-vi-taken-down": {
+   "hash": "0fd82b02c0b3676d",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 66,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-why-isnt-gta-6-on-pc-rockstars-console-first-habit-and-why-fans-got-it-booting-anyway": {
+   "hash": "381535e0b8ed13a8",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-gta-vi-xbox-executable-leaks-but-it-wont-run-on-your-pc": {
+   "hash": "9da6303238bdd387",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 22,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-vi-fans-are-racing-to-get-the-xbox-game-running-on-pc": {
+   "hash": "ce26d5f49ec463be",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-eurogamer.net-rockstar-games-reveals-23-extra-tracks-in-gta-6s-deluxe-edition-soundtrack-featuring-denze": {
+   "hash": "3b0e896dc9e4a4a4",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-msn.com-gta-6-recomp-leaders-bail-out-as-take-two-cracks-down-on-efforts-to-get-the-game-running-o": {
+   "hash": "79a49ebe5878d862",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-24-news.google.com-gta-6-recomp-leaders-bail-out-as-take-two-cracks-down-on-illicit-efforts-to-get-the-game-r",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-fully-pirated-but-no-pc-can-boot-it-for-now": {
+   "hash": "ec31611d3eaf646f",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-pc-players-have-responded-positively-to-the-development-of-an-unofficial-gta-6-port": {
+   "hash": "f6e49e7a9f94427d",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.ycombinator.com-the-leonida-xbox-pc-recompilation-of-gta-6-taken-down-from-github": {
+   "hash": "3f57eb1f657f67c3",
+   "topic": "Takedown",
+   "importance": null,
+   "weight": 24,
+   "lead": "2026-11-24-news.google.com-gta-6-leonida-pc-port-taken-down-by-rockstar-heres-what-happened",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-gta-vi-pc-port-15-j-hriger-leonida-initiator-wirft-hin-andere-melden-erfolg": {
+   "hash": "9445250fa03210b7",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-modders-already-have-gta-6-running-on-pc-after-cyberleek-released-a-full-xbox-build-of-the": {
+   "hash": "94cb8b0cbebd10b4",
+   "topic": "Port",
+   "importance": 4,
+   "weight": 52,
+   "similar": 1,
+   "summary": "Modders reportedly have GTA 6 running on PC after CyberLeek's full Xbox build release.",
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-24-news.google.com-gta-6-still-has-no-pc-release-date-and-hackers-are-already-developing-an-unofficial-port-t": {
+   "hash": "d8ec9d418ab9e43d",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-can-rockstar-shut-down-the-gta-6-pc-ports-take-two-has-now-filed-a-takedown-against-leonid": {
+   "hash": "52fc24fbd11a269b",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 72,
+   "similar": 1,
+   "summary": "Nacionale says Take-Two filed a takedown against Leonida and asks if Rockstar can shut down the ports.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-bsky.app-gta-6-is-one-step-closer-to-an-unofficial-pc-port-cyberleek-has-released-the-missing-xbox-": {
+   "hash": "3ca1ee8fdfde16bb",
+   "topic": "Official",
+   "importance": null,
+   "weight": 6,
+   "lead": "2026-11-23-news.google.com-one-step-closer-to-gta-6-on-pc-cyberleek-releases-xbox-build-executable-as-modders-work-on",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-on-pc-what-is-behind-the-cyberleek-leak": {
+   "hash": "e1d133c21e278829",
+   "topic": "Leak",
+   "importance": 3,
+   "weight": 30,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-news.google.com-gta-6-pc-project-reportedly-reaches-in": {
+   "hash": "d6f75e1a7897f558",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-news.google.com-gta-6-executable-leak-raises-questions-about-unofficial-pc-port": {
+   "hash": "8307f4263084435a",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-supuestamente-van-a-sacar-un-port-del-gta-vi-en-un-d-a-t-ver-s-la-de-ordenadores-completam": {
+   "hash": "26b9fb6a792a13b4",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-unofficial-gta-vi-pc-port-is-possible-thanks-to-cyberleeks-leaked-xbox-build": {
+   "hash": "0a66d5e5a66892ca",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-is-there-a-gta-6-pc-port-no-official-one-and-fan-port-leonida-has-shut-down": {
+   "hash": "650bcd14711eb9b1",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-pc-port-project-leonida-shuts-down": {
+   "hash": "acc0aea3ac2ab680",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 72,
+   "similar": 1,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-gta-6-xbox-leak-reportedly-gets-the-game-running-on-pc-just-days-after-release": {
+   "hash": "b0ee4358bf86132d",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-news.google.com-gta-6-pc-port-project-leonida-goes-offline-amid-rockstar-claims": {
+   "hash": "8d64bac41318571f",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-rockstar-faces-scrutiny-as-gta-6-pc-modding-project-shuts-down": {
+   "hash": "353eaeefe2b16dfe",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-vi-was-launched-on-pc-without-rockstars-help-and-the-main-team-lost-its-creator": {
+   "hash": "5d75bbc81ae2cafa",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-cyberleek-gta-6-xbox-series-x-windows": {
+   "hash": "4c1248616b2aa2bd",
+   "topic": "Community",
+   "importance": null,
+   "weight": 2,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-leaker-releases-alleged-xbox-build-executable-fuelling-hopes-of-unofficial-pc-port": {
+   "hash": "bfa855a13bd70363",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-24-news.google.com-gta-6-leaker-releases-xbox-build-executable-raising-fears-of-an-unofficial-pc-port",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-port-no-oficial-de-gta-vi-para-pc-ya-en-desarrollo-podr-a-llegar-en-unos-d-as-www-muycompu": {
+   "hash": "bacf10b55d66b08a",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-happygamer.com-take-two-reportedly-hits-2-900-github-forks-of-the-leonida-gta-6-pc-port-with-a-dmca": {
+   "hash": "f2f3a42cab2200bb",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 72,
+   "similar": 1,
+   "summary": "HappyGamer reports Take-Two hit 2,900 GitHub forks of the Leonida port with a DMCA.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-news.google.com-for-60-fps-at-1440p-in-gta-6-on-pc-youll-need-a-ryzen-7-9700x-and-a-geforce-rtx-5070": {
+   "hash": "9f0d6da9dc04cc61",
+   "topic": "Community",
+   "importance": null,
+   "weight": 0,
+   "lead": "2026-11-24-news.google.com-a-2-000-pc-with-a-ryzen-7-9700x-and-rtx-5070-could-run-gta-6-at-1440p-and-60-fps",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-gamespot.com-how-to-play-gta-6-on-your-pc-or-phone-via-remote-play-on-xbox": {
+   "hash": "10059b45fe19c3e8",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-after-leonids-closure-rockstar-games-xcl-project-for-gta-vi-was-hit": {
+   "hash": "461f49d5b1a1c227",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-the-quest-to-port-gta-vi-answers-the-question-what-if-beavis-butthead-had-unlimited-claude": {
+   "hash": "8d113c585508bfc3",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-the-executable-file-for-the-xbox-version-of-gta6-was-leaked-by-a-third-party": {
+   "hash": "2400f9df48698fff",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-msn.com-unofficial-gta-6-pc-port-makes-rapid-progress-as-game-is-now-bootable": {
+   "hash": "5a3d869cf0911aea",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-24-news.google.com-like-watching-the-mona-lisa-getting-painted-unofficial-gta-6-pc-port-makes-rapid-progress-",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-leaker-says-the-missing-xbox-file-is-now-out": {
+   "hash": "0fd75aa679838094",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-gta-6-leaker-releases-final-xbox-build-file-despite-missing-15-million-memecoin-target",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-pc-cyberleek-releases-xbox-exe-leonida-port-remains-unreleased": {
+   "hash": "0314eb9b99f534c9",
+   "topic": "Leak",
+   "importance": 4,
+   "weight": 48,
+   "similar": 1,
+   "summary": "Basic Tutorials says a leaker released an Xbox EXE while the Leonida port remains unreleased.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-24-msn.com-gta-6-pc-leak-is-real-hours-away": {
+   "hash": "426c11bb338ae308",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-rockstar-games-and-discord-have-blocked-leonidas-gta-vi-porting-project": {
+   "hash": "5eb330eb17ff0adb",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-bsky.app-this-is-the-weird-shit-my-ass-be-pulling-in-gta-vi-when-the-pc-port-finally-comes-big-than": {
+   "hash": "96e2013c79197503",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-sound-has-been-added-to-the-unofficial-gta-vi-pc-port": {
+   "hash": "d99053afcbc428ef",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-boots-on-pc-following-xbox-build-leak-as-leonida-recompilation-project-creator-quits": {
+   "hash": "399d9bf681351123",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-gamespot.com-gta-6-hacker-releases-full-xbox-build-and-pc-modders-are-already-trying-to-get-it-running": {
+   "hash": "3cdebf3069b31744",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-modders-already-have-gta-6-running-on-pc-after-cyberleek-released-a-full-xbox-build-of-the",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-msn.com-unofficial-gta-6-pc-port-scrapped-as-rockstar-allegedly-takes-down-discord-server": {
+   "hash": "f72c4773f410ab05",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-24-news.google.com-rockstar-allegedly-takes-down-grand-theft-auto-6-leonida-a-pc-recompilation-project",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-dlcompare.com-cyberleek-pushes-gta-6-pc-efforts-forward-with-the": {
+   "hash": "70b778890dd0beea",
+   "topic": "Community",
+   "importance": null,
+   "weight": 0,
+   "lead": "2026-11-24-news.google.com-cyberleek-pushes-gta-6-pc-efforts-forward-with-the-xbox-build-exe-release",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-pc-port-leonida-shuts-down-as-creator-blames-rockstar": {
+   "hash": "dcbb57ff5796998f",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-24-news.google.com-gta-6-pc-port-project-leonida-shuts-down",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-as-gta-6-pc-port-gets-closer-to-becoming-playable-rockstar-is-reportedly-taking-action-aga": {
+   "hash": "87f24b29185b3248",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-news.google.com-gta-6-pc-release-date-when-is-gta-6-coming-to-pc": {
+   "hash": "94c33262a7f76b34",
+   "topic": "Community",
+   "importance": null,
+   "weight": 20,
+   "similar": 2,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-analyticsinsight.net-gta-6-leaker-releases-xbox-build-exe-raising-hopes-for-an-unofficial-pc-version": {
+   "hash": "7dea74301bff65a9",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-24-news.google.com-gta-6-leaker-releases-xbox-build-executable-raising-fears-of-an-unofficial-pc-port",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-leaker-releases-xbox-build-executable-and-modders-say-a-pc-port-already-boots": {
+   "hash": "f99f1af5100fde31",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-why-gta-6s-jason-duval-says-so-little-rockstar-points-to-steve-mcqueen-in-the-getaway-and-": {
+   "hash": "ce1995c279472ad0",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-cyberleek-posts-missing-gta-6-executable-what-changes-for-a-pc-version": {
+   "hash": "0d5370d96c752053",
+   "topic": "Leak",
+   "importance": 3,
+   "weight": 40,
+   "similar": 2,
+   "summary": null,
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-23-news.google.com-gta-6-xbox-executable-leaks-online-as-early-christmas-gift-from-cyberleek": {
+   "hash": "f7f45023b9f9e3b4",
+   "topic": "Leak",
+   "importance": 4,
+   "weight": 48,
+   "similar": 1,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-23-news.google.com-gta-6-leaker-releases-xbox-game-file-raising-fears-of-unofficial-pc-version": {
+   "hash": "b1b540073d29d9cb",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-24-news.google.com-gta-6-leaker-releases-xbox-build-executable-raising-fears-of-an-unofficial-pc-port",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-has-been-out-less-than-a-week-and-a-full-pc-port-is-already-on-its-way": {
+   "hash": "bdb229ca2463f90f",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-23-bsky.app-en-solo-dos-horas-ha-habido-varias-actualizaciones-a-la-carrera-por-el-port-de-gta-vi-y-ah": {
+   "hash": "fcbedb6e5e200954",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-players-found-a-60-fps-glitch-but-its-too-unstable-to-stop-me-from-wishing-it-was-on": {
+   "hash": "7452503e60183fb6",
+   "topic": "Community",
+   "importance": 1,
+   "weight": 0,
+   "summary": "PC Gamer reports players found a 60 fps glitch that is too unstable.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-23-news.google.com-cant-wait-to-live-stream-gta-6-this-trick-lets-you-play-it-on-your-pc-now": {
+   "hash": "bfc774fab18604a9",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-msn.com-gta-6-pirates-turn-to-ai-in-shockingly-fast-bid-to-unlock-pc-version-ahead-of-rockstar": {
+   "hash": "fffc12824cd8c9db",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-best-settings-the-options-you-should-change-first-on-ps5-and-xbox": {
+   "hash": "2f51a748ba90a8f3",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-bsky.app-suprisingly-not-surprised-the-first-steps-towards-a-gta-vi-pc-port-have-been-made-and-know": {
+   "hash": "fef0dbcae0b5c112",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-boots-on-pc-only-3-hours-after-xbox-executable-leaked": {
+   "hash": "cf01cd87d9d7d714",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-gta-vi-reportedly-boots-on-pc-hours-after-leaked-xbox-builds-executable-surfaces",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-vi-xbox-executable-released-by-cyberleek-on-november-23-the-209gb-leak-is-complete": {
+   "hash": "03b82fba3de52e0b",
+   "topic": "Leak",
+   "importance": 4,
+   "weight": 48,
+   "similar": 1,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-23-news.google.com-gta-6-leaker-releases-executable-for-alleged-xbox-build": {
+   "hash": "c99f5ceb93a7b69c",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-gta-6-leaker-releases-xbox-build-executable-raising-fears-of-an-unofficial-pc-port",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-msn.com-gta-vi-on-pc-gta-6-xbox-build-reportedly-leaks-online-github-developers-race-to-get-it-run": {
+   "hash": "b17679627066fd46",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-cyberleek-releases-gta-6-xbox-executable-and-modders-reportedly-have-it-booting-on-pc": {
+   "hash": "8e2449d649898e03",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-cyberleek-leaks-gta-6s-executable-file-and-modders-are-already-working-on-a-playable-pc-ve",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-bsky.app-cracked-gta-vi-pc-port-in-less-than-a-week-rockstar-shouldve-just-launched-it-on-all-forma": {
+   "hash": "89c6f3b00dce695c",
+   "topic": "Official",
+   "importance": null,
+   "weight": 16,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-bsky.app-aparentemente-gta-vi-vai-rodar-ate-numa-batata-com-o-port-pra-pc": {
+   "hash": "0757434f6dcbae78",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-cyberleek-releases-missing-gta-6-xbox-executable": {
+   "hash": "ca1ffc44e871846d",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-cyberleek-posts-missing-gta-6-executable-what-changes-for-a-pc-version",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-vi-runs-at-up-to-60-fps-on-xbox-series-x-thanks-to-a-bug": {
+   "hash": "20226affbf41629c",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-want-gta-vi-on-pc-fake-downloads-and-scams-are-everywhere": {
+   "hash": "209bf6b92e419a40",
+   "topic": "Security",
+   "importance": null,
+   "weight": 38,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-leaker-releases-all-files-for-alleged-xbox-build-of-game": {
+   "hash": "8a216d77e9effbd0",
+   "topic": "Leak",
+   "importance": 4,
+   "weight": 48,
+   "similar": 1,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-23-news.google.com-gta-6-xbox-build-exe-leaked-pc-port-fears-grow": {
+   "hash": "b69fb8106b6d3727",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-pc-port-progressing-at-breakneck-speed": {
+   "hash": "84c64d914b489ac4",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-23-news.google.com-gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-uno": {
+   "hash": "7897eb4380041173",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-24-el-balad.com-cyberleek-releases-gta-6-xbox-build-file-leonida-github-gta-vi",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-cyberleek-leaks-gta-6-exe-file-pc-port-efforts-begin": {
+   "hash": "d1cfe7dda1158ad3",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-a-glitch-unlocks-gta-6s-frame-rate-on-xbox-series-x-but-it-just-proves-a-60fps-mode-was-ou": {
+   "hash": "0b2385c1b393de29",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-update-01-002-002-out-now-rockstar-releases-official-patch-notes": {
+   "hash": "69df5a6757e1da94",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-leaker-reportedly-releases-file-needed-to-run-leaked-xbox-build": {
+   "hash": "1505678d96ecf350",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-one-step-closer-to-gta-6-on-pc-cyberleek-releases-xbox-build-executable-as-modders-work-on": {
+   "hash": "3410fdeeb08b924e",
+   "topic": "Port",
+   "importance": 4,
+   "weight": 56,
+   "similar": 2,
+   "summary": "Cyberleek reportedly released an Xbox build executable as modders work on a PC port.",
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-23-news.google.com-unfinished-gta-vi-xbox-build-leaked-by-hacker-cyberleek-pc-port-exploration-already-underw": {
+   "hash": "449d9ffb4f89ad3a",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-eurogamer-rockstar-seemingly-pulls-the-plug-on-unofficial-gta-6-pc-project": {
+   "hash": "f2bcc6d337e3e476",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-cyberleek-releases-missing-gta-6-xbox-executable-file-for-pc-modding-teams": {
+   "hash": "3111584be1ed8d86",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-enthusiasts-launched-the-gta-6-prologue-on-pc-several-hours-after-the-exe-file-leaked": {
+   "hash": "05bc0a5ae973ef2e",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-i-streamed-gta-vi-to-my-pc": {
+   "hash": "df3fc05420478efa",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-pc-rumors-whats-real-and-whats-just-hype": {
+   "hash": "37d0857a271f54fd",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-the-race-is-on-to-unofficially-port-gta-6-to-pc-after-cyberleek-drops-exe-file": {
+   "hash": "92d6c35efaae6722",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-vi-leak-vs-launch-99-metacritic-after-4-years": {
+   "hash": "6e0e79f89404d837",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-bsky.app-boosted-from-techmeme-techhub-social-hacking-gang-cyberleek-claims-it-released-all-files-f": {
+   "hash": "a00304d6c88f8f5d",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 28,
+   "similar": 1,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-on-pc-might-be-playable-soon-as-cyberleek-released-the-full-build-from-xboxs-version": {
+   "hash": "2bfdad9a384b3262",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-leaker-cyberleek-releases-xbox-build-exe-could-a-pc-port-be-coming": {
+   "hash": "26f2ca1dccbe5acd",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-bsky.app-hacking-gang-cyberleek-claims-it-released-all-files-for-the-xbox-build-of-gta-vi-including": {
+   "hash": "5d4b10fade26d9a0",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 12,
+   "lead": "2026-11-23-bsky.app-boosted-from-techmeme-techhub-social-hacking-gang-cyberleek-claims-it-released-all-files-f",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-bsky.app-cyberleek-divulga-execut-vel-de-gta-6-para-xbox-e-abre-caminho-para-port-no-pc": {
+   "hash": "ceb094a18f13d5d4",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-hackers-say-they-have-leaked-an-xbox-build-of-gta-vi-now-with-its-missing-executable": {
+   "hash": "6066c92204385423",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-cyberleek-releases-executable-for-gta-6-xbox-build-leaked-last-week-the-torch-passes-to-th": {
+   "hash": "19078aa881b50205",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-gta-6-pc-port-projects-shut-down-after-leaked-executable",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-bsky.app-breaking-gta-vi-leaker-cyberleek-released-executable-to-unlock-xbox-files-reportedly-enabl": {
+   "hash": "e0228bee2f2abd7d",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 22,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-cyberleek-releases-gta-6-xbox-build-exe-boosting-playable-pc-port-chances": {
+   "hash": "41b999afbad8ea80",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-unofficial-gta-6-port-for-windows-called-leonida-will-take-up-almost-350-gb-of-disk-space": {
+   "hash": "a639a3efd5b0f907",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-cyberleek-reportedly-releases-exe-file-for-xbox-build": {
+   "hash": "ef8b91123537ec2b",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-cyberleek-pushes-gta-6-pc-efforts-forward-with-the-xbox-build-exe-release",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-xbox-executable-leaks-fan-pc-port-projects-begin-testing": {
+   "hash": "ee3031caff0198b3",
+   "topic": "Leak",
+   "importance": 4,
+   "weight": 48,
+   "similar": 1,
+   "summary": "ShiftDelete reports a GTA 6 Xbox executable leaked and fan PC port projects began testing.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-23-news.google.com-uk-hacker-who-leaked-gta-6-footage-years-before-release-jailed-for-7-years": {
+   "hash": "4113400cff633070",
+   "topic": "Leak",
+   "importance": 1,
+   "weight": 16,
+   "similar": 2,
+   "summary": null,
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-23-news.google.com-gta-6-pc-version-is-close-modders-say-after-cyberleek-releases-executable-the-game-almost-": {
+   "hash": "39876b4d6acd9d7f",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6s-xbox-executable-has-leaked-opening-the-door-for-unofficial-pc-port-projects-to-star": {
+   "hash": "052fc0e718995acd",
+   "topic": "Official",
+   "importance": null,
+   "weight": 6,
+   "lead": "2026-11-24-news.google.com-gta-6-pc-port-projects-shut-down-after-leaked-executable",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-lemmy.bestiver.se-gta-6-xbox-executable-released-early-by-cyberleek": {
+   "hash": "0cb73597b3329e19",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 12,
+   "lead": "2026-11-24-news.google.com-the-torch-passes-to-the-open-source-recomp-and-emulation-projects-gta-6-leaker-cyberleek-c",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-df-direct-weekly-291-grand-theft-auto-6-pc-60fps-specs-is-a-switch-2-port-possible": {
+   "hash": "77b0cab87f25c95f",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-23-news.google.com-cyberleek-releases-xbox-exe-for-gta-vi": {
+   "hash": "3dccab0dac34c363",
+   "topic": "Community",
+   "importance": null,
+   "weight": 0,
+   "lead": "2026-11-24-news.google.com-gta-6-pc-cyberleek-releases-xbox-exe-leonida-port-remains-unreleased",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-theres-an-unofficial-pc-version-of-gta-vi-coming-thanks-to-recompilation": {
+   "hash": "cf848d48be3421f7",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-judge-lets-hacker-behind-massive-gta-6-leak-of-2022-go-free-with-a-warning-dont-let-this-h": {
+   "hash": "da966e0e6f36b283",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 36,
+   "similar": 1,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-vi-leak-group-releases-xbox-executable-casting-it-as-war-on-20-editions-and-subscripti": {
+   "hash": "cb3a7cdc55d8e33a",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-unofficial-gta-6-pc-port-lists-ryzen-5-5600x-8gb-rtx-30": {
+   "hash": "6d91863f3182c75c",
+   "topic": "Official",
+   "importance": null,
+   "weight": 30,
+   "similar": 1,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-leaker-cyberleek-releases-xbox-executable-file-completing-alleged-leak": {
+   "hash": "b8090bc2d9526f8e",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-grand-theft-auto-vi-leaker-cyberleek-posts-the-xbox-builds-executable-calling-it-a-fight-a": {
+   "hash": "498129ab5eaa2605",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-cyberleek-predicts-gta-6-could-run-on-pc-within-a-week": {
+   "hash": "6fd79f979ffef8d9",
+   "topic": "Community",
+   "importance": null,
+   "weight": 22,
+   "similar": 3,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-leaked-gta-6-xbox-build-gets-main-executable-as-pc-recompilation-efforts-continue": {
+   "hash": "ed04b116b7344023",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-hacker-who-leaked-footage-in-2022-has-been-released-on-licence-and-told-not-to-do-it": {
+   "hash": "f18c4a402be8fa52",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-hacker-who-leaked-gta-6-released",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-vi-xbox-executable-released-pc-recompilation-projects-can-now-begin-testing": {
+   "hash": "729bd933cb11619c",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-gta-6-xbox-executable-leaks-fan-pc-port-projects-begin-testing",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-eurogamer.net-gta-6-just-got-a-patch-that-fixed-a-progression-bug-on-ps5-and-xbox-series-x-s": {
+   "hash": "bfef609a08a6ac57",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-leak-cyberleek-claims-209-gb-xbox-build-is-out": {
+   "hash": "90cb1db275e69e40",
+   "topic": "Leak",
+   "importance": 3,
+   "weight": 36,
+   "similar": 1,
+   "summary": "Wolf's Gaming Blog reports CyberLeek claims a 209 GB Xbox build is out.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-23-news.google.com-cyberleek-has-released-the-gta-6-executable-file-for-xbox-version-1-0-2-1-three-hours-ahea": {
+   "hash": "61bfd20be15c5a00",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-eurogamer.net-has-rockstar-taken-the-grand-theft-auto-out-of-gta-6-or-has-it-just-gamified-car": {
+   "hash": "8139964b4019be90",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-hacker-who-leaked-gta-6-clips-is-jailed-for-7-years": {
+   "hash": "abcaa092dbf49a0a",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-uk-hacker-who-leaked-gta-6-footage-years-before-release-jailed-for-7-years",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-i-benched-my-gaming-pc-for-grand-theft-auto-6-on-xbox-series-s-heres-the-30-fps-reality": {
+   "hash": "c7af3bb617749f5d",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-first-update-01-002-002-with-no-patch-notes-603-8-mb-on-ps5-and-1-6-gb-on-xbox": {
+   "hash": "f48fe048f1e7b224",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-hacker-who-leaked-clips-of-gta-6-jailed-for-seven-years": {
+   "hash": "5564e82ecd46af86",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-uk-hacker-who-leaked-gta-6-footage-years-before-release-jailed-for-7-years",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-leak-13-reveals-beach-gameplay-as-cyberleek-threatens-prologue-spoilers": {
+   "hash": "2111a786461f55cc",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-eurogamer.net-gta-6-can-run-at-60fps-on-xbox-series-x-if-you-use-a-glitch-but-theres-a-catch": {
+   "hash": "213846d27969c6ca",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-when-is-gta-6-coming-to-pc-everything-we-know-about-a-release-date": {
+   "hash": "b4674ed2df8626fe",
+   "topic": "Community",
+   "importance": null,
+   "weight": 0,
+   "lead": "2026-11-24-news.google.com-gta-6-pc-release-date-when-is-gta-6-coming-to-pc",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-cyberleek-says-final-file-from-gta-6-leak-is-due-today": {
+   "hash": "1a149bcef5b31c70",
+   "topic": "Leak",
+   "importance": 3,
+   "weight": 36,
+   "similar": 1,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-23-news.google.com-this-community-will-have-it-emulated-inside-a-week-cyberleek-is-set-to-release-the-final-p": {
+   "hash": "173e654f00001578",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-cyberleek-says-final-file-from-gta-6-leak-is-due-today",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-pcgamer.com-gtas-treatment-of-women-has-not-been-good-says-rockstar-vet-delighted-by-long-overdue-fema": {
+   "hash": "36f30d29074b961f",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-rockstar-says-darts-were-cut-from-gta-6-because-it-didnt-have-unlimited-money-or-time-to-m": {
+   "hash": "75892bcdf8b99437",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-wow-forever-breaks-records-while-pc-players-wait-for-gta-6": {
+   "hash": "926d65609c7c098e",
+   "topic": "Port",
+   "importance": null,
+   "weight": 34,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-system-requirements-for-unofficial-pc-port-reveal-it-should-run-fine-on-an-8gb-graph": {
+   "hash": "9d28755cf8f94460",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-pc-project-leonida-shows-progress-is-pc-recompilation-of-the-xbox-version-of-the-gam": {
+   "hash": "dd839ad76a1b93dc",
+   "topic": "Port",
+   "importance": null,
+   "weight": 34,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-gadgetreview.com-the-gta-vi-xbox-executable-has-leaked-a-pc-port-remains-far-off": {
+   "hash": "d2f23a9a281182d2",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-girlfriend-simulator-complaints-are-real-at-first-ex-rockstar-lead-says-but-chapter-": {
+   "hash": "be285f903a05a281",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-leonidas-gta-vi-pc-launch-project-has-reached-75-51-progress": {
+   "hash": "d9e4d7c67db6726f",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-story-matches-a-2023-leak-6-claims-0-confirmed": {
+   "hash": "ea703aeec3235bc9",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-what-the-gta-6-leak-means-for-pc-players-as-emulator-projects-race-ahead": {
+   "hash": "f5c2809e92806ac0",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-vi-pc-modders-are-already-trying-to-bring-the-leaked-xbox-version-to-windows": {
+   "hash": "300020dfb02e0528",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-rockstar-accused-of-artificially-holding-gta-6-performance-back-to-30-fps": {
+   "hash": "6abb6606be4f2609",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-cyberleek-claims-modders-could-get-gta-6-running-on-pc-within-a-week-after-xbox-build-leak": {
+   "hash": "59a33ea7f7378963",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-cyberleek-predicts-gta-6-could-run-on-pc-within-a-week",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6s-story-seemingly-confirms-leak-revealing-rockstars-next-game": {
+   "hash": "5a05b70353ccff27",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-msn.com-cyberleek-releases-executable-for-gta-6-xbox-build-leaked-last-week-an-early-christmas-gif": {
+   "hash": "a3739a708c4a1e0a",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-gta-6-xbox-executable-leaks-online-as-early-christmas-gift-from-cyberleek",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-eurogamer.net-why-cant-you-play-darts-in-gta-6-when-you-could-in-previous-games-because-rockstar-didnt-h": {
+   "hash": "5b2dff56bee5dbe9",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-yahoo.com-hacker-behind-gta-6-leak-released-as-judge-says-dont-let-this-happen-again": {
+   "hash": "e89e4ba20c90d5b9",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-judge-lets-hacker-behind-massive-gta-6-leak-of-2022-go-free-with-a-warning-dont-let-this-h",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-bsky.app-gta-vi-port-on-roblox-is-live-call-that-a-claude-code-auto": {
+   "hash": "55cef40045a630b4",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-cyberleek-says-gta-6-could-run-on-pc-within-a-week-after-reported-xbox-build-leak": {
+   "hash": "6f73dba1347537ac",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-cyberleek-predicts-gta-6-could-run-on-pc-within-a-week",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-powerupgaming.co.uk-cyberleek-releases-missing-gta-6-xbox-build-executable-after-leak": {
+   "hash": "837775339e5ab214",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-one-step-closer-to-gta-6-on-pc-cyberleek-releases-xbox-build-executable-as-modders-work-on",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-dsogaming.com-cyberleek-just-leaked-gta-6-xbox-series-x-build-executable": {
+   "hash": "ede35c1cdde4f3aa",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-gta-vi-reportedly-boots-on-pc-hours-after-leaked-xbox-builds-executable-surfaces",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-bsky.app-xbox-three-github-projects-attempt-to-port-gta-6-from-leaked-xbox-build-without-executable": {
+   "hash": "47ff56451b0d6cd2",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 12,
+   "lead": "2026-11-24-news.google.com-gta-6-pc-port-projects-shut-down-after-leaked-executable",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-developers-pursue-gta-6-pc-port-from-leaked-xbox-build": {
+   "hash": "8dfd7380632f9755",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 36,
+   "similar": 1,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-developers-explore-pc-port-of-leaked-gta-6-xbox-build": {
+   "hash": "98b7255073ac50a1",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-developers-pursue-gta-6-pc-port-from-leaked-xbox-build",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-xbox-build-leak-what-we-know-about-the-209-gb-files-and-pc-port-talk": {
+   "hash": "9a6fa1d47c975a61",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-leaks-missing-executable-could-decide-whether-unofficial-pc-emulation-takes-off": {
+   "hash": "edd2b597c0a9634c",
+   "topic": "Official",
+   "importance": null,
+   "weight": 30,
+   "similar": 1,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-recent-gta-6-gameplay-leaks-reveal-playable-build-advanced-police-ai": {
+   "hash": "b2fbc4f05f829f59",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-deus-ex-creator-says-the-open-world-titles-budget-probably-shouldnt-be-emulated-by-a": {
+   "hash": "5bcf3c8fdf8ad889",
+   "topic": "Port",
+   "importance": null,
+   "weight": 34,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-xbox-quick-resume-glitch-hits-60fps-but-runs-gameplay-at-double-speed": {
+   "hash": "daaf4eeff8cc9072",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-the-unofficial-pc-version-of-gta-6-will-require-a-ryzen-5-5600x-and-an-rtx-30-with-8gb-of-": {
+   "hash": "37f67b3b9a5f99af",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-23-news.google.com-unofficial-gta-6-pc-port-lists-ryzen-5-5600x-8gb-rtx-30",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-pc-release-leak-hacker-cyberleek-drops-209-gb-xbox-build-now-available-for-download": {
+   "hash": "f4ea512a0c7af7bc",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-gta-6-leak-cyberleek-claims-209-gb-xbox-build-is-out",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-23-news.google.com-gta-6-at-60-fps-on-pc-may-cost-less-than-expected-geekerwan-estimates": {
+   "hash": "869a2f5a08b84701",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-cyberleaks-gta-6-xbox-build-could-reach-pc-before-an-official-port": {
+   "hash": "4bd267a886b69225",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-a-gta-6-listing-has-appeared-on-steam-but-it-isnt-the-pc-port-fans-are-waiting-for": {
+   "hash": "765458087cd9d994",
+   "topic": "Game",
+   "importance": 2,
+   "weight": 4,
+   "similar": 1,
+   "summary": "Mezha reports a GTA 6 listing appeared on Steam but is not the PC port fans await.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-22-news.google.com-gta-6-has-appeared-on-steam-but-its-not-the-pc-port-fans-are-waiting-for": {
+   "hash": "6d1f7d170a6308e1",
+   "topic": "Port",
+   "importance": null,
+   "weight": 24,
+   "lead": "2026-11-22-news.google.com-a-gta-6-listing-has-appeared-on-steam-but-it-isnt-the-pc-port-fans-are-waiting-for",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-gta-5-steam-player-counts-surge-in-anticipation-of-gta-6-pc-port-release-date": {
+   "hash": "156d85ab4c40d899",
+   "topic": "Port",
+   "importance": null,
+   "weight": 34,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-can-cyberleeks-leaked-gta-6-xbox-build-become-a-pc-port-three-projects-are-trying-without-": {
+   "hash": "e986096eda71ed88",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-gta-6-pc-port-projects-shut-down-after-leaked-executable",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-can-cyberleeks-leaked-gta-6-xbox-build-become-a-pc-port-three-github-projects-are-trying-w": {
+   "hash": "a3fbce5803c3d487",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-gta-6-pc-port-projects-shut-down-after-leaked-executable",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-msn.com-27-000-reasons-not-to-download-gta-vi-for-pc": {
+   "hash": "456107201e231c41",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-claude-is-coding-for-the-pc-recompile-of-grand-theft-auto-vi": {
+   "hash": "422687720724bdd0",
+   "topic": "Port",
+   "importance": null,
+   "weight": 34,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-gta-6-leak-fuels-xbox-emulator-rush-188-fps-test": {
+   "hash": "702568a99fa7cb5d",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-rockstar-next-game-after-gta-6-l-a-noire-2-leak": {
+   "hash": "04cb27d3058caaba",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-grand-theft-auto-6-might-have-confirmed-rockstars-next-game": {
+   "hash": "b519d85e5fe01e28",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-eurogamer.net-gta-6s-strong-and-silent-jason-was-inspired-by-steve-mcqueen-and-former-army-rangers-says-": {
+   "hash": "0395f5f0b891577c",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-cyberleek-claims-modders-could-get-gta-6-running-on-pc-within-a-week-after-reported-xbox-b": {
+   "hash": "5db02a0d99d2467c",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-cyberleek-predicts-gta-6-could-run-on-pc-within-a-week",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-the-missing-piece-needed-to-get-the-leaked-gta-6-xbox-build-running-on-pc-has-reportedly-s": {
+   "hash": "59ef15a0e26fac73",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-gta-6-decompilation-market-sits-at-54-one-day-before-launch": {
+   "hash": "a44596706c64a449",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-gta-6-xbox-leak-raises-pc-port-and-malware-concerns": {
+   "hash": "bf2c1b98e1fe4017",
+   "topic": "Security",
+   "importance": null,
+   "weight": 38,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-grand-theft-auto-6-leak-comparison-shows-you-should-never-doubt-rockstar": {
+   "hash": "2070ecdc160c8025",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-cyberleek-claims-to-release-209-gb-gta-vi-xbox-build": {
+   "hash": "071f253ae069736b",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-cyberleek-pushes-gta-6-pc-efforts-forward-with-the-xbox-build-exe-release",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-cyberleek-claims-release-of-209-gb-gta-vi-xbox-build": {
+   "hash": "56f8a1886d5f51b0",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-cyberleek-pushes-gta-6-pc-efforts-forward-with-the-xbox-build-exe-release",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-gta-6-pc-port-rumours-grow-as-hacker-claims-xbox-build-could-be-playable-on-computers-with": {
+   "hash": "5cc80dce3523fb90",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-gta-6-pc-version-release-date-update-suggests-its-closer-than-we-thought": {
+   "hash": "7918ae3d3caa7c5b",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-gta-vi-pc-efforts-have-already-kicked-off-with-multiple-xbox-emulation-projects-underway": {
+   "hash": "84e2c4294cda6913",
+   "topic": "Port",
+   "importance": null,
+   "weight": 34,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-gta-6-leaker-ties-pc-build-release-to-crypto-token-target": {
+   "hash": "23dc397a3acdcfd8",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-gta-6-leak-reportedly-fuels-thousands-of-xbox-series-emulator-projects": {
+   "hash": "6dc357353ea131aa",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-gta-6-might-arrive-on-pc-before-rockstar": {
+   "hash": "aee57ea11931f5ba",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-developers-have-released-the-leonida-tool-for-natively-running-grand-theft-auto-vi-on-pc": {
+   "hash": "d4dd55b49773ca76",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-rockstar-says-jasons-viral-personality-in-gta-6-comes-from-steve-mcqueen-and-real": {
+   "hash": "ed28ee04a1b5887f",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-gta-6-vr-is-there-a-vr-mode-a-vr-mod-or-a-pc-version": {
+   "hash": "d7732f4bebb487cf",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-rockstar-games-finally-addresses-cyberleek-gta-6-leaks": {
+   "hash": "bd8196b8f5680c96",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-cyberleek-resurfaces-with-a-gta-6-xbox-build-leak-thats-not-playable-yet": {
+   "hash": "1880f9272b630275",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-gta-vi-xbox-build-leak-explained-cyberleek-executable-claim-november-23-date-and-pc-port-r": {
+   "hash": "f61ac6fc3918e932",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-itsnotrexed-builds-leonida-an-early-static-recompilation-project-for-grand-theft-auto-vi": {
+   "hash": "b4b5fdb4890e2dea",
+   "topic": "Port",
+   "importance": null,
+   "weight": 34,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-gta-6-pc-port-hopes-209gb-leak-no-executable": {
+   "hash": "401538591cd2d7c1",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-gta-vi-xbox-executable-released-by-cyberleek-on-november-23-the-209gb-leak-is-complete",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-gta-6-ps5-and-xbox-users-protest-after-bans-for-sharing-gameplay-with-nudity": {
+   "hash": "93d841a7e8c4aaec",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-cyberleek-says-it-will-release-gta-6s-missing-executable-on-november-23": {
+   "hash": "1ac0603fb13f64bb",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-cyberleek-posts-missing-gta-6-executable-what-changes-for-a-pc-version",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-22-news.google.com-the-developer-behind-a-switch-2-zelda-ocarina-of-time-remake-pc-port-has-canceled-their-am": {
+   "hash": "58246bfd9a82a6c0",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-21-covers.com-gta-6-pc-release-date-when-will-grand-theft-auto-vi-come-to-pc": {
+   "hash": "6f766255b5e1f534",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-21-msn.com-thousands-of-xbox-emulators-are-in-the-works-amid-gta-6": {
+   "hash": "0c4fe12caed420d0",
+   "topic": "Port",
+   "importance": null,
+   "weight": 34,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-21-msn.com-the-anonymous-hacker-cyberleek-releases-an-xbox-build-of-gta-vi": {
+   "hash": "a7e667a8ac5efe81",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-el-balad.com-cyberleek-releases-gta-6-xbox-build-file-leonida-github-gta-vi",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-21-lemmy.ml-gta-6-reviews-from-xbox-and-playstation": {
+   "hash": "ba1948b5be878008",
+   "topic": "Community",
+   "importance": null,
+   "weight": 2,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-21-msn.com-grand-theft-auto-vis-publisher-deeply-concerned-about-efforts-reverse-engineer-game-for-pc": {
+   "hash": "4c321373271c162b",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-20-gamereactor.eu-cyberleaks-leaked-gta-6-build-runs-into-a-wall-there-is-no-xbox-series-x": {
+   "hash": "ade04f1f430f3a79",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-20-eurogamer.net-gta-6-credits-actually-include-florida-joker-the-viral-internet-personality-who-once-deman": {
+   "hash": "59f37c8bc2062fcd",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-20-eurogamer.net-it-took-me-less-than-an-hour-to-find-my-first-incredibly-minor-rockstar-easter-egg-in-gta-": {
+   "hash": "da78a23ffcee198b",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-20-fasheng.ing-gta-6-xbox-bt": {
+   "hash": "c36c5e759b76a23d",
+   "topic": "Community",
+   "importance": null,
+   "weight": 2,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-20-tech.yahoo.com-gta-6-pc-port-could-come-from-hackers-before-rockstar-if-cyberleek-makes-good-on-its-lates": {
+   "hash": "048dc6b973bcc94a",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-20-msn.com-gta-6-could-be-playable-on-pc-soon-as-hacker-drops-incomplete-xbox-build": {
+   "hash": "73d39ac4229becd7",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-20-eurogamer.net-uk-prime-minister-wont-be-playing-gta-6-government-says-while-hailing-rockstar-games-a-bri": {
+   "hash": "e4b11fb882ca3684",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-20-lemmy.zip-gta-6-leaker-claims-to-have-lobbed-a-near-complete-xbox-build-of-rockstars-crimsim-onto-th": {
+   "hash": "8a2cfb058acba414",
+   "topic": "Official",
+   "importance": null,
+   "weight": 16,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-20-msn.com-gta-6-leaker-returns-circulates-alleged-xbox-build-of-the-game": {
+   "hash": "fd61b16fa62cc9f9",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-gta-6-leaker-releases-all-files-for-alleged-xbox-build-of-game",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-20-technobezz.com-gta-6-xbox-leak-reportedly-lacks-executable-pc-emulation-unproven": {
+   "hash": "179b860fcfa0934d",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-23-news.google.com-gta-6-leaks-missing-executable-could-decide-whether-unofficial-pc-emulation-takes-off",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-19-eurogamer.net-infamous-gta-6-leaker-cyberleek-is-back-and-this-time-the-group-claims-to-have-leaked-a-fu": {
+   "hash": "ad28cac8c1391baf",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 20,
+   "lead": "2026-11-24-news.google.com-cyberleek-claims-it-leaked-a-gta-6-development-build-minus-the-file-that-runs-it",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-19-eurogamer.net-over-2-million-xbox-players-in-the-uk-and-us-reportedly-used-the-new-zealand-trick-to-play": {
+   "hash": "d921d3a6d88c7d70",
+   "topic": "Port",
+   "importance": null,
+   "weight": 34,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-19-eurogamer.net-rockstar-reveals-full-gta-6-cast-list-finally-ending-speculation-about-who-plays-jason-duv": {
+   "hash": "fd9eeb8917e7354b",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-19-eurogamer.net-does-gta-6-have-an-easy-mode-not-officially-but-there-are-two-very-important-settings-you-": {
+   "hash": "ae32dc5f4d4e10f8",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-19-eurogamer.net-as-rockstars-alleged-union-busting-tribunal-hearing-comes-to-a-close-amid-gta-6-launch-jud": {
+   "hash": "c0fae1579b318ee4",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-19-notebookcheck.net-update-cyberleek-releases-gta-6-xbox-build-making-playable-pc-port-more-realistic": {
+   "hash": "331dd13098a8fd1d",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-19-pcgamesn.com-what-gta-6s-graphics-and-performance-mean-for-the-pc-release": {
+   "hash": "a8a6941ddc085655",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-19-eurogamer.net-gta-6-developers-at-rockstar-are-worried-about-being-laid-off-after-shipping-the-biggest-g": {
+   "hash": "233ef9afb08a4990",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-19-msn.com-that-viral-unofficial-gta-6-pc-port-video-is-a-hoax-made-from-recycled-gta-5-footage": {
+   "hash": "0ee13efbf5605df2",
+   "topic": "Official",
+   "importance": null,
+   "weight": 16,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-19-msn.com-how-to-play-gta-vi-on-your-pc-today": {
+   "hash": "f190685fc725fbde",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-19-propakistani.pk-gta-6-could-be-playable-on-pc-without-an-official-release": {
+   "hash": "f52ef94d8657c08d",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-19-eurogamer.net-it-really-seems-like-xbox-isnt-allowed-to-say-gta-6-at-all": {
+   "hash": "610bb64ca2a939ff",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-19-pawb.social-forget-gta-vi-someone-finally-fixed-up-the-pc-port-of-split-second": {
+   "hash": "0cf4fdbe14244cba",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-18-eurogamer.net-even-the-ps5-pro-is-not-powerful-enough-to-run-gta-6-at-60fps-or-40fps-rockstar-says": {
+   "hash": "7e1b9ef79b6fc9c1",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-18-eurogamer.net-all-34-of-the-infamously-fired-rockstar-staff-appear-in-gta-6-game-credits-though-some-are": {
+   "hash": "215b6fbbba7e7e5a",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-18-eurogamer.net-just-how-detailed-is-the-audio-in-gta-6-well-even-convenience-store-refrigerators-all-have": {
+   "hash": "19b1a4835be30011",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-18-eurogamer.net-you-cannot-replay-missions-in-gta-6-but-you-can-use-multiple-save-files-as-rockstar-explai": {
+   "hash": "3962e6e5d2543437",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-18-dsogaming.com-you-cannot-play-gta-6-with-a-ps5-emulator-and-there-isnt-any-unofficial-pc-port": {
+   "hash": "77c6cc2c6fa7209e",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-18-mashable.com-the-full-gta-6-soundtrack-reportedly-leaked-see-all-artists-and-tracks": {
+   "hash": "086ce11427731e40",
+   "topic": "Leak",
+   "importance": null,
+   "weight": 30,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-18-lemmy.world-which-console-are-you-getting-gta-6-on-xbox-or-ps5-and-why": {
+   "hash": "e1b373c8190f9046",
+   "topic": "Community",
+   "importance": null,
+   "weight": 2,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-17-pcgamesn.com-rockstars-5-million-gta-6-hacker-case-takes-another-turn-as-leaker-pleads-guilty": {
+   "hash": "a8bbdbe231a051e5",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-17-pcgamesn.com-no-gta-6-on-pc-here-are-five-gta-5-mods-you-can-install-to-make-release-day-bearable": {
+   "hash": "b986d769b6c3034d",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-16-pcgamesn.com-rockstar-explains-why-throwing-money-at-gta-6-isnt-enough": {
+   "hash": "98609f256b14e46c",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-15-justjared.com-gta-6-pc-release-date-is-grand-theft-auto-vi-coming-to-pc": {
+   "hash": "d1581cd4a32cbf33",
+   "topic": "Community",
+   "importance": null,
+   "weight": 0,
+   "lead": "2026-11-24-news.google.com-gta-6-pc-release-date-when-is-gta-6-coming-to-pc",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-11-retrofed.com-gta-6-is-officially-the-most-pre-ordered-game-in-playstation-and-xbox-store-history-sony-a": {
+   "hash": "72d983d6ec0c5b3c",
+   "topic": "Official",
+   "importance": null,
+   "weight": 16,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-11-videogamer.com-gta-6-pre-load-trailer-drops-as-rockstar-confirms-a-30fps-target-on-every-console": {
+   "hash": "3ccc60e3ccff40d2",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-10-videogamer.com-gta-6-pre-orders-smash-take-two-8217-s-expectations-as-nba-2k27-falls-short": {
+   "hash": "1aa50176d9daeaab",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-09-beebom.com-rockstar-is-taking-gta-6-ai-reverse-engineering-and-piracy-concerns-seriously": {
+   "hash": "c68ab4ae811b7282",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-09-in.ign.com-take-two-enhancing-technical-defenses-and-legal-activities-to-combat-gta-6-ai-reverse": {
+   "hash": "bbdaa873a4013f2e",
+   "topic": "Legal",
+   "importance": null,
+   "weight": 40,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-06-fandomwire.com-gta-6-pc-port-could-officially-arrive-sooner-than-expected-to-dodge-ai-rip": {
+   "hash": "5af606b4befec674",
+   "topic": "Official",
+   "importance": null,
+   "weight": 24,
+   "summary": null,
+   "by": null
+  }
+ },
+ "projects": {
+  "xcl": {
+   "hash": "907e9842622361b9",
+   "count": 15,
+   "summary": "XCL's recent commits mention texture upload staging memory, bvh triangle types, per-lane whole-wave predicates, far-jump entry targets, f64 rcp rsq, and disasm smem.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:39:55.824Z"
+  },
+  "victory-gta6": {
+   "hash": "f15ab78c06e49188",
+   "count": 15,
+   "summary": "hyphennn's recent commits mention depth bounds test works, faster defaults, textures on card before character, textures rechecked after upload, and parked lane-mask change back.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:39:55.824Z"
+  },
+  "xbox2windows": {
+   "hash": "f5f1e2110fa2dad6",
+   "count": 15,
+   "summary": "Xbox2Windows's recent commits mention merging pull requests, rejecting row writes when sampling partial BC views, keeping scalar arity refusals, merging commit, and merging shader sampled coverage.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:39:55.824Z"
+  },
+  "five-star-recomp": {
+   "hash": "ae8304f1cfa81263",
+   "count": 15,
+   "summary": "Five Star Recomp's recent commits mention lane-world mesh phase loops, phase counter declarations, mesh phase loops barriers, draw trace ExecuteIndirects, lane-world DRED breadcrumbs, and merging main.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:39:55.824Z"
+  },
+  "gta6-compat-layer": {
+   "hash": "50bf7bab76f36555",
+   "count": 15,
+   "summary": "GTA6-COMPAT-LAYER (ScarlettCompat) recent commits mention shader Phases 0-5, SOPP audit, RDNA2 pipeline Phases 0-4, and device removal fixes.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:45:11.528Z"
+  },
+  "zettrox": {
+   "hash": "5ad333a7e397074b",
+   "count": 15,
+   "summary": "ZETTROX recent commits mention a launcher for normal play, parked lane-mask changes, and mesh pipeline test fixes on unsupported GPUs.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:45:11.528Z"
+  },
+  "marvis": {
+   "hash": "9c482e0262bb11c2",
+   "count": 15,
+   "summary": "VIctory recent commits mention tests for GPU presence, shader checks, and several pull request merges on shader and device handling.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:45:11.528Z"
+  },
+  "tuxbox": {
+   "hash": "d38db4feb1b47571",
+   "count": 15,
+   "summary": "TuxBox recent commits mention merging pull requests for xshader exec groups, lane spills, cached refusal reasons, and launcher DXIL reuse.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:45:11.528Z"
+  },
+  "vitoriabr": {
+   "hash": "f8f2e9787dec7cb6",
+   "count": 15,
+   "summary": "Uilian recent commits mention syncing victory-fork branches, texture refresh, parked lane-mask changes, and test branch merges.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T02:45:11.528Z"
+  }
+ }
+}

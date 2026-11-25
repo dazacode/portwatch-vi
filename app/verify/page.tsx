@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
 import { Container } from "@/components/container"
 import { Challenge } from "@/components/verify/challenge"
+import { PAGES, pageMeta } from "@/lib/seo"
 import { SITE } from "@/lib/site"
 import { getEvidence, getStandings, getTracker } from "@/lib/tracker"
 
 export const revalidate = 300
-export const metadata: Metadata = { title: "Verify" }
+export const metadata = pageMeta(PAGES.verify)
 
 export default async function Page() {
   const [tracker, evidence] = await Promise.all([getTracker(), getEvidence()])
@@ -22,7 +22,7 @@ export default async function Page() {
             For projects that say they reach the menu or further. This is the only way to verify a
             build whose code isn’t public.
           </p>
-          <ol className="mt-4 list-decimal space-y-2 pl-5">
+          <ol className="pane mt-4 list-decimal space-y-2 py-4 pr-5 pl-10">
             <li>Go live somewhere that keeps the recording.</li>
             <li>
               Show the game and the terminal it was started from in one frame, with the build’s

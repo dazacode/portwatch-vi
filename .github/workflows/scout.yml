@@ -25,7 +25,11 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
 
+      # Upstream's scout does this every three hours, and upstream-sync.yml brings it here. Running it as
+      # well would change data/tracker.json, which is kept exactly as upstream wrote it. Set the
+      # repository variable OWN_SCOUT to 1 if upstream ever stops, and turn off upstream-sync.yml.
       - name: Refresh projects, find new ones, collect headlines and takedowns
+        if: vars.OWN_SCOUT == '1'
         run: node scripts/scout.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -33,6 +37,11 @@ jobs:
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+
+      - name: Refresh the projects only we list
+        run: node scripts/added.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Record milestones
         run: node scripts/milestones.mjs

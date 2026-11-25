@@ -28,9 +28,11 @@ export function addMilestones(events, before, after, at) {
 
     const others = [...before].filter(([otherId]) => otherId !== id).map(([, o]) => o);
     const rank = ORDER.indexOf(now.stage);
+    // Several can move at once, and only one of them ends up in front.
+    const rivals = [...others, ...[...after].filter(([otherId]) => otherId !== id).map(([, o]) => o)];
     const firsts = {
       first: rank > 0 && rank > ORDER.indexOf(from.stage) && !others.some((o) => ORDER.indexOf(o.stage) >= rank),
-      lead: now.score > Math.max(0, ...others.filter((o) => !o.gone).map((o) => o.score)),
+      lead: now.score > Math.max(0, ...rivals.filter((o) => !o.gone).map((o) => o.score)),
     };
 
     const age = last ? Date.parse(at) - Date.parse(last.at) : Infinity;

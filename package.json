@@ -19,6 +19,8 @@
     "scout:dry": "node scripts/scout.mjs --dry-run",
     "harvest": "node scripts/harvest.mjs",
     "harvest:dry": "node scripts/harvest.mjs --dry-run",
+    "digest": "node scripts/digest.mjs",
+    "digest:dry": "node scripts/digest.mjs --dry-run",
     "channels": "node scripts/channels.mjs",
     "channels:dry": "node scripts/channels.mjs --dry-run"
   },

@@ -3,6 +3,8 @@
 @import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
+/* A phone on its side. */
+@custom-variant short (@media (orientation: landscape) and (height < 30rem));
 
 @theme inline {
     --font-heading: var(--font-sans);
@@ -86,7 +88,14 @@
     --sun-low: oklch(0.7 0.2 10);
     --sea: oklch(0.62 0.1 205);
     --shade: oklch(0.3 0.08 300);
-    --radius: 0.25rem;
+    --radius: 1rem;
+    --ambient: url("/video/ambient-light.webp");
+    --ambient-veil: oklch(0.985 0.012 55 / 70%);
+    --glass: oklch(1 0 0 / 58%);
+    --glass-edge: oklch(1 0 0 / 75%);
+    --glass-rim: oklch(1 0 0 / 95%);
+    --glass-shade: oklch(0.3 0.06 300 / 16%);
+    --pane: oklch(1 0 0 / 55%);
 }
 
 .dark {
@@ -117,6 +126,13 @@
     --step-3: oklch(0.68 0.21 320);
     --step-4: oklch(0.7 0.22 355);
     --step-5: oklch(0.79 0.16 60);
+    --ambient: url("/video/ambient-dark.webp");
+    --ambient-veil: oklch(0.16 0.045 295 / 84%);
+    --glass: oklch(0.2 0.03 290 / 52%);
+    --glass-edge: oklch(1 0 0 / 16%);
+    --glass-rim: oklch(1 0 0 / 38%);
+    --glass-shade: oklch(0 0 0 / 38%);
+    --pane: oklch(0.3 0.05 295 / 42%);
     --sky-1: oklch(0.22 0.09 285);
     --sky-2: oklch(0.45 0.19 330);
     --sky-3: oklch(0.72 0.19 35);
@@ -128,14 +144,87 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring;
     }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
     }
   html {
+    @apply bg-background;
     @apply font-sans;
     }
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    scrollbar-color: var(--muted-foreground) transparent;
+    -webkit-tap-highlight-color: transparent;
+  }
+  html.dark, .dark {
+    color-scheme: dark;
+    scrollbar-color: var(--muted-foreground) transparent;
+  }
+  ::selection {
+    background: var(--stripe-1);
+    color: black;
+  }
+  /* The default list numerals are tabular, which leaves a gap before the point. */
+  ::marker {
+    font-variant-numeric: normal;
+  }
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+  a, button, select {
+    touch-action: manipulation;
+  }
+}
+
+/* Glass is for what floats over something: the header, the dock, panels, sheets. */
+@utility glass {
+  background-color: var(--glass);
+  border: 1px solid var(--glass-edge);
+  backdrop-filter: blur(22px) saturate(1.7);
+  box-shadow:
+    inset 0 1px 0.5px var(--glass-rim),
+    inset 0 -1px 0.5px var(--glass-edge),
+    0 10px 34px -6px var(--glass-shade);
+}
+
+/* Page content. It lies on a backdrop that is blurred already, so it costs nothing to scroll. */
+@utility pane {
+  background-color: var(--pane);
+  border: 1px solid var(--glass-edge);
+  border-radius: 1.5rem;
+  box-shadow: inset 0 1px 0.5px var(--glass-edge);
+}
+
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  :root {
+    --glass: var(--background);
+    --pane: var(--card);
+    --glass-edge: var(--border);
+    --ambient-veil: var(--background);
+  }
+  .dark {
+    --glass: var(--background);
+    --pane: var(--card);
+    --glass-edge: var(--border);
+    --ambient-veil: var(--background);
+  }
+}
+
+@layer base {
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(var(--ambient-veil), var(--ambient-veil)),
+      var(--ambient) center / cover;
+  }
 }
 
 @keyframes grow {
@@ -146,15 +235,34 @@
   to { transform: translateX(-50%); }
 }
 
-/* The show and the player fill the window under the header, and all of it in full screen. */
+/* The opening, the show and the player fill the window; the header waits above it. */
 .stage-height {
-  min-height: max(34rem, calc(100svh - 6rem));
+  min-height: 100svh;
 }
 
-@media (width >= 40rem) {
-  .stage-height {
-    min-height: max(36rem, calc(100svh - 4.2rem));
-  }
+html {
+  scroll-padding-top: 8.5rem;
+}
+
+/* On a phone the home page is swiped: countdown, updates, then the rest of the site. */
+html.feed {
+  scroll-padding-top: 0;
+  scroll-snap-type: y mandatory;
+  overscroll-behavior-y: none;
+}
+
+.feed .feed-page {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.feed .feed-rest,
+.feed #main > :last-child {
+  scroll-snap-align: start;
+}
+
+.feed body > footer {
+  scroll-snap-align: end;
 }
 
 .tv {

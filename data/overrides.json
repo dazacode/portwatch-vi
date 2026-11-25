@@ -1,0 +1,429 @@
+{
+  "patches": [
+    {
+      "id": "zettrox",
+      "from": {
+        "findings": null,
+        "findingsSource": null
+      },
+      "to": {
+        "findings": [
+          {
+            "text": "Lucia and Jason both render, standing together on a night street, with faces, hair and clothes.",
+            "url": "https://x.com/Mamozziee/status/2125418003601010847/photo/1"
+          },
+          {
+            "text": "A parked car, lit street and the skyline draw behind them: the direction the article calls heading for free roam.",
+            "url": "https://x.com/Mamozziee/status/2125418003601010847/photo/2"
+          },
+          {
+            "text": "Shadowed detail is still drawn black and geometry sits out of place in both shots.",
+            "url": "https://x.com/Mamozziee/status/2125425236195856484"
+          },
+          {
+            "text": "README: the prologue is playable from the cell to the boat chase — cell, cafeteria, robbery, police chase with wanted level and minimap, boat, binoculars.",
+            "url": "https://github.com/Zettrox/ztrx/blob/main/README.md"
+          },
+          {
+            "text": "README: 1 h 30 min+ in one session without a crash. The 1-3 fps is slower on a first run while shaders translate, then they are cached.",
+            "url": "https://github.com/Zettrox/ztrx/blob/main/README.md"
+          },
+          {
+            "text": "README known problems: shadows black, bright scenes overexposed, ray-traced lighting not running, blocky artifacts, boats sitting low in the water.",
+            "url": "https://github.com/Zettrox/ztrx/blob/main/README.md"
+          },
+          {
+            "text": "Its newest commit adds its own README and a launcher that keeps the shader cache and saves and maps a keyboard to a pad.",
+            "url": "https://github.com/Zettrox/ztrx/commit/90b529f8"
+          }
+        ],
+        "findingsSource": "From Mamozziee's tweets of 25 November and the project's public README and commits; the tweet reply names ZETTROX."
+      }
+    },
+    {
+      "id": "vitoriabr",
+      "from": {
+        "findings": null,
+        "findingsSource": null
+      },
+      "to": {
+        "findings": [
+          {
+            "text": "README v7 reports 25,662 of 25,758 shaders emitted (99.6%) and 25,588 validated, with 25,266 of the 25,662 pipelines accepted on an RTX 5060 Ti (98.5%).",
+            "url": "https://github.com/uiliannn/VItoriaBr/blob/main/README.md"
+          },
+          {
+            "text": "The 396 pipelines the card refuses are compute shaders that need wave64; NVIDIA cards run wave32.",
+            "url": "https://github.com/uiliannn/VItoriaBr/blob/main/README.md"
+          },
+          {
+            "text": "Newest commits add the depth bounds test, faster defaults and textures placed on the card before the character bake.",
+            "url": "https://github.com/uiliannn/VItoriaBr/commit/4f9a19dc"
+          },
+          {
+            "text": "The README still says the 3D world is not playable: about 3 fps on a first run, shadowed areas dark, and heavy DispatchMesh work can still cause a TDR.",
+            "url": "https://github.com/uiliannn/VItoriaBr/blob/main/README.md"
+          }
+        ],
+        "findingsSource": "From VItoriaBr’s public README and commits on 25 November."
+      }
+    },
+    {
+      "id": "cgbj",
+      "from": {
+        "summary": "A private build based on VIctory, using some of XCL's work. PortWatch verified it gets in game: a player moves and talks to NPCs, very slowly. A video shows the opening in flat, unlit colours. Code not public.",
+        "highlights": [
+          "A player moves with a controller, talks to NPCs and opens the in-game menu",
+          "A video on X shows the opening scenes in flat colours: a car, a street, a prison yard",
+          "Built on VIctory's runtime, with some of XCL's work added"
+        ],
+        "blockers": [
+          "No lighting yet, and the screen was black while a player walked around",
+          "Runs very slowly",
+          "Code is private, so nobody outside the group can test or reproduce it"
+        ],
+        "gta.story": 0,
+        "gta.render": 0.25,
+        "gta.fps": 4
+      },
+      "to": {
+        "summary": "A private build based on VIctory and XCL. It plays Jason and Donnie's boat mission, \"Gone Fishing\", with the two characters, water, sky and birds close to the console. Black patches and a boat artifact remain, at about 4 fps. Code not public.",
+        "highlights": [
+          "Plays Jason and Donnie's \"Gone Fishing\" boat mission",
+          "Water, clouds, birds and detailed characters close to the console",
+          "Pause map, mission markers, money and HUD all work"
+        ],
+        "blockers": [
+          "Black patches across the clothes and a black artifact at the boat",
+          "About 4 fps",
+          "Code is private, so nobody outside the group can test or reproduce it"
+        ],
+        "gta.story": 0.1,
+        "gta.render": 0.9,
+        "gta.fps": 4.5,
+        "assessedAt": "2026-11-25"
+      },
+      "changes": [
+        {
+          "date": "2026-11-25",
+          "kind": "up",
+          "text": "CGBJ moves to 59.3% (“Playable”): new shots show Jason's \"Gone Fishing\" and the map's \"Drive to Cal's house\", lit indoor scenes and detailed faces, at 4 fps. Story goes to 0.1 and rendering from 0.25 to 0.5."
+        },
+        {
+          "date": "2026-11-25",
+          "kind": "up",
+          "text": "CGBJ takes #1 at 64.5%: new shots show the Gone Fishing boat scene with Jason and Donnie, water, clouds and birds close to the console. Rendering goes from 0.5 to 0.9; 4.5 fps, with black patches and a boat artifact left."
+        }
+      ]
+    },
+    {
+      "id": "cgbj",
+      "from": {
+        "findings": null,
+        "findingsSource": null
+      },
+      "to": {
+        "findings": [
+          {
+            "text": "Pause map shows the \"Gone Fishing\" mission, \"Help Donnie skim some bricks off a shipment\" and \"Drive to Cal's house\", in Hamlet, South Vice-Dale County, at 7:20 pm with $407.",
+            "url": "https://x.com/onyx_BL/status/2125423179204305260/photo/1"
+          },
+          {
+            "text": "The map itself draws in colour with roads, coastline, the player marker, a mission marker and the HUD.",
+            "url": "https://x.com/onyx_BL/status/2125423179204305260/photo/1"
+          },
+          {
+            "text": "An indoor office scene is lit, with an NPC, desk lamp, plant, framed photos and a poster.",
+            "url": "https://x.com/Mamozziee/status/2125428062556987727/photo/1"
+          },
+          {
+            "text": "Lucia's face and hair render close up in a grey hoodie indoors, and again by a fence in her inmate shirt.",
+            "url": "https://x.com/Mamozziee/status/2125428062556987727/photo/2"
+          },
+          {
+            "text": "The title bars measure 4 fps through the shots (268.8 to 380.6 ms/frame).",
+            "url": "https://x.com/Mamozziee/status/2125428062556987727/photo/4"
+          },
+          {
+            "text": "The Gone Fishing boat scene renders Jason and Donnie on a sunlit mangrove river, with water, clouds and birds.",
+            "url": "https://x.com/onyx_BL/status/2125430686001561929/photo/1"
+          },
+          {
+            "text": "Donnie's yellow cap, sunglasses, moustache and floral shirt render close up, as do Jason's cap, skin and watch.",
+            "url": "https://x.com/onyx_BL/status/2125430686001561929/photo/2"
+          },
+          {
+            "text": "Glitches: black patches across Jason's shirt and a black sail-like artifact at the boat's edge.",
+            "url": "https://x.com/onyx_BL/status/2125430686001561929/photo/4"
+          },
+          {
+            "text": "Title bars measure 3.2 to 4.2 fps across the shots.",
+            "url": "https://x.com/onyx_BL/status/2125430686001561929/photo/3"
+          },
+          {
+            "text": "The boat is being driven down the mangrove river, with a wake, a bridge ahead, the checkpoint route on the minimap (0.45 mi) and the reset prompt. Title bar: 4.5 fps.",
+            "url": "https://x.com/onyx_BL/status/2125431816844681254/photo/1"
+          },
+          {
+            "text": "The boat shot's title bar names VIctory and reads 4.5 fps (220 ms), 5,308 draws with 108 dropped, 3,016 shaders working and 16 failed, 5 pipelines refused, and 10.0 of 11.7 GB of video memory in use.",
+            "url": "https://x.com/onyx_BL/status/2125431816844681254/photo/1"
+          },
+          {
+            "text": "A later shot shows a woman from behind on a balcony above palms, a beach and a tower under construction, with lit sky and foliage. Edges are blocky and shadowed areas black. onyx says a PS5 save was reverse engineered to get there and that you could move around, but has no more information. The post doesn't name CGBJ, and a loaded save isn't story progress.",
+            "url": "https://x.com/onyx_BL/status/2125435141690626161"
+          }
+        ],
+        "findingsSource": "From onyx's and Mamozziee's tweets of 25 November; onyx says he only posts CGBJ's milestones."
+      }
+    },
+    {
+      "id": "victory-gta6",
+      "from": {
+        "summary": "hyphennn's fork of VIctory (formerly victory-gta6), with his own rendering and speed fixes. On his Rumble streams the prologue plays with ray-traced lighting, detailed textures and hair at about 3 fps; the README still lists shadows as black. Self-reported.",
+        "highlights": [
+          "Streams show the prologue with ray-traced lighting, detailed textures and hair",
+          "README: the first gameplay scene renders, with HUD, pause menu and pad input working",
+          "Its own fixes to meshlet culling, descriptor tables and untranslated shaders, on top of VIctory"
+        ],
+        "blockers": [
+          "About 3 fps (2.5-4 in its README)",
+          "The README hasn't caught up with the streams: it says shadows are black and ray tracing lights nothing yet",
+          "Tested on one PC (RTX 4070); not reproduced by others yet"
+        ],
+        "related": [
+          "fxceless/victory-gta6"
+        ],
+        "gta.render": 0.7,
+        "gta.fps": 3
+      },
+      "to": {
+        "summary": "hyphennn's fork of VIctory (formerly victory-gta6), with rendering and speed fixes and an AMD fork pinned in his stream. The prologue's prison renders with characters, textures and sunlight at about 4 fps; ray-traced light still doesn't run. Self-reported.",
+        "highlights": [
+          "Pinned in his stream: the code is victory-fork and myokex/victory-amd",
+          "Fixes characters' skin and hair textures that came out without colour",
+          "Depth bounds test, faster defaults and an AMD page-view guard; 8-minute runs mostly hold"
+        ],
+        "blockers": [
+          "Ray-traced bounce light and shadows still don't run, so shadowed areas are black",
+          "2-4 fps (4 with the newer switches)",
+          "Tested on two machines (RTX 4070, RX 7800 XT); not reproduced by others"
+        ],
+        "related": [
+          "fxceless/victory-gta6",
+          "myokex/victory-amd"
+        ],
+        "gta.render": 0.8,
+        "gta.fps": 4,
+        "assessedAt": "2026-11-25"
+      },
+      "changes": [
+        {
+          "date": "2026-11-25",
+          "kind": "up",
+          "text": "hyphennn rises to 61.3%: its stream pins both public repos, and their commits fix skin and hair textures, add the depth bounds test and an AMD page-view guard. Rendering goes 0.7 to 0.8; 4 fps."
+        }
+      ]
+    },
+    {
+      "id": "victory-gta6",
+      "from": {
+        "findings": null,
+        "findingsSource": null
+      },
+      "to": {
+        "findings": [
+          {
+            "text": "Its stream's pinned message names the code: fxceless/victory-fork and myokex/victory-amd.",
+            "url": "https://rumble.com/v7iuio8-gta-6-modding-hyphen.html"
+          },
+          {
+            "text": "The prison prologue is live on stream with Lucia, NPCs, bunks and sunlight, blocky but lit, after hours of work.",
+            "url": "https://x.com/cronjob420/status/2125428799718506968"
+          },
+          {
+            "text": "victory-fork fix: textures picked by index are checked again after upload, for skin and hair that came out without colour; packed textures stay in the upload queue.",
+            "url": "https://github.com/fxceless/victory-fork/commit/310c6eb6"
+          },
+          {
+            "text": "victory-fork: the depth bounds test works, defaults are faster, and textures are on the card before the character bake, with one host copy per placed texture.",
+            "url": "https://github.com/fxceless/victory-fork/commit/c96b4f2b"
+          },
+          {
+            "text": "victory-amd: a guard over all views of a page brought back first-room walls in two runs out of two; large dispatches are split and DirectStorage page arrays are read when the request runs.",
+            "url": "https://github.com/myokex/victory-amd/commit/070df424"
+          },
+          {
+            "text": "victory-amd on an RX 7800 XT: 2-3 fps, runs of 8 minutes mostly end without a device loss, one hung after about 5.5 minutes; some cutscene shots come out white.",
+            "url": "https://raw.githubusercontent.com/myokex/victory-amd/victory-amd/README.md"
+          }
+        ],
+        "findingsSource": "From the public READMEs and commits of both pinned repos, 25 November, and the stream."
+      }
+    },
+    {
+      "id": "leonida",
+      "from": {
+        "findingsSource": null,
+        "findings": null
+      },
+      "to": {
+        "findingsSource": "From its creator’s post on X. Not an official comeback: Leonida is still offline and unranked.",
+        "findings": [
+          {
+            "text": "On 25 November at 03:16 UTC its creator, NotRexed, posted: “Ignore my other posts. Something’s coming soon.” The post names no project and gives no date. Two days earlier they had posted that they quit.",
+            "url": "https://x.com/ItsNotRexed/status/2125428372687741366"
+          }
+        ]
+      }
+    }
+  ],
+  "added": [
+    {
+      "effort": {
+        "id": "hugo",
+        "name": "MashedHugo",
+        "avatar": "assets/img/efforts/hugo.jpg",
+        "repo": null,
+        "basedOn": [
+          "marvis",
+          "victory-gta6",
+          "zettrox",
+          "vitoriabr"
+        ],
+        "evidence": "Live streams on Rumble and Discord",
+        "publicLater": true,
+        "byline": "Streamed live · private code, built on the public forks",
+        "tier": "tracked",
+        "summary": "Hugo's private build, MashedHugo, renders Lucia's prologue close to the console — lighting, shadows, hair and faces — with floating geometry and pixelation. Play at about 2 fps; the boat mission still blocks him. Code private for now.",
+        "highlights": [
+          "Lighting, shadows, hair and faces close to the console",
+          "A player walks the prison, talks to cellmates and opens the pause menu",
+          "From 0.08 fps to 2 fps in about an hour"
+        ],
+        "blockers": [
+          "Floating geometry, black faces and pixelated textures",
+          "About 2 fps; the boat mission still won't spawn",
+          "Code is private for now, so nobody outside can test it"
+        ],
+        "provenOn": null,
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.75,
+          "fps": 2,
+          "stability": "unknown"
+        },
+        "verification": "self-reported",
+        "stats": {},
+        "assessedAt": "2026-11-25",
+        "assessedBy": "manual",
+        "claims": []
+      },
+      "changes": [
+        {
+          "date": "2026-11-25",
+          "kind": "new",
+          "text": "MashedHugo joins as a private build at 57.1% (“Playable”): on Hugo's streams it gets into Lucia's prologue at 2-3 fps, lit but blocky, and stops at the boat mission because the boat won't spawn. Built on the public forks; code private for now."
+        },
+        {
+          "date": "2026-11-25",
+          "kind": "up",
+          "text": "MashedHugo rises to 60.0% (“Playable”) on kraithz's thread: Lucia's prologue now renders close to the console — lighting, shadows, hair and faces — at a measured 2 fps, up from 0.08 fps an hour earlier. Floating geometry and a missing boat still block him."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "id": "victory-amd",
+        "name": "victory-amd",
+        "repo": "JoshuuDev/victory-amd",
+        "branch": "victory-amd",
+        "basedOn": [
+          "victory-gta6"
+        ],
+        "related": [
+          "myokex/victory-amd"
+        ],
+        "tier": "tracked",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "VIctory for AMD Radeon cards: myokex's fork of hyphennn's victory-fork, with JoshuuDev's fix on top for a stop seconds after the world loads. The prologue's cutscene and first room draw, with the player moving, at 2 to 3 fps. Self-reported.",
+        "highlights": [
+          "The prologue’s first room draws with the player moving, on a Radeon RX 7800 XT",
+          "JoshuuDev: a file-read fix let a run go 5.5 minutes past the world’s first frame",
+          "Shaders can be translated ahead of time, in about 4 minutes"
+        ],
+        "blockers": [
+          "2 to 3 fps; ray-traced light does not run and some cutscene shots come out white",
+          "Tested by each author on one PC with the same card, an RX 7800 XT; not reproduced by others",
+          "Five commits behind victory-fork when checked; issues are off, so testers can’t report there"
+        ],
+        "provenOn": null,
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.5,
+          "fps": 2.5,
+          "stability": "unknown"
+        },
+        "verification": "self-reported",
+        "stats": {
+          "archived": false,
+          "createdAt": "2026-11-25T02:49:02Z",
+          "forks": 2,
+          "openIssues": 0,
+          "pushedAt": "2026-11-25T02:57:13Z",
+          "stars": 12,
+          "missing": false,
+          "commits7d": 100
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "manual",
+        "claims": [],
+        "findings": [
+          {
+            "text": "myokex's README: the prologue's cutscene and the first room are drawn, with the player moving, at 2 to 3 fps on an RX 7800 XT. Runs of 8 minutes mostly end without a device loss; one hung after about 5.5 minutes.",
+            "url": "https://github.com/myokex/victory-amd/blob/070df424/README.md"
+          },
+          {
+            "text": "JoshuuDev's own change is one commit of code, 92 lines in two files: reads from disk now land in a buffer first, so a guarded page no longer fails them.",
+            "url": "https://github.com/JoshuuDev/victory-amd/commit/10ea38ed"
+          },
+          {
+            "text": "JoshuuDev's README: without the fix, two runs of two stopped seconds after the world's first frame. With it, one run went 5.5 minutes without a failed read.",
+            "url": "https://github.com/JoshuuDev/victory-amd/blob/f25e7352/README.md"
+          },
+          {
+            "text": "Compared with victory-fork it is 12 commits ahead and 5 behind. Nine of the 12 are myokex's, three are JoshuuDev's, and two of those three only change the README.",
+            "url": "https://github.com/fxceless/victory-fork/compare/main...JoshuuDev:victory-amd:victory-amd"
+          },
+          {
+            "text": "Brackzmeta’s screenshots are opening cutscene shots: lit faces, hair and clothing with detail, and large areas black. None shows gameplay, a frame rate or a window title.",
+            "url": "https://x.com/Brackzmeta/status/2125430770898760014"
+          }
+        ],
+        "findingsSource": "From both public READMEs and commits, and Brackzmeta’s post, on 25 November. Code read as text, not run."
+      },
+      "changes": [
+        {
+          "date": "2026-11-25",
+          "kind": "new",
+          "text": "victory-amd joins the race at 57.1% (“Playable”): myokex's AMD fork of hyphennn's victory-fork, with JoshuuDev's fix on top. Its READMEs report the prologue's first room with the player moving at 2 to 3 fps on a Radeon RX 7800 XT (self-reported)."
+        }
+      ]
+    }
+  ],
+  "pick": {
+    "id": "cgbj",
+    "at": "2026-11-25",
+    "reason": "Placed first by us, not by score: the picture closest to the console of any build, driving the “Gone Fishing” boat at 4.5 fps. Nobody outside has tested it."
+  }
+}

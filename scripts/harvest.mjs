@@ -9,6 +9,7 @@
 // Env: GITHUB_TOKEN (recommended; Actions supplies one), REDDIT_CLIENT_ID + REDDIT_CLIENT_SECRET,
 //      X_BEARER_TOKEN (optional).
 import { readFile, writeFile } from 'node:fs/promises';
+import { readTracker } from './lib/tracker.mjs';
 
 const root = new URL('../data/', import.meta.url);
 const dryRun = process.argv.includes('--dry-run');
@@ -22,7 +23,7 @@ const readJson = async (name, fallback) => {
   }
 };
 
-const tracker = await readJson('tracker.json', { efforts: [] });
+const tracker = await readTracker().catch(() => ({ efforts: [] }));
 const newsFile = await readJson('news.json', { updated: null, items: [] });
 const activityFile = await readJson('activity.json', { updated: null, projects: {}, feed: [], discovered: [] });
 

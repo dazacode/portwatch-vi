@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { HeaderShell } from "@/components/header-shell"
 import { NavLink } from "@/components/nav-link"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Wordmark } from "@/components/wordmark"
@@ -15,14 +16,14 @@ const NAV = [
 
 export function SiteHeader() {
   return (
-    <header>
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-8 gap-y-1 px-4 py-3 sm:px-6">
-        <Link href="/" aria-label={SITE.name}>
+    <HeaderShell>
+      <div className="flex flex-wrap items-center gap-x-6 gap-y-1 px-4 py-2 md:pr-2 md:pl-6">
+        <Link href="/" aria-label={SITE.name} className="flex min-h-10 items-center">
           <Wordmark />
         </Link>
         <nav
           aria-label="Main"
-          className="order-3 flex w-full gap-5 text-sm sm:order-none sm:w-auto"
+          className="relative order-3 -mx-2 flex w-[calc(100%+1rem)] overflow-x-auto overscroll-x-contain text-sm [scrollbar-width:none] max-md:justify-between md:order-none md:mx-0 md:w-auto md:gap-1 [&::-webkit-scrollbar]:hidden"
         >
           {NAV.map((item) => (
             <NavLink key={item.href} {...item} />
@@ -32,11 +33,6 @@ export function SiteHeader() {
           <ThemeToggle />
         </div>
       </div>
-      <div aria-hidden="true" className="grid gap-0.5">
-        <div className="h-0.5 bg-stripe-1" />
-        <div className="h-0.5 bg-stripe-2" />
-        <div className="h-0.5 bg-stripe-3" />
-      </div>
-    </header>
+    </HeaderShell>
   )
 }

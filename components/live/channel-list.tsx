@@ -21,8 +21,8 @@ const channelUrl = (c: ChannelStatus) =>
 function Group({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
-      <h2 className="border-b pb-1.5 text-sm font-medium">{title}</h2>
-      <ul>{children}</ul>
+      <h2 className="text-sm font-medium">{title}</h2>
+      <ul className="pane px-5 py-1 mt-3 *:last:border-0">{children}</ul>
     </div>
   )
 }
@@ -68,12 +68,14 @@ export function ChannelList({
   currentId,
   onWatch,
   stale,
+  wide = false,
 }: {
   snapshot: Snapshot
   projects: Record<string, string>
   currentId: string | null
   onWatch: (id: string) => void
   stale: boolean
+  wide?: boolean
 }) {
   const tracked = snapshot.streams.filter((s) => s.origin === "tracked")
   const search = snapshot.streams.filter((s) => s.origin === "search")
@@ -86,7 +88,10 @@ export function ChannelList({
     new Intl.ListFormat("en").format(list.map((p) => PLATFORM_LABEL[p]))
 
   return (
-    <aside aria-label="Channels" className="space-y-6">
+    <aside
+      aria-label="Channels"
+      className={wide ? "gap-8 *:mb-8 *:break-inside-avoid md:columns-2 lg:columns-3" : "space-y-6"}
+    >
       {tracked.length > 0 && (
         <Group title="Live now">
           {tracked.map((s) => (

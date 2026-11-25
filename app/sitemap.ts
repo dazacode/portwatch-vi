@@ -1,16 +1,16 @@
 import type { MetadataRoute } from "next"
-import { SITE } from "@/lib/site"
+import { sitemapEntries } from "@/lib/sitemap"
+import { getActivity, getEvidence, getMilestones, getNews, getTracker } from "@/lib/tracker"
+
+export const revalidate = 300
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const { getTracker } = await import("@/lib/tracker")
-  const tracker = await getTracker()
-  return [
-    "",
-    "/standings",
-    "/news",
-    "/activity",
-    "/verify",
-    "/method",
-    ...tracker.news.map((n) => `/news/${n.id}`),
-  ].map((path) => ({ url: SITE.url + path }))
+  const [tracker, news, activity, milestones, evidence] = await Promise.all([
+    getTracker(),
+    getNews(),
+    getActivity(),
+    getMilestones(),
+    getEvidence(),
+  ])
+  return sitemapEntries({ tracker, news, activity, milestones, evidence })
 }

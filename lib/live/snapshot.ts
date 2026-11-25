@@ -1,4 +1,5 @@
 import { unstable_cache } from "next/cache"
+import { isHidden } from "@/lib/hide"
 import { getChannels } from "@/lib/tracker"
 import { isBoard } from "./filter"
 import { kick } from "./kick"
@@ -33,7 +34,9 @@ export function assemble(
   results: Record<Platform, SourceResult>,
   at: string
 ): Snapshot {
-  const streams = PLATFORMS.flatMap((p) => results[p].streams).sort(byRelevance)
+  const streams = PLATFORMS.flatMap((p) => results[p].streams)
+    .filter((s) => !isHidden([s.name, s.title]))
+    .sort(byRelevance)
   const live = new Set(streams.map(channelKey))
   const sources = {} as Snapshot["sources"]
   for (const p of PLATFORMS) sources[p] = results[p].state

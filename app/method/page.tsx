@@ -1,12 +1,14 @@
-import type { Metadata } from "next"
 import { Container } from "@/components/container"
 import { SIZES } from "@/lib/milestones"
+import { CLAIM_SHARE } from "@/lib/rating.mjs"
 import { MILESTONES, TRACKS } from "@/lib/scoring.mjs"
+import { PAGES, pageMeta } from "@/lib/seo"
+import { SOURCE } from "@/lib/site"
 import { getTracker } from "@/lib/tracker"
-import { WEIGHTS } from "@/lib/verification.mjs"
+import { VERIFIED_AT, WEIGHTS } from "@/lib/verification.mjs"
 
 export const revalidate = 300
-export const metadata: Metadata = { title: "Method" }
+export const metadata = pageMeta(PAGES.method)
 
 const RULES = [
   "Less than 2 points",
@@ -33,6 +35,7 @@ const EVIDENCE = [
   ],
   [WEIGHTS.rule, "Matched by text rules", "The same, when only text rules have read the report."],
 ].map(([weight, ...rest]) => [Math.round(Number(weight) * 100), ...rest])
+const percent = (n: number) => `${Math.round(n * 100)}%`
 const RATINGS = SIZES.map((size, i) => [size, RULES[i]])
 
 export default async function Page() {
@@ -43,9 +46,37 @@ export default async function Page() {
         <section>
           <h1 className="text-2xl font-semibold">How projects are scored</h1>
           <p className="mt-2 text-muted-foreground">
-            The first half of the score is getting in. Each step needs the one before it.
+            A project’s score is what it claims, discounted by how little of it anyone else has
+            seen. A claim nobody has tested counts {percent(CLAIM_SHARE)}. Each stage rises from
+            there to its full points as reports come in, and gets all of them once it is{" "}
+            {percent(VERIFIED_AT)} sure.
           </p>
-          <dl className="mt-4">
+          <p className="mt-2 text-muted-foreground">
+            Story, rendering, performance and stability always count {percent(CLAIM_SHARE)}, because
+            no report can confirm them yet. What was never measured earns nothing, and is shown as
+            not measured, not as a bad result. Private builds follow the same rules.
+          </p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold">What a claim is worth</h2>
+          <p className="mt-2 text-muted-foreground">
+            The scale and most claims come from{" "}
+            <a
+              href={SOURCE.url}
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-4 hover:text-foreground"
+            >
+              {SOURCE.name}
+            </a>
+            , checked every minute when someone visits. Where we found something newer, a project’s
+            page shows both numbers, and theirs takes over again as soon as they change it. The
+            score and the ranking are ours.
+          </p>
+          <p className="mt-2 text-muted-foreground">
+            The first half of a claim is getting in. Each step needs the one before it.
+          </p>
+          <dl className="pane mt-4 px-5 py-1 *:last:border-0">
             {MILESTONES.map((m) => (
               <div key={m.key} className="grid grid-cols-[3rem_1fr] border-b py-3 text-sm">
                 <dt className="contents">
@@ -59,7 +90,7 @@ export default async function Page() {
           <p className="mt-6 text-muted-foreground">
             Once a build is playable, four things fill the other half.
           </p>
-          <dl className="mt-4">
+          <dl className="pane mt-4 px-5 py-1 *:last:border-0">
             {TRACKS.map((t) => (
               <div key={t.key} className="grid grid-cols-[3rem_1fr] border-b py-3 text-sm">
                 <dt className="contents">
@@ -78,7 +109,7 @@ export default async function Page() {
             Each person counts once. A stage is verified at 70%, along with every stage before it,
             and is worth up to 50 points. Story, rendering and speed are not verified.
           </p>
-          <dl className="mt-4">
+          <dl className="pane mt-4 px-5 py-1 *:last:border-0">
             {EVIDENCE.map(([weight, name, rule]) => (
               <div key={name} className="grid grid-cols-[3rem_1fr] border-b py-3 text-sm">
                 <dt className="contents">
@@ -90,16 +121,32 @@ export default async function Page() {
             ))}
           </dl>
           <p className="mt-4 text-sm text-muted-foreground">
-            Claims, stars, commits and passing tests count for nothing here. Two testers at 35% make
-            58%, three make 73%. Each tester who could not get there takes 7% off.
+            Claims, stars, commits and passing tests don’t make a stage more certain. Two testers at
+            35% make 58%, three make 73%. Each tester who could not get there takes 7% off.
+          </p>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold">How the standings are ordered</h2>
+          <p className="mt-2 text-muted-foreground">
+            By score, so a lower claim that others have tested can rank above a higher one that
+            nobody has. Equal scores go by evidence, then the claim, then stars. The official
+            ranking has public code only. “With private” ranks everyone by the same rules, except
+            that we may place one project first ourselves. It is marked, with the reason, and its
+            score doesn’t change. The replay at the top of the standings shows claims over time.
+          </p>
+          <p className="mt-2 text-muted-foreground">
+            “On GitHub since” is the day the repo was created. Without one on record, “First
+            mentioned” is the earliest day in our own records that names the project. A project with
+            no activity on record isn’t counted as inactive.
           </p>
         </section>
         <section>
           <h2 className="text-lg font-semibold">How milestones are rated</h2>
           <p className="mt-2 text-muted-foreground">
-            Stars measure how many points a project gained at once, next to its previous jump.
+            Stars measure how many points a project’s claim gained at once, next to its previous
+            jump.
           </p>
-          <dl className="mt-4">
+          <dl className="pane mt-4 px-5 py-1 *:last:border-0">
             {RATINGS.map(([size, rule], i) => (
               <div key={size} className="grid grid-cols-[3rem_1fr] border-b py-3 text-sm">
                 <dt className="contents">
@@ -126,7 +173,7 @@ export default async function Page() {
         </section>
         <section>
           <h2 className="text-lg font-semibold">Fakes to avoid</h2>
-          <dl className="mt-2">
+          <dl className="pane mt-2 px-5 py-1 *:last:border-0">
             {flagged.map((f) => (
               <div key={f.id} className="border-b py-3 text-sm">
                 <dt className="font-medium">{f.pattern}</dt>

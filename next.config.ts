@@ -11,8 +11,22 @@ const headers = [
   },
 ]
 
+const cache = (days: number) => [
+  {
+    key: "Cache-Control",
+    value: `public, max-age=${days * 86400}, stale-while-revalidate=86400`,
+  },
+]
+
 const nextConfig: NextConfig = {
-  headers: async () => [{ source: "/:path*", headers }],
+  headers: async () => [
+    { source: "/:path*", headers },
+    // Data for the pages, not pages.
+    { source: "/api/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex" }] },
+    // Their names carry no hash, so a replaced clip needs a new name.
+    { source: "/video/:path*", headers: cache(30) },
+    { source: "/icons/:path*", headers: cache(30) },
+  ],
 }
 
 export default nextConfig

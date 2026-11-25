@@ -18,6 +18,15 @@ describe("addMilestones", () => {
     )
     expect(e).toMatchObject({ id: "a", from: 10, to: 20, first: true, debut: false })
   })
+  it("gives the lead to one project when several move at once", () => {
+    const before = map({ a: row(61, "playable"), b: row(59, "playable"), c: row(54, "playable") })
+    const after = map({ a: row(61, "playable"), b: row(61.3, "playable"), c: row(64, "playable") })
+    const events = addMilestones([], before, after, T0)
+    expect(events.map((e) => [e.id, e.lead])).toEqual([
+      ["b", false],
+      ["c", true],
+    ])
+  })
   it("ignores small drift, drops and projects that arrive with nothing running", () => {
     const before = map({ a: row(10, "loads"), b: row(20, "boots") })
     const after = map({ a: row(10.4, "loads"), b: row(12, "loads"), c: row(4, "groundwork") })

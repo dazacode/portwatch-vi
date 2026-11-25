@@ -7,25 +7,69 @@ import { useRef } from "react"
 import { Roll } from "@/components/broadcast/roll"
 import { Stars } from "@/components/broadcast/stars"
 import type { Slide } from "@/lib/broadcast"
-import { ago, utcDay } from "@/lib/format"
+import { ago, utcDay, utcTime } from "@/lib/format"
 
 gsap.registerPlugin(useGSAP, SplitText)
 
 function Plate({ children }: { children: React.ReactNode }) {
   return (
-    <p data-plate className="w-fit bg-stripe-1 px-3 py-1 text-base font-bold text-black sm:text-lg">
+    <p
+      data-plate
+      className="w-fit rounded-full bg-stripe-1 px-4 py-1 text-base font-bold text-black sm:text-lg"
+    >
       {children}
     </p>
   )
 }
 
 const titleClass =
-  "max-w-5xl text-4xl leading-[1.05] font-extrabold tracking-tight text-balance sm:text-6xl lg:text-7xl xl:text-8xl"
+  "max-w-5xl text-4xl leading-[1.05] font-extrabold tracking-tight text-balance sm:text-6xl lg:text-7xl xl:text-8xl short:text-4xl"
 const longTitleClass =
-  "line-clamp-6 max-w-4xl text-2xl leading-tight font-bold text-balance sm:text-4xl lg:text-5xl"
+  "line-clamp-6 max-w-4xl text-2xl leading-tight font-bold text-balance sm:text-4xl lg:text-5xl short:text-2xl"
 
-function Body({ slide, at }: { slide: Slide; at: string }) {
+type Hold = (held: boolean) => void
+
+function Body({ slide, at, onHold }: { slide: Slide; at: string; onHold?: Hold }) {
   switch (slide.kind) {
+    case "breakdown": {
+      const { headline, sentences, by, at: written } = slide.breakdown
+      return (
+        <>
+          <Plate>Breakdown</Plate>
+          <h2
+            data-title
+            className="max-w-4xl text-xl leading-tight font-bold text-balance sm:text-4xl lg:text-5xl short:text-xl"
+          >
+            {headline}
+          </h2>
+          <ul className="max-w-3xl space-y-2 text-sm leading-snug text-white/95 sm:space-y-3 sm:text-xl short:max-w-none short:space-y-1 short:text-sm">
+            {sentences.map((s) => (
+              <li key={s.text} data-rise className="max-[359px]:nth-3:hidden">
+                <span className="max-sm:line-clamp-5">{s.text}</span>{" "}
+                {s.sources.map((source) => (
+                  <a
+                    key={source.ref}
+                    href={source.href}
+                    {...(source.external ? { target: "_blank", rel: "noreferrer" } : {})}
+                    className="mr-2 text-white/75 underline underline-offset-4 hover:text-white sm:text-base short:text-xs"
+                    onFocus={(e) => onHold?.(e.target.matches(":focus-visible"))}
+                    onBlur={() => onHold?.(false)}
+                    onMouseEnter={() => onHold?.(true)}
+                    onMouseLeave={() => onHold?.(false)}
+                  >
+                    {source.label}
+                  </a>
+                ))}
+              </li>
+            ))}
+          </ul>
+          <p data-rise className="max-w-3xl text-xs text-white/75 sm:text-sm short:text-xs">
+            Written by an AI model<span className="max-sm:hidden"> ({by})</span> from the linked
+            sources on {utcDay(written)}, {utcTime(written)}. It can be wrong.
+          </p>
+        </>
+      )
+    }
     case "milestone":
       return (
         <>
@@ -54,23 +98,39 @@ function Body({ slide, at }: { slide: Slide; at: string }) {
           </p>
         </>
       )
+    case "board":
+      return (
+        <>
+          <Plate>{slide.event.kind === "joined" ? "New on the board" : "Moved to dead"}</Plate>
+          <h2 data-title className={titleClass}>
+            {slide.event.title}
+          </h2>
+          <p
+            data-rise
+            className="line-clamp-5 max-w-4xl text-lg text-white/90 sm:text-2xl short:line-clamp-2 short:text-lg"
+          >
+            {slide.event.detail}
+          </p>
+          <p data-rise className="text-white/75 sm:text-lg">
+            {utcDay(slide.event.at)}
+          </p>
+        </>
+      )
     case "race":
       return (
         <>
-          <Plate>The race: verified, then claimed</Plate>
+          <Plate>The race: score, then claim</Plate>
           <ol className="w-full max-w-3xl space-y-3">
             {slide.rows.map((r, i) => (
               <li key={r.id} data-rise>
-                <div className="flex justify-between gap-4 text-lg font-bold sm:text-2xl">
-                  <span className="truncate">
+                <div className="flex flex-wrap items-baseline justify-between gap-x-4 text-lg font-bold sm:text-2xl">
+                  <span className="min-w-0 flex-1 truncate">
                     {i + 1}. {r.name}
                   </span>
-                  <span>
-                    <Roll from={0} to={r.verified} suffix="%" />
-                    <span className="ml-2 text-base font-medium text-white/75 sm:text-lg">
-                      {r.next ? `${r.next}, ` : ""}
-                      {r.score}% claimed
-                    </span>
+                  <Roll from={0} to={r.rating} suffix="%" />
+                  <span className="text-sm font-medium text-white/85 max-sm:basis-full sm:text-lg">
+                    {r.next ? `${r.next}, ` : ""}
+                    {r.score}% claimed
                   </span>
                 </div>
                 <div
@@ -85,7 +145,7 @@ function Body({ slide, at }: { slide: Slide; at: string }) {
                   <div
                     data-bar
                     className="absolute inset-y-0 left-0 origin-left bg-current"
-                    style={{ width: `${r.verified}%` }}
+                    style={{ width: `${r.rating}%` }}
                   />
                 </div>
               </li>
@@ -100,7 +160,10 @@ function Body({ slide, at }: { slide: Slide; at: string }) {
           <h2 data-title className={titleClass}>
             {slide.commit.name}
           </h2>
-          <p data-rise className="line-clamp-3 max-w-4xl text-xl text-white/90 sm:text-3xl">
+          <p
+            data-rise
+            className="line-clamp-3 max-w-4xl text-xl text-white/90 sm:text-3xl short:line-clamp-2 short:text-lg"
+          >
             {slide.commit.message}
           </p>
           <p data-rise className="text-white/75 sm:text-lg">
@@ -127,7 +190,10 @@ function Body({ slide, at }: { slide: Slide; at: string }) {
           <h2 data-title className={titleClass}>
             {slide.item.title}
           </h2>
-          <p data-rise className="line-clamp-3 max-w-4xl text-xl text-white/90 sm:text-3xl">
+          <p
+            data-rise
+            className="line-clamp-3 max-w-4xl text-xl text-white/90 sm:text-3xl short:line-clamp-2 short:text-lg"
+          >
             {slide.item.detail}
           </p>
           <p data-rise className="text-white/75 sm:text-lg">
@@ -151,7 +217,7 @@ function Body({ slide, at }: { slide: Slide; at: string }) {
 }
 
 /** One slide and its entrance. Mounted fresh for each slide. */
-export function SlideBody({ slide, at }: { slide: Slide; at: string }) {
+export function SlideBody({ slide, at, onHold }: { slide: Slide; at: string; onHold?: Hold }) {
   const root = useRef<HTMLDivElement>(null)
   useGSAP(
     () => {
@@ -187,8 +253,14 @@ export function SlideBody({ slide, at }: { slide: Slide; at: string }) {
     { scope: root }
   )
   return (
-    <div ref={root} className="flex flex-col gap-3 sm:gap-5">
-      <Body slide={slide} at={at} />
+    <div ref={root} className="flex flex-col gap-3 wrap-anywhere sm:gap-5 short:gap-2">
+      <Body slide={slide} at={at} onHold={onHold} />
+      {slide.note && (
+        <p data-rise className="max-w-3xl text-sm text-white/90 sm:text-lg short:text-sm">
+          {slide.note}{" "}
+          <span className="text-white/75">Written by an AI model. It can be wrong.</span>
+        </p>
+      )}
     </div>
   )
 }

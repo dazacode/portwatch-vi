@@ -37,7 +37,7 @@ export function Ticker({
   return (
     <section
       aria-label="Last commit in every project"
-      className="flex overflow-x-auto bg-black py-2.5 text-sm text-white motion-safe:overflow-hidden"
+      className="flex overflow-x-auto bg-black/55 py-2.5 text-sm text-white motion-safe:overflow-hidden"
     >
       <div
         className="flex w-max hover:[animation-play-state:paused] focus-within:[animation-play-state:paused] motion-safe:animate-[ticker_linear_infinite]"

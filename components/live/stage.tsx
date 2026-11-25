@@ -32,7 +32,7 @@ export function Stage({
   ].filter(Boolean)
 
   return (
-    <section aria-label="Stream" className="stage-height flex flex-col bg-black text-white">
+    <section aria-label="Stream" className="dark stage-height flex flex-col bg-black text-white">
       <div className="relative isolate flex min-h-0 flex-1">
         {playing && stream.embed ? (
           <div className="absolute inset-0">

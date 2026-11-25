@@ -4,11 +4,12 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { key, mergeChannels } from './lib/channels.mjs';
 import { makeGitHub } from './lib/core.mjs';
+import { readTracker } from './lib/tracker.mjs';
 
 const at = (p) => new URL(`../data/${p}`, import.meta.url);
 const read = async (p) => JSON.parse(await readFile(at(p), 'utf8'));
 
-const { efforts } = await read('tracker.json');
+const { efforts } = await readTracker();
 const current = await read('channels.json');
 const gh = makeGitHub({ token: process.env.GITHUB_TOKEN });
 

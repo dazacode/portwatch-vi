@@ -2,23 +2,25 @@
 
 What upstream did by hand, and what runs it here. Limits were checked on 24 November 2026.
 
-| Job                                            | Upstream                              | Here                                            | Runs on                                  |
-| ---------------------------------------------- | ------------------------------------- | ----------------------------------------------- | ---------------------------------------- |
-| Who is live                                    | Not tracked                           | Platform APIs, refreshed by visits              | Vercel ISR, every 60 s                   |
-| New streams                                    | Not tracked                           | Category and keyword search with a title filter | Vercel ISR                               |
-| Which channels to follow                       | Not tracked                           | Links in project READMEs, added and dropped     | GitHub Actions, 3 h                      |
-| Repo stats, new projects, takedowns, headlines | Scout                                 | Same scout                                      | GitHub Actions, 3 h                      |
-| News, commits and pull requests                | Not tracked                           | Harvester over feeds, GitHub and communities    | GitHub Actions, 30 min                   |
-| Scores                                         | Claude editor on a PC, plus the owner | Claude review inside the scout                  | GitHub Actions, with `ANTHROPIC_API_KEY` |
-| Publishing data                                | Full deploy each run                  | Read from the repo at runtime, no deploy        | Vercel ISR, 5 min                        |
-| Articles                                       | Claude and the owner                  | Off; set `NEWS_DESK=1` to write them            | GitHub Actions                           |
-| Pinned message, dashboard, board               | Owner                                 | Removed                                         |                                          |
+| Job                                            | Upstream                              | Here                                            | Runs on                |
+| ---------------------------------------------- | ------------------------------------- | ----------------------------------------------- | ---------------------- |
+| Who is live                                    | Not tracked                           | Platform APIs, refreshed by visits              | Vercel ISR, every 60 s |
+| New streams                                    | Not tracked                           | Category and keyword search with a title filter | Vercel ISR             |
+| Which channels to follow                       | Not tracked                           | Links in project READMEs, added and dropped     | GitHub Actions, 3 h    |
+| Repo stats, new projects, takedowns, headlines | Scout                                 | Upstream's scout, read live                     | Vercel ISR, 60 s       |
+| News, commits and pull requests                | Not tracked                           | Harvester over feeds, GitHub and communities    | GitHub Actions, 30 min |
+| Claims                                         | Claude editor on a PC, plus the owner | Upstream's, read live, plus `overrides.json`    | Vercel ISR, 60 s       |
+| Score and ranking                              | The claim                             | Our own, from claims and evidence               | When a page is built   |
+| Publishing data                                | Full deploy each run                  | Read from the repo at runtime, no deploy        | Vercel ISR, 5 min      |
+| Articles                                       | Claude and the owner                  | Off; set `NEWS_DESK=1` to write them            | GitHub Actions         |
+| Pinned message, dashboard, board               | Owner                                 | Removed                                         |                        |
 
-Without `ANTHROPIC_API_KEY`, everything else still runs, but scores stay as they are and new projects
-wait in `candidates`. The review is bounded: a milestone only rises if the model quotes text that is
-really in the repo, and each run reviews at most 12 projects.
+Our own scout is off, because upstream's does the same work. If upstream stops, set the repository
+variable `OWN_SCOUT` to 1, disable `upstream-sync.yml` and set `UPSTREAM_DATA=off` on Vercel. With
+`ANTHROPIC_API_KEY` it reviews at most 12 projects a run, and a milestone only rises if the model quotes
+text that is really in the repo.
 
-Two things still need a person: scores for private builds, which have no repo to read, and removing a
+Two things still need a person: our own findings (`data/overrides.json`), and removing a
 channel that turns out to be a problem (delete it from `channels.json`; if a README links it, remove
 the project too, or it comes back).
 
@@ -43,6 +45,34 @@ deploy. No keys beyond `GITHUB_TOKEN` are required; Reddit's own keys are option
 Limits: 30 search calls a minute, 1,000 REST calls an hour for the Actions token. A run uses about
 90, well inside both. Outlet and RSS feeds are read directly and only when they answer; a blocked
 source is logged in the run summary and its stories simply expire.
+
+## The summary, written by a free AI model
+
+`scripts/digest.mjs` runs after each harvest. It reads what the site already publishes and writes
+`data/digest.json`: a summary of what matters now, a topic and an importance for each story, a line in
+plain words where it adds something, a line for each busy project, and the breakdowns that open the
+news show. Pages only read that file. No visitor ever causes a call to a model.
+
+- **Providers.** [Pollinations' Free API Classic](https://pollinations.ai/privacy) first, which needs no
+  account and gives one reply of at most 1,500 tokens every 45 seconds. Then named free models on
+  [Kilo Gateway](https://kilo.ai/docs/gateway/models-and-providers), 200 requests an hour without a key.
+  Kilo's providers may log and train on what they are sent, and its
+  [terms](https://kilo.ai/terms) ask for users of 18 and over. `kilo-auto/free` is not used: it says it is not for production and can route to
+  NVIDIA's trial-only endpoints. Nothing is used that borrows another company's web chat.
+  `FREE_AI_BASE_URL` and `FREE_AI_MODEL` put another keyless endpoint first; `FREE_AI=off` turns it off.
+- **Cost of a run.** At most 6 requests and 4.5 minutes, usually 1 to 3. Each item is cached by a hash of its
+  text. The summary is rewritten at most every hour, breakdowns every 2, project lines every 3.
+- **Without a model** stories are sorted by rules, the summary shows the top headline of each topic as
+  written, and lines already written stay until they expire. Older than 36 hours, the summary is hidden.
+  Breakdowns go after 24 hours, or when their newest source is over 72 hours old.
+- **What it can't do.** Scraped text is sent as data between random markers, without handles or links.
+  From an answer only text, a topic and an importance are taken. A line is dropped if it has an id that
+  wasn't sent, a link, a lure word, a way to the game's files, a name or number that isn't in its
+  source, or no word of who says it. Links are looked up from ids when the page is drawn. The script
+  writes `data/digest.json` and nothing else. The rules are in `lib/digest-safety.mjs`.
+- It can still be wrong, so every place that shows it says an AI model wrote it. To remove a line, set its
+  `summary` or `text` to `null` in `data/digest.json`; to remove a point or breakdown, delete it. To turn it
+  all off, set the repository variable `FREE_AI` to `off` and make the file `{}`.
 
 ## Live status without a cron job
 
@@ -79,25 +109,36 @@ blocks Atom reads. It runs every five minutes. If `GITHUB_TOKEN` is set on Verce
 back to one GraphQL request instead of the branch. GitHub's robots.txt disallows the `.atom` paths;
 browsers and feed readers have always fetched them anyway.
 
-`scripts/milestones.mjs` runs after the scout and compares scores with the last commit. Its history was
+`scripts/milestones.mjs` runs after each sync and compares claims with the last run. Its history was
 rebuilt from git, with scores from before 24 November converted to the current scale.
 
 ## Following upstream
 
-This site is a fork of [4lwayz/portwatch-vi](https://github.com/4lwayz/portwatch-vi), and its work
-is followed like any other project: the upstream repository rides the same realtime Atom feed, its
-commits can break into the wire, its pull requests join the harvest, and `/activity` gives it a
-section of its own.
+The list of projects and their claims come from [4lwayz/portwatch-vi](https://github.com/4lwayz/portwatch-vi).
+The score and the ranking are ours. Three pieces keep the two apart:
 
-`upstream-sync.yml` merges `upstream/main` every fifteen minutes, so the fork's scores, news and
-tracker stay current. Upstream owns `data/tracker.json`, `data/pinned.json`, `EDITOR.md` and its
-legacy `assets/js/` files; a conflict in those is resolved in upstream's favour. Any other conflict
-aborts the merge and fails the run rather than guessing. It shares the `data-write` group with the
-scout, harvest and challenge jobs.
+- **Read live.** `lib/upstream.ts` asks their commit feed for the newest commit of `data/tracker.json`
+  and reads the file at that commit, which skips the five-minute cache of a branch. Checked at most
+  every 60 seconds, and pages are rebuilt every 60, so a change shows within about two minutes of
+  visits. If it can't be read, or isn't shaped as the pages expect, the copy in the repo is used.
+- **A copy.** `upstream-sync.yml` writes their file to `data/tracker.json`, byte for byte, and records
+  milestones. It takes no other file, so it can't conflict or overwrite our work. If their scoring model
+  changes, the run fails after saving the data: read `assets/js/scoring.js` of theirs and copy it to
+  `lib/scoring.mjs`. Never edit `data/tracker.json`: the next sync replaces it.
+- **Our findings.** `data/overrides.json`. A patch has `from` (upstream's values when it was written),
+  `to` (ours) and, optionally, the `changes` that announce it. It applies only while every value in
+  `from` is still upstream's. Once they change one, the whole patch lapses and the run warns. `added`
+  holds projects upstream doesn't list, and gives way when it does; `scripts/added.mjs` refreshes their stars and notices a takedown every 3 h. `pick` places one project first under
+  "With private", marked with its reason and without touching its score. Delete it to go by score again.
 
-The cost of taking upstream's tracker wholesale: a scout run's candidate list can be replaced by
-the next sync, and the scout re-detects it later. Scores and owner calls are upstream's, which is
-the point of following it.
+Milestones compare with `data/scores.json`, the scores of the last run. Comparing with the last commit
+missed every change that a sync had already committed.
+
+## Our score
+
+`lib/rating.mjs`. Each stage counts half with no evidence and all of it at 70% sure, in a straight line.
+Story, rendering, performance and stability count half, since no report can confirm them yet, which caps
+a score at 75. What was never measured earns nothing and says so. `CLAIM_SHARE` is the half.
 
 ## Breaking, without a model
 

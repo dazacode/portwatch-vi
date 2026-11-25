@@ -4,6 +4,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { findChallenge } from '../lib/challenge.mjs';
 import { parseForm } from './lib/challenge-form.mjs';
+import { readTracker } from './lib/tracker.mjs';
 
 const file = new URL('../data/evidence.json', import.meta.url);
 const reply = process.argv[2];
@@ -11,7 +12,7 @@ const secret = process.env.CHALLENGE_SECRET;
 if (!secret) throw new Error('CHALLENGE_SECRET is not set');
 
 const { issue } = JSON.parse(await readFile(process.env.GITHUB_EVENT_PATH, 'utf8'));
-const { efforts } = JSON.parse(await readFile(new URL('../data/tracker.json', import.meta.url), 'utf8'));
+const { efforts } = await readTracker();
 const form = parseForm(issue.body);
 const effort = efforts.find((e) => e.id === form.project);
 const found = effort && findChallenge(secret, effort.id, form.code, Date.parse(issue.created_at));

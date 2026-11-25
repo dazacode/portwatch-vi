@@ -8,6 +8,7 @@
   "files": {
     "includes": [
       "**",
+      "!.claude",
       "!components/ui",
       "!scripts",
       "!lib/scoring.mjs",

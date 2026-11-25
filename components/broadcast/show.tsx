@@ -13,19 +13,20 @@ import {
   VolumeX,
 } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
-import { Scene } from "@/components/broadcast/scene"
+import { Backdrop } from "@/components/backdrop"
 import { SlideBody } from "@/components/broadcast/slide"
 import { Ticker } from "@/components/broadcast/ticker"
 import type { useSound } from "@/components/broadcast/use-sound"
 import { Button, buttonVariants } from "@/components/ui/button"
+import { useFullscreen } from "@/components/use-fullscreen"
 import type { Broadcast, Slide } from "@/lib/broadcast"
 import { utcTime } from "@/lib/format"
 import type { Stream } from "@/lib/live/types"
+import { cutsIn, slideSeconds } from "@/lib/slides"
 import { cn } from "@/lib/utils"
 
 gsap.registerPlugin(useGSAP)
 
-const SECONDS = 10
 const COVERED = 0.42
 const glass = "text-white hover:bg-white/20 hover:text-white dark:hover:bg-white/20"
 
@@ -39,28 +40,6 @@ function Clock() {
     return () => clearInterval(timer)
   }, [])
   return <span className="max-sm:hidden">{now}</span>
-}
-
-function useFullscreen() {
-  const [full, setFull] = useState(false)
-  useEffect(() => {
-    const sync = () => {
-      const on = document.fullscreenElement !== null
-      setFull(on)
-      document.documentElement.classList.toggle("tv", on)
-    }
-    document.addEventListener("fullscreenchange", sync)
-    return () => {
-      document.removeEventListener("fullscreenchange", sync)
-      document.documentElement.classList.remove("tv")
-    }
-  }, [])
-  const toggle = () => {
-    // The whole document goes full screen, so drawers and menus still appear on top.
-    if (document.fullscreenElement) void document.exitFullscreen()
-    else void document.documentElement.requestFullscreen?.().catch(() => {})
-  }
-  return { full, toggle }
 }
 
 const confettiSeen = new Set<string>()
@@ -86,13 +65,23 @@ async function celebrate(id: string) {
   }
 }
 
-const more = (slide: Slide) => {
+export const more = (slide: Slide) => {
   if (slide.kind === "commit")
     return { href: slide.commit.url, label: "See the commit", external: true }
   if (slide.kind === "trailer")
     return { href: slide.stream.url, label: "Open on YouTube", external: true }
   if (slide.kind === "wire")
     return { href: slide.item.url, label: "See the source", external: true }
+  if (slide.kind === "board")
+    return {
+      href: `/projects/${slide.event.projectId}`,
+      label: "See the project",
+      external: false,
+    }
+  if (slide.kind === "breakdown") {
+    const [first] = slide.breakdown.sources
+    return { href: first.href, label: "See the source", external: first.external }
+  }
   return { href: "/standings", label: "See the standings", external: false }
 }
 
@@ -119,16 +108,12 @@ export function Show({
   const [shownId, setShownId] = useState(currentId)
   const [paused, setPaused] = useState(false)
   const [held, setHeld] = useState(false)
-  const { full, toggle: toggleFull } = useFullscreen()
+  const { full, can: canFull, toggle: toggleFull } = useFullscreen()
   const seen = useRef(new Set(slides.map((s) => s.id)))
 
   // A new milestone cuts straight in, like breaking news. Commits arrive too often for that.
   useEffect(() => {
-    const fresh = slides.find(
-      (s) =>
-        !seen.current.has(s.id) &&
-        (s.kind === "milestone" || (s.kind === "wire" && s.item.severity === 3))
-    )
+    const fresh = slides.find((s) => !seen.current.has(s.id) && cutsIn(s))
     for (const s of slides) seen.current.add(s.id)
     if (fresh) setCurrentId(fresh.id)
   }, [slides])
@@ -225,24 +210,24 @@ export function Show({
       ref={root}
       aria-roledescription="carousel"
       aria-label="Latest updates"
-      className="stage-height relative isolate flex flex-col overflow-hidden bg-black text-white"
+      className="dark stage-height relative isolate flex flex-col overflow-hidden bg-black text-white"
     >
       <div className="absolute inset-0 -z-10">
-        <Scene level={slide.level} banner={answer} />
-        <div className="absolute inset-0 bg-linear-to-r from-black/75 via-black/35 via-40% to-transparent to-70% max-lg:to-black/30 max-lg:to-100%" />
-        <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent to-40%" />
+        <Backdrop paused={paused} />
+        <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/50 via-50% to-black/10 max-lg:to-black/30 max-lg:to-100%" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/75 to-transparent to-40%" />
       </div>
 
-      <header className="flex items-center gap-2 p-3 text-sm sm:gap-3 sm:px-8 sm:pt-5">
-        <span className="flex items-center gap-2 bg-black/60 px-2 py-1 font-semibold whitespace-nowrap">
+      <header className="flex items-center gap-2 p-3 text-sm sm:gap-3 sm:px-8 sm:pt-5 short:py-2">
+        <span className="flex items-center gap-2 glass rounded-full px-4 py-1.5 font-semibold whitespace-nowrap">
           <span aria-hidden="true" className="relative flex size-2">
-            <span className="absolute size-full rounded-full bg-live motion-safe:animate-ping" />
             <span className="size-full rounded-full bg-live" />
           </span>
           On air
         </span>
         <Clock />
-        <div className="ml-auto flex items-center gap-0.5 bg-black/40 sm:gap-1">
+        <span className="glass rounded-full px-4 py-1.5 max-md:hidden">{answer}</span>
+        <div className="ml-auto flex items-center gap-0.5 glass rounded-full p-1">
           <Button
             variant="ghost"
             size="icon"
@@ -293,28 +278,32 @@ export function Show({
           >
             <ChevronRight />
           </Button>
-          <Button
-            variant="ghost"
-            size="icon"
-            className={glass}
-            aria-label={full ? "Leave full screen" : "Full screen"}
-            title="Full screen (F)"
-            onClick={toggleFull}
-          >
-            {full ? <Minimize /> : <Maximize />}
-          </Button>
+          {canFull && (
+            <Button
+              variant="ghost"
+              size="icon"
+              className={glass}
+              aria-label={full ? "Leave full screen" : "Full screen"}
+              title="Full screen (F)"
+              onClick={toggleFull}
+            >
+              {full ? <Minimize /> : <Maximize />}
+            </Button>
+          )}
         </div>
       </header>
       <div
         data-content
-        className="mx-auto flex w-full max-w-[110rem] flex-1 flex-col justify-end gap-5 px-4 pb-4 sm:gap-7 sm:px-8 sm:pb-6"
+        className="mx-auto flex w-full max-w-[110rem] flex-1 flex-col justify-end gap-5 px-4 pb-4 sm:gap-7 sm:px-8 sm:pb-6 short:gap-3 short:pb-3"
       >
         <article
           aria-roledescription="slide"
           aria-label={`${index + 1} of ${slides.length}`}
+          // Read out only when it was asked for, not each time the show moves on.
+          aria-live={paused ? "polite" : "off"}
           className="w-full"
         >
-          <SlideBody key={slide.id} slide={slide} at={at} />
+          <SlideBody key={slide.id} slide={slide} at={at} onHold={setHeld} />
         </article>
         {/* biome-ignore lint/a11y/noStaticElementInteractions: reaching for a button only holds the timer */}
         <div
@@ -335,7 +324,7 @@ export function Show({
             {...(link.external ? { target: "_blank", rel: "noreferrer" } : {})}
             className={cn(
               buttonVariants({ variant: "ghost", size: "lg" }),
-              "bg-black/50 text-white hover:bg-black/80 hover:text-white dark:hover:bg-black/80"
+              "glass text-white hover:bg-white/20 hover:text-white dark:hover:bg-white/20"
             )}
           >
             {link.label}
@@ -344,16 +333,16 @@ export function Show({
         </div>
       </div>
 
-      <div aria-hidden="true" className="flex gap-1 px-4 pb-4 sm:px-8">
+      <div aria-hidden="true" className="flex gap-1 px-4 pb-4 sm:px-8 short:pb-1">
         {slides.map((s, i) => (
-          <span key={s.id} className="h-1 flex-1 bg-white/25">
+          <span key={s.id} className="h-1 flex-1 overflow-hidden rounded-full bg-white/25">
             {i < index && <span className="block h-full bg-white" />}
             {i === index && (
               <span
                 key={target.id}
                 className="block h-full origin-left bg-stripe-1 motion-safe:animate-[grow_linear_forwards]"
                 style={{
-                  animationDuration: `${SECONDS}s`,
+                  animationDuration: `${slideSeconds(target)}s`,
                   animationPlayState: stopped ? "paused" : "running",
                 }}
                 // The bar is the timer: pausing it pauses the show, and with reduced motion it never runs.

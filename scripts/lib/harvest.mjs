@@ -132,7 +132,8 @@ export const storyId = (item) => {
 
 const cleanTitle = (t) =>
   String(t ?? '')
-    .replace(/\s*[-|–]\s*[^-|–]{2,40}$/, '')
+    // The outlet after the last separator. One without spaces is a hyphen in a name, such as Take-Two.
+    .replace(/\s+[-|–]\s+[^|–]{2,40}$/, '')
     .replace(/\s+/g, ' ')
     .trim()
     .slice(0, 200);

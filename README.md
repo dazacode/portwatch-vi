@@ -2,7 +2,8 @@
 
 Shows who is streaming work on running GTA VI on PC, and how far each project has got. A fork of
 [PortWatch VI](https://github.com/4lwayz/portwatch-vi) by 4lwayz with a new front end (Next.js,
-shadcn/ui on Base UI, Tailwind) and live stream tracking. The scout and scoring come from upstream.
+shadcn/ui on Base UI, Tailwind), live stream tracking and its own score and ranking. The projects and
+their claims come from upstream.
 
     pnpm install
     pnpm dev
@@ -21,12 +22,15 @@ shadcn/ui on Base UI, Tailwind) and live stream tracking. The scout and scoring 
   `"readme"` ones are managed by `scripts/channels.mjs`
 - `data/news.json`: every scraped story, headline and discussion, newest first
 - `data/activity.json`: public commits, pull requests and newly found repositories per project
-- `data/tracker.json`: projects, scores and headlines, rewritten by `scripts/scout.mjs`
+- `data/tracker.json`: upstream's projects, claims and headlines, exactly as they wrote them. Don't edit
+- `data/overrides.json`: what we found ourselves, applied on top. Edit this one
+- `data/scores.json`: the claims of the last run, for milestones
 - `app/news/`, `app/activity/`: the story feed and the public commit/PR log
-- `lib/scoring.mjs`: the scoring rules, shared by the site and the scout
+- `lib/scoring.mjs`: upstream's scale for claims, a copy of their `assets/js/scoring.js`
+- `lib/rating.mjs`: our score, from the claim and the evidence
 
-How the automation works, and why, is in [docs/AUTOMATION.md](docs/AUTOMATION.md). The upstream
-repository is merged every 15 minutes and tracked in the activity feed like a project.
+How the automation works, and why, is in [docs/AUTOMATION.md](docs/AUTOMATION.md). Upstream's
+tracker is read live, and copied here every 15 minutes.
 
 ## Deploy
 

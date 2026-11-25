@@ -1,10 +1,12 @@
 name: Upstream sync
 
-# Follows the main PortWatch repository. Merges it every 15 minutes so the fork's data stays current.
-# Conflicts in upstream-owned files are resolved in upstream's favour; anything else stops the run.
+# Keeps a copy of upstream's tracker, byte for byte. The site reads upstream itself, so this copy is the
+# fallback, and what the scripts and milestones work from. Only that one file is taken: their code and
+# the rest of the repo have gone another way. What we found ourselves is in data/overrides.json.
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    # Off the quarter hours, when GitHub is busiest and drops scheduled runs.
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -23,50 +25,34 @@ jobs:
       - uses: actions/checkout@v5
         with:
           ref: main
-          fetch-depth: 0
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          package-manager-cache: false
 
-      - name: Merge upstream
+      - name: Fetch upstream's tracker
+        id: upstream
+        run: |
+          git fetch --no-tags --depth 1 https://github.com/4lwayz/portwatch-vi.git main
+          git show FETCH_HEAD:data/tracker.json > "$RUNNER_TEMP/tracker.json"
+          git show FETCH_HEAD:assets/js/scoring.js > "$RUNNER_TEMP/scoring.js"
+          node scripts/upstream.mjs "$RUNNER_TEMP/tracker.json" "$RUNNER_TEMP/scoring.js"
+
+      - name: Record milestones
+        run: node scripts/milestones.mjs
+
+      - name: Commit data
         run: |
           git config user.name "viportlive-sync[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git remote add upstream https://github.com/4lwayz/portwatch-vi.git
-          git fetch --no-tags upstream main
-
-          if git merge-base --is-ancestor upstream/main HEAD; then
-            echo "Already up to date."
-            exit 0
-          fi
-
-          git merge --no-edit upstream/main || true
-          conflicts="$(git diff --name-only --diff-filter=U)"
-
-          if [ -n "$conflicts" ]; then
-            unhandled=0
-            for path in $conflicts; do
-              case "$path" in
-                # Upstream owns the tracker, the pinned message and its legacy files.
-                data/tracker.json | data/pinned.json | EDITOR.md | assets/js/*)
-                  git checkout --theirs -- "$path"
-                  git add -- "$path"
-                  ;;
-                *)
-                  echo "Unhandled conflict: $path"
-                  unhandled=1
-                  ;;
-              esac
-            done
-            if [ "$unhandled" = 1 ]; then
-              git merge --abort
-              echo "Left for a person."
-              exit 1
-            fi
-            git commit --no-edit
-          fi
-
-          if git diff --quiet HEAD@{1} HEAD 2>/dev/null; then
-            echo "Nothing to push."
-            exit 0
-          fi
-
+          git add data/tracker.json data/milestones.json data/scores.json
+          if git diff --cached --quiet; then echo "Already up to date."; exit 0; fi
+          git commit -m "sync: $(date -u '+%F %H:%M') UTC"
+          git pull --rebase origin main
           git push origin HEAD:main
-          git push origin HEAD:live-front
+          git push origin HEAD:live-front || echo "::warning::live-front has commits of its own, so it was left alone."
+
+      # Last, so the data is in before someone is asked to look.
+      - name: Ask for a look at the scoring model
+        if: steps.upstream.outputs.drift == 'true'
+        run: exit 1
