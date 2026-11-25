@@ -798,7 +798,7 @@
       "tier": "tracked",
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "DexNom Runtime, a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it: the open world looks close to the retail game, and it plays through missions at about 3-4 fps, rarely crashing.",
+      "summary": "DexNom Runtime, a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it: the open world looks close to the retail game, and it plays through missions at about 3-4 fps (about 1 fps with ray tracing on), rarely crashing.",
       "highlights": [
         "Platform: AMD Radeon RX 7900 XTX, Windows x64",
         "Ray-traced lighting working, seen by PortWatch: the first AMD build on our board to get it",
@@ -807,7 +807,7 @@
         "Builds from source with its own Setup.cmd; no prebuilt downloads; GPL-3.0"
       ],
       "blockers": [
-        "About 3.5-4 fps indoors in Chapter 1's city (its test report)",
+        "About 1 fps with ray-traced lighting on; 3.5-4 fps indoors in Chapter 1's city without it (its test report)",
         "Its README still calls ray-traced lighting experimental, and its test report finds interior lighting wrong (overexposed doorways, dark objects)",
         "Tested on one AMD card only; not yet reproduced by others"
       ],
@@ -937,6 +937,49 @@
       "claims": [],
       "readmeSha": "1ae54c8f7197a6661228549ede4f2be1231b9ede7d2e6b79efde565c5f582b05",
       "readmeChangedAt": "2026-11-25"
+    },
+    {
+      "id": "doomsday",
+      "name": "Doomsday",
+      "avatar": "assets/img/efforts/doomsday.jpg",
+      "repo": null,
+      "basedOn": [],
+      "evidence": "Verified by PortWatch",
+      "byline": "Working in private · built on JoshuuDev's victory-amd",
+      "proof": {
+        "label": "Doomsday on X",
+        "url": "https://x.com/Stu9ao"
+      },
+      "tier": "tracked",
+      "summary": "A private group's build on JoshuuDev's victory-amd fork of VIctory, verified by PortWatch. It runs GTA VI with ray-traced lighting at about 3-5 fps, almost never crashes, and gets as far into the story as the leading public builds. The in-game phone renders really well, and the map menu runs at a higher frame rate. It's built mostly for AMD and also works on NVIDIA, at a lower frame rate. Code not public.",
+      "highlights": [
+        "Ray-traced lighting at about 3-5 fps, verified by PortWatch",
+        "Almost never crashes, and gets as far into the story as the leading public builds",
+        "The in-game phone renders really well; the map menu runs at a higher frame rate",
+        "Runs mostly on AMD; also works on NVIDIA at a lower frame rate"
+      ],
+      "blockers": [
+        "Rendering slightly behind DexNom's",
+        "About 3-5 fps",
+        "Code is private, so nobody outside can test or reproduce it"
+      ],
+      "provenOn": null,
+      "gta": {
+        "loads": 1,
+        "boots": 1,
+        "menu": 1,
+        "world": 1,
+        "playable": 1,
+        "story": 0.5,
+        "render": 0.85,
+        "fps": 4,
+        "stability": 0.8
+      },
+      "verification": "portwatch",
+      "stats": {},
+      "assessedAt": "2026-11-25",
+      "assessedBy": "manual",
+      "claims": []
     },
     {
       "id": "suri",
@@ -6770,6 +6813,11 @@
       "date": "2026-11-25",
       "kind": "up",
       "text": "DexNom takes #1 at 78%: PortWatch has seen its build running with ray-traced lighting, the first AMD build on our board to get it. Rendering goes from 0.81 to 0.9."
+    },
+    {
+      "date": "2026-11-25",
+      "kind": "new",
+      "text": "Doomsday, a private group, joins at 78.7% and leads our overall number, verified by PortWatch: built on JoshuuDev's victory-amd, it runs ray-traced lighting at about 3-5 fps, almost never crashes and gets as far into the story as the leaders. Mostly AMD, also working on NVIDIA at lower fps. DexNom keeps #1 in the race, which ranks public code only."
     }
   ],
   "history": [
@@ -6807,11 +6855,11 @@
     },
     {
       "date": "2026-11-25",
-      "leader": 78,
-      "leaderId": "dexnom",
-      "top3": 73.2,
+      "leader": 78.7,
+      "leaderId": "doomsday",
+      "top3": 78,
       "furthest": "playable",
-      "tracked": 38
+      "tracked": 39
     }
   ],
   "scout": {
