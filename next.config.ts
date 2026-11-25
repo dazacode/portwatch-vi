@@ -18,7 +18,35 @@ const cache = (days: number) => [
   },
 ]
 
+// The answer's own domain shows one page. Anything else there belongs to the main site.
+const onAnswer = [{ type: "host" as const, value: "isgta6onpc.com" }]
+
 const nextConfig: NextConfig = {
+  redirects: async () => [
+    {
+      source:
+        "/:path((?!$|robots\\.txt$|sitemap\\.xml$|og\\.png$|icon\\.svg$|favicon\\.ico$|_next/|_vercel/).*)",
+      has: onAnswer,
+      destination: "https://viportlive.com/:path",
+      permanent: false,
+    },
+    {
+      source: "/pc-answer/:rest*",
+      has: [{ type: "host", value: "viportlive.com" }],
+      destination: "https://isgta6onpc.com/",
+      permanent: false,
+    },
+  ],
+  rewrites: async () => ({
+    beforeFiles: [
+      { source: "/", has: onAnswer, destination: "/pc-answer" },
+      { source: "/robots.txt", has: onAnswer, destination: "/pc-answer/robots" },
+      { source: "/sitemap.xml", has: onAnswer, destination: "/pc-answer/sitemap" },
+      { source: "/og.png", has: onAnswer, destination: "/pc-answer/og" },
+    ],
+    afterFiles: [],
+    fallback: [],
+  }),
   headers: async () => [
     { source: "/:path*", headers },
     // Data for the pages, not pages.

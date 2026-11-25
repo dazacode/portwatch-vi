@@ -5,16 +5,24 @@ export const SOURCE = {
   url: "https://github.com/4lwayz/portwatch-vi",
 }
 
+/** One page that answers the question, on a domain of its own. Served by /pc-answer. */
+export const ANSWER = {
+  name: "Is GTA 6 on PC?",
+  host: "isgta6onpc.com",
+  url: "https://isgta6onpc.com",
+}
+
+// Vercel names the shortest production domain, and the answer's is as short as ours.
+const production = process.env.VERCEL_PROJECT_PRODUCTION_URL
+const host = production?.endsWith(ANSWER.host) ? "viportlive.com" : production
+
 export const SITE = {
   name: "VIPortLive",
   description:
     "Live streams, progress and news from the community projects trying to run GTA VI on PC.",
   // Without a slash at the end, so paths can be added to it.
   url: (
-    process.env.NEXT_PUBLIC_SITE_URL ||
-    (process.env.VERCEL_PROJECT_PRODUCTION_URL
-      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-      : "http://localhost:3000")
+    process.env.NEXT_PUBLIC_SITE_URL || (host ? `https://${host}` : "http://localhost:3000")
   ).replace(/\/+$/, ""),
   repo: "dazacode/portwatch-vi",
 }
