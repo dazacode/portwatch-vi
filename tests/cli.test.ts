@@ -268,7 +268,10 @@ describe("pw read commands", () => {
 
   it("refuses an id that is already listed", async () => {
     const file = path.join(root, "private.json")
-    await writeFile(file, JSON.stringify({ name: "Alpha again", repo: "one/alpha", summary: "A copy." }))
+    await writeFile(
+      file,
+      JSON.stringify({ name: "Alpha again", repo: "one/alpha", summary: "A copy." })
+    )
     const result = await call(["added", "new", "alpha", "--file", file, "--json"])
     expect(result.code).toBe(2)
     expect(json(result).error.message).toContain("already listed")
@@ -276,7 +279,10 @@ describe("pw read commands", () => {
 
   it("removes an added project", async () => {
     const file = path.join(root, "private.json")
-    await writeFile(file, JSON.stringify({ name: "Gone", basedOn: ["alpha"], evidence: "Stream", summary: "Gone." }))
+    await writeFile(
+      file,
+      JSON.stringify({ name: "Gone", basedOn: ["alpha"], evidence: "Stream", summary: "Gone." })
+    )
     await call(["added", "new", "gone", "--file", file, "--json"])
     const result = await call(["added", "rm", "gone", "--json"])
     expect(result.code).toBe(0)
@@ -437,7 +443,11 @@ describe("pw news", () => {
   })
 
   it("keeps a pipe inside the source title", async () => {
-    const piped = args.map((a) => (a === "GitHub|repo|https://github.com/new/repo" ? "Bluesky|Xbox Series X|S is out|https://bsky.app/x" : a))
+    const piped = args.map((a) =>
+      a === "GitHub|repo|https://github.com/new/repo"
+        ? "Bluesky|Xbox Series X|S is out|https://bsky.app/x"
+        : a
+    )
     const result = await call([...piped, "--json"])
     expect(result.code).toBe(0)
     expect((await readOverrides()).news[0].sources[0]).toEqual({

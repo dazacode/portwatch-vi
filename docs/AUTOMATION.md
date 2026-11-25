@@ -2,19 +2,19 @@
 
 What upstream did by hand, and what runs it here. Limits were checked on 24 November 2026.
 
-| Job                                            | Upstream                              | Here                                            | Runs on                |
-| ---------------------------------------------- | ------------------------------------- | ----------------------------------------------- | ---------------------- |
-| Who is live                                    | Not tracked                           | Platform APIs, refreshed by visits              | Vercel ISR, every 60 s |
-| New streams                                    | Not tracked                           | Category and keyword search with a title filter | Vercel ISR             |
-| Which channels to follow                       | Not tracked                           | Links in project READMEs, added and dropped     | GitHub Actions, 3 h    |
-| Repo stats, new projects, takedowns, headlines | Scout                                 | Upstream's scout, read live                     | Vercel ISR, 60 s       |
-| News, commits and pull requests                | Not tracked                           | Harvester over feeds, GitHub and communities    | GitHub Actions, 30 min |
-| Claims                                         | Claude editor on a PC, plus the owner | Upstream's, read live, plus `overrides.json`    | Vercel ISR, 60 s       |
-| Score and ranking                              | The claim                             | Our own, from claims and evidence               | When a page is built   |
-| Publishing data                                | Full deploy each run                  | Read from the repo at runtime, no deploy        | Webhook, seconds       |
-| Articles                                       | Claude and the owner                  | Automated editor, at most two a day; `NEWS_DESK=1` is the older route | GitHub Actions, 1 h    |
-| Findings, re-scores, candidates, private builds | Claude editor on a PC, plus the owner | Automated editor through `./pw` with the playbook's guardrails | GitHub Actions, 1 h    |
-| Pinned message, dashboard, board               | Owner                                 | Removed                                         |                        |
+| Job                                             | Upstream                              | Here                                                                  | Runs on                |
+| ----------------------------------------------- | ------------------------------------- | --------------------------------------------------------------------- | ---------------------- |
+| Who is live                                     | Not tracked                           | Platform APIs, refreshed by visits                                    | Vercel ISR, every 60 s |
+| New streams                                     | Not tracked                           | Category and keyword search with a title filter                       | Vercel ISR             |
+| Which channels to follow                        | Not tracked                           | Links in project READMEs, added and dropped                           | GitHub Actions, 3 h    |
+| Repo stats, new projects, takedowns, headlines  | Scout                                 | Upstream's scout, read live                                           | Vercel ISR, 60 s       |
+| News, commits and pull requests                 | Not tracked                           | Harvester over feeds, GitHub and communities                          | GitHub Actions, 30 min |
+| Claims                                          | Claude editor on a PC, plus the owner | Upstream's, read live, plus `overrides.json`                          | Vercel ISR, 60 s       |
+| Score and ranking                               | The claim                             | Our own, from claims and evidence                                     | When a page is built   |
+| Publishing data                                 | Full deploy each run                  | Read from the repo at runtime, no deploy                              | Webhook, seconds       |
+| Articles                                        | Claude and the owner                  | Automated editor, at most two a day; `NEWS_DESK=1` is the older route | GitHub Actions, 1 h    |
+| Findings, re-scores, candidates, private builds | Claude editor on a PC, plus the owner | Automated editor through `./pw` with the playbook's guardrails        | GitHub Actions, 1 h    |
+| Pinned message, dashboard, board                | Owner                                 | Removed                                                               |                        |
 
 Our own scout is off, because upstream's does the same work. If upstream stops, set the repository
 variable `OWN_SCOUT` to 1, disable `upstream-sync.yml` and set `UPSTREAM_DATA=off` on Vercel. With
