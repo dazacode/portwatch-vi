@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest"
 import { isBoard, isLure, isPortStream } from "@/lib/live/filter"
+import { fromLockup } from "@/lib/live/lockup"
 import { parseRumble } from "@/lib/live/rumble"
 import { assemble } from "@/lib/live/snapshot"
 import type { Channel, SourceResult, Stream } from "@/lib/live/types"
@@ -130,4 +131,52 @@ describe("parseWatching", () => {
     ["12K views", null],
     [undefined, null],
   ])("%s", (text, n) => expect(parseWatching(text)).toBe(n))
+})
+
+describe("fromLockup", () => {
+  const tap = { payload: { browseId: "UC1" } }
+  const text = (t: string) => ({ toString: () => t })
+  const node = (badge = "THUMBNAIL_OVERLAY_BADGE_STYLE_LIVE") => ({
+    content_id: "vid",
+    content_image: { overlays: [{ badges: [{ badge_style: badge }] }] },
+    metadata: {
+      title: text("GTA 6 PC port"),
+      image: { renderer_context: { command_context: { on_tap: tap } } },
+      metadata: {
+        metadata_rows: [
+          {
+            metadata_parts: [
+              { text: null, avatar_stack: { text: { ...text("Leafy "), endpoint: tap } } },
+              { text: text("459 watching"), avatar_stack: null },
+            ],
+          },
+          {
+            metadata_parts: [
+              { text: text("9 watching, says the description"), avatar_stack: null },
+            ],
+          },
+        ],
+      },
+    },
+  })
+  const found = {
+    videoId: "vid",
+    title: "GTA 6 PC port",
+    channelId: "UC1",
+    channelName: "Leafy",
+    viewers: 459,
+  }
+
+  it("reads a live result", () => expect(fromLockup(node())).toEqual(found))
+
+  it("finds the channel by its name when the picture has no link", () => {
+    const { image: _, ...metadata } = node().metadata
+    expect(fromLockup({ ...node(), metadata })).toEqual(found)
+  })
+
+  it("leaves out what isn't live, or has no owner", () => {
+    expect(fromLockup(node("THUMBNAIL_OVERLAY_BADGE_STYLE_DEFAULT"))).toBeNull()
+    expect(fromLockup({ ...node(), metadata: { title: text("No one's") } })).toBeNull()
+    expect(fromLockup({})).toBeNull()
+  })
 })

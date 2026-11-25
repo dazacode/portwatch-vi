@@ -1,7 +1,7 @@
 "use client"
 
-import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
+import { usePath } from "@/components/use-path"
 import { cn } from "@/lib/utils"
 
 // Enough scrolling to mean it.
@@ -9,7 +9,7 @@ const SCROLLED = 24
 
 /** Sticky everywhere. On the home page it waits off screen until the page is scrolled or tabbed to. */
 export function HeaderShell({ children }: { children: React.ReactNode }) {
-  const home = usePathname() === "/"
+  const home = usePath() === "/"
   const [scrolled, setScrolled] = useState(false)
   useEffect(() => {
     // On a phone the feed fills the screen, so the header waits for the end of it.

@@ -2,10 +2,10 @@
 
 import { X } from "lucide-react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
 import useSWR from "swr"
 import { Button } from "@/components/ui/button"
+import { usePath } from "@/components/use-path"
 import type { BoardEvent } from "@/lib/board"
 import { cn } from "@/lib/utils"
 
@@ -32,7 +32,7 @@ export function BoardNotice() {
   // Null until the browser's own list has been read.
   const [seen, setSeen] = useState<string[] | null>(null)
   useEffect(() => setSeen(readSeen()), [])
-  const home = usePathname() === "/"
+  const home = usePath() === "/"
 
   const fresh = seen && data ? data.filter((e) => !seen.includes(e.id)) : []
   const [first] = fresh

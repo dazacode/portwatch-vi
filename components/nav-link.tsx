@@ -1,12 +1,12 @@
 "use client"
 
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 import { useEffect, useRef } from "react"
+import { usePath } from "@/components/use-path"
 import { cn } from "@/lib/utils"
 
 export function NavLink({ href, label }: { href: string; label: string }) {
-  const active = usePathname() === href
+  const active = usePath() === href
   const ref = useRef<HTMLAnchorElement>(null)
   // On a narrow phone the row scrolls, so the current page is brought into it.
   useEffect(() => {

@@ -1,6 +1,7 @@
 import { unstable_cache } from "next/cache"
 import { Innertube, YTNodes } from "youtubei.js"
 import { isLure, isPortStream } from "./filter"
+import { type Found, fromLockup, type Lockup } from "./lockup"
 import type { Channel, SourceResult, Stream } from "./types"
 import { parseWatching } from "./watching"
 import { youtubeOfficial } from "./youtube-official"
@@ -10,14 +11,6 @@ import { youtubeOfficial } from "./youtube-official"
 // When it happens the official API takes over if YOUTUBE_API_KEY is set.
 const QUERIES = ["gta 6 recomp", "gta vi recompilation", "gta 6 pc port"]
 const CHECK_EVERY = 120
-
-type Found = {
-  videoId: string
-  title: string
-  channelId: string
-  channelName: string
-  viewers: number | null
-}
 
 let session: Promise<Innertube> | null = null
 function client() {
@@ -32,14 +25,15 @@ const searchLive = unstable_cache(
   async (query: string): Promise<Found[]> => {
     const results = await (await client()).search(query, { type: "video", features: ["live"] })
     return results.videos.flatMap((node) => {
-      const video = node.as(YTNodes.Video)
-      if (!video.is_live) return []
+      if (node.is(YTNodes.LockupView)) return fromLockup(node as Lockup) ?? []
+      // One result of a kind it doesn't know must not cost the rest.
+      if (!node.is(YTNodes.Video) || !node.is_live) return []
       return {
-        videoId: video.video_id,
-        title: video.title.toString(),
-        channelId: video.author.id,
-        channelName: video.author.name.trim(),
-        viewers: parseWatching(video.view_count?.toString()),
+        videoId: node.video_id,
+        title: node.title.toString(),
+        channelId: node.author.id,
+        channelName: node.author.name.trim(),
+        viewers: parseWatching(node.view_count?.toString()),
       }
     })
   },
