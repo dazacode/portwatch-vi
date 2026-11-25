@@ -539,7 +539,7 @@
         "publicLater": true,
         "byline": "Streamed live · private code, built on the public forks",
         "tier": "tracked",
-        "summary": "Hugo's private build, MashedHugo, renders Lucia's prologue close to the console — lighting, shadows, hair and faces — with floating geometry and pixelation. Play at about 2 fps; the boat mission still blocks him. Code private for now.",
+        "summary": "Hugo's private build, MashedHugo, renders Lucia's prologue close to the console — lighting, shadows, hair and faces — with floating geometry and pixelation. About 2 fps. Last seen stuck at the boat mission; whether it gets past the prologue isn't known. Code private for now.",
         "highlights": [
           "Lighting, shadows, hair and faces close to the console",
           "A player walks the prison, talks to cellmates and opens the pause menu",
@@ -566,7 +566,8 @@
         "stats": {},
         "assessedAt": "2026-11-25",
         "assessedBy": "manual",
-        "claims": []
+        "claims": [],
+        "manualScore": 57
       },
       "changes": [
         {
@@ -578,6 +579,11 @@
           "date": "2026-11-25",
           "kind": "up",
           "text": "MashedHugo rises to 60.0% (“Playable”) on kraithz's thread: Lucia's prologue now renders close to the console — lighting, shadows, hair and faces — at a measured 2 fps, up from 0.08 fps an hour earlier. Floating geometry and a missing boat still block him."
+        },
+        {
+          "date": "2026-11-25",
+          "kind": "down",
+          "text": "MashedHugo moves below builds that are past the prologue, to a hand-set 57% (our call): it was last seen stuck at the prologue's boat mission, and whether it gets further isn't known. Its measured values are unchanged."
         }
       ]
     },
