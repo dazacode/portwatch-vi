@@ -488,6 +488,38 @@
           "Built on VIctory's main and upstream pull requests; its README says no victory-fork code is in it"
         ]
       }
+    },
+    {
+      "id": "marvis",
+      "from": {
+        "findings": null,
+        "findingsSource": null
+      },
+      "to": {
+        "findings": [
+          {
+            "text": "ShyVortex posted on 25 November, 07:44 UTC, that VIctory has “hard regressions” on their laptop: it no longer reaches the prologue’s cutscenes or gameplay, and crashes the app before loading screens or the PC after them.",
+            "url": "https://x.com/ShyVortex/status/2125495874499264895"
+          },
+          {
+            "text": "ShyVortex’s report, on an RTX 3080 Ti Laptop with 32 GB RAM: main at 940d32f lost the GPU in the menus in 2 of 2 runs. With pull request #1763 added, menus and loading art ran at 21 to 28 fps, through to world loading and the game’s own “Game Running” state.",
+            "url": "https://github.com/Marvisak/VIctory/pull/1763#issuecomment-7156134693"
+          },
+          {
+            "text": "In that same report, about 3 seconds into world loading Windows reset the GPU. About 30 seconds later the game faulted, then the whole PC froze and needed the power button, at default driver settings. Memory was nearly exhausted, and the cause isn’t settled. It is not blamed on #1763.",
+            "url": "https://github.com/Marvisak/VIctory/pull/1763#issuecomment-7156134693"
+          },
+          {
+            "text": "On 24 November the same laptop got further: main at 7374bfb ran about 90 seconds in a black world at 0.4 to 1 fps, and a testers’ branch stayed up 12 minutes, past the prologue card, with no recognisable scene.",
+            "url": "https://github.com/Marvisak/VIctory/issues/468#issuecomment-7126563000"
+          },
+          {
+            "text": "Others on #1763 fared better: an RTX 3070 ran 15 minutes with several more pull requests, at about 0.9 fps by the end, and an RTX 5070 ran 10 minutes into an unlit world. An RTX 5070 Ti still hung within 2 to 3.5 minutes. #1763 was open, not merged, when we read it.",
+            "url": "https://github.com/Marvisak/VIctory/pull/1763"
+          }
+        ],
+        "findingsSource": "From ShyVortex’s post on X and public comments on VIctory’s issue 468 and pull request 1763, 24 and 25 November. Each is the tester’s own report; nothing was run here."
+      }
     }
   ],
   "added": [
