@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-25T15:20:33.663Z",
+  "lastRun": "2026-11-25T17:08:29.755Z",
   "read": [],
   "freeRead": [
     "https://github.com/Zettrox/ztrx/issues/62@2026-11-25T07:12:55Z",
@@ -34,9 +34,45 @@
     "https://github.com/xcl-dev/xcl/issues/2298@2026-11-25T14:52:37Z",
     "https://github.com/brcly/TuxBox/issues/151@2026-11-25T08:30:58Z",
     "https://github.com/R0Y00/Xbox2Windows/issues/2335@2026-11-25T13:02:53Z",
-    "https://github.com/LooperSalty/AnyXboxX/issues/182@2026-11-25T13:41:00Z"
+    "https://github.com/LooperSalty/AnyXboxX/issues/182@2026-11-25T13:41:00Z",
+    "https://github.com/Belobug/VIctory-Belobug-AMD/issues/147@2026-11-25T17:03:17Z",
+    "https://github.com/uiliannn/VItoriaBr/issues/18@2026-11-25T16:04:07Z",
+    "https://github.com/fxceless/victory-fork/issues/1038@2026-11-25T17:01:00Z",
+    "https://github.com/Marvisak/VIctory/issues/2609@2026-11-25T16:45:59Z",
+    "https://github.com/omonkeyz/xbox-emulator/issues/376@2026-11-25T15:30:59Z",
+    "https://github.com/xcl-dev/xcl/issues/2366@2026-11-25T16:48:38Z",
+    "https://github.com/brcly/TuxBox/issues/145@2026-11-25T07:28:03Z",
+    "https://github.com/R0Y00/Xbox2Windows/issues/2413@2026-11-25T16:59:56Z",
+    "https://github.com/LooperSalty/AnyXboxX/issues/166@2026-11-25T13:54:55Z",
+    "https://github.com/ThatRecompDev/five-star-recomp/issues/19@2026-11-25T16:43:59Z",
+    "https://github.com/luizwidmer/palmetto/issues/1@2026-11-25T16:24:46Z",
+    "https://github.com/Belobug/VIctory-Belobug-AMD/issues/143@2026-11-25T16:45:20Z"
   ],
   "items": [
+    {
+      "effortId": "belobug",
+      "kind": "free",
+      "stage": "world",
+      "outcome": "reached",
+      "quote": "The menus run at 30 fps and the world starts drawing about 2 minutes in.",
+      "commit": "01aadd1",
+      "gpu": "RX 6750 XT",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/147",
+      "at": "2026-11-25T17:03:17Z",
+      "by": "230042ca4acd"
+    },
+    {
+      "effortId": "victory-gta6",
+      "kind": "free",
+      "stage": "world",
+      "outcome": "reached",
+      "quote": "Reach the world — the opening cutscene, then the prison interior",
+      "commit": "a253706",
+      "gpu": "RTX 5080",
+      "url": "https://github.com/fxceless/victory-fork/issues/1038",
+      "at": "2026-11-25T17:01:00Z",
+      "by": "6e5a2b890eef"
+    },
     {
       "effortId": "marvis",
       "kind": "rule",
@@ -204,6 +240,18 @@
       "url": "https://github.com/Zettrox/ztrx/issues/44",
       "at": "2026-11-25T05:43:57Z",
       "by": "c6c354b725e3"
+    },
+    {
+      "effortId": "five-star-recomp",
+      "kind": "free",
+      "stage": "world",
+      "outcome": "reached",
+      "quote": "the same machine runs the story load and the opening credits, and reaches the first deferred-world draws (9,000 presents).",
+      "commit": "f9fab82",
+      "gpu": "RX 7800 XT",
+      "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/19",
+      "at": "2026-11-25T05:22:02Z",
+      "by": "e69cc09b5d68"
     },
     {
       "effortId": "victory-gta6",
