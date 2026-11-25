@@ -1587,6 +1587,26 @@
   },
   "ignored": [
     {
+      "repo": "RandomSkelly/Series0nLinux",
+      "reason": "readme describes compatibility layer, no GTA VI work",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "Ryanabcraft/scarlett-victory-bench",
+      "reason": "readme describes benchmarking, no GTA VI work",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "ihaterockstargames/sixth-star",
+      "reason": "readme describes compatibility layer, no GTA VI work",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "baummarder/xHoly",
+      "reason": "readme describes Xbox One/Series X|S emulator, no GTA VI work",
+      "seenAt": "2026-11-25"
+    },
+    {
       "repo": "felicienradio/cold-project-vi",
       "reason": "README does not mention GTA VI",
       "seenAt": "2026-11-25"
@@ -1685,6 +1705,10 @@
     "Linox-IDK/LNX-victory",
     "decantlabs/decant",
     "POMXARK/bcpack-gpu-hlsl",
-    "sefaalcn/half-step-game-project"
+    "sefaalcn/half-step-game-project",
+    "baummarder/xHoly",
+    "ihaterockstargames/sixth-star",
+    "Ryanabcraft/scarlett-victory-bench",
+    "RandomSkelly/Series0nLinux"
   ]
 }
