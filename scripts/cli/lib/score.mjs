@@ -58,7 +58,7 @@ export function projectRow(state, effort) {
     missing: Boolean(effort.stats?.missing),
     stars: effort.stats?.stars ?? null,
     rank: view.nuked || view.private ? null : rankOf(state, effort.id).public,
-    picked: state.effective.pick?.id === effort.id,
+    picked: [state.effective.pick, ...(state.effective.pick?.next ?? [])].some((p) => p?.id === effort.id),
     patched: state.overrides.patches.some((p) => p.id === effort.id),
     added: state.overrides.added.some((a) => a.effort?.id === effort.id),
     stageLabel: view.stage,

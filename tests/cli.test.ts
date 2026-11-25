@@ -513,6 +513,16 @@ describe("pw pick and candidates", () => {
     expect((await readOverrides()).pick).toBeNull()
   })
 
+  it("places more behind the pick, in order", async () => {
+    expect((await call(["pick", "add", "beta", "--reason", "Next."])).code).toBe(2)
+    await call(["pick", "set", "alpha", "--reason", "Best picture."])
+    expect((await call(["pick", "add", "beta", "--reason", "Next."])).code).toBe(0)
+    expect((await readOverrides()).pick.next.map((p: { id: string }) => p.id)).toEqual(["beta"])
+    expect((await call(["pick", "add", "alpha", "--reason", "Again."])).code).toBe(2)
+    await call(["pick", "set", "beta", "--reason", "First now."])
+    expect((await readOverrides()).pick).not.toHaveProperty("next")
+  })
+
   it("ignores a candidate and takes it out of the inbox", async () => {
     const result = await call(["candidate", "ignore", "new/repo", "--reason", "A copy."])
     expect(result.code).toBe(0)

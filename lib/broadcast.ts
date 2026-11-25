@@ -77,7 +77,7 @@ export type Leader = {
   score: number
   steps: number[]
   isPrivate: boolean
-  /** We placed it first ourselves. */
+  /** We placed it ourselves. */
   picked: boolean
   /** People outside the project who have reported on it. */
   reporters: number

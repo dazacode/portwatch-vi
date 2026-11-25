@@ -177,7 +177,11 @@ describe("the board", () => {
 
     expect(projects.map((p) => p.id).sort()).toEqual([...order].sort())
     expect(ranked.map((p) => p.rank)).toEqual(ranked.map((_, i) => i + 1))
-    expect(ranked.map((p) => p.id)).toEqual(order.filter((id) => ranked.some((p) => p.id === id)))
+    // Those we placed ourselves come first, in that order.
+    const byHand = ranked.filter((p) => p.pick).length
+    const rest = ranked.slice(byHand).map((p) => p.id)
+    expect(ranked.slice(0, byHand).every((p) => p.pick)).toBe(true)
+    expect(rest).toEqual(order.filter((id) => rest.includes(id)))
     expect(ranked.some((p) => p.isPrivate || p.nuked)).toBe(false)
 
     const g = groupProjects(projects)
@@ -198,12 +202,16 @@ describe("the board", () => {
     const usual = getProjects(standings, sources)
     const everyone = getProjects(standings, sources, { withPrivate: true })
     const ranked = everyone.filter((p) => p.rank !== null)
-    // The one we place first ourselves is not in score order, and says so.
-    const pick = tracker.pick?.id
-    expect(ranked[0].id).toBe(pick)
-    expect(ranked.filter((p) => p.pick).map((p) => p.id)).toEqual([pick])
-    expect(usual.every((p) => p.pick === null)).toBe(true)
-    const scores = ranked.slice(1).map((p) => p.rating)
+    // The ones we place first ourselves are not in score order, and say so.
+    const { pick } = tracker
+    const placed = pick ? [pick, ...(pick.next ?? [])].map((p) => p.id) : []
+    expect(ranked.filter((p) => p.pick).map((p) => p.id)).toEqual(placed)
+    expect(ranked.slice(0, placed.length).map((p) => p.id)).toEqual(placed)
+    // A private build keeps its place out of the list that doesn't rank it.
+    const open = usual.filter((p) => placed.includes(p.id) && p.rank !== null)
+    expect(open.map((p) => p.rank)).toEqual(open.map((_, i) => i + 1))
+    expect(usual.filter((p) => p.pick).map((p) => p.id)).toEqual(open.map((p) => p.id))
+    const scores = ranked.slice(placed.length).map((p) => p.rating)
 
     expect(everyone.map((p) => p.id).sort()).toEqual(usual.map((p) => p.id).sort())
     expect(ranked.map((p) => p.rank)).toEqual(ranked.map((_, i) => i + 1))

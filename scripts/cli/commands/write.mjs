@@ -169,14 +169,15 @@ export const find = {
 };
 
 export const pick = {
-  summary: 'Place one project first by hand, or clear the placement.',
-  usage: 'set <id> --reason "..." | clear | show',
+  summary: 'Place projects first by hand, in order, or clear the placement.',
+  usage: 'set <id> --reason "..." | add <id> --reason "..." | clear | show',
   value: ['reason'],
   async run({ out, flags }, [action, query]) {
     const state = await loadState(flags);
     if (action === 'show') {
       const current = state.overrides.pick;
-      out.line(current ? `${current.id}: ${current.reason}` : 'No pick.');
+      if (!current) out.line('No pick.');
+      else for (const p of [current, ...(current.next ?? [])]) out.line(`${p.id}: ${p.reason}`);
       return { pick: current ?? null };
     }
     if (action === 'clear') {
@@ -189,13 +190,23 @@ export const pick = {
       out.line('cleared the pick.');
       return { pick: null, overrides, changes: [{ path: 'pick', from: state.overrides.pick, to: null }] };
     }
-    if (action !== 'set' || !query) throw invalid('Use `./pw pick set <id> --reason "..."`.');
+    if (!['set', 'add'].includes(action) || !query) throw invalid('Use `./pw pick set <id> --reason "..."`, then `pick add` for the next place.');
     const effort = resolveProject(state, query);
     const reason = flags.reason?.at(-1)?.trim();
     if (!reason) throw invalid('--reason is required; say why it is placed by hand.');
     const overrides = draft(state);
-    overrides.pick = { id: effort.id, at: today(), reason };
-    out.line(`placed ${effort.name} first: ${reason}`);
+    const placed = { id: effort.id, at: today(), reason };
+    const current = state.overrides.pick;
+    const behind = (current?.next ?? []).filter((p) => p.id !== effort.id);
+    if (action === 'add') {
+      if (!current) throw invalid('Nothing is placed first yet; use `pick set`.');
+      if (current.id === effort.id) throw invalid(`${effort.id} is already placed first.`);
+      overrides.pick = { ...current, next: [...behind, placed] };
+      out.line(`placed ${effort.name} at ${behind.length + 2}: ${reason}`);
+    } else {
+      overrides.pick = behind.length ? { ...placed, next: behind } : placed;
+      out.line(`placed ${effort.name} first: ${reason}`);
+    }
     return { pick: overrides.pick, overrides, changes: [{ path: 'pick', from: state.overrides.pick, to: overrides.pick }] };
   },
 };

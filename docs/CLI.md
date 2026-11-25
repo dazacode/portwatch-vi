@@ -216,11 +216,13 @@ stats are copied in. It also accepts an ignored repo, with a warning; set its `s
 
 ```sh
 ./pw pick set cgbj --reason "Closest picture to the console; not ranked because the code is private."
+./pw pick add belobug --reason "…"     # the next place, in the order you add them
 ./pw pick clear
 ./pw pick show
 ```
 
-The pick is only a placement. It never changes a score.
+The pick is only a placement. It never changes a score, and every placed row shows its reason. A private
+build shows its place only where private builds are ranked; a public one is placed in both lists.
 
 ## Conflicts, locks and backups
 

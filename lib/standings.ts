@@ -47,7 +47,7 @@ export type Project = Standing &
     publicLater: boolean
     /** Why it is in its group, when that needs saying. */
     reason: string | null
-    /** Why we placed it first ourselves, where we did. */
+    /** Why we placed it ourselves, where we did. */
     pick: string | null
   }
 
@@ -175,10 +175,13 @@ export function getProjects(
   const isClosed = (p: Project) => p.status === "private" && !withPrivate
   const closed = projects.filter(isClosed)
   const ranked = projects.filter((p) => !isGone(p) && !isClosed(p))
-  // Our own call, never hidden: the score stays what it is and the reason is shown next to it.
+  // Our own call, never hidden: the scores stay what they are and the reasons are shown next to them.
+  // A private build we placed is only in the list that ranks private builds.
   const { pick } = sources.tracker
-  const at = withPrivate && pick ? ranked.findIndex((p) => p.id === pick.id) : -1
-  if (pick && at >= 0) ranked.unshift({ ...ranked.splice(at, 1)[0], pick: pick.reason })
+  for (const placed of pick ? [pick, ...(pick.next ?? [])].reverse() : []) {
+    const at = ranked.findIndex((p) => p.id === placed.id)
+    if (at >= 0) ranked.unshift({ ...ranked.splice(at, 1)[0], pick: placed.reason })
+  }
   return [...ranked.map((p, i) => ({ ...p, rank: i + 1 })), ...closed, ...gone]
 }
 

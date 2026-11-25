@@ -31,7 +31,7 @@ export function Leaders({ ranked, everyone }: { ranked: Leader[]; everyone: Lead
                   {l.name}
                 </span>
                 <span className="block truncate text-xs text-white/75">
-                  {l.picked && "Placed first by us. "}
+                  {l.picked && "Placed by us. "}
                   {l.isPrivate ? "Private build" : reportsText(l.reporters)}, {l.score}% claimed
                 </span>
               </span>

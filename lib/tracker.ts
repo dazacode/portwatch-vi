@@ -158,8 +158,13 @@ export type Tracker = {
   dmca: { url: string; date: string; repoCount: number; gta6: boolean; tracked: string[] }[]
   flagged: { id: string; pattern: string; reason: string }[]
   scout: { lastRun: string }
-  /** The project we place first ourselves, where private builds are ranked too. Always marked. */
-  pick?: { id: string; at: string; reason: string } | null
+  /** The project we place first ourselves, then the ones right behind it, in order. Always marked. */
+  pick?: {
+    id: string
+    at: string
+    reason: string
+    next?: { id: string; at: string; reason: string }[]
+  } | null
 }
 
 type Overrides = {

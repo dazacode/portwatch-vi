@@ -231,7 +231,7 @@ export const diff = {
       }
     }
     for (const id of data.added) out.line(`${out.paint(32, 'added ')} ${id}`);
-    if (data.pick) out.line(`pick: ${data.pick.id} (${data.pick.reason})`);
+    for (const p of data.pick ? [data.pick, ...(data.pick.next ?? [])] : []) out.line(`pick: ${p.id} (${p.reason})`);
     return data;
   },
 };
@@ -336,8 +336,11 @@ export const check = {
         }
       }
     }
-    if (state.overrides.pick && !ids.has(state.overrides.pick.id)) {
-      problem('error', 'bad_pick', state.overrides.pick.id, 'pick names no project.');
+    const placed = state.overrides.pick ? [state.overrides.pick, ...(state.overrides.pick.next ?? [])] : [];
+    for (const [i, p] of placed.entries()) {
+      if (!ids.has(p.id)) problem('error', 'bad_pick', p.id, 'pick names no project.');
+      if (!p.reason) problem('error', 'bad_pick', p.id, 'a placement needs a reason.');
+      if (placed.findIndex((q) => q.id === p.id) !== i) problem('error', 'bad_pick', p.id, 'placed twice.');
     }
     for (const item of state.overrides.ignored ?? []) {
       if (!item.repo || !item.reason) problem('error', 'bad_ignored', item.repo ?? '?', 'ignored needs repo and reason.');
