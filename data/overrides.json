@@ -647,9 +647,9 @@
         "tier": "tracked",
         "verification": "self-reported",
         "blockers": [
-          "No report or picture of a player in control; CRT’s release post calls it unplayable and unstable",
+          "Moving Lucia is CRT’s word to us: no public recording, and the README doesn’t say it yet",
           "About 3 fps in the heavy intro scene; 120 to 270 draws a frame are dropped",
-          "Shadowed areas come out dark; tuned for one machine and not reproduced by others"
+          "Calls itself unplayable and unstable; shadows come out dark; one machine, not reproduced by others"
         ],
         "highlights": [
           "README: menus at a steady 30 fps; the world loads and the story intro starts",
@@ -661,7 +661,7 @@
           "boots": 1,
           "menu": 1,
           "world": 1,
-          "playable": 0,
+          "playable": 1,
           "story": 0,
           "render": 0,
           "fps": 3,
@@ -679,7 +679,7 @@
         ],
         "approach": "Compatibility layer",
         "target": "GTA VI only",
-        "summary": "CRT's fork of VIctory and hyphennn's victory-fork, with many open VIctory pull requests merged. The world loads and opening scenes draw, at about 3 to 6.6 fps by its README. CRT calls it unplayable; nothing yet shows a player in control. Self-reported.",
+        "summary": "CRT's fork of VIctory and hyphennn's victory-fork, with many open VIctory pull requests merged. Opening scenes draw at about 3 to 6.6 fps. CRT told us Lucia can be moved at the start; no recording shows it yet. Self-reported.",
         "provenOn": null,
         "findings": [
           {
@@ -733,6 +733,11 @@
           "date": "2026-11-25",
           "kind": "new",
           "text": "DumbFloridaMoron joins the race at 40% (“In the world”): CRT’s fork of VIctory and victory-fork. Its README reports the world loading and the story intro at about 3 to 6.6 fps (self-reported)."
+        },
+        {
+          "date": "2026-11-25",
+          "kind": "up",
+          "text": "DumbFloridaMoron rises to 51% (“Runnable”): CRT told us Lucia can be moved at the start. No public recording yet, so it stays self-reported."
         }
       ]
     }
