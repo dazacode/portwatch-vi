@@ -277,30 +277,19 @@ html.feed {
   height: 100svh;
 }
 
-/* The neon sign. Letters are tubes: a bright line, with its light around it. */
+/* The short mark, lit. */
 .neon {
-  --tube-vi: var(--foreground);
-  --tube-l: var(--primary);
-  --light-vi: var(--stripe-3);
-  --light-l: var(--stripe-1);
   overflow: visible;
-  fill: none;
-  stroke-width: 30;
-  stroke-linejoin: round;
-  stroke-linecap: round;
 }
 
 .neon-vi {
-  stroke: var(--tube-vi);
-  /* In the drawing's own units, so the light grows with the sign. */
-  filter: drop-shadow(0 0 16px var(--light-vi)) drop-shadow(0 0 70px var(--light-vi));
+  fill: var(--foreground);
 }
 
 .neon-l {
-  stroke: var(--tube-l);
-  stroke-width: 24;
-  fill: color-mix(in oklab, var(--light-l) 70%, transparent);
-  filter: drop-shadow(0 0 16px var(--light-l)) drop-shadow(0 0 90px var(--light-l));
+  fill: var(--primary);
+  /* In the drawing's own units, so the light grows with the sign. */
+  filter: drop-shadow(0 0 60px var(--stripe-1));
 }
 
 /* Between pages. It waits a moment, so a quick page never shows it. */
@@ -308,11 +297,7 @@ html.feed {
   animation: neon-appear 0.3s 0.2s both;
 }
 
-.neon-wait .neon-l {
-  animation: neon-breathe 1.8s ease-in-out infinite alternate;
-}
-
-/* The loading screen, always at night. */
+/* The loading screen, always black. */
 #splash {
   display: none;
 }
@@ -322,88 +307,47 @@ html.feed {
   inset: 0;
   z-index: 100;
   display: grid;
-  grid-template-rows: 1fr auto 0.72fr;
-  justify-items: center;
+  place-items: center;
   overflow: hidden;
   touch-action: none;
-  background:
-    radial-gradient(70% 34% at 50% 58%, oklch(0.55 0.24 350 / 55%), transparent 75%),
-    radial-gradient(120% 48% at 50% 58%, oklch(0.42 0.18 310 / 60%), transparent 80%),
-    linear-gradient(oklch(0.13 0.05 285), oklch(0.2 0.09 300) 58%, oklch(0.1 0.04 285) 58%);
-  transition: opacity 0.5s ease-out, scale 0.5s ease-out;
+  background: black;
   /* If the script never gets to it. */
-  animation: splash-gone 0.4s 5s forwards;
+  animation: splash-gone 0.4s 6s forwards;
 }
 
+.splash-mark {
+  display: block;
+  width: min(58vw, 30rem, 70svh);
+  overflow: visible;
+}
+
+/* Into the sign: it grows past the edges and dissolves, then the black gives way to the page. */
 [data-splash="out"] #splash {
-  opacity: 0;
-  scale: 1.04;
-}
-
-#splash .neon {
-  --tube-vi: oklch(0.98 0.02 200);
-  --tube-l: oklch(0.93 0.07 350);
-  --light-vi: oklch(0.8 0.14 200);
-  --light-l: oklch(0.68 0.27 352);
-  width: min(62vw, 30rem, 62svh);
-}
-
-.splash-sign {
-  align-self: end;
-  padding-bottom: clamp(1rem, 4svh, 2.5rem);
-}
-
-.splash-kerb {
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    oklch(0.8 0.14 200) 22%,
-    oklch(0.72 0.25 350) 50%,
-    oklch(0.8 0.16 60) 78%,
-    transparent
-  );
-  box-shadow: 0 0 1.2rem oklch(0.68 0.27 352 / 80%);
-}
-
-/* The sign upside down, broken up by the wet road. */
-.splash-street {
-  /* Room at the sides, or the mask cuts off the glow. */
-  padding: clamp(0.5rem, 2svh, 1.25rem) 3rem 0;
-  opacity: 0.4;
-  filter: blur(5px);
-  mask-image: linear-gradient(black, transparent 70%);
-}
-
-.splash-street .neon {
-  transform: scaleY(-0.8);
-  transform-origin: 50% 40%;
+  pointer-events: none;
+  animation: splash-gone 0.5s 0.5s ease-in-out forwards;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  #splash .neon-vi path {
-    stroke-dasharray: 1;
-    animation: neon-draw 0.9s cubic-bezier(0.6, 0, 0.2, 1) both;
+  .splash-zoom {
+    will-change: transform, opacity;
   }
-  #splash .neon-vi path + path {
-    animation-delay: 0.12s;
+  .splash-mark {
+    animation: splash-push 2.1s cubic-bezier(0.2, 0.6, 0.3, 1) both;
   }
-  /* Two blinks in half a second, well under what is safe, then it holds. */
-  #splash .neon-l {
-    animation: neon-strike 0.7s 0.75s both;
+  .splash-vi {
+    animation: neon-strike 0.6s 0.15s both;
   }
-  .splash-kerb {
-    animation: splash-kerb 1.5s 0.2s cubic-bezier(0.3, 0, 0.1, 1) both;
+  .splash-l {
+    animation: neon-strike 0.6s 0.5s both;
   }
-}
-
-@media (prefers-reduced-motion: reduce) {
+  .splash-sheen {
+    animation: splash-sheen 0.9s 1.15s cubic-bezier(0.5, 0, 0.3, 1) both;
+  }
+  [data-splash="out"] .splash-zoom {
+    animation: splash-zoom 0.9s cubic-bezier(0.7, 0, 0.85, 0.35) forwards;
+  }
   .neon-wait .neon-l {
-    animation: none;
-  }
-  [data-splash="out"] #splash {
-    scale: none;
+    animation: neon-breathe 1.2s ease-in-out infinite alternate;
   }
 }
 
@@ -413,17 +357,11 @@ html.feed {
   }
 }
 
-@keyframes neon-draw {
-  from { stroke-dashoffset: 1; }
-  to { stroke-dashoffset: 0; }
-}
-
+/* One dip on the way up, like a tube catching. */
 @keyframes neon-strike {
-  0% { opacity: 0.06; }
-  18% { opacity: 0.85; }
-  34% { opacity: 0.15; }
-  62% { opacity: 1; }
-  74% { opacity: 0.6; }
+  0% { opacity: 0; }
+  30% { opacity: 0.9; }
+  48% { opacity: 0.3; }
   100% { opacity: 1; }
 }
 
@@ -435,9 +373,18 @@ html.feed {
   from { opacity: 0; }
 }
 
-@keyframes splash-kerb {
-  from { clip-path: inset(-2rem 50%); }
-  to { clip-path: inset(-2rem 0); }
+@keyframes splash-push {
+  from { transform: scale(0.94); }
+}
+
+@keyframes splash-sheen {
+  to { transform: translateX(3200px); }
+}
+
+@keyframes splash-zoom {
+  52% { opacity: 1; }
+  78% { opacity: 0; }
+  to { transform: scale(9); opacity: 0; }
 }
 
 @keyframes splash-gone {
