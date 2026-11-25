@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T13:37:43.109Z",
+  "updated": "2026-11-25T13:45:26.000Z",
   "site": {
     "title": "PortWatch VI",
     "heroImage": "assets/img/hero-miami.jpg"
@@ -1630,7 +1630,7 @@
       "tier": "watchlist",
       "approach": "HLE emulator",
       "target": "Any Xbox Series game",
-      "summary": "French-language prototype: GDK runtime emulation on Unicorn, plus a Wine-style native mode that runs small GDK test games. Its GTA VI results (world at about 5-7 fps) come from a pinned victory-fork build, so they earn it no milestone.",
+      "summary": "French-language prototype: GDK runtime emulation on Unicorn, plus a Wine-style native mode that runs small GDK test games. Its GTA VI results (world at about 5 fps, cutscenes, a contributor's report of the first two missions) come from a pinned victory-fork build, so they earn it no milestone.",
       "highlights": [
         "All 16 DLLs of the Scarlett package initialise with zero unemulated calls",
         "Runs the free SimpleTriangle and SDL3 testgdk games natively",
@@ -1672,12 +1672,7 @@
       "assessedAt": "2026-11-25",
       "assessedBy": "claude",
       "readmeSha": "c01c652c5b15d7ea0b7b0fec6816c85129c5f46ec73bc73525026de273804a01",
-      "claims": [
-        {
-          "milestone": "perf",
-          "text": "- ✅ The Xbox Series 1.0.2.1 build of GTA VI launches on PC: boot, profile screen, first-run settings, legal screens, loading, pause menu. Menus run at 30 fps."
-        }
-      ],
+      "claims": [],
       "readmeChangedAt": "2026-11-25"
     },
     {
@@ -2935,33 +2930,6 @@
       "status": "new"
     },
     {
-      "repo": "xcl-dev/xcl",
-      "name": "xcl",
-      "description": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
-      "language": "Rust",
-      "stars": 8130,
-      "createdAt": "2026-11-20T20:03:21Z",
-      "pushedAt": "2026-11-25T13:36:34Z",
-      "defaultBranch": "main",
-      "sources": [
-        "4chan /vg/"
-      ],
-      "links": [
-        "https://boards.4chan.org/vg/thread/588744758"
-      ],
-      "foundAt": "2026-11-25T13:37:43.109Z",
-      "substance": 98,
-      "signals": [
-        "Rust",
-        "28 technical terms",
-        "status table",
-        "tests",
-        "100+ commits/7d"
-      ],
-      "kind": "effort",
-      "status": "new"
-    },
-    {
       "repo": "voidopcode/vilocity",
       "name": "vilocity",
       "description": "Xbox Series X|S games running natively on Windows. GTA VI progress tracked in the README.",
@@ -3011,29 +2979,6 @@
       "status": "new"
     },
     {
-      "repo": "FulGerNet/macca-cl",
-      "name": "macca-cl",
-      "description": "Another attempt at running getting an Xbox Series title to render and run on a Windows PC.",
-      "language": "Rust",
-      "stars": 1,
-      "createdAt": "2026-11-24T14:05:31Z",
-      "pushedAt": "2026-11-25T12:29:08Z",
-      "defaultBranch": "main",
-      "sources": [
-        "GitHub search"
-      ],
-      "links": [],
-      "foundAt": "2026-11-25T13:37:43.109Z",
-      "substance": 83,
-      "signals": [
-        "Rust",
-        "12 technical terms",
-        "100+ commits/7d"
-      ],
-      "kind": "effort",
-      "status": "new"
-    },
-    {
       "repo": "kellysix/kelly",
       "name": "kelly",
       "description": "Fork de VIctory en desarrollo, centrado en mejorar el renderizado de un título de Xbox Series en Windows. No incluye el juego, copias ni recursos. Requiere una copia propia.",
@@ -3052,30 +2997,6 @@
         "11 technical terms",
         "tests",
         "7 commits/7d"
-      ],
-      "kind": "effort",
-      "status": "new"
-    },
-    {
-      "repo": "PawelBeska/scarlett",
-      "name": "scarlett",
-      "description": "",
-      "language": "Rust",
-      "stars": 0,
-      "createdAt": "2026-11-25T10:07:39Z",
-      "pushedAt": "2026-11-25T11:51:36Z",
-      "defaultBranch": "main",
-      "sources": [
-        "GitHub search"
-      ],
-      "links": [],
-      "foundAt": "2026-11-25T13:37:43.109Z",
-      "substance": 72,
-      "signals": [
-        "Rust",
-        "16 technical terms",
-        "tests",
-        "3 commits/7d"
       ],
       "kind": "effort",
       "status": "new"
@@ -3128,29 +3049,6 @@
       "status": "new"
     },
     {
-      "repo": "jaylikesbunda/VIKit",
-      "name": "VIKit",
-      "description": "Clean-room Windows x64 compatibility runtime for Xbox Series (Scarlett) GDK and Direct3D 12.X executables, with RDNA2 shader translation and GFX10 texture detiling.",
-      "language": "C",
-      "stars": 1,
-      "createdAt": "2026-11-25T06:11:10Z",
-      "pushedAt": "2026-11-25T06:11:19Z",
-      "defaultBranch": "main",
-      "sources": [
-        "GitHub search"
-      ],
-      "links": [],
-      "foundAt": "2026-11-25T13:37:43.109Z",
-      "substance": 63,
-      "signals": [
-        "C",
-        "16 technical terms",
-        "1 commits/7d"
-      ],
-      "kind": "effort",
-      "status": "new"
-    },
-    {
       "repo": "realblastex/flamingo",
       "name": "flamingo",
       "description": "VIctory / victory-fork based compatibility layer that runs a freshly released Xbox Series title on Windows from your own copy, with an RDNA2 shader recompiler to D3D12. About 14 fps on an RTX 4070 (Series S profile). No game files included.",
@@ -3195,168 +3093,6 @@
         "Rust",
         "4 technical terms",
         "100+ commits/7d"
-      ],
-      "kind": "effort",
-      "status": "new"
-    },
-    {
-      "repo": "spazman12/leonida-lowend",
-      "name": "leonida-lowend",
-      "description": "Build notes and scripts for Leonida (GTA VI Xbox->PC static recomp) on low-end GPUs, from your own copy. No game data.",
-      "language": "Batchfile",
-      "stars": 0,
-      "createdAt": "2026-11-25T13:01:15Z",
-      "pushedAt": "2026-11-25T13:12:55Z",
-      "defaultBranch": "main",
-      "sources": [
-        "GitHub search"
-      ],
-      "links": [],
-      "foundAt": "2026-11-25T13:37:43.109Z",
-      "substance": 57,
-      "signals": [
-        "Batchfile",
-        "11 technical terms",
-        "3 commits/7d"
-      ],
-      "kind": "effort",
-      "status": "new"
-    },
-    {
-      "repo": "JoseArranzSanchez/GTA6_PCPORT_INFO",
-      "name": "GTA6_PCPORT_INFO",
-      "description": "Research notes on the GTA VI Xbox → PC compatibility problem. No game files, no keys, no circumvention",
-      "language": "HTML",
-      "stars": 1,
-      "createdAt": "2026-11-24T17:37:26Z",
-      "pushedAt": "2026-11-25T12:36:04Z",
-      "defaultBranch": "main",
-      "sources": [
-        "GitHub search"
-      ],
-      "links": [],
-      "foundAt": "2026-11-25T13:37:43.109Z",
-      "substance": 57,
-      "signals": [
-        "HTML",
-        "28 technical terms",
-        "status table",
-        "tests",
-        "8 commits/7d"
-      ],
-      "kind": "effort",
-      "status": "new"
-    },
-    {
-      "repo": "Guernica4u/GTA6-PC-Port-Archive",
-      "name": "GTA6-PC-Port-Archive",
-      "description": "Archive of Leonida, xcl and VIctory (GTA VI on PC projects), saved 2026-11-23",
-      "language": "Python",
-      "stars": 12,
-      "createdAt": "2026-11-24T01:15:37Z",
-      "pushedAt": "2026-11-25T13:31:56Z",
-      "defaultBranch": "main",
-      "sources": [
-        "GitHub search"
-      ],
-      "links": [],
-      "foundAt": "2026-11-25T13:37:43.109Z",
-      "substance": 53,
-      "signals": [
-        "Python",
-        "40 commits/7d"
-      ],
-      "kind": "effort",
-      "status": "new"
-    },
-    {
-      "repo": "ReachProject-Git/Reach-Project-Emulator-For-GTA-6",
-      "name": "Reach-Project-Emulator-For-GTA-6",
-      "description": "For GTA 6 files are not yet released but you can check for updates here : https://x.com/RainReachDetail",
-      "language": null,
-      "stars": 99,
-      "createdAt": "2026-11-25T09:59:32Z",
-      "pushedAt": "2026-11-25T10:18:04Z",
-      "defaultBranch": "main",
-      "sources": [
-        "GitHub search"
-      ],
-      "links": [],
-      "foundAt": "2026-11-25T13:37:43.109Z",
-      "substance": 50,
-      "signals": [
-        "17 technical terms",
-        "tests",
-        "5 commits/7d"
-      ],
-      "kind": "effort",
-      "status": "new"
-    },
-    {
-      "repo": "sleep10dev/XPORT",
-      "name": "XPORT",
-      "description": "XPORT é uma camada de compatibilidade experimental em Rust para estudar títulos Xbox Series X|S no Windows: PE loader, HLE de APIs, XMem/D3D12, tradução compute RDNA2 e replay D3D12.X. Sem compatibilidade de jogos demonstrada.",
-      "language": null,
-      "stars": 0,
-      "createdAt": "2026-11-25T03:25:44Z",
-      "pushedAt": "2026-11-25T03:28:20Z",
-      "defaultBranch": "main",
-      "sources": [
-        "GitHub search"
-      ],
-      "links": [],
-      "foundAt": "2026-11-25T13:37:43.109Z",
-      "substance": 46,
-      "signals": [
-        "14 technical terms",
-        "tests",
-        "1 commits/7d"
-      ],
-      "kind": "effort",
-      "status": "new"
-    },
-    {
-      "repo": "danielfinotti2-spec/gtaVI",
-      "name": "gtaVI",
-      "description": "Experimental XCL-based Xbox Series X|S to Windows compatibility research targeting GTA VI. GTA VI support is unverified; only the synthetic test title has been run.",
-      "language": "Rust",
-      "stars": 0,
-      "createdAt": "2026-11-25T08:49:15Z",
-      "pushedAt": "2026-11-25T08:49:23Z",
-      "defaultBranch": "main",
-      "sources": [
-        "GitHub search"
-      ],
-      "links": [],
-      "foundAt": "2026-11-25T13:37:43.109Z",
-      "substance": 45,
-      "signals": [
-        "Rust",
-        "4 technical terms",
-        "1 commits/7d"
-      ],
-      "kind": "effort",
-      "status": "new"
-    },
-    {
-      "repo": "GuoqiFish/WelcomeToFlorida",
-      "name": "WelcomeToFlorida",
-      "description": "G-r-a-n-d  T-h-e-f-t  A-u-t-o  V-I Compat Probe (Xbox Scarlett compatibility probe)",
-      "language": "C",
-      "stars": 2,
-      "createdAt": "2026-11-25T02:40:52Z",
-      "pushedAt": "2026-11-25T02:57:36Z",
-      "defaultBranch": "main",
-      "sources": [
-        "GitHub search"
-      ],
-      "links": [],
-      "foundAt": "2026-11-25T13:37:43.109Z",
-      "substance": 43,
-      "signals": [
-        "C",
-        "3 technical terms",
-        "2 commits/7d"
       ],
       "kind": "effort",
       "status": "new"
@@ -3524,6 +3260,56 @@
     }
   ],
   "ignored": [
+    {
+      "repo": "Guernica4u/GTA6-PC-Port-Archive",
+      "reason": "archive copy of Leonida, XCL and VIctory, no work of its own",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "spazman12/leonida-lowend",
+      "reason": "build notes and scripts for Leonida, which was taken down; no runtime of its own",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "JoseArranzSanchez/GTA6_PCPORT_INFO",
+      "reason": "research notes page, not a runtime",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "danielfinotti2-spec/gtaVI",
+      "reason": "XCL-based copy in one commit; by its own README only a synthetic test title has run",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "sleep10dev/XPORT",
+      "reason": "one-commit groundwork drop; by its own README no game has run",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "GuoqiFish/WelcomeToFlorida",
+      "reason": "small compatibility probe in two commits; nothing run",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "jaylikesbunda/VIKit",
+      "reason": "one-commit code drop; no game has run",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "PawelBeska/scarlett",
+      "reason": "early groundwork (PE loader, HLE, PM4 front end) tested only on a synthetic sample exe",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "FulGerNet/macca-cl",
+      "reason": "by its own README nothing past import binding has been validated; no world, gameplay or FPS",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "ReachProject-Git/Reach-Project-Emulator-For-GTA-6",
+      "reason": "claims 15 fps but publishes no code or files and points to an X account for updates",
+      "seenAt": "2026-11-25"
+    },
     {
       "repo": "synrgizeross/leonida-sys",
       "reason": "copy of ItsNotRexed/Leonida (README reuses its name and Discord)",
@@ -7038,7 +6824,7 @@
     "lastRun": "2026-11-25T13:37:43.109Z",
     "lastSummary": "30 refreshed, 6 READMEs changed, 16 new candidates, 6 flagged.",
     "lastDmcaCheck": "2026-11-25T13:37:43.109Z",
-    "lastEditorRun": "2026-11-25T10:45:44.000Z"
+    "lastEditorRun": "2026-11-25T13:45:26.000Z"
   },
   "headlines": [
     {
