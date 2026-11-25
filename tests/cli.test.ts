@@ -223,9 +223,9 @@ describe("pw read commands", () => {
     await call(["set", "alpha", ...claim, "gta.fps=24", "gta.render=0.75"])
     const stage = async () => json(await call(["show", "alpha", "--json"])).data.view.stage
     expect(await stage()).toBe("Runnable")
-    expect((await call(["set", "alpha", "proof.fps=README", "--json"])).code).toBe(2)
+    expect((await call(["set", "alpha", "goalProof.fps=README", "--json"])).code).toBe(2)
     const link = "https://example.com/run?a=b"
-    await call(["set", "alpha", `proof.fps=${link}`, `proof.render=${link}`])
+    await call(["set", "alpha", `goalProof.fps=${link}`, `goalProof.render=${link}`])
     expect(await stage()).toBe("Playable")
     expect((await call(["check", "--json"])).code).toBe(0)
   })

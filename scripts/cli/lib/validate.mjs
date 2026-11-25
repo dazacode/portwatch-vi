@@ -85,7 +85,7 @@ const proofLink = (raw, path) => {
   return raw;
 };
 
-const proof = (raw, path) => {
+const goalProof = (raw, path) => {
   const value = object(raw, path);
   if (!value || Array.isArray(value) || typeof value !== 'object') throw invalid(`${path} must be an object.`);
   for (const [key, url] of Object.entries(value)) {
@@ -150,13 +150,13 @@ const FIELDS = {
   'gta.render': step('render'),
   'gta.fps': number(0, 240),
   'gta.stability': stability,
-  proof,
-  ...Object.fromEntries(PROOF_KEYS.map((key) => [`proof.${key}`, proofLink])),
+  goalProof,
+  ...Object.fromEntries(PROOF_KEYS.map((key) => [`goalProof.${key}`, proofLink])),
 };
 
 /** Upstream owns `id`, `name`, `repo`, `branch`, `stats` and the private-build fields; the rest patch. */
 export const PATCH_FIELDS = new Set(
-  Object.keys(FIELDS).filter((f) => !['id', 'name', 'repo', 'branch', 'evidence', 'avatar', 'byline', 'approach', 'target', 'nuked', 'publicLater', 'stats', 'proof'].includes(f))
+  Object.keys(FIELDS).filter((f) => !['id', 'name', 'repo', 'branch', 'evidence', 'avatar', 'byline', 'approach', 'target', 'nuked', 'publicLater', 'stats', 'goalProof'].includes(f))
 );
 
 export const ADDED_FIELDS = new Set(Object.keys(FIELDS));

@@ -119,7 +119,7 @@ Values:
 - `gta.story`: `0`, `0.1`, `0.25`, `0.4`, `0.6`, `0.85`, `1`
 - `gta.render`: `0`, `0.25`, `0.5`, `0.75`, `1`
 - `gta.fps`: a number from 0 to 240
-- `proof.fps`, `proof.render`, `proof.story`: an `https` link, or `null` (see Goals below)
+- `goalProof.fps`, `goalProof.render`, `goalProof.story`: an `https` link, or `null` (see Goals below)
 - `gta.stability`: `unknown`, `constant`, `often`, `sometimes`, `rarely`, `stable`, or a number 0–1
 - `summary`, `highlights` (max 3), `blockers` (max 3): JSON arrays for the lists
 - `verification`: `self-reported` or `reproduced`
@@ -135,17 +135,17 @@ and `branch` are upstream-owned on a tracked project and cannot be patched.
 Upstream's `playable` stage shows as **Runnable** on our site: a character can be moved, at any speed.
 The key and the points stay upstream's. Two goals of ours come after it (`lib/stages.mjs`):
 
-| Goal                    | Needs                                                                                   |
-| ----------------------- | --------------------------------------------------------------------------------------- |
-| Playable (`smooth`)     | `gta.fps` 20 or more and `gta.render` 0.75 or more, with `proof.fps` and `proof.render` |
-| Story beaten (`beaten`) | the same, and `gta.story` 0.85 or more with `proof.story`                               |
+| Goal                    | Needs                                                                                           |
+| ----------------------- | ----------------------------------------------------------------------------------------------- |
+| Playable (`smooth`)     | `gta.fps` 20 or more and `gta.render` 0.75 or more, with `goalProof.fps` and `goalProof.render` |
+| Story beaten (`beaten`) | the same, and `gta.story` 0.85 or more with `goalProof.story`                                   |
 
 A goal adds no points. It is reached only with a link for everything it needs: a recording that shows
 it, or a report by someone outside the project. A README saying so isn't evidence. `show` lists what is
 missing.
 
 ```sh
-./pw set zettrox gta.fps=24 gta.render=0.75 proof.fps=https://… proof.render=https://… --dry-run
+./pw set zettrox gta.fps=24 gta.render=0.75 goalProof.fps=https://… goalProof.render=https://… --dry-run
 ```
 
 ## Findings

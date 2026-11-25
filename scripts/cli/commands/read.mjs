@@ -137,7 +137,7 @@ export const show = {
     out.line(out.paint(1, 'Goals'));
     for (const goal of view.goals) {
       out.line(`  ${goal.label}: ${goal.met ? 'met' : 'not met'}`);
-      for (const c of goal.checks) out.line(`    ${c.met ? 'yes' : 'no '} ${c.label} (${c.now}; ${c.url ?? `no proof.${c.key}`})`);
+      for (const c of goal.checks) out.line(`    ${c.met ? 'yes' : 'no '} ${c.label} (${c.now}; ${c.url ?? `no goalProof.${c.key}`})`);
     }
     out.line('');
     out.line(out.paint(1, 'Score parts'));
@@ -424,7 +424,7 @@ export const schema = {
       'gta.render': TRACKS.find((t) => t.key === 'render').steps.map((s) => s.v),
       'gta.fps': 'number 0-240',
       'gta.stability': [...Object.keys(STABILITY), 'or number 0-1'],
-      'proof.fps|render|story': 'https link or null; what the Playable and Story beaten goals need',
+      'goalProof.fps|render|story': 'https link or null; what the Playable and Story beaten goals need',
       summary: 'string, under 700 characters',
       highlights: 'string[], max 3, each under 20 words',
       blockers: 'string[], max 3, each under 20 words',

@@ -35,9 +35,41 @@
           {
             "text": "Its newest commit adds its own README and a launcher that keeps the shader cache and saves and maps a keyboard to a pad.",
             "url": "https://github.com/Zettrox/ztrx/commit/90b529f8"
+          },
+          {
+            "text": "Issue 42, RTX 4060 Ti: about 30 minutes without a crash, from the prologue through Chapter I to Jason’s first mission with the plane, at 1 to 3 fps. Screenshots show flat black lighting and corrupted textures. It names no commit.",
+            "url": "https://github.com/Zettrox/ztrx/issues/42"
+          },
+          {
+            "text": "Issue 55, RTX 5060, with pull requests 36 and 49 and a ray-tracing switch added: the prison yard is reached and lit, input responds, 12 minutes without a crash, 4 to 5 fps. The tester says what is missing still keeps it from being playable.",
+            "url": "https://github.com/Zettrox/ztrx/issues/55"
+          },
+          {
+            "text": "Issue 16, RTX 4080 on Windows 10, with a VIctory patch added: the lit prison cell at 2.3 fps, and 25 minutes without the card dropping out. Scripted key presses, not a person playing.",
+            "url": "https://github.com/Zettrox/ztrx/issues/16"
+          },
+          {
+            "text": "Issue 44, RTX 5070: a ten-minute run at about 0.8 fps in the world, without a crash. The one report counted in the score so far.",
+            "url": "https://github.com/Zettrox/ztrx/issues/44"
+          },
+          {
+            "text": "Issue 46, AMD RX 7600, with four patches added: the prologue at about 2 fps in scripted runs, one of 13 minutes. A later comment says runs do not always survive.",
+            "url": "https://github.com/Zettrox/ztrx/issues/46"
+          },
+          {
+            "text": "Issues 28 and 39, RTX 5060 and RTX 4060 Ti: two testers hit the same crash about six minutes after entering the world. “Rarely crashes” is the project’s own rating.",
+            "url": "https://github.com/Zettrox/ztrx/issues/39"
+          },
+          {
+            "text": "Issue 29, RTX 5050: the game stops about a second after launch, before any picture, on every try.",
+            "url": "https://github.com/Zettrox/ztrx/issues/29"
+          },
+          {
+            "text": "Compared with victory-fork at 2119b0e, ztrx changes two files: its README and a launcher script. The engine code is the same. None of its 36 pull requests had been merged when checked.",
+            "url": "https://github.com/Zettrox/ztrx/compare/2119b0e4...90b529f8"
           }
         ],
-        "findingsSource": "From Mamozziee's tweets of 25 November and the project's public README and commits; the tweet reply names ZETTROX."
+        "findingsSource": "From Mamozziee’s tweets, the public README and commits, and the testers’ own issue reports, read on 25 November. Code and reports read as text, not run."
       }
     },
     {

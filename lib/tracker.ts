@@ -35,8 +35,8 @@ export type Effort = {
   /** What upstream scores it, before our findings. Null when upstream doesn't list it. */
   sourceScore?: number | null
   nuked?: { at: string; note: string }
-  /** A link for each thing a goal needs shown. Ours, never upstream's. */
-  proof?: Partial<Record<"fps" | "render" | "story", string | null>>
+  /** A link for each thing a goal needs shown. Ours; upstream's `proof` is something else. */
+  goalProof?: Partial<Record<"fps" | "render" | "story", string | null>>
   gta: Record<"loads" | "boots" | "menu" | "world" | "playable" | "fps", number>
   stats: {
     stars?: number

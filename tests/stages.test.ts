@@ -7,11 +7,13 @@ import { addMilestones, scores } from "@/scripts/lib/milestones.mjs"
 
 const IN = { loads: 1, boots: 1, menu: 1, world: 1, playable: 1 }
 const URL = "https://example.com/run"
-const build = (gta: object, proof?: object) => ({
+const build = (gta: object, goalProof?: object) => ({
   id: "a",
   name: "A",
   gta: { ...IN, story: 0, render: 0, fps: 0, stability: "unknown", ...gta },
-  proof,
+  goalProof,
+  // Upstream's own field, which must never count.
+  proof: { label: "Watch", url: URL, fps: URL, render: URL, story: URL },
 })
 const smooth = { fps: 24, render: 0.75 }
 const both = { fps: URL, render: URL }
