@@ -1033,6 +1033,49 @@
       "claims": []
     },
     {
+      "id": "notnozy",
+      "name": "NotNozy",
+      "repo": null,
+      "basedOn": [],
+      "evidence": "Rumble stream",
+      "byline": "Streamed on Rumble · code not public",
+      "proof": {
+        "label": "Watch on Rumble",
+        "url": "https://rumble.com/v7iv98i-gta6-modding-stream.html"
+      },
+      "tier": "tracked",
+      "gpu": [
+        "NVIDIA"
+      ],
+      "summary": "A private build shown on NotNozy's \"GTA6 Modding Stream\" on Rumble. It looks about the same as AvatarManz's build, the leader on our board: as far into the story as the leading builds, with a picture close to the console. It runs on an NVIDIA card. Code not public, and what it builds on isn't known.",
+      "highlights": [
+        "Looks about the same as AvatarManz's build, the leader on our board",
+        "As far into the story as the leading builds, with a picture close to the console",
+        "Runs on an NVIDIA card"
+      ],
+      "blockers": [
+        "No measured frame rate, crash record or test PC given: the values follow AvatarManz's build, which it looks about the same as",
+        "Code is private, so nobody outside can test or reproduce it"
+      ],
+      "provenOn": null,
+      "gta": {
+        "loads": 1,
+        "boots": 1,
+        "menu": 1,
+        "world": 1,
+        "playable": 1,
+        "story": 0.5,
+        "render": 0.76,
+        "fps": 16,
+        "stability": 0.9
+      },
+      "verification": "self-reported",
+      "stats": {},
+      "assessedAt": "2026-11-25",
+      "assessedBy": "manual",
+      "claims": []
+    },
+    {
       "id": "doomsday",
       "name": "Doomsday",
       "avatar": "assets/img/efforts/doomsday.jpg",
@@ -7454,6 +7497,11 @@
       "date": "2026-11-25",
       "kind": "new",
       "text": "AvatarManz's code is public: avatarmanz/VIctory-7900XTX, a GPL-3.0 fork of VIctory for the RX 7900 XTX, joins the race at #1 with 83.1%. Its README measures 13-22 fps indoors and a 41-minute session without a crash."
+    },
+    {
+      "date": "2026-11-25",
+      "kind": "new",
+      "text": "NotNozy joins as a private build at 82.6%, just behind AvatarManz: his Rumble stream shows a build that looks about the same, on an NVIDIA card."
     }
   ],
   "history": [
@@ -7493,9 +7541,9 @@
       "date": "2026-11-25",
       "leader": 83.1,
       "leaderId": "avatarmanz",
-      "top3": 80.4,
+      "top3": 81.7,
       "furthest": "playable",
-      "tracked": 42
+      "tracked": 43
     }
   ],
   "scout": {
