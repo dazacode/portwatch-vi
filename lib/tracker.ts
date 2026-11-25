@@ -14,6 +14,7 @@ import type { Milestone } from "@/lib/milestones"
 import { applyOverrides } from "@/lib/overrides.mjs"
 import { rate } from "@/lib/rating.mjs"
 import { isPrivateBuild, overall, scoreEffort } from "@/lib/scoring.mjs"
+import { goalsOf, stageLabel, stageOf, stageRank } from "@/lib/stages.mjs"
 import { getUpstream } from "@/lib/upstream"
 import { verify } from "@/lib/verification.mjs"
 
@@ -34,6 +35,8 @@ export type Effort = {
   /** What upstream scores it, before our findings. Null when upstream doesn't list it. */
   sourceScore?: number | null
   nuked?: { at: string; note: string }
+  /** A link for each thing a goal needs shown. Ours, never upstream's. */
+  proof?: Partial<Record<"fps" | "render" | "story", string | null>>
   gta: Record<"loads" | "boots" | "menu" | "world" | "playable" | "fps", number>
   stats: {
     stars?: number
@@ -200,6 +203,22 @@ export type ScorePart = {
   note: string | null
 }
 
+/** A milestone past Runnable. It counts only with a link for everything it needs. */
+export type Goal = {
+  key: string
+  label: string
+  desc: string
+  met: boolean
+  checks: {
+    key: string
+    label: string
+    now: string
+    claimed: boolean
+    url: string | null
+    met: boolean
+  }[]
+}
+
 export type Standing = {
   id: string
   name: string
@@ -216,8 +235,9 @@ export type Standing = {
   /** What it claims. */
   score: number
   stage: string
-  /** One value per LADDER step: 0, 0.5 or 1. */
+  /** One value per ROAD step: 0, 0.5 or 1. A goal is 0 or 1. */
   steps: number[]
+  goals: Goal[]
   fps: number
   stars: number | null
   commits7d: number | null
@@ -244,6 +264,8 @@ export function getStandings(tracker: Tracker, evidence: Evidence[]): Standing[]
         s.score
       )
       const ours = rate(e, v.stages)
+      const goals: Goal[] = goalsOf(e)
+      const stage = stageOf(e)
       return {
         id: e.id,
         name: e.name,
@@ -256,14 +278,18 @@ export function getStandings(tracker: Tracker, evidence: Evidence[]): Standing[]
         parts: ours.parts,
         sourceScore: e.sourceScore ?? null,
         score: s.score,
-        stage: s.reachedLabel,
-        steps: LADDER.map((m) => e.gta[m.key as keyof Effort["gta"]] ?? 0),
+        stage: stageLabel(stage),
+        steps: [
+          ...LADDER.map((m) => e.gta[m.key as keyof Effort["gta"]] ?? 0),
+          ...goals.map((g) => Number(g.met)),
+        ],
+        goals,
         fps: e.gta.fps ?? 0,
         stars: e.stats.stars ?? null,
         commits7d: e.stats.commits7d ?? null,
         verified: v.score,
         verifiedStage: LADDER.find((m) => m.key === v.reached)?.label ?? null,
-        claimedStage: s.reached,
+        claimedStage: stage,
         checks: v.stages,
         findings: e.findings ?? [],
         findingsSource: e.findingsSource ?? null,
@@ -281,10 +307,12 @@ export function getStandings(tracker: Tracker, evidence: Evidence[]): Standing[]
 }
 
 export function getAnswer(tracker: Tracker) {
-  const { furthest, leader } = overall(tracker.efforts)
+  const { leader } = overall(tracker.efforts)
+  const stages = tracker.efforts.filter((e) => !e.nuked).map(stageOf)
+  const furthest = stages.sort((a, b) => stageRank(b) - stageRank(a))[0] ?? "groundwork"
   return {
-    done: furthest.key === "complete",
-    furthest: furthest.label,
+    done: furthest === "complete",
+    furthest: stageLabel(furthest),
     leader: leader ? { name: leader.effort.name as string, score: leader.score as number } : null,
   }
 }

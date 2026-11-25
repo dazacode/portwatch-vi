@@ -31,5 +31,5 @@ if (!found) {
     by: `challenge:${effort.id}:${found.startsAt.slice(0, 10)}`,
   });
   await writeFile(file, `${JSON.stringify(state, null, 2)}\n`);
-  await writeFile(reply, `Recorded: ${effort.name} passed a live challenge for the ${found.stage === 'menu' ? 'main menu' : 'playable'} stage. The site shows it within a few minutes.\n`);
+  await writeFile(reply, `Recorded: ${effort.name} passed a live challenge for the ${found.stage === 'menu' ? 'main menu' : 'runnable'} stage. The site shows it within a few minutes.\n`);
 }

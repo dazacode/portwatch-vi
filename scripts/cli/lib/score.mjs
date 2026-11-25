@@ -1,6 +1,7 @@
 // Score arithmetic for one project, including hypothetical values. Nothing here writes.
 import { isPrivateBuild, scoreEffort } from '../../../lib/scoring.mjs';
 import { rate } from '../../../lib/rating.mjs';
+import { goalsOf, stageLabel, stageOf } from '../../../lib/stages.mjs';
 import { verify } from '../../../lib/verification.mjs';
 
 export const evidenceFor = (state, id) => state.evidence.filter((e) => e.effortId === id);
@@ -11,8 +12,9 @@ export function scoreView(state, effort) {
   const ours = rate(effort, checked.stages);
   return {
     claimed: score.score,
-    stage: score.reachedLabel,
-    reached: score.reached,
+    stage: stageLabel(stageOf(effort)),
+    reached: stageOf(effort),
+    goals: goalsOf(effort),
     rating: ours.score,
     parts: ours.parts,
     verified: checked.score,

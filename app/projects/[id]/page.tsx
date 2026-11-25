@@ -4,6 +4,7 @@ import { notFound } from "next/navigation"
 import { Breadcrumb } from "@/components/breadcrumb"
 import { Confidence } from "@/components/confidence"
 import { Container } from "@/components/container"
+import { Goals } from "@/components/goals"
 import { ScoreBreakdown } from "@/components/score-breakdown"
 import { ago, utcDay } from "@/lib/format"
 import { pageMeta, projectMeta } from "@/lib/seo"
@@ -152,6 +153,12 @@ export default async function Page({ params }: Props) {
           <h2 className="mb-4 text-lg font-semibold">How sure we are</h2>
           <Confidence stages={s.checks} claimed={s.steps} />
         </section>
+        {s.steps[4] >= 1 && (
+          <section>
+            <h2 className="mb-4 text-lg font-semibold">Past runnable</h2>
+            <Goals goals={s.goals} />
+          </section>
+        )}
         <section>
           <h2 className="mb-2 text-lg font-semibold">Evidence</h2>
           {evidence.length === 0 ? (

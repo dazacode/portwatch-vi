@@ -1,7 +1,8 @@
 // Turns changes in tracker.json into a list of milestones: who moved, how far, and whether it was a first.
-import { MILESTONES, scoreEffort } from '../../lib/scoring.mjs';
+import { scoreEffort } from '../../lib/scoring.mjs';
+import { STAGE_ORDER, stageOf } from '../../lib/stages.mjs';
 
-const ORDER = MILESTONES.map((m) => m.key);
+const ORDER = STAGE_ORDER.map((s) => s.key);
 const MIN_POINTS = 1;
 const CORRECTION_MS = 6 * 36e5; // a nudge or a step back this soon corrects the last milestone
 const SAME_MS = 30 * 6e4; // reaching another stage this soon is still the same news
@@ -11,7 +12,7 @@ const round = (n) => Math.round(n * 10) / 10;
 export function scores(efforts) {
   return new Map(efforts.map((e) => {
     const s = scoreEffort(e);
-    return [e.id, { name: e.name, score: s.score, stage: s.reached, gone: Boolean(e.nuked) }];
+    return [e.id, { name: e.name, score: s.score, stage: stageOf(e), gone: Boolean(e.nuked) }];
   }));
 }
 
@@ -42,8 +43,9 @@ export function addMilestones(events, before, after, at) {
         ...last, name: now.name, to: now.score, stageTo: now.stage,
         first: newStage ? firsts.first : last.first && now.stage === last.stageTo, lead: firsts.lead || (last.lead && now.score >= last.to),
       };
-      const stillCounts = round(merged.to - merged.from) >= MIN_POINTS || merged.stageTo !== merged.stageFrom;
-      if (stillCounts && merged.to > merged.from) next[lastIndex] = now.score > last.to ? { ...merged, at } : merged;
+      // A goal adds no points, so climbing a stage counts on its own.
+      const climbed = ORDER.indexOf(merged.stageTo) > ORDER.indexOf(merged.stageFrom);
+      if (climbed || round(merged.to - merged.from) >= MIN_POINTS) next[lastIndex] = now.score > last.to ? { ...merged, at } : merged;
       else next.splice(lastIndex, 1);
       continue;
     }

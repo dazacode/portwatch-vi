@@ -1,6 +1,6 @@
 import { utcDay } from "@/lib/format"
 import type { Milestone } from "@/lib/milestones"
-import { MILESTONES } from "@/lib/scoring.mjs"
+import { STAGE_ORDER } from "@/lib/stages.mjs"
 import type { Activity, Effort, Evidence, Standing, Tracker } from "@/lib/tracker"
 
 /** A repo with nothing new for longer than this is inactive. The same window as the commit count. */
@@ -17,7 +17,7 @@ export const STATUS_LABEL: Record<Status, string> = {
 }
 
 export const STATUSES = Object.keys(STATUS_LABEL) as Status[]
-export const STAGES: { key: string; label: string }[] = MILESTONES
+export const STAGES: { key: string; label: string }[] = STAGE_ORDER
 
 /** Where a project's first date comes from. There is no third kind: without either it is unknown. */
 export type Origin = { at: string; kind: "github" | "mentioned" }

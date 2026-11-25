@@ -5,6 +5,7 @@
 import { createHash, randomUUID } from 'node:crypto';
 import { z } from 'zod';
 import { isAttributed, isHidden, isHostile, noteId, plain, unsafe, ungrounded } from '../../lib/digest-safety.mjs';
+import { stageLabel } from '../../lib/stages.mjs';
 
 export const VERSION = 1;
 // Part of every hash: a new number has everything written again.
@@ -513,8 +514,8 @@ export async function buildDigest({ previous = null, ask = null, now = Date.now(
         from: 'The tracker',
         text: forModel(
           m.debut
-            ? `The tracker records that ${name.get(m.id)} joined the board, claiming the stage "${m.stageTo}".`
-            : `The tracker records that ${name.get(m.id)} now claims the stage "${m.stageTo}", up from "${m.stageFrom}".`,
+            ? `The tracker records that ${name.get(m.id)} joined the board, claiming the stage "${stageLabel(m.stageTo)}".`
+            : `The tracker records that ${name.get(m.id)} now claims the stage "${stageLabel(m.stageTo)}", up from "${stageLabel(m.stageFrom)}".`,
         ),
       })),
       ...leads.slice(0, LIMITS.candidates - articles.length - recent.length).map((s) => ({

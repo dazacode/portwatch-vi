@@ -7,8 +7,8 @@ import { Explorer, ExplorerFallback } from "@/components/standings/explorer"
 import { ProjectRow } from "@/components/standings/project-row"
 import { getBoardEvents } from "@/lib/board"
 import { getRace } from "@/lib/race"
-import { MILESTONES } from "@/lib/scoring.mjs"
 import { pageMeta, standingsLd, standingsMeta } from "@/lib/seo"
+import { STEPS } from "@/lib/stages.mjs"
 import { getProjects, type Project, toEntry } from "@/lib/standings"
 import {
   getActivity,
@@ -55,7 +55,7 @@ export default async function Page() {
     first && furthest && first.id !== furthest.id
       ? `First by score: ${first.name}, ${first.rating}%.`
       : undefined
-  const stages = MILESTONES.filter((m) => m.at > 0).map(({ label, at }) => ({ label, at }))
+  const stages = STEPS.filter((m) => m.at > 0).map(({ label, at }) => ({ label, at }))
   return (
     <Container className="pt-8">
       <JsonLd data={standingsLd(projects)} />

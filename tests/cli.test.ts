@@ -218,6 +218,18 @@ describe("pw read commands", () => {
     expect((await call(["check", "--json"])).code).toBe(0)
   })
 
+  it("reaches a goal only with linked evidence", async () => {
+    const claim = ["loads", "boots", "menu", "world", "playable"].map((k) => `gta.${k}=1`)
+    await call(["set", "alpha", ...claim, "gta.fps=24", "gta.render=0.75"])
+    const stage = async () => json(await call(["show", "alpha", "--json"])).data.view.stage
+    expect(await stage()).toBe("Runnable")
+    expect((await call(["set", "alpha", "proof.fps=README", "--json"])).code).toBe(2)
+    const link = "https://example.com/run?a=b"
+    await call(["set", "alpha", `proof.fps=${link}`, `proof.render=${link}`])
+    expect(await stage()).toBe("Playable")
+    expect((await call(["check", "--json"])).code).toBe(0)
+  })
+
   it("returns field rules as JSON", async () => {
     const result = await call(["schema", "patch", "--json"])
     expect(result.code).toBe(0)

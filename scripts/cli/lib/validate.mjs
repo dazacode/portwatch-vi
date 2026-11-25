@@ -1,5 +1,6 @@
 // Field parsing and the rules the editor playbook sets. Values arrive as strings from the shell.
 import { STABILITY, TRACKS } from '../../../lib/scoring.mjs';
+import { PROOF_KEYS } from '../../../lib/stages.mjs';
 import { invalid } from './errors.mjs';
 
 const LADDER = ['loads', 'boots', 'menu', 'world', 'playable'];
@@ -78,6 +79,22 @@ const findingList = (raw, path) => {
   });
 };
 
+const proofLink = (raw, path) => {
+  if (raw === 'null') return null;
+  if (!/^https:\/\/\S+$/.test(raw)) throw invalid(`${path} must be an https link, or null.`);
+  return raw;
+};
+
+const proof = (raw, path) => {
+  const value = object(raw, path);
+  if (!value || Array.isArray(value) || typeof value !== 'object') throw invalid(`${path} must be an object.`);
+  for (const [key, url] of Object.entries(value)) {
+    if (!PROOF_KEYS.includes(key)) throw invalid(`${path} has unknown key "${key}".`);
+    proofLink(String(url), `${path}.${key}`);
+  }
+  return value;
+};
+
 const FIELDS = {
   summary: string(700),
   highlights: list(3, 20),
@@ -133,11 +150,13 @@ const FIELDS = {
   'gta.render': step('render'),
   'gta.fps': number(0, 240),
   'gta.stability': stability,
+  proof,
+  ...Object.fromEntries(PROOF_KEYS.map((key) => [`proof.${key}`, proofLink])),
 };
 
 /** Upstream owns `id`, `name`, `repo`, `branch`, `stats` and the private-build fields; the rest patch. */
 export const PATCH_FIELDS = new Set(
-  Object.keys(FIELDS).filter((f) => !['id', 'name', 'repo', 'branch', 'evidence', 'avatar', 'byline', 'approach', 'target', 'nuked', 'publicLater', 'stats'].includes(f))
+  Object.keys(FIELDS).filter((f) => !['id', 'name', 'repo', 'branch', 'evidence', 'avatar', 'byline', 'approach', 'target', 'nuked', 'publicLater', 'stats', 'proof'].includes(f))
 );
 
 export const ADDED_FIELDS = new Set(Object.keys(FIELDS));

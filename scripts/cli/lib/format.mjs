@@ -1,3 +1,5 @@
+import { stageRank } from '../../../lib/stages.mjs';
+
 const DAY = 86_400_000;
 
 export const pct = (n) => `${Number(n).toFixed(1)}%`;
@@ -39,5 +41,5 @@ export const show = (value) =>
   value === null || value === undefined ? '—' : typeof value === 'string' ? value : JSON.stringify(value);
 
 export function stageIndex(key) {
-  return ['groundwork', 'loads', 'boots', 'menu', 'world', 'playable', 'complete'].indexOf(key);
+  return stageRank(key);
 }

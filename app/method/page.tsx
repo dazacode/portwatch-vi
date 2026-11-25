@@ -1,9 +1,10 @@
 import { Container } from "@/components/container"
 import { SIZES } from "@/lib/milestones"
 import { CLAIM_SHARE } from "@/lib/rating.mjs"
-import { MILESTONES, TRACKS } from "@/lib/scoring.mjs"
+import { TRACKS } from "@/lib/scoring.mjs"
 import { PAGES, pageMeta } from "@/lib/seo"
 import { SOURCE } from "@/lib/site"
+import { GOALS, STEPS } from "@/lib/stages.mjs"
 import { getTracker } from "@/lib/tracker"
 import { VERIFIED_AT, WEIGHTS } from "@/lib/verification.mjs"
 
@@ -77,7 +78,7 @@ export default async function Page() {
             The first half of a claim is getting in. Each step needs the one before it.
           </p>
           <dl className="pane mt-4 px-5 py-1 *:last:border-0">
-            {MILESTONES.map((m) => (
+            {STEPS.map((m) => (
               <div key={m.key} className="grid grid-cols-[3rem_1fr] border-b py-3 text-sm">
                 <dt className="contents">
                   <span className="text-muted-foreground">{m.at}%</span>
@@ -88,7 +89,7 @@ export default async function Page() {
             ))}
           </dl>
           <p className="mt-6 text-muted-foreground">
-            Once a build is playable, four things fill the other half.
+            Once a build is runnable, four things fill the other half.
           </p>
           <dl className="pane mt-4 px-5 py-1 *:last:border-0">
             {TRACKS.map((t) => (
@@ -98,6 +99,25 @@ export default async function Page() {
                   <span className="font-medium">{t.label}</span>
                 </dt>
                 <dd className="col-start-2 text-muted-foreground">{t.desc}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold">When a build counts as playable</h2>
+          <p className="mt-2 text-muted-foreground">
+            A build that can be moved around in at 4 fps runs, but nobody would play it. So the
+            stage {SOURCE.name} calls Playable is Runnable here, and two milestones of ours come
+            after it. They need a build that is runnable, and a link to a recording or a report for
+            everything they list. A claim on its own isn’t enough. They add no points, because
+            speed, picture and story already have theirs. Earlier texts, and {SOURCE.name}’s own,
+            still say “Playable” for Runnable.
+          </p>
+          <dl className="pane mt-4 px-5 py-1 *:last:border-0">
+            {GOALS.map((g) => (
+              <div key={g.key} className="border-b py-3 text-sm">
+                <dt className="font-medium">{g.label}</dt>
+                <dd className="mt-0.5 text-muted-foreground">{g.desc}</dd>
               </div>
             ))}
           </dl>
@@ -158,9 +178,10 @@ export default async function Page() {
             ))}
           </dl>
           <p className="mt-4 text-sm text-muted-foreground">
-            The first project to reach a stage always gets five. A project new to the board has no
-            earlier score, so it gets five if it takes the lead, three if it is already playable,
-            and one otherwise. A correction within six hours changes the milestone it corrects.
+            The first project to reach a stage always gets five, and reaching Playable or Story
+            beaten gets at least four. A project new to the board has no earlier score, so it gets
+            five if it takes the lead, three if it is already runnable, and one otherwise. A
+            correction within six hours changes the milestone it corrects.
           </p>
         </section>
         <section>

@@ -18,6 +18,8 @@
     --color-step-3: var(--step-3);
     --color-step-4: var(--step-4);
     --color-step-5: var(--step-5);
+    --color-step-6: var(--step-6);
+    --color-step-7: var(--step-7);
     --color-sky-1: var(--sky-1);
     --color-sky-2: var(--sky-2);
     --color-sky-3: var(--sky-3);
@@ -81,6 +83,8 @@
     --step-3: oklch(0.6 0.2 320);
     --step-4: oklch(0.63 0.23 357);
     --step-5: oklch(0.72 0.17 45);
+    --step-6: oklch(0.68 0.16 130);
+    --step-7: oklch(0.6 0.14 160);
     --sky-1: oklch(0.8 0.1 220);
     --sky-2: oklch(0.85 0.09 350);
     --sky-3: oklch(0.86 0.11 60);
@@ -126,6 +130,8 @@
     --step-3: oklch(0.68 0.21 320);
     --step-4: oklch(0.7 0.22 355);
     --step-5: oklch(0.79 0.16 60);
+    --step-6: oklch(0.82 0.18 130);
+    --step-7: oklch(0.78 0.15 160);
     --ambient: url("/video/ambient-dark.webp");
     --ambient-veil: oklch(0.16 0.045 295 / 84%);
     --glass: oklch(0.2 0.03 290 / 52%);

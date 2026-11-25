@@ -28,7 +28,7 @@ export function StandingsTable({
         <TableRow>
           <TableHead className="pl-0">Project</TableHead>
           <TableHead className="hidden sm:table-cell">Reached</TableHead>
-          <TableHead className="hidden sm:table-cell">Steps to playable</TableHead>
+          <TableHead className="hidden sm:table-cell">Steps</TableHead>
           <TableHead className="hidden text-right md:table-cell">FPS</TableHead>
           <TableHead className="hidden text-right md:table-cell">Commits, 7 days</TableHead>
           <TableHead className="hidden text-right md:table-cell">Stars</TableHead>

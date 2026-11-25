@@ -4,7 +4,7 @@ import { type Breakdown, getBreakdowns, getDigest, getNote } from "@/lib/digest"
 import { plainTitle } from "@/lib/format"
 import { isHidden } from "@/lib/hide"
 import type { Stream } from "@/lib/live/types"
-import { compareToLast, gain, headline, type Milestone, rate } from "@/lib/milestones"
+import { compareToLast, gain, headline, type Milestone, rate, reachedGoal } from "@/lib/milestones"
 import { SITE } from "@/lib/site"
 import { getProjects, type Project, reporters } from "@/lib/standings"
 import {
@@ -191,11 +191,13 @@ function milestoneSlide(m: Milestone, earlier: Milestone[], sure: number): Slide
   const notes = [
     m.first && "First project to get this far",
     m.lead && "Took the lead",
-    sure >= VERIFIED_AT
-      ? `Verified, ${Math.round(sure * 100)}% sure`
-      : sure > 0
-        ? `Not verified yet, ${Math.round(sure * 100)}% sure`
-        : "No independent evidence yet",
+    reachedGoal(m)
+      ? "Shown with evidence"
+      : sure >= VERIFIED_AT
+        ? `Verified, ${Math.round(sure * 100)}% sure`
+        : sure > 0
+          ? `Not verified yet, ${Math.round(sure * 100)}% sure`
+          : "No independent evidence yet",
   ]
   return {
     kind: "milestone",
