@@ -408,6 +408,58 @@
         ],
         "findingsSource": "From XCL’s README, pull requests, issues and commits, and the linked posts on X, on 25 November. Code read as text, not run."
       }
+    },
+    {
+      "id": "belobug",
+      "from": {
+        "findings": null,
+        "findingsSource": null
+      },
+      "to": {
+        "findings": [
+          {
+            "text": "README: “not playable yet”, at 3 to 5 fps in the world. That is 4.4 to 4.9 standing still in a heavy scene and about 3 while driving, on one PC (RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM). Nothing has been run on NVIDIA or Intel.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4cbe9d76/README.md"
+          },
+          {
+            "text": "README: the world renders lit, with textures, people, vehicles, vegetation, water and sky, and saves load and store. Boot and menus run at 30 fps, as in VIctory. The repo has no screenshot or recording.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4cbe9d76/README.md"
+          },
+          {
+            "text": "Still broken, by its README: parts of moving vehicles are left behind or stretched across the screen, and distant trees are not drawn. The documented launch skips eight pipelines, which are those trees’ stand-ins.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4cbe9d76/README.md"
+          },
+          {
+            "text": "The game’s ray-traced indirect light does not run. Its output is replaced by one constant (0.6), the same everywhere, which the code itself marks as a shortcut. Ray passes are off unless VICTORY_RAYS=1.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4cbe9d76/crates/victory-gpu/src/ambient.rs"
+          },
+          {
+            "text": "A commit measures the main speed-up at one place: 225 to 72 ms of GPU time a frame, 2.6 to 3.9 fps, by moving about 9,300 small dispatches and barriers out of the draws. A later one changes its default to stop flicker; the README gives about 80 ms.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/commit/ccab9730"
+          },
+          {
+            "text": "Car paint, glass and skin had lines along every triangle on AMD. Pixel shaders now read their neighbours through quad reads, helper pixels included.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/commit/03629f3f"
+          },
+          {
+            "text": "Long runs dropped draws when the game’s tables outgrew their slots: one reached six minutes, then fog and 0.3 fps. Tables are now shared, and the slots were doubled.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/commit/df715461"
+          },
+          {
+            "text": "A crash 120 frames into the world was traced to reusing memory tiles and turned off; the commit reports 1,203 world frames without a fault after it. The README still reports one driver timeout in its session and says to expect it.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/commit/99569585"
+          },
+          {
+            "text": "It follows VIctory’s main up to 8e79c80 and is 492 commits past it, including merges of 63 numbered pull requests. About 100 commits are Belobug’s own. The README says no victory-fork, victory-amd or XCL code is in it.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/commits/main"
+          },
+          {
+            "text": "Neither the fork’s part of the README nor Belobug’s commits name a mission played or call it stable. The story and stability values come from upstream’s owner, not from the repo, and no outside report was found in it.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4cbe9d76/README.md"
+          }
+        ],
+        "findingsSource": "From Belobug’s README, commits and code at 4cbe9d76, on 25 November. Read as text, not run."
+      }
     }
   ],
   "added": [
