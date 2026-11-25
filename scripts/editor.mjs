@@ -21,7 +21,8 @@ import {
   collectLeads,
   makePw,
   parsePlan,
-  planSchema,
+  planFromActions,
+  actionsSchema,
   projectsToReview,
   readJson,
   readmeDigest,
@@ -40,6 +41,15 @@ const root = flag('root') ?? ROOT;
 const data = flag('data') ?? path.join(root, 'data');
 const pw = makePw({ root, data });
 const log = (line = '') => console.log(line);
+
+const FREE_SHAPE = `The keyless model gets a flat list instead. Reply with {"actions":[...],"note":"one line"}: actions first, note last. Each action has "kind" and the fields of that kind:
+{"kind":"finding","project":"<id>","text":"...","lead":"L1","source":"outlet, date"}
+{"kind":"score","project":"<id>","fields":{"gta.fps":4},"reason":"...","withdrawn":false}
+{"kind":"candidate","repo":"owner/name","action":"ignore"|"track","reason":"...","effort":{"name":"...","summary":"...","tier":"watchlist","highlights":[],"blockers":[],"gta":{}}}
+{"kind":"added","id":"...","name":"...","basedOn":[],"evidence":"...","summary":"...","blockers":[],"gta":{}}
+{"kind":"article","title":"...","dek":"...","category":"Port","body":["..."],"sourceLeads":["L2"]}
+{"kind":"pick","project":"<id>","reason":"..."}
+Return {"actions":[]} when there is nothing. Keep every string short: the reply may be cut off.`;
 
 /** Run `git config user.email`; EDITOR.md rule 1 stops the run on a wrong identity. */
 const gitEmail = () =>
@@ -84,14 +94,24 @@ async function askClaude({ system, user, apiKey }) {
   return { ok: false, why: 'Claude did not return a usable plan' };
 }
 
-/** The keyless route, same brief and schema, fewer leads to fit a free model. */
+/** The keyless route: same brief, one flat action list it can be cut off inside. */
 async function askFree({ system, user, schema }) {
   const providers = providersFrom(process.env);
   if (!providers.length) return { ok: false, why: 'no model (set ANTHROPIC_API_KEY or leave FREE_AI on)' };
-  const ai = createFreeAi({ providers, maxRequests: 3, budgetMs: 240_000, timeoutMs: 90_000, log });
-  const reply = await ai.ask({ system, user, schema, maxTokens: 1600 });
+  const ai = createFreeAi({ providers, maxRequests: 5, budgetMs: 240_000, timeoutMs: 90_000, log });
+  const reply = await ai.ask({ system, user, schema, maxTokens: 1500 });
   if (!reply.ok) return { ok: false, why: reply.reason ?? 'no answer' };
-  return { ok: true, plan: reply.value, by: reply.by };
+  const plan = planFromActions(reply.value);
+  const count = plan.findings.length + plan.scores.length + plan.candidates.length + plan.added.length + plan.articles.length + (plan.pick ? 1 : 0);
+  if (count) return { ok: true, plan, by: reply.by };
+  // A free model sometimes describes the work in the note and forgets the list. One more go.
+  const again = await ai.ask({
+    system,
+    user: `${user}\n\nYou returned no actions. Return them now, as {"actions":[...]}, or {"actions":[]} if truly nothing.`,
+    schema,
+    maxTokens: 1500,
+  });
+  return again.ok ? { ok: true, plan: planFromActions(again.value), by: again.by } : { ok: true, plan, by: reply.by };
 }
 
 async function main() {
@@ -129,7 +149,7 @@ async function main() {
   for (const c of candidates) {
     const readme = c.repo ? readmeDigest(await gh.readme(c.repo, c.defaultBranch).catch(() => '')) : '';
     candidateBlocks.push(
-      `- ${c.repo} | ${c.name} | ${c.stars ?? '?'} stars | ${oneLine(c.description, 160)} | ${(c.signals ?? []).join(', ')}${readme ? `\n  ${oneLine(readme, 1000)}` : ''}`
+      `- ${c.repo} | ${c.name} | ${c.stars ?? '?'} stars | ${oneLine(c.description, 160)} | ${(c.signals ?? []).join(', ')}${readme ? `\n  ${oneLine(readme, process.env.ANTHROPIC_API_KEY ? 1000 : 600)}` : ''}`
     );
   }
   const blocks = [];
@@ -152,7 +172,7 @@ async function main() {
       summary: oneLine(effort.summary, 300),
       verification: effort.verification,
       findings: (effort.findings ?? []).map((f) => oneLine(f.text, 160)),
-      readme: readme.slice(0, 1200),
+      readme: readme.slice(0, process.env.ANTHROPIC_API_KEY ? 1200 : 700),
       commits: commits.map((m) => oneLine(m, 120)),
     });
   }
@@ -174,7 +194,7 @@ async function main() {
     return 0;
   };
   const ranked = [...leads].sort((a, b) => weight(b) - weight(a));
-  const shown = ranked.slice(0, 18);
+  const shown = ranked.slice(0, process.env.ANTHROPIC_API_KEY ? 18 : 12);
 
   const user = [
     `Today is ${today} (UTC). Last editor run: ${editorState.lastRun ?? 'never'}.`,
@@ -195,7 +215,7 @@ async function main() {
   const system = SYSTEM;
   const reply = process.env.ANTHROPIC_API_KEY
     ? await askClaude({ system, user, apiKey: process.env.ANTHROPIC_API_KEY })
-    : await askFree({ system, user, schema: planSchema });
+    : await askFree({ system: `${system}\n\n${FREE_SHAPE}`, user, schema: actionsSchema });
 
   if (!reply.ok) {
     log(`! no plan: ${reply.why}`);

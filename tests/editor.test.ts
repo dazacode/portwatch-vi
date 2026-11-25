@@ -153,6 +153,23 @@ describe("parsePlan", () => {
   })
 })
 
+describe("planFromActions", () => {
+  it("groups a flat action list into the plan shape", async () => {
+    const { planFromActions, actionsSchema } = await import("@/scripts/lib/editor.mjs")
+    const parsed = actionsSchema.parse({
+      note: "n",
+      actions: [
+        { kind: "finding", project: "alpha", text: "Zettrox did a thing", lead: "L1" },
+        { kind: "pick", project: "alpha", reason: "why" },
+      ],
+    } as never)
+    const plan = planFromActions(parsed as never)
+    expect(plan.findings).toHaveLength(1)
+    expect(plan.pick).toEqual({ kind: "pick", project: "alpha", reason: "why" })
+    expect(plan.articles).toEqual([])
+  })
+})
+
 describe("applyPlan", () => {
   const leads = [
     {

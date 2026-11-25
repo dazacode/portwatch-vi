@@ -157,89 +157,103 @@ export function articlesToday({ overrides, today }) {
 
 const scoreFields = new Set([...PATCH_FIELDS, ...ADDED_FIELDS]);
 const scalar = z.union([z.string(), z.number(), z.boolean(), z.null()]);
+const CATEGORIES = ['Leak', 'Takedown', 'Legal', 'Security', 'Official', 'Port', 'Safety'];
 
+const findingItem = z.object({
+  project: z.string(),
+  text: z.string().min(8).max(300),
+  lead: z.string(),
+  source: z.string().max(160).optional(),
+});
+const scoreItem = z.object({
+  project: z.string(),
+  fields: z.record(z.string(), scalar),
+  reason: z.string().max(240).optional(),
+  withdrawn: z.boolean().optional(),
+});
+const effortItem = z.object({
+  id: z.string().optional(),
+  name: z.string().max(80),
+  summary: z.string().max(700),
+  tier: z.enum(['tracked', 'watchlist']).default('watchlist'),
+  highlights: z.array(z.string()).max(3).default([]),
+  blockers: z.array(z.string()).max(3).default([]),
+  gta: z.record(z.string(), scalar).default({}),
+  basedOn: z.array(z.string()).default([]),
+  target: z.string().max(80).optional(),
+  byline: z.string().max(120).optional(),
+});
+const candidateItem = z.object({
+  repo: z.string(),
+  action: z.enum(['ignore', 'track']),
+  reason: z.string().max(200),
+  effort: effortItem.optional(),
+});
+const addedItem = z.object({
+  id: z.string(),
+  name: z.string().max(80),
+  repo: z.string().nullable().optional(),
+  basedOn: z.array(z.string()).default([]),
+  evidence: z.string().max(200),
+  summary: z.string().max(700),
+  highlights: z.array(z.string()).max(3).default([]),
+  blockers: z.array(z.string()).max(3).default([]),
+  gta: z.record(z.string(), scalar).default({}),
+  target: z.string().max(80).optional(),
+  byline: z.string().max(120).optional(),
+  publicLater: z.boolean().optional(),
+});
+const articleItem = z.object({
+  title: z.string().max(90),
+  dek: z.string().max(240),
+  category: z.enum(CATEGORIES),
+  body: z.array(z.string()).min(2).max(5),
+  sourceLeads: z.array(z.string()).min(1).max(4),
+  date: z.string().optional(),
+});
+const pickItem = z.object({ project: z.string(), reason: z.string().max(200) });
+
+/** The plan Claude returns: one object with a list per kind. */
 export const planSchema = z.object({
   note: z.string().max(800).optional(),
-  findings: z
-    .array(
-      z.object({
-        project: z.string(),
-        text: z.string().min(8).max(300),
-        lead: z.string(),
-        source: z.string().max(160).optional(),
-      })
-    )
-    .max(FINDING_LIMIT)
-    .default([]),
-  scores: z
-    .array(
-      z.object({
-        project: z.string(),
-        fields: z.record(z.string(), scalar),
-        reason: z.string().max(240).optional(),
-        withdrawn: z.boolean().optional(),
-      })
-    )
-    .max(SCORE_LIMIT)
-    .default([]),
-  candidates: z
-    .array(
-      z.object({
-        repo: z.string(),
-        action: z.enum(['ignore', 'track']),
-        reason: z.string().max(200),
-        effort: z
-          .object({
-            id: z.string().optional(),
-            name: z.string().max(80),
-            summary: z.string().max(700),
-            tier: z.enum(['tracked', 'watchlist']).default('watchlist'),
-            highlights: z.array(z.string()).max(3).default([]),
-            blockers: z.array(z.string()).max(3).default([]),
-            gta: z.record(z.string(), scalar).default({}),
-            basedOn: z.array(z.string()).default([]),
-            target: z.string().max(80).optional(),
-            byline: z.string().max(120).optional(),
-          })
-          .optional(),
-      })
-    )
-    .max(CANDIDATE_LIMIT)
-    .default([]),
-  added: z
-    .array(
-      z.object({
-        id: z.string(),
-        name: z.string().max(80),
-        repo: z.string().nullable().optional(),
-        basedOn: z.array(z.string()).default([]),
-        evidence: z.string().max(200),
-        summary: z.string().max(700),
-        highlights: z.array(z.string()).max(3).default([]),
-        blockers: z.array(z.string()).max(3).default([]),
-        gta: z.record(z.string(), scalar).default({}),
-        target: z.string().max(80).optional(),
-        byline: z.string().max(120).optional(),
-        publicLater: z.boolean().optional(),
-      })
-    )
-    .max(ADDED_LIMIT)
-    .default([]),
-  articles: z
-    .array(
-      z.object({
-        title: z.string().max(90),
-        dek: z.string().max(240),
-        category: z.enum(['Leak', 'Takedown', 'Legal', 'Security', 'Official', 'Port', 'Safety']),
-        body: z.array(z.string()).min(2).max(5),
-        sourceLeads: z.array(z.string()).min(1).max(4),
-        date: z.string().optional(),
-      })
-    )
-    .max(ARTICLE_LIMIT)
-    .default([]),
-  pick: z.object({ project: z.string(), reason: z.string().max(200) }).nullable().default(null),
+  findings: z.array(findingItem).max(FINDING_LIMIT).default([]),
+  scores: z.array(scoreItem).max(SCORE_LIMIT).default([]),
+  candidates: z.array(candidateItem).max(CANDIDATE_LIMIT).default([]),
+  added: z.array(addedItem).max(ADDED_LIMIT).default([]),
+  articles: z.array(articleItem).max(ARTICLE_LIMIT).default([]),
+  pick: pickItem.nullable().default(null),
 });
+
+/**
+ * The free route returns one flat `actions` list instead. A reply cut off mid-list still yields the
+ * whole actions before the cut, because free-ai closes the array.
+ */
+const actionSchema = z.discriminatedUnion('kind', [
+  findingItem.extend({ kind: z.literal('finding') }),
+  scoreItem.extend({ kind: z.literal('score') }),
+  candidateItem.extend({ kind: z.literal('candidate') }),
+  addedItem.extend({ kind: z.literal('added') }),
+  articleItem.extend({ kind: z.literal('article') }),
+  pickItem.extend({ kind: z.literal('pick') }),
+]);
+export const actionsSchema = z.object({
+  note: z.string().max(800).optional(),
+  actions: z.array(actionSchema).default([]),
+});
+
+/** Group a flat action list into the plan shape the applier uses. */
+export function planFromActions({ note, actions = [] } = {}) {
+  const plan = { note, findings: [], scores: [], candidates: [], added: [], articles: [], pick: null };
+  for (const action of actions) {
+    if (action.kind === 'finding') plan.findings.push(action);
+    else if (action.kind === 'score') plan.scores.push(action);
+    else if (action.kind === 'candidate') plan.candidates.push(action);
+    else if (action.kind === 'added') plan.added.push(action);
+    else if (action.kind === 'article') plan.articles.push(action);
+    else if (action.kind === 'pick') plan.pick = action;
+  }
+  return plan;
+}
 
 /** The JSON object in a model reply, checked against the plan schema. */
 export function parsePlan(text) {

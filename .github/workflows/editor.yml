@@ -39,6 +39,12 @@ jobs:
       - name: Install
         run: pnpm install --prod --frozen-lockfile --ignore-scripts
 
+      - name: Identity
+        run: |
+          # EDITOR.md rule 1: the editor identity, never a person's.
+          git config user.name "viportlive-editor[bot]"
+          git config user.email "41898282+4lwayz@users.noreply.github.com"
+
       - name: Editorial pass
         id: edit
         run: node scripts/editor.mjs ${{ inputs.dry_run && '--dry-run' || '' }}
@@ -54,9 +60,6 @@ jobs:
       - name: Commit
         if: ${{ !inputs.dry_run }}
         run: |
-          # EDITOR.md rule 1: the editor identity, never a person's.
-          git config user.name "viportlive-editor[bot]"
-          git config user.email "41898282+4lwayz@users.noreply.github.com"
           git add data/overrides.json
           [ -f data/editor.json ] && git add data/editor.json
           if git diff --cached --quiet; then echo "Nothing changed."; exit 0; fi
