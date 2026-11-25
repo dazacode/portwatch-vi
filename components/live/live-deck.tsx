@@ -1,15 +1,19 @@
 "use client"
 
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, Radio } from "lucide-react"
 import { useEffect, useState } from "react"
 import useSWR from "swr"
 import { CommitList } from "@/components/broadcast/commit-list"
 import { Show } from "@/components/broadcast/show"
+import { useSound } from "@/components/broadcast/use-sound"
+import { Container } from "@/components/container"
 import { ChannelList } from "@/components/live/channel-list"
 import { Stage } from "@/components/live/stage"
 import { Button } from "@/components/ui/button"
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 import type { Broadcast } from "@/lib/broadcast"
 import { channelKey, type Snapshot, type Stream } from "@/lib/live/types"
+import { TRAILERS } from "@/lib/trailers"
 
 async function fetcher<T>(url: string): Promise<T> {
   const res = await fetch(url)
@@ -47,10 +51,12 @@ export function LiveDeck({
   initial,
   broadcast,
   projects,
+  answer,
 }: {
   initial: Snapshot
   broadcast: Broadcast
   projects: Record<string, string>
+  answer: string
 }) {
   const live = useSWR<Snapshot>("/api/live", fetcher, { ...REFRESH, fallbackData: initial })
   const show = useSWR<Broadcast>("/api/broadcast", fetcher, { ...REFRESH, fallbackData: broadcast })
@@ -59,40 +65,76 @@ export function LiveDeck({
   const [watched, setWatched] = useWatched()
   // A click is a request to play. A shared link is not.
   const [clicked, setClicked] = useState(false)
+  const [drawer, setDrawer] = useState(false)
+  const current = [...snapshot.streams, ...TRAILERS].find((s) => s.id === watched) ?? null
+  const sound = useSound(current === null)
+
   const watch = (id: string | null) => {
     setClicked(id !== null)
     setWatched(id)
+    setDrawer(false)
+    window.scrollTo({ top: 0 })
   }
-  const current = snapshot.streams.find((s) => s.id === watched) ?? null
+  const channels = (
+    <ChannelList
+      snapshot={snapshot}
+      projects={projects}
+      currentId={current?.id ?? null}
+      onWatch={watch}
+      stale={Boolean(live.error)}
+    />
+  )
+  const openDrawer = (
+    <Button
+      variant="ghost"
+      size="lg"
+      className="bg-black/50 text-white hover:bg-black/80 hover:text-white dark:hover:bg-black/80"
+      onClick={() => setDrawer(true)}
+    >
+      <Radio /> {snapshot.streams.length} live
+    </Button>
+  )
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_21rem] lg:gap-8">
-      <div className="min-w-0">
-        {current ? (
-          <>
-            <Button variant="ghost" size="sm" className="mb-2" onClick={() => watch(null)}>
-              <ArrowLeft /> Back to the show
-            </Button>
-            <Stage
-              key={current.id}
-              stream={current}
-              at={snapshot.at}
-              autoPlay={clicked}
-              about={about(current, snapshot, projects)}
-            />
-          </>
-        ) : (
-          <Show broadcast={onAir} streams={snapshot.streams} onWatch={watch} />
-        )}
+    <>
+      {current ? (
+        <Stage
+          key={current.id}
+          stream={current}
+          at={snapshot.at}
+          autoPlay={clicked}
+          about={about(current, snapshot, projects)}
+          actions={
+            <>
+              <Button size="lg" onClick={() => watch(null)}>
+                <ArrowLeft /> Back to the show
+              </Button>
+              {openDrawer}
+            </>
+          }
+        />
+      ) : (
+        <Show
+          broadcast={onAir}
+          streams={snapshot.streams}
+          answer={answer}
+          sound={sound}
+          channels={openDrawer}
+          onWatch={watch}
+        />
+      )}
+      <Sheet open={drawer} onOpenChange={setDrawer}>
+        <SheetContent className="overflow-y-auto">
+          <SheetHeader>
+            <SheetTitle>Live channels</SheetTitle>
+          </SheetHeader>
+          <div className="px-4 pb-6">{channels}</div>
+        </SheetContent>
+      </Sheet>
+      <Container className="mt-2 grid gap-x-8 gap-y-6 lg:grid-cols-[minmax(0,1fr)_21rem]">
         <CommitList commits={onAir.commits} at={onAir.at} />
-      </div>
-      <ChannelList
-        snapshot={snapshot}
-        projects={projects}
-        currentId={current?.id ?? null}
-        onWatch={watch}
-        stale={Boolean(live.error)}
-      />
-    </div>
+        <div className="pt-6">{channels}</div>
+      </Container>
+    </>
   )
 }

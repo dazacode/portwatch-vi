@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Container } from "@/components/container"
 import { StandingsTable } from "@/components/standings-table"
 import { getStandings, getTracker } from "@/lib/tracker"
 
@@ -13,7 +14,7 @@ export default async function Page() {
     { title: "Taken offline", rows: rows.filter((r) => r.nuked) },
   ]
   return (
-    <>
+    <Container>
       <h1 className="pt-8 text-2xl font-semibold">Standings</h1>
       <p className="mt-1 max-w-prose text-sm text-muted-foreground">
         Most results are reported by the projects themselves. Those are marked unverified until
@@ -27,6 +28,6 @@ export default async function Page() {
           </section>
         ) : null
       )}
-    </>
+    </Container>
   )
 }

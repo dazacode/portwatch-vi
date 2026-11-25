@@ -145,3 +145,26 @@
 @keyframes ticker {
   to { transform: translateX(-50%); }
 }
+
+/* The show and the player fill the window under the header, and all of it in full screen. */
+.stage-height {
+  min-height: max(34rem, calc(100svh - 6rem));
+}
+
+@media (width >= 40rem) {
+  .stage-height {
+    min-height: max(36rem, calc(100svh - 4.2rem));
+  }
+}
+
+.tv {
+  overflow: hidden;
+}
+
+.tv body > header {
+  display: none;
+}
+
+.tv .stage-height {
+  height: 100svh;
+}

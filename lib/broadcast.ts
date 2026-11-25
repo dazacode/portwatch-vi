@@ -1,8 +1,10 @@
 import { unstable_cache } from "next/cache"
 import { plainTitle } from "@/lib/format"
+import type { Stream } from "@/lib/live/types"
 import { compareToLast, gain, headline, type Milestone, rate } from "@/lib/milestones"
 import { SITE } from "@/lib/site"
 import { getMilestones, getStandings, getTracker, type Tracker } from "@/lib/tracker"
+import { TRAILERS } from "@/lib/trailers"
 import { lastCommits } from "@/scripts/lib/pulse.mjs"
 
 export type Commit = {
@@ -33,6 +35,7 @@ export type Slide =
   | (Base & { kind: "race"; rows: { id: string; name: string; score: number; stage: string }[] })
   | (Base & { kind: "commit"; commit: Commit })
   | (Base & { kind: "update"; text: string; date: string })
+  | (Base & { kind: "trailer"; stream: Stream })
 
 export type Broadcast = { at: string; slides: Slide[]; commits: Commit[] }
 
@@ -151,9 +154,13 @@ export async function getBroadcast(): Promise<Broadcast> {
       })
     )
 
+  const trailers = TRAILERS.map(
+    (stream): Slide => ({ kind: "trailer", id: stream.id, projectId: null, level: 100, stream })
+  )
+
   return {
     at: new Date().toISOString(),
-    slides: interleave(moves, [race, ...pushes], updates),
+    slides: interleave(moves, [race, ...pushes], interleave(updates, trailers)),
     commits,
   }
 }

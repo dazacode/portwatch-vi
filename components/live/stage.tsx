@@ -2,36 +2,28 @@
 
 import { ExternalLink, Play } from "lucide-react"
 import { useState } from "react"
+import { Scene } from "@/components/broadcast/scene"
 import { Player } from "@/components/live/player"
-import { Sunset } from "@/components/sunset"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { compact, duration, plainTitle } from "@/lib/format"
 import { PLATFORM_LABEL, type Stream } from "@/lib/live/types"
-import { cn } from "@/lib/utils"
 
-function Backdrop() {
-  return (
-    <div className="absolute inset-0 -z-10">
-      <Sunset className="size-full" />
-      <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 via-45% to-transparent" />
-    </div>
-  )
-}
-
+/** A stream, full screen. */
 export function Stage({
   stream,
   at,
   about,
   autoPlay,
+  actions,
 }: {
   stream: Stream
   at: string
   about?: string
   autoPlay: boolean
+  actions: React.ReactNode
 }) {
   // The player loads on request, so no platform is contacted before someone asks to watch.
   const [playing, setPlaying] = useState(autoPlay)
-
   const platform = PLATFORM_LABEL[stream.platform]
   const facts = [
     platform,
@@ -40,21 +32,21 @@ export function Stage({
   ].filter(Boolean)
 
   return (
-    <section aria-label="Stream" className="min-w-0">
-      <div
-        className={cn(
-          "relative isolate flex overflow-hidden bg-black text-white",
-          stream.embed ? "aspect-video" : "min-h-56 lg:aspect-video"
-        )}
-      >
+    <section aria-label="Stream" className="stage-height flex flex-col bg-black text-white">
+      <div className="relative isolate flex min-h-0 flex-1">
         {playing && stream.embed ? (
-          <Player stream={stream} />
+          <div className="absolute inset-0">
+            <Player stream={stream} />
+          </div>
         ) : (
-          <div className="flex w-full flex-col items-start justify-end gap-4 p-5 sm:p-8">
-            <Backdrop />
-            <p className="line-clamp-3 max-w-2xl text-xl font-medium text-balance sm:text-3xl">
+          <div className="flex w-full flex-col items-start justify-end gap-5 p-4 sm:p-8">
+            <div className="absolute inset-0 -z-10">
+              <Scene level={60} />
+              <div className="absolute inset-0 bg-linear-to-t from-black/85 via-black/30 to-transparent" />
+            </div>
+            <h2 className="line-clamp-4 max-w-4xl text-3xl font-extrabold text-balance sm:text-5xl">
               {plainTitle(stream.title)}
-            </p>
+            </h2>
             {stream.embed ? (
               <Button size="lg" onClick={() => setPlaying(true)}>
                 <Play /> Play
@@ -72,31 +64,32 @@ export function Stage({
           </div>
         )}
       </div>
-      <div className="mt-3 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
-        <h2 className="text-lg font-semibold">{stream.name}</h2>
-        <p className="text-sm text-muted-foreground">
-          {facts.join(", ")}
-          {stream.embed && (
-            <>
-              {". "}
-              <a
-                href={stream.url}
-                target="_blank"
-                rel="noreferrer"
-                className="underline underline-offset-4 hover:text-foreground"
-              >
-                Open there
-              </a>
-            </>
-          )}
-        </p>
+      <div className="flex flex-wrap items-center gap-x-6 gap-y-3 px-4 py-3 sm:px-8">
+        <div className="min-w-0 flex-1 basis-72">
+          <p className="font-semibold">{stream.name}</p>
+          <p className="text-sm text-white/75">
+            {facts.join(", ")}
+            {stream.embed && (
+              <>
+                {". "}
+                <a
+                  href={stream.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline underline-offset-4 hover:text-white"
+                >
+                  Open there
+                </a>
+              </>
+            )}
+            {about ? `. ${about}` : null}
+            {stream.origin === "search"
+              ? ". Found by its title and not checked by anyone. Don’t install anything it offers."
+              : null}
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-2">{actions}</div>
       </div>
-      <p className="mt-0.5 text-sm text-muted-foreground">
-        {about ? `${about}. ` : null}
-        {stream.origin === "search"
-          ? "Found by its title and not checked by anyone. Don’t install anything it offers."
-          : null}
-      </p>
     </section>
   )
 }

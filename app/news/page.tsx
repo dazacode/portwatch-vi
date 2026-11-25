@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Container } from "@/components/container"
 import { utcDay } from "@/lib/format"
 import { getTracker } from "@/lib/tracker"
 
@@ -11,7 +12,7 @@ export default async function Page() {
   const { headlines, dmca } = await getTracker()
   const notices = dmca.filter((d) => d.gta6)
   return (
-    <div className="grid gap-x-12 gap-y-10 pt-8 lg:grid-cols-[minmax(0,1fr)_21rem]">
+    <Container className="grid gap-x-12 gap-y-10 pt-8 lg:grid-cols-[minmax(0,1fr)_21rem]">
       <section>
         <h1 className="text-2xl font-semibold">News</h1>
         <p className="mt-1 text-sm text-muted-foreground">
@@ -50,6 +51,6 @@ export default async function Page() {
           ))}
         </ul>
       </section>
-    </div>
+    </Container>
   )
 }

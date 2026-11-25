@@ -3,17 +3,15 @@ import { cn } from "@/lib/utils"
 
 export function Stars({ count, label }: { count: number; label: string }) {
   return (
-    <span role="img" aria-label={`${count} of 5 stars, ${label}`} className="inline-flex gap-1">
+    <span role="img" aria-label={`${count} of 5 stars, ${label}`} className="inline-flex gap-1.5">
       {[1, 2, 3, 4, 5].map((n) => (
         <Star
           key={n}
           aria-hidden="true"
-          style={{ animationDelay: `${n * 140}ms` }}
+          data-star-rating={n <= count ? "" : undefined}
           className={cn(
-            "size-6 sm:size-8",
-            n <= count
-              ? "fill-stripe-2 text-stripe-2 [animation-fill-mode:both] motion-safe:animate-in motion-safe:zoom-in-0 motion-safe:spin-in-90 motion-safe:duration-500"
-              : "fill-white/10 text-white/35"
+            "size-8 sm:size-12",
+            n <= count ? "fill-stripe-2 text-stripe-2" : "fill-white/10 text-white/35"
           )}
         />
       ))}

@@ -1,29 +1,51 @@
+"use client"
+
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
+import { SplitText } from "gsap/SplitText"
+import { useRef } from "react"
+import { Roll } from "@/components/broadcast/roll"
 import { Stars } from "@/components/broadcast/stars"
 import type { Slide } from "@/lib/broadcast"
 import { ago, utcDay } from "@/lib/format"
 
+gsap.registerPlugin(useGSAP, SplitText)
+
 function Plate({ children }: { children: React.ReactNode }) {
   return (
-    <p className="w-fit bg-stripe-1 px-2 py-0.5 text-sm font-semibold text-black">{children}</p>
+    <p data-plate className="w-fit bg-stripe-1 px-3 py-1 text-base font-bold text-black sm:text-lg">
+      {children}
+    </p>
   )
 }
 
-const titleClass = "max-w-3xl text-2xl leading-tight font-bold text-balance sm:text-4xl lg:text-5xl"
+const titleClass =
+  "max-w-5xl text-4xl leading-[1.05] font-extrabold tracking-tight text-balance sm:text-6xl lg:text-7xl xl:text-8xl"
+const longTitleClass =
+  "line-clamp-6 max-w-4xl text-2xl leading-tight font-bold text-balance sm:text-4xl lg:text-5xl"
 
-export function SlideBody({ slide, at }: { slide: Slide; at: string }) {
+function Body({ slide, at }: { slide: Slide; at: string }) {
   switch (slide.kind) {
     case "milestone":
       return (
         <>
           <Plate>{slide.debut ? "New on the board" : "Milestone"}</Plate>
-          <h2 className={titleClass}>{slide.title}</h2>
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+          <h2 data-title className={titleClass}>
+            {slide.title}
+          </h2>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1">
             <Stars count={slide.stars} label={slide.size} />
-            <span className="text-lg font-semibold">{slide.size}</span>
+            <span data-rise className="text-2xl font-bold sm:text-3xl">
+              {slide.size}
+            </span>
           </div>
-          <p className="text-white/90">
-            <span className="text-2xl font-bold text-stripe-3">
-              {slide.debut ? `${slide.to}%` : `+${slide.points}`}
+          <p data-rise className="max-w-3xl text-base text-white/90 sm:text-xl">
+            <span className="mr-1 text-3xl font-extrabold text-stripe-3 sm:text-5xl">
+              {slide.debut ? (
+                <Roll from={0} to={slide.to} suffix="%" />
+              ) : (
+                <Roll from={0} to={slide.points} prefix="+" />
+              )}
             </span>{" "}
             {slide.debut ? "on arrival. " : `points, from ${slide.from}% to ${slide.to}%. `}
             {!slide.debut && `${slide.compare}. `}
@@ -36,22 +58,22 @@ export function SlideBody({ slide, at }: { slide: Slide; at: string }) {
       return (
         <>
           <Plate>The race right now</Plate>
-          <ol className="w-full max-w-xl space-y-2">
+          <ol className="w-full max-w-3xl space-y-3">
             {slide.rows.map((r, i) => (
-              <li key={r.id}>
-                <div className="flex justify-between gap-4 text-sm font-semibold sm:text-base">
+              <li key={r.id} data-rise>
+                <div className="flex justify-between gap-4 text-lg font-bold sm:text-2xl">
                   <span className="truncate">
                     {i + 1}. {r.name}
                   </span>
-                  <span>{r.score}%</span>
+                  <Roll from={0} to={r.score} suffix="%" />
                 </div>
-                <div className="h-2.5 bg-white/15">
+                <div className="h-3 bg-white/15 sm:h-4">
                   <div
-                    className="h-full origin-left motion-safe:animate-[grow_900ms_ease-out_both]"
+                    data-bar
+                    className="h-full origin-left"
                     style={{
                       width: `${r.score}%`,
                       backgroundColor: `var(--stripe-${(i % 3) + 1})`,
-                      animationDelay: `${i * 120}ms`,
                     }}
                   />
                 </div>
@@ -64,11 +86,13 @@ export function SlideBody({ slide, at }: { slide: Slide; at: string }) {
       return (
         <>
           <Plate>Just pushed</Plate>
-          <h2 className={titleClass}>{slide.commit.name}</h2>
-          <p className="line-clamp-3 max-w-2xl text-lg text-white/90 sm:text-xl">
+          <h2 data-title className={titleClass}>
+            {slide.commit.name}
+          </h2>
+          <p data-rise className="line-clamp-3 max-w-4xl text-xl text-white/90 sm:text-3xl">
             {slide.commit.message}
           </p>
-          <p className="text-white/75">
+          <p data-rise className="text-white/75 sm:text-lg">
             {ago(slide.commit.at, at)}, commit {slide.commit.sha}
           </p>
         </>
@@ -77,11 +101,68 @@ export function SlideBody({ slide, at }: { slide: Slide; at: string }) {
       return (
         <>
           <Plate>Update</Plate>
-          <h2 className="line-clamp-5 max-w-3xl text-xl leading-snug font-semibold text-balance sm:text-3xl">
+          <h2 data-title className={longTitleClass}>
             {slide.text}
           </h2>
-          <p className="text-white/75">{utcDay(slide.date)}</p>
+          <p data-rise className="text-white/75 sm:text-lg">
+            {utcDay(slide.date)}
+          </p>
+        </>
+      )
+    case "trailer":
+      return (
+        <>
+          <Plate>From Rockstar Games</Plate>
+          <h2 data-title className={longTitleClass}>
+            {slide.stream.title}
+          </h2>
+          <p data-rise className="text-white/85 sm:text-lg">
+            The official trailer, on YouTube. The console version, not a PC build.
+          </p>
         </>
       )
   }
+}
+
+/** One slide and its entrance. Mounted fresh for each slide. */
+export function SlideBody({ slide, at }: { slide: Slide; at: string }) {
+  const root = useRef<HTMLDivElement>(null)
+  useGSAP(
+    () => {
+      const media = gsap.matchMedia()
+      media.add("(prefers-reduced-motion: no-preference)", () => {
+        const tl = gsap.timeline({ defaults: { ease: "power3.out" } })
+        tl.from("[data-plate]", { xPercent: -120, autoAlpha: 0, duration: 0.45 })
+        const title = root.current?.querySelector("[data-title]")
+        if (title) {
+          const split = SplitText.create(title, { type: "words,chars" })
+          tl.from(
+            split.chars,
+            {
+              yPercent: 90,
+              rotation: "random(-25, 25)",
+              autoAlpha: 0,
+              ease: "back.out(1.8)",
+              duration: 0.55,
+              stagger: { amount: Math.min(0.7, split.chars.length * 0.03) },
+            },
+            0.12
+          )
+        }
+        tl.from(
+          "[data-star-rating]",
+          { scale: 0, rotation: -200, ease: "elastic.out(1, 0.5)", duration: 1, stagger: 0.14 },
+          0.45
+        )
+          .from("[data-rise]", { y: 28, autoAlpha: 0, duration: 0.5, stagger: 0.09 }, 0.4)
+          .from("[data-bar]", { scaleX: 0, ease: "expo.out", duration: 1.3, stagger: 0.1 }, 0.5)
+      })
+    },
+    { scope: root }
+  )
+  return (
+    <div ref={root} className="flex flex-col gap-3 sm:gap-5">
+      <Body slide={slide} at={at} />
+    </div>
+  )
 }

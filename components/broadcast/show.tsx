@@ -1,17 +1,33 @@
 "use client"
 
-import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react"
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
+import {
+  ChevronLeft,
+  ChevronRight,
+  Maximize,
+  Minimize,
+  Pause,
+  Play,
+  Volume2,
+  VolumeX,
+} from "lucide-react"
 import { useEffect, useRef, useState } from "react"
+import { Scene } from "@/components/broadcast/scene"
 import { SlideBody } from "@/components/broadcast/slide"
 import { Ticker } from "@/components/broadcast/ticker"
-import { Sunset } from "@/components/sunset"
+import type { useSound } from "@/components/broadcast/use-sound"
 import { Button, buttonVariants } from "@/components/ui/button"
 import type { Broadcast, Slide } from "@/lib/broadcast"
 import { utcTime } from "@/lib/format"
 import type { Stream } from "@/lib/live/types"
 import { cn } from "@/lib/utils"
 
-const SECONDS = 9
+gsap.registerPlugin(useGSAP)
+
+const SECONDS = 10
+const COVERED = 0.42
+const glass = "text-white hover:bg-white/20 hover:text-white dark:hover:bg-white/20"
 
 /** UTC clock. Empty until mounted, so the server and browser agree. */
 function Clock() {
@@ -22,27 +38,86 @@ function Clock() {
     const timer = setInterval(tick, 5000)
     return () => clearInterval(timer)
   }, [])
-  return <span>{now}</span>
+  return <span className="max-sm:hidden">{now}</span>
 }
 
-const more = (slide: Slide) =>
-  slide.kind === "commit"
-    ? { href: slide.commit.url, label: "See the commit", external: true }
-    : { href: "/standings", label: "See the standings", external: false }
+function useFullscreen() {
+  const [full, setFull] = useState(false)
+  useEffect(() => {
+    const sync = () => {
+      const on = document.fullscreenElement !== null
+      setFull(on)
+      document.documentElement.classList.toggle("tv", on)
+    }
+    document.addEventListener("fullscreenchange", sync)
+    return () => {
+      document.removeEventListener("fullscreenchange", sync)
+      document.documentElement.classList.remove("tv")
+    }
+  }, [])
+  const toggle = () => {
+    // The whole document goes full screen, so drawers and menus still appear on top.
+    if (document.fullscreenElement) void document.exitFullscreen()
+    else void document.documentElement.requestFullscreen?.().catch(() => {})
+  }
+  return { full, toggle }
+}
+
+const confettiSeen = new Set<string>()
+
+async function celebrate(id: string) {
+  if (confettiSeen.has(id)) return
+  confettiSeen.add(id)
+  const { default: confetti } = await import("canvas-confetti")
+  const colors = ["#ff4fa3", "#ffb454", "#4fd8d8", "#ffffff"]
+  for (const [x, angle] of [
+    [0, 60],
+    [1, 120],
+  ]) {
+    confetti({
+      particleCount: 90,
+      angle,
+      spread: 70,
+      startVelocity: 62,
+      origin: { x, y: 0.9 },
+      colors,
+      disableForReducedMotion: true,
+    })
+  }
+}
+
+const more = (slide: Slide) => {
+  if (slide.kind === "commit")
+    return { href: slide.commit.url, label: "See the commit", external: true }
+  if (slide.kind === "trailer")
+    return { href: slide.stream.url, label: "Open on YouTube", external: true }
+  return { href: "/standings", label: "See the standings", external: false }
+}
 
 export function Show({
   broadcast,
   streams,
+  answer,
+  sound,
+  channels,
   onWatch,
 }: {
   broadcast: Broadcast
   streams: Stream[]
+  answer: string
+  sound: ReturnType<typeof useSound>
+  channels: React.ReactNode
   onWatch: (id: string) => void
 }) {
   const { slides, commits, at } = broadcast
+  const root = useRef<HTMLElement>(null)
+  const wipe = useRef<HTMLDivElement>(null)
+  // The show moves to a slide, and the stripes cover the screen before it appears.
   const [currentId, setCurrentId] = useState(slides[0]?.id)
+  const [shownId, setShownId] = useState(currentId)
   const [paused, setPaused] = useState(false)
   const [held, setHeld] = useState(false)
+  const { full, toggle: toggleFull } = useFullscreen()
   const seen = useRef(new Set(slides.map((s) => s.id)))
 
   // A new milestone cuts straight in, like breaking news. Commits arrive too often for that.
@@ -59,126 +134,236 @@ export function Show({
   useEffect(() => {
     position.current = index
   }, [index])
-  const slide = slides[index]
-  if (!slide) return null
+  const target = slides[index]
+  const slide = slides.find((s) => s.id === shownId) ?? target
 
-  const go = (step: number) =>
-    setCurrentId(slides[(index + step + slides.length) % slides.length].id)
+  const go = (step: number) => {
+    if (slides.length) setCurrentId(slides[(index + step + slides.length) % slides.length].id)
+  }
+
+  const cue = sound.cue
+  useGSAP(
+    () => {
+      if (!target || target.id === shownId) return
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        setShownId(target.id)
+        return
+      }
+      cue({ kind: "slide" })
+      const stripes = gsap.utils.toArray<HTMLElement>("[data-stripe]", wipe.current)
+      const content = root.current?.querySelector("[data-content]") ?? null
+      gsap.killTweensOf(stripes)
+      gsap
+        .timeline()
+        .to(content, { x: -60, autoAlpha: 0, duration: 0.3, ease: "power2.in" }, 0)
+        .fromTo(
+          stripes,
+          { scaleX: 0, transformOrigin: "0% 50%" },
+          { scaleX: 1, duration: 0.34, stagger: 0.06, ease: "power3.inOut" },
+          0
+        )
+        .call(() => setShownId(target.id), undefined, COVERED)
+        .set(content, { x: 0, autoAlpha: 1 }, COVERED)
+        .fromTo(
+          stripes,
+          { scaleX: 1, transformOrigin: "100% 50%" },
+          {
+            scaleX: 0,
+            duration: 0.42,
+            stagger: 0.06,
+            ease: "power3.inOut",
+            immediateRender: false,
+          },
+          COVERED + 0.08
+        )
+    },
+    { dependencies: [target?.id] }
+  )
+
+  const milestone = slide?.kind === "milestone" ? slide : null
+  // biome-ignore lint/correctness/useExhaustiveDependencies: once per slide shown
+  useEffect(() => {
+    if (!milestone) return
+    cue({ kind: "milestone", stars: milestone.stars })
+    if (milestone.stars < 5) return
+    const timer = setTimeout(() => void celebrate(milestone.id), 1300)
+    return () => clearTimeout(timer)
+  }, [milestone?.id])
+
+  // Keys work anywhere on the page while the show is in view.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey) return
+      const el = e.target as HTMLElement
+      if (el.closest("input, textarea, select, [role=dialog], [contenteditable=true]")) return
+      if ((root.current?.getBoundingClientRect().bottom ?? 0) < 120) return
+      if (e.key === "ArrowLeft") go(-1)
+      else if (e.key === "ArrowRight") go(1)
+      else if (e.key === "f") toggleFull()
+      else if (e.key === "m") void sound.toggle()
+      else if (e.key === "p") setPaused((p) => !p)
+    }
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
+  })
+
+  if (!slide || !target) return null
   const own = streams.find((s) => s.effortId && s.effortId === slide.projectId)
-  const watchable = own ?? streams.find((s) => s.embed) ?? streams[0]
+  const watchable =
+    slide.kind === "trailer" ? slide.stream : (own ?? streams.find((s) => s.embed) ?? streams[0])
   const link = more(slide)
   const stopped = paused || held
 
   return (
-    <div className="min-w-0">
-      <section
-        aria-roledescription="carousel"
-        aria-label="Latest updates"
-        className="relative isolate flex min-h-[30rem] flex-col overflow-hidden text-white lg:aspect-video lg:min-h-0"
-        onMouseEnter={() => setHeld(true)}
-        onMouseLeave={() => setHeld(false)}
-        onFocus={(e) => setHeld(e.target.matches(":focus-visible"))}
-        onBlur={() => setHeld(false)}
-        onKeyDown={(e) => {
-          if (e.key === "ArrowLeft") go(-1)
-          if (e.key === "ArrowRight") go(1)
-        }}
-      >
-        <div className="absolute inset-0 -z-10">
-          <Sunset className="size-full" level={slide.level} />
-          <div className="absolute inset-0 bg-linear-to-r from-black/75 via-black/45 to-black/5" />
-          <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent to-55%" />
-        </div>
+    <section
+      ref={root}
+      aria-roledescription="carousel"
+      aria-label="Latest updates"
+      className="stage-height relative isolate flex flex-col overflow-hidden bg-black text-white"
+    >
+      <div className="absolute inset-0 -z-10">
+        <Scene level={slide.level} banner={answer} />
+        <div className="absolute inset-0 bg-linear-to-r from-black/75 via-black/35 via-40% to-transparent to-70% max-lg:to-black/30 max-lg:to-100%" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent to-40%" />
+      </div>
 
-        <header className="flex items-center gap-3 p-4 text-sm sm:px-8 sm:pt-6">
-          <span className="flex items-center gap-2 bg-black/60 px-2 py-1 font-semibold">
-            <span aria-hidden="true" className="relative flex size-2">
-              <span className="absolute size-full rounded-full bg-live motion-safe:animate-ping" />
-              <span className="size-full rounded-full bg-live" />
-            </span>
-            On air
+      <header className="flex items-center gap-2 p-3 text-sm sm:gap-3 sm:px-8 sm:pt-5">
+        <span className="flex items-center gap-2 bg-black/60 px-2 py-1 font-semibold whitespace-nowrap">
+          <span aria-hidden="true" className="relative flex size-2">
+            <span className="absolute size-full rounded-full bg-live motion-safe:animate-ping" />
+            <span className="size-full rounded-full bg-live" />
           </span>
-          <Clock />
-          <div className="ml-auto flex gap-1">
-            <Button
-              variant="ghost"
-              size="icon"
-              aria-label="Previous update"
-              className="text-white hover:bg-white/20 hover:text-white"
-              onClick={() => go(-1)}
-            >
-              <ChevronLeft />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              aria-label={paused ? "Resume the show" : "Pause the show"}
-              className="text-white hover:bg-white/20 hover:text-white"
-              onClick={() => setPaused(!paused)}
-            >
-              {paused ? <Play /> : <Pause />}
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              aria-label="Next update"
-              className="text-white hover:bg-white/20 hover:text-white"
-              onClick={() => go(1)}
-            >
-              <ChevronRight />
-            </Button>
-          </div>
-        </header>
-
+          On air
+        </span>
+        <Clock />
+        <div className="ml-auto flex items-center gap-0.5 bg-black/40 sm:gap-1">
+          <Button
+            variant="ghost"
+            size="icon"
+            className={glass}
+            aria-label={sound.on ? "Turn sound off" : "Turn sound on"}
+            title="Sound (M)"
+            onClick={() => void sound.toggle()}
+          >
+            {sound.on ? <Volume2 /> : <VolumeX />}
+          </Button>
+          {sound.on && (
+            <input
+              type="range"
+              aria-label="Volume"
+              min={0}
+              max={1}
+              step={0.05}
+              value={sound.volume}
+              onChange={(e) => sound.setVolume(Number(e.target.value))}
+              className="w-20 accent-stripe-1 max-sm:hidden"
+            />
+          )}
+          <Button
+            variant="ghost"
+            size="icon"
+            className={glass}
+            aria-label="Previous update"
+            onClick={() => go(-1)}
+          >
+            <ChevronLeft />
+          </Button>
+          <Button
+            variant="ghost"
+            size="icon"
+            className={glass}
+            aria-label={paused ? "Resume the show" : "Pause the show"}
+            title="Pause (P)"
+            onClick={() => setPaused(!paused)}
+          >
+            {paused ? <Play /> : <Pause />}
+          </Button>
+          <Button
+            variant="ghost"
+            size="icon"
+            className={glass}
+            aria-label="Next update"
+            onClick={() => go(1)}
+          >
+            <ChevronRight />
+          </Button>
+          <Button
+            variant="ghost"
+            size="icon"
+            className={glass}
+            aria-label={full ? "Leave full screen" : "Full screen"}
+            title="Full screen (F)"
+            onClick={toggleFull}
+          >
+            {full ? <Minimize /> : <Maximize />}
+          </Button>
+        </div>
+      </header>
+      <div
+        data-content
+        className="mx-auto flex w-full max-w-[110rem] flex-1 flex-col justify-end gap-5 px-4 pb-4 sm:gap-7 sm:px-8 sm:pb-6"
+      >
         <article
-          key={slide.id}
           aria-roledescription="slide"
           aria-label={`${index + 1} of ${slides.length}`}
-          className="flex flex-1 flex-col justify-end gap-3 px-4 pb-4 sm:gap-4 sm:px-8 motion-safe:animate-in motion-safe:duration-500 motion-safe:fade-in motion-safe:slide-in-from-right-10"
+          className="w-full"
         >
-          <SlideBody slide={slide} at={at} />
+          <SlideBody key={slide.id} slide={slide} at={at} />
         </article>
-
-        <footer className="space-y-4 px-4 pb-4 sm:px-8 sm:pb-6">
-          <div className="flex flex-wrap gap-2">
-            {watchable && (
-              <Button size="lg" onClick={() => onWatch(watchable.id)}>
-                <Play /> Watch {watchable.name} live
-              </Button>
+        {/* biome-ignore lint/a11y/noStaticElementInteractions: reaching for a button only holds the timer */}
+        <div
+          className="flex w-fit flex-wrap gap-2"
+          onMouseEnter={() => setHeld(true)}
+          onMouseLeave={() => setHeld(false)}
+          onFocus={(e) => setHeld(e.target.matches(":focus-visible"))}
+          onBlur={() => setHeld(false)}
+        >
+          {watchable && (
+            <Button size="lg" onClick={() => onWatch(watchable.id)}>
+              <Play />{" "}
+              {slide.kind === "trailer" ? "Play the trailer" : `Watch ${watchable.name} live`}
+            </Button>
+          )}
+          <a
+            href={link.href}
+            {...(link.external ? { target: "_blank", rel: "noreferrer" } : {})}
+            className={cn(
+              buttonVariants({ variant: "ghost", size: "lg" }),
+              "bg-black/50 text-white hover:bg-black/80 hover:text-white dark:hover:bg-black/80"
             )}
-            <a
-              href={link.href}
-              {...(link.external ? { target: "_blank", rel: "noreferrer" } : {})}
-              className={cn(
-                buttonVariants({ variant: "ghost", size: "lg" }),
-                "bg-black/50 text-white hover:bg-black/80 hover:text-white dark:hover:bg-black/80"
-              )}
-            >
-              {link.label}
-            </a>
-          </div>
-          <div aria-hidden="true" className="flex gap-1">
-            {slides.map((s, i) => (
-              <span key={s.id} className="h-1 flex-1 bg-white/25">
-                {i < index && <span className="block h-full bg-white" />}
-                {i === index && (
-                  <span
-                    key={slide.id}
-                    className="block h-full origin-left bg-stripe-1 motion-safe:animate-[grow_linear_forwards]"
-                    style={{
-                      animationDuration: `${SECONDS}s`,
-                      animationPlayState: stopped ? "paused" : "running",
-                    }}
-                    // The bar is the timer: pausing it pauses the show, and with reduced motion it never runs.
-                    onAnimationEnd={() => go(1)}
-                  />
-                )}
-              </span>
-            ))}
-          </div>
-        </footer>
-      </section>
+          >
+            {link.label}
+          </a>
+          {channels}
+        </div>
+      </div>
+
+      <div aria-hidden="true" className="flex gap-1 px-4 pb-4 sm:px-8">
+        {slides.map((s, i) => (
+          <span key={s.id} className="h-1 flex-1 bg-white/25">
+            {i < index && <span className="block h-full bg-white" />}
+            {i === index && (
+              <span
+                key={target.id}
+                className="block h-full origin-left bg-stripe-1 motion-safe:animate-[grow_linear_forwards]"
+                style={{
+                  animationDuration: `${SECONDS}s`,
+                  animationPlayState: stopped ? "paused" : "running",
+                }}
+                // The bar is the timer: pausing it pauses the show, and with reduced motion it never runs.
+                onAnimationEnd={() => go(1)}
+              />
+            )}
+          </span>
+        ))}
+      </div>
       <Ticker commits={commits} at={at} paused={paused} />
-    </div>
+
+      <div ref={wipe} aria-hidden="true" className="pointer-events-none absolute inset-0 z-20 grid">
+        {["bg-stripe-1", "bg-stripe-2", "bg-stripe-3"].map((c) => (
+          <div key={c} data-stripe className={cn("[transform:scaleX(0)]", c)} />
+        ))}
+      </div>
+    </section>
   )
 }

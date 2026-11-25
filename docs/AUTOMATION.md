@@ -81,6 +81,8 @@ Both are dropped if the title has a lure (download, free, key, giveaway, invite 
 
 ## Music, later
 
-react-player also plays Spotify, YouTube playlists, HLS and plain audio files. Put it in `app/layout.tsx`, outside `<main>`, so it keeps playing between pages, and pause
+The show already has a score: `lib/sound.ts` plays an original piece with Tone.js, with no audio files,
+once someone turns sound on, and stops while a stream is open. For recorded music instead, react-player
+also plays Spotify, YouTube playlists, HLS and plain audio files. Put it in `app/layout.tsx`, outside `<main>`, so it keeps playing between pages, and pause
 it when a stream starts. Use music you have the rights to, or a platform's own embed: Twitch and
 YouTube licences don't carry over to a website.
