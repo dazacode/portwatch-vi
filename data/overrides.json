@@ -1250,6 +1250,105 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "VILauncher",
+        "summary": "Launcher for the GTA VI PC port, sets up the port, prepares Proton or Wine, checks machine and runs the game",
+        "basedOn": [],
+        "id": "launcher",
+        "repo": "SixLauncher/launcher",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-24T14:26:29Z",
+          "pushedAt": "2026-11-25T18:59:43Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "HybridGt",
+        "summary": "Engineering work toward running GTA VI on Windows, patches on top of victory-gta6, diagnostic harness",
+        "basedOn": [],
+        "id": "hybridgt",
+        "repo": "LowBacon/HybridGt",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-24T14:49:14Z",
+          "pushedAt": "2026-11-25T18:15:46Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "scarlett-proton",
+        "summary": "Proton fork implementing Xbox Series APIs for GTA VI on Linux, progress shows first frame rendered",
+        "basedOn": [],
+        "id": "proton-scarlett",
+        "repo": "gabenddos/proton-scarlett",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-25T01:46:25Z",
+          "pushedAt": "2026-11-25T01:40:38Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -1265,6 +1364,21 @@
     ]
   },
   "ignored": [
+    {
+      "repo": "felicienradio/cold-project-vi",
+      "reason": "README does not mention GTA VI",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "MoonLightDEV3/MoonLight-GTA-Version-",
+      "reason": "README does not mention GTA VI",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "zsy-miao/victory-perf",
+      "reason": "README does not mention GTA VI",
+      "seenAt": "2026-11-25"
+    },
     {
       "repo": "RickyDivjakovski/Revenge",
       "reason": "readme says not playable, no GTA VI",
@@ -1339,6 +1453,12 @@
     "grzegorz2047/TrinityXSX",
     "RickyDivjakovski/Revenge",
     "Wertrex/Americas",
-    "fablinoo/kelvaroq"
+    "fablinoo/kelvaroq",
+    "zsy-miao/victory-perf",
+    "MoonLightDEV3/MoonLight-GTA-Version-",
+    "SixLauncher/launcher",
+    "LowBacon/HybridGt",
+    "felicienradio/cold-project-vi",
+    "gabenddos/proton-scarlett"
   ]
 }
