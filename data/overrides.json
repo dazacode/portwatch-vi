@@ -1194,6 +1194,45 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "currently 10 rendered fps, 7-8 fps in heavy scenes"
+        ],
+        "highlights": [
+          "playable scene at 3840×2160",
+          "menus work",
+          "character control"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "kelvaroq",
+        "summary": "Experimental Xbox Series compatibility runtime for Windows x64, written in Rust, aiming for playable scene at 3840×2160 and 30 rendered fps.",
+        "basedOn": [],
+        "id": "kelvaroq",
+        "repo": "fablinoo/kelvaroq",
+        "stats": {
+          "stars": 3,
+          "createdAt": "2026-11-24T22:58:04Z",
+          "pushedAt": "2026-11-25T15:16:46Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -1287,6 +1326,7 @@
     "valouddsite/Xboxx",
     "grzegorz2047/TrinityXSX",
     "RickyDivjakovski/Revenge",
-    "Wertrex/Americas"
+    "Wertrex/Americas",
+    "fablinoo/kelvaroq"
   ]
 }
