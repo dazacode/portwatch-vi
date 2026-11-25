@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-25T14:02:41.457Z",
+ "updated": "2026-11-25T14:31:42.658Z",
  "now": {
   "hash": "1ebdfe7e6e6e41e8",
   "at": "2026-11-25T14:02:41.457Z",
@@ -25,30 +25,6 @@
   "at": "2026-11-25T14:02:41.457Z",
   "by": "Pollinations, gpt-oss-20b",
   "items": [
-   {
-    "topic": "Legal",
-    "headline": "Rockstar Legal Action on GTA 6 Port",
-    "sentences": [
-     {
-      "text": "80 Level reports that Rockstar is taking legal action against a popular GTA 6 PC port.",
-      "sources": [
-       "story:2026-11-25-news.google.com-rockstar-takes-legal-action-against-popular-gta-6-pc-port"
-      ]
-     },
-     {
-      "text": "IGN says Take-Two is battling the unofficial GTA 6 PC port work.",
-      "sources": [
-       "story:2026-11-25-news.google.com-take-two-battles-unofficial-gta-6-pc-port-work"
-      ]
-     },
-     {
-      "text": "Mashable India reports that the GTA 6 hacker avoided prison despite a 7-year sentence.",
-      "sources": [
-       "story:2026-11-25-news.google.com-gta-6-hacker-behind-2022-leak-avoids-prison-despite-7-year-sentence-heres-why"
-      ]
-     }
-    ]
-   },
    {
     "topic": "Security",
     "headline": "Fakes and scams to avoid",
@@ -93,8 +69,81 @@
    }
   ]
  },
- "notes": {},
+ "notes": {
+  "commit:8011634": {
+   "hash": "f8f68719a9d90bad",
+   "text": "ScarlettCompat's commit says it dumps the last 32 bytes of the 9,168,400-byte gate buffer.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T14:31:42.658Z"
+  },
+  "commit:a31f70a": {
+   "hash": "9d11dd6d0b6a40ca",
+   "text": "Xbox2Windows's commit says it lowers buffer_load_format_x/xy/xyz using the format from the buffer descriptor.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T14:31:42.658Z"
+  },
+  "commit:7984161": {
+   "hash": "d2d0aa62a7d86834",
+   "text": "Xbox2Windows's commit says it applies stream rasterizer state on translated draws.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T14:31:42.658Z"
+  },
+  "commit:2c77891": {
+   "hash": "caddcc790b4972d4",
+   "text": "ScarlettCompat's commit says docs #224/#225 show gate flip is call-order, not residency.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T14:31:42.658Z"
+  },
+  "commit:f71c7ed": {
+   "hash": "14320db49bbd1eb7",
+   "text": "Palmetto's commit says it measures first-run surface, adds silent speech surface behind a switch.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T14:31:42.658Z"
+  },
+  "commit:1d84afd": {
+   "hash": "398fa2f4a41c2980",
+   "text": "Uilian's commit says it skips depth-bounds draw assertions on WARP software adapter.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T14:31:42.658Z"
+  },
+  "commit:4623583": {
+   "hash": "3a2ebc4fbf6f3f0b",
+   "text": "AnyXboxX's commit says it merges pull request #137 from KainanP/feat/rdna2-vop3-entiers.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T14:31:42.658Z"
+  },
+  "commit:1d821cb": {
+   "hash": "edd09423c20e5726",
+   "text": "TuxBox's commit says it merges pull request #61 from Valdi320/work/scarlett-observability.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T14:31:42.658Z"
+  }
+ },
  "stories": {
+  "2026-11-25-bsky.app-gta-6ya-8-g-n-kald-rockstar-gamesin-merakla-beklenen-oyunu-grand-theft-auto-vi-19-kas-m-20": {
+   "hash": "1dc9ed92ec5a167a",
+   "topic": "Official",
+   "importance": 5,
+   "weight": 40,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-25-news.google.com-report-gta-6-graphical-settings-for-consoles-leak-out-revealing-platform-differences": {
+   "hash": "cd38f53180678008",
+   "topic": "Leak",
+   "importance": 3,
+   "weight": 30,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-25-bsky.app-discord-banni-github-ferm-leonida-le-projet-de-portage-de-gta-6-sur-pc-men-gr-ce-lia-a-t-t": {
+   "hash": "1a0b66f13ea05fc1",
+   "topic": "Takedown",
+   "importance": 4,
+   "weight": 46,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
   "2026-11-25-bsky.app-gta-6-recomp-leonida-banned-from-github-while-lead-dev-was-in-school-https-github-com-itsn": {
    "hash": "d53ee1ca2291ee15",
    "topic": "Takedown",
@@ -102,6 +151,22 @@
    "weight": 68,
    "similar": 2,
    "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-25-news.google.com-any-official-gta-6-pc-ports-ability-to-deliver-a-proper-first-person-mode-would-be-its-big": {
+   "hash": "880f5ba78878850f",
+   "topic": "Official",
+   "importance": 4,
+   "weight": 36,
+   "summary": "Official GTA 6 PC port's first person mode would be biggest ace.",
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-25-gamesradar.com-gta-6-features-something-rockstar-tried-to-add-in-grand-theft-auto-vice-city-former-tech-l": {
+   "hash": "4e9c57c0cd19aabd",
+   "topic": "Game",
+   "importance": 2,
+   "weight": 0,
+   "summary": "GTA 6 features something Rockstar tried to add in Vice City.",
    "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-25-lemmy.ca-gta-6-port-tracker": {
@@ -118,6 +183,14 @@
    "importance": 5,
    "weight": 58,
    "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-25-news.google.com-gta-v-sneaks-onto-steam-top-seller-list-as-gta-vi-skips-pc-launch": {
+   "hash": "b96e00521f861779",
+   "topic": "Game",
+   "importance": 2,
+   "weight": 0,
+   "summary": "GTA V tops Steam sales as GTA VI skips PC launch.",
    "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-25-bsky.app-gta-6-leonida-github-gta-6-recomp-leonida-banned-from-github-while-lead-dev-was-in": {
@@ -189,10 +262,10 @@
   "2026-11-25-news.google.com-getting-prepped-for-the-gta-6-pc-release-these-top-rated-gaming-accessories-are-up-to-41-o": {
    "hash": "0f4337d40f6b9e6a",
    "topic": "Community",
-   "importance": null,
-   "weight": 10,
-   "summary": null,
-   "by": null
+   "importance": 1,
+   "weight": 0,
+   "summary": "Gaming accessories up to 41% off for Black Friday.",
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-25-bsky.app-take-two-just-nuked-the-gta-6-pc-port-race-3-007-github-repos-gone-in-one-dmca-sweep-leoni": {
    "hash": "2dd1349cb676fa6f",
@@ -305,10 +378,10 @@
   "2026-11-25-rockstarintel.com-top-10-gta-vi-mods-that-fans-are-requesting": {
    "hash": "42afe1e74fc8fdd9",
    "topic": "Community",
-   "importance": null,
-   "weight": 10,
+   "importance": 2,
+   "weight": 0,
    "summary": null,
-   "by": null
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-25-bsky.app-read-the-full-article-https-azat-tv-en-take-two-shuts-down-project-leonida-gta-vi-pc-port": {
    "hash": "163b5dc14705edda",
@@ -386,11 +459,11 @@
   },
   "2026-11-25-techradar.com-xbox-series-x-is-substantially-smoother-than-ps5-in-gta-6-console-battle": {
    "hash": "6f65e933a04d617d",
-   "topic": "Community",
-   "importance": null,
-   "weight": 10,
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
    "summary": null,
-   "by": null
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-25-bsky.app-take-two-shuts-down-leonida-gta-6-pc-port-in-github-dmca-move-take-two-used-a-dmca-notice-": {
    "hash": "ee652f5f8f5cb492",
@@ -592,15 +665,6 @@
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
-  "2026-11-25-news.google.com-a-15-year-old-tried-bringing-gta-6-to-pc-before-rockstar-games-take-two-shuts-down-project": {
-   "hash": "5a6ef24834290fa5",
-   "topic": "Takedown",
-   "importance": 5,
-   "weight": 76,
-   "similar": 2,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
-  },
   "2026-11-25-mastodon.social-gta-6-pc-porting-projects-shut-down-days-after-leaked-files-released-leonida-github-and-gt": {
    "hash": "de19e26942534439",
    "topic": "Takedown",
@@ -738,11 +802,11 @@
   },
   "2026-11-25-eurogamer.net-performance-analysis-reveals-gta-6-has-a-more-stable-frame-rate-on-xbox-series-x-compared-": {
    "hash": "b02901b803b46586",
-   "topic": "Community",
-   "importance": null,
-   "weight": 10,
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
    "summary": null,
-   "by": null
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-25-bsky.app-a-evolu-o-do-port-do-gta-vi-pro-pc-q-os-caras-t-o-fazendo-partindo-daquele-leak-t-t-o-r-pi": {
    "hash": "39a6a34bf859c60a",
@@ -757,14 +821,6 @@
    "topic": "Takedown",
    "importance": 5,
    "weight": 66,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-25-news.google.com-gta-6-hacker-behind-2022-leak-avoids-prison-despite-7-year-sentence-heres-why": {
-   "hash": "c18fdd93df180fc8",
-   "topic": "Legal",
-   "importance": 3,
-   "weight": 40,
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
@@ -928,11 +984,11 @@
   },
   "2026-11-25-news.google.com-video-card-radeon-rx-the-5700-xt-delivered-up-to-3-fps-when-running-gta-6-on-pc": {
    "hash": "bdf980a394f07e7e",
-   "topic": "Community",
-   "importance": null,
-   "weight": 10,
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
    "summary": null,
-   "by": null
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-25-bsky.app-project-leonida-qui-visait-rendre-la-version-xbox-series-x-de-gta-6-jouable-directement-su": {
    "hash": "bc2c13f8554a0b43",
@@ -946,8 +1002,8 @@
    "hash": "07b9a37edbd39e74",
    "topic": "Takedown",
    "importance": 5,
-   "weight": 76,
-   "similar": 2,
+   "weight": 78,
+   "similar": 3,
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
@@ -979,11 +1035,11 @@
   },
   "2026-11-25-news.google.com-new-gta-6-pc-footage-shows-water-rendering-at-5-fps-and-using-22gb-of-memory": {
    "hash": "612b513aeb99efd6",
-   "topic": "Community",
-   "importance": null,
-   "weight": 10,
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
    "summary": null,
-   "by": null
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-25-news.google.com-take-two-interactive-halts-unauthorised-gta-6-pc-port-project": {
    "hash": "ce60f679e9381cc6",
@@ -1039,8 +1095,8 @@
    "hash": "58840de1ef4a5120",
    "topic": "Takedown",
    "importance": 5,
-   "weight": 56,
-   "lead": "2026-11-25-news.google.com-a-15-year-old-tried-bringing-gta-6-to-pc-before-rockstar-games-take-two-shuts-down-project",
+   "weight": 72,
+   "similar": 1,
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
@@ -1062,11 +1118,11 @@
   },
   "2026-11-25-news.google.com-gta-6-prologue-now-runs-on-pc-with-a-graphics-card-radeon-rx-7800-xt-at-2-fps": {
    "hash": "f381acb4e51a086e",
-   "topic": "Community",
-   "importance": null,
-   "weight": 10,
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
    "summary": null,
-   "by": null
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-25-bsky.app-take-two-issues-dmca-takedown-notices-targeting-unofficial-gta-vi-pc-ports-take-two-intera": {
    "hash": "a8f85a4c4dcf1dd4",
@@ -1185,6 +1241,15 @@
    "importance": 1,
    "weight": 2,
    "summary": "Friends started recompiling GTA 6 for old PC, unprecedented.",
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-25-timesnownews.com-a-15-year-old-tried-bringing-gta-6-to-pc-before-rockstar-games-take-two-shuts-down-project": {
+   "hash": "5a6ef24834290fa5",
+   "topic": "Takedown",
+   "importance": 4,
+   "weight": 44,
+   "lead": "2026-11-25-news.google.com-a-15-year-old-tried-to-bring-gta-6-to-pc-early-and-take-two-just-shut-the-whole-thing-down",
+   "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-25-bsky.app-so-uh-whenever-that-gta-6-pc-port-is-up-slide-it-my-way-ty": {
@@ -1323,6 +1388,14 @@
    "topic": "Port",
    "importance": 3,
    "weight": 26,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-25-in.mashable.com-gta-6-hacker-behind-2022-leak-avoids-prison-despite-7-year-sentence-heres-why": {
+   "hash": "c18fdd93df180fc8",
+   "topic": "Legal",
+   "importance": 3,
+   "weight": 40,
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
@@ -1698,7 +1771,7 @@
    "topic": "Legal",
    "importance": 5,
    "weight": 54,
-   "lead": "2026-11-25-news.google.com-a-15-year-old-tried-bringing-gta-6-to-pc-before-rockstar-games-take-two-shuts-down-project",
+   "lead": "2026-11-25-news.google.com-take-two-shuts-down-unofficial-gta-6-pc-port-project",
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
@@ -1804,12 +1877,12 @@
   },
   "2026-11-24-news.google.com-rockstar-shuts-down-teenagers-gta-6-pc-recompilation-project": {
    "hash": "9a07e6cb02a0fcd2",
-   "topic": "Official",
-   "importance": null,
-   "weight": 14,
+   "topic": "Takedown",
+   "importance": 4,
+   "weight": 44,
    "lead": "2026-11-24-news.google.com-take-two-reportedly-shuts-down-a-gta-6-pc-recompilation-project",
    "summary": null,
-   "by": null
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-24-news.google.com-rockstar-shuts-down-teenagers-gta-6-pc-project": {
    "hash": "4d87a774a4f9f443",
@@ -1857,8 +1930,8 @@
    "hash": "2b198327a83f87b6",
    "topic": "Takedown",
    "importance": 5,
-   "weight": 80,
-   "similar": 4,
+   "weight": 78,
+   "similar": 3,
    "summary": null,
    "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
@@ -2256,21 +2329,21 @@
   },
   "2026-11-24-news.google.com-unofficial-gta-6-pc-ports-are-already-getting-shut-down": {
    "hash": "f1148fb4db8b4bca",
-   "topic": "Official",
-   "importance": null,
-   "weight": 14,
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 56,
    "lead": "2026-11-25-news.google.com-the-unofficial-gta-vi-pc-ports-are-still-in-development-despite-take-twos-efforts-to-shut-",
    "summary": null,
-   "by": null
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-24-news.google.com-rockstar-shuts-down-unofficial-gta-6-pc-port-project": {
    "hash": "4dc8f9e5e6e524ab",
-   "topic": "Official",
-   "importance": null,
-   "weight": 14,
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 56,
    "lead": "2026-11-25-news.google.com-take-two-shuts-down-unofficial-gta-6-pc-port-project",
    "summary": null,
-   "by": null
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-24-news.google.com-an-unofficial-gta-6-pc-port-is-making-progress-and-developers-have-the-first-in-game-visua": {
    "hash": "9a62b02b134adce0",
@@ -2299,12 +2372,12 @@
   },
   "2026-11-24-news.google.com-rockstar-squashes-leonida-the-biggest-gta-6-pc-recompilation-effort": {
    "hash": "33858214382a69b3",
-   "topic": "Official",
-   "importance": null,
-   "weight": 14,
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 56,
    "lead": "2026-11-24-news.google.com-project-leonida-the-gta-6-pc-recompilation-effort-goes-dark-as-fake-builds-start-spreading",
    "summary": null,
-   "by": null
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-24-msn.com-gta-vi-is-great-on-playstation-5-but-it-could-be-better-on-pc": {
    "hash": "fd2f381cda2032c8",
@@ -2442,21 +2515,21 @@
   },
   "2026-11-24-news.google.com-grand-theft-auto-6-unofficial-pc-port-cgbj-now-reaches-in-game": {
    "hash": "ac2db23c171d516b",
-   "topic": "Official",
-   "importance": null,
-   "weight": 14,
+   "topic": "Port",
+   "importance": 3,
+   "weight": 24,
    "lead": "2026-11-24-news.google.com-gta-vi-unofficial-pc-port-race-cgbj-reaches-in-game-victory-hits-the-main-menu-at-30fps",
    "summary": null,
-   "by": null
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-24-news.google.com-a-2-000-pc-with-a-ryzen-7-9700x-and-rtx-5070-could-run-gta-6-at-1440p-and-60-fps": {
    "hash": "9226bc8d7e11f90a",
-   "topic": "Community",
-   "importance": null,
-   "weight": 16,
+   "topic": "Port",
+   "importance": 3,
+   "weight": 40,
    "similar": 1,
    "summary": null,
-   "by": null
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-24-eurogamer.net-gta-6-players-are-already-starting-to-get-very-good-at-heists-despite-all-the-new-challeng": {
    "hash": "48bdd164b07016ce",
@@ -2487,8 +2560,7 @@
    "hash": "db0d77491b351d8b",
    "topic": "Leak",
    "importance": null,
-   "weight": 36,
-   "similar": 1,
+   "weight": 30,
    "summary": null,
    "by": null
   },
@@ -2961,14 +3033,6 @@
    "summary": null,
    "by": null
   },
-  "2026-11-23-news.google.com-gta-6-leaker-releases-xbox-build-executable-and-modders-say-a-pc-port-already-boots": {
-   "hash": "f99f1af5100fde31",
-   "topic": "Leak",
-   "importance": 4,
-   "weight": 42,
-   "summary": "Leaker releases Xbox build, modders claim PC port boots.",
-   "by": "Pollinations, gpt-oss-20b"
-  },
   "2026-11-23-news.google.com-why-gta-6s-jason-duval-says-so-little-rockstar-points-to-steve-mcqueen-in-the-getaway-and-": {
    "hash": "ce1995c279472ad0",
    "topic": "Official",
@@ -3019,12 +3083,12 @@
    "summary": "In two hours there have been several updates to the race for the GTA VI port and now we have several projects.",
    "by": "Pollinations, gpt-oss-20b"
   },
-  "2026-11-23-pcgamer.com-gta-6-players-found-a-60-fps-glitch-but-its-too-unstable-to-stop-me-from-wishing-it-was-on": {
+  "2026-11-23-news.google.com-gta-6-players-found-a-60-fps-glitch-but-its-too-unstable-to-stop-me-from-wishing-it-was-on": {
    "hash": "7452503e60183fb6",
-   "topic": "Game",
+   "topic": "Community",
    "importance": 1,
    "weight": 0,
-   "summary": null,
+   "summary": "GTA 6 players found a '60 fps glitch', but it’s too unstable.",
    "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-23-news.google.com-cant-wait-to-live-stream-gta-6-this-trick-lets-you-play-it-on-your-pc-now": {
@@ -3276,6 +3340,14 @@
    "summary": null,
    "by": null
   },
+  "2026-11-23-news.google.com-gta-6-pc-rumors-whats-real-and-whats-just-hype": {
+   "hash": "37d0857a271f54fd",
+   "topic": "Community",
+   "importance": null,
+   "weight": 10,
+   "summary": null,
+   "by": null
+  },
   "2026-11-23-news.google.com-the-race-is-on-to-unofficially-port-gta-6-to-pc-after-cyberleek-drops-exe-file": {
    "hash": "92d6c35efaae6722",
    "topic": "Official",
@@ -3337,18 +3409,10 @@
   "2026-11-23-news.google.com-cyberleek-releases-executable-for-gta-6-xbox-build-leaked-last-week-the-torch-passes-to-th": {
    "hash": "19078aa881b50205",
    "topic": "Leak",
-   "importance": null,
+   "importance": 3,
    "weight": 20,
    "lead": "2026-11-24-news.google.com-gta-6-pc-port-projects-shut-down-after-leaked-executable",
-   "summary": null,
-   "by": null
-  },
-  "2026-11-23-news.google.com-hacker-behind-gta-6-leak-released-as-judge-says-dont-let-this-happen-again": {
-   "hash": "58856f470a1f3250",
-   "topic": "Legal",
-   "importance": 3,
-   "weight": 40,
-   "summary": null,
+   "summary": "Cyberleek releases executable for GTA 6 Xbox build leaked last week",
    "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-23-bsky.app-breaking-gta-vi-leaker-cyberleek-released-executable-to-unlock-xbox-files-reportedly-enabl": {
@@ -3383,104 +3447,13 @@
    "lead": "2026-11-25-news.google.com-cyberleek-claims-it-leaked-a-gta-6-development-build-minus-the-file-that-runs-it",
    "summary": null,
    "by": null
-  },
-  "2026-11-23-news.google.com-gta-6-xbox-executable-leaks-fan-pc-port-projects-begin-testing": {
-   "hash": "ee3031caff0198b3",
-   "topic": "Leak",
-   "importance": 4,
-   "weight": 42,
-   "summary": "ShiftDelete reports a GTA 6 Xbox executable leaked and fan PC port projects began testing.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
-  "2026-11-23-news.google.com-uk-hacker-who-leaked-gta-6-footage-years-before-release-jailed-for-7-years": {
-   "hash": "4113400cff633070",
-   "topic": "Leak",
-   "importance": 1,
-   "weight": 6,
-   "summary": null,
-   "by": "Kilo Gateway, reflection/beam-free"
-  },
-  "2026-11-23-news.google.com-gta-6-pc-version-is-close-modders-say-after-cyberleek-releases-executable-the-game-almost-": {
-   "hash": "39876b4d6acd9d7f",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 34,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-23-news.google.com-gta-6s-xbox-executable-has-leaked-opening-the-door-for-unofficial-pc-port-projects-to-star": {
-   "hash": "052fc0e718995acd",
-   "topic": "Official",
-   "importance": null,
-   "weight": 6,
-   "lead": "2026-11-24-news.google.com-gta-6-pc-port-projects-shut-down-after-leaked-executable",
-   "summary": null,
-   "by": null
-  },
-  "2026-11-23-lemmy.bestiver.se-gta-6-xbox-executable-released-early-by-cyberleek": {
-   "hash": "0cb73597b3329e19",
-   "topic": "Leak",
-   "importance": null,
-   "weight": 12,
-   "lead": "2026-11-24-news.google.com-the-torch-passes-to-the-open-source-recomp-and-emulation-projects-gta-6-leaker-cyberleek-c",
-   "summary": null,
-   "by": null
   }
  },
  "projects": {
-  "xbox2windows": {
-   "hash": "b4ed666f2d11b053",
-   "count": 15,
-   "summary": "Xbox2Windows's recent commits and pull requests mention startup lowering, SSE2 logic, shader disassembly validation, and compute raw buffer atomics.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free",
-   "at": "2026-11-25T13:31:44.776Z"
-  },
-  "gta6-compat-layer": {
-   "hash": "b11e0cdc524ddf01",
-   "count": 15,
-   "summary": "GTA6-COMPAT-LAYER (ScarlettCompat)'s recent commits and pull requests mention loader logging, PSIN buffer terminator checks, RPF9 container notes, and dstorage copy gating.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free",
-   "at": "2026-11-25T13:31:44.776Z"
-  },
-  "anyxboxx": {
-   "hash": "dce7a5342f6bc51d",
-   "count": 15,
-   "summary": "AnyXboxX's recent commits and pull requests mention HDR luminance fallback, FMA rounding, audio libraries, and RDNA 2 interpreter instructions.",
-   "by": "Kilo Gateway, reflection/beam-free",
-   "at": "2026-11-25T12:31:48.208Z"
-  },
-  "victory-ka1qux": {
-   "hash": "43649c4e13ff5c06",
-   "count": 15,
-   "summary": "victory-ka1qux's recent commits and pull requests mention indirect light, quad reads, tests, Intel Arc, and a breakpoint flag.",
-   "by": "Kilo Gateway, reflection/beam-free",
-   "at": "2026-11-25T12:31:48.208Z"
-  },
-  "xcl": {
-   "hash": "7345f18e56bd184e",
-   "count": 15,
-   "summary": "XCL's recent commits mention title list reset, direct split lazy restore, oversized SCC split, dispatch split, pipeline labels, and DispatchMesh layout.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-25T14:02:41.457Z"
-  },
   "palmetto": {
    "hash": "deb479de7fb6ed25",
    "count": 15,
    "summary": "Palmetto's recent commits mention repairing test surface, decoding BCPack, opting pooled image memory, generating predictor, recording silent-output-endpoint, and implementing slot 31 page-mapping batches.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-25T14:02:41.457Z"
-  },
-  "dumbfloridamoron": {
-   "hash": "694d73984f10dd8f",
-   "count": 15,
-   "summary": "DumbFloridaMoron's recent commits mention hoisted indirect clamps, reopened guards, and lazy copy-back debts.",
-   "by": "Kilo Gateway, reflection/beam-free",
-   "at": "2026-11-25T12:31:48.208Z"
-  },
-  "belobug": {
-   "hash": "e9bbb88e13cd2939",
-   "count": 15,
-   "summary": "Belobug's recent commits mention ambient light shading, tuning, integer render target blending, and setting ambient light color.",
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-25T14:02:41.457Z"
   },
@@ -3491,12 +3464,47 @@
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-25T14:02:41.457Z"
   },
-  "xbox-emulator": {
-   "hash": "d148756b443d9aed",
+  "anyxboxx": {
+   "hash": "dce7a5342f6bc51d",
    "count": 15,
-   "summary": "xbox-emulator's recent commits mention size structured buffer elements, user-data base, binding static samplers, accepting ZIP64, providing stand-in IGameInput, and honoring memory flags.",
+   "summary": "AnyXboxX's recent commits and pull requests mention HDR luminance fallback, FMA rounding, audio libraries, and RDNA 2 interpreter instructions.",
+   "by": "Kilo Gateway, reflection/beam-free",
+   "at": "2026-11-25T12:31:48.208Z"
+  },
+  "belobug": {
+   "hash": "e9bbb88e13cd2939",
+   "count": 15,
+   "summary": "Belobug's recent commits mention ambient light shading, tuning, integer render target blending, and setting ambient light color.",
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-25T14:02:41.457Z"
+  },
+  "victory-ka1qux": {
+   "hash": "43649c4e13ff5c06",
+   "count": 15,
+   "summary": "victory-ka1qux's recent commits and pull requests mention indirect light, quad reads, tests, Intel Arc, and a breakpoint flag.",
+   "by": "Kilo Gateway, reflection/beam-free",
+   "at": "2026-11-25T12:31:48.208Z"
+  },
+  "dumbfloridamoron": {
+   "hash": "694d73984f10dd8f",
+   "count": 15,
+   "summary": "DumbFloridaMoron's recent commits mention hoisted indirect clamps, reopened guards, and lazy copy-back debts.",
+   "by": "Kilo Gateway, reflection/beam-free",
+   "at": "2026-11-25T12:31:48.208Z"
+  },
+  "xcl": {
+   "hash": "7345f18e56bd184e",
+   "count": 15,
+   "summary": "XCL's recent commits mention title list reset, direct split lazy restore, oversized SCC split, dispatch split, pipeline labels, and DispatchMesh layout.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T14:02:41.457Z"
+  },
+  "xvalkyrie": {
+   "hash": "f858f6cd2c1786a6",
+   "count": 15,
+   "summary": "XValkyrie's recent commits bump version, format code, add memory read features, fix constant buffer view, size texture, and document title behavior.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T14:31:42.658Z"
   }
  }
 }
