@@ -1090,6 +1090,31 @@
   },
   "ignored": [
     {
+      "repo": "DexNom/VIctory",
+      "reason": "README describes generic Xbox Series support, no GTA VI.",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "realblastex/flamingo",
+      "reason": "README states generic Xbox Series title, no GTA VI.",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "kellysix/kelly",
+      "reason": "README focuses on rendering improvements, no GTA VI claim.",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "voidopcode/vilocity",
+      "reason": "README lists GTA VI but only as example, not confirmed running.",
+      "seenAt": "2026-11-25"
+    },
+    {
+      "repo": "ka1qux/BRVIctory-ka1qux",
+      "reason": "README describes generic Xbox Series title support, no GTA VI mention.",
+      "seenAt": "2026-11-25"
+    },
+    {
       "repo": "ethan00013/keylime",
       "reason": "Runtime tool, not a full port",
       "seenAt": "2026-11-25"
@@ -1105,6 +1130,11 @@
     "crt4ever/DumbFloridaMoron",
     "Archivist-Atlas/gta-vi-astral",
     "daeken/XSXEmu",
-    "ethan00013/keylime"
+    "ethan00013/keylime",
+    "ka1qux/BRVIctory-ka1qux",
+    "voidopcode/vilocity",
+    "kellysix/kelly",
+    "realblastex/flamingo",
+    "DexNom/VIctory"
   ]
 }
