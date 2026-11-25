@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-25T17:08:29.755Z",
+  "lastRun": "2026-11-25T21:20:43.411Z",
   "read": [],
   "freeRead": [
     "https://github.com/Zettrox/ztrx/issues/62@2026-11-25T07:12:55Z",
@@ -46,9 +46,45 @@
     "https://github.com/LooperSalty/AnyXboxX/issues/166@2026-11-25T13:54:55Z",
     "https://github.com/ThatRecompDev/five-star-recomp/issues/19@2026-11-25T16:43:59Z",
     "https://github.com/luizwidmer/palmetto/issues/1@2026-11-25T16:24:46Z",
-    "https://github.com/Belobug/VIctory-Belobug-AMD/issues/143@2026-11-25T16:45:20Z"
+    "https://github.com/Belobug/VIctory-Belobug-AMD/issues/143@2026-11-25T16:45:20Z",
+    "https://github.com/Belobug/VIctory-Belobug-AMD/issues/183@2026-11-25T19:36:18Z",
+    "https://github.com/uiliannn/VItoriaBr/issues/32@2026-11-25T20:33:18Z",
+    "https://github.com/fxceless/victory-fork/issues/1118@2026-11-25T21:17:29Z",
+    "https://github.com/Marvisak/VIctory/issues/2754@2026-11-25T19:43:26Z",
+    "https://github.com/omonkeyz/xbox-emulator/issues/350@2026-11-25T15:42:45Z",
+    "https://github.com/xcl-dev/xcl/issues/2512@2026-11-25T21:15:09Z",
+    "https://github.com/brcly/TuxBox/issues/191@2026-11-25T21:01:33Z",
+    "https://github.com/R0Y00/Xbox2Windows/issues/2552@2026-11-25T21:05:52Z",
+    "https://github.com/LooperSalty/AnyXboxX/issues/161@2026-11-25T13:55:00Z",
+    "https://github.com/ThatRecompDev/five-star-recomp/issues/13@2026-11-25T20:40:20Z",
+    "https://github.com/ka1qux/BRVIctory-ka1qux/issues/7@2026-11-25T21:10:09Z",
+    "https://github.com/Belobug/VIctory-Belobug-AMD/issues/174@2026-11-25T18:57:01Z"
   ],
   "items": [
+    {
+      "effortId": "victory-ka1qux",
+      "kind": "free",
+      "stage": "world",
+      "outcome": "reached",
+      "quote": "Entered the world (prison interior, the prologue room) at t+3 m",
+      "commit": "461e59a",
+      "gpu": "RX 9070 XT",
+      "url": "https://github.com/ka1qux/BRVIctory-ka1qux/issues/7",
+      "at": "2026-11-25T21:10:09Z",
+      "by": "93a5bf0eea98"
+    },
+    {
+      "effortId": "belobug",
+      "kind": "rule",
+      "stage": "world",
+      "quote": "load into the prologue",
+      "outcome": "reached",
+      "commit": "01aadd1",
+      "gpu": "Radeon RX",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/151",
+      "at": "2026-11-25T17:23:02Z",
+      "by": "cdbfaaa6160c"
+    },
     {
       "effortId": "belobug",
       "kind": "free",
@@ -492,18 +528,6 @@
       "url": "https://github.com/Marvisak/VIctory/issues/71",
       "at": "2026-11-24T00:12:55Z",
       "by": "e17dd9f519e4"
-    },
-    {
-      "effortId": "xbox-emulator",
-      "kind": "free",
-      "stage": "boots",
-      "outcome": "reached",
-      "quote": "title renders at 3840x2160 with the Series X budget; dedicated VRAM sits at 7+ of 8 GB, frames drop to 3-6 fps while loading.",
-      "commit": "f89e410",
-      "gpu": "Radeon RX",
-      "url": "https://github.com/omonkeyz/xbox-emulator/issues/350",
-      "at": "2026-11-23T23:24:59Z",
-      "by": "a8f245fec118"
     }
   ]
 }
