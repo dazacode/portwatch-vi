@@ -9,7 +9,7 @@ import {
   OFFICIAL,
   questions,
 } from "@/lib/answer-page"
-import { ANSWER } from "@/lib/site"
+import { ANSWER, GOOGLE_TAG, googleTag } from "@/lib/site"
 
 const data = {
   now: Date.parse("2026-11-25T10:00:00Z"),
@@ -49,6 +49,15 @@ describe("the answer page", () => {
   it("counts days and keeps releases in order", () => {
     expect(daysBetween("2026-11-19", Date.parse("2026-11-19T23:00:00Z"))).toBe(0)
     for (const g of EARLIER) expect(daysBetween(g.console, g.pc)).toBeGreaterThan(0)
+  })
+
+  it("sets consent for Europe before Google's script is asked for", () => {
+    const consent = googleTag.indexOf("'consent','default'")
+    expect(consent).toBeGreaterThan(0)
+    expect(consent).toBeLessThan(googleTag.indexOf("gtm.js"))
+    for (const code of ["DE", "PL", "GB", "CH", "NO"]) expect(googleTag).toContain(`"${code}"`)
+    expect(googleTag).not.toContain("</")
+    expect(GOOGLE_TAG).toBeNull()
   })
 
   it("points crawlers at its own sitemap", () => {

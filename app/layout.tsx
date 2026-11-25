@@ -36,11 +36,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body className="flex min-h-dvh flex-col">
         {GOOGLE_TAG && (
-          <>
-            <script async src={GOOGLE_TAG.src} />
-            {/* biome-ignore lint/security/noDangerouslySetInnerHtml: our own constant */}
-            <script dangerouslySetInnerHTML={{ __html: GOOGLE_TAG.start }} />
-          </>
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: our own constant
+          <script dangerouslySetInnerHTML={{ __html: GOOGLE_TAG }} />
         )}
         {/* biome-ignore lint/security/noDangerouslySetInnerHtml: our own constants, before the first paint */}
         <script dangerouslySetInnerHTML={{ __html: holidayScript() }} />

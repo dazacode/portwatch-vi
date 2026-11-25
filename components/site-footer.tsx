@@ -25,7 +25,10 @@ export function SiteFooter() {
             {ANSWER.name}
           </a>
         </p>
-        <p>Visits are counted with Google Analytics, which uses cookies.</p>
+        <p>
+          Visits are counted with Google Analytics, with cookies except in the EEA, the UK and
+          Switzerland.
+        </p>
         <p>
           Miami footage by{" "}
           <a className="underline underline-offset-4 hover:text-foreground" href={FOOTAGE.source}>

@@ -14,8 +14,6 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 import { useIdle } from "@/components/use-idle"
 import { usePhone } from "@/components/use-phone"
-import { WatchingButton } from "@/components/watching/button"
-import { HOME_ROOM, useEnterRoom } from "@/components/watching/use-watching"
 import type { Broadcast } from "@/lib/broadcast"
 import { channelKey, type Snapshot, type Stream } from "@/lib/live/types"
 import { TRAILERS } from "@/lib/trailers"
@@ -123,7 +121,6 @@ export function LiveDeck({
   const first = useRef<HTMLDivElement>(null)
   const current = [...snapshot.streams, ...TRAILERS].find((s) => s.id === view.watched) ?? null
   const sound = useSound(current === null)
-  useEnterRoom(current?.id ?? HOME_ROOM)
 
   const watch = (id: string | null) => {
     setClicked(id !== null)
@@ -192,7 +189,6 @@ export function LiveDeck({
                 {phone ? "Back" : view.show ? "Back to the show" : "Back to the countdown"}
               </Button>
               {openDrawer}
-              <WatchingButton room={current.id} className={glass} />
             </>
           }
         />
@@ -205,7 +201,6 @@ export function LiveDeck({
           channels={
             <>
               {openDrawer}
-              <WatchingButton className={glass} />
               <Button variant="ghost" size="lg" className={glass} onClick={() => openShow(false)}>
                 <Timer /> Countdown
               </Button>

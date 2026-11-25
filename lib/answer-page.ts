@@ -82,9 +82,7 @@ const month = (days: number) => Math.round(days / 30.44)
 export function answerHtml(d: AnswerData) {
   const days = daysBetween(OFFICIAL.launchedAt, d.now)
   const faq = questions(d)
-  const visits = GOOGLE_TAG
-    ? `<script async src="${GOOGLE_TAG.src}"></script>\n<script>${GOOGLE_TAG.start}</script>\n`
-    : ""
+  const visits = GOOGLE_TAG ? `<script>${GOOGLE_TAG}</script>\n` : ""
   const e = escapeHtml
   const ld = {
     "@graph": [
@@ -183,7 +181,7 @@ ${EARLIER.map((g) => `<tr><td>${g.game}</td><td>${fullDay(g.console)}</td><td>${
 ${faq.map(({ q, a }) => `<h3>${e(q)}</h3>\n<p>${e(a)}</p>`).join("\n")}
 </main>
 <footer>
-<p>Unofficial fan site, not affiliated with Rockstar Games, Take-Two or Microsoft. Grand Theft Auto and GTA are their owners’ trademarks. Nothing here hosts or links to game files. Visits are counted with Google Analytics, which uses cookies.</p>
+<p>Unofficial fan site, not affiliated with Rockstar Games, Take-Two or Microsoft. Grand Theft Auto and GTA are their owners’ trademarks. Nothing here hosts or links to game files. Visits are counted with Google Analytics, with cookies except in the EEA, the UK and Switzerland.</p>
 <p>From the people behind <a href="${SITE.url}">${SITE.name}</a>.</p>
 </footer>
 </body>
