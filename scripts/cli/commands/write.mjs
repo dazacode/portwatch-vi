@@ -431,8 +431,11 @@ export const candidate = {
       const repo = rest[0];
       const file = flags.file?.at(-1);
       if (!repo || !file) throw invalid('Use `pnpm candidate track <repo> --file effort.json`.');
-      const item = state.effective.candidates.find((c) => c.repo === repo);
+      // Upstream may have ignored a repo we want to list; the entry then starts without stats.
+      const item =
+        state.effective.candidates.find((c) => c.repo === repo) ?? state.effective.ignored.find((i) => i.repo === repo);
       if (!item) throw notFound(`No candidate "${repo}".`);
+      if (item.reason) out.warn(`${repo} was ignored: ${item.reason}`);
       let text;
       try {
         text = await readFile(path.resolve(file), 'utf8');

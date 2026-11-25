@@ -194,7 +194,7 @@ screenshot still belongs in no article image.
 
 `ignore` also removes it from the visible inbox by recording it in `decided`. `track` promotes it:
 the file holds an effort object (`id`, `name`, `summary`, `blockers`, `gta`, …) and the candidate's
-stats are copied in. See `./pw fields` and `show` an existing project for the shape.
+stats are copied in. It also accepts an ignored repo, with a warning; set its `stats` afterwards. See `./pw fields` and `show` an existing project for the shape.
 
 ## Pick
 

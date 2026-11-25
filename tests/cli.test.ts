@@ -218,6 +218,22 @@ describe("pw read commands", () => {
     expect((await call(["check", "--json"])).code).toBe(0)
   })
 
+  it("tracks a repo upstream ignored, with a warning and no stats", async () => {
+    const trackerFile = path.join(data, "tracker.json")
+    const tracker = JSON.parse(await readFile(trackerFile, "utf8"))
+    tracker.ignored = [{ repo: "old/repo", reason: "a copy", seenAt: "2026-01-01" }]
+    await writeFile(trackerFile, JSON.stringify(tracker, null, 2))
+    const file = path.join(root, "effort.json")
+    await writeFile(file, JSON.stringify({ id: "old", name: "Old", summary: "Listed by us." }))
+    const result = await call(["candidate", "track", "old/repo", "--file", file, "--json"])
+    expect(result.code).toBe(0)
+    expect(json(result).warnings.join()).toContain("a copy")
+    const added = (await readOverrides()).added[0].effort
+    expect(added.repo).toBe("old/repo")
+    expect(added.stats.stars).toBe(null)
+    expect((await call(["check", "--json"])).code).toBe(0)
+  })
+
   it("reaches a goal only with linked evidence", async () => {
     const claim = ["loads", "boots", "menu", "world", "playable"].map((k) => `gta.${k}=1`)
     await call(["set", "alpha", ...claim, "gta.fps=24", "gta.render=0.75"])
