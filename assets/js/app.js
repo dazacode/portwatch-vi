@@ -934,13 +934,15 @@ function renderMethod() {
 
 /* ---------- Interaction ---------- */
 function bindControls() {
-  $$(".chip[data-filter]").forEach((b) =>
+  $$(".chip[data-filter]").forEach((b) => {
     b.addEventListener("click", () => {
-      $$(".chip[data-filter]").forEach((x) => x.classList.toggle("is-on", x === b))
+      $$(".chip[data-filter]").forEach((x) => {
+        x.classList.toggle("is-on", x === b)
+      })
       state.filter = b.dataset.filter
       renderRace()
     })
-  )
+  })
   $("#sort").addEventListener("change", (ev) => {
     state.sort = ev.target.value
     renderRace()
