@@ -544,6 +544,23 @@
         ],
         "findingsSource": "From ShyVortex’s post on X and public comments on VIctory’s issue 468 and pull request 1763, 24 and 25 November. Each is the tester’s own report; nothing was run here."
       }
+    },
+    {
+      "id": "belobug",
+      "from": {
+        "blockers": [
+          "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
+          "Moving vehicles lose or stretch parts, distant trees aren't drawn, and a flat constant stands in for ray-traced light in the shade",
+          "Needs about 22 GB of RAM and more than 16 GB of video memory; tested on one AMD PC only, nothing on NVIDIA or Intel yet"
+        ]
+      },
+      "to": {
+        "blockers": [
+          "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
+          "The world goes black with the phone out; no ray-traced light; about 380 draws a frame are dropped",
+          "Needs about 22 GB of RAM and over 16 GB of video memory; tested on one AMD PC only"
+        ]
+      }
     }
   ],
   "added": [
