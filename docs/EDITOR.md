@@ -21,6 +21,22 @@ best judgement. Without it the keyless route is used (`FREE_AI`, then Pollinatio
 `scripts/lib/free-ai.mjs`); `FREE_AI=off` turns that off. With neither, the run says so and exits without a
 write. `EDITOR_MODEL` overrides the Claude model.
 
+The keyless route asks small questions (candidates, scores, findings), because a small model given the
+whole brief answers "nothing". A job no provider answers leaves `lastRun` where it was, so the next run reads
+the same leads.
+
+A free model also adds facts of its own, so `guardFree` limits what it may publish:
+
+- a finding keeps to the names, numbers and claims in its lead (`lib/digest-safety.mjs`), and the lead has to
+  name the project;
+- a tracked candidate joins the watchlist with no values;
+- a score is held as a proposal, and only with a quote that is really in the README or commits. In testing a
+  model gave a project the frame rate of its menus, with a true quote;
+- articles, new private builds and the pick are held. The repository variable `EDITOR_FREE_ALL=1` lets
+  scores and these through; an article's text is not checked against its sources.
+
+What was held is in the run summary and in `data/editor.json`.
+
 The brief is built from what the harvester and the scout already collected — `data/news.json`,
 `data/headlines`, `data/dmca`, open claims, moved READMEs, the candidate inbox — plus a short README and
 commit digest for projects worth a look. The model returns one JSON plan.

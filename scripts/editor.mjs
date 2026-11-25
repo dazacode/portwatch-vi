@@ -28,6 +28,11 @@ import {
   readmeDigest,
   usedUrls,
   SYSTEM,
+  freeJob,
+  freeSystem,
+  guardFree,
+  leadPairs,
+  someAction,
   ARTICLE_LIMIT,
 } from './lib/editor.mjs';
 
@@ -42,14 +47,8 @@ const data = flag('data') ?? path.join(root, 'data');
 const pw = makePw({ root, data });
 const log = (line = '') => console.log(line);
 
-const FREE_SHAPE = `The keyless model gets a flat list instead. Reply with {"actions":[...],"note":"one line"}: actions first, note last. Each action has "kind" and the fields of that kind:
-{"kind":"finding","project":"<id>","text":"...","lead":"L1","source":"outlet, date"}
-{"kind":"score","project":"<id>","fields":{"gta.fps":4},"reason":"...","withdrawn":false}
-{"kind":"candidate","repo":"owner/name","action":"ignore"|"track","reason":"...","effort":{"name":"...","summary":"...","tier":"watchlist","highlights":[],"blockers":[],"gta":{}}}
-{"kind":"added","id":"...","name":"...","basedOn":[],"evidence":"...","summary":"...","blockers":[],"gta":{}}
-{"kind":"article","title":"...","dek":"...","category":"Port","body":["..."],"sourceLeads":["L2"]}
-{"kind":"pick","project":"<id>","reason":"..."}
-Return {"actions":[]} when there is nothing. Keep every string short: the reply may be cut off.`;
+// Repository variable: 1 lets a free model publish articles, new projects and picks too.
+const FREE_ALL = process.env.EDITOR_FREE_ALL === '1';
 
 /** Run `git config user.email`; EDITOR.md rule 1 stops the run on a wrong identity. */
 const gitEmail = () =>
@@ -94,24 +93,33 @@ async function askClaude({ system, user, apiKey }) {
   return { ok: false, why: 'Claude did not return a usable plan' };
 }
 
-/** The keyless route: same brief, one flat action list it can be cut off inside. */
-async function askFree({ system, user, schema }) {
+/**
+ * The keyless route: a few small jobs, because a small model given the whole brief answers "nothing".
+ * A job that fails is tried again by the next run, with its leads.
+ */
+async function askFree({ system, jobs }) {
   const providers = providersFrom(process.env);
   if (!providers.length) return { ok: false, why: 'no model (set ANTHROPIC_API_KEY or leave FREE_AI on)' };
-  const ai = createFreeAi({ providers, maxRequests: 5, budgetMs: 240_000, timeoutMs: 90_000, log });
-  const reply = await ai.ask({ system, user, schema, maxTokens: 1500 });
-  if (!reply.ok) return { ok: false, why: reply.reason ?? 'no answer' };
-  const plan = planFromActions(reply.value);
-  const count = plan.findings.length + plan.scores.length + plan.candidates.length + plan.added.length + plan.articles.length + (plan.pick ? 1 : 0);
-  if (count) return { ok: true, plan, by: reply.by };
-  // A free model sometimes describes the work in the note and forgets the list. One more go.
-  const again = await ai.ask({
-    system,
-    user: `${user}\n\nYou returned no actions. Return them now, as {"actions":[...]}, or {"actions":[]} if truly nothing.`,
-    schema,
-    maxTokens: 1500,
-  });
-  return again.ok ? { ok: true, plan: planFromActions(again.value), by: again.by } : { ok: true, plan, by: reply.by };
+  if (!jobs.length) return { ok: true, plan: planFromActions({ note: 'nothing to ask' }), by: null, complete: true };
+  const ai = createFreeAi({ providers, maxRequests: 16, budgetMs: 600_000, timeoutMs: 120_000, log });
+  const actions = [];
+  const by = new Set();
+  const failed = [];
+  for (const job of jobs) {
+    const schema = job.kind === 'candidates' ? someAction : actionsSchema;
+    const reply = await ai.ask({ system, user: job.user, schema, maxTokens: 5000 });
+    log(`${job.kind}: ${reply.ok ? `${reply.value.actions.length} action(s), ${reply.by}` : reply.reason}`);
+    if (!reply.ok) {
+      failed.push(job.kind);
+      continue;
+    }
+    if (reply.value.dropped) log(`  ! ${reply.value.dropped} action(s) did not fit and were dropped`);
+    by.add(reply.by);
+    actions.push(...reply.value.actions);
+  }
+  if (failed.length === jobs.length) return { ok: false, why: 'no provider answered' };
+  const note = failed.length ? `Not answered, tried again next run: ${failed.join(', ')}` : undefined;
+  return { ok: true, plan: planFromActions({ note, actions }), by: [...by].join('; '), complete: !failed.length };
 }
 
 async function main() {
@@ -145,9 +153,13 @@ async function main() {
   }
 
   const gh = makeGitHub({ token: process.env.GITHUB_TOKEN });
+  // What a score or a tracked candidate has to be found in, when a free model proposes it.
+  const repoText = new Map();
+  const candidateText = new Map();
   const candidateBlocks = [];
   for (const c of candidates) {
     const readme = c.repo ? readmeDigest(await gh.readme(c.repo, c.defaultBranch).catch(() => '')) : '';
+    candidateText.set(c.repo, `${c.repo} ${c.name} ${c.description ?? ''} ${readme}`);
     candidateBlocks.push(
       `- ${c.repo} | ${c.name} | ${c.stars ?? '?'} stars | ${oneLine(c.description, 160)} | ${(c.signals ?? []).join(', ')}${readme ? `\n  ${oneLine(readme, process.env.ANTHROPIC_API_KEY ? 1000 : 600)}` : ''}`
     );
@@ -162,6 +174,7 @@ async function main() {
       readme = readmeDigest(await gh.readme(effort.repo, effort.branch).catch(() => ''));
       commits = (await gh.recentCommits(effort.repo, effort.branch, 5).catch(() => [])).map((c) => c.message);
     }
+    repoText.set(effort.id, `${readme}\n${commits.join('\n')}`);
     blocks.push({
       id: effort.id,
       name: effort.name,
@@ -198,7 +211,7 @@ async function main() {
 
   const user = [
     `Today is ${today} (UTC). Last editor run: ${editorState.lastRun ?? 'never'}.`,
-    `Articles already written by this editor today: ${ARTICLE_LIMIT - remainingArticles} of ${ARTICLE_LIMIT}. ${remainingArticles ? 'Write one for a major event (a takedown wave, a confirmed leak, a legal step) when a lead supports it; 3 or 4 paragraphs, 120-220 words.' : ''}`,
+    `Articles already written by this editor today: ${ARTICLE_LIMIT - remainingArticles} of ${ARTICLE_LIMIT}. ${remainingArticles && (process.env.ANTHROPIC_API_KEY || FREE_ALL) ? 'Write one for a major event (a takedown wave, a confirmed leak, a legal step) when a lead supports it; 3 or 4 paragraphs, 120-220 words.' : ''}`,
     `PICK: ${overrides.pick ? `"${overrides.pick.id}" is already placed first; leave it unless the plan clearly replaces it` : 'none is placed; you may place one'}.`,
     '',
     'CANDIDATES (decide ignore, or track only when a full effort is justified):',
@@ -214,34 +227,64 @@ async function main() {
   ].join('\n');
 
   const system = SYSTEM;
+  const pairs = leadPairs(leads, state.effective.efforts);
+  const leadLine = (l) => `[${l.id}] (${l.outlet}, ${l.date}) ${l.title}`;
+  const jobs = [
+    freeJob('candidates', candidateBlocks.length ? `CANDIDATES:\n${candidateBlocks.join('\n')}` : ''),
+    freeJob(
+      'scores',
+      blocks.some((b) => b.readme || b.commits.length)
+        ? `PROJECTS:\n${JSON.stringify(blocks.map(({ id, name, gta, readme, commits }) => ({ id, name, gta, readme, commits })), null, 1).slice(0, 9000)}`
+        : ''
+    ),
+    freeJob(
+      'findings',
+      pairs
+        .map(({ lead, project }) => `project "${project.id}" <- ${leadLine(lead)}\n  stored: ${(project.findings ?? []).map((f) => oneLine(f.text, 120)).join(' / ') || 'none'}`)
+        .join('\n')
+    ),
+    FREE_ALL && remainingArticles ? freeJob('articles', `LEADS:\n${shown.map(leadLine).join('\n')}`) : null,
+  ].filter(Boolean);
+  // The free route may cite the leads it was given, which are not always the ones Claude is shown.
+  const cited = process.env.ANTHROPIC_API_KEY ? shown : [...new Set([...shown, ...pairs.map((p) => p.lead)])];
   const reply = process.env.ANTHROPIC_API_KEY
     ? await askClaude({ system, user, apiKey: process.env.ANTHROPIC_API_KEY })
-    : await askFree({ system: `${system}\n\n${FREE_SHAPE}`, user, schema: actionsSchema });
+    : await askFree({ system: freeSystem(FREE_ALL), jobs });
 
   if (!reply.ok) {
     log(`! no plan: ${reply.why}`);
-    if (!dryRun) await saveState({ editorState, applied: [], skipped: [], by: null, note: `No plan: ${reply.why}` });
+    // lastRun stays, so the next run reads these leads again.
+    if (!dryRun) await saveState({ editorState, applied: [], skipped: [], by: null, note: `No plan: ${reply.why}`, advance: false });
     await summary({ applied: [], skipped: [], note: `No plan: ${reply.why}` });
     return;
   }
 
-  const plan = { ...reply.plan, articles: (reply.plan.articles ?? []).slice(0, remainingArticles) };
+  let plan = { ...reply.plan, articles: (reply.plan.articles ?? []).slice(0, remainingArticles) };
+  const byClaude = Boolean(process.env.ANTHROPIC_API_KEY);
+  let held = [];
+  if (!byClaude) {
+    ({ plan, held } = guardFree(plan, { efforts: state.effective.efforts, leads: cited, repoText, candidateText, all: FREE_ALL }));
+    for (const line of held) log(`  - held: ${line}`);
+  }
   if (plan.note) log(`plan: ${oneLine(plan.note, 200)}`);
   if (dryRun) log(JSON.stringify(plan, null, 1));
-  const { applied, skipped } = await applyPlan(plan, {
+  const result = await applyPlan(plan, {
     pw,
     efforts: state.effective.efforts,
-    leads: shown,
+    leads: cited,
     findingsByProject,
     existingPick: overrides.pick,
     today,
     dry: dryRun,
+    byClaude,
     log,
   });
+  const applied = result.applied;
+  const skipped = [...held.map((line) => `held: ${line}`), ...result.skipped];
 
   if (!applied.length) {
     log('Nothing applied.');
-    if (!dryRun) await saveState({ editorState, applied, skipped, by: reply.by, note: plan.note ?? null });
+    if (!dryRun) await saveState({ editorState, applied, skipped, by: reply.by, note: plan.note ?? null, advance: reply.complete !== false });
     await summary({ applied, skipped, note: plan.note, by: reply.by });
     return;
   }
@@ -260,7 +303,7 @@ async function main() {
       }
       log(`check: ${issues.filter((i) => i.level === 'error').length} upstream lapse(s) only, keeping the work`);
     }
-    await saveState({ editorState, applied, skipped, by: reply.by, note: plan.note ?? null });
+    await saveState({ editorState, applied, skipped, by: reply.by, note: plan.note ?? null, advance: reply.complete !== false });
   }
 
   log(`applied ${applied.length}, skipped ${skipped.length}`);
@@ -271,12 +314,12 @@ async function revert() {
   await new Promise((resolve) => execFile('git', ['-C', root, 'checkout', '--', 'data/overrides.json'], resolve));
 }
 
-async function saveState({ editorState, applied, skipped, by, note }) {
+async function saveState({ editorState, applied, skipped, by, note, advance = true }) {
   const runs = [
     { at: new Date().toISOString(), by: by ?? null, applied, skipped, note: note ?? null },
     ...(editorState.runs ?? []),
   ].slice(0, 40);
-  await writeFile(path.join(data, 'editor.json'), `${JSON.stringify({ lastRun: new Date().toISOString(), runs }, null, 2)}\n`);
+  await writeFile(path.join(data, 'editor.json'), `${JSON.stringify({ lastRun: advance ? new Date().toISOString() : editorState.lastRun, runs }, null, 2)}\n`);
 }
 
 async function summary({ applied, skipped, note, by }) {

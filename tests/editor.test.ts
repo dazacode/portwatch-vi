@@ -1,12 +1,19 @@
 import { describe, expect, it } from "vitest"
 import {
+  actionsSchema,
   applyPlan,
   candidatesToReview,
   collectLeads,
   findingBacked,
+  freeSystem,
+  guardFree,
+  leadPairs,
   parsePlan,
   projectsToReview,
+  quoted,
   readmeDigest,
+  repeats,
+  someAction,
   usedUrls,
 } from "@/scripts/lib/editor.mjs"
 
@@ -156,14 +163,14 @@ describe("parsePlan", () => {
 describe("planFromActions", () => {
   it("groups a flat action list into the plan shape", async () => {
     const { planFromActions, actionsSchema } = await import("@/scripts/lib/editor.mjs")
-    const parsed = actionsSchema.parse({
+    const parsed = actionsSchema.safeParse({
       note: "n",
       actions: [
         { kind: "finding", project: "alpha", text: "Zettrox did a thing", lead: "L1" },
         { kind: "pick", project: "alpha", reason: "why" },
       ],
     } as never)
-    const plan = planFromActions(parsed as never)
+    const plan = planFromActions(parsed.data as never)
     expect(plan.findings).toHaveLength(1)
     expect(plan.pick).toEqual({ kind: "pick", project: "alpha", reason: "why" })
     expect(plan.articles).toEqual([])
@@ -368,5 +375,171 @@ describe("applyPlan", () => {
     })
     expect(result.applied).toHaveLength(1)
     expect(calls.every((args) => args.includes("--dry-run"))).toBe(true)
+  })
+})
+
+describe("actionsSchema, for a free model's reply", () => {
+  const finding = {
+    kind: "finding",
+    project: "alpha",
+    text: "Alpha reaches the menu",
+    lead: "[L1]",
+  }
+
+  it("keeps the good actions when one does not fit", () => {
+    const parsed = actionsSchema.safeParse({ actions: [finding, { kind: "score" }] })
+    expect(parsed.data?.actions).toHaveLength(1)
+    expect(parsed.data?.actions[0]).toMatchObject({ lead: "L1" })
+    expect(parsed.data?.dropped).toBe(1)
+  })
+
+  it("reads the plan shape too", () => {
+    const { kind: _, ...bare } = finding
+    const parsed = actionsSchema.safeParse({ findings: [bare], articles: [] })
+    expect(parsed.data?.actions[0]).toMatchObject({ kind: "finding", project: "alpha" })
+  })
+
+  it("mends an article's sources and paragraphs", () => {
+    const parsed = actionsSchema.safeParse({
+      actions: [
+        {
+          kind: "article",
+          title: "T",
+          dek: "D",
+          category: "Port",
+          body: ["One.\n\nTwo."],
+          sourceLeads: ["L1", "L2", "L3", "L4", "L5"],
+        },
+      ],
+    })
+    expect(parsed.data?.actions[0]).toMatchObject({ body: ["One.", "Two."] })
+    expect(parsed.data?.actions[0]).toHaveProperty("sourceLeads.length", 4)
+  })
+
+  it("fails when nothing is usable, so the next provider is asked", () => {
+    expect(actionsSchema.safeParse({ actions: [{ kind: "score" }] }).success).toBe(false)
+    expect(actionsSchema.safeParse({ note: "done" }).success).toBe(false)
+    expect(actionsSchema.safeParse({ actions: [] }).success).toBe(true)
+    expect(someAction.safeParse({ actions: [] }).success).toBe(false)
+  })
+})
+
+describe("the free route's guard", () => {
+  const list = [
+    { id: "alpha", name: "Alpha", repo: "one/alpha", findings: [], gta: {} },
+    { id: "hand", name: "Handset", repo: "two/hand", findings: [], gta: {}, manualScore: 57 },
+  ]
+  const leads = [
+    {
+      id: "L1",
+      outlet: "Outfit",
+      date: "2026-11-25",
+      title: "Alpha now loads its first menu on a Radeon card",
+    },
+    { id: "L2", outlet: "Outfit", date: "2026-11-25", title: "Something else entirely happened" },
+  ]
+  const empty = { findings: [], scores: [], candidates: [], added: [], articles: [], pick: null }
+  const readme = "Status: the world loads and runs at 4 fps on our test machine."
+  const run = (plan: object, extra: object = {}) =>
+    guardFree(
+      { ...empty, ...plan },
+      {
+        efforts: structuredClone(list),
+        leads,
+        repoText: new Map([
+          ["alpha", readme],
+          ["hand", readme],
+        ]),
+        ...extra,
+      }
+    )
+
+  it("keeps a finding that stays with its lead", () => {
+    const text = "Alpha loads its first menu on a Radeon card"
+    const { plan, held } = run({ findings: [{ project: "alpha", text, lead: "L1" }] })
+    expect(plan.findings).toHaveLength(1)
+    expect(held).toEqual([])
+  })
+
+  it("holds an invented number, an unnamed project and a repeat", () => {
+    const text = "Alpha loads its first menu on a Radeon card"
+    const { plan, held } = run({
+      findings: [
+        { project: "alpha", text: "Alpha loads its first menu at 60 fps", lead: "L1" },
+        { project: "alpha", text: "Alpha had something else happen", lead: "L2" },
+        { project: "alpha", text, lead: "L1" },
+        { project: "alpha", text: `${text} reportedly`, lead: "L1" },
+      ],
+    })
+    expect(plan.findings).toHaveLength(1)
+    expect(held).toHaveLength(3)
+  })
+
+  it("proposes a score only with a quote from the repo, gta values only, never a hand score", () => {
+    const quote = "the world loads and runs at 4 fps"
+    const fields = { "gta.fps": 4, manualScore: 99 }
+    const input = {
+      scores: [
+        { project: "alpha", fields, quote },
+        { project: "alpha", fields, quote: "the story is finished from start to end" },
+        { project: "alpha", fields },
+        { project: "alpha", fields: { manualScore: 99 }, quote },
+        { project: "alpha", fields, quote, withdrawn: true },
+        { project: "hand", fields, quote },
+      ],
+    }
+    const open = run(input, { all: true })
+    expect(open.plan.scores).toEqual([{ project: "alpha", fields: { "gta.fps": 4 }, quote }])
+    expect(open.held).toHaveLength(5)
+    const shut = run(input)
+    expect(shut.plan.scores).toEqual([])
+    expect(shut.held[0]).toContain("gta.fps=4: proposed")
+  })
+
+  it("tracks a candidate on the watchlist with no values", () => {
+    const effort = {
+      name: "New",
+      summary: "The world loads and runs.",
+      tier: "tracked",
+      highlights: [],
+      blockers: [],
+      gta: { world: 1 },
+    }
+    const candidate = { repo: "x/new", action: "track", reason: "real", effort }
+    const given = { candidateText: new Map([["x/new", readme]]) }
+    expect(run({ candidates: [candidate] }, given).plan.candidates[0].effort).toMatchObject({
+      tier: "watchlist",
+      gta: {},
+    })
+    expect(run({ candidates: [candidate] }).plan.candidates).toEqual([])
+  })
+
+  it("leaves articles, new projects and the pick to a person unless told otherwise", () => {
+    const plan = {
+      articles: [{ title: "T" }],
+      added: [{ id: "new" }],
+      pick: { project: "alpha", reason: "r" },
+    }
+    expect(run(plan).plan).toMatchObject({ articles: [], added: [], pick: null })
+    expect(run(plan).held).toHaveLength(3)
+    expect(run(plan, { all: true }).plan.articles).toHaveLength(1)
+  })
+
+  it("pairs a lead with the one project it names", () => {
+    expect(leadPairs(leads, list).map((p) => [p.lead.id, p.project.id])).toEqual([["L1", "alpha"]])
+  })
+
+  it("compares words, not punctuation", () => {
+    expect(quoted("World loads, and runs at 4 FPS", readme)).toBe(true)
+    expect(quoted("4 fps", readme)).toBe(false)
+    expect(repeats("3,007 repositories were removed", ["DMCA removed 3,007 repositories"])).toBe(
+      true
+    )
+  })
+
+  it("shows the free model one shape only", () => {
+    expect(freeSystem()).not.toContain('"findings":[')
+    expect(freeSystem()).not.toContain('"kind":"article"')
+    expect(freeSystem(true)).toContain('"kind":"article"')
   })
 })

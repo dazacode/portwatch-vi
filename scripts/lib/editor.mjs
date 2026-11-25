@@ -6,6 +6,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { z } from 'zod';
 import { ADDED_FIELDS, PATCH_FIELDS } from '../cli/lib/validate.mjs';
+import { ungrounded, unsafe } from '../../lib/digest-safety.mjs';
 import { parseJson } from './free-ai.mjs';
 
 export const LEAD_LIMIT = 24;
@@ -170,6 +171,8 @@ const scoreItem = z.object({
   fields: z.record(z.string(), scalar),
   reason: z.string().max(240).optional(),
   withdrawn: z.boolean().optional(),
+  // Words copied from the repo text. The free route needs them; see guardFree.
+  quote: z.string().max(400).optional(),
 });
 const effortItem = z.object({
   id: z.string().optional(),
@@ -236,10 +239,53 @@ const actionSchema = z.discriminatedUnion('kind', [
   articleItem.extend({ kind: z.literal('article') }),
   pickItem.extend({ kind: z.literal('pick') }),
 ]);
-export const actionsSchema = z.object({
-  note: z.string().max(800).optional(),
-  actions: z.array(actionSchema).default([]),
-});
+
+const KINDS = { findings: 'finding', scores: 'score', candidates: 'candidate', added: 'added', articles: 'article' };
+
+/** Small slips a free model makes that change nothing it said. */
+function tidy(item) {
+  const out = { ...item };
+  if (typeof out.lead === 'string') out.lead = out.lead.replace(/[[\]\s]/g, '');
+  if (Array.isArray(out.sourceLeads)) out.sourceLeads = out.sourceLeads.slice(0, 4);
+  if (typeof out.body === 'string') out.body = [out.body];
+  if (Array.isArray(out.body)) out.body = out.body.flatMap((p) => String(p).split(/\n\s*\n/)).filter((p) => p.trim());
+  return out;
+}
+
+/**
+ * What a free model returned, as a list of actions: the flat list, or the plan shape it sometimes uses
+ * instead. Each action is checked by itself, so one bad one doesn't lose the rest. It has safeParse, as
+ * free-ai wants: a reply with nothing usable fails, and the next provider has a go.
+ */
+export const actionsSchema = {
+  safeParse(value) {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) return { success: false };
+    const raw = [];
+    let known = false;
+    if (Array.isArray(value.actions)) {
+      known = true;
+      raw.push(...value.actions);
+    }
+    for (const [key, kind] of Object.entries(KINDS)) {
+      if (!Array.isArray(value[key])) continue;
+      known = true;
+      raw.push(...value[key].map((item) => ({ ...item, kind })));
+    }
+    if (value.pick && typeof value.pick === 'object') {
+      known = true;
+      raw.push({ ...value.pick, kind: 'pick' });
+    }
+    if (!known) return { success: false };
+    const actions = [];
+    for (const item of raw) {
+      const parsed = actionSchema.safeParse(item && typeof item === 'object' ? tidy(item) : item);
+      if (parsed.success) actions.push(parsed.data);
+    }
+    if (raw.length && !actions.length) return { success: false };
+    const note = typeof value.note === 'string' ? value.note.slice(0, 800) : undefined;
+    return { success: true, data: { note, actions, dropped: raw.length - actions.length } };
+  },
+};
 
 /** Group a flat action list into the plan shape the applier uses. */
 export function planFromActions({ note, actions = [] } = {}) {
@@ -253,6 +299,128 @@ export function planFromActions({ note, actions = [] } = {}) {
     else if (action.kind === 'pick') plan.pick = action;
   }
   return plan;
+}
+
+const flat = (value) =>
+  String(value ?? '')
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .trim();
+
+/** True when the words really are in the text. Short ones prove nothing. */
+export function quoted(quote, text) {
+  const q = flat(quote);
+  return q.length >= 20 && ` ${flat(text)} `.includes(` ${q} `);
+}
+
+const escaped = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const namesIn = (title, names) =>
+  names.some((n) => String(n ?? '').length > 3 && new RegExp(`(?<![\\w-])${escaped(String(n))}(?![\\w-])`, 'i').test(title));
+
+/** The leads that name a project in so many words, found by the code so a small model needn't. */
+export function leadPairs(leads, efforts, limit = 8) {
+  const pairs = [];
+  for (const lead of leads) {
+    const hits = efforts.filter((e) => namesIn(lead.title, [e.name, e.id, e.repo]));
+    if (hits.length === 1) pairs.push({ lead, project: hits[0] });
+  }
+  return pairs.slice(0, limit);
+}
+
+/** True when a stored finding already says much the same: one event reaches us through many outlets. */
+export function repeats(text, stored) {
+  const key = (t) => new Set(flat(t).split(' ').filter((w) => w.length > 3 || /\d/.test(w)));
+  const a = key(text);
+  if (!a.size) return true;
+  return stored.some((s) => {
+    const b = key(s);
+    const shared = [...a].filter((w) => b.has(w)).length;
+    return shared / Math.min(a.size, b.size || 1) >= 0.5;
+  });
+}
+
+/** A schema that also wants at least one action, so an empty answer goes to the next provider. */
+export const someAction = {
+  safeParse(value) {
+    const parsed = actionsSchema.safeParse(value);
+    return parsed.success && parsed.data.actions.length ? parsed : { success: false };
+  },
+};
+
+/**
+ * What a free model may publish by itself. It is small and adds facts of its own, so:
+ * a finding keeps to its lead (the digest's rules), a tracked candidate joins the watchlist with no
+ * values, and the rest waits for a person. A score that quotes the repo is held as a proposal.
+ * Returns the plan that may be applied and a line for each thing held back.
+ */
+export function guardFree(plan, { efforts, leads, repoText = new Map(), candidateText = new Map(), all = false }) {
+  const held = [];
+  const hold = (label, why) => held.push(`${label}: ${why}`);
+  const leadOf = new Map(leads.map((l) => [l.id, l]));
+  const names = efforts.map((e) => e.name).filter((n) => String(n ?? '').length > 3);
+  const known = new Map();
+
+  const findings = (plan.findings ?? []).filter((item) => {
+    const lead = leadOf.get(item.lead);
+    if (!lead) return true; // applyPlan says why
+    const project = projectFor(item.project, efforts, leadOf);
+    if (project && !namesIn(lead.title, [project.name, project.id, project.repo])) {
+      hold(`finding ${item.project}`, 'the lead does not name the project');
+      return false;
+    }
+    const stored = project ? (known.get(project.id) ?? known.set(project.id, (project.findings ?? []).map((f) => f.text)).get(project.id)) : [];
+    if (repeats(item.text, stored)) {
+      hold(`finding ${item.project}`, 'already said');
+      return false;
+    }
+    const why = unsafe(item.text, 300) ?? ungrounded(item.text, `${lead.title} ${lead.outlet} ${lead.date}`, names);
+    if (why) hold(`finding ${item.project}`, why);
+    else stored.push(item.text);
+    return !why;
+  });
+  for (const item of findings) delete item.source; // the outlet and date are looked up, not written
+
+  const scores = [];
+  for (const item of plan.scores ?? []) {
+    const label = `score ${item.project}`;
+    const project = projectFor(item.project, efforts, leadOf);
+    const fields = Object.fromEntries(Object.entries(item.fields).filter(([f]) => f.startsWith('gta.')));
+    if (!project || !Object.keys(fields).length) hold(label, 'only gta values of a listed project');
+    else if (project.manualScore != null) hold(label, 'the score is set by hand');
+    else if (item.withdrawn) hold(label, 'a withdrawal needs a person');
+    else if (!quoted(item.quote, repoText.get(project.id) ?? '')) hold(label, 'no quote that is really in the repo');
+    else if (!all) {
+      // Its quote can be real and still be about the menus, so a person reads it first.
+      const values = Object.entries(fields).map(([f, v]) => `${f}=${v}`).join(' ');
+      hold(`${label} ${values}`, `proposed, from “${oneLine(item.quote, 120)}”`);
+    } else scores.push({ ...item, fields });
+  }
+
+  const candidates = [];
+  for (const item of plan.candidates ?? []) {
+    const label = `candidate ${item.repo}`;
+    if (!candidateText.has(item.repo)) hold(label, 'not in the brief');
+    else if (item.action === 'ignore' || !item.effort) candidates.push(item);
+    else {
+      const source = candidateText.get(item.repo);
+      // Highlights and blockers are fragments, where a capital means nothing.
+      const why = [item.effort.summary, ...item.effort.highlights, ...item.effort.blockers]
+        .map((l, i) => unsafe(l, 700) ?? ungrounded(l, source, names, i > 0))
+        .find(Boolean);
+      if (why) hold(label, why);
+      else candidates.push({ ...item, effort: { ...item.effort, tier: 'watchlist', gta: {} } });
+    }
+  }
+
+  const out = { ...plan, findings, scores, candidates };
+  if (!all) {
+    for (const a of plan.articles ?? []) hold(`article "${oneLine(a.title, 60)}"`, 'a free model does not publish articles');
+    for (const a of plan.added ?? []) hold(`added ${a.id}`, 'a new private build needs a person');
+    if (plan.pick) hold(`pick ${plan.pick.project}`, 'the placement is a person\'s');
+    Object.assign(out, { articles: [], added: [], pick: null });
+  }
+  return { plan: out, held };
 }
 
 /** The JSON object in a model reply, checked against the plan schema. */
@@ -299,7 +467,7 @@ export function projectFor(query, efforts, leadOf) {
  * an unbacked URL or a score that falls without a withdrawal reason is skipped, never guessed at.
  * `pw(args)` must resolve to the CLI's JSON envelope.
  */
-export async function applyPlan(plan, { pw, efforts, leads, findingsByProject = new Map(), existingPick = null, today, dry = false, log = () => {} }) {
+export async function applyPlan(plan, { pw, efforts, leads, findingsByProject = new Map(), existingPick = null, today, dry = false, byClaude = true, log = () => {} }) {
   const applied = [];
   const skipped = [];
   const leadOf = new Map(leads.map((l) => [l.id, l]));
@@ -354,6 +522,8 @@ export async function applyPlan(plan, { pw, efforts, leads, findingsByProject = 
       continue;
     }
     const args = ['set', project.id, ...pairs.map(([field, value]) => `${field}=${toArg(value)}`)];
+    // pw signs a value "claude" unless told not to.
+    if (!byClaude) args.push('--no-assessed');
     const preview = await pw([...args, '--dry-run']);
     if (!preview.ok) {
       skip(label, `${preview.error?.code ?? 'error'}: ${preview.error?.message ?? 'dry run failed'}`);
@@ -453,7 +623,7 @@ export async function applyPlan(plan, { pw, efforts, leads, findingsByProject = 
     args.push('--date', item.date && /^\d{4}-\d{2}-\d{2}$/.test(item.date) ? item.date : today);
     for (const paragraph of item.body) args.push('--body', paragraph);
     for (const source of sources) args.push('--source', `${source.outlet}|${source.title}|${source.url}`);
-    args.push('--by', 'claude');
+    args.push('--by', byClaude ? 'claude' : 'report');
     const result = await perform(label, args);
     if (!result.ok) skip(label, result.why);
   }
@@ -506,7 +676,7 @@ export async function readJson(file, fallback) {
   }
 }
 
-export const SYSTEM = `You are the overnight editor for VIPortLive, a fan tracker of community efforts to run the leaked Xbox Series build of GTA VI on PC. Work only from the brief. Reply with ONE JSON object, no prose and no code fence.
+const RULES = `You are the overnight editor for VIPortLive, a fan tracker of community efforts to run the leaked Xbox Series build of GTA VI on PC. Work only from the brief. Reply with ONE JSON object, no prose and no code fence.
 
 Hard rules:
 1. Cite only URLs that appear under LEADS, by their id. A fact with no lead is skipped, not guessed. Forum and social chatter is a lead, not proof.
@@ -517,16 +687,47 @@ Hard rules:
 6. It is normal to return empty lists. Do not pad.
 7. A candidate is ignored unless its README shows a real GTA VI effort; then track it and include an effort object with name, summary, a tier, highlights and blockers from the README, and the first gta values the README plainly reports. A tool is only tracked as a tool when flagged so.
 8. Decide every candidate in the brief. Use a lead on a reviewed project for a finding whenever it plainly says something about that project. Only leave both empty when there is truly nothing.
-9. The pick is a placement, never a score. Set it only when none is placed; the owner's placement stands. Nuked projects are already put last.
+9. The pick is a placement, never a score. Set it only when none is placed; the owner's placement stands. Nuked projects are already put last.`;
 
-JSON shape:
+const PLAN_SHAPE = `JSON shape:
 {"note":"one line on what you did",
  "findings":[{"project":"<id from PROJECTS TO REVIEW>","text":"...","lead":"L1","source":"outlet, date"}],
  "scores":[{"project":"<id>","fields":{"gta.fps":4,"gta.render":0.75},"reason":"change line","withdrawn":false}],
  "candidates":[{"repo":"owner/name","action":"ignore"|"track","reason":"...","effort":{"name":"...","summary":"...","tier":"watchlist","highlights":[],"blockers":[],"gta":{}}}],
  "added":[{"id":"kebab-id","name":"...","basedOn":["<project id>"],"evidence":"how we know","summary":"...","highlights":[],"blockers":[],"gta":{},"target":"GTA VI only"}],
  "articles":[{"title":"...","dek":"...","category":"Port","body":["...","...","..."],"sourceLeads":["L2"]}],
- "pick":{"project":"<id>","reason":"..."}|null}
+ "pick":{"project":"<id>","reason":"..."}|null}`;
 
-Scores use the written steps: loads/boots/menu/world/playable are 0, 0.5 or 1; story 0, 0.1, 0.25, 0.4, 0.6, 0.85 or 1; render 0, 0.25, 0.5, 0.75 or 1; fps a number; stability unknown, constant, often, sometimes, rarely, stable. A "project" is always the project's id from PROJECTS TO REVIEW (or one you add), never a lead id. Never write the game's own files into a project it doesn't name.
+const VALUES = `Scores use the written steps: loads/boots/menu/world/playable are 0, 0.5 or 1; story 0, 0.1, 0.25, 0.4, 0.6, 0.85 or 1; render 0, 0.25, 0.5, 0.75 or 1; fps a number; stability unknown, constant, often, sometimes, rarely, stable. A "project" is always the project's id from PROJECTS TO REVIEW (or one you add), never a lead id. Never write the game's own files into a project it doesn't name.
 Private builds (repo null) are only added when a lead shows them and basedOn plus evidence are known.`;
+
+export const SYSTEM = [RULES, PLAN_SHAPE, VALUES].join('\n\n');
+
+const FREE_KINDS = `{"kind":"finding","project":"<project id>","text":"...","lead":"L1"}
+{"kind":"score","project":"<project id>","fields":{"gta.fps":4},"reason":"...","quote":"at least five words copied exactly from that project's readme or commits"}
+{"kind":"candidate","repo":"owner/name","action":"ignore" or "track","reason":"...","effort":{"name":"...","summary":"...","highlights":[],"blockers":[]}}`;
+const FREE_MORE = `
+{"kind":"added","id":"...","name":"...","basedOn":[],"evidence":"...","summary":"...","blockers":[],"gta":{}}
+{"kind":"article","title":"...","dek":"...","category":"Port","body":["paragraph","paragraph","paragraph"],"sourceLeads":["L2"]}
+{"kind":"pick","project":"<project id>","reason":"..."}`;
+
+/** The free route's prompt. It has one shape only: shown two, a small model mixes them. */
+const FREE_JOBS = {
+  candidates: 'TASK: decide every repository under CANDIDATES, one "candidate" action each. "track" only if its readme describes its own work on running GTA VI on PC; then give the effort, in words from that readme. Otherwise "ignore", with the reason.',
+  scores: 'TASK: for each project, compare its readme and commits with the stored gta values. Return a "score" action only where they plainly report a result with GTA VI itself above the stored value, and copy the words that say so into "quote". Plans, work in progress and passing tests are not results.',
+  findings: 'TASK: each line gives a lead and the project it names. Return one "finding" action for each lead that says something the stored findings do not.',
+  articles: 'TASK: one "article" action at most, for a major event with several leads behind it.',
+};
+
+/** One small job for the free route, or null when there is nothing for it. */
+export const freeJob = (kind, body) => (body ? { kind, user: `${FREE_JOBS[kind]}\n\n${body}\n\nReturn the JSON object now.` } : null);
+
+export const freeSystem = (all = false) =>
+  [
+    RULES,
+    `Reply with {"actions":[...],"note":"one line"}: actions first, note last. Each action is one of these:
+${FREE_KINDS}${all ? FREE_MORE : '\nWrite no articles, new projects or picks.'}
+Every name, number and claim in a text must be in the lead or the repo text it comes from. A finding needs a lead that names that project; say what the lead says, with "reportedly" or "says". Only include a score with a quote.
+Return {"actions":[],"note":"nothing"} when there is nothing. Keep every string short: the reply may be cut off.`,
+    VALUES,
+  ].join('\n\n');

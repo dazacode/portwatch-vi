@@ -56,6 +56,8 @@ jobs:
           FREE_AI_BASE_URL: ${{ vars.FREE_AI_BASE_URL }}
           FREE_AI_MODEL: ${{ vars.FREE_AI_MODEL }}
           EDITOR_MODEL: ${{ vars.EDITOR_MODEL }}
+          # 1 lets a free model publish articles, new projects and picks. See docs/EDITOR.md.
+          EDITOR_FREE_ALL: ${{ vars.EDITOR_FREE_ALL }}
 
       - name: Commit
         if: ${{ !inputs.dry_run }}

@@ -14,7 +14,7 @@ export const PROVIDERS = [
   // "Free API Classic at text.pollinations.ai, which needs no account."
   // https://pollinations.ai/privacy (section 1). One reply every 45 seconds per address, of at most
   // 1,500 tokens with the reasoning counted.
-  { name: 'Pollinations', url: 'https://text.pollinations.ai/openai', model: 'openai-fast', gapMs: 47_000, options: { reasoning_effort: 'minimal' } },
+  { name: 'Pollinations', url: 'https://text.pollinations.ai/openai', model: 'openai-fast', gapMs: 47_000, maxTokens: 1500, options: { reasoning_effort: 'minimal' } },
   // "Free models are available to both authenticated and anonymous users", 200 requests an hour.
   // https://kilo.ai/docs/gateway/models-and-providers
   // Models are named one by one: kilo-auto/free says it is not for production, and NVIDIA's free
@@ -86,7 +86,7 @@ async function call(provider, { system, user, maxTokens }, { fetch, timeoutMs })
       model: provider.model,
       messages: [{ role: 'system', content: system }, { role: 'user', content: user }],
       temperature: 0.2,
-      max_tokens: maxTokens,
+      max_tokens: Math.min(maxTokens, provider.maxTokens ?? Infinity),
       response_format: { type: 'json_object' },
       ...provider.options,
     }),
