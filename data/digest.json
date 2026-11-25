@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-25T23:31:35.598Z",
+ "updated": "2026-11-25T23:46:29.136Z",
  "now": {
   "hash": "43b3bc517422071b",
   "at": "2026-11-25T23:31:35.598Z",
@@ -99,8 +99,75 @@
    }
   ]
  },
- "notes": {},
+ "notes": {
+  "commit:bb1addf": {
+   "hash": "61853b1631384a21",
+   "text": "Xbox2Windows' commit says it lowers some floating-point operations in a CPU component.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-25T23:46:29.136Z"
+  },
+  "commit:36d40f9": {
+   "hash": "b631dd833cb56058",
+   "text": "GTA6-COMPAT-LAYER's commit says it stops loader checks from crashing on guest pointers.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-25T23:46:29.136Z"
+  },
+  "commit:aa1b512": {
+   "hash": "9f853ef7e9194b27",
+   "text": "Xbox2Windows' commit says it stops wrapping large allocations for certain unplaced memory resources in d3d12.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-25T23:46:29.136Z"
+  },
+  "commit:809ba50": {
+   "hash": "e2b6e715896fda33",
+   "text": "Uilian's commit says it seeds shader cycle proofs and requires stable LDS for uniform first-lane values.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-25T23:46:29.136Z"
+  },
+  "commit:769cf4f": {
+   "hash": "116873ccd43bae8f",
+   "text": "Decant's commit says it releases a title memory state lock during parallel page copies and index detile note tiles.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-25T23:46:29.136Z"
+  },
+  "commit:d3bba6a": {
+   "hash": "c27fff6ac7862e7e",
+   "text": "Five Star Recomp's commit says it merges lane-lowvram, where depth twins were found under desktop view index and one was never copied.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-25T23:46:29.136Z"
+  },
+  "commit:28d2aaf": {
+   "hash": "2800b578eee84f57",
+   "text": "Five Star Recomp's commit says a twin's UAV is known by its desktop heap index and adds twin and copy logs.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-25T23:46:29.136Z"
+  },
+  "commit:63bcca4": {
+   "hash": "f9cd04a6602997c3",
+   "text": "VIctory's commit says it updates the readme.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-25T23:46:29.136Z"
+  }
+ },
  "stories": {
+  "2026-11-25-bsky.app-gta-6-is-already-running-on-pc-through-unofficial-projects-but-theres-a-big-catch-heres-ev": {
+   "hash": "a33988d966b77a7d",
+   "topic": "Official",
+   "importance": null,
+   "weight": 6,
+   "lead": "2026-11-25-news.google.com-the-state-of-gta-6-on-pc-everything-you-need-to-know",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-25-news.google.com-the-state-of-gta-6-on-pc-everything-you-need-to-know": {
+   "hash": "2c40dfc047b73128",
+   "topic": "Community",
+   "importance": null,
+   "weight": 16,
+   "similar": 1,
+   "summary": null,
+   "by": null
+  },
   "2026-11-25-mastodon.social-gta-6-booted-on-a-pc-but-it-stops-at-the-settings-screen-cyberleek-dropped-the-missing-fil": {
    "hash": "edf8e672e3528cf2",
    "topic": "Leak",
@@ -826,6 +893,14 @@
    "summary": null,
    "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
+  "2026-11-25-gamesradar.com-gta-6-still-has-the-gritty-patina-of-more-controversial-rockstar-games-former-take-two-bos": {
+   "hash": "dcb412b2132ae7d2",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
   "2026-11-25-mastodon.social-um-projeto-n-o-oficial-de-port-de-gta-6-para-pc-foi-abandonado-ap-s-o-l-der-alegar-que-a-r": {
    "hash": "93f8daf4f05f0f2b",
    "topic": "Takedown",
@@ -1331,13 +1406,13 @@
    "summary": "GTA 6 receives first PS5 and Xbox patch fixing autosaves, mission calls, weather.",
    "by": "Pollinations, gpt-oss-20b"
   },
-  "2026-11-25-news.google.com-take-two-appears-to-be-trying-to-scrub-gta-6-pc-ports-from-the-internet-as-vibecoders-race": {
-   "hash": "18cfffbdcf6006e9",
+  "2026-11-25-news.google.com-take-two-battles-unofficial-gta-6-pc-port-work": {
+   "hash": "40e687bc1a38751f",
    "topic": "Takedown",
    "importance": 5,
    "weight": 66,
-   "summary": "Take-Two appears to be trying to scrub GTA 6 PC ports from internet.",
-   "by": "Kilo Gateway, reflection/beam-free"
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-25-news.google.com-the-first-hour-and-a-half-of-gta-6-gameplay-has-been-made-available-on-pc-via-the-ztrx-com": {
    "hash": "0652517d6592d4f4",
@@ -1733,6 +1808,14 @@
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
+  "2026-11-25-in.ign.com-take-two-appears-to-be-trying-to-scrub-gta-6-pc-ports-from-the-internet-as-vibecoders-race": {
+   "hash": "6ad525b0696b33e1",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 66,
+   "summary": "Take-Two Appears to Be Trying to Scrub GTA 6 PC Ports From the Internet",
+   "by": "Pollinations, gpt-oss-20b"
+  },
   "2026-11-25-news.google.com-gta-6-cloud-gaming-how-to-play-on-xbox-and-remote-play": {
    "hash": "5f7ec3042e26f661",
    "topic": "Game",
@@ -1864,14 +1947,6 @@
    "weight": 26,
    "summary": "The GTA VI PC port from the leak is reportedly evolving very fast.",
    "by": "Kilo Gateway, reflection/beam-free"
-  },
-  "2026-11-25-msn.com-gta-6-still-has-the-gritty-patina-of-more-controversial-rockstar-games-former-take-two-bos": {
-   "hash": "c5fd252ec1167515",
-   "topic": "Game",
-   "importance": 1,
-   "weight": 0,
-   "summary": null,
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
   "2026-11-25-news.google.com-take-two-files-dmca-complaint-against-project-leonida-gta-vi-mod": {
    "hash": "8ff86d4b91a4133a",
@@ -2062,15 +2137,6 @@
    "summary": null,
    "by": null
   },
-  "2026-11-25-news.google.com-take-two-shuts-down-unofficial-gta-6-pc-port-project": {
-   "hash": "07b9a37edbd39e74",
-   "topic": "Official",
-   "importance": null,
-   "weight": 14,
-   "lead": "2026-11-25-news.google.com-take-two-shuts-down-biggest-unofficial-gta-6-pc-port-over-leaked-xbox-files",
-   "summary": null,
-   "by": null
-  },
   "2026-11-25-news.google.com-thousands-of-developers-want-to-bring-gta-vi-to-pc-after-build-leak-working-on-xbox-series": {
    "hash": "8c17330f78666370",
    "topic": "Port",
@@ -2258,12 +2324,12 @@
    "by": null
   },
   "2026-11-25-msn.com-gta-6-on-pc-will-have-to-wait-as-rockstar-parent-take-two-shuts-down-port-project": {
-   "hash": "d164ed707054e9a8",
+   "hash": "a220c79b654d93b5",
    "topic": "Takedown",
-   "importance": 4,
-   "weight": 54,
-   "summary": "ABP News reports Take-Two shut down a GTA 6 PC port project, so PC will have to wait.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
+   "importance": 5,
+   "weight": 66,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-25-bsky.app-an-unofficial-gta-vi-pc-port-has-files-to-work-with-but-it-doesnt-boot-yet-meanwhile-ai-ag": {
    "hash": "473543eb1218ab94",
@@ -2620,6 +2686,15 @@
    "importance": null,
    "weight": 0,
    "lead": "2026-11-25-news.google.com-gta-6-cloud-gaming-how-to-play-on-xbox-and-remote-play",
+   "summary": null,
+   "by": null
+  },
+  "2026-11-24-beebom.com-take-two-shuts-down-unofficial-gta-6-pc-port-project": {
+   "hash": "07b9a37edbd39e74",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-25-news.google.com-take-two-shuts-down-biggest-unofficial-gta-6-pc-port-over-leaked-xbox-files",
    "summary": null,
    "by": null
   },
@@ -3384,39 +3459,22 @@
    "weight": 30,
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-24-news.google.com-gta-6-exe-leak-57-mb-file-0-playable-pc-builds": {
-   "hash": "ae0d25ef54285556",
-   "topic": "Leak",
-   "importance": 3,
-   "weight": 30,
-   "summary": "Shattered reports the GTA 6 exe leak is a 57 MB file with no playable PC builds.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
-  "2026-11-24-news.google.com-gta-vi-unofficial-pc-port-race-cgbj-reaches-in-game-victory-hits-the-main-menu-at-30fps": {
-   "hash": "dce54697f0b1b9ab",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 34,
-   "summary": "StupidDOPE reports CGBJ reached in-game and VIctory hit the main menu at 30fps.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
-  "2026-11-24-news.google.com-a-leaked-xbox-build-of-gta-vi-worked-on-pc-consuming-around-38gb-of-ram": {
-   "hash": "faef23eb17ac80dc",
-   "topic": "Leak",
-   "importance": 3,
-   "weight": 30,
-   "summary": null,
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
   }
  },
  "projects": {
   "xbox2windows": {
-   "hash": "3a0b8c69e0f854fb",
+   "hash": "13c67e0fbdb15b79",
    "count": 15,
-   "summary": "Xbox2Windows's recent commits and pull requests mention shader instruction caching, x87 lifting, alpha constants and slot 57 mesh translation.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free",
-   "at": "2026-11-25T20:31:40.375Z"
+   "summary": "Xbox2Windows recent commits mention cpu AVX ops, d3d12 allocation handling, shader RDNA2 classification, CI coverage hardening, runtime CLI guards, and compute pipeline reuse.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T23:46:29.136Z"
+  },
+  "five-star-recomp": {
+   "hash": "3599a0be4c5be160",
+   "count": 15,
+   "summary": "Five Star Recomp's recent commits mention input script block waits, world capture, low VRAM lane scripts, default script input, and cross-lane reads skipping non-running lanes.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T21:31:49.847Z"
   },
   "marvis": {
    "hash": "6bd3642cf747f6bd",
@@ -3439,12 +3497,26 @@
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-25T22:31:49.705Z"
   },
-  "five-star-recomp": {
-   "hash": "3599a0be4c5be160",
+  "vitoriabr": {
+   "hash": "1f2cf5a6f49acda5",
    "count": 15,
-   "summary": "Five Star Recomp's recent commits mention input script block waits, world capture, low VRAM lane scripts, default script input, and cross-lane reads skipping non-running lanes.",
+   "summary": "Uilian recent commits mention shader cycle proofs, session uptime docs, GPU sky dome ambient light, divergent FP16 wave64 test, and console lane shader requests.",
    "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-25T21:31:49.847Z"
+   "at": "2026-11-25T23:46:29.136Z"
+  },
+  "decant": {
+   "hash": "133ceae57439e08b",
+   "count": 15,
+   "summary": "Decant recent commits mention title_mem state lock, shader bytecode deduplication, decant_trace wiring, VEH write fault race fix, manifest discovery wiring, and frame event wait bounding.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T23:46:29.136Z"
+  },
+  "bcpack-gpu-hlsl": {
+   "hash": "51a22d34c12db257",
+   "count": 15,
+   "summary": "bcpack-gpu-hlsl recent commits mention SDK submodule bump, full BC7/BC3/BC4/BC5 integration, cross-vendor Compute RayQuery RTGI pass, auto-VRAM presets, TAAU upscaler, VRS Tier 2, and benchmark GIF showcase.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T23:46:29.136Z"
   }
  }
 }
