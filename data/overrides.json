@@ -476,15 +476,23 @@
           {
             "text": "The GitHub account dates from 10 May 2024, so it was not made for this. The repo is its only public one, published at 09:41 UTC on 25 November, about an hour before upstream ranked it #1. We found no public issues or pull requests by it. That neither supports nor undercuts the claims.",
             "url": "https://github.com/Belobug"
+          },
+          {
+            "text": "Recording: a 9-second clip shows a pickup driven along a lit, textured road with traffic, foliage, shadows and the minimap. The picture changes about four times a second. Dany posted it on 25 November, 11:16 UTC, with a link to Belobug’s repo and the same hardware written on it (RX 9070 XT, 9800X3D, 64 GB). Dany’s profile says they are not involved, so who recorded it is not stated. No mission is shown.",
+            "url": "https://x.com/_Dany892_/status/2125549187882275262"
+          },
+          {
+            "text": "Recording, not named as Belobug’s: 57 seconds that Dany posted on 25 November, 10:03 UTC, as “the latest status of the GTA 6 PC port”. Jason walks, gets on a bike and rides through lit streets; areas in shade are near black. Task Manager, in French, shows an RX 9070 XT with 24 GB of graphics memory in use, which fits Belobug’s README. The picture changes about eight times a second, above the README’s 3 to 5; we could not confirm the clip’s speed, so fps stays at 3.",
+            "url": "https://x.com/_Dany892_/status/2125530703010156995"
           }
         ],
-        "findingsSource": "From Belobug’s README, commits and code at 4cbe9d76, its public GitHub profile and upstream’s tracker, on 25 November. Read as text, not run."
+        "findingsSource": "From Belobug’s README, commits and code at 4cbe9d76, its public GitHub profile, upstream’s tracker and two clips posted on X by Dany, on 25 November. Code read as text, not run; clips watched."
       }
     },
     {
       "id": "belobug",
       "from": {
-        "summary": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 3 fps and rarely crashes.",
+        "summary": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 3 fps and rarely crashes.",
         "highlights": [
           "Platform: AMD Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
           "The open world looks close to the retail game: lit, with textures, people, vehicles, vegetation, water and sky",
@@ -493,11 +501,11 @@
         ]
       },
       "to": {
-        "summary": "Belobug's VIctory fork for AMD Radeon, tested on one PC (RX 9070 XT, Ryzen 7 9800X3D). GTA VI's open world renders lit at 3 to 5 fps; its README says \"not playable yet\". Upstream's owner says it plays missions and rarely crashes; no recording we found shows it. Self-reported.",
+        "summary": "Belobug's VIctory fork for AMD Radeon, tested on one PC (RX 9070 XT, Ryzen 7 9800X3D). GTA VI's open world renders lit at 3 to 5 fps; its README says \"not playable yet\". A clip posted with its repo link shows driving. Upstream's owner says they have seen it run, that it plays missions and rarely crashes; no recording we found shows those two. Self-reported.",
         "highlights": [
           "The open world renders lit, with textures, people, vehicles, vegetation, water and sky",
-          "Upstream's word, no recording found: close to the retail game, plays through missions, rarely crashes",
-          "Built on VIctory's main and upstream pull requests; its README says no victory-fork code is in it"
+          "A 9-second clip posted with its repo link shows driving at about four frames a second",
+          "Upstream's word, no recording found: plays through missions, rarely crashes"
         ]
       }
     },
