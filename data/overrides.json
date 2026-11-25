@@ -460,6 +460,26 @@
         ],
         "findingsSource": "From Belobug’s README, commits and code at 4cbe9d76, on 25 November. Read as text, not run."
       }
+    },
+    {
+      "id": "belobug",
+      "from": {
+        "summary": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 3 fps and rarely crashes.",
+        "highlights": [
+          "Platform: AMD Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
+          "The open world looks close to the retail game: lit, with textures, people, vehicles, vegetation, water and sky",
+          "Plays through missions and rarely crashes",
+          "Built on VIctory's main and upstream pull requests, not on victory-fork; GPL-3.0"
+        ]
+      },
+      "to": {
+        "summary": "Belobug's VIctory fork for AMD Radeon, tested on one PC (RX 9070 XT, Ryzen 7 9800X3D). GTA VI's open world renders lit at 3 to 5 fps; its README says \"not playable yet\". Story and stability are the tracker owner's calls: the repo names no mission played. Self-reported.",
+        "highlights": [
+          "The open world renders lit, with textures, people, vehicles, vegetation, water and sky",
+          "Platform: AMD Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
+          "Built on VIctory's main and upstream pull requests; its README says no victory-fork code is in it"
+        ]
+      }
     }
   ],
   "added": [
