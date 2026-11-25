@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-25T07:41:13.389Z",
+  "lastRun": "2026-11-25T12:20:31.133Z",
   "read": [],
   "freeRead": [
     "https://github.com/Zettrox/ztrx/issues/62@2026-11-25T07:12:55Z",
@@ -13,9 +13,68 @@
     "https://github.com/californiaAlmonds/OpenScarlett/issues/17@2026-11-22T08:11:37Z",
     "https://github.com/R0Y00/Xbox2Windows/issues/1936@2026-11-24T22:19:32Z",
     "https://github.com/LooperSalty/AnyXboxX/issues/191@2026-11-25T01:25:12Z",
-    "https://github.com/ThatRecompDev/five-star-recomp/issues/23@2026-11-25T07:11:44Z"
+    "https://github.com/ThatRecompDev/five-star-recomp/issues/23@2026-11-25T07:11:44Z",
+    "https://github.com/Belobug/VIctory-Belobug-AMD/issues/20@2026-11-25T12:16:28Z",
+    "https://github.com/Zettrox/ztrx/issues/98@2026-11-25T11:10:45Z",
+    "https://github.com/uiliannn/VItoriaBr/issues/14@2026-11-25T11:07:02Z",
+    "https://github.com/fxceless/victory-fork/issues/898@2026-11-25T12:19:03Z",
+    "https://github.com/Marvisak/VIctory/issues/2351@2026-11-25T11:40:42Z",
+    "https://github.com/omonkeyz/xbox-emulator/issues/350@2026-11-24T19:56:44Z",
+    "https://github.com/xcl-dev/xcl/issues/2248@2026-11-25T11:19:18Z",
+    "https://github.com/brcly/TuxBox/issues/152@2026-11-25T09:06:45Z",
+    "https://github.com/R0Y00/Xbox2Windows/issues/2278@2026-11-25T09:41:52Z",
+    "https://github.com/LooperSalty/AnyXboxX/issues/191@2026-11-25T12:11:23Z",
+    "https://github.com/ThatRecompDev/five-star-recomp/issues/23@2026-11-25T11:42:52Z"
   ],
   "items": [
+    {
+      "effortId": "victory-gta6",
+      "kind": "free",
+      "stage": "world",
+      "outcome": "reached",
+      "quote": "Boot, first-boot screens and menus at 30 fps; the prologue world renders with characters, textures, sky and HUD; autosave works;",
+      "commit": "f85101b",
+      "gpu": "RTX 4060",
+      "url": "https://github.com/fxceless/victory-fork/issues/898",
+      "at": "2026-11-25T12:14:19Z",
+      "by": "606fb9922d3a"
+    },
+    {
+      "effortId": "victory-gta6",
+      "kind": "rule",
+      "stage": "world",
+      "quote": "4.3 fps in the world",
+      "outcome": "reached",
+      "commit": "f85101b",
+      "gpu": "RTX 4070",
+      "url": "https://github.com/fxceless/victory-fork/issues/873",
+      "at": "2026-11-25T11:29:23Z",
+      "by": "164d48f3ba96"
+    },
+    {
+      "effortId": "marvis",
+      "kind": "free",
+      "stage": "menu",
+      "outcome": "reached",
+      "quote": "Menus & Loading: Runs smoothly at 30 FPS with audio.",
+      "commit": "940d32f",
+      "gpu": "Radeon RX",
+      "url": "https://github.com/Marvisak/VIctory/issues/2351",
+      "at": "2026-11-25T11:25:50Z",
+      "by": "40f958f72c6c"
+    },
+    {
+      "effortId": "victory-gta6",
+      "kind": "rule",
+      "stage": "world",
+      "quote": "4 fps in gameplay",
+      "outcome": "reached",
+      "commit": "9376fd6",
+      "gpu": "RTX 3060 Ti",
+      "url": "https://github.com/fxceless/victory-fork/issues/825",
+      "at": "2026-11-25T09:19:54Z",
+      "by": "51223e0dcff1"
+    },
     {
       "effortId": "victory-gta6",
       "kind": "free",
@@ -303,6 +362,18 @@
       "url": "https://github.com/Marvisak/VIctory/issues/71",
       "at": "2026-11-24T00:12:55Z",
       "by": "e17dd9f519e4"
+    },
+    {
+      "effortId": "xbox-emulator",
+      "kind": "free",
+      "stage": "boots",
+      "outcome": "reached",
+      "quote": "title renders at 3840x2160 with the Series X budget; dedicated VRAM sits at 7+ of 8 GB, frames drop to 3-6 fps while loading.",
+      "commit": "f89e410",
+      "gpu": "Radeon RX",
+      "url": "https://github.com/omonkeyz/xbox-emulator/issues/350",
+      "at": "2026-11-23T23:24:59Z",
+      "by": "a8f245fec118"
     }
   ]
 }
