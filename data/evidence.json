@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-25T12:20:31.133Z",
+  "lastRun": "2026-11-25T15:20:33.663Z",
   "read": [],
   "freeRead": [
     "https://github.com/Zettrox/ztrx/issues/62@2026-11-25T07:12:55Z",
@@ -24,9 +24,79 @@
     "https://github.com/brcly/TuxBox/issues/152@2026-11-25T09:06:45Z",
     "https://github.com/R0Y00/Xbox2Windows/issues/2278@2026-11-25T09:41:52Z",
     "https://github.com/LooperSalty/AnyXboxX/issues/191@2026-11-25T12:11:23Z",
-    "https://github.com/ThatRecompDev/five-star-recomp/issues/23@2026-11-25T11:42:52Z"
+    "https://github.com/ThatRecompDev/five-star-recomp/issues/23@2026-11-25T11:42:52Z",
+    "https://github.com/Belobug/VIctory-Belobug-AMD/issues/121@2026-11-25T14:58:35Z",
+    "https://github.com/Zettrox/ztrx/issues/150@2026-11-25T15:00:43Z",
+    "https://github.com/uiliannn/VItoriaBr/issues/18@2026-11-25T14:47:47Z",
+    "https://github.com/fxceless/victory-fork/issues/985@2026-11-25T15:10:02Z",
+    "https://github.com/Marvisak/VIctory/issues/2521@2026-11-25T15:15:51Z",
+    "https://github.com/omonkeyz/xbox-emulator/issues/333@2026-11-23T21:28:22Z",
+    "https://github.com/xcl-dev/xcl/issues/2298@2026-11-25T14:52:37Z",
+    "https://github.com/brcly/TuxBox/issues/151@2026-11-25T08:30:58Z",
+    "https://github.com/R0Y00/Xbox2Windows/issues/2335@2026-11-25T13:02:53Z",
+    "https://github.com/LooperSalty/AnyXboxX/issues/182@2026-11-25T13:41:00Z"
   ],
   "items": [
+    {
+      "effortId": "marvis",
+      "kind": "rule",
+      "stage": "boots",
+      "quote": "reaches the intro",
+      "outcome": "reached",
+      "commit": "940d32f",
+      "gpu": "RX 9070 XT",
+      "url": "https://github.com/Marvisak/VIctory/issues/2517",
+      "at": "2026-11-25T15:10:47Z",
+      "by": "6919c89fb5b4"
+    },
+    {
+      "effortId": "zettrox",
+      "kind": "free",
+      "stage": "menu",
+      "outcome": "reached",
+      "quote": "34 60 33-46 (menu)",
+      "commit": "90b529f",
+      "gpu": "RTX 5070",
+      "url": "https://github.com/Zettrox/ztrx/issues/150",
+      "at": "2026-11-25T14:58:58Z",
+      "by": "6fe637fa9483"
+    },
+    {
+      "effortId": "victory-gta6",
+      "kind": "rule",
+      "stage": "world",
+      "quote": "load into the world",
+      "outcome": "reached",
+      "commit": "0b0074e",
+      "gpu": "RTX 4060",
+      "url": "https://github.com/fxceless/victory-fork/issues/942",
+      "at": "2026-11-25T13:24:44Z",
+      "by": "63bd40118a75"
+    },
+    {
+      "effortId": "belobug",
+      "kind": "rule",
+      "stage": "world",
+      "quote": "2.7 fps in the world",
+      "outcome": "reached",
+      "commit": "71652a2",
+      "gpu": "Radeon 8060S",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/48",
+      "at": "2026-11-25T12:56:48Z",
+      "by": "330f6fe45494"
+    },
+    {
+      "effortId": "victory-gta6",
+      "kind": "rule",
+      "stage": "playable",
+      "quote": "walked around)",
+      "outcome": "reached",
+      "commit": "f85101b",
+      "gpu": "RTX 4070",
+      "url": "https://github.com/fxceless/victory-fork/issues/921",
+      "at": "2026-11-25T12:55:24Z",
+      "by": "7dc559591feb"
+    },
     {
       "effortId": "victory-gta6",
       "kind": "free",
@@ -194,6 +264,18 @@
       "url": "https://github.com/fxceless/victory-fork/issues/417",
       "at": "2026-11-25T00:32:01Z",
       "by": "f5afbf337def"
+    },
+    {
+      "effortId": "anyxboxx",
+      "kind": "free",
+      "stage": "world",
+      "outcome": "reached",
+      "quote": "the world is visible and the movement prompt appears",
+      "commit": "ffe310e",
+      "gpu": "RTX 4060",
+      "url": "https://github.com/LooperSalty/AnyXboxX/issues/182",
+      "at": "2026-11-24T23:11:44Z",
+      "by": "299285ac721a"
     },
     {
       "effortId": "victory-gta6",
