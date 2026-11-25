@@ -791,6 +791,52 @@
       "readmeSha": "43ffbc4155e9b675cceef28b1630c4450557ed55a23e5838b2b344e2d4046233"
     },
     {
+      "id": "dexnom",
+      "name": "DexNom",
+      "repo": "DexNom/VIctory",
+      "branch": "main",
+      "tier": "tracked",
+      "approach": "Compatibility layer",
+      "target": "GTA VI only",
+      "summary": "DexNom Runtime, a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running: it's at the same point as Belobug's build, with the open world close to the retail game, playable through missions at about 3-4 fps and rarely crashing.",
+      "highlights": [
+        "Platform: AMD Radeon RX 7900 XTX, Windows x64",
+        "At the same point as Belobug's build: the open world looks close to the retail game and plays through missions",
+        "Translates 25,742 of the 25,758 shaders in its test archive; all 2,191 vertex shaders pass Microsoft's DXIL validator (its report)",
+        "Builds from source with its own Setup.cmd; no prebuilt downloads; GPL-3.0"
+      ],
+      "blockers": [
+        "About 3.5-4 fps indoors in Chapter 1's city (its test report)",
+        "Interior lighting is wrong (overexposed doorways, dark objects) and the game's ray-traced lighting is off by default",
+        "Tested on one AMD card only; not yet reproduced by others"
+      ],
+      "provenOn": null,
+      "gta": {
+        "loads": 1,
+        "boots": 1,
+        "menu": 1,
+        "world": 1,
+        "playable": 1,
+        "story": 0.5,
+        "render": 0.81,
+        "fps": 3,
+        "stability": 0.7
+      },
+      "verification": "portwatch",
+      "stats": {
+        "stars": 14,
+        "forks": 1,
+        "openIssues": 0,
+        "createdAt": "2026-11-25T12:14:33Z",
+        "pushedAt": "2026-11-25T13:43:29Z",
+        "archived": false,
+        "missing": false
+      },
+      "assessedAt": "2026-11-25",
+      "assessedBy": "manual",
+      "claims": []
+    },
+    {
       "id": "zettrox",
       "name": "ZETTROX",
       "avatar": "assets/img/efforts/zettrox.jpg",
@@ -3068,31 +3114,6 @@
         "4 technical terms",
         "status table",
         "10 commits/7d"
-      ],
-      "kind": "effort",
-      "status": "new"
-    },
-    {
-      "repo": "DexNom/VIctory",
-      "name": "VIctory",
-      "description": "DexNom Runtime is a source-only Windows x64 fork of VIctory with (AMD) Radeon rendering and GPU memory improvements.",
-      "language": "Rust",
-      "stars": 11,
-      "createdAt": "2026-11-25T12:14:33Z",
-      "pushedAt": "2026-11-25T12:46:39Z",
-      "defaultBranch": "main",
-      "sources": [
-        "4chan /v/"
-      ],
-      "links": [
-        "https://boards.4chan.org/v/thread/752421323"
-      ],
-      "foundAt": "2026-11-25T13:37:43.109Z",
-      "substance": 59,
-      "signals": [
-        "Rust",
-        "4 technical terms",
-        "100+ commits/7d"
       ],
       "kind": "effort",
       "status": "new"
@@ -6738,6 +6759,11 @@
       "date": "2026-11-25",
       "kind": "new",
       "text": "Scout spotted xcl-dev/xcl (possible effort, substance 98)."
+    },
+    {
+      "date": "2026-11-25",
+      "kind": "new",
+      "text": "DexNom joins the race at #2 with 76.9% (“Playable”), verified by PortWatch: DexNom/VIctory, an AMD Radeon fork of VIctory tested on an RX 7900 XTX, is at the same point as Belobug's build, with a close-to-retail open world played through missions."
     }
   ],
   "history": [
@@ -6777,9 +6803,9 @@
       "date": "2026-11-25",
       "leader": 77.4,
       "leaderId": "belobug",
-      "top3": 67.5,
+      "top3": 72.8,
       "furthest": "playable",
-      "tracked": 37
+      "tracked": 38
     }
   ],
   "scout": {
