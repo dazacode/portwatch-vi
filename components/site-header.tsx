@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { HeaderShell } from "@/components/header-shell"
+import { HolidayToggle } from "@/components/holiday/toggle"
 import { NavLink } from "@/components/nav-link"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Wordmark } from "@/components/wordmark"
@@ -29,7 +30,8 @@ export function SiteHeader() {
             <NavLink key={item.href} {...item} />
           ))}
         </nav>
-        <div className="ml-auto">
+        <div className="ml-auto flex items-center">
+          <HolidayToggle />
           <ThemeToggle />
         </div>
       </div>

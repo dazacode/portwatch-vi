@@ -37,53 +37,63 @@ export function Clock({
       : "until the Xbox build is due"
 
   return (
-    // Some clips are bright right behind the clock, so a soft shade lies between the two.
-    <div className="relative isolate text-center before:pointer-events-none before:absolute before:-inset-x-5 before:-inset-y-8 before:-z-10 before:rounded-full before:bg-black/42 before:blur-2xl sm:before:-inset-12 sm:before:rounded-4xl sm:before:blur-3xl">
-      <div className="drop-shadow-[0_2px_18px_rgb(0_0_0/0.45)]">
-        <div
-          role="timer"
-          aria-label={`${left.days} days, ${left.hours} hours, ${left.minutes} minutes`}
-          className={cn(
-            "leading-none font-bold tracking-tight text-white/95 tabular-nums",
-            compact
-              ? "text-[clamp(2.4rem,min(10.5vw,17svh),4.5rem)] short:text-[clamp(2rem,6vw,3.5rem)] xl:text-8xl"
-              : "text-[clamp(2.6rem,min(11.5vw,26svh),10rem)]"
-          )}
-        >
-          <span aria-hidden="true" className="flex justify-center gap-[0.28em]">
-            <Unit value={String(left.days)} unit="d" />
-            <Unit value={two(left.hours)} unit="h" />
-            <Unit value={two(left.minutes)} unit="m" />
-            <Unit value={two(left.seconds)} unit="s" />
-          </span>
-        </div>
-        <h2 className="mt-2 text-xl font-bold text-balance sm:mt-3 sm:text-3xl">{title}</h2>
-        <p className="mx-auto mt-2 max-w-prose text-sm">
-          {drop.released ? "Executable reported out" : "Expected"} {utcDay(drop.at)},{" "}
-          {utcTime(drop.at)}. Not confirmed by Rockstar.
-          {drop.source && (
-            <>
-              {" "}
-              <a
-                href={drop.source}
-                target="_blank"
-                rel="noreferrer"
-                className="underline underline-offset-4 hover:decoration-2"
-              >
-                Source
-              </a>
-            </>
-          )}
-        </p>
+    <div>
+      <div
+        role="timer"
+        aria-label={`${left.days} days, ${left.hours} hours, ${left.minutes} minutes ${title}`}
+        className={cn(
+          "leading-none font-bold tracking-tight text-white/95 tabular-nums",
+          compact
+            ? "text-[clamp(1.5rem,min(6.5vw,5.5svh),3rem)]"
+            : "text-[clamp(1.75rem,min(8.6vw,10svh),5rem)]"
+        )}
+      >
+        <span aria-hidden="true" className="flex justify-center gap-[0.32em]">
+          <Unit value={String(left.days)} unit="d" />
+          <Unit value={two(left.hours)} unit="h" />
+          <Unit value={two(left.minutes)} unit="m" />
+          <Unit value={two(left.seconds)} unit="s" />
+        </span>
       </div>
+      <p
+        className={cn(
+          "mt-1.5 font-bold text-balance",
+          compact ? "text-base" : "text-base sm:text-2xl short:text-base"
+        )}
+      >
+        {title}
+      </p>
+      <p className="mx-auto mt-1 max-w-prose text-sm short:text-xs">
+        {drop.released ? "Executable reported out" : "Expected"} {utcDay(drop.at)},{" "}
+        {utcTime(drop.at)}. Not confirmed by Rockstar.
+        {drop.source && (
+          <>
+            {" "}
+            <a
+              href={drop.source}
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-4 hover:decoration-2"
+            >
+              Source
+            </a>
+          </>
+        )}
+      </p>
     </div>
   )
 }
 
+/** A digit that changes drops into place. The others stay where they are. */
 function Unit({ value, unit }: { value: string; unit: string }) {
   return (
     <span className="whitespace-nowrap">
-      {value}
+      {[...value].map((digit, i) => (
+        // biome-ignore lint/suspicious/noArrayIndexKey: a digit is its place and its value
+        <span key={`${value.length - i}:${digit}`} className="digit">
+          {digit}
+        </span>
+      ))}
       <span className="ml-[0.05em] text-[0.42em] font-bold tracking-normal text-white/95">
         {unit}
       </span>

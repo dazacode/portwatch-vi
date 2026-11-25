@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { Splash } from "@/components/splash"
 import { ThemeProvider } from "@/components/theme-provider"
+import { holidayScript } from "@/lib/holidays"
 import { SITE } from "@/lib/site"
 import { cn } from "@/lib/utils"
 import "./globals.css"
@@ -34,6 +35,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={cn("font-sans antialiased", sans.variable, script.variable)}
     >
       <body className="flex min-h-dvh flex-col">
+        {/* biome-ignore lint/security/noDangerouslySetInnerHtml: our own constants, before the first paint */}
+        <script dangerouslySetInnerHTML={{ __html: holidayScript() }} />
         <Splash />
         <ThemeProvider>
           <a

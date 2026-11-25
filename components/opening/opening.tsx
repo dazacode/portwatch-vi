@@ -13,8 +13,12 @@ import {
   VolumeX,
   X,
 } from "lucide-react"
+import dynamic from "next/dynamic"
 import { useEffect, useRef } from "react"
 import type { useSound } from "@/components/broadcast/use-sound"
+import { HolidayToggle } from "@/components/holiday/toggle"
+import { useHoliday } from "@/components/holiday/use-holiday"
+import { Answer } from "@/components/opening/answer"
 import { Clock } from "@/components/opening/clock"
 import { CommitFeed } from "@/components/opening/commit-feed"
 import { Leaders } from "@/components/opening/leaders"
@@ -22,6 +26,11 @@ import { Button } from "@/components/ui/button"
 import { useFullscreen } from "@/components/use-fullscreen"
 import type { Broadcast } from "@/lib/broadcast"
 import { cn } from "@/lib/utils"
+
+// Only during a holiday, so not in the first download.
+const Leaves = dynamic(() => import("@/components/holiday/leaves").then((m) => m.Leaves), {
+  ssr: false,
+})
 
 export type Panel = "leaders" | "commits"
 
@@ -32,9 +41,10 @@ const PANELS = [
 
 const glass = "text-white hover:bg-white/20 hover:text-white dark:hover:bg-white/20"
 
-/** The first screen: the clock over Miami. Everything else opens on request. */
+/** The first screen: the answer and the clock over Miami. Everything else opens on request. */
 export function Opening({
   broadcast,
+  done,
   sound,
   panel,
   onPanel,
@@ -44,6 +54,8 @@ export function Opening({
   phone,
 }: {
   broadcast: Broadcast
+  /** GTA VI runs on PC, start to finish. */
+  done: boolean
   sound: ReturnType<typeof useSound>
   panel: Panel | null
   onPanel: (panel: Panel | null) => void
@@ -54,6 +66,7 @@ export function Opening({
   phone: { all: boolean; onAll: (all: boolean) => void } | null
 }) {
   const { at, drop, leaders, everyone, commits, feed } = broadcast
+  const { on: festive } = useHoliday()
   const { full, can: canFull, toggle: toggleFull } = useFullscreen()
 
   // Focus goes into a panel someone opens, and back to its button when they close it.
@@ -89,11 +102,21 @@ export function Opening({
 
   return (
     <section
-      aria-label="Since the drop"
-      className="feed-page stage-height flex flex-col bg-linear-to-t from-black/70 via-black/30 via-40% to-black/30"
+      aria-label="Is GTA 6 on PC?"
+      className="feed-page stage-height relative flex flex-col bg-linear-to-t from-black/70 via-black/30 via-40% to-black/30"
     >
-      <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-6 px-4 pt-8 pb-6 sm:px-8 lg:flex-row lg:justify-evenly short:flex-row short:justify-evenly short:gap-4 short:pt-4 short:pb-3">
-        {drop && <Clock drop={drop} at={at} compact={panel !== null} />}
+      {festive && <Leaves still={still} />}
+      <div className="relative flex min-h-0 flex-1 flex-col items-center justify-center gap-6 px-4 pt-8 pb-6 sm:px-8 lg:flex-row lg:justify-evenly short:flex-row short:justify-evenly short:gap-4 short:pt-4 short:pb-3">
+        {/* Some clips are bright right behind the words, so a soft shade lies between the two. */}
+        <div
+          className={cn(
+            "relative isolate grid text-center before:pointer-events-none before:absolute before:-inset-x-5 before:-inset-y-8 before:-z-10 before:rounded-full before:bg-black/42 before:blur-2xl sm:before:-inset-12 sm:before:rounded-4xl sm:before:blur-3xl",
+            panel ? "gap-2" : "gap-[clamp(0.75rem,4svh,2.5rem)] short:gap-2"
+          )}
+        >
+          <Answer done={done} compact={panel !== null} still={still} />
+          {drop && <Clock drop={drop} at={at} compact={panel !== null} />}
+        </div>
         {panel && (
           <section
             ref={box}
@@ -125,7 +148,7 @@ export function Opening({
         )}
       </div>
 
-      <div className="flex flex-wrap items-center justify-center gap-3 px-4 pb-[max(1.25rem,env(safe-area-inset-bottom))] sm:pb-8 short:pb-3">
+      <div className="relative flex flex-wrap items-center justify-center gap-3 px-4 pb-[max(1.25rem,env(safe-area-inset-bottom))] sm:pb-8 short:pb-3">
         <div className="glass flex items-center gap-1 rounded-full p-1">
           {phone ? (
             <Button size="lg" className="max-sm:px-4" onClick={() => phone.onAll(!phone.all)}>
@@ -190,6 +213,7 @@ export function Opening({
           >
             {still ? <Play aria-hidden="true" /> : <Pause aria-hidden="true" />}
           </Button>
+          <HolidayToggle greet size="icon-lg" className={glass} />
           {canFull && (
             <Button
               variant="ghost"
