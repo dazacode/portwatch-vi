@@ -1069,6 +1069,81 @@
           "text": "ASTRAL: first values from its README (boot, menus); no world yet."
         }
       ]
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [
+          "performance improvements",
+          "shader/pipeline fixes",
+          "rendering advances"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "victory-unified",
+        "summary": "Unified GTA VI Xbox Series fork combining performance, shader, and rendering fixes",
+        "basedOn": [],
+        "id": "victory-unified",
+        "repo": "Itsbatt/victory-unified",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-25T14:54:09Z",
+          "pushedAt": "2026-11-25T16:05:07Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "low FPS"
+        ],
+        "highlights": [
+          "static recompilation",
+          "pre-alpha 2-5 FPS"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "GTAVI-Xbox2PC",
+        "summary": "Static recompilation of Xbox Series GTA VI executable, pre-alpha 2-5 FPS",
+        "basedOn": [],
+        "id": "gtavi-xbox2pc",
+        "repo": "kfedora/GTAVI-Xbox2PC",
+        "stats": {
+          "stars": 1,
+          "createdAt": "2026-11-25T15:06:36Z",
+          "pushedAt": "2026-11-25T15:46:10Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -1135,6 +1210,8 @@
     "voidopcode/vilocity",
     "kellysix/kelly",
     "realblastex/flamingo",
-    "DexNom/VIctory"
+    "DexNom/VIctory",
+    "Itsbatt/victory-unified",
+    "kfedora/GTAVI-Xbox2PC"
   ]
 }
