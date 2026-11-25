@@ -1617,7 +1617,8 @@
       "branch": "main",
       "tier": "watchlist",
       "gpu": [
-        "NVIDIA"
+        "NVIDIA",
+        "Intel"
       ],
       "approach": "Compatibility layer",
       "target": "Any Xbox Series game",
@@ -1731,7 +1732,8 @@
       "tier": "watchlist",
       "gpu": [
         "NVIDIA",
-        "AMD"
+        "AMD",
+        "Intel"
       ],
       "approach": "Static recompilation",
       "target": "Any Xbox Series game",
@@ -2549,7 +2551,8 @@
       "branch": "main",
       "tier": "watchlist",
       "gpu": [
-        "NVIDIA"
+        "NVIDIA",
+        "Intel"
       ],
       "approach": "Compatibility layer",
       "target": "Any Xbox Series game",
