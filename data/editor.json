@@ -1,6 +1,22 @@
 {
-  "lastRun": "2026-11-25T21:35:26.973Z",
+  "lastRun": "2026-11-25T22:37:03.798Z",
   "runs": [
+    {
+      "at": "2026-11-25T22:37:03.798Z",
+      "by": "Pollinations, gpt-oss-20b",
+      "applied": [
+        "candidate Linox-IDK/LNX-victory",
+        "candidate decantlabs/decant",
+        "candidate POMXARK/bcpack-gpu-hlsl",
+        "candidate sefaalcn/half-step-game-project"
+      ],
+      "skipped": [
+        "held: score anyxboxx gta.fps=12: proposed, from “~12 fps in the world (Series X, RTX 4070 SUPER), measured 2026-11-25”",
+        "held: candidate baummarder/xHoly: has markup",
+        "held: candidate ihaterockstargames/sixth-star: has markup"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-25T21:35:26.972Z",
       "by": "Pollinations, gpt-oss-20b",

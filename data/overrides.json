@@ -1424,6 +1424,138 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "LNX-victory",
+        "summary": "Fork of victory-gta6 tuned for 8 GB NVIDIA cards, runs Xbox Series title natively on Windows.",
+        "basedOn": [],
+        "id": "lnx-victory",
+        "repo": "Linox-IDK/LNX-victory",
+        "stats": {
+          "stars": 1,
+          "createdAt": "2026-11-24T21:56:08Z",
+          "pushedAt": "2026-11-25T21:19:56Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Decant",
+        "summary": "Runs Xbox Series titles natively on PC, supplies GPU and system software.",
+        "basedOn": [],
+        "id": "decant",
+        "repo": "decantlabs/decant",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-25T18:51:54Z",
+          "pushedAt": "2026-11-25T22:07:50Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "bcpack-gpu-hlsl",
+        "summary": "Clean‑room Xbox Series BCPack GPU decoder, HLSL/DX12 implementation.",
+        "basedOn": [],
+        "id": "bcpack-gpu-hlsl",
+        "repo": "POMXARK/bcpack-gpu-hlsl",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-25T13:02:18Z",
+          "pushedAt": "2026-11-25T22:04:07Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Half Step Game Project",
+        "summary": "Compatibility layer for Xbox Series title on Windows, based on VIctory.",
+        "basedOn": [],
+        "id": "half-step-game-project",
+        "repo": "sefaalcn/half-step-game-project",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-24T23:14:04Z",
+          "pushedAt": "2026-11-25T19:11:03Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -1549,6 +1681,10 @@
     "SixLauncher/launcher",
     "LowBacon/HybridGt",
     "felicienradio/cold-project-vi",
-    "gabenddos/proton-scarlett"
+    "gabenddos/proton-scarlett",
+    "Linox-IDK/LNX-victory",
+    "decantlabs/decant",
+    "POMXARK/bcpack-gpu-hlsl",
+    "sefaalcn/half-step-game-project"
   ]
 }
