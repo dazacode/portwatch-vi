@@ -3,6 +3,7 @@ import { Container } from "@/components/container"
 import { SIZES } from "@/lib/milestones"
 import { MILESTONES, TRACKS } from "@/lib/scoring.mjs"
 import { getTracker } from "@/lib/tracker"
+import { WEIGHTS } from "@/lib/verification.mjs"
 
 export const revalidate = 300
 export const metadata: Metadata = { title: "Method" }
@@ -14,6 +15,24 @@ const RULES = [
   "10 to 20 points",
   "20 points or more, or a first",
 ]
+const EVIDENCE = [
+  [
+    WEIGHTS.challenge,
+    "Live challenge",
+    "Random in-game actions and a code, on a recorded stream, watched by a person.",
+  ],
+  [
+    WEIGHTS.tester,
+    "Independent tester",
+    "Names a real commit, a graphics card and how far the game got. Not a project member, account at least 90 days old, not a copy.",
+  ],
+  [
+    WEIGHTS.contributor,
+    "Tester who contributed code",
+    "The same, from someone whose code the project has merged.",
+  ],
+  [WEIGHTS.rule, "Matched by text rules", "The same, when only text rules have read the report."],
+].map(([weight, ...rest]) => [Math.round(Number(weight) * 100), ...rest])
 const RATINGS = SIZES.map((size, i) => [size, RULES[i]])
 
 export default async function Page() {
@@ -51,6 +70,29 @@ export default async function Page() {
               </div>
             ))}
           </dl>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold">How claims are verified</h2>
+          <p className="mt-2 text-muted-foreground">
+            Nobody can prove a run from a distance, so this measures how hard it would be to fake.
+            Each person counts once. A stage is verified at 70%, along with every stage before it,
+            and is worth up to 50 points. Story, rendering and speed are not verified.
+          </p>
+          <dl className="mt-4">
+            {EVIDENCE.map(([weight, name, rule]) => (
+              <div key={name} className="grid grid-cols-[3rem_1fr] border-b py-3 text-sm">
+                <dt className="contents">
+                  <span className="text-muted-foreground">{weight}%</span>
+                  <span className="font-medium">{name}</span>
+                </dt>
+                <dd className="col-start-2 text-muted-foreground">{rule}</dd>
+              </div>
+            ))}
+          </dl>
+          <p className="mt-4 text-sm text-muted-foreground">
+            Claims, stars, commits and passing tests count for nothing here. Two testers at 35% make
+            58%, three make 73%. Each tester who could not get there takes 7% off.
+          </p>
         </section>
         <section>
           <h2 className="text-lg font-semibold">How milestones are rated</h2>

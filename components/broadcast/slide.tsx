@@ -57,7 +57,7 @@ function Body({ slide, at }: { slide: Slide; at: string }) {
     case "race":
       return (
         <>
-          <Plate>The race right now</Plate>
+          <Plate>The race: verified, then claimed</Plate>
           <ol className="w-full max-w-3xl space-y-3">
             {slide.rows.map((r, i) => (
               <li key={r.id} data-rise>
@@ -65,16 +65,27 @@ function Body({ slide, at }: { slide: Slide; at: string }) {
                   <span className="truncate">
                     {i + 1}. {r.name}
                   </span>
-                  <Roll from={0} to={r.score} suffix="%" />
+                  <span>
+                    <Roll from={0} to={r.verified} suffix="%" />
+                    <span className="ml-2 text-base font-medium text-white/75 sm:text-lg">
+                      {r.next ? `${r.next}, ` : ""}
+                      {r.score}% claimed
+                    </span>
+                  </span>
                 </div>
-                <div className="h-3 bg-white/15 sm:h-4">
+                <div
+                  className="relative h-3 bg-white/15 sm:h-4"
+                  style={{ color: `var(--stripe-${(i % 3) + 1})` }}
+                >
                   <div
                     data-bar
-                    className="h-full origin-left"
-                    style={{
-                      width: `${r.score}%`,
-                      backgroundColor: `var(--stripe-${(i % 3) + 1})`,
-                    }}
+                    className="absolute inset-y-0 left-0 origin-left bg-current opacity-35"
+                    style={{ width: `${r.score}%` }}
+                  />
+                  <div
+                    data-bar
+                    className="absolute inset-y-0 left-0 origin-left bg-current"
+                    style={{ width: `${r.verified}%` }}
                   />
                 </div>
               </li>

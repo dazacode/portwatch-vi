@@ -1,0 +1,38 @@
+name: Live challenge
+description: Submit a recording of a challenge from the Verify page
+labels: ["challenge"]
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      description: The project's id, filled in by the Verify page
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: Code
+      placeholder: FLAMINGO-4821
+    validations:
+      required: true
+  - type: input
+    id: recording
+    attributes:
+      label: Recording
+      description: A link to the recording, at the moment the code appears. Never link to game files.
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Build
+      description: The commit or version shown in the terminal
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: Graphics card
+    validations:
+      required: true

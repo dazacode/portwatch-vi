@@ -53,6 +53,24 @@ GitHub's commit feeds (`.atom`) need no key but its robots.txt disallows them.
 `scripts/milestones.mjs` runs after the scout and compares scores with the last commit. Its history was
 rebuilt from git, with scores from before 24 November converted to the current scale.
 
+## Verification
+
+`lib/verification.mjs` holds the weights and the arithmetic. Two sources feed `data/evidence.json`:
+
+- `scripts/evidence.mjs` reads projects' issues after each scout run. Cheap checks first (independent
+  author, account age, graphics card, commit), then either text rules or, with `ANTHROPIC_API_KEY`,
+  Claude, up to 25 reports a run. A reading is dropped unless its quote is in the report, the commit
+  is in the repo, and it isn't a copy. Text rules only record successes: they misread failures. People
+  are stored as a short hash, to count each once.
+- Live challenges. `/verify` issues a code and three in-game actions per project, every ten minutes,
+  derived from `CHALLENGE_SECRET`, so nothing is stored. Submissions arrive as issues. **To approve
+  one: watch the recording, check the code, the actions and the terminal, then add the `verified`
+  label.** `challenge.yml` checks that the code was issued to that project and records it. Only the
+  repository owner's label counts. One counts per project per day; two days verify a stage.
+
+To remove bad evidence, delete it from `data/evidence.json` and edit or hide its source, or the next
+run finds it again.
+
 ## Rate limits
 
 Visitors can't cause any. Their browsers poll this site's cached snapshot, and video goes straight from

@@ -1,0 +1,47 @@
+name: Challenge
+
+# The owner watches the recording, then adds the "verified" label. The code is checked again here.
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+# Shares the scout's group: both write to data/.
+concurrency:
+  group: scout
+  cancel-in-progress: false
+
+jobs:
+  record:
+    if: github.event.label.name == 'verified' && github.event.sender.login == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - id: record
+        run: node scripts/challenge.mjs "$RUNNER_TEMP/reply.md"
+        env:
+          CHALLENGE_SECRET: ${{ secrets.CHALLENGE_SECRET }}
+      - name: Commit
+        run: |
+          git config user.name "viportlive-scout[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/evidence.json
+          if ! git diff --cached --quiet; then
+            git commit -m "challenge: issue ${{ github.event.issue.number }}"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Reply
+        run: gh issue comment "$NUMBER" -R "$GITHUB_REPOSITORY" -F "$RUNNER_TEMP/reply.md"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUMBER: ${{ github.event.issue.number }}

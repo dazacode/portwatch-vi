@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Ladder } from "@/components/ladder"
 import {
   Table,
@@ -12,11 +13,7 @@ import type { Standing } from "@/lib/tracker"
 import { cn } from "@/lib/utils"
 
 const status = (s: Standing) =>
-  s.nuked
-    ? "Taken offline"
-    : s.missing
-      ? "Repo not reachable"
-      : [s.isPrivate && "Private build", !s.verified && "Unverified"].filter(Boolean).join(", ")
+  s.nuked ? "Taken offline" : s.missing ? "Repo not reachable" : s.isPrivate ? "Private build" : ""
 
 export function StandingsTable({
   rows,
@@ -35,7 +32,8 @@ export function StandingsTable({
           <TableHead className="hidden text-right md:table-cell">FPS</TableHead>
           <TableHead className="hidden text-right md:table-cell">Commits, 7 days</TableHead>
           <TableHead className="hidden text-right md:table-cell">Stars</TableHead>
-          <TableHead className="pr-0 text-right">Score</TableHead>
+          <TableHead className="text-right">Claimed</TableHead>
+          <TableHead className="pr-0 text-right">Verified</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
@@ -45,18 +43,12 @@ export function StandingsTable({
             className={cn("[&>td]:align-top", s.nuked && "text-muted-foreground")}
           >
             <TableCell className="pl-0 whitespace-normal">
-              {s.url ? (
-                <a
-                  href={s.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-medium underline-offset-4 hover:underline"
-                >
-                  {s.name}
-                </a>
-              ) : (
-                <span className="font-medium">{s.name}</span>
-              )}
+              <Link
+                href={`/projects/${s.id}`}
+                className="font-medium underline-offset-4 hover:underline"
+              >
+                {s.name}
+              </Link>
               <span className="block text-xs text-muted-foreground">{status(s)}</span>
               {detailed && (
                 <span className="mt-1 block max-w-prose text-sm text-muted-foreground">
@@ -75,7 +67,8 @@ export function StandingsTable({
             <TableCell className="hidden text-right md:table-cell">
               {s.stars === null ? "–" : compact(s.stars)}
             </TableCell>
-            <TableCell className="pr-0 text-right font-medium">{s.score}%</TableCell>
+            <TableCell className="text-right text-muted-foreground">{s.score}%</TableCell>
+            <TableCell className="pr-0 text-right font-semibold">{s.verified}%</TableCell>
           </TableRow>
         ))}
       </TableBody>

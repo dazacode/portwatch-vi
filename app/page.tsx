@@ -5,19 +5,20 @@ import { StandingsTable } from "@/components/standings-table"
 import { getBroadcast } from "@/lib/broadcast"
 import { utcDay, utcTime } from "@/lib/format"
 import { getSnapshot } from "@/lib/live/snapshot"
-import { getAnswer, getChanges, getStandings, getTracker } from "@/lib/tracker"
+import { getAnswer, getChanges, getEvidence, getStandings, getTracker } from "@/lib/tracker"
 
 export const revalidate = 60
 
 const more = "text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground"
 
 export default async function Page() {
-  const [tracker, snapshot, broadcast] = await Promise.all([
+  const [tracker, evidence, snapshot, broadcast] = await Promise.all([
     getTracker(),
+    getEvidence(),
     getSnapshot(),
     getBroadcast(),
   ])
-  const standings = getStandings(tracker)
+  const standings = getStandings(tracker, evidence)
   const answer = getAnswer(tracker)
   const verdict = answer.done ? "Yes." : "Not properly yet."
   const projects = Object.fromEntries(standings.map((s) => [s.id, s.name]))

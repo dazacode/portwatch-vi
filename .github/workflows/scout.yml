@@ -37,6 +37,12 @@ jobs:
       - name: Record milestones
         run: node scripts/milestones.mjs
 
+      - name: Read independent test reports
+        run: node scripts/evidence.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
       - name: Follow the stream channels projects link to
         run: node scripts/channels.mjs
         env:

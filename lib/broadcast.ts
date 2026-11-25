@@ -3,8 +3,16 @@ import { plainTitle } from "@/lib/format"
 import type { Stream } from "@/lib/live/types"
 import { compareToLast, gain, headline, type Milestone, rate } from "@/lib/milestones"
 import { SITE } from "@/lib/site"
-import { getMilestones, getStandings, getTracker, type Tracker } from "@/lib/tracker"
+import {
+  getEvidence,
+  getMilestones,
+  getStandings,
+  getTracker,
+  LADDER,
+  type Tracker,
+} from "@/lib/tracker"
 import { TRAILERS } from "@/lib/trailers"
+import { VERIFIED_AT } from "@/lib/verification.mjs"
 import { lastCommits } from "@/scripts/lib/pulse.mjs"
 
 export type Commit = {
@@ -32,7 +40,10 @@ export type Slide =
       compare: string
       notes: string[]
     })
-  | (Base & { kind: "race"; rows: { id: string; name: string; score: number; stage: string }[] })
+  | (Base & {
+      kind: "race"
+      rows: { id: string; name: string; score: number; verified: number; next: string }[]
+    })
   | (Base & { kind: "commit"; commit: Commit })
   | (Base & { kind: "update"; text: string; date: string })
   | (Base & { kind: "trailer"; stream: Stream })
@@ -78,13 +89,17 @@ async function getCommits(tracker: Tracker): Promise<Commit[]> {
     .sort((a, b) => Date.parse(b.at) - Date.parse(a.at))
 }
 
-function milestoneSlide(m: Milestone, earlier: Milestone[], verified: boolean): Slide {
+function milestoneSlide(m: Milestone, earlier: Milestone[], sure: number): Slide {
   const last = earlier.findLast((e) => e.id === m.id) ?? null
   const { stars, size } = rate(m)
   const notes = [
     m.first && "First project to get this far",
     m.lead && "Took the lead",
-    !verified && "Not independently verified",
+    sure >= VERIFIED_AT
+      ? `Verified, ${Math.round(sure * 100)}% sure`
+      : sure > 0
+        ? `Not verified yet, ${Math.round(sure * 100)}% sure`
+        : "No independent evidence yet",
   ]
   return {
     kind: "milestone",
@@ -113,14 +128,20 @@ export function interleave<T>(...lists: T[][]): T[] {
 }
 
 export async function getBroadcast(): Promise<Broadcast> {
-  const [tracker, milestones] = await Promise.all([getTracker(), getMilestones()])
+  const [tracker, milestones, evidence] = await Promise.all([
+    getTracker(),
+    getMilestones(),
+    getEvidence(),
+  ])
   const commits = await getCommits(tracker)
-  const standings = getStandings(tracker).filter((s) => !s.nuked)
-  const verified = new Set(standings.filter((s) => s.verified).map((s) => s.id))
+  const standings = getStandings(tracker, evidence).filter((s) => !s.nuked)
+  const checks = new Map(standings.map((s) => [s.id, s.checks]))
+  const sure = (m: Milestone) =>
+    checks.get(m.id)?.find((c) => c.stage === m.stageTo)?.confidence ?? 0
   const scoreOf = new Map(standings.map((s) => [s.id, s.score]))
 
   const moves = milestones
-    .map((m, i) => milestoneSlide(m, milestones.slice(0, i), verified.has(m.id)))
+    .map((m, i) => milestoneSlide(m, milestones.slice(0, i), sure(m)))
     .slice(-6)
     .reverse()
   const race: Slide = {
@@ -128,7 +149,17 @@ export async function getBroadcast(): Promise<Broadcast> {
     id: "race",
     projectId: null,
     level: standings[0]?.score ?? 0,
-    rows: standings.slice(0, 5).map(({ id, name, score, stage }) => ({ id, name, score, stage })),
+    rows: standings.slice(0, 5).map(({ id, name, score, verified, checks: list }) => {
+      const gap = list.find((c) => !c.verified)
+      const label = LADDER.find((m) => m.key === gap?.stage)?.label.toLowerCase()
+      return {
+        id,
+        name,
+        score,
+        verified,
+        next: gap && gap.people ? `${Math.round(gap.confidence * 100)}% sure of “${label}”` : "",
+      }
+    }),
   }
   const pushes = commits.slice(0, 4).map(
     (commit): Slide => ({
