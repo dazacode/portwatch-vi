@@ -434,20 +434,20 @@
       "to": {
         "findings": [
           {
-            "text": "README: “not playable yet”, at 3 to 5 fps in the world. That is 4.4 to 4.9 standing still in a heavy scene and about 3 while driving, on one PC (RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM). Nothing has been run on NVIDIA or Intel.",
-            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4cbe9d76/README.md"
+            "text": "README: “not playable yet”, at 5 to 7 fps in the world. That is 5.4 to 6.7 standing still in a scene of 8,400 draws and less while driving, on one PC (RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM). An earlier version that day said 3 to 5. Nothing has been run on NVIDIA or Intel.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/a59f3e52/README.md"
           },
           {
             "text": "README: the world renders lit, with textures, people, vehicles, vegetation, water and sky, and saves load and store. Boot and menus run at 30 fps, as in VIctory. The repo has no screenshot or recording.",
             "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4cbe9d76/README.md"
           },
           {
-            "text": "Still broken, by its README: parts of moving vehicles are left behind or stretched across the screen, and distant trees are not drawn. The documented launch skips eight pipelines, which are those trees’ stand-ins.",
-            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4cbe9d76/README.md"
+            "text": "README: moving vehicles are whole and distant trees are drawn, both listed as broken in an earlier version that day. Still broken: with the in-game phone out the world is unlit (black) and the phone is an empty outline. About 380 draws a frame are dropped in the world for want of a host pipeline.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/a59f3e52/README.md"
           },
           {
-            "text": "The game’s ray-traced indirect light does not run. Its output is replaced by one constant (0.6), the same everywhere, which the code itself marks as a shortcut. Ray passes are off unless VICTORY_RAYS=1.",
-            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4cbe9d76/crates/victory-gpu/src/ambient.rs"
+            "text": "README: the game’s ray-traced indirect light does not run. A constant stands in for it (0.6 by default), with less in creases and under objects; the README calls that too much at night and too little at noon. With VICTORY_RAYS=1 the device is removed after a minute and a half.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/a59f3e52/README.md"
           },
           {
             "text": "A commit measures the main speed-up at one place: 225 to 72 ms of GPU time a frame, 2.6 to 3.9 fps, by moving about 9,300 small dispatches and barriers out of the draws. A later one changes its default to stop flicker; the README gives about 80 ms.",
@@ -466,15 +466,15 @@
             "url": "https://github.com/Belobug/VIctory-Belobug-AMD/commit/99569585"
           },
           {
-            "text": "It follows VIctory’s main up to 8e79c80 and is 492 commits past it, including merges of 63 numbered pull requests. About 100 commits are Belobug’s own. The README says no victory-fork, victory-amd or XCL code is in it.",
+            "text": "It follows VIctory’s main up to 8e79c80 and is 540 commits past it, including merges of about 70 numbered pull requests. About 125 commits are Belobug’s own. The README says no victory-fork, victory-amd or XCL code is in it.",
             "url": "https://github.com/Belobug/VIctory-Belobug-AMD/commits/main"
           },
           {
-            "text": "Neither the fork’s part of the README nor Belobug’s commits name a mission played or call it stable. The story and stability values are upstream’s owner’s.",
-            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4cbe9d76/README.md"
+            "text": "Neither the fork’s part of the README nor the titles of its commits name a mission played or call it stable. The story and stability values are upstream’s owner’s.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/a59f3e52/README.md"
           },
           {
-            "text": "With a grain of salt: upstream lists it #1 at 77.4%, saying the open world looks close to the retail game, that it plays through missions and that it rarely crashes. Its owner posted having seen the build, which “literally looks like the retail game just at 3 fps”. No recording is linked there.",
+            "text": "With a grain of salt: upstream lists it at 77.7%, saying the open world looks close to the retail game, that it plays through missions at about 4 fps and that it rarely crashes. Its owner posted having seen the build, which “literally looks like the retail game just at 3 fps”. Upstream now links a video, “First PC Trickshot”, which we have not viewed.",
             "url": "https://portwatch-vi.xyz/#effort-belobug"
           },
           {
@@ -486,17 +486,17 @@
             "url": "https://x.com/_Dany892_/status/2125549187882275262"
           },
           {
-            "text": "Recording, not named as Belobug’s: 57 seconds that Dany posted on 25 November, 10:03 UTC, as “the latest status of the GTA 6 PC port”. Jason walks, gets on a bike and rides through lit streets; areas in shade are near black. Task Manager, in French, shows an RX 9070 XT with 24 GB of graphics memory in use, which fits Belobug’s README. The picture changes about eight times a second, above the README’s 3 to 5; we could not confirm the clip’s speed, so fps stays at 3.",
+            "text": "Recording, not named as Belobug’s: 57 seconds that Dany posted on 25 November, 10:03 UTC, as “the latest status of the GTA 6 PC port”. Jason walks, gets on a bike and rides through lit streets; areas in shade are near black. Task Manager, in French, shows an RX 9070 XT with 24 GB of graphics memory in use, which fits Belobug’s README. The picture changes about eight times a second, above the README’s 5 to 7; we could not confirm the clip’s speed, so it does not move fps.",
             "url": "https://x.com/_Dany892_/status/2125530703010156995"
           }
         ],
-        "findingsSource": "From Belobug’s README, commits and code at 4cbe9d76, its public GitHub profile, upstream’s tracker and two clips posted on X by Dany, on 25 November. Code read as text, not run; clips watched."
+        "findingsSource": "From Belobug’s README, commits and code at 4cbe9d76, its README at a59f3e52 and later commit titles, its public GitHub profile, upstream’s tracker and two clips posted on X by Dany, on 25 November. Code read as text, not run; clips watched."
       }
     },
     {
       "id": "belobug",
       "from": {
-        "summary": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 3 fps and rarely crashes.",
+        "summary": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 4 fps and rarely crashes.",
         "highlights": [
           "Platform: AMD Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
           "The open world looks close to the retail game: lit, with textures, people, vehicles, vegetation, water and sky",
@@ -505,11 +505,11 @@
         ]
       },
       "to": {
-        "summary": "Belobug's VIctory fork for AMD Radeon, tested on one PC (RX 9070 XT, Ryzen 7 9800X3D). GTA VI's open world renders lit at 3 to 5 fps; its README says \"not playable yet\". A clip posted with its repo link shows driving. Upstream's owner says they have seen it run, that it plays missions and rarely crashes; no recording we found shows those two. Self-reported.",
+        "summary": "Belobug's VIctory fork for AMD Radeon, tested on one PC (RX 9070 XT, Ryzen 7 9800X3D). GTA VI's open world renders lit; its README reports 5 to 7 fps, less while driving, and says \"not playable yet\". A clip posted with its repo link shows driving. Upstream's owner says they have seen it run, that it plays missions and rarely crashes, and links a video we have not viewed. Self-reported.",
         "highlights": [
           "The open world renders lit, with textures, people, vehicles, vegetation, water and sky",
           "A 9-second clip posted with its repo link shows driving at about four frames a second",
-          "Upstream's word, no recording found: plays through missions, rarely crashes"
+          "Upstream's word: plays through missions, rarely crashes"
         ]
       }
     },
@@ -1244,11 +1244,6 @@
         "id": "belobug",
         "at": "2026-11-25",
         "reason": "Placed by us, not by score: in our view it leads the race with CGBJ. A clip posted with its repo link shows driving in a lit open world at about 4 fps."
-      },
-      {
-        "id": "zettrox",
-        "at": "2026-11-25",
-        "reason": "Placed by us, not by score, right behind Belobug."
       }
     ]
   },
