@@ -94,10 +94,16 @@ async function getCommits(tracker: Tracker): Promise<Commit[]> {
     return [] as Commit[]
   })
   const names = new Set([...tracker.efforts.filter((e) => !e.nuked).map((e) => e.id), "upstream"])
+  const seen = new Set<string>()
   return live
     .filter((c) => names.has(c.projectId))
     .map((c) => ({ ...c, message: plainTitle(c.message) }))
     .sort((a, b) => Date.parse(b.at) - Date.parse(a.at))
+    .filter((c) => {
+      if (seen.has(c.projectId)) return false
+      seen.add(c.projectId)
+      return true
+    })
 }
 
 export async function getWire(): Promise<WireItem[]> {
