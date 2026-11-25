@@ -641,6 +641,100 @@
           "text": "victory-ka1qux joins the race at 56.9% (“Playable”): an AMD-focused fork of hyphennn's victory-fork. Its README reports the world drawn and a 25-minute play session at about 2 fps on a Radeon RX 7800 XT (self-reported)."
         }
       ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "blockers": [
+          "No report or picture of a player in control; CRT’s release post calls it unplayable and unstable",
+          "About 3 fps in the heavy intro scene; 120 to 270 draws a frame are dropped",
+          "Shadowed areas come out dark; tuned for one machine and not reproduced by others"
+        ],
+        "highlights": [
+          "README: menus at a steady 30 fps; the world loads and the story intro starts",
+          "A posted shot shows Lucia lit up close, with skin, hair and fabric detail",
+          "76 open VIctory pull requests merged (one later reverted), plus CRT’s own commits"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 3,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": [],
+        "id": "dumbfloridamoron",
+        "name": "DumbFloridaMoron",
+        "branch": "main",
+        "basedOn": [
+          "victory-gta6",
+          "marvis"
+        ],
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "CRT's fork of VIctory and hyphennn's victory-fork, with many open VIctory pull requests merged. The world loads and opening scenes draw, at about 3 to 6.6 fps by its README. CRT calls it unplayable; nothing yet shows a player in control. Self-reported.",
+        "provenOn": null,
+        "findings": [
+          {
+            "text": "CRT's post of 24 November, 19:24 UTC, has a 122-second video: start-up, first-boot settings, a long load, then the story intro's titles and subtitles over an empty dark picture. The post puts the starting point at XCL merged with VIctory, and the target at mobile NVIDIA graphics.",
+            "url": "https://x.com/CRTkafa/status/2125309716708647421"
+          },
+          {
+            "text": "CRT's post of 24 November, 22:37 UTC, shows a page listing CRT's own posts: one of 24 November on NVIDIA work for GTA VI, one of 21 November on not reverse engineering it. It does not show the build.",
+            "url": "https://x.com/CRTkafa/status/2125358071455400335"
+          },
+          {
+            "text": "CRT's release post of 25 November, 00:49 UTC, calls it unplayable, unstable and experimental: menus at 30 fps, the world loads, the story starts, no ray tracing yet. Four shots show opening scenes with sky and characters, but missing body parts, floating geometry and mostly empty ground.",
+            "url": "https://x.com/CRTkafa/status/2125391375072157851"
+          },
+          {
+            "text": "CRT's post of 25 November, 08:17 UTC, “7hrs later”, shows Lucia in a cutscene, lit, with skin, hair and fabric detail. A garbled white patch sits behind her, and the rest of the room is mostly black. No frame rate is shown.",
+            "url": "https://x.com/CRTkafa/status/2125504043774820661"
+          },
+          {
+            "text": "README: 5.6 to 6.6 fps in the first world scenes and about 3 fps in the heavy intro scene, up from 0.5 to 1.9. We score the lower figure.",
+            "url": "https://github.com/crt4ever/DumbFloridaMoron/blob/f7db6293/README.md"
+          },
+          {
+            "text": "README: 120 to 270 draws a frame are dropped because two console pipeline methods are not written. The ray-tracing builder translates, but shadowed areas still come out dark.",
+            "url": "https://github.com/crt4ever/DumbFloridaMoron/blob/f7db6293/README.md"
+          },
+          {
+            "text": "README: all 26,142 GPU programs translate to DXIL. That says they convert, not that their output is right, and it earns no credit here.",
+            "url": "https://github.com/crt4ever/DumbFloridaMoron/blob/f7db6293/README.md"
+          },
+          {
+            "text": "Its history holds merges of 76 different VIctory pull requests; one of them, 436, was reverted later. 45 other commits are CRT's own work or ports from other forks.",
+            "url": "https://github.com/crt4ever/DumbFloridaMoron/commits/f7db6293"
+          }
+        ],
+        "findingsSource": "From the public README and commits at f7db6293, and CRT's four posts on X, 24 and 25 November. Code history read as text, not run.",
+        "repo": "crt4ever/DumbFloridaMoron",
+        "stats": {
+          "archived": false,
+          "createdAt": "2026-11-25T00:24:51Z",
+          "forks": 0,
+          "openIssues": 0,
+          "pushedAt": "2026-11-25T09:13:41Z",
+          "stars": 7,
+          "missing": false,
+          "commits7d": 100
+        }
+      },
+      "changes": [
+        {
+          "date": "2026-11-25",
+          "kind": "new",
+          "text": "DumbFloridaMoron joins the race at 40% (“In the world”): CRT’s fork of VIctory and victory-fork. Its README reports the world loading and the story intro at about 3 to 6.6 fps (self-reported)."
+        }
+      ]
     }
   ],
   "pick": {
@@ -650,6 +744,7 @@
   },
   "ignored": [],
   "decided": [
-    "ka1qux/victory-ka1qux"
+    "ka1qux/victory-ka1qux",
+    "crt4ever/DumbFloridaMoron"
   ]
 }
