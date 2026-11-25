@@ -1,19 +1,13 @@
 {
  "version": 1,
- "updated": "2026-11-25T17:31:55.358Z",
+ "updated": "2026-11-25T18:02:00.293Z",
  "now": {
-  "hash": "29c5aa000a8a337a",
-  "at": "2026-11-25T16:31:56.545Z",
+  "hash": "25ad98a92635a973",
+  "at": "2026-11-25T18:02:00.293Z",
   "by": "Pollinations, gpt-oss-20b",
   "points": [
    {
-    "text": "The linked article claims that Take-Two’s DMCA notice targets the Leonida repository and its 3,007 forks.",
-    "sources": [
-     "article:2026-11-24-take-two-dmca-leonida-forks"
-    ]
-   },
-   {
-    "text": "The linked article reports that GTA VI’s shaders start loading on omonkey’s build, streamed live on Rumble.",
+    "text": "The linked article reports that GTA VI's shaders start loading on omonkey's build, streamed live on Rumble.",
     "sources": [
      "article:2026-11-24-omonkey-shaders-prison"
     ]
@@ -107,13 +101,46 @@
  },
  "notes": {},
  "stories": {
+  "2026-11-25-gamerant.com-all-mod-shop-locations-vehicle-customization-in-gta-6": {
+   "hash": "95cfb4c47c6ef450",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "similar": 1,
+   "summary": "Game Rant lists all mod shop locations and vehicle customization in GTA 6.",
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-25-bsky.app-dmca-beschwerde-github-erkl-rt-take-down-der-gta-vi-re-kompilierung-leonida": {
+   "hash": "f2a5c9319644cfbe",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 58,
+   "summary": "Bluesky says GitHub explains a DMCA takedown of the GTA VI recompilation Leonida.",
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-25-mastodon.social-it-baffles-me-that-we-can-cloud-stream-on-playstation-portal-and-not-a-xbox-ally-gta6-http": {
+   "hash": "ecc8910c8325a72b",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": "A Mastodon post says cloud streaming works on PlayStation Portal but not Xbox Ally.",
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
+  "2026-11-25-bsky.app-gta-6-is-already-running-on-pc-with-ray-tracing-textured-environments-and-actual-gameplay-": {
+   "hash": "ba0628a798118df6",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 58,
+   "summary": "Bluesky says GTA 6 runs on PC with ray tracing, textured environments and gameplay, and Take-Two removed over 3.",
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
   "2026-11-25-news.google.com-amazon-offloads-the-tv-backlight-built-for-gta-vi-nights-34-off-and-it-works-with-ps5-xbox": {
    "hash": "78f97e8e995aee61",
-   "topic": "Community",
-   "importance": null,
-   "weight": 10,
-   "summary": null,
-   "by": null
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": "Gizmodo says Amazon discounts a TV backlight built for GTA VI nights, working with PS5, Xbox and PC.",
+   "by": "Kilo Gateway, reflection/beam-free"
   },
   "2026-11-25-bsky.app-gta-6-modders-are-trying-to-vibe-code-a-pc-port-and-its-not-going-well-https-www-revilluti": {
    "hash": "acbfc8f70df44e41",
@@ -149,12 +176,12 @@
   },
   "2026-11-25-mas.to-gta-6-take-two-gets-unofficial-pc-port-removed-from-github-https-www-heise-de-en-news-gta-": {
    "hash": "d6d7e7ac756bd51e",
-   "topic": "Official",
-   "importance": null,
-   "weight": 6,
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 48,
    "lead": "2026-11-24-heise.de-gta-6-take-two-gets-unofficial-pc-port-removed-from-github",
-   "summary": null,
-   "by": null
+   "summary": "Mastodon says Take-Two got an unofficial GTA 6 PC port removed from GitHub.",
+   "by": "Kilo Gateway, reflection/beam-free"
   },
   "2026-11-25-bsky.app-take-two-persigue-m-s-de-2-900-forks-de-gta-vi-en-github-20xxnoticias-com-gaming-take-gami": {
    "hash": "061a41b53082c413",
@@ -394,15 +421,6 @@
    "weight": 24,
    "summary": null,
    "by": null
-  },
-  "2026-11-25-news.google.com-gta-6-recompilers-and-vibe-coders-implore-ai-chatbots-to-work-faster-and-make-no-mistakes-": {
-   "hash": "8f3cbbffd6ecd87a",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 40,
-   "similar": 1,
-   "summary": "Recompilers and vibe-coders ask AI chatbots to work faster and make no mistakes.",
-   "by": "Kilo Gateway, reflection/beam-free"
   },
   "2026-11-25-bsky.app-gta-6-is-running-on-pc-days-after-console-launch-the-xbox-build-leaked-and-hackers-are-tra": {
    "hash": "450d7ee77c61d3b6",
@@ -744,13 +762,13 @@
    "summary": "First In-Game Footage for Grand Theft Auto 6 Unofficial PC Port",
    "by": "Pollinations, gpt-oss-20b"
   },
-  "2026-11-25-news.google.com-top-10-gta-vi-mods-that-fans-are-requesting": {
-   "hash": "adfd8c218a91f78d",
-   "topic": "Community",
-   "importance": null,
-   "weight": 10,
-   "summary": null,
-   "by": null
+  "2026-11-25-rockstarintel.com-top-10-gta-vi-mods-that-fans-are-requesting": {
+   "hash": "42afe1e74fc8fdd9",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": "Rockstar Intel lists top 10 GTA VI mods fans are requesting.",
+   "by": "Kilo Gateway, reflection/beam-free"
   },
   "2026-11-25-news.google.com-the-24-hour-gta-6-pc-port-is-a-warning-shot-not-a-product": {
    "hash": "221ebba35c40736a",
@@ -1285,6 +1303,15 @@
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
+  "2026-11-25-msn.com-gta-6-recompilers-and-vibe-coders-implore-ai-chatbots-to-work-faster-and-make-no-mistakes-": {
+   "hash": "cc7682d7a31a3cd1",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 40,
+   "similar": 1,
+   "summary": "Eurogamer says recompilers and vibe-coders urge AI chatbots to work faster and make no mistakes running GTA 6 on PC.",
+   "by": "Kilo Gateway, reflection/beam-free"
+  },
   "2026-11-25-bsky.app-das-projekt-leonida-sollte-die-geleakte-xbox-version-von-gta-6-nativ-auf-windows-bringen-n": {
    "hash": "105eff8ab73b1fdc",
    "topic": "Takedown",
@@ -1506,10 +1533,10 @@
   "2026-11-25-news.google.com-gta-6-launch-figures-expected-to-rise-when-pc-version-arrives": {
    "hash": "436be73a20355fea",
    "topic": "Community",
-   "importance": null,
-   "weight": 10,
+   "importance": 2,
+   "weight": 0,
    "summary": null,
-   "by": null
+   "by": "Kilo Gateway, reflection/beam-free"
   },
   "2026-11-25-news.google.com-gta-6-prologue-now-runs-on-pc-with-a-graphics-card-radeon-rx-7800-xt-at-2-fps": {
    "hash": "f381acb4e51a086e",
@@ -1999,7 +2026,7 @@
    "topic": "Community",
    "importance": null,
    "weight": 0,
-   "lead": "2026-11-25-news.google.com-gta-6-recompilers-and-vibe-coders-implore-ai-chatbots-to-work-faster-and-make-no-mistakes-",
+   "lead": "2026-11-25-msn.com-gta-6-recompilers-and-vibe-coders-implore-ai-chatbots-to-work-faster-and-make-no-mistakes-",
    "summary": null,
    "by": null
   },
@@ -2226,7 +2253,8 @@
    "hash": "4a396eea796341b2",
    "topic": "Port",
    "importance": 3,
-   "weight": 34,
+   "weight": 24,
+   "lead": "2026-11-25-gamerant.com-all-mod-shop-locations-vehicle-customization-in-gta-6",
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
@@ -2302,8 +2330,8 @@
    "hash": "e99e702b87f85e6a",
    "topic": "Leak",
    "importance": 5,
-   "weight": 66,
-   "similar": 3,
+   "weight": 64,
+   "similar": 2,
    "summary": null,
    "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
@@ -2389,6 +2417,14 @@
    "weight": 34,
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-24-news.google.com-i-felt-some-gta-6-story-missions-were-too-easy-so-i-asked-rockstar-if-thats-by-design-or-i": {
+   "hash": "d0753c0bc8642beb",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": "Yahoo Tech says a writer asked Rockstar if easy GTA 6 missions were by design or top-tier skill.",
+   "by": "Kilo Gateway, reflection/beam-free"
   },
   "2026-11-24-news.google.com-catastrophic-gta-6-leak-officially-kickstarts-race-for-pc-port": {
    "hash": "a707ce7e050b8001",
@@ -2743,12 +2779,12 @@
   },
   "2026-11-24-news.google.com-rockstar-shuts-down-unofficial-gta-6-pc-port-project": {
    "hash": "4dc8f9e5e6e524ab",
-   "topic": "Official",
-   "importance": null,
-   "weight": 14,
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 56,
    "lead": "2026-11-25-news.google.com-take-two-shuts-down-biggest-unofficial-gta-6-pc-port-over-leaked-xbox-files",
-   "summary": null,
-   "by": null
+   "summary": "eTeknix says Rockstar shut down an unofficial GTA 6 PC port project.",
+   "by": "Kilo Gateway, reflection/beam-free"
   },
   "2026-11-24-news.google.com-an-unofficial-gta-6-pc-port-is-making-progress-and-developers-have-the-first-in-game-visua": {
    "hash": "9a62b02b134adce0",
@@ -3371,12 +3407,12 @@
   },
   "2026-11-24-msn.com-unofficial-gta-6-pc-port-scrapped-as-rockstar-allegedly-takes-down-discord-server": {
    "hash": "6cb17613561412ea",
-   "topic": "Official",
-   "importance": null,
-   "weight": 14,
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 56,
    "lead": "2026-11-25-news.google.com-take-two-takes-down-unofficial-gta-6-pc-port-project-leonida",
-   "summary": null,
-   "by": null
+   "summary": "GamesRadar says an unofficial GTA 6 PC port was scrapped as Rockstar allegedly took down its Discord server.",
+   "by": "Kilo Gateway, reflection/beam-free"
   },
   "2026-11-24-dlcompare.com-cyberleek-pushes-gta-6-pc-efforts-forward-with-the": {
    "hash": "70b778890dd0beea",
@@ -3403,63 +3439,22 @@
    "lead": "2026-11-25-news.google.com-gta-6-pc-port-update-take-two-shuts-down-project-leonida-but-developers-refuse-to-give-up",
    "summary": null,
    "by": null
-  },
-  "2026-11-24-news.google.com-as-gta-6-pc-port-gets-closer-to-becoming-playable-rockstar-is-reportedly-taking-action-aga": {
-   "hash": "87f24b29185b3248",
-   "topic": "Takedown",
-   "importance": 5,
-   "weight": 66,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-24-news.google.com-gta-6-pc-release-date-when-is-gta-6-coming-to-pc": {
-   "hash": "94c33262a7f76b34",
-   "topic": "Community",
-   "importance": null,
-   "weight": 10,
-   "summary": null,
-   "by": null
-  },
-  "2026-11-23-msn.com-gta-6-console-patch-and-pc-version-discussion": {
-   "hash": "b94844f3b693acc0",
-   "topic": "Community",
-   "importance": null,
-   "weight": 10,
-   "summary": null,
-   "by": null
-  },
-  "2026-11-23-analyticsinsight.net-gta-6-leaker-releases-xbox-build-exe-raising-hopes-for-an-unofficial-pc-version": {
-   "hash": "7dea74301bff65a9",
-   "topic": "Official",
-   "importance": null,
-   "weight": 14,
-   "lead": "2026-11-24-news.google.com-gta-6-leaker-releases-xbox-build-executable-raising-fears-of-an-unofficial-pc-port",
-   "summary": null,
-   "by": null
-  },
-  "2026-11-23-news.google.com-gta-6-leaker-releases-xbox-build-executable-and-modders-say-a-pc-port-already-boots": {
-   "hash": "f99f1af5100fde31",
-   "topic": "Leak",
-   "importance": 5,
-   "weight": 54,
-   "summary": null,
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
   }
  },
  "projects": {
-  "victory-gta6": {
-   "hash": "4a8d86de8797cea3",
-   "count": 15,
-   "summary": "hyphennn's recent commits discuss frame rate measurements, copy queue fixes, indirect draw optimizations, descriptor sync, and page write visibility.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-25T16:02:02.054Z"
-  },
   "five-star-recomp": {
    "hash": "e739e153f4a3bcbd",
    "count": 15,
    "summary": "Five Star Recomp recent commits merge lane-world depth-UAV instrumentation and lane-dxilswitch, while pull requests add shader load formatting, hang watch diagnostics, and loop-cap counting.",
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-25T15:02:09.370Z"
+  },
+  "victory-gta6": {
+   "hash": "4a8d86de8797cea3",
+   "count": 15,
+   "summary": "hyphennn's recent commits discuss frame rate measurements, copy queue fixes, indirect draw optimizations, descriptor sync, and page write visibility.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-25T16:02:02.054Z"
   },
   "vitoriabr": {
    "hash": "8a3ccf62d7f3c74c",
