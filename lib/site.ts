@@ -10,3 +10,7 @@ export const SITE = {
   repo: "dazacode/portwatch-vi",
   upstream: "https://github.com/4lwayz/portwatch-vi",
 }
+
+/** The main PortWatch repository whose work this fork follows. */
+export const UPSTREAM_REPO = new URL(SITE.upstream).pathname.slice(1)
+export const UPSTREAM_NAME = "PortWatch (upstream)"

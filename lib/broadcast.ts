@@ -2,7 +2,7 @@ import { unstable_cache } from "next/cache"
 import { plainTitle } from "@/lib/format"
 import type { Stream } from "@/lib/live/types"
 import { compareToLast, gain, headline, type Milestone, rate } from "@/lib/milestones"
-import { SITE } from "@/lib/site"
+import { SITE, UPSTREAM_NAME, UPSTREAM_REPO } from "@/lib/site"
 import {
   type ActivityCommit,
   getActivity,
@@ -60,12 +60,16 @@ export type Broadcast = { at: string; slides: Slide[]; commits: Commit[] }
 const liveCommits = unstable_cache(
   async (): Promise<Commit[]> => {
     const tracker = await getTracker()
-    const live = await recentCommitsFast(tracker.efforts, 10).catch(() => [])
+    const targets = [
+      ...tracker.efforts,
+      { id: "upstream", name: UPSTREAM_NAME, repo: UPSTREAM_REPO },
+    ]
+    const live = await recentCommitsFast(targets, 10).catch(() => [])
     if (live.length) return live
     const token = process.env.GITHUB_TOKEN
     let pulse: Record<string, Omit<Commit, "projectId" | "name">> = {}
     if (token) {
-      pulse = await lastCommits(tracker.efforts, token)
+      pulse = await lastCommits(targets, token)
     } else {
       const res = await fetch(`https://raw.githubusercontent.com/${SITE.repo}/pulse/pulse.json`, {
         signal: AbortSignal.timeout(8000),
@@ -76,7 +80,7 @@ const liveCommits = unstable_cache(
         (await res.json()) as { commits: Record<string, Omit<Commit, "projectId" | "name">> }
       ).commits
     }
-    return tracker.efforts.flatMap((e) =>
+    return targets.flatMap((e) =>
       pulse[e.id] ? [{ ...pulse[e.id], projectId: e.id, name: e.name }] : []
     )
   },
@@ -89,7 +93,7 @@ async function getCommits(tracker: Tracker): Promise<Commit[]> {
     console.error("[broadcast] no commits:", err instanceof Error ? err.message : err)
     return [] as Commit[]
   })
-  const names = new Set(tracker.efforts.filter((e) => !e.nuked).map((e) => e.id))
+  const names = new Set([...tracker.efforts.filter((e) => !e.nuked).map((e) => e.id), "upstream"])
   return live
     .filter((c) => names.has(c.projectId))
     .map((c) => ({ ...c, message: plainTitle(c.message) }))

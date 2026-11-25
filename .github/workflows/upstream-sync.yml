@@ -1,0 +1,72 @@
+name: Upstream sync
+
+# Follows the main PortWatch repository. Merges it every 15 minutes so the fork's data stays current.
+# Conflicts in upstream-owned files are resolved in upstream's favour; anything else stops the run.
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+# Same group as the other data writers, so two jobs never push at once.
+concurrency:
+  group: data-write
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Merge upstream
+        run: |
+          git config user.name "viportlive-sync[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote add upstream https://github.com/4lwayz/portwatch-vi.git
+          git fetch --no-tags upstream main
+
+          if git merge-base --is-ancestor upstream/main HEAD; then
+            echo "Already up to date."
+            exit 0
+          fi
+
+          git merge --no-edit upstream/main || true
+          conflicts="$(git diff --name-only --diff-filter=U)"
+
+          if [ -n "$conflicts" ]; then
+            unhandled=0
+            for path in $conflicts; do
+              case "$path" in
+                # Upstream owns the tracker, the pinned message and its legacy files.
+                data/tracker.json | data/pinned.json | EDITOR.md | assets/js/*)
+                  git checkout --theirs -- "$path"
+                  git add -- "$path"
+                  ;;
+                *)
+                  echo "Unhandled conflict: $path"
+                  unhandled=1
+                  ;;
+              esac
+            done
+            if [ "$unhandled" = 1 ]; then
+              git merge --abort
+              echo "Left for a person."
+              exit 1
+            fi
+            git commit --no-edit
+          fi
+
+          if git diff --quiet HEAD@{1} HEAD 2>/dev/null; then
+            echo "Nothing to push."
+            exit 0
+          fi
+
+          git push origin HEAD:main
+          git push origin HEAD:live-front

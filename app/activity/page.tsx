@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Container } from "@/components/container"
 import { ago, utcDay } from "@/lib/format"
+import { UPSTREAM_REPO } from "@/lib/site"
 import {
   type ActivityCommit,
   getActivity,
@@ -20,8 +21,11 @@ export default async function Page() {
   const [activity, tracker] = await Promise.all([getActivity(), getTracker()])
   const names = new Map(getStandings(tracker, []).map((s) => [s.id, s.name]))
   const at = new Date().toISOString()
-  const pulls = activity.feed.filter(isPull)
-  const commits = activity.feed.filter((i): i is ActivityCommit => !isPull(i))
+  const pulls = activity.feed.filter(isPull).filter((p) => p.projectId !== "upstream")
+  const commits = activity.feed
+    .filter((i): i is ActivityCommit => !isPull(i))
+    .filter((c) => c.projectId !== "upstream")
+  const upstream = activity.projects.upstream
   const open = pulls.filter((p) => p.state === "open")
   const tracked = new Set(tracker.efforts.map((e) => e.repo?.toLowerCase()).filter(Boolean))
 
@@ -41,6 +45,42 @@ export default async function Page() {
             </>
           )}
         </p>
+
+        {upstream && (
+          <section className="mt-8">
+            <h2 className="border-b pb-1.5 text-lg font-semibold">
+              Main PortWatch (upstream){" "}
+              <span className="text-sm font-normal text-muted-foreground">
+                ({upstream.openPrs} open PRs)
+              </span>
+            </h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              The project this site is a fork of.{" "}
+              <a
+                href={`https://github.com/${UPSTREAM_REPO}`}
+                target="_blank"
+                rel="noreferrer"
+                className={link}
+              >
+                Open on GitHub
+              </a>
+              .
+            </p>
+            <ul>
+              {[...upstream.pulls, ...upstream.commits].slice(0, 6).map((item) => (
+                <li key={item.url} className="border-b py-2.5 text-sm">
+                  <a href={item.url} target="_blank" rel="noreferrer" className={link}>
+                    {"number" in item ? item.title : item.message}
+                  </a>
+                  <p className="mt-1 text-xs text-muted-foreground">
+                    {"number" in item ? `#${item.number} · ${item.state}` : "commit"} ·{" "}
+                    {item.at.slice(11, 16)} UTC
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         <section className="mt-8">
           <h2 className="border-b pb-1.5 text-lg font-semibold">

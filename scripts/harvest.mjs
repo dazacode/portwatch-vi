@@ -50,8 +50,11 @@ const note = (err) => {
 };
 
 const token = process.env.GITHUB_TOKEN;
+// The main PortWatch repository is followed like a project, though it is not scored as an effort.
+const UPSTREAM_REPO = '4lwayz/portwatch-vi';
 const efforts = tracker.efforts.filter((e) => e.repo && !e.nuked && !e.stats?.missing);
-const idByRepo = new Map(efforts.map((e) => [e.repo.toLowerCase(), e.id]));
+const targets = [...efforts, { id: 'upstream', repo: UPSTREAM_REPO, name: 'PortWatch (upstream)' }];
+const idByRepo = new Map(targets.map((e) => [e.repo.toLowerCase(), e.id]));
 const knownRepos = new Set([...idByRepo.keys()]);
 
 /* ---------- News and discussion ---------- */
@@ -167,7 +170,7 @@ summary.repos = repos.items.length;
 
 log('Reading commits and pull requests…');
 const projectActivity = token
-  ? await fetchProjectActivity(token, efforts, activityFile.projects ?? {}, log)
+  ? await fetchProjectActivity(token, targets, activityFile.projects ?? {}, log)
   : { projects: activityFile.projects ?? {}, errors: ['no GITHUB_TOKEN, skipped commits and pull requests'] };
 summary.errors.push(...projectActivity.errors);
 for (const p of Object.values(projectActivity.projects)) {
