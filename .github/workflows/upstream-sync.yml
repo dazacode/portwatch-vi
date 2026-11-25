@@ -25,6 +25,8 @@ jobs:
       - uses: actions/checkout@v5
         with:
           ref: main
+          # All of it: from a shallow copy, git can't tell that live-front is behind main, and refuses the push.
+          fetch-depth: 0
       - uses: actions/setup-node@v5
         with:
           node-version: 22
