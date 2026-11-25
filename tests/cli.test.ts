@@ -436,6 +436,17 @@ describe("pw news", () => {
     expect(checked.code).toBe(0)
   })
 
+  it("keeps a pipe inside the source title", async () => {
+    const piped = args.map((a) => (a === "GitHub|repo|https://github.com/new/repo" ? "Bluesky|Xbox Series X|S is out|https://bsky.app/x" : a))
+    const result = await call([...piped, "--json"])
+    expect(result.code).toBe(0)
+    expect((await readOverrides()).news[0].sources[0]).toEqual({
+      outlet: "Bluesky",
+      title: "Xbox Series X|S is out",
+      url: "https://bsky.app/x",
+    })
+  })
+
   it("needs a source", async () => {
     const without = args.slice(0, args.indexOf("--source"))
     const result = await call([...without, "--json"])

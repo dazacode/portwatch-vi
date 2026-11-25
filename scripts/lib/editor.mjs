@@ -299,7 +299,7 @@ export function projectFor(query, efforts, leadOf) {
  * an unbacked URL or a score that falls without a withdrawal reason is skipped, never guessed at.
  * `pw(args)` must resolve to the CLI's JSON envelope.
  */
-export async function applyPlan(plan, { pw, efforts, leads, findingsByProject = new Map(), today, dry = false, log = () => {} }) {
+export async function applyPlan(plan, { pw, efforts, leads, findingsByProject = new Map(), existingPick = null, today, dry = false, log = () => {} }) {
   const applied = [];
   const skipped = [];
   const leadOf = new Map(leads.map((l) => [l.id, l]));
@@ -462,6 +462,10 @@ export async function applyPlan(plan, { pw, efforts, leads, findingsByProject = 
     const project = projectFor(plan.pick.project, efforts, leadOf);
     const label = `pick ${plan.pick.project}`;
     if (!project) skip(label, 'no such project');
+    else if (project.nuked) skip(label, 'nuked projects are already put last');
+    else if (existingPick && existingPick.id !== project.id) {
+      skip(label, `"${existingPick.id}" is already placed; the owner's placement stands`);
+    } else if (existingPick) skip(label, 'already the pick');
     else {
       const result = await perform(label, ['pick', 'set', project.id, '--reason', oneLine(plan.pick.reason, 200)]);
       if (!result.ok) skip(label, result.why);
@@ -513,6 +517,7 @@ Hard rules:
 6. It is normal to return empty lists. Do not pad.
 7. A candidate is ignored unless its README shows a real GTA VI effort; then track it and include an effort object with name, summary, a tier, highlights and blockers from the README, and the first gta values the README plainly reports. A tool is only tracked as a tool when flagged so.
 8. Decide every candidate in the brief. Use a lead on a reviewed project for a finding whenever it plainly says something about that project. Only leave both empty when there is truly nothing.
+9. The pick is a placement, never a score. Set it only when none is placed; the owner's placement stands. Nuked projects are already put last.
 
 JSON shape:
 {"note":"one line on what you did",

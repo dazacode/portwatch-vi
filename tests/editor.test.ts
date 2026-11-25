@@ -313,6 +313,21 @@ describe("applyPlan", () => {
     expect(result.skipped[0]).toContain("effort object")
   })
 
+  it("keeps an existing pick", async () => {
+    const { pw } = fake()
+    const plan = { pick: { project: "alpha", reason: "why" } }
+    const result = await applyPlan(plan as never, {
+      pw,
+      efforts,
+      leads,
+      findingsByProject,
+      existingPick: { id: "beta", at: "2026-11-24", reason: "owner" } as never,
+      today: "2026-11-25",
+    })
+    expect(result.applied).toHaveLength(0)
+    expect(result.skipped[0]).toContain("already placed")
+  })
+
   it("writes an effort file for a track and drops an empty gta", async () => {
     const { readFile } = await import("node:fs/promises")
     let written: Record<string, unknown> = {}

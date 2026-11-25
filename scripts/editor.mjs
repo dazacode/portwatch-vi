@@ -199,6 +199,7 @@ async function main() {
   const user = [
     `Today is ${today} (UTC). Last editor run: ${editorState.lastRun ?? 'never'}.`,
     `Articles already written by this editor today: ${ARTICLE_LIMIT - remainingArticles} of ${ARTICLE_LIMIT}. ${remainingArticles ? 'Write one for a major event (a takedown wave, a confirmed leak, a legal step) when a lead supports it; 3 or 4 paragraphs, 120-220 words.' : ''}`,
+    `PICK: ${overrides.pick ? `"${overrides.pick.id}" is already placed first; leave it unless the plan clearly replaces it` : 'none is placed; you may place one'}.`,
     '',
     'CANDIDATES (decide ignore, or track only when a full effort is justified):',
     candidates.length ? candidateBlocks.join('\n') : '- none',
@@ -232,6 +233,7 @@ async function main() {
     efforts: state.effective.efforts,
     leads: shown,
     findingsByProject,
+    existingPick: overrides.pick,
     today,
     dry: dryRun,
     log,

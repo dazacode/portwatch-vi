@@ -205,7 +205,11 @@ const uniqueId = (state, id) =>
 
 const parseSources = (values) =>
   values.map((raw) => {
-    const [outlet, title, url] = raw.split('|');
+    // The title may itself contain a pipe ("Xbox Series X|S"), so only the ends are fixed.
+    const parts = raw.split('|');
+    const url = parts.pop();
+    const outlet = parts.shift();
+    const title = parts.join('|');
     if (!outlet || !title || !url || !/^https:\/\//.test(url)) {
       throw invalid(`A source is "Outlet|Title|https://url", not "${raw}".`);
     }
