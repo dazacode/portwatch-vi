@@ -16,6 +16,34 @@
   },
   "news": [
     {
+      "id": "2026-11-25-belobug-way-ahead",
+      "date": "2026-11-25",
+      "category": "Port",
+      "title": "We've seen Belobug's AMD build, and it's way ahead",
+      "dek": "GTA VI's open world looks close to the retail game on an all-AMD PC, and it plays through missions. It runs at about 3 fps, but nothing else on our board looks like it.",
+      "body": [
+        "We've seen Belobug's build of GTA VI running, and the PortWatch team thinks it's way ahead of every other build we track. The open world renders lit, with textures, people, vehicles, vegetation, water and sky, and it looks close to the retail game, just very slowly. It plays through missions, and it rarely crashes.",
+        "It went straight to #1 on our board at 77.4%, more than 13 points clear of ZETTROX's 64.2%, which led until this morning. Its rendering is rated 0.85 on our scale, the highest we've given any build, and its story progress 0.5 (\"First act\"). The next best picture, suri's private build, is at 0.8; ZETTROX's, which draws anything in shadow black, is at 0.3.",
+        "It's built for AMD Radeon, while ZETTROX's, the previous leader, is tuned for NVIDIA. Belobug runs it on a Radeon RX 9070 XT 16 GB with a Ryzen 7 9800X3D, 64 GB of RAM and Windows 11. It's a fork of Marvis's VIctory, following its main branch plus upstream pull requests, and its README says no code from hyphennn's victory-fork is in it. Belobug's own fixes include a stand-in for the game's ray-traced indirect light, which left leaves magenta and indoor scenes in coloured blocks, a fix for lines along every triangle on car paint, glass and skin, and a change that cut the GPU time of one heavy scene from 225 to about 80 milliseconds a frame.",
+        "It isn't fast. The README puts it at 3 to 5 frames per second, about 3 while driving, and still calls it \"not playable yet\" for that reason. Parts of moving vehicles get left behind or stretched, distant trees aren't drawn, shade is flat, and it needs about 22 GB of RAM and more video memory than a 16 GB card has. It has run on one PC so far; nobody has tried it on NVIDIA or Intel.",
+        "The code is public, as Belobug/VIctory-Belobug-AMD, under VIctory's GPL-3.0 licence, so others with AMD cards can try it. It contains no game files: you need your own copy of the game."
+      ],
+      "sources": [
+        {
+          "outlet": "GitHub",
+          "title": "VIctory-Belobug-AMD, Belobug's build and its README",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD"
+        },
+        {
+          "outlet": "GitHub",
+          "title": "VIctory, the layer it builds on",
+          "url": "https://github.com/Marvisak/VIctory"
+        }
+      ],
+      "image": null,
+      "by": "report"
+    },
+    {
       "id": "2026-11-25-zettrox-no-crashes",
       "date": "2026-11-25",
       "category": "Port",
@@ -718,7 +746,7 @@
       "tier": "tracked",
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 3 fps and rarely crashes.",
+      "summary": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 3 fps and rarely crashes.",
       "highlights": [
         "Platform: AMD Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
         "The open world looks close to the retail game: lit, with textures, people, vehicles, vegetation, water and sky",
@@ -742,7 +770,7 @@
         "fps": 3,
         "stability": 0.7
       },
-      "verification": "self-reported",
+      "verification": "portwatch",
       "stats": {
         "stars": 6,
         "forks": 2,
@@ -6459,6 +6487,11 @@
       "date": "2026-11-25",
       "kind": "new",
       "text": "Belobug takes #1 at 77.4% (“Playable”) with Belobug/VIctory-Belobug-AMD, a VIctory fork for AMD Radeon. On a Radeon RX 9070 XT and Ryzen 7 9800X3D, GTA VI's open world looks close to the retail game, and it plays through missions at about 3 fps, rarely crashing."
+    },
+    {
+      "date": "2026-11-25",
+      "kind": "new",
+      "text": "Belobug's build is now marked “Verified by PortWatch”: we've seen it running, and we think it's way ahead of every other build."
     },
     {
       "date": "2026-11-25",
