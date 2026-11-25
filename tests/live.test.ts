@@ -28,30 +28,41 @@ describe("isPortStream", () => {
   })
 })
 
-const card = (status: string, title = "GTA 6 &amp; chill") => `
-  <div class="videostream thumbnail__grid--item" data-video-id="1">
-    <img class="thumbnail__image " draggable="false" src="x.jpg" alt="${title}">
-    <div class="videostream__badge videostream__status videostream__status--${status}">x</div>
-    <a class="videostream__link link" draggable="false" href="/v7abc-gta.html?e9s=src"></a>
-  </div>`
-const page = (cards: string) => `<title>someone</title><nav id="main-menu"></nav>${cards}`
+const video = (over: object = {}) => ({
+  object_type: "video",
+  title: "GTA 6 &amp; chill",
+  relative_url: "/v7abc-gta.html?e9s=src",
+  live: true,
+  live_placeholder: false,
+  ...over,
+})
+const page = (...items: object[]) =>
+  `<title>someone</title><nav id="main-menu"></nav><rum-videos-grid>
+    <script type="application/json">
+        ${JSON.stringify({ items })}
+    </script></rum-videos-grid>`
 
 describe("parseRumble", () => {
-  it("reads the live card and skips finished ones", () => {
-    expect(parseRumble(page(card("duration", "old") + card("live")))).toEqual({
+  it("reads the live video and skips finished ones", () => {
+    expect(parseRumble(page(video({ live: false, title: "old" }), video()))).toEqual({
       title: "GTA 6 & chill",
       path: "/v7abc-gta.html",
     })
   })
   it("is null when nothing is live", () => {
-    expect(parseRumble(page(card("duration")))).toBeNull()
-    expect(parseRumble(page(card("upcoming")))).toBeNull()
+    expect(parseRumble(page())).toBeNull()
+    expect(parseRumble(page(video({ live: false })))).toBeNull()
+    expect(parseRumble(page(video({ live_placeholder: true })))).toBeNull()
   })
-  it("ignores live class names that only appear in CSS", () => {
-    expect(parseRumble(page("<style>.videostream__status--live{}</style>"))).toBeNull()
+  it("skips items that aren't videos", () => {
+    expect(parseRumble(page({ object_type: "ad" }, video()))?.path).toBe("/v7abc-gta.html")
   })
-  it("is undefined for a page that isn't a channel, such as a bot challenge", () => {
+  it("is undefined when there is no video list, such as a bot challenge or a new layout", () => {
     expect(parseRumble("<html>Just a moment...</html>")).toBeUndefined()
+    expect(parseRumble('<title>someone</title><nav id="main-menu"></nav>')).toBeUndefined()
+    expect(
+      parseRumble('<rum-videos-grid><script type="application/json">{</script></rum-videos-grid>')
+    ).toBeUndefined()
   })
 })
 

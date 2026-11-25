@@ -1,3 +1,4 @@
+import { z } from "zod"
 import { isLure } from "./filter"
 import { getText } from "./http"
 import type { Channel, SourceResult, Stream } from "./types"
@@ -17,14 +18,37 @@ const decode = (s: string) =>
     .replace(/&amp;/g, "&")
     .trim()
 
-/** The live stream on a channel page: null when offline, undefined when the page isn't a channel page. */
+// The page carries its video list as JSON. Other kinds of item can sit in it, so each is read alone.
+const Grid = z.object({ items: z.array(z.unknown()) })
+const Live = z.object({
+  title: z.string().min(1),
+  relative_url: z.string().regex(/^\/v/),
+  live: z.literal(true),
+  live_placeholder: z.literal(false).optional(),
+})
+
+function grid(html: string) {
+  const raw = html.match(
+    /<rum-videos-grid[^>]*>\s*<script type="application\/json">([\s\S]*?)<\/script>/
+  )?.[1]
+  if (!raw) return undefined
+  try {
+    return Grid.safeParse(JSON.parse(raw)).data?.items
+  } catch {
+    return undefined
+  }
+}
+
+/**
+ * The live stream on a channel page: null when offline, undefined when the page has no video list to
+ * read, so a bot challenge or a new page layout shows as "not known" and not as offline.
+ */
 export function parseRumble(html: string): { title: string; path: string } | null | undefined {
-  if (!/<title>/.test(html) || !/main-menu/.test(html)) return undefined
-  for (const card of html.split(/class="videostream thumbnail__grid--item/).slice(1)) {
-    if (!/class="[^"]*\bvideostream__status--live\b/.test(card)) continue
-    const title = card.match(/<img\s[^>]*?\balt="([^"]*)"/)?.[1]
-    const path = card.match(/class="videostream__link[^>]*?href="(\/v[^"?]+)/)?.[1]
-    if (title && path) return { title: decode(title), path }
+  const items = grid(html)
+  if (!items) return undefined
+  for (const item of items) {
+    const live = Live.safeParse(item).data
+    if (live) return { title: decode(live.title), path: live.relative_url.replace(/[?#].*$/, "") }
   }
   return null
 }
