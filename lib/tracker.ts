@@ -1,10 +1,12 @@
 import localChannels from "@/data/channels.json"
+import localMilestones from "@/data/milestones.json"
 import localTracker from "@/data/tracker.json"
 import { plainTitle } from "@/lib/format"
 import type { Channel } from "@/lib/live/types"
+import type { Milestone } from "@/lib/milestones"
 import { isPrivateBuild, MILESTONES, overall, scoreEffort } from "@/lib/scoring.mjs"
 
-type Effort = {
+export type Effort = {
   id: string
   name: string
   repo: string | null
@@ -17,7 +19,7 @@ type Effort = {
   stats: { stars?: number; commits7d?: number | null; missing?: boolean }
 }
 
-type Tracker = {
+export type Tracker = {
   updated: string
   efforts: Effort[]
   changes: { date: string; kind: string; text: string }[]
@@ -53,6 +55,7 @@ async function load<T>(file: string, fallback: T): Promise<T> {
 }
 
 export const getTracker = () => load("tracker.json", localTracker as unknown as Tracker)
+export const getMilestones = () => load("milestones.json", localMilestones as Milestone[])
 export const getChannels = () => load("channels.json", localChannels as Channel[])
 
 export const LADDER = MILESTONES.filter((m) => m.key !== "groundwork" && m.key !== "complete")

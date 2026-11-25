@@ -137,3 +137,11 @@
     @apply font-sans;
     }
 }
+
+@keyframes grow {
+  from { transform: scaleX(0); }
+}
+
+@keyframes ticker {
+  to { transform: translateX(-50%); }
+}

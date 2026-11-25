@@ -34,6 +34,9 @@ jobs:
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
 
+      - name: Record milestones
+        run: node scripts/milestones.mjs
+
       - name: Follow the stream channels projects link to
         run: node scripts/channels.mjs
         env:

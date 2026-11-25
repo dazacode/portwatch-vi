@@ -26,3 +26,12 @@ export const plainTitle = (text: string) =>
     .replace(/\p{Extended_Pictographic}|\uFE0F|\u200D/gu, "")
     .replace(/\s+/g, " ")
     .trim()
+
+export function ago(from: string, to: string) {
+  const minutes = Math.max(0, Math.floor((Date.parse(to) - Date.parse(from)) / 60000))
+  if (minutes < 1) return "just now"
+  if (minutes < 60) return `${minutes} min ago`
+  const hours = Math.floor(minutes / 60)
+  if (hours < 48) return `${hours} h ago`
+  return `${Math.floor(hours / 24)} days ago`
+}

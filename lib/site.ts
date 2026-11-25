@@ -7,5 +7,6 @@ export const SITE = {
     (process.env.VERCEL_PROJECT_PRODUCTION_URL
       ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
       : "http://localhost:3000"),
+  repo: "dazacode/portwatch-vi",
   upstream: "https://github.com/4lwayz/portwatch-vi",
 }

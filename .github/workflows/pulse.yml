@@ -1,0 +1,38 @@
+name: Pulse
+
+# The last commit of every project, for the front page. Kept on its own branch as a single commit that
+# is replaced each time, so main's history stays readable.
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pulse
+  cancel-in-progress: true
+
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/pulse.mjs "$RUNNER_TEMP/pulse.json"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Replace the pulse branch
+        run: |
+          git config user.name "viportlive-scout[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -q --orphan pulse
+          git rm -rfq .
+          cp "$RUNNER_TEMP/pulse.json" pulse.json
+          git add pulse.json
+          git commit -qm "pulse"
+          git push -qf origin pulse

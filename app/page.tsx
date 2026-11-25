@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { LiveDeck } from "@/components/live/live-deck"
 import { StandingsTable } from "@/components/standings-table"
+import { getBroadcast } from "@/lib/broadcast"
 import { utcDay, utcTime } from "@/lib/format"
 import { getSnapshot } from "@/lib/live/snapshot"
 import { getAnswer, getChanges, getStandings, getTracker } from "@/lib/tracker"
@@ -10,14 +11,18 @@ export const revalidate = 60
 const more = "text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground"
 
 export default async function Page() {
-  const [tracker, snapshot] = await Promise.all([getTracker(), getSnapshot()])
+  const [tracker, snapshot, broadcast] = await Promise.all([
+    getTracker(),
+    getSnapshot(),
+    getBroadcast(),
+  ])
   const standings = getStandings(tracker)
   const answer = getAnswer(tracker)
   const projects = Object.fromEntries(standings.map((s) => [s.id, s.name]))
 
   return (
     <>
-      <p className="py-4 text-sm">
+      <h1 className="py-4 text-sm font-normal">
         <span className="font-medium">
           Does GTA VI run on PC? {answer.done ? "Yes." : "Not properly yet."}
         </span>{" "}
@@ -25,9 +30,9 @@ export default async function Page() {
           The furthest any project claims is “{answer.furthest.toLowerCase()}”.
           {answer.leader && ` ${answer.leader.name} leads at ${answer.leader.score}%.`}
         </span>
-      </p>
+      </h1>
 
-      <LiveDeck initial={snapshot} projects={projects} />
+      <LiveDeck initial={snapshot} broadcast={broadcast} projects={projects} />
 
       <section className="mt-12" aria-labelledby="standings">
         <div className="mb-2 flex items-baseline justify-between">

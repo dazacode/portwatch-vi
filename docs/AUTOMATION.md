@@ -43,6 +43,16 @@ writing to Upstash Redis.
 | Kick     | Free app | v2 livestreams by category, channels by slug                 | [Spec](https://api.kick.com/swagger/doc.yaml)                                                                                                                     |
 | Rumble   | None     | Public channel page                                          | No public API, and no title search. Pages are allowed by its robots.txt, `/api/` isn't. No embeds: the URL id isn't the embed id                                  |
 
+## Commits and milestones
+
+`pulse.yml` asks GitHub for every project's last commit in one GraphQL request, with the token Actions
+gets for free, and replaces the single commit on the `pulse` branch. GitHub runs it about every 10
+minutes, often late. Set `GITHUB_TOKEN` on Vercel and the site asks for itself each minute instead.
+GitHub's commit feeds (`.atom`) need no key but its robots.txt disallows them.
+
+`scripts/milestones.mjs` runs after the scout and compares scores with the last commit. Its history was
+rebuilt from git, with scores from before 24 November converted to the current scale.
+
 ## Rate limits
 
 Visitors can't cause any. Their browsers poll this site's cached snapshot, and video goes straight from

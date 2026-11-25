@@ -1,5 +1,8 @@
-/** Decorative and original: a low sun over the bay, drawn in the theme's own colours. */
-export function Sunset({ className }: { className?: string }) {
+/**
+ * Decorative and original: the sun over the bay, drawn in the theme's own colours. It rises with the
+ * score, from mostly set at 0 to clear of the water at 100.
+ */
+export function Sunset({ className, level = 50 }: { className?: string; level?: number }) {
   return (
     <svg
       aria-hidden="true"
@@ -22,7 +25,16 @@ export function Sunset({ className }: { className?: string }) {
         </clipPath>
       </defs>
       <rect width="960" height="372" fill="url(#sky)" />
-      <circle cx="640" cy="262" r="140" fill="url(#disc)" clipPath="url(#slats)" />
+      <g clipPath="url(#slats)">
+        <circle
+          cx="640"
+          cy="262"
+          r="140"
+          fill="url(#disc)"
+          className="transition-transform duration-1000 ease-out motion-reduce:transition-none"
+          style={{ transform: `translateY(${Math.round(70 - level * 1.4)}px)` }}
+        />
+      </g>
       <path
         fill="var(--shade)"
         opacity=".45"

@@ -22,29 +22,15 @@ export function Stage({
   stream,
   at,
   about,
+  autoPlay,
 }: {
-  stream: Stream | null
+  stream: Stream
   at: string
   about?: string
+  autoPlay: boolean
 }) {
   // The player loads on request, so no platform is contacted before someone asks to watch.
-  const [playing, setPlaying] = useState(false)
-
-  if (!stream) {
-    return (
-      <section
-        aria-label="Stream"
-        className="relative isolate flex min-h-56 flex-col justify-end overflow-hidden p-5 text-white sm:p-8 lg:aspect-video"
-      >
-        <Backdrop />
-        <p className="text-lg font-medium">Nobody is live right now</p>
-        <p className="mt-1 max-w-md text-sm text-white/85">
-          This page checks every minute while it’s open. A stream shows up here as soon as it
-          starts.
-        </p>
-      </section>
-    )
-  }
+  const [playing, setPlaying] = useState(autoPlay)
 
   const platform = PLATFORM_LABEL[stream.platform]
   const facts = [
@@ -87,7 +73,7 @@ export function Stage({
         )}
       </div>
       <div className="mt-3 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
-        <h1 className="text-lg font-semibold">{stream.name}</h1>
+        <h2 className="text-lg font-semibold">{stream.name}</h2>
         <p className="text-sm text-muted-foreground">
           {facts.join(", ")}
           {stream.embed && (
