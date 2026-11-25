@@ -1,10 +1,10 @@
 name: Pulse
 
-# The last commit of every project, for the front page. Kept on its own branch as a single commit that
-# is replaced each time, so main's history stays readable.
+# Fallback only: the site reads GitHub's Atom feeds directly now. This branch is a single commit
+# replaced each time, in case GitHub blocks the feeds.
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch: {}
 
 permissions:

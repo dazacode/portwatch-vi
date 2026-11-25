@@ -68,13 +68,37 @@ writing to Upstash Redis.
 
 ## Commits and milestones
 
-`pulse.yml` asks GitHub for every project's last commit in one GraphQL request, with the token Actions
-gets for free, and replaces the single commit on the `pulse` branch. GitHub runs it about every 10
-minutes, often late. Set `GITHUB_TOKEN` on Vercel and the site asks for itself each minute instead.
-GitHub's commit feeds (`.atom`) need no key but its robots.txt disallows them.
+The site asks GitHub for every project's last commit itself, from the public Atom feed of each
+repository's default branch. Atom needs no key and no API quota, and a push shows up in seconds.
+`/api/pulse` is regenerated at most every ten seconds however many people are watching, and the
+front-page list polls it every 15 seconds. That is the whole realtime path: no cron and no branch
+in between.
+
+`pulse.yml` still writes the same commit list to the `pulse` branch as a fallback, in case GitHub
+blocks Atom reads. It runs every five minutes. If `GITHUB_TOKEN` is set on Vercel, the API falls
+back to one GraphQL request instead of the branch. GitHub's robots.txt disallows the `.atom` paths;
+browsers and feed readers have always fetched them anyway.
 
 `scripts/milestones.mjs` runs after the scout and compares scores with the last commit. Its history was
 rebuilt from git, with scores from before 24 November converted to the current scale.
+
+## Breaking, without a model
+
+The front page's breaking wire is a small rule engine (`lib/wire.ts`) over the same realtime commit
+feed and the harvested pull requests. It raises, in order of severity:
+
+- a **burst**: three or more commits from one project inside twenty minutes (cuts straight in);
+- a **signal**: a recent commit message mentions a milestone word such as menu, playable, world,
+  boot, frame rate, saving or a crash;
+- a **return**: a project's first commit after at least twelve hours of silence;
+- an opened or merged **pull request**.
+
+An item keeps its id for fifteen minutes, so the same event cannot cut in twice. There is no
+writing and no review: the slide quotes the commit subject and links to it. The feed behind it is
+the Atom one from the section above, and `/api/broadcast` is rebuilt every fifteen seconds.
+
+Scoring milestones still come from the scout every three hours and can lag. The wire is what
+happened just now, and the two are labelled differently ("Milestone" versus "Breaking").
 
 ## Verification
 

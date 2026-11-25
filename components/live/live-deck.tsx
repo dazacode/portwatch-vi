@@ -21,7 +21,7 @@ async function fetcher<T>(url: string): Promise<T> {
   return res.json()
 }
 
-const REFRESH = { refreshInterval: 45_000, keepPreviousData: true }
+const REFRESH = { refreshInterval: 20_000, keepPreviousData: true }
 
 /** Reads and writes ?watch=, so a link opens on the same stream. Null means the show is on. */
 function useWatched() {

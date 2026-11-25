@@ -91,6 +91,8 @@ const more = (slide: Slide) => {
     return { href: slide.commit.url, label: "See the commit", external: true }
   if (slide.kind === "trailer")
     return { href: slide.stream.url, label: "Open on YouTube", external: true }
+  if (slide.kind === "wire")
+    return { href: slide.item.url, label: "See the source", external: true }
   return { href: "/standings", label: "See the standings", external: false }
 }
 
@@ -122,7 +124,11 @@ export function Show({
 
   // A new milestone cuts straight in, like breaking news. Commits arrive too often for that.
   useEffect(() => {
-    const fresh = slides.find((s) => s.kind === "milestone" && !seen.current.has(s.id))
+    const fresh = slides.find(
+      (s) =>
+        !seen.current.has(s.id) &&
+        (s.kind === "milestone" || (s.kind === "wire" && s.item.severity === 3))
+    )
     for (const s of slides) seen.current.add(s.id)
     if (fresh) setCurrentId(fresh.id)
   }, [slides])

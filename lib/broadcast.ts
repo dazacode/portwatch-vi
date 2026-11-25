@@ -4,16 +4,21 @@ import type { Stream } from "@/lib/live/types"
 import { compareToLast, gain, headline, type Milestone, rate } from "@/lib/milestones"
 import { SITE } from "@/lib/site"
 import {
+  type ActivityCommit,
+  getActivity,
   getEvidence,
   getMilestones,
   getStandings,
   getTracker,
   LADDER,
+  type PullRequest,
   type Tracker,
 } from "@/lib/tracker"
 import { TRAILERS } from "@/lib/trailers"
 import { VERIFIED_AT } from "@/lib/verification.mjs"
-import { lastCommits } from "@/scripts/lib/pulse.mjs"
+import type { WireItem } from "@/lib/wire"
+import { wireItems } from "@/lib/wire"
+import { lastCommits, recentCommitsFast } from "@/scripts/lib/pulse.mjs"
 
 export type Commit = {
   projectId: string
@@ -47,47 +52,55 @@ export type Slide =
   | (Base & { kind: "commit"; commit: Commit })
   | (Base & { kind: "update"; text: string; date: string })
   | (Base & { kind: "trailer"; stream: Stream })
+  | (Base & { kind: "wire"; item: WireItem })
 
 export type Broadcast = { at: string; slides: Slide[]; commits: Commit[] }
 
-type Pulse = Record<string, Omit<Commit, "projectId" | "name">>
-
-/** With GITHUB_TOKEN the site asks GitHub itself each minute. Without, it reads what the pulse workflow left. */
-const getPulse = unstable_cache(
-  async (): Promise<Pulse> => {
+/** Atom feeds first: instant and keyless. The token path and the pulse branch are fallbacks. */
+const liveCommits = unstable_cache(
+  async (): Promise<Commit[]> => {
+    const tracker = await getTracker()
+    const live = await recentCommitsFast(tracker.efforts, 10).catch(() => [])
+    if (live.length) return live
     const token = process.env.GITHUB_TOKEN
-    if (token) return lastCommits((await getTracker()).efforts, token)
-    const res = await fetch(`https://raw.githubusercontent.com/${SITE.repo}/pulse/pulse.json`, {
-      signal: AbortSignal.timeout(8000),
-      next: { revalidate: 60 },
-    })
-    if (!res.ok) throw new Error(`Pulse answered ${res.status}`)
-    return ((await res.json()) as { commits: Pulse }).commits
+    let pulse: Record<string, Omit<Commit, "projectId" | "name">> = {}
+    if (token) {
+      pulse = await lastCommits(tracker.efforts, token)
+    } else {
+      const res = await fetch(`https://raw.githubusercontent.com/${SITE.repo}/pulse/pulse.json`, {
+        signal: AbortSignal.timeout(8000),
+        next: { revalidate: 20 },
+      })
+      if (!res.ok) throw new Error(`Pulse answered ${res.status}`)
+      pulse = (
+        (await res.json()) as { commits: Record<string, Omit<Commit, "projectId" | "name">> }
+      ).commits
+    }
+    return tracker.efforts.flatMap((e) =>
+      pulse[e.id] ? [{ ...pulse[e.id], projectId: e.id, name: e.name }] : []
+    )
   },
   ["pulse"],
-  { revalidate: 60 }
+  { revalidate: 15 }
 )
 
 async function getCommits(tracker: Tracker): Promise<Commit[]> {
-  const pulse = await getPulse().catch((err) => {
+  const live = await liveCommits().catch((err) => {
     console.error("[broadcast] no commits:", err instanceof Error ? err.message : err)
-    return {} as Pulse
+    return [] as Commit[]
   })
-  return tracker.efforts
-    .flatMap((e) =>
-      pulse[e.id] && !e.nuked
-        ? [
-            {
-              ...pulse[e.id],
-              projectId: e.id,
-              name: e.name,
-              message: plainTitle(pulse[e.id].message),
-            },
-          ]
-        : []
-    )
+  const names = new Set(tracker.efforts.filter((e) => !e.nuked).map((e) => e.id))
+  return live
+    .filter((c) => names.has(c.projectId))
+    .map((c) => ({ ...c, message: plainTitle(c.message) }))
     .sort((a, b) => Date.parse(b.at) - Date.parse(a.at))
 }
+
+export async function getWire(): Promise<WireItem[]> {
+  return wireItems(await liveCommits(), (await getActivity()).feed.filter(isPull), Date.now())
+}
+
+const isPull = (item: PullRequest | ActivityCommit): item is PullRequest => "number" in item
 
 function milestoneSlide(m: Milestone, earlier: Milestone[], sure: number): Slide {
   const last = earlier.findLast((e) => e.id === m.id) ?? null
@@ -133,7 +146,7 @@ export async function getBroadcast(): Promise<Broadcast> {
     getMilestones(),
     getEvidence(),
   ])
-  const commits = await getCommits(tracker)
+  const [commits, wire] = await Promise.all([getCommits(tracker), getWire()])
   const standings = getStandings(tracker, evidence).filter((s) => !s.nuked)
   const checks = new Map(standings.map((s) => [s.id, s.checks]))
   const sure = (m: Milestone) =>
@@ -185,13 +198,32 @@ export async function getBroadcast(): Promise<Broadcast> {
       })
     )
 
+  const breaking = wire
+    .filter((w) => w.severity >= 2)
+    .slice(0, 3)
+    .map(
+      (item): Slide => ({
+        kind: "wire",
+        id: `wire:${item.id}`,
+        projectId: item.projectId,
+        level: (item.projectId && scoreOf.get(item.projectId)) || 45,
+        item,
+      })
+    )
+
   const trailers = TRAILERS.map(
     (stream): Slide => ({ kind: "trailer", id: stream.id, projectId: null, level: 100, stream })
   )
 
   return {
     at: new Date().toISOString(),
-    slides: interleave(moves, [race, ...pushes], interleave(updates, trailers)),
+    slides: interleave(breaking, moves, [race, ...pushes], interleave(updates, trailers)),
     commits,
   }
+}
+
+/** Just the commits, for the independently polled list. */
+export async function getLiveCommits(): Promise<{ at: string; commits: Commit[] }> {
+  const commits = await getCommits(await getTracker())
+  return { at: new Date().toISOString(), commits }
 }

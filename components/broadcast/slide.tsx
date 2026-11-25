@@ -120,6 +120,21 @@ function Body({ slide, at }: { slide: Slide; at: string }) {
           </p>
         </>
       )
+    case "wire":
+      return (
+        <>
+          <Plate>Breaking</Plate>
+          <h2 data-title className={titleClass}>
+            {slide.item.title}
+          </h2>
+          <p data-rise className="line-clamp-3 max-w-4xl text-xl text-white/90 sm:text-3xl">
+            {slide.item.detail}
+          </p>
+          <p data-rise className="text-white/75 sm:text-lg">
+            {ago(slide.item.at, at)}, from the public commit feed
+          </p>
+        </>
+      )
     case "trailer":
       return (
         <>
