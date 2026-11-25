@@ -315,7 +315,7 @@ export const news = {
       if (!title || !dek || !category) throw invalid('--title, --dek and --category are required.');
       if (body.length < 2) throw invalid('At least two --body paragraphs are required (3 to 4 in the playbook).');
       if (!sources.length) throw invalid('At least one --source is required.');
-      const id = flags.id?.at(-1) ?? `${date}-${slug(title)}`;
+      const id = flags.id?.at(-1) ?? `${date}-${slug(title).replace(/^-|-$/g, '') || 'article'}`;
       if (!uniqueId(state, id)) throw invalid(`Article id "${id}" is already used.`);
       const by = flags.by?.at(-1) ?? 'claude';
       if (!['claude', 'report', 'owner'].includes(by)) throw invalid('by is claude, report or owner.');

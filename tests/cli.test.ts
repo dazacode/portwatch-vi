@@ -447,6 +447,17 @@ describe("pw news", () => {
     })
   })
 
+  it("trims the slug so a long title makes a valid id", async () => {
+    const long = args.map((a) =>
+      a === "A new thing" ? "Take-Two's DMCA Erases Leonida and 3,007 GitHub Repos" : a
+    )
+    const result = await call([...long, "--json"])
+    expect(result.code).toBe(0)
+    const id = (await readOverrides()).news[0].id
+    expect(id).toBe("2026-11-25-take-two-s-dmca-erases-leonida-and-3-007-github")
+    expect(id.endsWith("-")).toBe(false)
+  })
+
   it("needs a source", async () => {
     const without = args.slice(0, args.indexOf("--source"))
     const result = await call([...without, "--json"])
