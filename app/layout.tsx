@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/next"
 import type { Metadata, Viewport } from "next"
 import { Schibsted_Grotesk, Yellowtail } from "next/font/google"
 import { BoardNotice } from "@/components/board/notice"
@@ -6,9 +5,8 @@ import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { Splash } from "@/components/splash"
 import { ThemeProvider } from "@/components/theme-provider"
-import { WatchingBeat } from "@/components/watching/beat"
 import { holidayScript } from "@/lib/holidays"
-import { SITE } from "@/lib/site"
+import { GOOGLE_TAG, SITE } from "@/lib/site"
 import { cn } from "@/lib/utils"
 import "./globals.css"
 
@@ -37,6 +35,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={cn("font-sans antialiased", sans.variable, script.variable)}
     >
       <body className="flex min-h-dvh flex-col">
+        {GOOGLE_TAG && (
+          <>
+            <script async src={GOOGLE_TAG.src} />
+            {/* biome-ignore lint/security/noDangerouslySetInnerHtml: our own constant */}
+            <script dangerouslySetInnerHTML={{ __html: GOOGLE_TAG.start }} />
+          </>
+        )}
         {/* biome-ignore lint/security/noDangerouslySetInnerHtml: our own constants, before the first paint */}
         <script dangerouslySetInnerHTML={{ __html: holidayScript() }} />
         <Splash />
@@ -53,9 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </main>
           <SiteFooter />
           <BoardNotice />
-          <WatchingBeat />
         </ThemeProvider>
-        <Analytics />
       </body>
     </html>
   )

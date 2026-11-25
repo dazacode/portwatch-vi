@@ -1,60 +1,122 @@
 "use client"
 
 import { useEffect, useSyncExternalStore } from "react"
-import useSWR from "swr"
-import type { Watching } from "@/lib/presence"
 
 /** The main page without a stream open. */
 export const HOME_ROOM = "home"
 
+/** A socket that sends the count. Without one there is none, and nothing is asked. */
+const URL = process.env.NEXT_PUBLIC_WATCHING_URL
+
+export type Watching = {
+  total: number
+  rooms: Record<string, number>
+  watchers: { name: string; room: string }[]
+}
+
+const state: { now: Watching | null; me: string | null } = { now: null, me: null }
 let room = "site"
-let me: string | null = null
+let socket: WebSocket | null = null
+let users = 0
+let failures = 0
+let retry = 0
+let hidden = 0
 const listeners = new Set<() => void>()
 const tell = () => {
   for (const l of listeners) l()
 }
-const subscribe = (l: () => void) => {
-  listeners.add(l)
-  return () => listeners.delete(l)
-}
 
-type Now = Extract<Watching, { on: true }>
-
-/** The shared count is some seconds old, and whoever is reading it is certainly here. */
-export function withMe(now: Now, name: string | null, at: string): Now {
-  if (!name) return now
-  const was = now.watchers.find((w) => w.name === name)
-  // Past the list's limit there is no telling, and one more or less makes no difference.
-  if (was?.room === at || (!was && now.total > now.watchers.length)) return now
-  const rooms = { ...now.rooms, [at]: (now.rooms[at] ?? 0) + 1 }
-  if (was) {
-    rooms[was.room] = (rooms[was.room] ?? 1) - 1
-    if (rooms[was.room] <= 0) delete rooms[was.room]
-  }
-  return {
-    on: true,
-    total: now.total + (was ? 0 : 1),
-    rooms,
-    watchers: [{ name, room: at }, ...now.watchers.filter((w) => w !== was)],
+/** Null for anything but a count. */
+export function parseWatching(text: unknown): Watching | null {
+  try {
+    const data = JSON.parse(String(text))
+    return Number.isInteger(data.total) && data.rooms && Array.isArray(data.watchers) ? data : null
+  } catch {
+    return null
   }
 }
 
-export const setMe = (name: string | null) => {
-  if (name === me) return
-  me = name
+function send() {
+  if (socket?.readyState === WebSocket.OPEN) socket.send(room)
+}
+
+function drop() {
+  socket = null
+  state.now = null
+  state.me = null
   tell()
 }
 
-export const useRoom = () =>
+function connect() {
+  window.clearTimeout(retry)
+  if (!URL || socket || users === 0 || document.visibilityState !== "visible") return
+  const ws = new WebSocket(URL)
+  socket = ws
+  ws.onopen = () => send()
+  ws.onmessage = ({ data }) => {
+    const now = parseWatching(data)
+    if (now) {
+      failures = 0
+      state.now = now
+    } else {
+      try {
+        state.me = JSON.parse(String(data)).me ?? state.me
+      } catch {}
+    }
+    tell()
+  }
+  ws.onclose = () => {
+    if (socket !== ws) return
+    drop()
+    // Full or down: ask less and less, then leave it for this visit.
+    failures += 1
+    if (failures <= 5)
+      retry = window.setTimeout(connect, 5000 * 3 ** (failures - 1) * (0.5 + Math.random()))
+  }
+}
+
+function disconnect() {
+  window.clearTimeout(retry)
+  const ws = socket
+  drop()
+  ws?.close()
+}
+
+function change() {
+  window.clearTimeout(hidden)
+  if (document.visibilityState === "visible") connect()
+  else hidden = window.setTimeout(disconnect, 5 * 60_000)
+}
+
+function subscribe(listener: () => void) {
+  listeners.add(listener)
+  users += 1
+  if (users === 1) {
+    // Someone passing through isn't watching.
+    retry = window.setTimeout(connect, 2000)
+    document.addEventListener("visibilitychange", change)
+  }
+  return () => {
+    listeners.delete(listener)
+    users -= 1
+    if (users > 0) return
+    document.removeEventListener("visibilitychange", change)
+    window.clearTimeout(hidden)
+    disconnect()
+  }
+}
+
+/** Null until it is known, and while there is no count. */
+export const useWatching = () =>
   useSyncExternalStore(
     subscribe,
-    () => room,
-    () => "site"
+    () => state.now,
+    () => null
   )
 export const useMe = () =>
   useSyncExternalStore(
     subscribe,
-    () => me,
+    () => state.me,
     () => null
   )
 
@@ -62,28 +124,10 @@ export const useMe = () =>
 export function useEnterRoom(next: string) {
   useEffect(() => {
     room = next
-    tell()
+    send()
     return () => {
       room = "site"
-      tell()
+      send()
     }
   }, [next])
-}
-
-async function fetcher(url: string): Promise<Watching> {
-  const res = await fetch(url)
-  if (!res.ok) throw new Error(`${url} answered ${res.status}`)
-  return res.json()
-}
-
-/** Null until it is known, and while the count is off. */
-export function useWatching(often = false) {
-  const { data } = useSWR<Watching>("/api/watching", fetcher, {
-    refreshInterval: (now) => (now?.on === false ? 0 : often ? 20_000 : 60_000),
-    revalidateOnFocus: false,
-    keepPreviousData: true,
-  })
-  const name = useMe()
-  const at = useRoom()
-  return data?.on ? withMe(data, name, at) : null
 }

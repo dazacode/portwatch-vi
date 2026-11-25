@@ -12,6 +12,17 @@ export const ANSWER = {
   url: "https://isgta6onpc.com",
 }
 
+/** Google Tag Manager, which loads Google Analytics. Only in production, so our own testing isn't counted. */
+const GTM = "GTM-T9TV6C5W"
+export const GOOGLE_TAG =
+  process.env.VERCEL_ENV === "production"
+    ? {
+        src: `https://www.googletagmanager.com/gtm.js?id=${GTM}`,
+        start:
+          "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());",
+      }
+    : null
+
 // Vercel names the shortest production domain, and the answer's is as short as ours.
 const production = process.env.VERCEL_PROJECT_PRODUCTION_URL
 const host = production?.endsWith(ANSWER.host) ? "viportlive.com" : production

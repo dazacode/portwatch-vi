@@ -30,7 +30,7 @@ export function WatchingButton({
   size?: "lg" | "sm"
 }) {
   const [open, setOpen] = useState(false)
-  const now = useWatching(open)
+  const now = useWatching()
   const me = useMe()
   const { data: live } = useSWR<Snapshot>(open ? "/api/live" : null, getLive)
   if (!now) return null

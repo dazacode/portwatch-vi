@@ -1,6 +1,6 @@
 import { utcDay, utcTime } from "@/lib/format"
 import { toJsonLd } from "@/lib/seo"
-import { ANSWER, SITE } from "@/lib/site"
+import { ANSWER, GOOGLE_TAG, SITE } from "@/lib/site"
 
 /** What Rockstar and Take-Two have said. Change it only with a source, and move the date when it is read again. */
 export const OFFICIAL = {
@@ -82,6 +82,9 @@ const month = (days: number) => Math.round(days / 30.44)
 export function answerHtml(d: AnswerData) {
   const days = daysBetween(OFFICIAL.launchedAt, d.now)
   const faq = questions(d)
+  const visits = GOOGLE_TAG
+    ? `<script async src="${GOOGLE_TAG.src}"></script>\n<script>${GOOGLE_TAG.start}</script>\n`
+    : ""
   const e = escapeHtml
   const ld = {
     "@graph": [
@@ -110,7 +113,7 @@ export function answerHtml(d: AnswerData) {
   return `<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+${visits}<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${e(TITLE)}</title>
 <meta name="description" content="${e(DESCRIPTION)}">
@@ -180,11 +183,9 @@ ${EARLIER.map((g) => `<tr><td>${g.game}</td><td>${fullDay(g.console)}</td><td>${
 ${faq.map(({ q, a }) => `<h3>${e(q)}</h3>\n<p>${e(a)}</p>`).join("\n")}
 </main>
 <footer>
-<p>Unofficial fan site, not affiliated with Rockstar Games, Take-Two or Microsoft. Grand Theft Auto and GTA are their owners’ trademarks. Nothing here hosts or links to game files.</p>
+<p>Unofficial fan site, not affiliated with Rockstar Games, Take-Two or Microsoft. Grand Theft Auto and GTA are their owners’ trademarks. Nothing here hosts or links to game files. Visits are counted with Google Analytics, which uses cookies.</p>
 <p>From the people behind <a href="${SITE.url}">${SITE.name}</a>.</p>
 </footer>
-<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}</script>
-<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 `
