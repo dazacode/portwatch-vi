@@ -454,11 +454,19 @@
             "url": "https://github.com/Belobug/VIctory-Belobug-AMD/commits/main"
           },
           {
-            "text": "Neither the fork’s part of the README nor Belobug’s commits name a mission played or call it stable. The story and stability values come from upstream’s owner, not from the repo, and no outside report was found in it.",
+            "text": "Neither the fork’s part of the README nor Belobug’s commits name a mission played or call it stable. The story and stability values are upstream’s owner’s.",
             "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4cbe9d76/README.md"
+          },
+          {
+            "text": "With a grain of salt: upstream lists it #1 at 77.4%, saying the open world looks close to the retail game, that it plays through missions and that it rarely crashes. Its owner posted having seen the build, which “literally looks like the retail game just at 3 fps”. No recording is linked there.",
+            "url": "https://portwatch-vi.xyz/#effort-belobug"
+          },
+          {
+            "text": "The GitHub account dates from 10 May 2024, so it was not made for this. The repo is its only public one, published at 09:41 UTC on 25 November, about an hour before upstream ranked it #1. We found no public issues or pull requests by it. That neither supports nor undercuts the claims.",
+            "url": "https://github.com/Belobug"
           }
         ],
-        "findingsSource": "From Belobug’s README, commits and code at 4cbe9d76, on 25 November. Read as text, not run."
+        "findingsSource": "From Belobug’s README, commits and code at 4cbe9d76, its public GitHub profile and upstream’s tracker, on 25 November. Read as text, not run."
       }
     },
     {
@@ -473,10 +481,10 @@
         ]
       },
       "to": {
-        "summary": "Belobug's VIctory fork for AMD Radeon, tested on one PC (RX 9070 XT, Ryzen 7 9800X3D). GTA VI's open world renders lit at 3 to 5 fps; its README says \"not playable yet\". Story and stability are the tracker owner's calls: the repo names no mission played. Self-reported.",
+        "summary": "Belobug's VIctory fork for AMD Radeon, tested on one PC (RX 9070 XT, Ryzen 7 9800X3D). GTA VI's open world renders lit at 3 to 5 fps; its README says \"not playable yet\". Upstream's owner says it plays missions and rarely crashes; no recording we found shows it. Self-reported.",
         "highlights": [
           "The open world renders lit, with textures, people, vehicles, vegetation, water and sky",
-          "Platform: AMD Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
+          "Upstream's word, no recording found: close to the retail game, plays through missions, rarely crashes",
           "Built on VIctory's main and upstream pull requests; its README says no victory-fork code is in it"
         ]
       }
