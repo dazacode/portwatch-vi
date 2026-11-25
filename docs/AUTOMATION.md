@@ -82,6 +82,23 @@ browsers and feed readers have always fetched them anyway.
 `scripts/milestones.mjs` runs after the scout and compares scores with the last commit. Its history was
 rebuilt from git, with scores from before 24 November converted to the current scale.
 
+## Following upstream
+
+This site is a fork of [4lwayz/portwatch-vi](https://github.com/4lwayz/portwatch-vi), and its work
+is followed like any other project: the upstream repository rides the same realtime Atom feed, its
+commits can break into the wire, its pull requests join the harvest, and `/activity` gives it a
+section of its own.
+
+`upstream-sync.yml` merges `upstream/main` every fifteen minutes, so the fork's scores, news and
+tracker stay current. Upstream owns `data/tracker.json`, `data/pinned.json`, `EDITOR.md` and its
+legacy `assets/js/` files; a conflict in those is resolved in upstream's favour. Any other conflict
+aborts the merge and fails the run rather than guessing. It shares the `data-write` group with the
+scout, harvest and challenge jobs.
+
+The cost of taking upstream's tracker wholesale: a scout run's candidate list can be replaced by
+the next sync, and the scout re-detects it later. Scores and owner calls are upstream's, which is
+the point of following it.
+
 ## Breaking, without a model
 
 The front page's breaking wire is a small rule engine (`lib/wire.ts`) over the same realtime commit

@@ -25,7 +25,8 @@ shadcn/ui on Base UI, Tailwind) and live stream tracking. The scout and scoring 
 - `app/news/`, `app/activity/`: the story feed and the public commit/PR log
 - `lib/scoring.mjs`: the scoring rules, shared by the site and the scout
 
-How the automation works, and why, is in [docs/AUTOMATION.md](docs/AUTOMATION.md).
+How the automation works, and why, is in [docs/AUTOMATION.md](docs/AUTOMATION.md). The upstream
+repository is merged every 15 minutes and tracked in the activity feed like a project.
 
 ## Deploy
 
