@@ -2,6 +2,8 @@
 
 The GitHub Actions scout (every 3 hours) does the mechanical work: stats, discovery, spam and copy filtering, headlines and the DMCA watch. Once a day, a scheduled Claude session on the maintainer's PC follows this playbook to do the parts that need judgement. It updates scores, reviews candidates, verifies leads, keeps the countdown accurate and writes news, then commits `data/tracker.json`.
 
+In this fork, make the data edits with `pnpm pw` instead of by hand; [docs/CLI.md](docs/CLI.md) maps each step to a command and says which file it writes. Upstream's PowerShell snippets still describe the checks.
+
 ## Hard rules
 
 1. **Anonymity.** Commit only with this repo's configured identity. Before committing, `git config user.email` must end in `+4lwayz@users.noreply.github.com`; if it doesn't, stop and report. Never add names, emails, usernames, locations or anything else personal to any file or commit.

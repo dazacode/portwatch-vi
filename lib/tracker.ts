@@ -183,7 +183,15 @@ async function load<T>(file: string, fallback: T): Promise<T> {
   }
 }
 
-type Overrides = { patches: object[]; added: object[]; pick?: object }
+type Overrides = {
+  patches: object[]
+  added: object[]
+  news?: object[]
+  ignored?: object[]
+  decided?: string[]
+  removedNews?: string[]
+  pick?: object
+}
 
 /** Unfiltered, with our findings on top. For dates and counts, never for text that is shown. */
 export async function getRecords(): Promise<Tracker> {

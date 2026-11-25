@@ -1,0 +1,3 @@
+#!/bin/sh
+# Direct launcher, so `./pw … --json` is clean JSON. `pnpm pw` prints pnpm's banner first.
+exec node "$(dirname "$0")/scripts/pw.mjs" "$@"

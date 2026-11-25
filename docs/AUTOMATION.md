@@ -22,7 +22,8 @@ text that is really in the repo.
 
 Two things still need a person: our own findings (`data/overrides.json`), and removing a
 channel that turns out to be a problem (delete it from `channels.json`; if a README links it, remove
-the project too, or it comes back).
+the project too, or it comes back). Findings, articles, candidates and hand placements go through
+`pnpm pw`; see [docs/CLI.md](CLI.md).
 
 ## News and activity harvesting
 

@@ -11,6 +11,7 @@ their claims come from upstream.
 | Command                                      | What it does                                               |
 | -------------------------------------------- | ---------------------------------------------------------- |
 | `pnpm test` / `pnpm lint` / `pnpm typecheck` | Checks, also run in CI                                     |
+| `./pw` (or `pnpm pw`)                        | Editorial CLI: inspect, score, findings, news, candidates  |
 | `pnpm scout:dry`                             | Runs the project scout without saving (set `GITHUB_TOKEN`) |
 | `pnpm harvest:dry`                           | Runs the news/commit/PR harvester without saving           |
 | `pnpm channels:dry`                          | Shows which stream channels would be added or dropped      |
@@ -28,9 +29,11 @@ their claims come from upstream.
 - `app/news/`, `app/activity/`: the story feed and the public commit/PR log
 - `lib/scoring.mjs`: upstream's scale for claims, a copy of their `assets/js/scoring.js`
 - `lib/rating.mjs`: our score, from the claim and the evidence
+- `scripts/cli/`, `pw`: the editorial CLI; see [docs/CLI.md](docs/CLI.md)
 
-How the automation works, and why, is in [docs/AUTOMATION.md](docs/AUTOMATION.md). Upstream's
-tracker is read live, and copied here every 15 minutes.
+How the automation works, and why, is in [docs/AUTOMATION.md](docs/AUTOMATION.md). Editorial changes go
+through the CLI: [docs/CLI.md](docs/CLI.md). Upstream's tracker is read live, and copied here every 15
+minutes.
 
 ## Deploy
 

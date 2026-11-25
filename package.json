@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "bin": {
+    "pw": "./scripts/pw.mjs"
+  },
   "packageManager": "pnpm@10.12.1",
   "engines": {
     "node": ">=22"
@@ -15,6 +18,7 @@
     "format": "biome check --write .",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
+    "pw": "node scripts/pw.mjs",
     "scout": "node scripts/scout.mjs",
     "scout:dry": "node scripts/scout.mjs --dry-run",
     "harvest": "node scripts/harvest.mjs",
