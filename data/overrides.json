@@ -561,6 +561,56 @@
           "Needs about 22 GB of RAM and over 16 GB of video memory; tested on one AMD PC only"
         ]
       }
+    },
+    {
+      "id": "dexnom",
+      "from": {
+        "findings": null
+      },
+      "to": {
+        "findings": [
+          {
+            "text": "README: an opt-in Experimental RT launcher turns on ray-structure building, traversal and the lighting resolve. On an RX 7900 XTX in Chapter 1's city, frame times can still reach several seconds, and interior lighting, shadows and speed vary by scene.",
+            "url": "https://github.com/DexNom/VIctory/blob/2e01ab4/README.md"
+          },
+          {
+            "text": "README: some dock objects still appear black in the City save, with the ray-structure builder on or off. Its effect on gameplay fps is still being tested. Nothing has been run on NVIDIA or Intel.",
+            "url": "https://github.com/DexNom/VIctory/blob/2e01ab4/README.md"
+          },
+          {
+            "text": "Fifteen commits on 25 November, the newest at 17:46 UTC: pixel quad sampling repaired (incorrect edge pixels from 32 to zero in two tests), ray buffer views grown past 1,023, sparse textures recovered and 40 shader variants restored.",
+            "url": "https://github.com/DexNom/VIctory/commits/main"
+          }
+        ]
+      }
+    },
+    {
+      "id": "darkworldhm",
+      "from": {
+        "findings": null
+      },
+      "to": {
+        "findings": [
+          {
+            "text": "With a grain of salt: upstream lists it at 79.5% from its Rumble stream of 25 November, free roam at about 12-15 fps, swinging between 5 and 24, on a reported RTX 50-series card. Upstream's owner says it builds on a VIctory fork, which one unknown. We have not watched the stream.",
+            "url": "https://portwatch-vi.xyz/#effort-darkworldhm"
+          }
+        ]
+      }
+    },
+    {
+      "id": "doomsday",
+      "from": {
+        "findings": null
+      },
+      "to": {
+        "findings": [
+          {
+            "text": "With a grain of salt: upstream lists it at 78.7%, saying PortWatch verified the private group's build on victory-amd: ray-traced lighting at about 3-5 fps, almost never crashing, the phone rendering well. Mostly AMD, slower on NVIDIA. We have seen no recording.",
+            "url": "https://portwatch-vi.xyz/#effort-doomsday"
+          }
+        ]
+      }
     }
   ],
   "added": [
@@ -1352,14 +1402,29 @@
     }
   ],
   "pick": {
-    "id": "cgbj",
+    "id": "darkworldhm",
     "at": "2026-11-25",
-    "reason": "Placed first by us, not by score: the picture closest to the console of any build, driving the “Gone Fishing” boat at 4.5 fps. Nobody outside has tested it.",
+    "reason": "Placed by us, by claim: 79.5%, the highest on the board. Its Rumble stream shows free roam at about 12-15 fps, peaking at 24, the best frame rate seen. Private code, untested outside.",
     "next": [
+      {
+        "id": "doomsday",
+        "at": "2026-11-25",
+        "reason": "Placed by us, by claim: 78.7%. PortWatch says it saw this private group's victory-amd build run ray-traced lighting at about 3-5 fps, rarely crashing. Private code."
+      },
+      {
+        "id": "dexnom",
+        "at": "2026-11-25",
+        "reason": "Placed by us, by claim: 78%, the highest with public code. PortWatch saw ray-traced lighting on an RX 7900 XTX; its README calls RT experimental, about 1 fps on, 3-4 off."
+      },
       {
         "id": "belobug",
         "at": "2026-11-25",
-        "reason": "Placed by us, not by score: in our view it leads the race with CGBJ. A clip posted with its repo link shows driving in a lit open world at about 4 fps."
+        "reason": "Placed by us, by claim: 77.7%, just behind DexNom. A clip posted with its repo link shows driving in a lit open world at about 4 fps; its README says not playable yet."
+      },
+      {
+        "id": "cgbj",
+        "at": "2026-11-25",
+        "reason": "Placed by us, by claim: 64.5%. The picture closest to the console of any build, driving the Gone Fishing boat at 4.5 fps, but only that mission has been shown. Private code."
       }
     ]
   },
