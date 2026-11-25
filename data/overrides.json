@@ -740,6 +740,73 @@
           "text": "DumbFloridaMoron rises to 51% (“Runnable”): CRT told us Lucia can be moved at the start. No public recording yet, so it stays self-reported."
         }
       ]
+    },
+    {
+      "effort": {
+        "id": "zortos",
+        "name": "Zortos",
+        "repo": null,
+        "basedOn": [
+          "xcl"
+        ],
+        "evidence": "Live stream on Rumble",
+        "byline": "Streamed live · private code, built on XCL",
+        "tier": "tracked",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "Zortos's own XCL-based build. On stream it draws GTA VI's logo and loading art, then the run ends: no menu, world or gameplay seen. The stream's banner says it crashes on game boot. No public code found.",
+        "highlights": [
+          "On stream: the Rockstar logo, then loading art, mostly at about 30 fps"
+        ],
+        "blockers": [
+          "The one run seen on stream ended on the loading screen; the banner reads “Crashing On game boot GPU”",
+          "World rendering is claimed only in notes on screen, with no footage of it",
+          "No public code found, so nobody outside can test it"
+        ],
+        "provenOn": null,
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "verification": "self-reported",
+        "findings": [
+          {
+            "text": "The stream of 25 November shows a run under XCL’s window title and xcl.exe: the Rockstar logo, then loading art, mostly at about 30 fps. The rate falls to single digits, the window goes black, and it is gone about four minutes into the stream. Sampled frames show no menu or world.",
+            "url": "https://rumble.com/v7ivvrs-devving.html"
+          },
+          {
+            "text": "The stream’s editor is on a branch named local/xcl-upstream-merge, which supports it being a build of XCL. No public repo for it was found.",
+            "url": "https://rumble.com/v7ivvrs-devving.html"
+          },
+          {
+            "text": "Notes on screen say one build got the world rendering, showed 14 frames, then crashed 6 seconds later, and another ran 30 minutes without a crash. The sampled frames show neither, so they earn no credit here.",
+            "url": "https://rumble.com/v7ivvrs-devving.html"
+          },
+          {
+            "text": "The post announcing the stream shows XCL’s window at 8,896 of 8,898 shaders built, black, at 0.0 fps.",
+            "url": "https://x.com/Zortosdev/status/2125530101756362825"
+          }
+        ],
+        "findingsSource": "From the linked stream and post, on 25 November. Frames were sampled about a minute apart after the first four minutes, so short moments could be missed.",
+        "stats": {},
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude",
+        "claims": []
+      },
+      "changes": [
+        {
+          "date": "2026-11-25",
+          "kind": "new",
+          "text": "Zortos joins as a private build at 20% (“First frame”): an XCL-based build that draws the Rockstar logo and loading art on stream before the run ends. No menu or world seen; no public code found."
+        }
+      ]
     }
   ],
   "pick": {
