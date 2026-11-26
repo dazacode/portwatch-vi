@@ -950,11 +950,12 @@
       "to": {
         "highlights": [
           "A cutscene close-up reached 30.0 fps",
-          "As far into the story as the leading builds, with a picture close to the console",
-          "Runs on an AMD card"
+          "Free-roam gameplay on stream, with HUD and minimap working",
+          "As far into the story as the leading builds, with a picture close to the console"
         ],
         "blockers": [
-          "30 fps is a cutscene at 1,340 draws; gameplay and crash reports are unmeasured",
+          "30 fps is a cutscene or loading peak; free roam ran with no fps overlay, so gameplay is unmeasured",
+          "Crashes are real: the stream restarts the PC and the dev chat works through repeated crashes",
           "Code is private, so nobody outside can test or reproduce it"
         ],
         "assessedAt": "2026-11-26",
@@ -979,10 +980,21 @@
           {
             "text": "A cutscene close-up of Lucia runs at 30.0 fps (33.3 ms, 1,340 draws); the window names the base Victory.",
             "url": "https://x.com/Mamozziee/status/2125768619019645118"
+          },
+          {
+            "text": "The stream shows free-roam gameplay in a pickup with the money HUD and minimap; 26.6 fps at 38 ms appears on a black loading screen, not in gameplay, and a crash leaves the desktop while the dev chat works through repeated crashes.",
+            "url": "https://rumble.com/v7iv98i-gta6-modding-stream.html"
           }
         ],
-        "findingsSource": "Mamozziee's post of 26 November; the still is Nozy's build."
-      }
+        "findingsSource": "Nozy's Rumble stream, GTA6 Modding Stream, sampled about 55 minutes, 3.5 and 4 hours in."
+      },
+      "changes": [
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "Stream shows free-roam gameplay and repeated crashes; 30 fps stays a cutscene peak"
+        }
+      ]
     }
   ],
   "added": [
