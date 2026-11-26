@@ -352,7 +352,7 @@
         "findings": null
       },
       "to": {
-        "findingsSource": "TechRadar, 2026-11-26",
+        "findingsSource": "shattered.io, 2026-11-26",
         "findings": [
           {
             "text": "On 25 November at 03:16 UTC its creator, NotRexed, posted: “Ignore my other posts. Something’s coming soon.” The post names no project and gives no date. Two days earlier they had posted that they quit.",
@@ -385,6 +385,10 @@
           {
             "text": "GTA 6 dev explains new system captures dialogue dynamic range and models propagation through space.",
             "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxOWUVZRndhdm5GMUoyZG96dGNjUEVJMTFtR0lvdmFBRThIb3ZHUkhWMk9HSFdkbldDMkNvUG1kb2ZMSWNLTmxfcFF6aURrZXFxa2lwYkVtOVQ2QXZqemxSai16aXh2X2JUYmZCbF9iWEYwUXBOTnNnMWV1MWREOEU3MzBRaXhBb3NGVkl0dnJZbHdhTUVUNktST3RvSkppdmNfVHNKeVhoaXcwWDNsSUN2dElwYkF4Y25FM2M0MmZIQUQtMm9iVXEwbmprUUJHNzRqX0JSclhBektVRnNMSmxYZFBQUEhXVnlHS1VGTTFncFc2X2hhd0VBYTJpTWxmNU9iSU5fSmhSLXhaRnEtLUdIOXhFQUxGQUlNdnBhU2lXUlp2NG1tMW9YbzZJSlF5LVBTcEMyaWIyWlpIenE4UjhUN0UyRW5CM085VGtLSnptZ0ZrSVM2T2J1MGQ1VVBYUjlCalBpMG82V3B4ZURCREE?oc=5"
+          },
+          {
+            "text": "Leonida has no announced GTA 6 PC release date.",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTkVpWUhTV2VaOXJWMVFhVzlmZEhuYURCa1lyUllSbVdXZzktQmhSQl83MER2azI3STBtSTlvMEtjMHcwTmlHTUEzSUxtcEhEc1hseThDRTZVNVhnRE5HREJvOVVIcUFuRDBzQ0ZzTnV5Q1c5U0p3T2V1Vnp4dGRpNWJ3Zmk?oc=5"
           }
         ]
       }
@@ -2462,6 +2466,46 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "requires own executable",
+          "no third-party binaries"
+        ],
+        "highlights": [
+          "D3D12 compatibility layer",
+          "tuned for NVIDIA 8GB GPUs",
+          "no external upscaler"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "neptune-dolberth-nvidia-8gb",
+        "summary": "Performance-focused fork of VIctory/Neptune loader with RDNA2-to-DXIL translator",
+        "basedOn": [],
+        "id": "neptune-dolberth-nvidia-8gb",
+        "repo": "Dolberthi/neptune-dolberth-nvidia-8gb",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-26T03:43:26Z",
+          "pushedAt": "2026-11-26T04:16:39Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": null,
@@ -2614,7 +2658,8 @@
     "RKouchoo/rdna4rage",
     "zsy-miao/rebox",
     "zsy-miao/ScarlettVI",
-    "DesignWithTommy/i95"
+    "DesignWithTommy/i95",
+    "Dolberthi/neptune-dolberth-nvidia-8gb"
   ],
   "news": [
     {
