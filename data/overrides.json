@@ -1029,13 +1029,13 @@
       },
       "to": {
         "highlights": [
-          "A cutscene close-up reached 30.0 fps",
-          "Free-roam gameplay on stream, with HUD and minimap working",
-          "Upstream's owner rates its story at 80%, with a picture close to the console"
+          "Boat-mission gameplay at 20.0 fps on the overlay, 17.6-22.5 across the minute",
+          "HUD, minimap and the boat chase all drawn in the Gone Fishing mission",
+          "A cutscene close-up reached 30.0 fps"
         ],
         "blockers": [
-          "30 fps is a cutscene or loading peak; free roam ran with no fps overlay, so gameplay is unmeasured",
-          "Crashes are real: the stream restarts the PC and the dev chat works through repeated crashes",
+          "Gameplay is measured only in the light boat mission; cutscenes fell to 2.4 fps",
+          "Crashes are real: the stream restarts the PC and chat works through repeated crashes",
           "Code is private, so nobody outside can test or reproduce it"
         ],
         "assessedAt": "2026-11-26",
@@ -1064,9 +1064,17 @@
           {
             "text": "The stream shows free-roam gameplay in a pickup with the money HUD and minimap; 26.6 fps at 38 ms appears on a black loading screen, not in gameplay, and a crash leaves the desktop while the dev chat works through repeated crashes.",
             "url": "https://rumble.com/v7iv98i-gta6-modding-stream.html"
+          },
+          {
+            "text": "The last minute shows Chapter 1's Just Like Paradise title card and the French Partie de pêche (Gone Fishing): Jason and Cal on the Brooks boat at 17.6-22.5 fps, 20.0 at the end, with wake, reflections, the bridge and the minimap drawn.",
+            "url": "https://rumble.com/v7ixmps-gta6-modding-stream.html"
+          },
+          {
+            "text": "kozikfc reports 19-22 fps in the boat mission and names the build an AvatarManz fork of Victory.",
+            "url": "https://x.com/kozikfc/status/2125754966228734249"
           }
         ],
-        "findingsSource": "Nozy's Rumble stream, GTA6 Modding Stream, sampled about 55 minutes, 3.5 and 4 hours in."
+        "findingsSource": "From NotNozy's Rumble streams and the last minute of the 26 Nov one, plus Mamozziee's and kozikfc's posts."
       },
       "changes": [
         {
@@ -1123,6 +1131,39 @@
           "text": "CGBJ: upstream's owner now rates it at 80% of the story and rendering 0.85, with a 20 fps average, down from 25. Public footage still shows only the opening mission."
         }
       ]
+    },
+    {
+      "id": "notnozy",
+      "from": {
+        "gta.fps": 16,
+        "goalProof.fps": null,
+        "goalProof.render": null,
+        "summary": "A private build shown on NotNozy's \"GTA6 Modding Stream\" on Rumble. It looks about the same as AvatarManz's build; the owner rates its story progress at 80%. It runs on an AMD card. Code not public, and what it builds on isn't known."
+      },
+      "to": {
+        "gta.fps": 20,
+        "goalProof.fps": "https://rumble.com/v7ixmps-gta6-modding-stream.html",
+        "goalProof.render": "https://rumble.com/v7ixmps-gta6-modding-stream.html",
+        "summary": "A private build on NotNozy's Rumble stream. Its last minute plays GTA VI's Gone Fishing boat mission at 18-22 fps, overlay up, close to the console on a bright sea. Story is the owner's call. AMD card; code private."
+      },
+      "changes": [
+        {
+          "date": "2026-11-26",
+          "kind": "new",
+          "text": "Measured gameplay at 20 fps in the Gone Fishing boat mission"
+        }
+      ]
+    },
+    {
+      "id": "notnozy",
+      "from": {
+        "basedOn": []
+      },
+      "to": {
+        "basedOn": [
+          "avatarmanz"
+        ]
+      }
     }
   ],
   "added": [
