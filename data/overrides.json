@@ -95,6 +95,14 @@
           {
             "text": "The README still says the 3D world is not playable: about 3 fps on a first run, shadowed areas dark, and heavy DispatchMesh work can still cause a TDR.",
             "url": "https://github.com/uiliannn/VItoriaBr/blob/main/README.md"
+          },
+          {
+            "text": "README v19: the open world runs on an RTX 5060 Ti at up to 6 fps (5.8 at 4K) with no driver reset, drawing water, vehicles, terrain and shadows under a depth-shaded constant ambient light. One process ran 2 h 12 min. A warning still says entering the world can reset the driver.",
+            "url": "https://github.com/uiliannn/VItoriaBr/blob/85615ad3/README.md"
+          },
+          {
+            "text": "README v13 numbers on the RTX 5060 Ti: 25,741 of 25,758 programs emitted as DXIL, 25,670 validated and 25,344 pipelines accepted; the 397 refused are wave64 compute shaders.",
+            "url": "https://github.com/uiliannn/VItoriaBr/blob/85615ad3/README.md"
           }
         ],
         "findingsSource": "From VItoriaBr’s public README and commits on 25 November."
@@ -218,7 +226,7 @@
           "Its own fixes to meshlet culling, descriptor tables and untranslated shaders, on top of VIctory"
         ],
         "blockers": [
-          "About 3 fps (2.5-4 in its README)",
+          "About 3 fps on the streams; its README now measures 8-10 fps in the first rooms, with optional switches",
           "The README hasn't caught up with the streams: it says shadows are black and ray tracing lights nothing yet",
           "Tested on one PC (RTX 4070); not reproduced by others yet"
         ],
@@ -226,10 +234,12 @@
           "fxceless/victory-gta6"
         ],
         "gta.render": 0.7,
-        "gta.fps": 3
+        "gta.fps": 3,
+        "gta.stability": "unknown",
+        "assessedBy": "manual"
       },
       "to": {
-        "summary": "hyphennn's fork of VIctory (formerly victory-gta6), with rendering and speed fixes and an AMD fork pinned in his stream. The prologue's prison renders with characters, textures and sunlight at about 4 fps; ray-traced light still doesn't run. Self-reported.",
+        "summary": "hyphennn's fork of VIctory (formerly victory-gta6), with rendering and speed fixes and an AMD fork pinned in his stream. Its README reports play through the prologue and past the first boat mission at 7-12 fps; the card is lost after 30-50 minutes, cause unknown, and shadowed areas stay black. Self-reported.",
         "highlights": [
           "Pinned in his stream: the code is victory-fork and myokex/victory-amd",
           "Fixes characters' skin and hair textures that came out without colour",
@@ -237,16 +247,18 @@
         ],
         "blockers": [
           "Ray-traced bounce light and shadows still don't run, so shadowed areas are black",
-          "2-4 fps (4 with the newer switches)",
+          "9-12 fps in rooms, 5-6 in heavy outdoor views; the card is lost after 30-50 minutes",
           "Tested on two machines (RTX 4070, RX 7800 XT); not reproduced by others"
         ],
         "related": [
           "fxceless/victory-gta6",
           "myokex/victory-amd"
         ],
-        "gta.render": 0.8,
-        "gta.fps": 4,
-        "assessedAt": "2026-11-25"
+        "gta.render": 0.75,
+        "gta.fps": 7,
+        "assessedAt": "2026-11-26",
+        "gta.stability": "sometimes",
+        "assessedBy": "claude"
       },
       "changes": [
         {
@@ -287,6 +299,18 @@
           {
             "text": "victory-amd on an RX 7800 XT: 2-3 fps, runs of 8 minutes mostly end without a device loss, one hung after about 5.5 minutes; some cutscene shots come out white.",
             "url": "https://raw.githubusercontent.com/myokex/victory-amd/victory-amd/README.md"
+          },
+          {
+            "text": "README, 26 November: played from the opening through the prologue and past the first boat mission, at 9-12 fps in rooms and light outdoor views and 5-6 in heavy ones, on one RTX 4070.",
+            "url": "https://github.com/fxceless/victory-fork/blob/bcce702feeac2600166ea006bbb7aeddd6c9d850/README.md"
+          },
+          {
+            "text": "The card was lost four times, after 6, 49, 31 and 38 minutes; the three long sessions all ended on the way to the same story point, and video memory never went over budget.",
+            "url": "https://github.com/fxceless/victory-fork/commit/d3e4988788337855157dbd317f1e0eb96877987f"
+          },
+          {
+            "text": "An outside tester on an RTX 5080 Laptop logged a device loss in the world with 168 command lists that never started; losses came 56 seconds to about 36 minutes in.",
+            "url": "https://github.com/fxceless/victory-fork/issues/1038"
           }
         ],
         "findingsSource": "From the public READMEs and commits of both pinned repos, 25 November, and the stream."
@@ -334,7 +358,7 @@
           "All 26,698 RDNA2 programs in GTA VI's shader pack become HLSL; samples compile to DXIL"
         ],
         "blockers": [
-          "In the world the screen stays on a loading spinner; no picture of gameplay yet",
+          "README: an unmerged NVIDIA branch reaches the world at about 5 fps, with parts of the picture missing",
           "The game's GPU watchdog ends each run 3 to 14 minutes in, on AMD and NVIDIA",
           "Pipeline builds fall behind at world load, and BCPack-compressed textures aren't decoded yet"
         ],
@@ -420,6 +444,10 @@
           {
             "text": "XCL is still active: main was last pushed at 06:05 UTC on 25 November and pull requests are still being updated. The newest merged code is from 02:15; the commits after it edit the README. This site lists a project as inactive after 7 days with nothing new.",
             "url": "https://github.com/xcl-dev/xcl/commits/main"
+          },
+          {
+            "text": "The draft PR's description now gives two 300-second runs on an RTX 5090, on an older base, that reach the world after 86-104 seconds at 5-10 fps with a grey picture, as 40 mesh pipelines are refused. It is a reference branch, not for merging.",
+            "url": "https://github.com/xcl-dev/xcl/pull/2057"
           }
         ],
         "findingsSource": "From XCL’s README, pull requests, issues and commits, and the linked posts on X, on 25 November. Code read as text, not run."
@@ -512,9 +540,17 @@
           {
             "text": "Outside reports from other cards: an RX 6600 and an RX 6950 XT (RDNA2) lost the device within minutes of the world in every reported run, on 01aadd1, 000ffdd4 and 4f62c2a5. NVIDIA users report exits at start-up and missing models (issues #121, #149, #170).",
             "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/151"
+          },
+          {
+            "text": "TechRadar (25 November, 14:51 UTC) ran Dany's clip as Belobug's and describes it as driving around Chapter 1, in the Leonida Keys, after the opening prison and boat scenes. It gives no frame rate for it, and points to a Reddit clip from later in the game, which we have not viewed.",
+            "url": "https://www.techradar.com/gaming/the-very-unofficial-gta-6-pc-ports-are-speeding-ahead-with-chapter-1-seemingly-now-playable-but-rockstar-is-rumored-to-be-playing-whack-a-mole-with-these-projects"
+          },
+          {
+            "text": "Outside report on an RTX 5080 (Ryzen 7 7800X3D) at 4cbe9d7 and 01aadd1: as built, every start (10 of 10) stopped before the first frame, which the tester traces to the 16 MiB default thread stack the fork links with. With a 1 MiB stack the device was lost about a minute in, during the first load, in 14 of 14 runs; victory-fork reached the world on the same PC. An RTX 3070 Laptop in the same thread got into the prologue with most of the world undrawn, and a later run lost the device after about 8 minutes when its 8 GB ran out.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/121"
           }
         ],
-        "findingsSource": "From Belobug’s README, commits and code at 4cbe9d76, its README at a59f3e52 and later commit titles, its public GitHub profile, upstream’s tracker and two clips posted on X by Dany, on 25 November; then its README, commits and code at 4f62c2a5, its rx9070xt branch at 81ebb7bd and issues #143, #151, #163 and #196, on 26 November. Code read as text, not run; clips watched."
+        "findingsSource": "From Belobug’s README, commits and code at 4cbe9d76, its README at a59f3e52 and later commit titles, its public GitHub profile, upstream’s tracker and two clips posted on X by Dany, on 25 November; then its README, commits and code at 4f62c2a5, its rx9070xt branch at 81ebb7bd and issues #143, #151, #163 and #196, on 26 November. Code read as text, not run; clips watched; then TechRadar's article of 25 November and issue #121 with its comments, on 26 November."
       }
     },
     {
@@ -526,15 +562,19 @@
           "The open world looks close to the retail game: lit, with textures, people, vehicles, vegetation, water and sky",
           "Plays through missions and rarely crashes",
           "Built on VIctory's main and upstream pull requests, not on victory-fork; GPL-3.0"
-        ]
+        ],
+        "assessedAt": "2026-11-25",
+        "assessedBy": "manual"
       },
       "to": {
-        "summary": "Belobug's VIctory fork for AMD Radeon, tested by its author on one PC (RX 9070 XT, Ryzen 7 9800X3D). GTA VI's open world renders lit; its README reports 5 to 8 fps, less while driving, and says \"not playable yet\". A clip posted with its repo link shows driving. Outside testers on other RX 9070 XT PCs report about 3 to 8 fps; one found the first boat mission fails within seconds (\"Cal fell off the boat\"), and two older Radeon cards lose the device. Upstream's owner says they have seen it run, that it plays missions and rarely crashes, and links a video we have not viewed. Self-reported.",
+        "summary": "Belobug's VIctory fork for AMD Radeon, tested by its author on one PC (RX 9070 XT, Ryzen 7 9800X3D). GTA VI's open world renders lit; its README reports 5 to 8 fps, less while driving, and says \"not playable yet\". A clip posted with its repo link shows driving. Outside testers on other RX 9070 XT PCs report about 3 to 8 fps; one found the first boat mission fails within seconds, and two older Radeon cards lose the device. Upstream's owner says they have seen it run, that it plays missions and rarely crashes, and links a video we have not viewed. For the owner: story 0.5 is above First act, yet the sources show free driving in Chapter 1 and no mission past the opening. Self-reported.",
         "highlights": [
           "The open world renders lit, with textures, people, vehicles, vegetation, water and sky",
           "A 9-second clip posted with its repo link shows driving at about four frames a second",
           "Upstream's word: plays through missions, rarely crashes"
-        ]
+        ],
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude"
       }
     },
     {
@@ -564,9 +604,13 @@
           {
             "text": "Others on #1763 fared better: an RTX 3070 ran 15 minutes with several more pull requests, at about 0.9 fps by the end, and an RTX 5070 ran 10 minutes into an unlit world. An RTX 5070 Ti still hung within 2 to 3.5 minutes. #1763 was open, not merged, when we read it.",
             "url": "https://github.com/Marvisak/VIctory/pull/1763"
+          },
+          {
+            "text": "README of 25 November: menus run at the game's own 30 fps and the world loads in about a minute. The intro cutscene plays at about 1 fps with textured, lit characters and buildings, and the prologue is reached with the picture complete. Ray-traced shadows and indirect light are still missing; frame rate is what keeps it unplayable.",
+            "url": "https://github.com/Marvisak/VIctory/blob/63bcca43c/README.md"
           }
         ],
-        "findingsSource": "From ShyVortex’s post on X and public comments on VIctory’s issue 468 and pull request 1763, 24 and 25 November. Each is the tester’s own report; nothing was run here."
+        "findingsSource": "From Marvis's README at 63bcca43c, ShyVortex’s post on X and public comments on VIctory’s issue 468 and pull request 1763, 24 and 25 November. The tester reports are each tester's own; nothing was run here."
       }
     },
     {
@@ -580,7 +624,7 @@
       },
       "to": {
         "blockers": [
-          "About 4 fps; its README reports 5-8 fps (less while driving) and calls that \"not playable yet\"",
+          "5-8 fps on its author's PC, less while driving; its README calls that \"not playable yet\"",
           "Phone out turns the world black; no ray-traced light; 266 shader programs don't translate, their draws dropped",
           "Needs about 22 GB RAM and over 16 GB video memory; two RDNA2 cards lost the device"
         ]
@@ -620,6 +664,10 @@
           },
           {
             "text": "BENCHMARK.md: with ray tracing on in Chapter 1's city, a fix to how memory writes are tracked cut the mean frame time from 3,469 ms to 969 ms (0.29 to 1.03 fps over 50 frames). One run on one RX 7900 XTX.",
+            "url": "https://github.com/DexNom/VIctory/blob/64bd58f/BENCHMARK.md"
+          },
+          {
+            "text": "BENCHMARK.md: an early indoor comparison in Chapter 1's city, with the ray-structure builder off by default, ran at 3.52 fps on the old readback path and 4.05 fps on the new one over 93 matched frames. Outdoor results were mixed, from an 18% loss to an 8% gain. One run on one RX 7900 XTX.",
             "url": "https://github.com/DexNom/VIctory/blob/64bd58f/BENCHMARK.md"
           }
         ],
@@ -702,9 +750,21 @@
           {
             "text": "A user reports Windows Defender flagged the ZIP of the main branch as a Trojan and deleted it. The issue is unanswered and nobody has said what set it off; the tree holds source code, with no executables.",
             "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/21"
+          },
+          {
+            "text": "An RTX 4070 Ti SUPER (Ryzen 9 9900X, 61.5 GB) drew the picture right, faces, skin, hair, water reflections and shadows included, in an 11-minute session that reached the prison yard. After about six minutes of pipeline building at 2.4 fps it settled at 69-81 ms a frame. Six compute pipelines stay refused, and up to 3,627 draws were dropped in one frame, 192 on average.",
+            "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/70"
+          },
+          {
+            "text": "An RTX 3080 10 GB with 31 GB of RAM reached the world in five runs of five with no crash or device loss, but slowly: 310 ms a frame at best, medians of 577-1,305 ms. Faces drew without skin (hair and collars did), and private memory peaked at 29.9 GB, 96% of the RAM. The tester found no empty material slots, only 64 partly uploaded textures.",
+            "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/75"
+          },
+          {
+            "text": "On an RX 9070 XT in -Safe mode, with the workaround switches from #44, some trees and white cloth come out magenta, glossy surfaces are too bright and the light jumps in one step at dusk. The tester ties all three to the ray-traced resolve never running and a constant ambient stand-in, offers to port Belobug's sky-following ambient, and measures about 7.7 fps median in the open world.",
+            "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/71"
           }
         ],
-        "findingsSource": "Issue 21, 25 Nov; tree read as text at 0a43566."
+        "findingsSource": "Issue 21, 25 Nov; tree read as text at 0a43566; issues #70, #71 and #75, 26 Nov."
       }
     },
     {
@@ -723,6 +783,154 @@
           "Needs 40-46 GB of memory. Outside testers report crashes or lost devices on RX 6000 and RX 9000 cards"
         ]
       }
+    },
+    {
+      "id": "victory-gta6",
+      "from": {
+        "gta.story": 0
+      },
+      "to": {
+        "gta.story": 0.1
+      },
+      "changes": [
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "Plays past the first boat mission at 7-12 fps; the card is lost after 30-50 minutes"
+        }
+      ]
+    },
+    {
+      "id": "vitoriabr",
+      "from": {
+        "gta.fps": 4,
+        "gta.render": 0.2,
+        "blockers": [
+          "Rendering is poor; shadowed areas are dark",
+          "Up to 4 fps",
+          "Its code now matches victory-fork's except for two small changes"
+        ],
+        "assessedAt": "2026-11-25",
+        "assessedBy": "manual"
+      },
+      "to": {
+        "gta.fps": 5.5,
+        "gta.render": 0.5,
+        "blockers": [
+          "Rendering is poor; shadowed areas are dark",
+          "README: up to 6 fps (5.8 at 4K) on one RTX 5060 Ti; 4 seen on stream",
+          "Its code now matches victory-fork's except for two small changes"
+        ],
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude"
+      },
+      "changes": [
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "README v19: open world lit at up to 6 fps (5.8 at 4K) with no driver resets"
+        }
+      ]
+    },
+    {
+      "id": "dexnom",
+      "from": {
+        "gta.fps": 3,
+        "assessedAt": "2026-11-25",
+        "assessedBy": "manual"
+      },
+      "to": {
+        "gta.fps": 3.5,
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude"
+      }
+    },
+    {
+      "id": "anyxboxx",
+      "from": {
+        "tier": "watchlist",
+        "gta.loads": 0,
+        "gta.boots": 0,
+        "gta.menu": 0,
+        "gta.world": 0,
+        "gta.playable": 0,
+        "gta.story": 0,
+        "gta.render": 0,
+        "gta.fps": 0,
+        "summary": "French-language prototype: GDK runtime emulation on Unicorn, plus a Wine-style native mode that runs small GDK test games. Its GTA VI results (world at about 5 fps, cutscenes, a contributor's report of the first two missions) come from victory-fork's code, now copied into the repo, so they earn it no milestone.",
+        "blockers": [
+          "Most GPU shader translation still to do",
+          "No retail game has run"
+        ],
+        "assessedAt": "2026-11-25",
+        "assessedBy": "claude"
+      },
+      "to": {
+        "tier": "tracked",
+        "gta.loads": 1,
+        "gta.boots": 1,
+        "gta.menu": 1,
+        "gta.world": 1,
+        "gta.playable": 1,
+        "gta.story": 0.25,
+        "gta.render": 0.5,
+        "gta.fps": 13.8,
+        "summary": "AnyXboxX runs GTA VI through its own copy of VIctory, now on the Neptune (VIctory Edit.) base, next to its own GDK runtime work. On the maintainer's RTX 4070 SUPER it reaches the world at a median 13.8 fps (72.5 ms a frame); a picture-first mode looks better at 7-9 fps. A contributor reports playing the first two missions in about 45 minutes at about 2 fps, not taken from logs, and a 23-minute Linux run held 3.7 fps without a crash. Caveats: 12 GB cards dip to 1-6 fps, no ray-traced light (a flat ambient light stands in indoors), no facial animation, and its README still calls the game not playable.",
+        "blockers": [
+          "12 GB cards run out of texture room and dip to 1-6 fps while the world streams",
+          "No ray-traced light: a flat ambient stand-in indoors; no facial animation",
+          "Speed measured on one RTX 4070 SUPER; the missions are a contributor's unlogged report"
+        ],
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude"
+      },
+      "changes": [
+        {
+          "date": "2026-11-26",
+          "kind": "new",
+          "text": "AnyXboxX joins the race: its copy of VIctory on the Neptune base reaches the world at 13.8 fps, and a contributor reports the first two missions played"
+        }
+      ]
+    },
+    {
+      "id": "anyxboxx",
+      "from": {
+        "findings": null,
+        "findingsSource": null
+      },
+      "to": {
+        "findings": [
+          {
+            "text": "README: on its copy of VIctory rebuilt on the Neptune base, the maintainer's RTX 4070 SUPER holds a median 13.8 fps in the world (72.5 ms a frame, 15.6-17 over the last minute). A contributor reports playing the first two missions in about 45 minutes at about 2 fps; that run isn't in the logs.",
+            "url": "https://github.com/LooperSalty/AnyXboxX/blob/c4c93bdc413191a9dc909998d2d53080a3f0c880/README.md"
+          },
+          {
+            "text": "Outside report: an RTX 4060 Laptop on an older pin reached the world with the movement prompt at 1.5-1.7 fps, surfaces unlit and stray geometry shards, with the same 9 untranslated shaders and 16 refused pipelines as the maintainer and no device loss.",
+            "url": "https://github.com/LooperSalty/AnyXboxX/issues/182"
+          },
+          {
+            "text": "README: a 12 GB card runs out of texture room, with hundreds of textures refused a session, and dips to 1-6 fps while the world streams; the process also holds about 22-25 GB of a 32 GB PC's memory.",
+            "url": "https://github.com/LooperSalty/AnyXboxX/blob/c4c93bdc413191a9dc909998d2d53080a3f0c880/README.md"
+          }
+        ],
+        "findingsSource": "From AnyXboxX's README at c4c93bd."
+      }
+    },
+    {
+      "id": "belobug",
+      "from": {
+        "gta.fps": 4
+      },
+      "to": {
+        "gta.fps": 6
+      },
+      "changes": [
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "Frame rate 4 → 6, from its README's 5-8 fps on one RX 9070 XT"
+        }
+      ]
     }
   ],
   "added": [
@@ -742,7 +950,7 @@
         "publicLater": true,
         "byline": "Streamed live · private code, built on the public forks",
         "tier": "tracked",
-        "summary": "Hugo's private build, MashedHugo, renders Lucia's prologue close to the console — lighting, shadows, hair and faces — with floating geometry and pixelation. About 3.7 fps. Last seen stuck at the boat mission; whether it gets past the prologue isn't known. Code private for now.",
+        "summary": "Hugo's private build, MashedHugo, renders Lucia's prologue close to the console — lighting, shadows, hair and faces — with floating geometry and pixelation. A stream still the owner saw reads 19 fps in a lit interior: a peak in a light scene, not a sustained rate. Last seen stuck at the boat mission; whether it gets past the prologue isn't known. Code private for now.",
         "highlights": [
           "Lighting, shadows, hair and faces close to the console",
           "A player walks the prison, talks to cellmates and opens the pause menu",
@@ -750,7 +958,7 @@
         ],
         "blockers": [
           "Floating geometry, black faces and pixelated textures",
-          "About 3.7 fps (267.8 ms a frame); his 20 fps with Lucia is unconfirmed. Boat mission still won't spawn",
+          "19 fps peak in a light scene, not sustained. Boat mission still won't spawn",
           "Code is private for now, so nobody outside can test it"
         ],
         "provenOn": null,
@@ -762,7 +970,7 @@
           "playable": 1,
           "story": 0,
           "render": 0.75,
-          "fps": 3.7,
+          "fps": 8,
           "stability": "unknown"
         },
         "verification": "self-reported",
@@ -770,7 +978,7 @@
         "assessedAt": "2026-11-26",
         "assessedBy": "manual",
         "claims": [],
-        "manualScore": 57
+        "manualScore": 70
       },
       "changes": [
         {
@@ -792,6 +1000,11 @@
           "date": "2026-11-26",
           "kind": "up",
           "text": "MashedHugo's overlay reads 3.7 fps, up from 2 (owner's screenshot)"
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "A lit interior run at 19 fps in a light scene; hand score raised"
         }
       ]
     },
@@ -867,6 +1080,10 @@
           {
             "text": "Brackzmeta’s screenshots are opening cutscene shots: lit faces, hair and clothing with detail, and large areas black. None shows gameplay, a frame rate or a window title.",
             "url": "https://x.com/Brackzmeta/status/2125430770898760014"
+          },
+          {
+            "text": "JoshuuDev's README: the phase2-shader-classes work, now also on the default branch, translates 48 more of the game's shader programs with none lost. In the prologue, untranslated programs fall from 11 to 1 and a run without a controller reaches outdoor gameplay. Frames still take 350-500 ms and shadowed areas stay black.",
+            "url": "https://github.com/JoshuuDev/victory-amd/blob/003beef2b/README.md"
           }
         ],
         "findingsSource": "From both public READMEs and commits, and Brackzmeta’s post, on 25 November. Code read as text, not run."
@@ -884,9 +1101,9 @@
         "tier": "tracked",
         "verification": "self-reported",
         "blockers": [
-          "About 2 fps; anything the sun or a lamp does not reach is dark, as ray-traced light does not run",
-          "README reports no crash in 24 runs of 4 to 25 minutes; not confirmed by others, so not scored",
-          "Tested on one PC only; the first room’s walls arrive 10 to 25 seconds into the opening shot"
+          "3.2 to 3.6 fps needs victory-fork's speed defaults; without them a street frame takes over half a second",
+          "Ray-traced light measured on one street only; interiors, night and other scenes not checked",
+          "One PC, not reproduced by others; the first room's walls arrive 10 to 25 seconds late"
         ],
         "highlights": [
           "Rooms, exteriors, characters and HUD drawn from a save, lit by the sun and lamps",
@@ -901,10 +1118,10 @@
           "playable": 1,
           "story": 0,
           "render": 0.5,
-          "fps": 2,
-          "stability": "unknown"
+          "fps": 3.4,
+          "stability": 0.8
         },
-        "assessedAt": "2026-11-25",
+        "assessedAt": "2026-11-26",
         "assessedBy": "claude",
         "claims": [],
         "id": "victory-ka1qux",
@@ -916,7 +1133,7 @@
         ],
         "approach": "Compatibility layer",
         "target": "GTA VI only",
-        "summary": "An AMD-focused fork of hyphennn's victory-fork, developed on one Radeon RX 7800 XT. Its README reports the world drawn with textures and direct light, and a 25-minute session to the next objective, at about 2 fps. Self-reported.",
+        "summary": "An AMD-focused fork of hyphennn's victory-fork, tested on one RX 7800 XT. Its README reports ray-traced light on by default, 3.2 to 3.6 fps on an open-world street and no crash in fifty runs. Self-reported.",
         "provenOn": null,
         "findings": [
           {
@@ -928,8 +1145,8 @@
             "url": "https://github.com/ka1qux/victory-ka1qux/blob/5fa126bb/README.md"
           },
           {
-            "text": "README: no crash or device removal in the last 24 runs, of 4 to 25 minutes each. Nobody else has reported the same yet.",
-            "url": "https://github.com/ka1qux/victory-ka1qux/blob/5fa126bb/README.md"
+            "text": "README: no crash or device removal in the last fifty runs, of 4 to 25 minutes each, four of them with ray tracing on. Nobody else has reported the same yet.",
+            "url": "https://github.com/ka1qux/BRVIctory-ka1qux/blob/d70ff7b5/README.md"
           },
           {
             "text": "Its own code includes splitting dispatches of more than 65,535 groups into parts (the game asks for 115,200 in its indirect-light pass), with tests for the split.",
@@ -946,9 +1163,21 @@
           {
             "text": "The same post says the work targets AMD RDNA3 cards and that updates will be fewer because of Rockstar's DMCA. Its reply links this repo.",
             "url": "https://x.com/middwestindigo/status/2125431480604090691"
+          },
+          {
+            "text": "README: the game's own ray-traced light now runs by default (VICTORY_RAYS=0 turns it off). Shaded sides of buildings, trees and characters get bounced light instead of going near black; checked on one street of the open world only.",
+            "url": "https://github.com/ka1qux/BRVIctory-ka1qux/blob/d70ff7b5/README.md"
+          },
+          {
+            "text": "The switch is builder_allowed in crates/victory-gpu/src/pipeline.rs: the structure builder runs unless VICTORY_RAYS=0 or VICTORY_BVH_BUILDER=0 is set, and is held off only in tests.",
+            "url": "https://github.com/ka1qux/BRVIctory-ka1qux/blob/d70ff7b5/crates/victory-gpu/src/pipeline.rs#L428-L441"
+          },
+          {
+            "text": "README: on an open-world street of about 5,600 to 6,100 draws, with ray-traced light on, the median frame takes 0.28 to 0.31 s (about 3.2 to 3.6 fps, 0.24 s at best) with victory-fork's speed defaults, and 0.53 to 0.56 s without them. Its known-problems list still gives 2.4 fps on a busy street.",
+            "url": "https://github.com/ka1qux/BRVIctory-ka1qux/blob/d70ff7b5/README.md"
           }
         ],
-        "findingsSource": "From the public README, commits and CI at 5fa126bb, and the post on X, on 25 November. Code read as text, not run.",
+        "findingsSource": "From the public README, commits and CI at 5fa126bb and d70ff7b5, the code at d70ff7b5, and the post on X, on 25 and 26 November. Code read as text, not run.",
         "stats": {
           "archived": false,
           "createdAt": "2026-11-25T02:50:22Z",
@@ -965,6 +1194,11 @@
           "date": "2026-11-25",
           "kind": "new",
           "text": "victory-ka1qux joins the race at 56.9% (“Playable”): an AMD-focused fork of hyphennn's victory-fork. Its README reports the world drawn and a 25-minute play session at about 2 fps on a Radeon RX 7800 XT (self-reported)."
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "Ray-traced light on by default, 3.2 to 3.6 fps on a street, no crash in fifty runs (README)"
         }
       ]
     },
@@ -989,11 +1223,11 @@
           "world": 1,
           "playable": 1,
           "story": 0,
-          "render": 0,
+          "render": 0.25,
           "fps": 3,
           "stability": "unknown"
         },
-        "assessedAt": "2026-11-25",
+        "assessedAt": "2026-11-26",
         "assessedBy": "claude",
         "claims": [],
         "id": "dumbfloridamoron",
@@ -1064,6 +1298,11 @@
           "date": "2026-11-25",
           "kind": "up",
           "text": "DumbFloridaMoron rises to 51% (“Runnable”): CRT told us Lucia can be moved at the start. No public recording yet, so it stays self-reported."
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "CRT's lit close-up of Lucia: shapes drawn, the room mostly dark"
         }
       ]
     },
@@ -1865,5 +2104,35 @@
     "ihaterockstargames/sixth-star",
     "Ryanabcraft/scarlett-victory-bench",
     "RandomSkelly/Series0nLinux"
-  ]
+  ],
+  "news": [
+    {
+      "id": "2026-11-26-zettrox-omonkey-gone",
+      "date": "2026-11-26",
+      "category": "Takedown",
+      "title": "ZETTROX's repo and omonkey's build vanish from the board",
+      "dek": "ZETTROX's GitHub repository and account now answer 404, and omonkey's private build was taken down the same day. No DMCA notice has been published.",
+      "body": [
+        "ZETTROX's build of GTA VI is gone from GitHub. Its repository, Zettrox/ztrx, and the Zettrox account both answer 404, GitHub's \"not found\" reply, and had done so by 17:26 UTC on Wednesday. The code had been public for less than a day, and the build had led our race until Belobug's passed it.",
+        "omonkey's build, streamed on Rumble and based on hyphennn's victory-fork, was taken down the same day, on our owner's word. It was a private build and its code was never public. VGTimes reports that omonkey had said he received a letter from Rockstar; we haven't seen it.",
+        "Both entries stay on the board, greyed out with their last values, and no longer count toward the ranking or the headline numbers.",
+        "It is likely a takedown, but no notice has been published. GitHub's public DMCA log, last updated late on Wednesday, has no entry dated 25 November; the newest from Take-Two is the 24 November notice against Leonida. VGTimes, which reported both removals, also suspects a DMCA notice. We'll update this article if one appears."
+      ],
+      "sources": [
+        {
+          "outlet": "VGTimes",
+          "title": "Two unofficial GTA 6 PC ports have just been taken down",
+          "url": "https://vgtimes.com/gaming-news/175764-two-unofficial-gta-6-pc-ports-have-just-been-wiped-from-github.html"
+        },
+        {
+          "outlet": "GitHub",
+          "title": "GitHub's public DMCA log for November 2026",
+          "url": "https://github.com/github/dmca/tree/master/2026/11"
+        }
+      ],
+      "image": null,
+      "by": "claude"
+    }
+  ],
+  "removedNews": []
 }
