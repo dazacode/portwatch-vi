@@ -358,7 +358,8 @@ a measured run showing <60 calls. That is a phase 4 change, not a launch setting
 1. Repository secret `DISCORD_WEBHOOK_URL` with the channel's webhook. Without it, nothing is sent and
    the run still succeeds.
 2. Leave `FREE_AI` unset for the keyless providers, or set the repository variable `FREE_AI=off` to
-   publish skeletons only.
+   publish skeletons only. Kilo is asked first because it answers in seconds; Pollinations is the
+   fallback at one reply every 47 seconds. `FREE_AI_BASE_URL` still goes in front of both.
 3. Enable Actions in the fork. The Cloudflare timer starts `intel.yml` at :05, :20, :35 and :50; GitHub's
    own schedule is a fallback.
 4. The first run creates the baseline if `baselineAt` is null. Check `/intelligence/queue` after it.

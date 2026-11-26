@@ -67,7 +67,13 @@ const iso = now.toISOString()
 const result = detect({ tracker, evidence, milestones, activity, news, intel: ledger, failures, now: iso })
 const fresh = mergeItems(ledger, result.items).sort((a, b) => Date.parse(b.at) - Date.parse(a.at)).slice(0, LIMIT)
 
-const providers = noModel ? [] : providersFrom(process.env)
+const listed = noModel ? [] : providersFrom(process.env)
+// Kilo answers in seconds; Pollinations spaces replies 47 s apart. Keep a custom endpoint first,
+// but otherwise put the fast provider first and leave Pollinations as the fallback.
+const providers =
+  listed[0]?.name === 'Pollinations'
+    ? [...listed.filter((p) => p.name !== 'Pollinations'), ...listed.filter((p) => p.name === 'Pollinations')]
+    : listed
 const ai = providers.length
   ? createFreeAi({ providers, maxRequests: 5, budgetMs: 5 * 6e4, timeoutMs: 60_000, log })
   : null
