@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T17:50:21.594Z",
+  "updated": "2026-11-26T18:06:50.467Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T17:31:39.000Z",
-      "lastOkAt": "2026-11-26T17:50:21.594Z",
-      "seen": 12500,
-      "events": 437,
+      "lastCursor": "2026-11-26T18:01:03.000Z",
+      "lastOkAt": "2026-11-26T18:06:50.467Z",
+      "seen": 12750,
+      "events": 455,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T15:15:41.000Z",
-      "lastOkAt": "2026-11-26T17:50:21.594Z",
+      "lastOkAt": "2026-11-26T18:06:50.467Z",
       "seen": 22,
       "events": 14,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T17:50:21.594Z",
-      "seen": 2947,
+      "lastOkAt": "2026-11-26T18:06:50.467Z",
+      "seen": 3007,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T17:27:07.147Z",
-      "lastOkAt": "2026-11-26T17:50:21.594Z",
-      "seen": 20000,
+      "lastCursor": "2026-11-26T17:34:38.000Z",
+      "lastOkAt": "2026-11-26T18:06:50.467Z",
+      "seen": 20400,
       "events": 23,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T05:50:21.594Z",
-      "lastOkAt": "2026-11-26T17:50:21.594Z",
-      "seen": 5897,
+      "lastCursor": "2026-11-26T06:06:50.467Z",
+      "lastOkAt": "2026-11-26T18:06:50.467Z",
+      "seen": 6013,
       "events": 7,
       "errors": 0
     }
@@ -5568,10 +5568,17 @@
       "chain": "sha256:c6a72c357414a2ac14922fccf9b51c5f98bd3d1ac09d7464410ff52afc63b819",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T18:06:50.467Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub pull request with no excerpt or independent corroboration, so the performance claim is not plainly supported enough to publish.}"
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T18:06:50.467Z"
     },
     {
       "id": "20261126t114410z-cgbj-a822d2f0",
@@ -6387,10 +6394,17 @@
       "chain": "sha256:792026969306d60faec29b3d7f2ab3b1bb1bdd2aea29a0bd87f30639bad3a1fb",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T18:06:50.467Z",
+          "by": "desk",
+          "note": "The only stored source is a single Game Rant headline that merely repeats the item’s one line and provides no substantive support for a takedown report."
+        }
+      ],
       "heldReasons": [
         "low confidence"
-      ]
+      ],
+      "deskAt": "2026-11-26T18:06:50.467Z"
     },
     {
       "id": "20261126t132832z-gta-vi-astral-0632d09f",
