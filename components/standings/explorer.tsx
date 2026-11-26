@@ -36,6 +36,8 @@ import {
 
 type View = {
   race: Frame[]
+  /** The race's leaders again: the claim beside our score, drawn on the server. */
+  compare: React.ReactNode
   entries: Entry[]
   /** The grouped view, and one table row for each project. Both are drawn on the server. */
   board: React.ReactNode
@@ -125,7 +127,8 @@ function ExplorerView({
   filters,
   onChange,
 }: Props & { filters: Filters; onChange: (next: Filters) => void }) {
-  const { race, entries, board, rows } = filters.ranks === "everyone" ? everyone : publicOnly
+  const { race, compare, entries, board, rows } =
+    filters.ranks === "everyone" ? everyone : publicOnly
   const set = (patch: Partial<Filters>) => onChange({ ...filters, ...patch })
   // The button goes away with the filters, so focus moves to the search.
   const clear = () => {
@@ -284,6 +287,7 @@ function ExplorerView({
             stages={stages}
             note={filters.ranks === "public" ? note : undefined}
           />
+          <div className="mt-3">{compare}</div>
         </div>
       )}
 

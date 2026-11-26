@@ -4,6 +4,7 @@ import { Suspense } from "react"
 import { Container } from "@/components/container"
 import { JsonLd } from "@/components/json-ld"
 import { Board } from "@/components/standings/board"
+import { ClaimVsScore } from "@/components/standings/claim-vs-score"
 import { Explorer, ExplorerFallback } from "@/components/standings/explorer"
 import { ProjectRow } from "@/components/standings/project-row"
 import { getBoardEvents } from "@/lib/board"
@@ -40,12 +41,19 @@ export default async function Page() {
   const projects = getProjects(standings, sources)
   const board = getBoardEvents(projects, records, milestones)
   const now = new Date().toISOString()
-  const draw = (list: Project[]) => ({
-    race: getRace(list, milestones, board, now),
-    entries: list.map(toEntry),
-    board: <Board projects={list} />,
-    rows: Object.fromEntries(list.map((p) => [p.id, <ProjectRow key={p.id} project={p} />])),
-  })
+  const stages = STEPS.filter((m) => m.at > 0).map(({ label, at }) => ({ label, at }))
+  const draw = (list: Project[]) => {
+    const race = getRace(list, milestones, board, now)
+    // The same projects the race ends on, so the two can be read side by side.
+    const leaders = (race.at(-1)?.racers ?? []).flatMap((r) => list.filter((p) => p.id === r.id))
+    return {
+      race,
+      compare: <ClaimVsScore projects={leaders} />,
+      entries: list.map(toEntry),
+      board: <Board projects={list} />,
+      rows: Object.fromEntries(list.map((p) => [p.id, <ProjectRow key={p.id} project={p} />])),
+    }
+  }
   const view = {
     ranked: draw(projects),
     everyone: draw(getProjects(standings, sources, { withPrivate: true })),
@@ -57,7 +65,6 @@ export default async function Page() {
     first && furthest && first.id !== furthest.id
       ? `First by score: ${first.name}, ${first.rating}%.`
       : undefined
-  const stages = STEPS.filter((m) => m.at > 0).map(({ label, at }) => ({ label, at }))
   return (
     <Container className="pt-8">
       <JsonLd data={standingsLd(projects)} />
