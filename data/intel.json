@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T15:50:23.920Z",
+  "updated": "2026-11-26T16:05:25.890Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T15:35:11.000Z",
-      "lastOkAt": "2026-11-26T15:50:23.920Z",
-      "seen": 10500,
-      "events": 371,
+      "lastCursor": "2026-11-26T16:01:01.000Z",
+      "lastOkAt": "2026-11-26T16:05:25.890Z",
+      "seen": 10750,
+      "events": 386,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T15:15:41.000Z",
-      "lastOkAt": "2026-11-26T15:50:23.920Z",
+      "lastOkAt": "2026-11-26T16:05:25.890Z",
       "seen": 22,
       "events": 14,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T15:50:23.920Z",
-      "seen": 2467,
+      "lastOkAt": "2026-11-26T16:05:25.890Z",
+      "seen": 2527,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T15:34:02.740Z",
-      "lastOkAt": "2026-11-26T15:50:23.920Z",
-      "seen": 16800,
+      "lastCursor": "2026-11-26T15:57:47.040Z",
+      "lastOkAt": "2026-11-26T16:05:25.890Z",
+      "seen": 17200,
       "events": 21,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T03:50:23.920Z",
-      "lastOkAt": "2026-11-26T15:50:23.920Z",
-      "seen": 4963,
+      "lastCursor": "2026-11-26T04:05:25.890Z",
+      "lastOkAt": "2026-11-26T16:05:25.890Z",
+      "seen": 5081,
       "events": 7,
       "errors": 0
     }
@@ -7272,10 +7272,17 @@
       "chain": "sha256:9934bed9d1f90dc3482bb1e51cdbdba21b67f736fe40af42644e0f2db8b3b140",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T16:05:25.890Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository, which repeats the claim but is not independent corroboration."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T16:05:25.890Z"
     },
     {
       "id": "20261126t150936z-scene-d0354bc6",
@@ -7321,10 +7328,17 @@
       "chain": "sha256:e22744fde430384b264a0311fe80d4903ac9424d40138e5c77ad4021204d2204",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T16:05:25.890Z",
+          "by": "desk",
+          "note": "The only source is a Bluesky social post that merely repeats a VideoCardz claim, with no primary or independent confirmation of the 3,007-repo takedown."
+        }
+      ],
       "heldReasons": [
         "low confidence"
-      ]
+      ],
+      "deskAt": "2026-11-26T16:05:25.890Z"
     },
     {
       "id": "20261126t141640z-kelvaroq-86480c6d",
