@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T21:50:21.067Z",
+  "updated": "2026-11-26T22:05:38.351Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T21:35:55.000Z",
-      "lastOkAt": "2026-11-26T21:50:21.067Z",
-      "seen": 16250,
-      "events": 586,
+      "lastCursor": "2026-11-26T22:01:22.000Z",
+      "lastOkAt": "2026-11-26T22:05:38.351Z",
+      "seen": 16500,
+      "events": 603,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T20:47:47.000Z",
-      "lastOkAt": "2026-11-26T21:50:21.067Z",
+      "lastOkAt": "2026-11-26T22:05:38.351Z",
       "seen": 28,
       "events": 20,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T21:50:21.067Z",
-      "seen": 3861,
+      "lastOkAt": "2026-11-26T22:05:38.351Z",
+      "seen": 3922,
       "events": 23,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T21:34:33.848Z",
-      "lastOkAt": "2026-11-26T21:50:21.067Z",
-      "seen": 26000,
+      "lastCursor": "2026-11-26T21:55:58.840Z",
+      "lastOkAt": "2026-11-26T22:05:38.351Z",
+      "seen": 26400,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T09:50:21.067Z",
-      "lastOkAt": "2026-11-26T21:50:21.067Z",
-      "seen": 7605,
+      "lastCursor": "2026-11-26T10:05:38.351Z",
+      "lastOkAt": "2026-11-26T22:05:38.351Z",
+      "seen": 7718,
       "events": 7,
       "errors": 0
     }
@@ -8667,10 +8667,17 @@
       "chain": "sha256:043b4512275d7fca8af35ef466fbe703f547ce1a201112db9c06098582e637ec",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T22:05:38.351Z",
+          "by": "desk",
+          "note": "The only stored source is Belobug’s own repository, which is primary but not independent, so the performance claim is not corroborated."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T22:05:38.351Z"
     },
     {
       "id": "20261126t202100z-xcl-85212b6d",
@@ -8719,10 +8726,17 @@
       "chain": "sha256:202174fdbc04f77a8f6f8c97cbcd1fbd1db06faea5fbd9215acc4fcd3d6ac4e9",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T22:05:38.351Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository repeating the same line, so it is primary but not independent and too thin to publish."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T22:05:38.351Z"
     },
     {
       "id": "20261126t191747z-victory-gta6-b5d9327e",
