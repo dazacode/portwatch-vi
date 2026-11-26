@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T09:20:23.029Z",
+  "updated": "2026-11-26T09:35:31.101Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T09:01:18.000Z",
-      "lastOkAt": "2026-11-26T09:20:23.029Z",
-      "seen": 4250,
+      "lastOkAt": "2026-11-26T09:35:31.101Z",
+      "seen": 4500,
       "events": 152,
       "errors": 0
     },
     "evidence": {
-      "lastCursor": "2026-11-26T06:21:27.000Z",
-      "lastOkAt": "2026-11-26T09:20:23.029Z",
-      "seen": 16,
-      "events": 8,
+      "lastCursor": "2026-11-26T08:19:21.000Z",
+      "lastOkAt": "2026-11-26T09:35:31.101Z",
+      "seen": 19,
+      "events": 11,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-26T08:10:17.339Z",
-      "lastOkAt": "2026-11-26T09:20:23.029Z",
-      "seen": 967,
-      "events": 20,
+      "lastCursor": "2026-11-26T09:35:13.990Z",
+      "lastOkAt": "2026-11-26T09:35:31.101Z",
+      "seen": 1027,
+      "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T09:00:28.844Z",
-      "lastOkAt": "2026-11-26T09:20:23.029Z",
-      "seen": 6800,
+      "lastOkAt": "2026-11-26T09:35:31.101Z",
+      "seen": 7200,
       "events": 5,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T09:20:23.029Z",
-      "seen": 1973,
+      "lastOkAt": "2026-11-26T09:35:31.101Z",
+      "seen": 2091,
       "events": 7,
       "errors": 0
     }
@@ -4236,6 +4236,226 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-26T09:20:23.029Z"
+    },
+    {
+      "id": "20261126t093513z-kelvaroq-acce5f29",
+      "key": "update|kelvaroq|playable|41566",
+      "kind": "update",
+      "projectId": "kelvaroq",
+      "projectName": "Kelvaroq",
+      "at": "2026-11-26T09:35:13.990Z",
+      "detectedAt": "2026-11-26T09:35:31.101Z",
+      "title": "Kelvaroq moved to playable",
+      "oneLine": "The project’s record moved from 0% to 68.8%.",
+      "sources": [
+        {
+          "url": "https://github.com/fablinoo/kelvaroq",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "Kelvaroq record",
+          "at": "2026-11-26T09:35:13.990Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "fablinoo/kelvaroq",
+        "name": "kelvaroq",
+        "words": [
+          "kelvaroq"
+        ],
+        "hash": "ef78cdb5cde991b4",
+        "projectId": "kelvaroq"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:89d16808aef523b3c41de5e2028baacce6acbf3dc802fa5b7d7422e676471257",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T09:35:31.101Z",
+          "by": "desk",
+          "note": "The only support is the project’s own repository with an empty excerpt, which is a non-independent and thin basis for asserting a move to playable."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T09:35:31.101Z"
+    },
+    {
+      "id": "20261126t081921z-belobug-6ad76194",
+      "key": "evidence|belobug|world|41566",
+      "kind": "evidence",
+      "projectId": "belobug",
+      "projectName": "Belobug",
+      "at": "2026-11-26T08:19:21Z",
+      "detectedAt": "2026-11-26T09:35:31.101Z",
+      "title": "New test evidence on Belobug — world",
+      "oneLine": "Playable, and very good otherwise: menus 30 fps, prison prologue 15–18 fps, played through into the first mission (the boat chase)",
+      "sources": [
+        {
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/239",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Playable, and very good otherwise: menus 30 fps, prison prologue 15–18 fps, played through into the first mission (the b",
+          "at": "2026-11-26T08:19:21Z",
+          "kind": "primary",
+          "authorHash": "5a873fbe92be",
+          "excerpt": "Playable, and very good otherwise: menus 30 fps, prison prologue 15–18 fps, played through into the first mission (the boat chase)"
+        }
+      ],
+      "fingerprint": {
+        "repo": "belobug/victory-belobug-amd",
+        "name": "belobug",
+        "words": [
+          "belobug"
+        ],
+        "hash": "47496e763cc82cc7",
+        "projectId": "belobug"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:ed1f35d71272a5547857fefede35093a9068fd63cb21f02aa2bceb23b21f4e47",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T09:35:31.101Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository, which is self-published and not independent, so a specific fps/playability claim rests on a single non-corroborated source."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T09:35:31.101Z"
+    },
+    {
+      "id": "20261126t081810z-xcl-6a473d00",
+      "key": "evidence|xcl|boots|41566",
+      "kind": "evidence",
+      "projectId": "xcl",
+      "projectName": "XCL",
+      "at": "2026-11-26T08:18:10Z",
+      "detectedAt": "2026-11-26T09:35:31.101Z",
+      "title": "New test evidence on XCL — boots",
+      "oneLine": "steady 25-30 fps through frames 600/900/1200/1500/1800/2100/2400/2700/3000; frames are the loading-art presentation",
+      "sources": [
+        {
+          "url": "https://github.com/xcl-dev/xcl/issues/2719",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "steady 25-30 fps through frames 600/900/1200/1500/1800/2100/2400/2700/3000; frames are the loading-art presentation",
+          "at": "2026-11-26T08:18:10Z",
+          "kind": "primary",
+          "authorHash": "f945036d39c9",
+          "excerpt": "steady 25-30 fps through frames 600/900/1200/1500/1800/2100/2400/2700/3000; frames are the loading-art presentation"
+        }
+      ],
+      "fingerprint": {
+        "repo": "xcl-dev/xcl",
+        "name": "xcl",
+        "words": [
+          "xcl"
+        ],
+        "hash": "394298074b4956da",
+        "projectId": "xcl"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:081798c43a06374f49b0bc8f4383d2b802ffae90296603fa7918bcda599bfafb",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t075615z-tuxbox-b119a09c",
+      "key": "evidence|tuxbox|world|41566",
+      "kind": "evidence",
+      "projectId": "tuxbox",
+      "projectName": "TuxBox",
+      "at": "2026-11-26T07:56:15Z",
+      "detectedAt": "2026-11-26T09:35:31.101Z",
+      "title": "New test evidence on TuxBox — world",
+      "oneLine": "The first world frames render, but at 10–21 s each",
+      "sources": [
+        {
+          "url": "https://github.com/brcly/TuxBox/issues/215",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "The first world frames render, but at 10–21 s each",
+          "at": "2026-11-26T07:56:15Z",
+          "kind": "primary",
+          "authorHash": "92bc9854d5c0",
+          "excerpt": "The first world frames render, but at 10–21 s each"
+        }
+      ],
+      "fingerprint": {
+        "repo": "brcly/tuxbox",
+        "name": "tuxbox",
+        "words": [
+          "tuxbox"
+        ],
+        "hash": "4942f04250a100c7",
+        "projectId": "tuxbox"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:67ef08217602eb47d67092ed3ebf2772fa6259a6d50aded5143000c635bafecf",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
