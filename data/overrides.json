@@ -2113,6 +2113,95 @@
         "findingsSource": "Fork commits, 26 November"
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "soldsawn/victory-nvidia-8gb",
+        "related": [
+          "ad3lre/victory-nvidia-8gb"
+        ],
+        "basedOn": [
+          "victory-gta6"
+        ],
+        "highlights": [
+          "Fits in 8 GB: picture capped at 1080p, largest texture levels left out, 6.6 of 7 GB used",
+          "Outside test on a 6 GB GTX 1660: 5-6 fps, picture normal, the CPU the limit",
+          "Brings together about 30 victory-fork pull requests and Neptune's performance overlay"
+        ],
+        "blockers": [
+          "README says full indirect light, but its own ray-tracing notes say none runs yet",
+          "No facial animation and the boat sinks, per the GTX 1660 report",
+          "Mostly merged pull requests by others; issues are off and its 5 pull requests are open"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.5,
+          "fps": 8,
+          "stability": "unknown"
+        },
+        "stats": {
+          "archived": false,
+          "createdAt": "2026-11-25T13:52:45Z",
+          "forks": 9,
+          "openIssues": 5,
+          "pushedAt": "2026-11-25T21:55:34Z",
+          "stars": 54,
+          "missing": false,
+          "commits7d": 100
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "soldsawn 8GB",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "soldsawn's fork of hyphennn's victory-fork for NVIDIA cards with 8 GB, the first on our board built for them. It caps the picture at 1080p and leaves out the largest texture levels to stay under 8 GB. Its README reports 8-10 fps on an RTX 4060 Laptop, and an outside tester got 5-6 fps on a 6 GB GTX 1660. Self-reported.",
+        "id": "soldsawn-8gb",
+        "findings": [
+          {
+            "text": "A fork of hyphennn's victory-fork at f5c03f3, made for NVIDIA cards with 8 GB and 32-lane waves on Windows 11. Compared with victory-fork it is 151 commits ahead and 55 behind. Most of its work is merging about 30 of victory-fork's community pull requests; soldsawn's own code is merge fixes, pinning recording threads to fast cores, an optional wait switch and the overlay.",
+            "url": "https://github.com/fxceless/victory-fork/compare/main...soldsawn:victory-nvidia-8gb:main"
+          },
+          {
+            "text": "README: on an RTX 4060 Laptop (8 GB, Core i5-12450H, 48 GB RAM), capped at 1080p with the two largest texture levels left out, the world runs at 8-10 fps (104-129 ms a frame) using 6.6 of 7.0 GB of video memory. At the Series X's native 4K steps it is about 6 fps, with 7.4-7.6 of 8 GB in use. No screenshot or recording is in the repo.",
+            "url": "https://github.com/soldsawn/victory-nvidia-8gb/blob/c09a44e9/README.md"
+          },
+          {
+            "text": "The 8 GB fit is real code, read as text: VICTORY_TEXTURE_DROP_MIPS leaves up to four of the largest levels out of big 2D textures, each cutting their size by about four, and VICTORY_RESOLUTION caps the picture's size. The launcher sets 2 levels and 1920x1080. The texture switch is victory-fork pull request 610, not soldsawn's own.",
+            "url": "https://github.com/soldsawn/victory-nvidia-8gb/blob/c09a44e9/crates/victory-gpu/src/resource.rs#L1298-L1331"
+          },
+          {
+            "text": "The README credits the RTX 4060 result with full indirect lighting, but docs/fork-ray-tracing.md in the same tree says nothing is lit by ray tracing yet: the game's bounce light and its lamp and sun shadows still don't run. The optional stand-in light (VICTORY_AMBIENT) is off and the launcher doesn't turn it on.",
+            "url": "https://github.com/soldsawn/victory-nvidia-8gb/blob/c09a44e9/docs/fork-ray-tracing.md"
+          },
+          {
+            "text": "Its performance overlay is Neptune's (by Traffic and zm0kie), relabelled \"soldsawn 8GB (overlay: Neptune)\" and toggled with F10. Its frame rate and 30-second high, low and average come from the layer's own frame timing, and the window title shows the same figures with draws per frame.",
+            "url": "https://github.com/soldsawn/victory-nvidia-8gb/commit/0e0954d2"
+          },
+          {
+            "text": "Outside report in pull request 3 on a GTX 1660 6 GB (Core i7-4790K, 24 GB RAM, Windows 11 21H2): 5-6 fps (181-240 ms) at 1080p with 3.98 of 4.93 GB video memory, picture normal and black skin fixed; the CPU, at 90%, is the limit. Without the 1080p cap it ran 1.7-3.3 fps and overran video memory. Faces don't animate and the boat sinks. Windows 11 21H2 needs the Agility SDK 620.",
+            "url": "https://github.com/soldsawn/victory-nvidia-8gb/pull/3"
+          },
+          {
+            "text": "ad3lre's fork of it, pushed at 03:15 UTC on 26 November, adds the GTX 1660 report, Neptune's NVIDIA changes and newer victory-fork commits, and turns on 23 speed switches by default at start-up. It also adds a RAM trimmer for low-memory PCs (VICTORY_RAM_TRIM_MB, opt-in) and a texture size cap. Its README has no new measurement for these.",
+            "url": "https://github.com/ad3lre/victory-nvidia-8gb/commits/9f583af1"
+          },
+          {
+            "text": "Pull request 5 (ad3lre) caps idle host memory and asks the card how many views a heap may hold: the layer's fixed 2,097,152 makes GTX 16-series cards remove the device, it says. Like the other four pull requests, it is still open; the repo has issues turned off.",
+            "url": "https://github.com/soldsawn/victory-nvidia-8gb/pull/5"
+          }
+        ],
+        "findingsSource": "From soldsawn's and ad3lre's public READMEs, commits and pull requests, 26 November. Code read as text, not built or run."
+      },
+      "changes": []
     }
   ],
   "pick": null,
