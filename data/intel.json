@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T14:50:30.352Z",
+  "updated": "2026-11-26T15:05:32.126Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T14:30:54.000Z",
-      "lastOkAt": "2026-11-26T14:50:30.352Z",
-      "seen": 9750,
-      "events": 329,
+      "lastCursor": "2026-11-26T15:01:23.000Z",
+      "lastOkAt": "2026-11-26T15:05:32.126Z",
+      "seen": 10000,
+      "events": 352,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T10:11:01.000Z",
-      "lastOkAt": "2026-11-26T14:50:30.352Z",
+      "lastOkAt": "2026-11-26T15:05:32.126Z",
       "seen": 20,
       "events": 12,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T14:50:30.352Z",
-      "seen": 2287,
+      "lastOkAt": "2026-11-26T15:05:32.126Z",
+      "seen": 2347,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T14:24:29.000Z",
-      "lastOkAt": "2026-11-26T14:50:30.352Z",
-      "seen": 15600,
-      "events": 18,
+      "lastCursor": "2026-11-26T15:00:15.000Z",
+      "lastOkAt": "2026-11-26T15:05:32.126Z",
+      "seen": 16000,
+      "events": 19,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T02:50:30.352Z",
-      "lastOkAt": "2026-11-26T14:50:30.352Z",
-      "seen": 4607,
+      "lastCursor": "2026-11-26T03:05:32.126Z",
+      "lastOkAt": "2026-11-26T15:05:32.126Z",
+      "seen": 4727,
       "events": 7,
       "errors": 0
     }
@@ -6945,6 +6945,163 @@
         "low confidence"
       ],
       "deskAt": "2026-11-26T14:35:20.564Z"
+    },
+    {
+      "id": "20261126t144436z-project-americas-58a87c14",
+      "key": "update|project-americas|activity|41567",
+      "kind": "update",
+      "projectId": "project-americas",
+      "projectName": "Project-Americas",
+      "at": "2026-11-26T14:44:36Z",
+      "detectedAt": "2026-11-26T15:05:32.126Z",
+      "title": "Project-Americas pushed 2 commits",
+      "oneLine": "Shader compiles: one lane test per run of VGPR writes; precompile as one sorted job list on every core",
+      "sources": [
+        {
+          "url": "https://github.com/x6j1ZiqfbxA3u12HVk/Project-Americas/commit/cfe9e6cabe0bcb3883ddec3747dd570ece28ff4c",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Shader compiles: one lane test per run of VGPR writes; precompile as one sorted job list on every core",
+          "at": "2026-11-26T14:32:55Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "x6j1ziqfbxa3u12hvk/project-americas",
+        "name": "project-americas",
+        "words": [
+          "project-americas"
+        ],
+        "hash": "e5ad814ba4506dc2",
+        "projectId": "project-americas"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:0473c5eaa771619b41d0131a9f4aae4e4dda5ca2d94225cb74362e04e0ff70fa",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T15:05:32.126Z",
+          "by": "desk",
+          "note": "The commit message from the Project-Americas repository directly states the one-line update, with no conflicting sources."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T15:05:32.126Z"
+    },
+    {
+      "id": "20261126t143929z-scene-8a9e2aaf",
+      "key": "takedown|-|https://bsky.app/profile/puretech.news/post/3n37von5mpa2w|41567",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-26T14:39:29.945Z",
+      "detectedAt": "2026-11-26T15:05:32.126Z",
+      "title": "Bluesky in a takedown report",
+      "oneLine": "Take-Two wipes out 3,007 GTA 6 PC port repos from GitHub in massive DMCA crackdown…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/puretech.news/post/3n37von5mpa2w",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "Take-Two wipes out 3,007 GTA 6 PC port repos from GitHub in massive DMCA crackdown #Technology #Gaming #gta6 #taketwo #d",
+          "at": "2026-11-26T14:39:29.945Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "Take-Two wipes out 3,007 GTA 6 PC port repos from GitHub in massive DMCA crackdown #Technology #Gaming #gta6 #taketwo #d"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "e55d50eb17589821",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:8c81e7a61cd6f3ec2871c8f16d90e41b1fe278fecb3a3a0e9f2819c921d0e327",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t143853z-vitoriabr-04fd78b5",
+      "key": "update|vitoriabr|activity|41567",
+      "kind": "update",
+      "projectId": "vitoriabr",
+      "projectName": "Uilian",
+      "at": "2026-11-26T14:38:53Z",
+      "detectedAt": "2026-11-26T15:05:32.126Z",
+      "title": "Uilian opened pull request #123",
+      "oneLine": "feat(shader,gpu): decodifica shaders ACO pré-compilados ACCC (FSPX) e destrava os 29/29 passes FFX_FSR4 no Series S",
+      "sources": [
+        {
+          "url": "https://github.com/uiliannn/VItoriaBr/pull/123",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "feat(shader,gpu): decodifica shaders ACO pré-compilados ACCC (FSPX) e destrava os 29/29 passes FFX_FSR4 no Series S",
+          "at": "2026-11-26T14:38:53Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "uiliannn/vitoriabr",
+        "name": "uilian",
+        "words": [
+          "uilian",
+          "vitoriabr"
+        ],
+        "hash": "029198c819d10079",
+        "projectId": "vitoriabr"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:6f702ccae4cf306a2ae8a8b7d8a8eed4e0753c397961170effe3614be213ec1d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
