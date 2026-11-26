@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T23:06:21.535Z",
+  "updated": "2026-11-26T23:20:22.756Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T23:01:08.000Z",
-      "lastOkAt": "2026-11-26T23:06:21.535Z",
-      "seen": 17500,
+      "lastOkAt": "2026-11-26T23:20:22.756Z",
+      "seen": 17750,
       "events": 640,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T20:47:47.000Z",
-      "lastOkAt": "2026-11-26T23:06:21.535Z",
+      "lastOkAt": "2026-11-26T23:20:22.756Z",
       "seen": 28,
       "events": 20,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T23:06:21.535Z",
-      "seen": 4166,
-      "events": 23,
+      "lastCursor": "2026-11-26T23:10:14.868Z",
+      "lastOkAt": "2026-11-26T23:20:22.756Z",
+      "seen": 4228,
+      "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T22:43:22.341Z",
-      "lastOkAt": "2026-11-26T23:06:21.535Z",
-      "seen": 28000,
+      "lastOkAt": "2026-11-26T23:20:22.756Z",
+      "seen": 28400,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T11:06:21.535Z",
-      "lastOkAt": "2026-11-26T23:06:21.535Z",
-      "seen": 8200,
+      "lastCursor": "2026-11-26T11:20:22.756Z",
+      "lastOkAt": "2026-11-26T23:20:22.756Z",
+      "seen": 8323,
       "events": 7,
       "errors": 0
     }
@@ -8868,6 +8868,65 @@
       "heldReasons": [
         "a rate cap"
       ]
+    },
+    {
+      "id": "20261126t231014z-victory-low-end-pc-41ce46ec",
+      "key": "update|victory-low-end-pc|playable|41567",
+      "kind": "update",
+      "projectId": "victory-low-end-pc",
+      "projectName": "WASDeKeys low-end",
+      "at": "2026-11-26T23:10:14.868Z",
+      "detectedAt": "2026-11-26T23:20:22.756Z",
+      "title": "WASDeKeys low-end moved to playable",
+      "oneLine": "The project’s record moved from 0% to 62.9%.",
+      "sources": [
+        {
+          "url": "https://github.com/WASDeKeys/victory-low-end-pc",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "WASDeKeys low-end record",
+          "at": "2026-11-26T23:10:14.868Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "wasdekeys/victory-low-end-pc",
+        "name": "wasdekeys low-end",
+        "words": [
+          "wasdekeys",
+          "low-end",
+          "victory-low-end-pc"
+        ],
+        "hash": "68293735ccc18907",
+        "projectId": "victory-low-end-pc"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:251d7e375e8113eafa5db3b8547736d57ea2b23163c99a9d6dd9706577d4c4cc",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T23:20:22.756Z",
+          "by": "desk",
+          "note": "The project’s own repository directly documents the record change from 0% to 62.9%, with no conflicting sources."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T23:20:22.756Z"
     }
   ],
   "reports": [
