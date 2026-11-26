@@ -176,6 +176,19 @@ function Lane({ p, lead }: { p: Project; lead: boolean }) {
   )
 }
 
+/** True only when GitHub plainly says the repo is gone (404) or blocked (451). A timeout says nothing. */
+async function repoDown(repo: string) {
+  try {
+    const res = await fetch(`https://github.com/${repo}`, {
+      method: "HEAD",
+      signal: AbortSignal.timeout(3000),
+    })
+    return res.status === 404 || res.status === 451
+  } catch {
+    return false
+  }
+}
+
 export async function GET() {
   const [tracker, records, evidence, activity, milestones] = await Promise.all([
     getTracker(),
@@ -196,6 +209,8 @@ export async function GET() {
   const leader = field[0]
   const open = leader && !leader.isPrivate && leader.repo
   const line = open ? "is public" : "leads the race"
+  // Its code can outlive its repo: a removed repo leaves its forks and mirrors up.
+  const down = open ? await repoDown(leader.repo as string) : false
   const fonts = await shareFonts(`${line} is public leads the race`)
   const host = new URL(SITE.url).host
 
@@ -337,7 +352,16 @@ export async function GET() {
                 }}
               >
                 <span style={{ color: TEAL, letterSpacing: 2 }}>CODE OUT</span>
-                <span>github.com/{leader.repo}</span>
+                {down ? (
+                  <>
+                    <span>in forks of {String(leader.repo).split("/")[1]}</span>
+                    <span style={{ color: DIM, fontWeight: 400, marginLeft: 6 }}>
+                      · original repo down
+                    </span>
+                  </>
+                ) : (
+                  <span>github.com/{leader.repo}</span>
+                )}
               </div>
             )}
             <div
