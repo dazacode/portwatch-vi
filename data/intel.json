@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T10:50:22.492Z",
+  "updated": "2026-11-26T11:05:44.044Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T10:31:07.000Z",
-      "lastOkAt": "2026-11-26T10:50:22.492Z",
-      "seen": 5750,
-      "events": 193,
+      "lastCursor": "2026-11-26T11:01:12.000Z",
+      "lastOkAt": "2026-11-26T11:05:44.044Z",
+      "seen": 6000,
+      "events": 212,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T08:19:21.000Z",
-      "lastOkAt": "2026-11-26T10:50:22.492Z",
+      "lastOkAt": "2026-11-26T11:05:44.044Z",
       "seen": 19,
       "events": 11,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T10:50:22.492Z",
-      "seen": 1327,
+      "lastOkAt": "2026-11-26T11:05:44.044Z",
+      "seen": 1387,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T10:28:50.942Z",
-      "lastOkAt": "2026-11-26T10:50:22.492Z",
-      "seen": 9200,
-      "events": 6,
+      "lastCursor": "2026-11-26T10:57:31.747Z",
+      "lastOkAt": "2026-11-26T11:05:44.044Z",
+      "seen": 9600,
+      "events": 8,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T10:50:22.492Z",
-      "seen": 2687,
+      "lastOkAt": "2026-11-26T11:05:44.044Z",
+      "seen": 2807,
       "events": 7,
       "errors": 0
     }
@@ -4760,6 +4760,122 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-26T10:35:21.968Z"
+    },
+    {
+      "id": "20261126t105024z-leonida-f41ab1dd",
+      "key": "takedown|leonida|https://bsky.app/profile/gamechosis.bsky.social/post/3n37iuyrph42w|41566",
+      "kind": "takedown",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-26T10:50:24.544Z",
+      "detectedAt": "2026-11-26T11:05:44.044Z",
+      "title": "Leonida in a takedown report",
+      "oneLine": "⚡️Take-Two DMCA'd fan-made GTA 6 PC ports on November 24; GitHub removed the Leonida…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/gamechosis.bsky.social/post/3n37iuyrph42w",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "⚡️Take-Two DMCA'd fan-made GTA 6 PC ports on November 24; GitHub removed the Leonida repo and 3,007 forks. Per PortWatch",
+          "at": "2026-11-26T10:50:24.544Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "⚡️Take-Two DMCA'd fan-made GTA 6 PC ports on November 24; GitHub removed the Leonida repo and 3,007 forks. Per PortWatch"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "e6b10336e35b0c94",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:3e7a88e6ee8e155365da6e35fd1e0e72d24079012372dae9487ab48f49b2cff8",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T11:05:44.044Z",
+          "by": "desk",
+          "note": "The only source is a single Bluesky post relaying a third-party claim, which is too weak on its own to confirm the takedown and fork count."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-26T11:05:44.044Z"
+    },
+    {
+      "id": "20261126t104453z-cgbj-78896e53",
+      "key": "claim|cgbj|https://news.google.com/rss/articles/cbmivwfbvv95cuxox0rmznnuxzzvuueyzkg1s2rxd0p5auvntjjxv0fqdkhsr1vhc1d0tl84r2x4su9ztvhjvkppnznpnm5wu2rdnxpcoej5etfwuxbfmndqczftenvwx09mzhzha0dqm29qmxvuek9icghknu9fdzhxzw1hvg8wr3nwrtctqtlsz1lux0z5y0jnvmrhyklmohvtrfm3bhd1chh0efdbakfkdgo4nlrvrwvrathxx0fxr1fewmtju1joqq?oc=5|41566",
+      "kind": "claim",
+      "projectId": "cgbj",
+      "projectName": "CGBJ",
+      "at": "2026-11-26T10:44:53.000Z",
+      "detectedAt": "2026-11-26T11:05:44.044Z",
+      "title": "New claim about CGBJ",
+      "oneLine": "Rockstar removed CGBJ's 25 FPS GTA 6 PC port from GitHub in minutes.",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOX0RMZnNuXzZVUUEyZkg1S2RXd0p5aUVnTjJXV0FQdkhSR1VHc1d0Tl84R2x4SU9ZTVhjVkppNzNpNm5WU2RDNXpCOEJ5eTFWUXBfMndQczFTenVwX09mZHZha0dqM29QMXVUek9icGhKNU9fdzhXZW1HVG8wR3NWRTctQTlSZ1lUX0Z5Y0JNVmRHYklMOHVTRFM3bHd1cHh0eFdBakFKdGo4NlRvRWVraThXX0FxR1FEWmtJU1JoQQ?oc=5",
+          "host": "news.google.com",
+          "outlet": "GameGPU",
+          "title": "Rockstar removed CGBJ's 25 FPS GTA 6 PC port from GitHub in minutes.",
+          "at": "2026-11-26T10:44:53.000Z",
+          "kind": "outside",
+          "authorHash": "d56d7368c4",
+          "excerpt": "Rockstar removed CGBJ's 25 FPS GTA 6 PC port from GitHub in minutes."
+        }
+      ],
+      "fingerprint": {
+        "repo": "codec-d/cool_fox",
+        "name": "cgbj",
+        "words": [
+          "cgbj"
+        ],
+        "hash": "f9575106814ac546",
+        "projectId": "cgbj"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:3f33a56acace18d652a279c77884268ca07fc7112f836af1e4ca12907282ecee",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T11:05:44.044Z",
+          "by": "desk",
+          "note": "The claim rests on a single outside outlet whose excerpt merely restates the one line, with no independent corroboration of the takedown."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-26T11:05:44.044Z"
     }
   ],
   "reports": [
