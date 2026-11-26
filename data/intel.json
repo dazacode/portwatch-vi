@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T04:38:24.703Z",
+  "updated": "2026-11-26T04:45:03.368Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-25T23:45:48.000Z",
-      "lastOkAt": "2026-11-26T04:38:24.703Z",
-      "seen": 250,
+      "lastOkAt": "2026-11-26T04:45:03.368Z",
+      "seen": 500,
       "events": 22,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T02:06:57.000Z",
-      "lastOkAt": "2026-11-26T04:38:24.703Z",
+      "lastOkAt": "2026-11-26T04:45:03.368Z",
       "seen": 14,
       "events": 6,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-25T22:55:15.009Z",
-      "lastOkAt": "2026-11-26T04:38:24.703Z",
-      "seen": 41,
+      "lastOkAt": "2026-11-26T04:45:03.368Z",
+      "seen": 82,
       "events": 1,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-25T23:40:50.649Z",
-      "lastOkAt": "2026-11-26T04:38:24.703Z",
-      "seen": 400,
+      "lastOkAt": "2026-11-26T04:45:03.368Z",
+      "seen": 800,
       "events": 0,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T04:38:24.703Z",
-      "seen": 111,
+      "lastOkAt": "2026-11-26T04:45:03.368Z",
+      "seen": 222,
       "events": 7,
       "errors": 0
     }
@@ -191,7 +191,13 @@
       "chain": "sha256:73a00f49a56c140bbe7835d970d8cd2ddb88e08cb9ff2bbaa82584a42f69b5fb",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T04:45:03.368Z",
+          "by": "desk",
+          "note": "The GitHub repository provides a primary source confirming an 11‑minute session that reached gameplay in the prison yard, with no conflicting evidence."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
       ]
@@ -232,20 +238,26 @@
         "score": 1,
         "reasons": [
           "the project’s own repository",
-          "from before the baseline"
+          "from before the baseline",
+          "published by the desk after review"
         ],
         "conflict": false
       },
-      "status": "held",
+      "status": "published",
       "sensitive": false,
       "audit": null,
       "chain": "sha256:8f33a7d880c4e0b36b9c6080186249b4fa95d0622db8fea3945969cb05a3303f",
-      "reportId": null,
-      "discordAt": null,
-      "revisions": [],
-      "heldReasons": [
-        "low confidence"
-      ]
+      "reportId": "20261126t000000z-cgbj-714913c4-report",
+      "discordAt": "2026-11-26T04:45:56.596Z",
+      "revisions": [
+        {
+          "at": "2026-11-26T04:45:03.368Z",
+          "by": "desk",
+          "note": "The project’s own record directly states the score change from 86.7% to 73.0%, with no conflicting evidence."
+        }
+      ],
+      "heldReasons": [],
+      "publishedAt": "2026-11-26T04:45:03.368Z"
     },
     {
       "id": "20261126t000000z-anyxboxx-58eda723",
@@ -1745,6 +1757,28 @@
           "at": "2026-11-26T00:00:00.000Z",
           "kind": "primary",
           "excerpt": "AnyXboxX joins the race: its copy of VIctory on the Neptune base reaches the world at 13.8 fps, and a contributor reports the first two missions played"
+        }
+      ]
+    },
+    {
+      "id": "20261126t000000z-cgbj-714913c4-report",
+      "itemId": "20261126t000000z-cgbj-714913c4",
+      "publishedAt": "2026-11-26T04:45:03.368Z",
+      "by": "desk",
+      "confidence": "low",
+      "overview": "CGBJ has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. CGBJ: summary, highlights, blockers changed; score 86.7% → 73.0%.",
+      "evidence": "The entry rests on one stored source, Project record. CGBJ: summary, highlights, blockers changed; score 86.7% → 73.0%.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://viportlive.com/projects/cgbj",
+          "host": "viportlive.com",
+          "outlet": "Project record",
+          "title": "CGBJ: summary, highlights, blockers changed; score 86.7% → 73.0%.",
+          "at": "2026-11-26T00:00:00.000Z",
+          "kind": "primary",
+          "excerpt": "CGBJ: summary, highlights, blockers changed; score 86.7% → 73.0%."
         }
       ]
     }
