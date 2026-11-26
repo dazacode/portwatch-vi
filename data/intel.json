@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T13:50:22.240Z",
+  "updated": "2026-11-26T14:07:18.705Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T13:31:06.000Z",
-      "lastOkAt": "2026-11-26T13:50:22.240Z",
-      "seen": 8750,
-      "events": 290,
+      "lastCursor": "2026-11-26T14:02:29.000Z",
+      "lastOkAt": "2026-11-26T14:07:18.705Z",
+      "seen": 9000,
+      "events": 310,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T10:11:01.000Z",
-      "lastOkAt": "2026-11-26T13:50:22.240Z",
+      "lastOkAt": "2026-11-26T14:07:18.705Z",
       "seen": 20,
       "events": 12,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T13:50:22.240Z",
-      "seen": 2047,
+      "lastOkAt": "2026-11-26T14:07:18.705Z",
+      "seen": 2107,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T13:15:16.000Z",
-      "lastOkAt": "2026-11-26T13:50:22.240Z",
-      "seen": 14000,
-      "events": 16,
+      "lastCursor": "2026-11-26T13:46:36.000Z",
+      "lastOkAt": "2026-11-26T14:07:18.705Z",
+      "seen": 14400,
+      "events": 17,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T01:50:22.240Z",
-      "lastOkAt": "2026-11-26T13:50:22.240Z",
-      "seen": 4127,
+      "lastCursor": "2026-11-26T02:07:18.705Z",
+      "lastOkAt": "2026-11-26T14:07:18.705Z",
+      "seen": 4247,
       "events": 7,
       "errors": 0
     }
@@ -6635,6 +6635,219 @@
       "sensitive": false,
       "audit": null,
       "chain": "sha256:8eb434fe9f6c9acf7047b22a9968f3cd29549ef35cad91ab85922228f94c7a49",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t135822z-xin-leonida-471e2975",
+      "key": "update|xin-leonida|activity|41567",
+      "kind": "update",
+      "projectId": "xin-leonida",
+      "projectName": "Xin-Leonida",
+      "at": "2026-11-26T13:58:22Z",
+      "detectedAt": "2026-11-26T14:07:18.705Z",
+      "title": "Xin-Leonida opened pull request #1",
+      "oneLine": "deps: bump third_party/rpf9-explorer from `e293917` to `4eee1e6`",
+      "sources": [
+        {
+          "url": "https://github.com/XinYulian/xin-leonida/pull/1",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "deps: bump third_party/rpf9-explorer from `e293917` to `4eee1e6`",
+          "at": "2026-11-26T13:58:22Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "xinyulian/xin-leonida",
+        "name": "xin-leonida",
+        "words": [
+          "xin-leonida"
+        ],
+        "hash": "9987d2806c224c45",
+        "projectId": "xin-leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:0d20b44e9f6ab678f893609af99deef287b71a946a9df21c7d4429febf03372d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T14:07:18.705Z",
+          "by": "desk",
+          "note": "The pull request is a clear dependency bump in the project’s own repository, with no conflicting sources."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T14:07:18.705Z"
+    },
+    {
+      "id": "20261126t135141z-americaslauncher-5949455e",
+      "key": "update|americaslauncher|activity|41567",
+      "kind": "update",
+      "projectId": "americaslauncher",
+      "projectName": "AmericasLauncher",
+      "at": "2026-11-26T13:51:41Z",
+      "detectedAt": "2026-11-26T14:07:18.705Z",
+      "title": "AmericasLauncher opened pull request #27",
+      "oneLine": "Update README.md",
+      "sources": [
+        {
+          "url": "https://github.com/isaac-btw/AmericasLauncher/pull/27",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Update README.md",
+          "at": "2026-11-26T13:41:28Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "isaac-btw/americaslauncher",
+        "name": "americaslauncher",
+        "words": [
+          "americaslauncher"
+        ],
+        "hash": "0c860a9ad8788a11",
+        "projectId": "americaslauncher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:c532ac00ab5bf377954647f23755961ac2dece788a679b68081d041c99c8d731",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T14:07:18.705Z",
+          "by": "desk",
+          "note": "A README-only pull request from the project's own repository is a thin, non-substantive source with no independent corroboration and an empty excerpt."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T14:07:18.705Z"
+    },
+    {
+      "id": "20261126t133359z-littlethings-build-dfa0b588",
+      "key": "update|littlethings-build|activity|41567",
+      "kind": "update",
+      "projectId": "littlethings-build",
+      "projectName": "littlethings-build",
+      "at": "2026-11-26T13:33:59Z",
+      "detectedAt": "2026-11-26T14:07:18.705Z",
+      "title": "littlethings-build opened pull request #1",
+      "oneLine": "rdna2-20fps-overhaul: PSO validation/fallback, batched barriers, 8GB …",
+      "sources": [
+        {
+          "url": "https://github.com/felixwaschosenn/littlethings-build/pull/1",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "rdna2-20fps-overhaul: PSO validation/fallback, batched barriers, 8GB …",
+          "at": "2026-11-26T13:33:59Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "felixwaschosenn/littlethings-build",
+        "name": "littlethings-build",
+        "words": [
+          "littlethings-build"
+        ],
+        "hash": "2314830972320410",
+        "projectId": "littlethings-build"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:c72299567d4c72b8c742feceafc8d0d3de447666322d7d384ff4dcec2b8563a5",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t133315z-scene-a2b7dd45",
+      "key": "takedown|-|https://news.google.com/rss/articles/cbmikgfbvv95cuxprvnxv3ftm0liovq5dzdkx09oz2tlb3vmltvxztluu3r4n1eycllns3pkwv9bnjfhodkxckfxuwpivunwsfjsqxnwwm43t1a1bkdpqknpzzffrgxly0f5oxpmdvo3zvm0twrnbtbiedjqmlpnzkphcno4nklmnfbpnfzisw56snphbnbszwqwrdm5zw?oc=5|41567",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-26T13:33:15.000Z",
+      "detectedAt": "2026-11-26T14:07:18.705Z",
+      "title": "Udaipur Kiran in a takedown report",
+      "oneLine": "GTA 6 PC Porting Efforts Persist Despite Take-Two’s DMCA Notice",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRVNxV3FTM0liOVQ5dzdkX09oZ2tlb3VMLTVXZTluU3R4N1EycllnS3pkWV9BNjFhODkxckFxUWpiVUNwSFJsQXNwWm43T1A1bkdpQkNPZzFfRGxlY0F5OXpmdVo3ZVM0TWRnbTBIeDJQMlpnZkphcno4NklMNFBpNFZiSW56SnpHbnBsZWQwRDM5Zw?oc=5",
+          "host": "news.google.com",
+          "outlet": "Udaipur Kiran",
+          "title": "GTA 6 PC Porting Efforts Persist Despite Take-Two’s DMCA Notice",
+          "at": "2026-11-26T13:33:15.000Z",
+          "kind": "outside",
+          "authorHash": "8d311528b1",
+          "excerpt": "GTA 6 PC Porting Efforts Persist Despite Take-Two’s DMCA Notice"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "91d8e55a190090a9",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:e2f53e0095941f686b107c75ad0646942176af0ef19b1d30f41c96559baedcb2",
       "reportId": null,
       "discordAt": null,
       "revisions": [],
