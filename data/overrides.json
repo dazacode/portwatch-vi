@@ -3529,6 +3529,77 @@
         "findingsSource": "From the repo's README, RESULTS.md and commits, read as text on 26 Nov, and its parent's README."
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "readmet3xt-lab/foxhound",
+        "related": [],
+        "basedOn": [
+          "cgbj"
+        ],
+        "highlights": [
+          "README: 27-30 fps in the opening's gameplay on a 12 GB RTX 4070 SUPER, DLSS Quality",
+          "DLSS Super Resolution and Frame Generation in place of the title's own upscaler",
+          "Series X profile drawn at a native 2560x1440 in about 8 GB of VRAM"
+        ],
+        "blockers": [
+          "Only the README's own frame counts: no recording or outside run yet",
+          "No ray tracing: a stand-in lights rooms, reflections blur, heat haze left out",
+          "Only the opening and first boat ride measured; cutscene hitches up to 190 ms"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.5,
+          "fps": 21,
+          "stability": "unknown"
+        },
+        "stats": {
+          "archived": false,
+          "createdAt": "2026-11-26T21:26:45Z",
+          "forks": 3,
+          "openIssues": 0,
+          "pushedAt": "2026-11-26T21:26:57Z",
+          "stars": 11,
+          "missing": false,
+          "commits7d": 723
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "foxhound",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "An RTX-tuned fork of CGBJ's cool_fox with DLSS and Frame Generation. Its README counts 27-30 fps in the opening and 21 on the boat on a 12 GB RTX 4070 SUPER, without ray tracing. Self-reported, no recording.",
+        "findings": [
+          {
+            "text": "Not a GitHub fork, but it keeps the whole history: 723 commits from VIctory and its forks, codec-d's cool_fox commits among them, with 91 under its own account on top.",
+            "url": "https://github.com/readmet3xt-lab/foxhound/commits/main"
+          },
+          {
+            "text": "The README's figures, the layer's own count on one PC (Ryzen 7 7800X3D, 12 GB RTX 4070 SUPER, 1440p, DLSS Quality): 34-37 ms a frame (27-30 fps) in the opening's gameplay, about 47 ms (21 fps) on the first boat ride, about 8 GB of VRAM. Frame Generation shows each frame twice; the title still runs at 30.",
+            "url": "https://github.com/readmet3xt-lab/foxhound/blob/main/README.md"
+          },
+          {
+            "text": "Read as text, the DLSS code is real: NVIDIA's Streamline is loaded at run time from a folder the user supplies, and only the title's FidelityFX upscale call is routed to DLSS, with the title's own upscaler running on any frame DLSS doesn't take.",
+            "url": "https://github.com/readmet3xt-lab/foxhound/blob/main/crates/victory-hle/src/modules/fidelityfx.rs"
+          },
+          {
+            "text": "The README lists what is wrong: ray tracing off (on, about 3 fps and a broken picture), a stand-in for indirect light and reflections, the heat-haze pass and decal defragmentation left out, 70-190 ms hitches in cutscenes, and stutter on each new build's first run.",
+            "url": "https://github.com/readmet3xt-lab/foxhound/blob/main/README.md"
+          }
+        ],
+        "findingsSource": "From the repo's README, docs, commits and DLSS code, read as text on 26 Nov.",
+        "id": "foxhound"
+      },
+      "changes": []
     }
   ],
   "pick": {
