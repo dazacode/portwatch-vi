@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T11:35:28.371Z",
+  "updated": "2026-11-26T11:50:21.469Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T11:31:07.000Z",
-      "lastOkAt": "2026-11-26T11:35:28.371Z",
-      "seen": 6500,
+      "lastOkAt": "2026-11-26T11:50:21.469Z",
+      "seen": 6750,
       "events": 234,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T08:19:21.000Z",
-      "lastOkAt": "2026-11-26T11:35:28.371Z",
+      "lastOkAt": "2026-11-26T11:50:21.469Z",
       "seen": 19,
       "events": 11,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T11:35:28.371Z",
-      "seen": 1507,
+      "lastOkAt": "2026-11-26T11:50:21.469Z",
+      "seen": 1567,
       "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T11:29:38.745Z",
-      "lastOkAt": "2026-11-26T11:35:28.371Z",
-      "seen": 10400,
+      "lastOkAt": "2026-11-26T11:50:21.469Z",
+      "seen": 10800,
       "events": 9,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T11:35:28.371Z",
-      "seen": 3047,
+      "lastOkAt": "2026-11-26T11:50:21.469Z",
+      "seen": 3167,
       "events": 7,
       "errors": 0
     }
@@ -5051,10 +5051,17 @@
       "chain": "sha256:3de272cdde1e875c5a24b85de21407b3f5aed2b31e1b503bcc2220eaf9615ce5",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T11:50:21.469Z",
+          "by": "desk",
+          "note": "The only source is a single Bluesky post whose excerpt merely restates the headline verbatim, giving no independent reporting or evidence that Rockstar actually issued a takedown of the CGBJ project."
+        }
+      ],
       "heldReasons": [
         "low confidence"
-      ]
+      ],
+      "deskAt": "2026-11-26T11:50:21.469Z"
     }
   ],
   "reports": [
