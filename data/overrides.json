@@ -1105,15 +1105,15 @@
         "publicLater": true,
         "byline": "Streamed live · private code, built on the public forks",
         "tier": "tracked",
-        "summary": "Hugo's private build, MashedHugo (titled Flamingo), renders Lucia's prologue close to the console: lighting, shadows, hair and faces, with floating geometry and pixelation. A screenshot Hugo posted on 26 Nov reads 17.4 fps indoors, with every shader and pipeline on the overlay working and 224 draws a frame still dropped; an earlier stream still read 19 fps. Both are light indoor scenes, not a sustained rate. Last seen stuck at the boat mission. Code private for now.",
+        "summary": "Hugo's private build, MashedHugo (titled Flamingo), renders Lucia's prologue close to the console: lighting, shadows, hair and faces, with floating geometry and pixelation. Hugo's 26 Nov screenshots read 17.4 fps indoors with Lucia, then 22 fps on overlay-only shots with no scene in view, about 700 draws a frame and 514 to 618 dropped. Every shader and pipeline on the overlay works. None of it shows a sustained rate in gameplay. Last seen stuck at the boat mission. Code private for now.",
         "highlights": [
           "Lighting, shadows, hair and faces close to the console",
-          "26 Nov overlay: 2,566 shaders and 2,319 pipelines, none failing",
+          "26 Nov overlay: 2,568 shaders and 2,323 pipelines, none failing",
           "A player walks the prison, talks to cellmates and opens the pause menu"
         ],
         "blockers": [
           "Blocky, pixelated textures on faces and walls, and floating geometry",
-          "17-19 fps only in light indoor scenes, with 224 draws a frame dropped; boat mission last seen not spawning",
+          "17-22 fps only in light or unseen scenes, up to 618 draws dropped; boat mission stuck",
           "Code is private for now, so nobody outside can test it"
         ],
         "provenOn": null,
@@ -1172,6 +1172,11 @@
           "date": "2026-11-26",
           "kind": "new",
           "text": "MashedHugo: Hugo's 26 Nov screenshot reads 17.4 fps indoors, with no shader or pipeline failures and 224 draws a frame still dropped. Like the earlier 19 fps, it is a light scene; scores unchanged."
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "new",
+          "text": "MashedHugo: two more overlay shots from Hugo read 22 fps, but show no scene, draw about 700 calls a frame and drop 514 to 618, with the GPU timer near 0 ms. Scores unchanged."
         }
       ]
     },
