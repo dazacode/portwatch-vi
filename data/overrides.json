@@ -111,33 +111,42 @@
     {
       "id": "cgbj",
       "from": {
-        "summary": "Private VIctory/XCL build, PortWatch-verified. Owner rates story progress at 80%, rendering 0.85 and stability 0.85. It averages 20 fps on NVIDIA with 10 GB RAM and 16 GB VRAM (not a typo); code is private.",
+        "summary": "Public VIctory/XCL build, PortWatch-verified. Owner rates story progress at 80%, rendering 0.85 and stability 0.85. It averages 25 fps on NVIDIA with 8 GB system RAM and 16 GB VRAM.",
         "highlights": [
           "Owner ratings: 80% story, rendering 0.85, stability 0.85",
-          "20 fps gameplay average (NVIDIA, 10 GB RAM and 16 GB VRAM, not a typo)",
-          "Graphics look close to the console; code remains private"
+          "25 fps gameplay average on NVIDIA",
+          "Public GPL-3.0 source at codec-d/cool_fox"
         ],
         "blockers": [
           "Minor visual glitches remain",
-          "Gameplay does not sustain 30 fps; 20 fps is the reported average",
-          "Code is private, so nobody outside the group can test or reproduce it"
+          "Gameplay does not sustain 30 fps; 25 fps is the reported average",
+          "Independent reproduction and README verification are still needed"
         ],
-        "assessedBy": "manual"
+        "assessedBy": "manual",
+        "basedOn": [
+          "marvis",
+          "xcl"
+        ]
       },
       "to": {
-        "summary": "A private build based on VIctory and XCL. Upstream's owner says PortWatch checked it with the group and now rates it at 80% of the story, rendering 0.85 and stability 0.85, averaging 20 fps on NVIDIA with 10 GB of RAM and 16 GB of video memory. A clip posted on 26 Nov backs the frame rate: the Gone Fishing mission plays at about 23 fps on NVIDIA's overlay. It comes from a fan account, and no public footage shows the story past that opening mission. Code not public.",
+        "summary": "Public since 26 Nov at codec-d/cool_fox (GPL-3.0), with a Windows build. The code is avatarmanz's VIctory-7900XTX with codec-d's NVIDIA and memory work merged on top from 25 Nov. Upstream's owner reports 25 fps gameplay on NVIDIA, 80% of the story, rendering 0.85 and stability 0.85; a 26 Nov clip shows about 23 fps. Nobody outside the group has reported a run of the public code yet.",
         "highlights": [
-          "A 26 Nov clip shows the Gone Fishing mission at about 23 fps on NVIDIA's overlay",
-          "Upstream's owner rates it at 80% of the story, rendering 0.85 and stability 0.85",
-          "Water, clouds, birds and detailed characters close to the console"
+          "Code public on 26 Nov: codec-d/cool_fox, GPL-3.0, with a Windows x64 build",
+          "Upstream's owner reports 25 fps gameplay on NVIDIA, 80% story, rendering 0.85",
+          "A 26 Nov clip shows the Gone Fishing mission at about 23 fps on NVIDIA's overlay"
         ],
         "blockers": [
-          "The 23 fps clip is from a fan account; no public footage shows the story past the opening",
-          "Gameplay doesn't hold 30 fps; minor visual glitches remain",
-          "Code is private, so nobody outside the group can test or reproduce it"
+          "Nobody outside the group has reported a run of the public code yet",
+          "No public footage shows the story past the opening mission",
+          "Gameplay doesn't hold 30 fps; minor visual glitches remain"
         ],
         "assessedAt": "2026-11-26",
-        "assessedBy": "claude"
+        "assessedBy": "claude",
+        "basedOn": [
+          "marvis",
+          "xcl",
+          "avatarmanz"
+        ]
       },
       "changes": [
         {
@@ -223,9 +232,25 @@
           {
             "text": "The same Gone Fishing clip was reposted to r/FitGirlRepack on 26 November under a 24 fps title; the overlay in the clip still reads 23.",
             "url": "https://www.reddit.com/r/FitGirlRepack/comments/1y5su9i/cgbj_build_nearly_retail_graphics_24fps/"
+          },
+          {
+            "text": "The code went public on 26 Nov as codec-d/cool_fox, under GPL-3.0, with a Windows x64 build published at 06:35 UTC.",
+            "url": "https://github.com/codec-d/cool_fox"
+          },
+          {
+            "text": "Its history is avatarmanz's VIctory-7900XTX up to commit 0a43566, merged at 22:43 UTC on 25 Nov with codec-d's RTX 5090 and 32 GB RAM changes. Later commits port NVIDIA Wave32 lowering and fix a Series S black screen.",
+            "url": "https://github.com/codec-d/cool_fox/commit/e05d4633a07340ccc89e82b1e3c64d2723ab0143"
+          },
+          {
+            "text": "Most of the README is still avatarmanz's: its figures (13 to 22 fps in the boat mission, 64 GB of RAM recommended) are for an RX 7900 XTX, and it gives none for codec-d's NVIDIA build.",
+            "url": "https://github.com/codec-d/cool_fox/blob/f4b48ad766ddbec1a1867022cd42f7645b0dd55e/README.md"
+          },
+          {
+            "text": "The launcher picks the Series S profile. The README asks for Windows x64, an AVX2 processor and a Direct3D 12 card with shader model 6.6 and mesh shaders.",
+            "url": "https://github.com/codec-d/cool_fox/blob/f4b48ad766ddbec1a1867022cd42f7645b0dd55e/README.md"
           }
         ],
-        "findingsSource": "From the r/FitGirlRepack post of 26 November. A repost of kunaiposting's clip, not a second reading."
+        "findingsSource": "From codec-d/cool_fox's README and commits, 26 November."
       },
       "changes": [
         {
@@ -2508,7 +2533,11 @@
       "changes": []
     }
   ],
-  "pick": null,
+  "pick": {
+    "id": "cgbj",
+    "at": "2026-11-26",
+    "reason": "Owner's call: its code went public on 26 Nov, at 25 fps reported on NVIDIA."
+  },
   "ignored": [
     {
       "repo": "DesignWithTommy/i95",
