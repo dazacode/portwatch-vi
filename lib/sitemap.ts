@@ -29,8 +29,7 @@ export function sitemapEntries(sources: Sources, now = Date.now()): MetadataRout
   return [
     page("/", ...board, news.updated),
     page("/standings", ...board),
-    page("/news", news.updated, ...tracker.news.map((n) => n.date)),
-    page("/activity", activity.updated),
+    page("/news", news.updated, activity.updated, ...tracker.news.map((n) => n.date)),
     page("/verify"),
     page("/method"),
     page("/top-20"),

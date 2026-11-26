@@ -24,7 +24,7 @@ export default async function Page() {
   return (
     <Container className="max-w-3xl pt-8">
       <Breadcrumb
-        parent={{ name: "Intelligence", path: "/intelligence" }}
+        parent={{ name: "News", path: "/news" }}
         page={{ name: "Queue", path: "/intelligence/queue" }}
       />
       <h1 className="text-2xl font-semibold">Queue</h1>
@@ -53,8 +53,8 @@ export default async function Page() {
         )}
       </div>
       <p className="mt-8 text-sm">
-        <Link href="/intelligence" className="underline underline-offset-4">
-          Back to the feed
+        <Link href="/news?show=reports" className="underline underline-offset-4">
+          Back to the reports
         </Link>
       </p>
     </Container>

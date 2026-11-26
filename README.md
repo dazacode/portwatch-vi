@@ -28,7 +28,7 @@ their claims come from upstream.
 - `data/overrides.json`: what we found ourselves, applied on top. Edit this one
 - `data/intel.json`: the intelligence ledger, queue and reports; written by `./pw intel`
 - `data/scores.json`: the claims of the last run, for milestones
-- `app/news/`, `app/activity/`: the story feed and the public commit/PR log
+- `app/news/`: one page for reports, stories, code (commits and PRs) and board changes, in tabs
 - `app/intelligence/`: the discovery feed, reports and the queue; `docs/INTELLIGENCE.md` is the plan
 - `lib/scoring.mjs`: upstream's scale for claims, a copy of their `assets/js/scoring.js`
 - `lib/rating.mjs`: our score, from the claim and the evidence

@@ -138,9 +138,9 @@ describe("sitemap and robots", () => {
     )
     const of = (path: string) => entries.find((e) => e.url === SITE.url + path)
     expect(of(`/projects/${tracker.efforts[0].id}`)?.lastModified).toBe(at)
-    expect(of("/activity")?.lastModified).toBe(at)
+    expect(of("/news")?.lastModified).toBe(at)
     expect(of("/method")).not.toHaveProperty("lastModified")
-    expect(of("/news")).not.toHaveProperty("lastModified")
+    expect(of("/verify")).not.toHaveProperty("lastModified")
   })
 
   it("lets crawlers in and shows them the sitemap", () => {

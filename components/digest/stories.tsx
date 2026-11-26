@@ -59,7 +59,11 @@ export function Stories(props: Props) {
 
   function save(next: Filters) {
     written.current = parseFilters(new URLSearchParams(toQuery(next))).q
-    const query = toQuery(next)
+    // Other parameters, such as the news page's tab, stay as they are.
+    const params = new URLSearchParams(window.location.search)
+    for (const key of ["q", "topic", "category", "sort"]) params.delete(key)
+    for (const [key, value] of new URLSearchParams(toQuery(next))) params.set(key, value)
+    const query = params.toString()
     window.history.replaceState(null, "", query ? `?${query}` : window.location.pathname)
   }
 

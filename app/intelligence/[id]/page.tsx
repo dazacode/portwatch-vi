@@ -97,7 +97,7 @@ export default async function Page({ params }: Props) {
     <Container className="max-w-2xl pt-8 wrap-anywhere">
       <JsonLd data={ld} />
       <Breadcrumb
-        parent={{ name: "Intelligence", path: "/intelligence" }}
+        parent={{ name: "News", path: "/news" }}
         page={{ name: item.title, path: `/intelligence/${item.id}` }}
       />
 
@@ -231,7 +231,7 @@ export default async function Page({ params }: Props) {
 
       <p className="mt-8 text-xs text-muted-foreground">
         Automated from public sources. It may be wrong; the{" "}
-        <Link href="/intelligence" className="underline underline-offset-4">
+        <Link href="/news?show=reports" className="underline underline-offset-4">
           feed
         </Link>{" "}
         and the sources above are the record. Nothing here hosts or links to game files.

@@ -20,9 +20,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: pageUrl(`/intelligence/${item.id}`),
     lastModified: item.publishedAt ?? item.at,
   }))
-  return [
-    ...base,
-    { url: pageUrl("/intelligence"), lastModified: intel.updated ?? undefined },
-    ...reports,
-  ]
+  return [...base, ...reports]
 }

@@ -57,7 +57,7 @@ export function BoardNotice() {
       {first && (
         <div className="glass pointer-events-auto flex max-w-sm items-center gap-2 rounded-full py-1 pr-1 pl-5 text-sm motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-top-2 lg:motion-safe:slide-in-from-bottom-2">
           <Link
-            href={fresh.length > 1 ? "/news#board" : `/projects/${first.projectId}`}
+            href={fresh.length > 1 ? "/news?show=board" : `/projects/${first.projectId}`}
             onClick={close}
             className="min-w-0 py-2 underline-offset-4 hover:underline"
           >

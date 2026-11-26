@@ -86,8 +86,8 @@ export default async function Page() {
               <h2 id="intel" className="text-lg font-semibold">
                 Intelligence
               </h2>
-              <Link href="/intelligence" className={more}>
-                The feed
+              <Link href="/news?show=reports" className={more}>
+                All reports
               </Link>
             </div>
             <p className="mb-1 text-sm text-muted-foreground">

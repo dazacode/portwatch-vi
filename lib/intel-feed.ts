@@ -38,7 +38,7 @@ export function intelFeed(file: IntelFile) {
     '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
     "<channel>",
     `<title>${xml(SITE.name)}: Intelligence</title>`,
-    `<link>${xml(pageUrl("/intelligence"))}</link>`,
+    `<link>${xml(pageUrl("/news?show=reports"))}</link>`,
     `<atom:link href="${xml(pageUrl("/intelligence/feed.xml"))}" rel="self" type="application/rss+xml"/>`,
     "<description>Automated reports on changes to the public GTA VI PC build record, with sources and confidence. Unofficial.</description>",
     "<language>en</language>",
@@ -64,7 +64,7 @@ export function jsonFeed(file: IntelFile) {
   return {
     version: "https://jsonfeed.org/version/1.1",
     title: `${SITE.name}: Intelligence`,
-    home_page_url: pageUrl("/intelligence"),
+    home_page_url: pageUrl("/news?show=reports"),
     feed_url: pageUrl("/intelligence/feed.json"),
     description: "Automated reports on the GTA VI PC build record. Unofficial.",
     language: "en",

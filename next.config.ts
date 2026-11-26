@@ -32,6 +32,9 @@ const nextConfig: NextConfig = {
       destination: "https://viportlive.com/:path",
       permanent: false,
     },
+    // News, reports and code are one page now. Their old addresses open the matching tab.
+    { source: "/intelligence", destination: "/news?show=reports", permanent: true },
+    { source: "/activity", destination: "/news?show=code", permanent: true },
     {
       source: "/pc-answer/:rest*",
       has: [{ type: "host", value: "viportlive.com" }],

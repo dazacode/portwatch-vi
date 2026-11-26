@@ -20,9 +20,12 @@ function SourceLink({ source }: { source: Source }) {
 export function DigestSummary({
   summary,
   compact = false,
+  busy = true,
 }: {
   summary: Summary | null
   compact?: boolean
+  /** The busy projects, when the page doesn't show them elsewhere. */
+  busy?: boolean
 }) {
   if (!summary) return null
   const points = compact ? summary.points.slice(0, 3) : summary.points
@@ -34,7 +37,7 @@ export function DigestSummary({
         </h2>
         {compact && (
           <Link
-            href="/news?sort=important"
+            href="/news?show=stories&sort=important"
             className="text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground"
           >
             All stories by importance
@@ -59,7 +62,7 @@ export function DigestSummary({
             </li>
           ))}
         </ul>
-        {!compact && summary.projects.length > 0 && (
+        {!compact && busy && summary.projects.length > 0 && (
           <div className="border-b py-3">
             <h3 className="font-semibold">Busy projects</h3>
             <ul className="mt-1 space-y-2 text-sm">

@@ -61,7 +61,7 @@ export function CommitFeed({ initial }: { initial: Pulse }) {
         </ul>
       )}
       <Link
-        href="/activity"
+        href="/news?show=code"
         className="mx-5 mt-2 mb-4 w-fit text-sm underline underline-offset-4 hover:text-stripe-1"
       >
         All activity

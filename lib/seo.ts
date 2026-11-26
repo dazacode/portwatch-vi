@@ -70,20 +70,8 @@ export const PAGES = {
   news: {
     title: "News about running GTA VI on PC",
     description:
-      "Public stories about the community projects trying to run GTA VI on PC, from takedowns to milestones. Gathered every half hour and linked to where they were written.",
+      "Everything around the community projects trying to run GTA VI on PC on one timeline: sourced reports, press stories, commits and pull requests, takedowns and projects joining the board.",
     path: "/news",
-  },
-  activity: {
-    title: "Commits and pull requests of GTA VI PC ports",
-    description:
-      "Public commits and pull requests from the projects trying to run GTA VI on PC, read from GitHub every half hour, and new repositories as they are found.",
-    path: "/activity",
-  },
-  intelligence: {
-    title: "Intelligence: GTA VI PC build discoveries",
-    description:
-      "Automated reports on new GTA VI PC build references, test reports and takedowns, with sources, timestamps and confidence. Unofficial.",
-    path: "/intelligence",
   },
   verify: {
     title: "Prove a GTA VI PC run live",
