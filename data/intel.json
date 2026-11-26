@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T07:20:21.511Z",
+  "updated": "2026-11-26T07:35:43.682Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T07:01:33.000Z",
-      "lastOkAt": "2026-11-26T07:20:21.511Z",
-      "seen": 2250,
-      "events": 87,
+      "lastCursor": "2026-11-26T07:30:57.000Z",
+      "lastOkAt": "2026-11-26T07:35:43.682Z",
+      "seen": 2500,
+      "events": 104,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T06:21:27.000Z",
-      "lastOkAt": "2026-11-26T07:20:21.511Z",
+      "lastOkAt": "2026-11-26T07:35:43.682Z",
       "seen": 16,
       "events": 8,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-26T05:40:16.544Z",
-      "lastOkAt": "2026-11-26T07:20:21.511Z",
-      "seen": 495,
-      "events": 18,
+      "lastCursor": "2026-11-26T07:29:38.175Z",
+      "lastOkAt": "2026-11-26T07:35:43.682Z",
+      "seen": 554,
+      "events": 19,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T06:54:33.640Z",
-      "lastOkAt": "2026-11-26T07:20:21.511Z",
-      "seen": 3600,
+      "lastCursor": "2026-11-26T07:30:28.845Z",
+      "lastOkAt": "2026-11-26T07:35:43.682Z",
+      "seen": 4000,
       "events": 3,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T07:20:21.511Z",
-      "seen": 1033,
+      "lastOkAt": "2026-11-26T07:35:43.682Z",
+      "seen": 1149,
       "events": 7,
       "errors": 0
     }
@@ -3728,6 +3728,170 @@
       "note": "model: evidence has 1, which is not in a source",
       "publishedAt": "2026-11-26T06:39:39.335Z",
       "heldReasons": []
+    },
+    {
+      "id": "20261126t072408z-victory-ka1qux-4d3d86c7",
+      "key": "update|victory-ka1qux|activity|41566",
+      "kind": "update",
+      "projectId": "victory-ka1qux",
+      "projectName": "victory-ka1qux",
+      "at": "2026-11-26T07:24:08Z",
+      "detectedAt": "2026-11-26T07:35:43.682Z",
+      "title": "victory-ka1qux opened pull request #8",
+      "oneLine": "GPU: report retired buffer copies in DRED page faults",
+      "sources": [
+        {
+          "url": "https://github.com/ka1qux/BRVIctory-ka1qux/pull/8",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "GPU: report retired buffer copies in DRED page faults",
+          "at": "2026-11-26T07:24:08Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "ka1qux/victory-ka1qux",
+        "name": "victory-ka1qux",
+        "words": [
+          "victory-ka1qux"
+        ],
+        "hash": "d4008848581000c1",
+        "projectId": "victory-ka1qux"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:65ce83c7d14619a7438a2de1a74874b8fe91b14f091ddbbafd8e9de6c4592e49",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T07:35:43.682Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the stored material is too thin to plainly support the technical claim in the one line."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T07:35:43.682Z"
+    },
+    {
+      "id": "20261126t071432z-openscarlett-6320a2fb",
+      "key": "update|openscarlett|activity|41566",
+      "kind": "update",
+      "projectId": "openscarlett",
+      "projectName": "OpenScarlett",
+      "at": "2026-11-26T07:14:32Z",
+      "detectedAt": "2026-11-26T07:35:43.682Z",
+      "title": "OpenScarlett pushed 2 commits",
+      "oneLine": "Merge branch 'wt/d3d12x-3d-world'",
+      "sources": [
+        {
+          "url": "https://github.com/californiaAlmonds/OpenScarlett/commit/d58bfd517904e719c0f917e16dd2319141c794f5",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Merge branch 'wt/d3d12x-3d-world'",
+          "at": "2026-11-26T07:14:32Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "californiaalmonds/openscarlett",
+        "name": "openscarlett",
+        "words": [
+          "openscarlett"
+        ],
+        "hash": "170bac8987211e59",
+        "projectId": "openscarlett"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:2e1ae4371d19b34b82a0207eeeff96f237dbce812778b91544c659727917d102",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T07:35:43.682Z",
+          "by": "desk",
+          "note": "A bare merge-commit message from the project's own repository, with no excerpt or independent corroboration, is too thin to stand as a publishable update."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T07:35:43.682Z"
+    },
+    {
+      "id": "20261126t071145z-scarlettx-8fa893fc",
+      "key": "update|scarlettx|activity|41566",
+      "kind": "update",
+      "projectId": "scarlettx",
+      "projectName": "ScarlettX",
+      "at": "2026-11-26T07:11:45Z",
+      "detectedAt": "2026-11-26T07:35:43.682Z",
+      "title": "ScarlettX opened pull request #54",
+      "oneLine": "xgameruntime: implement XUserGetTokenAndSignatureAsync and result functions",
+      "sources": [
+        {
+          "url": "https://github.com/Freminet/ScarlettX/pull/54",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "xgameruntime: implement XUserGetTokenAndSignatureAsync and result functions",
+          "at": "2026-11-26T07:11:45Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "freminet/scarlettx",
+        "name": "scarlettx",
+        "words": [
+          "scarlettx"
+        ],
+        "hash": "10048a2174301844",
+        "projectId": "scarlettx"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:c97911ad991232d4f098f663f08ccf287291a8e690cafeabbbfdb5e506fd1486",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
