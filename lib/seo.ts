@@ -85,6 +85,12 @@ export const PAGES = {
       "What each score means, how claims are checked by independent testers and live challenges, how streams are found, and the fakes to avoid.",
     path: "/method",
   },
+  canItRun: {
+    title: "Can my PC run GTA 6? Your PC against PS5 and Xbox",
+    description:
+      "Pick your graphics card and processor to see which console version of GTA VI your PC matches: Xbox Series S, PS5 and Series X, or PS5 Pro. From benchmarks, not TFLOPS.",
+    path: "/can-i-run-it",
+  },
   top20: {
     title: "GTA VI on PC: the top 20 builds",
     description:
