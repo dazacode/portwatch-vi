@@ -1,17 +1,22 @@
+import Link from "next/link"
+import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 /** The question everyone comes with, answered by a sign that writes itself and catches. */
 export function Answer({
   done,
+  unofficial,
   compact,
   still,
 }: {
   done: boolean
+  /** A fan build is Playable, so the answer is yes, but not from Rockstar. */
+  unofficial: boolean
   /** Beside an open panel. */
   compact: boolean
   still: boolean
 }) {
-  const text = done ? "Yes" : "Not yet"
+  const text = done || unofficial ? "Yes" : "Not yet"
   return (
     <div
       className={cn(
@@ -44,6 +49,35 @@ export function Answer({
           {text}
         </span>
       </p>
+      {unofficial && !done && (
+        <div
+          className={cn(
+            "flex flex-col items-center gap-3",
+            // Clear of the tail of the Y, which hangs below the sign.
+            compact
+              ? "mt-[clamp(0.25rem,3svh,1.5rem)] gap-2 max-lg:mt-0"
+              : "mt-[clamp(0.5rem,6svh,3.5rem)] short:mt-0"
+          )}
+        >
+          <p
+            className={cn(
+              "font-semibold tracking-[0.2em] text-white/85 uppercase",
+              compact ? "text-xs" : "text-sm sm:text-base"
+            )}
+          >
+            Unofficially
+          </p>
+          <Link
+            href="/standings"
+            className={cn(
+              buttonVariants({ size: compact ? "sm" : "lg" }),
+              "bg-white text-black hover:bg-white/85"
+            )}
+          >
+            See the standings
+          </Link>
+        </div>
+      )}
     </div>
   )
 }

@@ -46,6 +46,7 @@ const glass = "text-white hover:bg-white/20 hover:text-white dark:hover:bg-white
 export function Opening({
   broadcast,
   done,
+  unofficial,
   sound,
   panel,
   onPanel,
@@ -57,6 +58,8 @@ export function Opening({
   broadcast: Broadcast
   /** GTA VI runs on PC, start to finish. */
   done: boolean
+  /** A fan build is Playable. */
+  unofficial: boolean
   sound: ReturnType<typeof useSound>
   panel: Panel | null
   onPanel: (panel: Panel | null) => void
@@ -116,7 +119,7 @@ export function Opening({
             panel ? "gap-2" : "gap-[clamp(0.75rem,4svh,2.5rem)] short:gap-2"
           )}
         >
-          <Answer done={done} compact={panel !== null} still={still} />
+          <Answer done={done} unofficial={unofficial} compact={panel !== null} still={still} />
           {drop && <Clock drop={drop} at={at} compact={panel !== null} />}
         </div>
         {panel && (

@@ -326,6 +326,8 @@ export function getAnswer(tracker: Tracker) {
   const furthest = stages.sort((a, b) => stageRank(b) - stageRank(a))[0] ?? "groundwork"
   return {
     done: furthest === "complete",
+    /** A community build has reached our Playable goal: GTA VI runs on PC, though not from Rockstar. */
+    unofficial: stageRank(furthest) >= stageRank("smooth"),
     furthest: stageLabel(furthest),
     leader: leader ? { name: leader.effort.name as string, score: leader.score as number } : null,
   }

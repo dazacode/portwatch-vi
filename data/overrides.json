@@ -1182,8 +1182,8 @@
       },
       "to": {
         "gta.fps": 20,
-        "goalProof.fps": "https://rumble.com/v7ixmps-gta6-modding-stream.html",
-        "goalProof.render": "https://rumble.com/v7ixmps-gta6-modding-stream.html",
+        "goalProof.fps": null,
+        "goalProof.render": null,
         "summary": "A private build on NotNozy's Rumble stream. Its last minute plays GTA VI's Gone Fishing boat mission at 18-22 fps, overlay up, close to the console on a bright sea. Story is the owner's call. AMD card; code private."
       },
       "changes": [
@@ -1203,7 +1203,14 @@
         "basedOn": [
           "avatarmanz"
         ]
-      }
+      },
+      "changes": [
+        {
+          "date": "2026-11-26",
+          "kind": "new",
+          "text": "Owner's call: CGBJ is the only build counted as Playable. NotNozy's 20 fps boat-mission footage stays in its findings."
+        }
+      ]
     },
     {
       "id": "cgbj",

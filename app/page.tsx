@@ -48,7 +48,7 @@ export default async function Page() {
     (p) => p.rank !== null
   )
   const answer = getAnswer(tracker)
-  const verdict = answer.done ? "Yes." : "Not yet."
+  const verdict = answer.done ? "Yes." : answer.unofficial ? "Yes, unofficially." : "Not yet."
   const projects = Object.fromEntries(standings.map((s) => [s.id, s.name]))
 
   return (
@@ -64,6 +64,7 @@ export default async function Page() {
         projects={projects}
         answer={`GTA VI on PC? ${verdict}`}
         done={answer.done}
+        unofficial={answer.unofficial}
       />
       <Container>
         <DigestSummary summary={getSummary(digest, feed, tracker)} compact />

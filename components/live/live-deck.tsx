@@ -99,12 +99,15 @@ export function LiveDeck({
   projects,
   answer,
   done,
+  unofficial,
 }: {
   initial: Snapshot
   broadcast: Broadcast
   projects: Record<string, string>
   answer: string
   done: boolean
+  /** A fan build is Playable. */
+  unofficial: boolean
 }) {
   const live = useSWR<Snapshot>("/api/live", fetcher, { ...REFRESH, fallbackData: initial })
   const show = useSWR<Broadcast>("/api/broadcast", fetcher, { ...REFRESH, fallbackData: broadcast })
@@ -218,6 +221,7 @@ export function LiveDeck({
           <Opening
             broadcast={onAir}
             done={done}
+            unofficial={unofficial}
             sound={sound}
             panel={view.panel}
             onPanel={view.openPanel}
