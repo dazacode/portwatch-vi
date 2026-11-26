@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T06:05:28.419Z",
+  "updated": "2026-11-26T06:20:20.067Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T06:01:34.000Z",
-      "lastOkAt": "2026-11-26T06:05:28.419Z",
-      "seen": 1000,
+      "lastOkAt": "2026-11-26T06:20:20.067Z",
+      "seen": 1250,
       "events": 60,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T02:06:57.000Z",
-      "lastOkAt": "2026-11-26T06:05:28.419Z",
+      "lastOkAt": "2026-11-26T06:20:20.067Z",
       "seen": 14,
       "events": 6,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T05:40:16.544Z",
-      "lastOkAt": "2026-11-26T06:05:28.419Z",
-      "seen": 200,
+      "lastOkAt": "2026-11-26T06:20:20.067Z",
+      "seen": 259,
       "events": 18,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T06:00:32.000Z",
-      "lastOkAt": "2026-11-26T06:05:28.419Z",
-      "seen": 1600,
+      "lastOkAt": "2026-11-26T06:20:20.067Z",
+      "seen": 2000,
       "events": 2,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T06:05:28.419Z",
-      "seen": 453,
+      "lastOkAt": "2026-11-26T06:20:20.067Z",
+      "seen": 569,
       "events": 7,
       "errors": 0
     }
@@ -1744,6 +1744,11 @@
           "at": "2026-11-26T06:05:28.419Z",
           "by": "desk",
           "note": "The primary source provides no evidence for the specific percentage change, making the claim unsupported."
+        },
+        {
+          "at": "2026-11-26T06:20:20.067Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository with an empty excerpt, so nothing in the record plainly substantiates the 82.6% to 87.8% move and it is not independent."
         }
       ],
       "heldReasons": [
@@ -1804,6 +1809,11 @@
           "at": "2026-11-26T06:05:28.419Z",
           "by": "desk",
           "note": "The source is a single social post with no supporting evidence, and it does not provide a verifiable excerpt confirming the percentage change."
+        },
+        {
+          "at": "2026-11-26T06:20:20.067Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so nothing stored independently corroborates the 78.7% to 84% move."
         }
       ],
       "heldReasons": [
