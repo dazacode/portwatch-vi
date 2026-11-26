@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T20:06:58.398Z",
+  "updated": "2026-11-26T20:20:23.285Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T20:01:22.000Z",
-      "lastOkAt": "2026-11-26T20:06:58.398Z",
-      "seen": 14750,
+      "lastOkAt": "2026-11-26T20:20:23.285Z",
+      "seen": 15000,
       "events": 536,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T18:18:39.000Z",
-      "lastOkAt": "2026-11-26T20:06:58.398Z",
+      "lastOkAt": "2026-11-26T20:20:23.285Z",
       "seen": 25,
       "events": 17,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T20:06:58.398Z",
-      "seen": 3495,
+      "lastOkAt": "2026-11-26T20:20:23.285Z",
+      "seen": 3556,
       "events": 23,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T19:56:48.000Z",
-      "lastOkAt": "2026-11-26T20:06:58.398Z",
-      "seen": 23600,
+      "lastOkAt": "2026-11-26T20:20:23.285Z",
+      "seen": 24000,
       "events": 24,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T08:06:58.398Z",
-      "lastOkAt": "2026-11-26T20:06:58.398Z",
-      "seen": 6927,
+      "lastCursor": "2026-11-26T08:20:23.285Z",
+      "lastOkAt": "2026-11-26T20:20:23.285Z",
+      "seen": 7040,
       "events": 7,
       "errors": 0
     }
@@ -7938,10 +7938,17 @@
       "chain": "sha256:ccf680ed91bd2e1a018e8600b1fab0040304c08934c22adf93859201206de6ed",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T20:20:23.285Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub entry with no excerpt, so the specific claims about the footer setting and %LOCALAPPDATA% pointer are not plainly supported in the record."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T20:20:23.285Z"
     },
     {
       "id": "20261126t181839z-anyxboxx-de9ca3e0",
@@ -8338,10 +8345,17 @@
       "chain": "sha256:c484d3da9279b6d9f6f81f0bfbc6cb886b88eacd21930bb0916dc21f5f725204",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T20:20:23.285Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub entry with no excerpt, so it does not plainly substantiate the full one-line claim about the README contents."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T20:20:23.285Z"
     }
   ],
   "reports": [
