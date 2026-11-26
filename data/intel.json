@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T07:35:43.682Z",
+  "updated": "2026-11-26T07:50:24.658Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T07:30:57.000Z",
-      "lastOkAt": "2026-11-26T07:35:43.682Z",
-      "seen": 2500,
+      "lastOkAt": "2026-11-26T07:50:24.658Z",
+      "seen": 2750,
       "events": 104,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T06:21:27.000Z",
-      "lastOkAt": "2026-11-26T07:35:43.682Z",
+      "lastOkAt": "2026-11-26T07:50:24.658Z",
       "seen": 16,
       "events": 8,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T07:29:38.175Z",
-      "lastOkAt": "2026-11-26T07:35:43.682Z",
-      "seen": 554,
+      "lastOkAt": "2026-11-26T07:50:24.658Z",
+      "seen": 613,
       "events": 19,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T07:30:28.845Z",
-      "lastOkAt": "2026-11-26T07:35:43.682Z",
-      "seen": 4000,
+      "lastOkAt": "2026-11-26T07:50:24.658Z",
+      "seen": 4400,
       "events": 3,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T07:35:43.682Z",
-      "seen": 1149,
+      "lastOkAt": "2026-11-26T07:50:24.658Z",
+      "seen": 1265,
       "events": 7,
       "errors": 0
     }
@@ -1932,10 +1932,17 @@
       "chain": "sha256:ce63accd234ce60eb1bd174498dc22be38696b26326b2196fa88a7f5cb069997",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T07:50:24.658Z",
+          "by": "desk",
+          "note": "The only source is VIPortLive's own record with an empty excerpt, so nothing independently substantiates the 61%→75% move."
+        }
+      ],
       "heldReasons": [
         "low confidence"
-      ]
+      ],
+      "deskAt": "2026-11-26T07:50:24.658Z"
     },
     {
       "id": "20261126t054016z-cgbj-b08a47ea",
@@ -3888,10 +3895,17 @@
       "chain": "sha256:c97911ad991232d4f098f663f08ccf287291a8e690cafeabbbfdb5e506fd1486",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T07:50:24.658Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository entry with an empty excerpt, so the claim rests on a single non-independent source that provides no supporting detail beyond the title itself."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T07:50:24.658Z"
     }
   ],
   "reports": [
