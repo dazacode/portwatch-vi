@@ -2,6 +2,7 @@ import { afterEach, describe, expect, it, vi } from "vitest"
 import { newestCommit } from "@/lib/atom"
 import { applyOverrides, isTracker } from "@/lib/overrides.mjs"
 import { rate, shareOf } from "@/lib/rating.mjs"
+import { isPrivateBuild } from "@/lib/scoring.mjs"
 import type { Effort, Tracker } from "@/lib/tracker"
 import { type Evidence, getEvidence, getRecords, getStandings, getTracker } from "@/lib/tracker"
 import { getUpstream } from "@/lib/upstream"
@@ -149,6 +150,14 @@ describe("overrides", () => {
       "no longer"
     )
     expect(apply(tracker, {}).tracker.efforts).toHaveLength(1)
+  })
+  it("keeps a build public on its mirror once upstream drops its repo", () => {
+    const dropped = { ...tracker, efforts: [effort(PLAYABLE, { repo: null, stats: {} })] }
+    const mirrored = { patches: [{ id: "a", from: { mirror: null }, to: { mirror: "y/fork" } }] }
+    const out = apply(dropped, mirrored).tracker.efforts[0]
+    expect(out).toMatchObject({ repo: "y/fork", mirror: "y/fork", stats: { missing: true } })
+    expect(isPrivateBuild(out)).toBe(false)
+    expect(apply(dropped, {}).tracker.efforts[0].repo).toBeNull()
   })
 })
 

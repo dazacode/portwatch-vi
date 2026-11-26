@@ -127,7 +127,7 @@ Values:
 - `manualScore`: a number or `null`, only for an owner's hand call
 - `tier`: `tracked` or `watchlist`
 - `mirror`: `owner/name` of a fork or unchanged mirror, or `null`. When upstream marks the repo missing
-  (a 404), a project with a mirror stays in the race, links to the mirror and is not announced as down.
+  (a 404), or drops it (`repo: null`), a project with a mirror stays in the race, links to the mirror and is not announced as down.
   Set it only after reading the mirror: source only, the same code, no game files.
 
 An added project also takes `repo`, `branch`, `basedOn`, `related`, `evidence`, `publicLater`,

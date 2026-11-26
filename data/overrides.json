@@ -111,16 +111,15 @@
     {
       "id": "cgbj",
       "from": {
-        "summary": "Public VIctory/XCL build, PortWatch-verified. Owner rates story progress at 80%, rendering 0.85 and stability 0.85. It averages 25 fps on NVIDIA with 8 GB system RAM and 16 GB VRAM.",
+        "summary": "Private VIctory/XCL build, PortWatch-verified. Owner rates story progress at 80%, rendering 0.7 and stability 0.85. It averages 25 fps with 8 GB system RAM and 16 GB VRAM. Its code was public briefly and is offline now.",
         "highlights": [
-          "Owner ratings: 80% story, rendering 0.85, stability 0.85",
-          "25 fps gameplay average on NVIDIA",
-          "Public GPL-3.0 source at codec-d/cool_fox"
+          "Owner ratings: 80% story, rendering 0.7, stability 0.85",
+          "25 fps gameplay average"
         ],
         "blockers": [
           "Minor visual glitches remain",
           "Gameplay does not sustain 30 fps; 25 fps is the reported average",
-          "Independent reproduction and README verification are still needed"
+          "Code is private, so nobody outside the group can test or reproduce it"
         ],
         "assessedBy": "manual",
         "basedOn": [
@@ -129,16 +128,16 @@
         ]
       },
       "to": {
-        "summary": "Its code went public on 26 Nov at codec-d/cool_fox (GPL-3.0). codec-d took that repo down later the same day, but the code is still up through forks and unchanged mirrors, such as DoubleGhosty/cool_fox. Open beta with a Windows launcher for NVIDIA and AMD. Owner: 25 fps, 80% story, rendering 0.85.",
+        "summary": "VIctory/XCL build, PortWatch-verified. Its code went public on 26 Nov as codec-d/cool_fox, taken down by codec-d the same day; forks keep it public, and it is ranked on DoubleGhosty/cool_fox, which carries it on. Upstream's owner: 25 fps, 80% story, rendering 0.7.",
         "highlights": [
-          "Open beta and a Windows launcher out on 26 Nov, for NVIDIA and AMD",
-          "Upstream's owner reports 25 fps gameplay on NVIDIA, 80% story, rendering 0.85",
-          "Code still up through forks: dozens of GPL-3.0 copies keep it public after the original repo went down"
+          "A 26 Nov clip shows the Gone Fishing mission at about 23 fps on NVIDIA's overlay",
+          "Code still public through forks; DoubleGhosty/cool_fox keeps developing it",
+          "Upstream's owner rates it 25 fps, 80% story, rendering 0.7"
         ],
         "blockers": [
-          "Nobody outside the group has reported a run of the public code yet",
-          "No public footage shows the story past the opening mission",
-          "Gameplay doesn't hold 30 fps; minor visual glitches remain"
+          "Rendering rated 0.7, short of the console look our Playable goal needs",
+          "Fast runs shown only on high-end PCs; its README recommends 64 GB of RAM",
+          "No public footage of the story past the opening mission"
         ],
         "assessedAt": "2026-11-26",
         "assessedBy": "claude",
@@ -292,6 +291,10 @@
           {
             "text": "codec-d/cool_fox answers 404 since 26 Nov: removed from codec-d's own account, with no DMCA notice. The code stays public through its forks and unchanged mirrors, such as DoubleGhosty/cool_fox (GPL-3.0, commit f4b48ad, source only).",
             "url": "https://github.com/DoubleGhosty/cool_fox"
+          },
+          {
+            "text": "DoubleGhosty/cool_fox is no longer an unchanged mirror: it calls itself a continuation of CGBJ's runtime, and by 22:18 UTC on 26 Nov it was 64 commits past f4b48ad, with Wave32 shader work from several contributors, and had 391 forks.",
+            "url": "https://github.com/DoubleGhosty/cool_fox/commits/main"
           }
         ],
         "findingsSource": "From codec-d/cool_fox's README, docs, code and release, kunaiposting's and codewzada's posts, GitHub's API and codec-d's commits of 26 Nov."
@@ -666,6 +669,10 @@
           {
             "text": "Outside report on an RTX 5080 (Ryzen 7 7800X3D) at 4cbe9d7 and 01aadd1: as built, every start (10 of 10) stopped before the first frame, which the tester traces to the 16 MiB default thread stack the fork links with. With a 1 MiB stack the device was lost about a minute in, during the first load, in 14 of 14 runs; victory-fork reached the world on the same PC. An RTX 3070 Laptop in the same thread got into the prologue with most of the world undrawn, and a later run lost the device after about 8 minutes when its 8 GB ran out.",
             "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/121"
+          },
+          {
+            "text": "Its default branch is now a-publier (cd8dfc06): Belobug's RX 9070 XT fixes and HUD ported onto avatarmanz's VIctory-7900XTX at c9c932c, then FSR 4.1.2 from DexNom. Its README is avatarmanz's, measuring about 22 fps in a city street on an RX 7900 XTX with renderer patches on.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/cd8dfc06ace7ccb91a19431e74bc2d0de2a10145/README.md"
           }
         ],
         "findingsSource": "From Belobug’s README, commits and code at 4cbe9d76, its README at a59f3e52 and later commit titles, its public GitHub profile, upstream’s tracker and two clips posted on X by Dany, on 25 November; then its README, commits and code at 4f62c2a5, its rx9070xt branch at 81ebb7bd and issues #143, #151, #163 and #196, on 26 November. Code read as text, not run; clips watched; then TechRadar's article of 25 November and issue #121 with its comments, on 26 November."
@@ -674,22 +681,24 @@
     {
       "id": "belobug",
       "from": {
-        "summary": "Belobug's VIctory fork runs on AMD Radeon; PortWatch saw its near-console open world and mission gameplay at about 8 fps. The owner now reports ray tracing working on AMD; the README still describes the ray-tracing path as failing.",
+        "summary": "Belobug's VIctory fork runs on AMD Radeon and is now very playable: about 22 fps on average with no crashes, using about 30 GB of RAM and 12 GB of video memory. Its lit open world plays through missions, with story progress rated 80%, level with CGBJ, and its picture is rated just below DexNom's. Its README hasn't caught up yet: it still reports 5-7 fps.",
         "highlights": [
           "Platform: AMD Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
-          "The open world looks close to the retail game: lit, with textures, people, vehicles, vegetation, water and sky",
+          "Very playable: about 22 fps on average and no crashes, using about 30 GB of RAM and 12 GB of video memory",
+          "Lit open world with textures, people, vehicles, vegetation, water and sky; its picture is rated just below DexNom's",
           "Owner reports ray-traced lighting now working on AMD",
-          "Plays through missions and rarely crashes; built on VIctory's main and upstream pull requests"
+          "Plays through missions; story progress rated 80%, level with CGBJ",
+          "Built on VIctory's main and upstream pull requests"
         ],
         "assessedAt": "2026-11-26",
         "assessedBy": "manual"
       },
       "to": {
-        "summary": "Belobug's VIctory fork for AMD Radeon, tested by its author on one RX 9070 XT PC. GTA VI's open world renders lit; its README reports 5 to 8 fps and says \"not playable yet\". Outside testers on other RX 9070 XT PCs report 3 to 8 fps; one found the first boat mission fails within seconds. Upstream's owner says PortWatch saw missions at about 8 fps and ray tracing now working on AMD; the README still says ray-traced light doesn't run and turning it on removes the device. For the owner: story 0.5 is above First act, yet the sources show free driving in Chapter 1 and no mission past the opening. Self-reported.",
+        "summary": "Belobug's VIctory fork for AMD Radeon. Upstream's owner calls it very playable: about 22 fps on average, no crashes, story 80%. Its default branch now builds on avatarmanz's VIctory-7900XTX with Belobug's RX 9070 XT fixes; that README's 22 fps is measured on an RX 7900 XTX. Outside RX 9070 XT testers reported 3 to 8 fps. For the owner: we found no public source for 80% story. Self-reported.",
         "highlights": [
-          "The open world renders lit, with textures, people, vehicles, vegetation, water and sky",
-          "A 9-second clip posted with its repo link shows driving at about four frames a second",
-          "Upstream's word: plays missions at about 8 fps and rarely crashes"
+          "Upstream's owner: about 22 fps on average and no crashes, using about 30 GB RAM and 12 GB VRAM",
+          "Default branch builds on avatarmanz's VIctory-7900XTX, with RX 9070 XT fixes, HUD and FSR 4.1.2",
+          "Lit open world with textures, people, vehicles, vegetation, water and sky"
         ],
         "assessedAt": "2026-11-26",
         "assessedBy": "claude"
@@ -739,16 +748,16 @@
       "id": "belobug",
       "from": {
         "blockers": [
-          "About 8 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
+          "Its README still reports 5-7 fps, calls the build \"not playable yet\" and lists more video memory than a 16 GB card has",
           "Ray tracing is reported working on AMD; the README says enabling its ray-tracing path still ends in device removal",
-          "Needs about 22 GB of RAM and more than 16 GB of video memory; tested on one AMD PC only, nothing on NVIDIA or Intel yet"
+          "Tested on one AMD PC only; nothing on NVIDIA or Intel yet"
         ]
       },
       "to": {
         "blockers": [
-          "5-8 fps on its author's PC, less while driving; its README calls that \"not playable yet\"",
-          "Phone out turns the world black; README: no ray-traced light; 266 shader programs don't translate",
-          "Needs about 22 GB RAM and over 16 GB video memory; two RDNA2 cards lost the device"
+          "The 22 fps is upstream's word; its README's 22 fps is avatarmanz's, on an RX 7900 XTX",
+          "Outside RX 9070 XT testers reported 3 to 8 fps; two RDNA2 cards lost the device",
+          "README: distant flicker, late textures, wrong indoor light; 64 GB of RAM recommended"
         ]
       }
     },
@@ -827,10 +836,10 @@
     {
       "id": "dexnom",
       "from": {
-        "summary": "DexNom Runtime, a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it: the open world looks close to the retail game, and it plays through missions at about 3-4 fps (about 1 fps with ray tracing on), rarely crashing."
+        "summary": "DexNom Runtime, a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it. Its picture is the best-rated on our board, though lighting and materials still have problems, and it plays through missions at about 3-4 fps (about 1 fps with ray tracing on), rarely crashing."
       },
       "to": {
-        "summary": "DexNom RayTime (formerly DexNom Runtime), a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it: the open world looks close to the retail game, and it plays through missions at about 3-4 fps (about 1 fps with ray tracing on), rarely crashing."
+        "summary": "DexNom RayTime (formerly DexNom Runtime), a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it. Its picture is the best-rated on our board, though lighting and materials still have problems, and it plays through missions at about 3-4 fps (about 1 fps with ray tracing on), rarely crashing."
       }
     },
     {
@@ -884,6 +893,10 @@
           {
             "text": "On an RX 9070 XT in -Safe mode, with the workaround switches from #44, some trees and white cloth come out magenta, glossy surfaces are too bright and the light jumps in one step at dusk. The tester ties all three to the ray-traced resolve never running and a constant ambient stand-in, offers to port Belobug's sky-following ambient, and measures about 7.7 fps median in the open world.",
             "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/71"
+          },
+          {
+            "text": "README of 26 Nov, 270-second city-street runs on one RX 7900 XTX PC: 25 fps standing and 23 walking at 1080p with ray tracing off, 20 and 16 at 1440p, 10 and 9 with ray tracing on; 37 to 45 GB of RAM.",
+            "url": "https://github.com/avatarmanz/VIctory-7900XTX/blob/126acb35b509bdbe097d607f198d7a2736de5202/README.md"
           }
         ],
         "findingsSource": "Issue 21, 25 Nov; tree read as text at 0a43566; issues #70, #71 and #75, 26 Nov."
@@ -1040,12 +1053,8 @@
     },
     {
       "id": "belobug",
-      "from": {
-        "gta.fps": 8
-      },
-      "to": {
-        "gta.fps": 8
-      },
+      "from": {},
+      "to": {},
       "changes": [
         {
           "date": "2026-11-26",
@@ -1061,6 +1070,16 @@
           "date": "2026-11-26",
           "kind": "up",
           "text": "Belobug: gta.fps changed; score 78.4% → 79.0%."
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "down",
+          "text": "Belobug: summary, highlights, blockers changed; score 91.3% → 86.7%."
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "Belobug: gta.fps changed; score 86.7% → 91.3%."
         }
       ]
     },
@@ -1069,7 +1088,7 @@
       "from": {
         "highlights": [
           "Looks about the same as AvatarManz's build, the leader on our board",
-          "Owner rates story progress at 80%, with a picture close to the console",
+          "Owner rates story progress at 80%",
           "Runs on an AMD card"
         ],
         "blockers": [
@@ -1261,6 +1280,11 @@
           "date": "2026-11-26",
           "kind": "new",
           "text": "Original repo down; the code lives on in its forks, such as DoubleGhosty/cool_fox"
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "CGBJ: text follows upstream's rendering cap at 0.7 and its move back to private builds; the code stays public through forks such as DoubleGhosty/cool_fox."
         }
       ]
     }
