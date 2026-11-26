@@ -127,6 +127,12 @@ export function getStatus(
   if (isPrivate) return { status: "private", reason: "Private build" }
   // The scout that set the flag is also the clock, so a stalled scout makes nobody inactive.
   const checked = sources.tracker.scout.lastRun
+  if (stats.missing && effort.mirror) {
+    return {
+      status: "active",
+      reason: `Original repo down; the code lives on in its forks, such as ${effort.mirror}`,
+    }
+  }
   if (stats.missing) {
     const on = isDate(checked) ? ` on ${utcDay(checked)}` : ""
     const answer = `Repo not reachable: GitHub answered ${stats.missingStatus ?? "an error"}${on}`

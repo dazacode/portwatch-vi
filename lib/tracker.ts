@@ -38,6 +38,8 @@ export type Effort = {
   /** What upstream scores it, before our findings. Null when upstream doesn't list it. */
   sourceScore?: number | null
   nuked?: { at: string; note: string }
+  /** Ours: a fork or unchanged mirror that keeps the code public when its own repo is gone. */
+  mirror?: string | null
   /** A link for each thing a goal needs shown. Ours; upstream's `proof` is something else. */
   goalProof?: Partial<Record<"fps" | "render" | "story", string | null>>
   gta: Record<"loads" | "boots" | "menu" | "world" | "playable" | "fps", number>
@@ -236,7 +238,10 @@ export type Standing = {
   url: string | null
   isPrivate: boolean
   nuked: string | null
+  /** The repo is gone and nothing keeps the code public. */
   missing: boolean
+  /** The repo is gone, but this fork or mirror keeps the code public. */
+  mirror: string | null
   tier: Effort["tier"]
   /** Our score: the claim, discounted by how little of it others have seen. The ranking is by this. */
   rating: number
@@ -267,6 +272,13 @@ export type Standing = {
 
 const evidenceSum = (s: Standing) => s.checks.reduce((sum, c) => sum + c.confidence, 0)
 
+/** Where the code can be read: its repo, or the mirror that keeps it public once the repo is gone. */
+export function codeUrl(e: Pick<Effort, "repo" | "nuked" | "stats" | "mirror">) {
+  if (!e.repo || e.nuked) return null
+  if (!e.stats.missing) return `https://github.com/${e.repo}`
+  return e.mirror ? `https://github.com/${e.mirror}` : null
+}
+
 /** By our score. Equal scores go by evidence, then the claim, then stars. */
 export function getStandings(tracker: Tracker, evidence: Evidence[]): Standing[] {
   return tracker.efforts
@@ -282,10 +294,12 @@ export function getStandings(tracker: Tracker, evidence: Evidence[]): Standing[]
       return {
         id: e.id,
         name: e.name,
-        url: e.repo && !e.nuked && !e.stats.missing ? `https://github.com/${e.repo}` : null,
+        url: codeUrl(e),
         isPrivate: isPrivateBuild(e),
         nuked: e.nuked?.at ?? null,
-        missing: e.stats.missing ?? false,
+        // A repo that's gone isn't missing code when its forks keep it public.
+        missing: (e.stats.missing ?? false) && !e.mirror,
+        mirror: e.stats.missing && e.mirror ? e.mirror : null,
         tier: e.tier,
         rating: ours.score,
         parts: ours.parts,

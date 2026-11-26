@@ -117,6 +117,11 @@ const FIELDS = {
   assessedBy: string(40),
   manualScore: (raw, path) => (raw === 'null' ? null : number(0, 100)(raw, path)),
   provenOn: string(200, { nullable: true }),
+  mirror: (raw) => {
+    if (raw === 'null') return null;
+    if (!/^[\w.-]+\/[\w.-]+$/.test(raw)) throw invalid('mirror looks like "owner/name": a fork or mirror that keeps the code public, or null.');
+    return raw;
+  },
   findings: findingList,
   findingsSource: string(500, { nullable: true }),
   publicLater: boolean,

@@ -210,7 +210,7 @@ export async function GET() {
   const open = leader && !leader.isPrivate && leader.repo
   const line = open ? "is public" : "leads the race"
   // Its code can outlive its repo: a removed repo leaves its forks and mirrors up.
-  const down = open ? await repoDown(leader.repo as string) : false
+  const down = open ? Boolean(leader.mirror) || (await repoDown(leader.repo as string)) : false
   const fonts = await shareFonts(`${line} is public leads the race`)
   const host = new URL(SITE.url).host
 

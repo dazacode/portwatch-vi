@@ -155,6 +155,16 @@ describe("status", () => {
       reason: "Repo not reachable: GitHub answered 404 on 24 Nov",
     })
   })
+  it("keeps a project in the race when its repo is gone but a mirror keeps the code public", () => {
+    const stats = { missing: true, missingStatus: 404 }
+    const gone = effort({ stats, mirror: "someone-else/alpha" })
+    expect(getStatus(gone, false, sources()).status).toBe("active")
+    const [s] = getStandings({ efforts: [gone] } as unknown as Tracker, [])
+    expect(s.missing).toBe(false)
+    expect(s.mirror).toBe("someone-else/alpha")
+    expect(s.url).toBe("https://github.com/someone-else/alpha")
+  })
+
   it("leaves a repo open when commits were read after it went missing", () => {
     const stats = { missing: true, missingStatus: 404 }
     const s = sources({ commits: { a: ["2026-11-25T00:30:00Z"] } })

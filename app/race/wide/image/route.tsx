@@ -151,7 +151,7 @@ export async function GET() {
   const atPlayable = ranked.filter(playable)
   const runnable = ranked.filter((p) => p.claimedStage === "Runnable" || p.stage === "Runnable")
   const open = leader && !leader.isPrivate && leader.repo
-  const down = open ? await repoDown(leader.repo as string) : false
+  const down = open ? Boolean(leader.mirror) || (await repoDown(leader.repo as string)) : false
   const code = !leader ? "" : leader.isPrivate ? "Private" : down ? "In forks" : "Public"
   const line = leader && playable(leader) ? "is playable on PC" : "leads the race"
   const drop = getDrop(tracker)
