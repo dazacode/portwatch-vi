@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T12:07:05.572Z",
+  "updated": "2026-11-26T12:20:23.879Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T12:02:35.000Z",
-      "lastOkAt": "2026-11-26T12:07:05.572Z",
-      "seen": 7000,
+      "lastOkAt": "2026-11-26T12:20:23.879Z",
+      "seen": 7250,
       "events": 251,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T08:19:21.000Z",
-      "lastOkAt": "2026-11-26T12:07:05.572Z",
+      "lastOkAt": "2026-11-26T12:20:23.879Z",
       "seen": 19,
       "events": 11,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T12:07:05.572Z",
-      "seen": 1627,
+      "lastOkAt": "2026-11-26T12:20:23.879Z",
+      "seen": 1687,
       "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T11:58:26.000Z",
-      "lastOkAt": "2026-11-26T12:07:05.572Z",
-      "seen": 11200,
+      "lastOkAt": "2026-11-26T12:20:23.879Z",
+      "seen": 11600,
       "events": 13,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T00:07:05.572Z",
-      "lastOkAt": "2026-11-26T12:07:05.572Z",
-      "seen": 3287,
+      "lastCursor": "2026-11-26T00:20:23.879Z",
+      "lastOkAt": "2026-11-26T12:20:23.879Z",
+      "seen": 3407,
       "events": 7,
       "errors": 0
     }
@@ -5223,10 +5223,17 @@
       "chain": "sha256:18dcdb046c5d1fa6a9422d45a1bb9432a90a61cc297d89eb157bc8d74fe3d61b",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T12:20:23.879Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository, which is primary but not independent, and its excerpt is empty, so the one line is not plainly supported by stored content."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T12:20:23.879Z"
     },
     {
       "id": "20261126t120223z-leonida-continued-3b27ed7d",
@@ -5275,10 +5282,17 @@
       "chain": "sha256:ebb1d3f360b77b075650c2c23b24adab18c95f279037ec08290c2df77520b5a9",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T12:20:23.879Z",
+          "by": "desk",
+          "note": "The project’s own GitHub repository directly supports the pull request update and no source contradicts it."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T12:20:23.879Z"
     },
     {
       "id": "20261126t120213z-native-victory-macos-6bcabbb8",
