@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { Suspense } from "react"
 import { Container } from "@/components/container"
 import { JsonLd } from "@/components/json-ld"
@@ -8,6 +9,7 @@ import { ProjectRow } from "@/components/standings/project-row"
 import { getBoardEvents } from "@/lib/board"
 import { getRace } from "@/lib/race"
 import { pageMeta, standingsLd, standingsMeta } from "@/lib/seo"
+import { SITE } from "@/lib/site"
 import { STEPS } from "@/lib/stages.mjs"
 import { getProjects, type Project, toEntry } from "@/lib/standings"
 import {
@@ -60,6 +62,25 @@ export default async function Page() {
     <Container className="pt-8">
       <JsonLd data={standingsLd(projects)} />
       <h1 className="text-2xl font-semibold">Standings</h1>
+      <p className="mt-2 max-w-2xl text-muted-foreground">
+        Dozens of groups are trying to get the console game running on PC, and their claims are
+        spread across GitHub, streams and social media. This page puts them in one place. Projects
+        are ranked by what we can check: their own GitHub (code, README and commits), what they post
+        and stream on social media, and findings from other people. We aren’t the only or the
+        official verifier: everything here is scouted from public sources. If you’re behind a
+        project and its score or place looks wrong, you can vouch for a change:{" "}
+        <Link href="/verify" className="underline underline-offset-4 hover:text-stripe-1">
+          prove it live
+        </Link>{" "}
+        or{" "}
+        <a
+          href={`https://github.com/${SITE.repo}/issues`}
+          className="underline underline-offset-4 hover:text-stripe-1"
+        >
+          open an issue
+        </a>
+        .
+      </p>
       <Suspense fallback={<ExplorerFallback {...view} stages={stages} note={note} />}>
         <Explorer {...view} stages={stages} note={note} />
       </Suspense>
