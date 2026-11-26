@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T04:45:03.368Z",
+  "updated": "2026-11-26T05:49:00.198Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-25T23:45:48.000Z",
-      "lastOkAt": "2026-11-26T04:45:03.368Z",
-      "seen": 500,
-      "events": 22,
+      "lastCursor": "2026-11-26T05:31:23.000Z",
+      "lastOkAt": "2026-11-26T05:49:00.198Z",
+      "seen": 750,
+      "events": 47,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T02:06:57.000Z",
-      "lastOkAt": "2026-11-26T04:45:03.368Z",
+      "lastOkAt": "2026-11-26T05:49:00.198Z",
       "seen": 14,
       "events": 6,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-25T22:55:15.009Z",
-      "lastOkAt": "2026-11-26T04:45:03.368Z",
-      "seen": 82,
-      "events": 1,
+      "lastCursor": "2026-11-26T05:40:16.544Z",
+      "lastOkAt": "2026-11-26T05:49:00.198Z",
+      "seen": 141,
+      "events": 18,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-25T23:40:50.649Z",
-      "lastOkAt": "2026-11-26T04:45:03.368Z",
-      "seen": 800,
-      "events": 0,
+      "lastCursor": "2026-11-26T05:28:07.045Z",
+      "lastOkAt": "2026-11-26T05:49:00.198Z",
+      "seen": 1200,
+      "events": 2,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T04:45:03.368Z",
-      "seen": 222,
+      "lastOkAt": "2026-11-26T05:49:00.198Z",
+      "seen": 337,
       "events": 7,
       "errors": 0
     }
@@ -1689,6 +1689,1833 @@
       "heldReasons": [
         "a rate cap"
       ]
+    },
+    {
+      "id": "20261126t054016z-notnozy-05b268c3",
+      "key": "update|notnozy|playable|41566",
+      "kind": "update",
+      "projectId": "notnozy",
+      "projectName": "NotNozy",
+      "at": "2026-11-26T05:40:16.544Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "NotNozy gained 5.2 points",
+      "oneLine": "The project’s record moved from 82.6% to 87.8%.",
+      "sources": [
+        {
+          "url": "https://viportlive.com/projects/notnozy",
+          "host": "viportlive.com",
+          "outlet": "VIPortLive",
+          "title": "NotNozy record",
+          "at": "2026-11-26T05:40:16.544Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "notnozy",
+        "words": [
+          "notnozy"
+        ],
+        "hash": "ff6a8fb19de530c5",
+        "projectId": "notnozy"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:e8dd32f70777a3fccdd5c90f55abb9f799517f8d47ffa2f9188f9fb111a2bbdc",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T05:49:00.198Z",
+          "by": "desk",
+          "note": "The primary source provides no evidence for the specific percentage change, making the claim unsupported."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t054016z-doomsday-139ff0df",
+      "key": "update|doomsday|playable|41566",
+      "kind": "update",
+      "projectId": "doomsday",
+      "projectName": "Doomsday",
+      "at": "2026-11-26T05:40:16.544Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "Doomsday gained 5.3 points",
+      "oneLine": "The project’s record moved from 78.7% to 84%.",
+      "sources": [
+        {
+          "url": "https://viportlive.com/projects/doomsday",
+          "host": "viportlive.com",
+          "outlet": "VIPortLive",
+          "title": "Doomsday record",
+          "at": "2026-11-26T05:40:16.544Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "doomsday",
+        "words": [
+          "doomsday"
+        ],
+        "hash": "ef6ab139c54c99d1",
+        "projectId": "doomsday"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:bbb7f76a3ef051a57a6e05221aaa054144028534aba863d64126e455d5c4e69a",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T05:49:00.198Z",
+          "by": "desk",
+          "note": "The source is a single social post with no supporting evidence, and it does not provide a verifiable excerpt confirming the percentage change."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t054016z-darkworldhm-bb6250f3",
+      "key": "update|darkworldhm|playable|41566",
+      "kind": "update",
+      "projectId": "darkworldhm",
+      "projectName": "darkworldhm",
+      "at": "2026-11-26T05:40:16.544Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "darkworldhm gained 5.3 points",
+      "oneLine": "The project’s record moved from 79.5% to 84.8%.",
+      "sources": [
+        {
+          "url": "https://viportlive.com/projects/darkworldhm",
+          "host": "viportlive.com",
+          "outlet": "VIPortLive",
+          "title": "darkworldhm record",
+          "at": "2026-11-26T05:40:16.544Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "darkworldhm",
+        "words": [
+          "darkworldhm"
+        ],
+        "hash": "0d4b9da3d5c9bbd0",
+        "projectId": "darkworldhm"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:463611c41dba651c8f548602060017cb053fbbbb9ffe4913a2f45059c3ebf4d7",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t054016z-suri-9c59ea59",
+      "key": "update|suri|playable|41566",
+      "kind": "update",
+      "projectId": "suri",
+      "projectName": "suri",
+      "at": "2026-11-26T05:40:16.544Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "suri gained 14 points",
+      "oneLine": "The project’s record moved from 61% to 75%.",
+      "sources": [
+        {
+          "url": "https://viportlive.com/projects/suri",
+          "host": "viportlive.com",
+          "outlet": "VIPortLive",
+          "title": "suri record",
+          "at": "2026-11-26T05:40:16.544Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "suri",
+        "words": [
+          "suri"
+        ],
+        "hash": "ef6305b5cdc57dcd",
+        "projectId": "suri"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:ce63accd234ce60eb1bd174498dc22be38696b26326b2196fa88a7f5cb069997",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t054016z-cgbj-b08a47ea",
+      "key": "update|cgbj|smooth|41566",
+      "kind": "update",
+      "projectId": "cgbj",
+      "projectName": "CGBJ",
+      "at": "2026-11-26T05:40:16.544Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "CGBJ moved to smooth",
+      "oneLine": "The project’s record moved from 86.7% to 89.8%.",
+      "sources": [
+        {
+          "url": "https://viportlive.com/projects/cgbj",
+          "host": "viportlive.com",
+          "outlet": "VIPortLive",
+          "title": "CGBJ record",
+          "at": "2026-11-26T05:40:16.544Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "cgbj",
+        "words": [
+          "cgbj"
+        ],
+        "hash": "59e77f3a0fd0ee90",
+        "projectId": "cgbj"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:74e348879655019353bb2b726c89ab0623324dea634fecb5bd20e7c748e6dd71",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t053123z-leonida-continued-fc789f0b",
+      "key": "update|leonida-continued|activity|41566",
+      "kind": "update",
+      "projectId": "leonida-continued",
+      "projectName": "Leonida Continued",
+      "at": "2026-11-26T05:31:23Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "Leonida Continued opened pull request #2097",
+      "oneLine": "d3d12: a mesh PSO with conservative rasterization needs no topology type (RT-MESH-PSO-CONSERVATIVE-TOPOLOGY)",
+      "sources": [
+        {
+          "url": "https://github.com/ubiquitarianism/leonida/pull/2097",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "d3d12: a mesh PSO with conservative rasterization needs no topology type (RT-MESH-PSO-CONSERVATIVE-TOPOLOGY)",
+          "at": "2026-11-26T05:31:23Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "ubiquitarianism/leonida",
+        "name": "leonida continued",
+        "words": [
+          "leonida",
+          "continued",
+          "leonida-continued"
+        ],
+        "hash": "97e5cc1c64514408",
+        "projectId": "leonida-continued"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:b7d22db704674fc004578f5535e06cb973d64d68d62ea8ce7dec5ff3e2c33dec",
+      "reportId": "20261126t053123z-leonida-continued-fc789f0b-report",
+      "discordAt": "2026-11-26T05:51:45.242Z",
+      "revisions": [],
+      "publishedAt": "2026-11-26T05:49:00.198Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261126t053111z-marvis-afc50d13",
+      "key": "update|marvis|activity|41566",
+      "kind": "update",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-26T05:31:11Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "VIctory opened pull request #439",
+      "oneLine": "Shaders: one console wave sharing LDS runs in the console flow on 32-lane hosts",
+      "sources": [
+        {
+          "url": "https://github.com/Marvisak/VIctory/pull/439",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Shaders: one console wave sharing LDS runs in the console flow on 32-lane hosts",
+          "at": "2026-11-26T05:31:11Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "1141780380054693",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:c19f4579de0beb902b00c0cb2c4d092584acef62ce8887db5c124caa8aa9d2ec",
+      "reportId": "20261126t053111z-marvis-afc50d13-report",
+      "discordAt": "2026-11-26T05:51:45.242Z",
+      "revisions": [],
+      "note": "model: overview has 439, which is not in a source",
+      "publishedAt": "2026-11-26T05:49:00.198Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261126t053101z-xcl-61a2f183",
+      "key": "update|xcl|activity|41566",
+      "kind": "update",
+      "projectId": "xcl",
+      "projectName": "XCL",
+      "at": "2026-11-26T05:31:01Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "XCL opened pull request #2593",
+      "oneLine": "D3D12.X: a list vtable at a reused heap address gets its own methods",
+      "sources": [
+        {
+          "url": "https://github.com/xcl-dev/xcl/pull/2593",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "D3D12.X: a list vtable at a reused heap address gets its own methods",
+          "at": "2026-11-26T05:31:01Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "xcl-dev/xcl",
+        "name": "xcl",
+        "words": [
+          "xcl"
+        ],
+        "hash": "5402c0039d315a44",
+        "projectId": "xcl"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:79b53222ef21c2bec0c0ec9b99ae15b7c42f19e35a0ee1cb86738d23ca56ba7b",
+      "reportId": "20261126t053101z-xcl-61a2f183-report",
+      "discordAt": "2026-11-26T05:51:45.242Z",
+      "revisions": [],
+      "publishedAt": "2026-11-26T05:49:00.198Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261126t053057z-xbox2windows-00bf8a01",
+      "key": "update|xbox2windows|activity|41566",
+      "kind": "update",
+      "projectId": "xbox2windows",
+      "projectName": "Xbox2Windows",
+      "at": "2026-11-26T05:30:57Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "Xbox2Windows opened pull request #2745",
+      "oneLine": "feat: read the lowest enabled lane for v_readfirstlane_b32 of a per-lane VGPR (groups up to 32 threads)",
+      "sources": [
+        {
+          "url": "https://github.com/R0Y00/Xbox2Windows/pull/2745",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "feat: read the lowest enabled lane for v_readfirstlane_b32 of a per-lane VGPR (groups up to 32 threads)",
+          "at": "2026-11-26T05:30:57Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "r0y00/xbox2windows",
+        "name": "xbox2windows",
+        "words": [
+          "xbox2windows"
+        ],
+        "hash": "f40743aa40689221",
+        "projectId": "xbox2windows"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:e9949929b6983c002405e7fd6a090f496103d1cee48e324d541e9077010d32a0",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t053017z-belobug-4cf6e074",
+      "key": "update|belobug|activity|41566",
+      "kind": "update",
+      "projectId": "belobug",
+      "projectName": "Belobug",
+      "at": "2026-11-26T05:30:17Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "Belobug opened pull request #110",
+      "oneLine": "Shaders: a divergent loop's scalars read after it ask for the console wave size (#2's RDNA2 wave-size failures)",
+      "sources": [
+        {
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/110",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Shaders: a divergent loop's scalars read after it ask for the console wave size (#2's RDNA2 wave-size failures)",
+          "at": "2026-11-26T05:30:17Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "belobug/victory-belobug-amd",
+        "name": "belobug",
+        "words": [
+          "belobug"
+        ],
+        "hash": "7749e38a7e252a81",
+        "projectId": "belobug"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:68e485557b156772fd81be5971b34af253742a58411820550da071514893e5f3",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t053009z-marvis-8ebfe7a6",
+      "key": "reference|marvis|activity|41566",
+      "kind": "reference",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-26T05:30:09Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "New reference to VIctory",
+      "oneLine": "Archive of Leonida, xcl and VIctory (GTA VI on PC projects), saved 2026-11-23",
+      "sources": [
+        {
+          "url": "https://github.com/Guernica4u/GTA6-PC-Port-Archive",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Guernica4u/GTA6-PC-Port-Archive",
+          "at": "2026-11-26T05:30:09Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "3057e5affa09d5bf",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d128ddcb00c73384afb08712a4e6f99d842da33a76595cf45835bddb73f926cf",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t052919z-victory-gta6-8583f5fe",
+      "key": "update|victory-gta6|activity|41566",
+      "kind": "update",
+      "projectId": "victory-gta6",
+      "projectName": "hyphennn",
+      "at": "2026-11-26T05:29:19Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "hyphennn opened pull request #1265",
+      "oneLine": "Title memory by address: the structure builder turns off when no copy number is left (#1257)",
+      "sources": [
+        {
+          "url": "https://github.com/fxceless/victory-fork/pull/1265",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Title memory by address: the structure builder turns off when no copy number is left (#1257)",
+          "at": "2026-11-26T05:29:19Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "fxceless/victory-fork",
+        "name": "hyphennn",
+        "words": [
+          "hyphennn",
+          "victory-gta6"
+        ],
+        "hash": "570541ba502d02e0",
+        "projectId": "victory-gta6"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:689a51fc63f1b8d798261e1e6c7be1870924a4bcc89ac9153860f21f1f0f9e64",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t052853z-gtavi-recomp-8f2d07bb",
+      "key": "update|gtavi-recomp|activity|41566",
+      "kind": "update",
+      "projectId": "gtavi-recomp",
+      "projectName": "GTAVI-Recomp",
+      "at": "2026-11-26T05:28:53Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "GTAVI-Recomp opened pull request #32",
+      "oneLine": "Add an issue form for reproducible host build and tool failures",
+      "sources": [
+        {
+          "url": "https://github.com/JamesCicada/GTAVI-Recomp/pull/32",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Add an issue form for reproducible host build and tool failures",
+          "at": "2026-11-26T05:28:53Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "jamescicada/gtavi-recomp",
+        "name": "gtavi-recomp",
+        "words": [
+          "gtavi-recomp"
+        ],
+        "hash": "5029518b35200880",
+        "projectId": "gtavi-recomp"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:17de37ee408db86920149c18b5df8378ad3956acb7a2a6fc342d51ec99d69637",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t052844z-avatarmanz-9434e78a",
+      "key": "update|avatarmanz|activity|41566",
+      "kind": "update",
+      "projectId": "avatarmanz",
+      "projectName": "AvatarManz",
+      "at": "2026-11-26T05:28:44Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "AvatarManz opened pull request #17",
+      "oneLine": "Count a frame only after DXGI accepts the present",
+      "sources": [
+        {
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/17",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Count a frame only after DXGI accepts the present",
+          "at": "2026-11-26T05:28:44Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "avatarmanz/victory-7900xtx",
+        "name": "avatarmanz",
+        "words": [
+          "avatarmanz"
+        ],
+        "hash": "8c2b1a88f8fa0e93",
+        "projectId": "avatarmanz"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:43dd37dbbf469a685c7ccbdf72deae80ba9d8bda9957eb9e089b33390209416e",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t052830z-five-star-recomp-456d127b",
+      "key": "update|five-star-recomp|activity|41566",
+      "kind": "update",
+      "projectId": "five-star-recomp",
+      "projectName": "Five Star Recomp",
+      "at": "2026-11-26T05:28:30Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "Five Star Recomp opened pull request #55",
+      "oneLine": "Mesh outputs: a primitive's cull starts false (changes translation output)",
+      "sources": [
+        {
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/pull/55",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Mesh outputs: a primitive's cull starts false (changes translation output)",
+          "at": "2026-11-26T05:28:30Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "thatrecompdev/five-star-recomp",
+        "name": "five star recomp",
+        "words": [
+          "five",
+          "star",
+          "recomp",
+          "five-star-recomp"
+        ],
+        "hash": "c218488d7d9a8a67",
+        "projectId": "five-star-recomp"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:cf041a529e2399a8a8615541e2f5003122253cd700ab2624625d07106e98706d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t052724z-leonida-a7ea2a07",
+      "key": "reference|leonida|activity|41566",
+      "kind": "reference",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-26T05:27:24Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "New reference to Leonida",
+      "oneLine": "Leonida CE: community edition of Leonida, GTA VI (Xbox Series) static recompilation, built on your PC from your own copy. GPLv3.",
+      "sources": [
+        {
+          "url": "https://github.com/IAmNotSiob/leonida-ce",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "IAmNotSiob/leonida-ce",
+          "at": "2026-11-26T05:27:24Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "1ff1eee7ac17804e",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:779f5a27ebbe62186c98006ce4c393e21451cc320a9bf90028a43adaa31ffbab",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t052619z-tuxbox-d9a1c560",
+      "key": "update|tuxbox|activity|41566",
+      "kind": "update",
+      "projectId": "tuxbox",
+      "projectName": "TuxBox",
+      "at": "2026-11-26T05:26:19Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "TuxBox opened pull request #212",
+      "oneLine": "host: also hide VK_EXT_descriptor_heap on GPUs that need storage CBVs",
+      "sources": [
+        {
+          "url": "https://github.com/brcly/TuxBox/pull/212",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "host: also hide VK_EXT_descriptor_heap on GPUs that need storage CBVs",
+          "at": "2026-11-26T05:26:19Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "brcly/tuxbox",
+        "name": "tuxbox",
+        "words": [
+          "tuxbox"
+        ],
+        "hash": "980ac0c7552140c0",
+        "projectId": "tuxbox"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:0e8510ab49944ee05543626b74d969d210087fae1182612adffffcf1fdabed98",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t052550z-anyxboxx-3025d6f9",
+      "key": "update|anyxboxx|activity|41566",
+      "kind": "update",
+      "projectId": "anyxboxx",
+      "projectName": "AnyXboxX",
+      "at": "2026-11-26T05:25:50Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "AnyXboxX opened pull request #261",
+      "oneLine": "feat: build the view-tree wineserver for a GE-Proton release (Linux, ~8x world frame)",
+      "sources": [
+        {
+          "url": "https://github.com/LooperSalty/AnyXboxX/pull/261",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "feat: build the view-tree wineserver for a GE-Proton release (Linux, ~8x world frame)",
+          "at": "2026-11-26T05:25:50Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "loopersalty/anyxboxx",
+        "name": "anyxboxx",
+        "words": [
+          "anyxboxx"
+        ],
+        "hash": "2da14ac27c2039cc",
+        "projectId": "anyxboxx"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:7aa1b1d16a9c48b4cf703ef2911ae38f36bc95758205dd9acf7e3211cfd5559b",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t052407z-dexnom-6c45bf9e",
+      "key": "update|dexnom|activity|41566",
+      "kind": "update",
+      "projectId": "dexnom",
+      "projectName": "DexNom",
+      "at": "2026-11-26T05:24:07Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "DexNom opened pull request #69",
+      "oneLine": "GPU: confirm relay readback fence completion",
+      "sources": [
+        {
+          "url": "https://github.com/DexNom/VIctory/pull/69",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "GPU: confirm relay readback fence completion",
+          "at": "2026-11-26T05:24:07Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "dexnom/victory",
+        "name": "dexnom",
+        "words": [
+          "dexnom"
+        ],
+        "hash": "8f46482e794407ea",
+        "projectId": "dexnom"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:4148c7386bf4f8831fe324af8e503044b356151a9be11d58a38bb217413361c5",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t051704z-scene-996185df",
+      "key": "reference|-|activity|41566",
+      "kind": "duplicate",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-26T05:17:04Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "A new repository may duplicate unknown",
+      "oneLine": "Automatically maintained tracking site for PC ports of the GTA VI Xbox Build. This repository is managed autonomously by Claude Fable 5.2.",
+      "sources": [
+        {
+          "url": "https://github.com/vuyp/gta6-pc-race",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "vuyp/gta6-pc-race",
+          "at": "2026-11-26T05:17:04Z",
+          "kind": "official"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "eb8d5a33b0b528cf",
+        "projectId": null
+      },
+      "similar": [
+        {
+          "effortId": "unknown",
+          "score": 1
+        }
+      ],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:2d48bd67a3fa2d83c943f53cd0373df6b6ba2b77f8a8d62a647fe73c74dfdc33",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "duplicate build reference",
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t045810z-launcher-7f1130a5",
+      "key": "reference|launcher|activity|41566",
+      "kind": "reference",
+      "projectId": "launcher",
+      "projectName": "VILauncher",
+      "at": "2026-11-26T04:58:10Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "New reference to VILauncher",
+      "oneLine": "i95: one open-source GTA VI (GTA 6) PC launcher for every Xbox runtime on the GTA VI PC race (VIctory and its forks, KLBF Lab, Flamingo, Belobug, VItoriaBr, ScarlettPort, Vilocity and more). Pick one",
+      "sources": [
+        {
+          "url": "https://github.com/DesignWithTommy/i95",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "DesignWithTommy/i95",
+          "at": "2026-11-26T04:58:10Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sixlauncher/launcher",
+        "name": "vilauncher",
+        "words": [
+          "vilauncher",
+          "launcher"
+        ],
+        "hash": "00d0c48b22fcdb59",
+        "projectId": "launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:b6bdeb6fc3bf06475def79d27173258f820f7cdfacf1b3631c94174abc0b7554",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t045516z-vitoriabr-741625e2",
+      "key": "update|vitoriabr|playable|41566",
+      "kind": "update",
+      "projectId": "vitoriabr",
+      "projectName": "Uilian",
+      "at": "2026-11-26T04:55:16.280Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "Uilian gained 4.2 points",
+      "oneLine": "The project’s record moved from 59.6% to 63.8%.",
+      "sources": [
+        {
+          "url": "https://github.com/uiliannn/VItoriaBr",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "Uilian record",
+          "at": "2026-11-26T04:55:16.280Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "uiliannn/vitoriabr",
+        "name": "uilian",
+        "words": [
+          "uilian",
+          "vitoriabr"
+        ],
+        "hash": "abfa9d948dd18075",
+        "projectId": "vitoriabr"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:4c38ec6bb7275571e40317b9432390a1ac57b8c191184967a427722ec86ff17a",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t045516z-cgbj-fc2ac034",
+      "key": "update|cgbj|playable|41566",
+      "kind": "update",
+      "projectId": "cgbj",
+      "projectName": "CGBJ",
+      "at": "2026-11-26T04:55:16.280Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "CGBJ gained 22.2 points",
+      "oneLine": "The project’s record moved from 64.5% to 86.7%.",
+      "sources": [
+        {
+          "url": "https://viportlive.com/projects/cgbj",
+          "host": "viportlive.com",
+          "outlet": "VIPortLive",
+          "title": "CGBJ record",
+          "at": "2026-11-26T04:55:16.280Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "cgbj",
+        "words": [
+          "cgbj"
+        ],
+        "hash": "7def2d398de09c90",
+        "projectId": "cgbj"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d09bbf8d027a7965b2df85b52196535b8169dbcd8ba08ff9fa29183cda8ca6d3",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t045516z-victory-gta6-2cd99c9c",
+      "key": "update|victory-gta6|playable|41566",
+      "kind": "update",
+      "projectId": "victory-gta6",
+      "projectName": "hyphennn",
+      "at": "2026-11-26T04:55:16.280Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "hyphennn gained 9.2 points",
+      "oneLine": "The project’s record moved from 59.8% to 69%.",
+      "sources": [
+        {
+          "url": "https://github.com/fxceless/victory-fork",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "hyphennn record",
+          "at": "2026-11-26T04:55:16.280Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "fxceless/victory-fork",
+        "name": "hyphennn",
+        "words": [
+          "hyphennn",
+          "victory-gta6"
+        ],
+        "hash": "4f6a60b3d00d02b4",
+        "projectId": "victory-gta6"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:6441b244d687437076f81367dad8e51d7dc5dd41c72aee2e9b081260a3c4b48b",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t045516z-marvis-0d4ba5db",
+      "key": "update|marvis|playable|41566",
+      "kind": "update",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-26T04:55:16.280Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "VIctory moved to playable",
+      "oneLine": "The project’s record moved from 40% to 50.3%.",
+      "sources": [
+        {
+          "url": "https://github.com/Marvisak/VIctory",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "VIctory record",
+          "at": "2026-11-26T04:55:16.280Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "7763bc3384cd9b91",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:73c97f415308ced73b669b5caa5bcff8dbf7e149449e99b93eb3208c4381fa4c",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t045516z-anyxboxx-6d2e698e",
+      "key": "update|anyxboxx|playable|41566",
+      "kind": "update",
+      "projectId": "anyxboxx",
+      "projectName": "AnyXboxX",
+      "at": "2026-11-26T04:55:16.280Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "AnyXboxX moved to playable",
+      "oneLine": "The project’s record moved from 2.5% to 65.2%.",
+      "sources": [
+        {
+          "url": "https://github.com/LooperSalty/AnyXboxX",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "AnyXboxX record",
+          "at": "2026-11-26T04:55:16.280Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "loopersalty/anyxboxx",
+        "name": "anyxboxx",
+        "words": [
+          "anyxboxx"
+        ],
+        "hash": "eda99695c4e139cc",
+        "projectId": "anyxboxx"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:f2f6729576de1682c40c8c75f80c7595df785e6f46dbf7a453ca4736ab530381",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t045516z-hugo-9d3f5af4",
+      "key": "update|hugo|playable|41566",
+      "kind": "update",
+      "projectId": "hugo",
+      "projectName": "MashedHugo",
+      "at": "2026-11-26T04:55:16.280Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "MashedHugo gained 13 points",
+      "oneLine": "The project’s record moved from 57% to 70%.",
+      "sources": [
+        {
+          "url": "https://viportlive.com/projects/hugo",
+          "host": "viportlive.com",
+          "outlet": "VIPortLive",
+          "title": "MashedHugo record",
+          "at": "2026-11-26T04:55:16.280Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "mashedhugo",
+        "words": [
+          "mashedhugo",
+          "hugo"
+        ],
+        "hash": "6d6a803585011094",
+        "projectId": "hugo"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:8f48047c5a51bf4f0eb201bac93f982b8e9e6b5550216edcf076de6621aaa37d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t045516z-victory-ka1qux-587b3ae7",
+      "key": "update|victory-ka1qux|playable|41566",
+      "kind": "update",
+      "projectId": "victory-ka1qux",
+      "projectName": "victory-ka1qux",
+      "at": "2026-11-26T04:55:16.280Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "victory-ka1qux gained 8.5 points",
+      "oneLine": "The project’s record moved from 56.9% to 65.4%.",
+      "sources": [
+        {
+          "url": "https://github.com/ka1qux/victory-ka1qux",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "victory-ka1qux record",
+          "at": "2026-11-26T04:55:16.280Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "ka1qux/victory-ka1qux",
+        "name": "victory-ka1qux",
+        "words": [
+          "victory-ka1qux"
+        ],
+        "hash": "7d689935ddc590d4",
+        "projectId": "victory-ka1qux"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:e8040caab162c6806af74b16108227ba61764826c1779386d979d3b8f82cbb44",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t045516z-dumbfloridamoron-06365670",
+      "key": "update|dumbfloridamoron|playable|41566",
+      "kind": "update",
+      "projectId": "dumbfloridamoron",
+      "projectName": "DumbFloridaMoron",
+      "at": "2026-11-26T04:55:16.280Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "DumbFloridaMoron gained 3.1 points",
+      "oneLine": "The project’s record moved from 51% to 54.1%.",
+      "sources": [
+        {
+          "url": "https://github.com/crt4ever/DumbFloridaMoron",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "DumbFloridaMoron record",
+          "at": "2026-11-26T04:55:16.280Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "crt4ever/dumbfloridamoron",
+        "name": "dumbfloridamoron",
+        "words": [
+          "dumbfloridamoron"
+        ],
+        "hash": "7b6eb9218dc41935",
+        "projectId": "dumbfloridamoron"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:48ded53871854861a40a68f73af4a55393a72aefb26f2349b0cd2aed42584132",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t045516z-traffic-70dcd390",
+      "key": "update|traffic|playable|41566",
+      "kind": "update",
+      "projectId": "traffic",
+      "projectName": "Traffic",
+      "at": "2026-11-26T04:55:16.280Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "Traffic moved to playable",
+      "oneLine": "The project’s record moved from 0% to 63.4%.",
+      "sources": [
+        {
+          "url": "https://viportlive.com/projects/traffic",
+          "host": "viportlive.com",
+          "outlet": "VIPortLive",
+          "title": "Traffic record",
+          "at": "2026-11-26T04:55:16.280Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "traffic",
+        "words": [
+          "traffic"
+        ],
+        "hash": "6d6a8d21c4e1b3d4",
+        "projectId": "traffic"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:df244cb47200b8a6866eafb61ea5c34e491808c380e56b8f0c5eba0483e74799",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t045516z-carver-247eb855",
+      "key": "update|carver|playable|41566",
+      "kind": "update",
+      "projectId": "carver",
+      "projectName": "Carver",
+      "at": "2026-11-26T04:55:16.280Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "Carver moved to playable",
+      "oneLine": "The project’s record moved from 0% to 61.4%.",
+      "sources": [
+        {
+          "url": "https://github.com/CarverXI/victory-fork",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "Carver record",
+          "at": "2026-11-26T04:55:16.280Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "carverxi/victory-fork",
+        "name": "carver",
+        "words": [
+          "carver"
+        ],
+        "hash": "5f7ba5b335e51014",
+        "projectId": "carver"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:df4869b70fc2d7e2dbac8dd8cf22330693c24a9e12d11517504f1169d3539c95",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t045516z-soldsawn-8gb-1974e229",
+      "key": "update|soldsawn-8gb|playable|41566",
+      "kind": "update",
+      "projectId": "soldsawn-8gb",
+      "projectName": "soldsawn 8GB",
+      "at": "2026-11-26T04:55:16.280Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "soldsawn 8GB moved to playable",
+      "oneLine": "The project’s record moved from 0% to 58.9%.",
+      "sources": [
+        {
+          "url": "https://github.com/soldsawn/victory-nvidia-8gb",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "soldsawn 8GB record",
+          "at": "2026-11-26T04:55:16.280Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "soldsawn/victory-nvidia-8gb",
+        "name": "soldsawn 8gb",
+        "words": [
+          "soldsawn",
+          "8gb",
+          "soldsawn-8gb"
+        ],
+        "hash": "6163c4a597e1903d",
+        "projectId": "soldsawn-8gb"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:86948d6163e6843b598ce0bba0664ae338c36b1a438e9e5cd061523f86aa6488",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t045516z-leonida-continued-80c6b74d",
+      "key": "update|leonida-continued|boots|41566",
+      "kind": "update",
+      "projectId": "leonida-continued",
+      "projectName": "Leonida Continued",
+      "at": "2026-11-26T04:55:16.280Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "Leonida Continued moved to boots",
+      "oneLine": "The project’s record moved from 0% to 25%.",
+      "sources": [
+        {
+          "url": "https://github.com/ubiquitarianism/leonida",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "Leonida Continued record",
+          "at": "2026-11-26T04:55:16.280Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "ubiquitarianism/leonida",
+        "name": "leonida continued",
+        "words": [
+          "leonida",
+          "continued",
+          "leonida-continued"
+        ],
+        "hash": "27edec38e5f9767c",
+        "projectId": "leonida-continued"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:f93e36e0884d44c75c63c68f1a51e4efa27a8cc0669263c56d16a2afce15dfc5",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t045200z-vitoriabr-dffd721b",
+      "key": "update|vitoriabr|activity|41566",
+      "kind": "update",
+      "projectId": "vitoriabr",
+      "projectName": "Uilian",
+      "at": "2026-11-26T04:52:00Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "Uilian opened pull request #22",
+      "oneLine": "docs: adiciona preset e guia de ajustes para GPUs AMD de 8 GB e HDD",
+      "sources": [
+        {
+          "url": "https://github.com/uiliannn/VItoriaBr/pull/22",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "docs: adiciona preset e guia de ajustes para GPUs AMD de 8 GB e HDD",
+          "at": "2026-11-26T04:52:00Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "uiliannn/vitoriabr",
+        "name": "uilian",
+        "words": [
+          "uilian",
+          "vitoriabr"
+        ],
+        "hash": "029198c819d10079",
+        "projectId": "vitoriabr"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:41a1e9a8e0cd695f1e5d2a3c7a453663723bed301cedfce16c9ee0100998f2e5",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t030158z-scene-3041a6c2",
+      "key": "takedown|-|https://gamerant.com/gta-6-wine-hot-vault-manager-vcia-takedown/|41566",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-26T03:01:58.000Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "Game Rant in a takedown report",
+      "oneLine": "VCIA Takedown Wine is Hot Choice in GTA 6",
+      "sources": [
+        {
+          "url": "https://gamerant.com/gta-6-wine-hot-vault-manager-vcia-takedown/",
+          "host": "gamerant.com",
+          "outlet": "Game Rant",
+          "title": "VCIA Takedown Wine is Hot Choice in GTA 6",
+          "at": "2026-11-26T03:01:58.000Z",
+          "kind": "outside",
+          "authorHash": "a52979df17",
+          "excerpt": "VCIA Takedown Wine is Hot Choice in GTA 6"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "f7b174778be45094",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source",
+          "from before the baseline"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:f0ac34256e5b28bc87de35a6466e0acc4ae64a4eb43ad28e8cc4f025284da0e8",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t022440z-leonida-100324f2",
+      "key": "takedown|leonida|https://bsky.app/profile/ltt-tracker-bot.bsky.social/post/3n36mmoaomj2i|41566",
+      "kind": "takedown",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-26T02:24:40.451Z",
+      "detectedAt": "2026-11-26T05:49:00.198Z",
+      "title": "Leonida in a takedown report",
+      "oneLine": "Unofficial GTA 6 PC ports are moving fast—and so are Take-Two's lawyers. The team…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/ltt-tracker-bot.bsky.social/post/3n36mmoaomj2i",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "Unofficial GTA 6 PC ports are moving fast—and so are Take-Two's lawyers. The team covered the Project Leonida DMCA taked",
+          "at": "2026-11-26T02:24:40.451Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "Unofficial GTA 6 PC ports are moving fast—and so are Take-Two's lawyers. The team covered the Project Leonida DMCA taked"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "e6952364c9130680",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source",
+          "from before the baseline"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:9898adb1701eef96cc6b5e6e9a36c44cce4923919d2c958fc1bd162d085af1a9",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
     }
   ],
   "reports": [
@@ -1779,6 +3606,69 @@
           "at": "2026-11-26T00:00:00.000Z",
           "kind": "primary",
           "excerpt": "CGBJ: summary, highlights, blockers changed; score 86.7% → 73.0%."
+        }
+      ]
+    },
+    {
+      "id": "20261126t053123z-leonida-continued-fc789f0b-report",
+      "itemId": "20261126t053123z-leonida-continued-fc789f0b",
+      "publishedAt": "2026-11-26T05:49:00.198Z",
+      "by": "free",
+      "confidence": "moderate",
+      "overview": "Leonida Continued updated its codebase with a new pull request.",
+      "changed": "The pull request adds a mesh PSO that uses conservative rasterization and does not require a topology type.",
+      "evidence": "GitHub shows the pull request titled \"d3d12: a mesh PSO with conservative rasterization needs no topology type (RT-MESH-PSO-CONSERVATIVE-TOPOLOGY)\".",
+      "unknown": "The impact of this change on the overall project and its release status are not confirmed. The authenticity and release implications remain unverified.",
+      "sources": [
+        {
+          "url": "https://github.com/ubiquitarianism/leonida/pull/2097",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "d3d12: a mesh PSO with conservative rasterization needs no topology type (RT-MESH-PSO-CONSERVATIVE-TOPOLOGY)",
+          "at": "2026-11-26T05:31:23Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261126t053111z-marvis-afc50d13-report",
+      "itemId": "20261126t053111z-marvis-afc50d13",
+      "publishedAt": "2026-11-26T05:49:00.198Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "VIctory has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. Shaders: one console wave sharing LDS runs in the console flow on 32-lane hosts.",
+      "evidence": "The entry rests on one stored source, GitHub. Shaders: one console wave sharing LDS runs in the console flow on 32-lane hosts.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/Marvisak/VIctory/pull/439",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Shaders: one console wave sharing LDS runs in the console flow on 32-lane hosts",
+          "at": "2026-11-26T05:31:11Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261126t053101z-xcl-61a2f183-report",
+      "itemId": "20261126t053101z-xcl-61a2f183",
+      "publishedAt": "2026-11-26T05:49:00.198Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "XCL has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. D3D12.X: a list vtable at a reused heap address gets its own methods.",
+      "evidence": "The entry rests on one stored source, GitHub. D3D12.X: a list vtable at a reused heap address gets its own methods.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/xcl-dev/xcl/pull/2593",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "D3D12.X: a list vtable at a reused heap address gets its own methods",
+          "at": "2026-11-26T05:31:01Z",
+          "kind": "primary"
         }
       ]
     }
