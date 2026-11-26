@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T13:35:21.925Z",
+  "updated": "2026-11-26T13:50:22.240Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T13:31:06.000Z",
-      "lastOkAt": "2026-11-26T13:35:21.925Z",
-      "seen": 8500,
+      "lastOkAt": "2026-11-26T13:50:22.240Z",
+      "seen": 8750,
       "events": 290,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T10:11:01.000Z",
-      "lastOkAt": "2026-11-26T13:35:21.925Z",
+      "lastOkAt": "2026-11-26T13:50:22.240Z",
       "seen": 20,
       "events": 12,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T13:35:21.925Z",
-      "seen": 1987,
+      "lastOkAt": "2026-11-26T13:50:22.240Z",
+      "seen": 2047,
       "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T13:15:16.000Z",
-      "lastOkAt": "2026-11-26T13:35:21.925Z",
-      "seen": 13600,
+      "lastOkAt": "2026-11-26T13:50:22.240Z",
+      "seen": 14000,
       "events": 16,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T01:35:21.925Z",
-      "lastOkAt": "2026-11-26T13:35:21.925Z",
-      "seen": 4007,
+      "lastCursor": "2026-11-26T01:50:22.240Z",
+      "lastOkAt": "2026-11-26T13:50:22.240Z",
+      "seen": 4127,
       "events": 7,
       "errors": 0
     }
@@ -6531,10 +6531,17 @@
       "chain": "sha256:31b6a82024111e358ca1dc925ffdf7f75c8705289e293e28ccee872e1f1b5cea",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T13:50:22.240Z",
+          "by": "desk",
+          "note": "The claim is supported only by a single social post, which is not an independent source and is too thin to confirm the takedown."
+        }
+      ],
       "heldReasons": [
         "low confidence"
-      ]
+      ],
+      "deskAt": "2026-11-26T13:50:22.240Z"
     },
     {
       "id": "20261126t131344z-dexnom-718f3a35",
