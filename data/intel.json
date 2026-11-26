@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T14:20:21.302Z",
+  "updated": "2026-11-26T14:35:20.564Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T14:02:29.000Z",
-      "lastOkAt": "2026-11-26T14:20:21.302Z",
-      "seen": 9250,
-      "events": 310,
+      "lastCursor": "2026-11-26T14:30:54.000Z",
+      "lastOkAt": "2026-11-26T14:35:20.564Z",
+      "seen": 9500,
+      "events": 329,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T10:11:01.000Z",
-      "lastOkAt": "2026-11-26T14:20:21.302Z",
+      "lastOkAt": "2026-11-26T14:35:20.564Z",
       "seen": 20,
       "events": 12,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T14:20:21.302Z",
-      "seen": 2167,
+      "lastOkAt": "2026-11-26T14:35:20.564Z",
+      "seen": 2227,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T13:46:36.000Z",
-      "lastOkAt": "2026-11-26T14:20:21.302Z",
-      "seen": 14800,
-      "events": 17,
+      "lastCursor": "2026-11-26T14:24:29.000Z",
+      "lastOkAt": "2026-11-26T14:35:20.564Z",
+      "seen": 15200,
+      "events": 18,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T02:20:21.302Z",
-      "lastOkAt": "2026-11-26T14:20:21.302Z",
-      "seen": 4367,
+      "lastCursor": "2026-11-26T02:35:20.564Z",
+      "lastOkAt": "2026-11-26T14:35:20.564Z",
+      "seen": 4487,
       "events": 7,
       "errors": 0
     }
@@ -6588,10 +6588,17 @@
       "chain": "sha256:be0eae7cff1e8f41f9718a5a1ce8ee7fff3d79995cabd003e7201e50875ac398",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T14:35:20.564Z",
+          "by": "desk",
+          "note": "The project’s GitHub pull request title directly supports the one-line summary, and no stored source contradicts it."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T14:35:20.564Z"
     },
     {
       "id": "20261126t131244z-scene-3394aa58",
@@ -6868,6 +6875,62 @@
         "low confidence"
       ],
       "deskAt": "2026-11-26T14:20:21.302Z"
+    },
+    {
+      "id": "20261126t140816z-scene-5aba75b0",
+      "key": "takedown|-|https://www.gamesradar.com/games/grand-theft-auto/popular-gta-6-pc-project-is-not-dead-15-year-old-lead-clarifies-days-after-quitting-over-rockstars-apparent-discord-takedown-and-angry-middle-aged-men/|41567",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-26T14:08:16.000Z",
+      "detectedAt": "2026-11-26T14:35:20.564Z",
+      "title": "GamesRadar in a takedown report",
+      "oneLine": "GTA 6 PC project \"not dead,\" lead clarifies after quitting over Rockstar's apparent…",
+      "sources": [
+        {
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/popular-gta-6-pc-project-is-not-dead-15-year-old-lead-clarifies-days-after-quitting-over-rockstars-apparent-discord-takedown-and-angry-middle-aged-men/",
+          "host": "gamesradar.com",
+          "outlet": "GamesRadar",
+          "title": "GTA 6 PC project \"not dead,\" lead clarifies after quitting over Rockstar's apparent Discord takedown",
+          "at": "2026-11-26T14:08:16.000Z",
+          "kind": "outside",
+          "authorHash": "036fafbf8c",
+          "excerpt": "GTA 6 PC project \"not dead,\" lead clarifies after quitting over Rockstar's apparent Discord takedown"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "47879c1375d6889c",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:6348f72189b35dfec5e2a9a96df650008527d98c06a30515a381cf30af75d5a5",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T14:35:20.564Z",
+          "by": "desk",
+          "note": "The item rests on a single outside GamesRadar report with no independent corroboration, so the stored sources are too thin to publish."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-26T14:35:20.564Z"
     }
   ],
   "reports": [
