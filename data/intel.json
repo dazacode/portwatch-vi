@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T14:07:18.705Z",
+  "updated": "2026-11-26T14:20:21.302Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T14:02:29.000Z",
-      "lastOkAt": "2026-11-26T14:07:18.705Z",
-      "seen": 9000,
+      "lastOkAt": "2026-11-26T14:20:21.302Z",
+      "seen": 9250,
       "events": 310,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T10:11:01.000Z",
-      "lastOkAt": "2026-11-26T14:07:18.705Z",
+      "lastOkAt": "2026-11-26T14:20:21.302Z",
       "seen": 20,
       "events": 12,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T14:07:18.705Z",
-      "seen": 2107,
+      "lastOkAt": "2026-11-26T14:20:21.302Z",
+      "seen": 2167,
       "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T13:46:36.000Z",
-      "lastOkAt": "2026-11-26T14:07:18.705Z",
-      "seen": 14400,
+      "lastOkAt": "2026-11-26T14:20:21.302Z",
+      "seen": 14800,
       "events": 17,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T02:07:18.705Z",
-      "lastOkAt": "2026-11-26T14:07:18.705Z",
-      "seen": 4247,
+      "lastCursor": "2026-11-26T02:20:21.302Z",
+      "lastOkAt": "2026-11-26T14:20:21.302Z",
+      "seen": 4367,
       "events": 7,
       "errors": 0
     }
@@ -6801,10 +6801,17 @@
       "chain": "sha256:c72299567d4c72b8c742feceafc8d0d3de447666322d7d384ff4dcec2b8563a5",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T14:20:21.302Z",
+          "by": "desk",
+          "note": "The GitHub pull request is a primary source confirming that littlethings-build opened pull request #1."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T14:20:21.302Z"
     },
     {
       "id": "20261126t133315z-scene-a2b7dd45",
@@ -6850,10 +6857,17 @@
       "chain": "sha256:e2f53e0095941f686b107c75ad0646942176af0ef19b1d30f41c96559baedcb2",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T14:20:21.302Z",
+          "by": "desk",
+          "note": "The item rests on a single outside source whose excerpt only repeats the headline, so it is too thin to plainly support the one line."
+        }
+      ],
       "heldReasons": [
         "low confidence"
-      ]
+      ],
+      "deskAt": "2026-11-26T14:20:21.302Z"
     }
   ],
   "reports": [
