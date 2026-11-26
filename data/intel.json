@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T18:06:50.467Z",
+  "updated": "2026-11-26T18:20:24.880Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T18:01:03.000Z",
-      "lastOkAt": "2026-11-26T18:06:50.467Z",
-      "seen": 12750,
+      "lastOkAt": "2026-11-26T18:20:24.880Z",
+      "seen": 13000,
       "events": 455,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T15:15:41.000Z",
-      "lastOkAt": "2026-11-26T18:06:50.467Z",
+      "lastOkAt": "2026-11-26T18:20:24.880Z",
       "seen": 22,
       "events": 14,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T18:06:50.467Z",
-      "seen": 3007,
-      "events": 21,
+      "lastCursor": "2026-11-26T18:10:17.807Z",
+      "lastOkAt": "2026-11-26T18:20:24.880Z",
+      "seen": 3068,
+      "events": 22,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T17:34:38.000Z",
-      "lastOkAt": "2026-11-26T18:06:50.467Z",
-      "seen": 20400,
+      "lastOkAt": "2026-11-26T18:20:24.880Z",
+      "seen": 20800,
       "events": 23,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T06:06:50.467Z",
-      "lastOkAt": "2026-11-26T18:06:50.467Z",
-      "seen": 6013,
+      "lastCursor": "2026-11-26T06:20:24.880Z",
+      "lastOkAt": "2026-11-26T18:20:24.880Z",
+      "seen": 6127,
       "events": 7,
       "errors": 0
     }
@@ -7719,6 +7719,63 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-26T17:50:21.594Z"
+    },
+    {
+      "id": "20261126t181017z-belobug-e7d54392",
+      "key": "update|belobug|playable|41567",
+      "kind": "update",
+      "projectId": "belobug",
+      "projectName": "Belobug",
+      "at": "2026-11-26T18:10:17.807Z",
+      "detectedAt": "2026-11-26T18:20:24.880Z",
+      "title": "Belobug gained 8.9 points",
+      "oneLine": "The project’s record moved from 77.2% to 86.1%.",
+      "sources": [
+        {
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "Belobug record",
+          "at": "2026-11-26T18:10:17.807Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "belobug/victory-belobug-amd",
+        "name": "belobug",
+        "words": [
+          "belobug"
+        ],
+        "hash": "6b69f0045e85a080",
+        "projectId": "belobug"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:a2ddc340adf6e953930dd00cec26f1a5943d20ef9555d6d06673b72868cd9748",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T18:20:24.880Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the 77.2%→86.1% record change is unverifiable and not independently corroborated."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T18:20:24.880Z"
     }
   ],
   "reports": [
