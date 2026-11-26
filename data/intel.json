@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T11:05:44.044Z",
+  "updated": "2026-11-26T11:20:27.077Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T11:01:12.000Z",
-      "lastOkAt": "2026-11-26T11:05:44.044Z",
-      "seen": 6000,
+      "lastOkAt": "2026-11-26T11:20:27.077Z",
+      "seen": 6250,
       "events": 212,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T08:19:21.000Z",
-      "lastOkAt": "2026-11-26T11:05:44.044Z",
+      "lastOkAt": "2026-11-26T11:20:27.077Z",
       "seen": 19,
       "events": 11,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T11:05:44.044Z",
-      "seen": 1387,
+      "lastOkAt": "2026-11-26T11:20:27.077Z",
+      "seen": 1447,
       "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T10:57:31.747Z",
-      "lastOkAt": "2026-11-26T11:05:44.044Z",
-      "seen": 9600,
+      "lastOkAt": "2026-11-26T11:20:27.077Z",
+      "seen": 10000,
       "events": 8,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T11:05:44.044Z",
-      "seen": 2807,
+      "lastOkAt": "2026-11-26T11:20:27.077Z",
+      "seen": 2927,
       "events": 7,
       "errors": 0
     }
@@ -2484,10 +2484,17 @@
       "chain": "sha256:43dd37dbbf469a685c7ccbdf72deae80ba9d8bda9957eb9e089b33390209416e",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T11:20:27.077Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository with an empty excerpt, so the one line rests on a non-independent primary source and is too thin to publish."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T11:20:27.077Z"
     },
     {
       "id": "20261126t052830z-five-star-recomp-456d127b",
@@ -2537,10 +2544,17 @@
       "chain": "sha256:cf041a529e2399a8a8615541e2f5003122253cd700ab2624625d07106e98706d",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T11:20:27.077Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub entry with no excerpt, so it does not independently or plainly substantiate the PR’s claimed effect."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T11:20:27.077Z"
     },
     {
       "id": "20261126t052724z-leonida-a7ea2a07",
