@@ -3305,6 +3305,43 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [
+          "focus on FPS",
+          "image correctness",
+          "Windows and Linux support via Wine/Proton"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "VItoria Spark",
+        "summary": "Compatibility layer that runs Xbox Series software on PC x64, focusing on FPS and image correctness, supporting Windows and Linux via Wine/Proton.",
+        "basedOn": [],
+        "id": "vitoria-spark",
+        "repo": "martindevbr/VItoria-Spark",
+        "stats": {
+          "stars": 1,
+          "createdAt": "2026-11-26T14:10:51Z",
+          "pushedAt": "2026-11-26T18:46:06Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -3551,7 +3588,8 @@
     "3cvil/M1LK",
     "TERT01/XSEmu_mybackup",
     "xmvo/Lumen",
-    "HyperExtendedReality/strata"
+    "HyperExtendedReality/strata",
+    "martindevbr/VItoria-Spark"
   ],
   "news": [
     {
