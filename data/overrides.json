@@ -129,11 +129,11 @@
         ]
       },
       "to": {
-        "summary": "Public since 26 Nov at codec-d/cool_fox (GPL-3.0), with a Windows build. The code is avatarmanz's VIctory-7900XTX with codec-d's NVIDIA and memory work merged on top from 25 Nov. Upstream's owner reports 25 fps gameplay on NVIDIA, 80% of the story, rendering 0.85 and stability 0.85; a 26 Nov clip shows about 23 fps. Nobody outside the group has reported a run of the public code yet.",
+        "summary": "Public on 26 Nov at codec-d/cool_fox (GPL-3.0), now in open beta with a Windows launcher for NVIDIA and AMD. It is avatarmanz's VIctory-7900XTX with codec-d's NVIDIA and memory work on top. Owner: 25 fps, 80% story, rendering 0.85.",
         "highlights": [
-          "Code public on 26 Nov: codec-d/cool_fox, GPL-3.0, with a Windows x64 build",
+          "Open beta and a Windows launcher out on 26 Nov, for NVIDIA and AMD",
           "Upstream's owner reports 25 fps gameplay on NVIDIA, 80% story, rendering 0.85",
-          "A 26 Nov clip shows the Gone Fishing mission at about 23 fps on NVIDIA's overlay"
+          "Code public on 26 Nov: codec-d/cool_fox, GPL-3.0, 490 stars in three hours"
         ],
         "blockers": [
           "Nobody outside the group has reported a run of the public code yet",
@@ -248,9 +248,49 @@
           {
             "text": "The launcher picks the Series S profile. The README asks for Windows x64, an AVX2 processor and a Direct3D 12 card with shader model 6.6 and mesh shaders.",
             "url": "https://github.com/codec-d/cool_fox/blob/f4b48ad766ddbec1a1867022cd42f7645b0dd55e/README.md"
+          },
+          {
+            "text": "kunaiposting announces CGBJ's open beta and a launcher, also in open beta, with NVIDIA and AMD supported.",
+            "url": "https://x.com/kunaiposting/status/2125857179433611598"
+          },
+          {
+            "text": "codewzada: CGBJ is in playable fps.",
+            "url": "https://x.com/codewzada/status/2125855159611973997"
+          },
+          {
+            "text": "The release, tagged pareto-residency-37a410b1 at 06:35 UTC on 26 Nov, is a 4.1 MB Windows x64 ZIP with Play-VIctory.cmd; it needs your own dump, an AVX2 CPU and a D3D12 card with shader model 6.6 and mesh shaders.",
+            "url": "https://github.com/codec-d/cool_fox/releases/tag/pareto-residency-37a410b1"
+          },
+          {
+            "text": "Its README table, on one PC (i9-12900K, 64 GB, RX 7900 XTX at 1440p): menus and loading 30 fps, the prologue 13-20, the boat mission 19-22, a street chase 6-10, 41 minutes without a crash, 40-46 GB of private memory; 64 GB of RAM is recommended.",
+            "url": "https://github.com/codec-d/cool_fox/blob/main/README.md"
+          },
+          {
+            "text": "Play-VIctory.cmd turns the fast paths on by default: thin lists, eight joining threads, relay and land, steps on the card, uploads ahead and show-after-upload; its runner is victory-3d-rtx-pareto-residency.exe.",
+            "url": "https://github.com/codec-d/cool_fox/blob/main/Play-VIctory.cmd"
+          },
+          {
+            "text": "The code writes list calls down and has eight threads of its own translate them (VICTORY_THIN, crates/victory-gpu/src/list/thin.rs); this fork adds 3,327 lines over avatarmanz's 0a43566 across 34 files.",
+            "url": "https://github.com/codec-d/cool_fox/blob/main/crates/victory-gpu/src/list/thin.rs"
+          },
+          {
+            "text": "Shader writes come back beside the write guards on a thread of its own (VICTORY_RELAY and LAND), steps that need bytes still on the card are done there (VICTORY_CARD_STEPS), and textures upload on a separate copy queue, shown only after the upload.",
+            "url": "https://github.com/codec-d/cool_fox/blob/main/crates/victory-gpu/src/host.rs"
+          },
+          {
+            "text": "Commit 8cc31ab ports NVIDIA Wave32 lowering, smoother movie-plane uploads, XMA audio fixes and 32 GB residency budgets; ab75ac3 backs off refused pool growth and defers uploads under low commit.",
+            "url": "https://github.com/codec-d/cool_fox/commit/8cc31ab"
+          },
+          {
+            "text": "README: the aim is 30 fps on one PC without giving up the picture, and it says the tree is not there yet; it lists flickering plants and far buildings, dark unlit rooms, late textures and shader-warm stalls as known problems.",
+            "url": "https://github.com/codec-d/cool_fox/blob/main/README.md"
+          },
+          {
+            "text": "The repository was created at 04:16 UTC on 26 Nov and by 07:15 had 490 stars and 134 forks under GPL-3.0; GitHub counts 627 commits on main.",
+            "url": "https://github.com/codec-d/cool_fox"
           }
         ],
-        "findingsSource": "From codec-d/cool_fox's README and commits, 26 November."
+        "findingsSource": "From codec-d/cool_fox's README, docs, code and release, kunaiposting's and codewzada's posts, GitHub's API and codec-d's commits of 26 Nov."
       },
       "changes": [
         {
@@ -1161,6 +1201,22 @@
       },
       "to": {
         "basedOn": [
+          "avatarmanz"
+        ]
+      }
+    },
+    {
+      "id": "cgbj",
+      "from": {
+        "basedOn": [
+          "marvis",
+          "xcl"
+        ]
+      },
+      "to": {
+        "basedOn": [
+          "marvis",
+          "xcl",
           "avatarmanz"
         ]
       }
