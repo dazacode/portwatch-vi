@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T13:06:46.357Z",
+  "updated": "2026-11-26T13:20:23.022Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T13:02:19.000Z",
-      "lastOkAt": "2026-11-26T13:06:46.357Z",
-      "seen": 8000,
+      "lastOkAt": "2026-11-26T13:20:23.022Z",
+      "seen": 8250,
       "events": 271,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T10:11:01.000Z",
-      "lastOkAt": "2026-11-26T13:06:46.357Z",
+      "lastOkAt": "2026-11-26T13:20:23.022Z",
       "seen": 20,
       "events": 12,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T13:06:46.357Z",
-      "seen": 1867,
+      "lastOkAt": "2026-11-26T13:20:23.022Z",
+      "seen": 1927,
       "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T12:52:08.447Z",
-      "lastOkAt": "2026-11-26T13:06:46.357Z",
-      "seen": 12800,
+      "lastOkAt": "2026-11-26T13:20:23.022Z",
+      "seen": 13200,
       "events": 14,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T01:06:46.357Z",
-      "lastOkAt": "2026-11-26T13:06:46.357Z",
-      "seen": 3767,
+      "lastCursor": "2026-11-26T01:20:23.022Z",
+      "lastOkAt": "2026-11-26T13:20:23.022Z",
+      "seen": 3887,
       "events": 7,
       "errors": 0
     }
@@ -5986,10 +5986,17 @@
       "chain": "sha256:63c957082050da89582f5cb8eac9edc7c7a32318381d59d4cdd7fa683290a7d8",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T13:20:23.022Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub repository with an empty excerpt, so the stored evidence is too thin to plainly support the full one-line claim."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T13:20:23.022Z"
     },
     {
       "id": "20261126t125223z-scene-5689155a",
@@ -6152,10 +6159,17 @@
       "chain": "sha256:a358118fdd624440300854e14d7ece801233a3b9daa2ed803dec4c229b4a0527",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T13:20:23.022Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the claim is primary but not independent and the stored evidence is too thin to confirm the PR title as reported."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T13:20:23.022Z"
     },
     {
       "id": "20261126t124342z-marvis-2fe7d96c",
