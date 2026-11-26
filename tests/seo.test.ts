@@ -7,6 +7,7 @@ import sitemap from "@/app/sitemap"
 import { getBoard } from "@/lib/board"
 import { feedXml } from "@/lib/feed"
 import { isHidden } from "@/lib/hide"
+import { getIntel, published } from "@/lib/intel"
 import {
   articleLd,
   articleMeta,
@@ -46,6 +47,12 @@ const pages = [
   { ...HOME, path: "/" },
   standingsMeta(tracker.efforts.length),
   ...Object.values(PAGES),
+  { title: "Intelligence queue", description: "Held discoveries.", path: "/intelligence/queue" },
+  ...published(await getIntel()).map((i) => ({
+    title: i.title,
+    description: i.oneLine,
+    path: `/intelligence/${i.id}`,
+  })),
   ...standings.map(projectMeta),
   ...tracker.news.map(articleMeta),
 ]
@@ -85,7 +92,12 @@ describe("sitemap and robots", () => {
     const urls = (await sitemap()).map((e) => e.url)
     expect(urls).toEqual([...new Set(urls)])
     const path = (url: string) => url.slice(SITE.url.length) || "/"
-    expect(urls.map(path).sort()).toEqual(pages.map((p) => p.path).sort())
+    expect(urls.map(path).sort()).toEqual(
+      pages
+        .filter((p) => p.path !== "/intelligence/queue")
+        .map((p) => p.path)
+        .sort()
+    )
     expect(isHidden(urls)).toBe(false)
     for (const url of urls) expect(url.startsWith(SITE.url)).toBe(true)
   })

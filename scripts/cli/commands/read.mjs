@@ -2,6 +2,9 @@
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { STABILITY, TRACKS } from '../../../lib/scoring.mjs';
+import { BUCKETS, KINDS, STATUSES } from '../../../lib/intel-gate.mjs';
+import { loadLedger, verifyChain } from '../../lib/intel/ledger.mjs';
+import { sectionProblems } from '../../lib/intel/report.mjs';
 import { CliError, invalid, notFound } from '../lib/errors.mjs';
 import { ago, clip, isDate, pct, show as valueText, today } from '../lib/format.mjs';
 import { loadState, preview, trackerAge, isWritable } from '../lib/data.mjs';
@@ -358,6 +361,44 @@ export const check = {
     for (const id of state.overrides.removedNews ?? []) {
       if (!state.tracker.news.some((n) => n.id === id)) problem('warn', 'orphan_removed_news', id, 'removed article is not in upstream news.');
     }
+
+    /* ---------- Intelligence ledger ---------- */
+    const intel = await loadLedger(state.paths.dataDir);
+    if (intel.items.length && !intel.baselineAt) problem('error', 'intel_no_baseline', 'intel', 'items exist without a baselineAt.');
+    const intelIds = new Set();
+    for (const item of intel.items) {
+      const where = item.id ?? '?';
+      if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(item.id ?? '')) problem('error', 'bad_intel_id', where, 'id is lowercase letters, digits and hyphens.');
+      if (intelIds.has(item.id)) problem('error', 'duplicate_intel_id', where, 'id is used twice.');
+      intelIds.add(item.id);
+      if (!KINDS.includes(item.kind)) problem('error', 'bad_intel_kind', where, `unknown kind "${item.kind}".`);
+      if (!STATUSES.includes(item.status)) problem('error', 'bad_intel_status', where, `unknown status "${item.status}".`);
+      if (!BUCKETS.includes(item.confidence?.bucket)) problem('error', 'bad_intel_confidence', where, 'confidence needs a bucket.');
+      if (!Number.isFinite(Date.parse(item.at ?? ''))) problem('error', 'bad_intel_at', where, 'at is not a date.');
+      if (!Number.isFinite(Date.parse(item.detectedAt ?? ''))) problem('error', 'bad_intel_detected', where, 'detectedAt is not a date.');
+      if (!Array.isArray(item.sources) || !item.sources.length) {
+        if (item.kind !== 'ingest-gap') problem('error', 'intel_no_source', where, 'an item needs a source.');
+      }
+      for (const source of item.sources ?? []) {
+        if (!/^https:\/\//.test(source.url ?? '')) problem('error', 'bad_intel_source', where, `source is not https: ${source.url}`);
+        if (!source.outlet || !source.title) problem('error', 'bad_intel_source', where, 'a source needs outlet and title.');
+      }
+      if (item.status === 'held' && !(item.heldReasons ?? []).length) problem('warn', 'intel_held_silent', where, 'held without a reason.');
+      if (item.status === 'published') {
+        const report = intel.reports.find((r) => r.itemId === item.id);
+        if (!report) problem('error', 'intel_no_report', where, 'published without a report.');
+        else {
+          for (const issue of sectionProblems(report, item.sources ?? [])) problem('error', 'bad_intel_report', where, issue);
+        }
+      }
+    }
+    for (const report of intel.reports) {
+      if (!intel.items.some((i) => i.id === report.itemId)) problem('error', 'orphan_intel_report', report.id ?? '?', 'report has no item.');
+      if (!intel.items.some((i) => i.reportId === report.id)) problem('warn', 'unlinked_intel_report', report.id ?? '?', 'no item points at this report.');
+    }
+    const chain = verifyChain(intel);
+    if (!chain.ok) problem('error', 'intel_chain', chain.id, 'the ledger chain was edited or reordered.');
+    if (intel.items.filter((i) => i.status === 'held').length > 50) problem('warn', 'intel_queue', 'intel', 'more than 50 held items.');
     for (const e of state.effective.efforts) {
       const score = scoreView(state, e);
       if (!Number.isFinite(score.claimed) || score.claimed < 0 || score.claimed > 100) {

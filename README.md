@@ -15,6 +15,7 @@ their claims come from upstream.
 | `pnpm scout:dry`                             | Runs the project scout without saving (set `GITHUB_TOKEN`) |
 | `pnpm harvest:dry`                           | Runs the news/commit/PR harvester without saving           |
 | `pnpm channels:dry`                          | Shows which stream channels would be added or dropped      |
+| `pnpm intel:dry`                             | Runs the intelligence detector without saving              |
 
 ## Where things are
 
@@ -25,8 +26,10 @@ their claims come from upstream.
 - `data/activity.json`: public commits, pull requests and newly found repositories per project
 - `data/tracker.json`: upstream's projects, claims and headlines, exactly as they wrote them. Don't edit
 - `data/overrides.json`: what we found ourselves, applied on top. Edit this one
+- `data/intel.json`: the intelligence ledger, queue and reports; written by `./pw intel`
 - `data/scores.json`: the claims of the last run, for milestones
 - `app/news/`, `app/activity/`: the story feed and the public commit/PR log
+- `app/intelligence/`: the discovery feed, reports and the queue; `docs/INTELLIGENCE.md` is the plan
 - `lib/scoring.mjs`: upstream's scale for claims, a copy of their `assets/js/scoring.js`
 - `lib/rating.mjs`: our score, from the claim and the evidence
 - `scripts/cli/`, `pw`: the editorial CLI; see [docs/CLI.md](docs/CLI.md)

@@ -25,6 +25,9 @@
     "harvest:dry": "node scripts/harvest.mjs --dry-run",
     "digest": "node scripts/digest.mjs",
     "digest:dry": "node scripts/digest.mjs --dry-run",
+    "intel": "node scripts/intel.mjs",
+    "intel:dry": "node scripts/intel.mjs --dry-run",
+    "intel:audit": "node scripts/intel-audit.mjs",
     "channels": "node scripts/channels.mjs",
     "channels:dry": "node scripts/channels.mjs --dry-run"
   },

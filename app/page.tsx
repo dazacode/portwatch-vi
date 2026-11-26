@@ -1,12 +1,14 @@
 import Link from "next/link"
 import { Container } from "@/components/container"
 import { DigestSummary } from "@/components/digest/summary"
+import { IntelCard } from "@/components/intel/card"
 import { JsonLd } from "@/components/json-ld"
 import { LiveDeck } from "@/components/live/live-deck"
 import { StandingsTable } from "@/components/standings-table"
 import { getBroadcast } from "@/lib/broadcast"
 import { getDigest, getSummary } from "@/lib/digest"
 import { utcDay, utcTime } from "@/lib/format"
+import { getIntel, published } from "@/lib/intel"
 import { getSnapshot } from "@/lib/live/snapshot"
 import { HOME, pageMeta, websiteLd } from "@/lib/seo"
 import { getProjects } from "@/lib/standings"
@@ -27,7 +29,7 @@ export const metadata = pageMeta({ ...HOME, path: "/" })
 const more = "text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground"
 
 export default async function Page() {
-  const [tracker, evidence, snapshot, broadcast, feed, activity, milestones, digest] =
+  const [tracker, evidence, snapshot, broadcast, feed, activity, milestones, digest, intel] =
     await Promise.all([
       getTracker(),
       getEvidence(),
@@ -37,7 +39,9 @@ export default async function Page() {
       getActivity(),
       getMilestones(),
       getDigest(),
+      getIntel(),
     ])
+  const recent = published(intel).slice(0, 5)
   const standings = getStandings(tracker, evidence)
   // The same ranking as /standings: public code only.
   const ranked = getProjects(standings, { tracker, activity, milestones, evidence }).filter(
@@ -75,6 +79,25 @@ export default async function Page() {
           </div>
           <StandingsTable rows={ranked.slice(0, 8)} />
         </section>
+
+        {recent.length > 0 && (
+          <section className="mt-12" aria-labelledby="intel">
+            <div className="mb-2 flex items-baseline justify-between">
+              <h2 id="intel" className="text-lg font-semibold">
+                Intelligence
+              </h2>
+              <Link href="/intelligence" className={more}>
+                The feed
+              </Link>
+            </div>
+            <p className="mb-1 text-sm text-muted-foreground">
+              Changes to the public record, with sources and confidence. Automated; not official.
+            </p>
+            {recent.map((item) => (
+              <IntelCard key={item.id} item={item} now={new Date().toISOString()} />
+            ))}
+          </section>
+        )}
 
         <section
           className="mt-12 grid grid-cols-[minmax(0,1fr)] gap-10 md:grid-cols-[repeat(2,minmax(0,1fr))]"

@@ -1,0 +1,2440 @@
+{
+  "updated": "2026-11-26T04:38:24.703Z",
+  "baselineAt": "2026-11-26T04:38:24.588Z",
+  "coverage": {
+    "activity": {
+      "lastCursor": "2026-11-25T23:45:48.000Z",
+      "lastOkAt": "2026-11-26T04:38:24.703Z",
+      "seen": 250,
+      "events": 22,
+      "errors": 0
+    },
+    "evidence": {
+      "lastCursor": "2026-11-26T02:06:57.000Z",
+      "lastOkAt": "2026-11-26T04:38:24.703Z",
+      "seen": 14,
+      "events": 6,
+      "errors": 0
+    },
+    "milestones": {
+      "lastCursor": "2026-11-25T22:55:15.009Z",
+      "lastOkAt": "2026-11-26T04:38:24.703Z",
+      "seen": 41,
+      "events": 1,
+      "errors": 0
+    },
+    "news": {
+      "lastCursor": "2026-11-25T23:40:50.649Z",
+      "lastOkAt": "2026-11-26T04:38:24.703Z",
+      "seen": 400,
+      "events": 0,
+      "errors": 0
+    },
+    "tracker": {
+      "lastCursor": "2026-11-26T00:00:00.000Z",
+      "lastOkAt": "2026-11-26T04:38:24.703Z",
+      "seen": 111,
+      "events": 7,
+      "errors": 0
+    }
+  },
+  "items": [
+    {
+      "id": "20261126t020657z-avatarmanz-3089b490",
+      "key": "evidence|avatarmanz|world|41566",
+      "kind": "evidence",
+      "projectId": "avatarmanz",
+      "projectName": "AvatarManz",
+      "at": "2026-11-26T02:06:57Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "New test evidence on AvatarManz — world",
+      "oneLine": "7.5-12 minutes after start, in the opening mission",
+      "sources": [
+        {
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/76",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "7.5-12 minutes after start, in the opening mission",
+          "at": "2026-11-26T02:06:57Z",
+          "kind": "primary",
+          "authorHash": "810de39b0ae5",
+          "excerpt": "7.5-12 minutes after start, in the opening mission"
+        }
+      ],
+      "fingerprint": {
+        "repo": "avatarmanz/victory-7900xtx",
+        "name": "avatarmanz",
+        "words": [
+          "avatarmanz"
+        ],
+        "hash": "c8ec3b01fcdca386",
+        "projectId": "avatarmanz"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:cffb2e0ecac2f14c65fdeefe52e8651205117da77091afd3103700c717c46da4",
+      "reportId": "20261126t020657z-avatarmanz-3089b490-report",
+      "discordAt": "2026-11-26T04:39:46.486Z",
+      "revisions": [],
+      "publishedAt": "2026-11-26T04:38:24.703Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261126t020000z-dexnom-0b9c5dd3",
+      "key": "evidence|dexnom|playable|41566",
+      "kind": "evidence",
+      "projectId": "dexnom",
+      "projectName": "DexNom",
+      "at": "2026-11-26T02:00:00Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "New test evidence on DexNom — playable",
+      "oneLine": "8 fps / 252 ms at 854x480, GPU 35% busy",
+      "sources": [
+        {
+          "url": "https://github.com/quietdom/gta6-pc-dexnom",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "8 fps / 252 ms at 854x480, GPU 35% busy",
+          "at": "2026-11-26T02:00:00Z",
+          "kind": "outside",
+          "authorHash": "hand-dexnom-quietdom",
+          "excerpt": "8 fps / 252 ms at 854x480, GPU 35% busy"
+        }
+      ],
+      "fingerprint": {
+        "repo": "dexnom/victory",
+        "name": "dexnom",
+        "words": [
+          "dexnom"
+        ],
+        "hash": "ab600c2141c85604",
+        "projectId": "dexnom"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "1 outside source",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d703a68809f31fa30603f28f9b93bbf646a0eaf043565f1474ba786d4a7575ad",
+      "reportId": "20261126t020000z-dexnom-0b9c5dd3-report",
+      "discordAt": "2026-11-26T04:39:46.486Z",
+      "revisions": [],
+      "publishedAt": "2026-11-26T04:38:24.703Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261126t013408z-avatarmanz-ecbf0f69",
+      "key": "evidence|avatarmanz|playable|41566",
+      "kind": "evidence",
+      "projectId": "avatarmanz",
+      "projectName": "AvatarManz",
+      "at": "2026-11-26T01:34:08Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "New test evidence on AvatarManz — playable",
+      "oneLine": "an 11-minute session that reached gameplay (prison yard)",
+      "sources": [
+        {
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/70",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "an 11-minute session that reached gameplay (prison yard)",
+          "at": "2026-11-26T01:34:08Z",
+          "kind": "primary",
+          "authorHash": "hand-avatar-70",
+          "excerpt": "an 11-minute session that reached gameplay (prison yard)"
+        }
+      ],
+      "fingerprint": {
+        "repo": "avatarmanz/victory-7900xtx",
+        "name": "avatarmanz",
+        "words": [
+          "avatarmanz"
+        ],
+        "hash": "4e724b91f8ba1f31",
+        "projectId": "avatarmanz"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:73a00f49a56c140bbe7835d970d8cd2ddb88e08cb9ff2bbaa82584a42f69b5fb",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t000000z-cgbj-714913c4",
+      "key": "update|cgbj|tracker|41566",
+      "kind": "update",
+      "projectId": "cgbj",
+      "projectName": "CGBJ",
+      "at": "2026-11-26T00:00:00.000Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "CGBJ changed on the board",
+      "oneLine": "CGBJ: summary, highlights, blockers changed; score 86.7% → 73.0%.",
+      "sources": [
+        {
+          "url": "https://viportlive.com/projects/cgbj",
+          "host": "viportlive.com",
+          "outlet": "Project record",
+          "title": "CGBJ: summary, highlights, blockers changed; score 86.7% → 73.0%.",
+          "at": "2026-11-26T00:00:00.000Z",
+          "kind": "primary",
+          "excerpt": "CGBJ: summary, highlights, blockers changed; score 86.7% → 73.0%."
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "cgbj",
+        "words": [
+          "cgbj"
+        ],
+        "hash": "97a937881d00a90b",
+        "projectId": "cgbj"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:8f33a7d880c4e0b36b9c6080186249b4fa95d0622db8fea3945969cb05a3303f",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t000000z-anyxboxx-58eda723",
+      "key": "reference|anyxboxx|tracker|41566",
+      "kind": "reference",
+      "projectId": "anyxboxx",
+      "projectName": "AnyXboxX",
+      "at": "2026-11-26T00:00:00.000Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "AnyXboxX changed on the board",
+      "oneLine": "AnyXboxX joins the race: its copy of VIctory on the Neptune base reaches the world at 13.8 fps, and a contributor reports the first two missions played",
+      "sources": [
+        {
+          "url": "https://github.com/LooperSalty/AnyXboxX",
+          "host": "github.com",
+          "outlet": "Project record",
+          "title": "AnyXboxX joins the race: its copy of VIctory on the Neptune base reaches the world at 13.8 fps, and a contributor report",
+          "at": "2026-11-26T00:00:00.000Z",
+          "kind": "primary",
+          "excerpt": "AnyXboxX joins the race: its copy of VIctory on the Neptune base reaches the world at 13.8 fps, and a contributor reports the first two missions played"
+        }
+      ],
+      "fingerprint": {
+        "repo": "loopersalty/anyxboxx",
+        "name": "anyxboxx",
+        "words": [
+          "anyxboxx"
+        ],
+        "hash": "27c4d0c0655a484f",
+        "projectId": "anyxboxx"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:5137a6b69bb613b6a015772e81e4683707dc71bb168f03b0ee0a69d3450d8d20",
+      "reportId": "20261126t000000z-anyxboxx-58eda723-report",
+      "discordAt": "2026-11-26T04:39:46.486Z",
+      "revisions": [],
+      "publishedAt": "2026-11-26T04:38:24.703Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261126t000000z-belobug-68eea508",
+      "key": "update|belobug|tracker|41566",
+      "kind": "update",
+      "projectId": "belobug",
+      "projectName": "Belobug",
+      "at": "2026-11-26T00:00:00.000Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "Belobug changed on the board",
+      "oneLine": "Belobug: summary, highlights, blockers changed; score 79.0% → 78.4%.",
+      "sources": [
+        {
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD",
+          "host": "github.com",
+          "outlet": "Project record",
+          "title": "Belobug: summary, highlights, blockers changed; score 79.0% → 78.4%.",
+          "at": "2026-11-26T00:00:00.000Z",
+          "kind": "primary",
+          "excerpt": "Belobug: summary, highlights, blockers changed; score 79.0% → 78.4%."
+        }
+      ],
+      "fingerprint": {
+        "repo": "belobug/victory-belobug-amd",
+        "name": "belobug",
+        "words": [
+          "belobug"
+        ],
+        "hash": "37e1ff864ba46120",
+        "projectId": "belobug"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:b034f023375305200744759233866ac7a99122ff3e16ab476c1b5fc4cf244130",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t000000z-leonida-continued-fd0b8a87",
+      "key": "reference|leonida-continued|tracker|41566",
+      "kind": "duplicate",
+      "projectId": "leonida-continued",
+      "projectName": "Leonida Continued",
+      "at": "2026-11-26T00:00:00.000Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "Leonida Continued may duplicate leonida",
+      "oneLine": "Leonida is back from the dead: Leonida Continued (ubiquitarianism/leonida), created at 23:54 UTC on Nov 23 with the full history, now boots GTA VI through its start prompt into the world load. It joins at 25%; the original repo stays offlin",
+      "sources": [
+        {
+          "url": "https://github.com/ubiquitarianism/leonida",
+          "host": "github.com",
+          "outlet": "Project record",
+          "title": "Leonida is back from the dead: Leonida Continued (ubiquitarianism/leonida), created at 23:54 UTC on Nov 23 with the full",
+          "at": "2026-11-26T00:00:00.000Z",
+          "kind": "primary",
+          "excerpt": "Leonida is back from the dead: Leonida Continued (ubiquitarianism/leonida), created at 23:54 UTC on Nov 23 with the full history, now boots GTA VI through its start prompt into the world load. It joins at 25%; the original repo stays offline."
+        }
+      ],
+      "fingerprint": {
+        "repo": "ubiquitarianism/leonida",
+        "name": "leonida continued",
+        "words": [
+          "leonida",
+          "continued",
+          "leonida-continued"
+        ],
+        "hash": "0eeaa06eeefd6e18",
+        "projectId": "leonida-continued"
+      },
+      "similar": [
+        {
+          "effortId": "leonida",
+          "score": 0.79
+        }
+      ],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:316ae189a6128f356dd64a5cca7a176b3608ca57c1d80cc394676465fb56a0a5",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "duplicate build reference"
+      ]
+    },
+    {
+      "id": "20261126t000000z-hugo-d879b715",
+      "key": "update|hugo|tracker|41566",
+      "kind": "update",
+      "projectId": "hugo",
+      "projectName": "MashedHugo",
+      "at": "2026-11-26T00:00:00.000Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "MashedHugo changed on the board",
+      "oneLine": "MashedHugo's overlay reads 3.7 fps, up from 2 (owner's screenshot)",
+      "sources": [
+        {
+          "url": "https://viportlive.com/projects/hugo",
+          "host": "viportlive.com",
+          "outlet": "Project record",
+          "title": "MashedHugo's overlay reads 3.7 fps, up from 2 (owner's screenshot)",
+          "at": "2026-11-26T00:00:00.000Z",
+          "kind": "primary",
+          "excerpt": "MashedHugo's overlay reads 3.7 fps, up from 2 (owner's screenshot)"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "mashedhugo",
+        "words": [
+          "mashedhugo",
+          "hugo"
+        ],
+        "hash": "2412146fc42a5054",
+        "projectId": "hugo"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:46f455c8440f91ca88b7b69c00057cb0c516a1cd8c2c78f5232299cd290f52da",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261125t235732z-avatarmanz-8bad176c",
+      "key": "evidence|avatarmanz|world|41565",
+      "kind": "evidence",
+      "projectId": "avatarmanz",
+      "projectName": "AvatarManz",
+      "at": "2026-11-25T23:57:32Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "New test evidence on AvatarManz (4 reports) — world",
+      "oneLine": "intact geometry aside from the bottom block band",
+      "sources": [
+        {
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/35",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "intact geometry aside from the bottom block band",
+          "at": "2026-11-25T23:57:32Z",
+          "kind": "primary",
+          "authorHash": "1f31c564be6b",
+          "excerpt": "intact geometry aside from the bottom block band"
+        },
+        {
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/34",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "it loses the device within a minute every time",
+          "at": "2026-11-25T23:55:51Z",
+          "kind": "primary",
+          "authorHash": "b18da0b0b9b9",
+          "excerpt": "it loses the device within a minute every time"
+        },
+        {
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/13",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "faces present but not animated, skin shading flat",
+          "at": "2026-11-25T23:26:21Z",
+          "kind": "primary",
+          "authorHash": "72f8ce0a44d4",
+          "excerpt": "faces present but not animated, skin shading flat"
+        },
+        {
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/11",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "the device is removed 1 to 90 s into the world in every setting tried",
+          "at": "2026-11-25T23:19:21Z",
+          "kind": "primary",
+          "authorHash": "c9f956901560",
+          "excerpt": "the device is removed 1 to 90 s into the world in every setting tried"
+        }
+      ],
+      "fingerprint": {
+        "repo": "avatarmanz/victory-7900xtx",
+        "name": "avatarmanz",
+        "words": [
+          "avatarmanz"
+        ],
+        "hash": "616b340cecf8cf9e",
+        "projectId": "avatarmanz"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "sources disagree",
+          "from before the baseline"
+        ],
+        "conflict": true
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:6d8fc8bfa22928a85ad4032e66aba1ed96ca49664b02f63fd0ccb1c31dd107c8",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "sources disagree",
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261125t234548z-avatarmanz-5f08d88f",
+      "key": "update|avatarmanz|activity|41565",
+      "kind": "update",
+      "projectId": "avatarmanz",
+      "projectName": "AvatarManz",
+      "at": "2026-11-25T23:45:48Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "AvatarManz opened pull request #4",
+      "oneLine": "Shaders: run LDS flag regions on 32-lane GPUs",
+      "sources": [
+        {
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/4",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Shaders: run LDS flag regions on 32-lane GPUs",
+          "at": "2026-11-25T23:45:48Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "avatarmanz/victory-7900xtx",
+        "name": "avatarmanz",
+        "words": [
+          "avatarmanz"
+        ],
+        "hash": "8c2b1a88f8fa0e93",
+        "projectId": "avatarmanz"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:a880e3736db3f895c3a289eef36b2b62d8b1353c03655c131cfdb931e30790c6",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t234547z-xbox2windows-3d949e5c",
+      "key": "update|xbox2windows|activity|41565",
+      "kind": "update",
+      "projectId": "xbox2windows",
+      "projectName": "Xbox2Windows",
+      "at": "2026-11-25T23:45:47Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "Xbox2Windows opened pull request #2632",
+      "oneLine": "tests: make the SGD5 negative record offset control portable",
+      "sources": [
+        {
+          "url": "https://github.com/R0Y00/Xbox2Windows/pull/2632",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "tests: make the SGD5 negative record offset control portable",
+          "at": "2026-11-25T23:45:47Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "r0y00/xbox2windows",
+        "name": "xbox2windows",
+        "words": [
+          "xbox2windows"
+        ],
+        "hash": "740f826aa12835ca",
+        "projectId": "xbox2windows"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:af467c52c22a90fecb18590b2cca2eb187fc5afce6a826681d9eca68ccf833a3",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t234536z-marvis-bcd3725a",
+      "key": "update|marvis|activity|41565",
+      "kind": "update",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-25T23:45:36Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "VIctory opened pull request #2126",
+      "oneLine": "Shaders: compute threads that read other lanes keep unique ids in 2-D groups (NVIDIA)",
+      "sources": [
+        {
+          "url": "https://github.com/Marvisak/VIctory/pull/2126",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Shaders: compute threads that read other lanes keep unique ids in 2-D groups (NVIDIA)",
+          "at": "2026-11-25T23:45:36Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "1141780380054693",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:88a2bcbd43871b067f12048e999aa0a42cadac8226f53c021bda9d8096b9834a",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t234532z-xcl-c290f658",
+      "key": "update|xcl|activity|41565",
+      "kind": "update",
+      "projectId": "xcl",
+      "projectName": "XCL",
+      "at": "2026-11-25T23:45:32Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "XCL opened pull request #2575",
+      "oneLine": "DXIL: add semantic inspection helper and fixture",
+      "sources": [
+        {
+          "url": "https://github.com/xcl-dev/xcl/pull/2575",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "DXIL: add semantic inspection helper and fixture",
+          "at": "2026-11-25T23:45:32Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "xcl-dev/xcl",
+        "name": "xcl",
+        "words": [
+          "xcl"
+        ],
+        "hash": "5402c0039d315a44",
+        "projectId": "xcl"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:2b90f423aab85bfd8b9cf88ca6c1a6126c4256a291a2f499cd92421acb902a1a",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t234508z-victory-gta6-69ba2d2b",
+      "key": "update|victory-gta6|activity|41565",
+      "kind": "update",
+      "projectId": "victory-gta6",
+      "projectName": "hyphennn",
+      "at": "2026-11-25T23:45:08Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "hyphennn opened pull request #1193",
+      "oneLine": "Add telemetry, VRAM budgeting, and frame pacing controls",
+      "sources": [
+        {
+          "url": "https://github.com/fxceless/victory-fork/pull/1193",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Add telemetry, VRAM budgeting, and frame pacing controls",
+          "at": "2026-11-25T23:45:08Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "fxceless/victory-fork",
+        "name": "hyphennn",
+        "words": [
+          "hyphennn",
+          "victory-gta6"
+        ],
+        "hash": "058530211c13a487",
+        "projectId": "victory-gta6"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:10c39ff354be14ff9d2249c2f1b2866857451f1d3b65dc6df5f34d0a75dea738",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t234334z-belobug-58ec5ba5",
+      "key": "update|belobug|activity|41565",
+      "kind": "update",
+      "projectId": "belobug",
+      "projectName": "Belobug",
+      "at": "2026-11-25T23:43:34Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "Belobug opened pull request #199",
+      "oneLine": "gpu: replace O(N) bindless_plan scans with O(dirty) incremental tracking",
+      "sources": [
+        {
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/199",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "gpu: replace O(N) bindless_plan scans with O(dirty) incremental tracking",
+          "at": "2026-11-25T23:43:34Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "belobug/victory-belobug-amd",
+        "name": "belobug",
+        "words": [
+          "belobug"
+        ],
+        "hash": "7749e38a7e252a81",
+        "projectId": "belobug"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:56024184be397cef80ce95cdaae59285d5e4c4fab71dd2f6b38bdcb1104ced09",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t234326z-gta6-compat-layer-fbe4a363",
+      "key": "update|gta6-compat-layer|activity|41565",
+      "kind": "update",
+      "projectId": "gta6-compat-layer",
+      "projectName": "GTA6-COMPAT-LAYER (ScarlettCompat)",
+      "at": "2026-11-25T23:43:26Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "GTA6-COMPAT-LAYER (ScarlettCompat) opened pull request #3",
+      "oneLine": "Codex/slot86 create pipeline state",
+      "sources": [
+        {
+          "url": "https://github.com/SSTGxf/ScarlettCompat/pull/3",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Codex/slot86 create pipeline state",
+          "at": "2026-11-25T23:21:29Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sstgxf/scarlettcompat",
+        "name": "gta6-compat-layer scarlettcompat",
+        "words": [
+          "gta6-compat-layer",
+          "scarlettcompat"
+        ],
+        "hash": "464974594c000a60",
+        "projectId": "gta6-compat-layer"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:c43cbd27bd4a9eea860a8e31633e651c6452350cedf48a01ced75589fb91f1c7",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t234243z-anyxboxx-7e111e3e",
+      "key": "update|anyxboxx|activity|41565",
+      "kind": "update",
+      "projectId": "anyxboxx",
+      "projectName": "AnyXboxX",
+      "at": "2026-11-25T23:42:43Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "AnyXboxX opened pull request #271",
+      "oneLine": "fix: v_bfe_i32 reads copies of the sign bit when the field runs past bit 31",
+      "sources": [
+        {
+          "url": "https://github.com/LooperSalty/AnyXboxX/pull/271",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "fix: v_bfe_i32 reads copies of the sign bit when the field runs past bit 31",
+          "at": "2026-11-25T23:42:43Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "loopersalty/anyxboxx",
+        "name": "anyxboxx",
+        "words": [
+          "anyxboxx"
+        ],
+        "hash": "2da14ac27c2039cc",
+        "projectId": "anyxboxx"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:a6e38ceb969fdff6e29db22c9c7bea623c9c75ad49d52d1f18227477b6bef272",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t234216z-dexnom-433bffad",
+      "key": "update|dexnom|activity|41565",
+      "kind": "update",
+      "projectId": "dexnom",
+      "projectName": "DexNom",
+      "at": "2026-11-25T23:42:16Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "DexNom opened pull request #58",
+      "oneLine": "Tests: VICTORY_ADAPTER picks the hardware adapter by name (and intersect_tests on RDNA4 + RDNA2)",
+      "sources": [
+        {
+          "url": "https://github.com/DexNom/VIctory/pull/58",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Tests: VICTORY_ADAPTER picks the hardware adapter by name (and intersect_tests on RDNA4 + RDNA2)",
+          "at": "2026-11-25T23:42:16Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "dexnom/victory",
+        "name": "dexnom",
+        "words": [
+          "dexnom"
+        ],
+        "hash": "8f46482e794407ea",
+        "projectId": "dexnom"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:923d4b98955b2eaefe8c2d80b63779490fb1a17e5dd8cbed295066f4c0792106",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t234101z-vitoriabr-1a003f1a",
+      "key": "update|vitoriabr|activity|41565",
+      "kind": "update",
+      "projectId": "vitoriabr",
+      "projectName": "Uilian",
+      "at": "2026-11-25T23:41:01Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "Uilian pushed 4 commits",
+      "oneLine": "shader: seed cycle proofs and require stable LDS for uniform first-lane values",
+      "sources": [
+        {
+          "url": "https://github.com/uiliannn/VItoriaBr/commit/809ba50e6dfbbd30b084be75e8594040bd51f7fd",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "shader: seed cycle proofs and require stable LDS for uniform first-lane values",
+          "at": "2026-11-25T23:41:01Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "uiliannn/vitoriabr",
+        "name": "uilian",
+        "words": [
+          "uilian",
+          "vitoriabr"
+        ],
+        "hash": "0111c9c00993425f",
+        "projectId": "vitoriabr"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:54b8d35c8a587cf44d1e8fca149782aa1d5b6bbad56f2e4e9095e1de367ab511",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t234018z-launcher-e25a35e8",
+      "key": "reference|launcher|activity|41565",
+      "kind": "reference",
+      "projectId": "launcher",
+      "projectName": "VILauncher",
+      "at": "2026-11-25T23:40:18Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "New reference to VILauncher",
+      "oneLine": "Neonbridge: one open-source GTA VI (GTA 6) PC launcher for the top Xbox Series runtimes on the GTA VI PC race (KLBF Lab, Flamingo, victory-fork, VI-BR-PORT, Belobug, VItoriaBr, ScarlettPort). Pick one",
+      "sources": [
+        {
+          "url": "https://github.com/DesignWithTommy/Neonbridge",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "DesignWithTommy/Neonbridge",
+          "at": "2026-11-25T23:40:18Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sixlauncher/launcher",
+        "name": "vilauncher",
+        "words": [
+          "vilauncher",
+          "launcher"
+        ],
+        "hash": "0671f6992c6bd7de",
+        "projectId": "launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:5ffae2a1a42d79462bfeeabe90a5ded09290244f3b1416c2989265fca4077eb8",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t234016z-half-step-game-project-966b2b95",
+      "key": "update|half-step-game-project|activity|41565",
+      "kind": "update",
+      "projectId": "half-step-game-project",
+      "projectName": "Half Step Game Project",
+      "at": "2026-11-25T23:40:16Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "Half Step Game Project opened pull request #4",
+      "oneLine": "Count DispatchX in threads as the builder asks; fix main's CI",
+      "sources": [
+        {
+          "url": "https://github.com/sefaalcn/half-step-game-project/pull/4",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Count DispatchX in threads as the builder asks; fix main's CI",
+          "at": "2026-11-25T23:40:16Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sefaalcn/half-step-game-project",
+        "name": "half step game project",
+        "words": [
+          "half",
+          "step",
+          "game",
+          "project",
+          "half-step-game-project"
+        ],
+        "hash": "04020a08dc643625",
+        "projectId": "half-step-game-project"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:9b1749226a7214fbab8ed2be18e52df6a9461967682f663fe7d29ea1ce5113f1",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t233848z-decant-399a4b88",
+      "key": "update|decant|activity|41565",
+      "kind": "update",
+      "projectId": "decant",
+      "projectName": "Decant",
+      "at": "2026-11-25T23:38:48Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "Decant pushed 5 commits",
+      "oneLine": "Deduplicate deferred shader bytecode and release after PSO creation",
+      "sources": [
+        {
+          "url": "https://github.com/decantlabs/decant/commit/b833f21771516a9a542d53f1e43bd49b2f5121c3",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Deduplicate deferred shader bytecode and release after PSO creation",
+          "at": "2026-11-25T23:19:22Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "decantlabs/decant",
+        "name": "decant",
+        "words": [
+          "decant"
+        ],
+        "hash": "8407396056722278",
+        "projectId": "decant"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:ae29071c5a01edc300cdc26d325ee161cc6a280f7354b93ce1d8416d37b7361d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t233735z-marvis-af7c5fe3",
+      "key": "reference|marvis|activity|41565",
+      "kind": "reference",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-25T23:37:35Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "New reference to VIctory",
+      "oneLine": "Archive of Leonida, xcl and VIctory (GTA VI on PC projects), saved 2026-11-23",
+      "sources": [
+        {
+          "url": "https://github.com/Guernica4u/GTA6-PC-Port-Archive",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Guernica4u/GTA6-PC-Port-Archive",
+          "at": "2026-11-25T23:37:35Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "3057e5affa09d5bf",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:0b42aea634d43e1892b4536a5700a2812000c5acea38b08aa7dfbf7ac541ebf9",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t233732z-five-star-recomp-cf932249",
+      "key": "update|five-star-recomp|activity|41565",
+      "kind": "update",
+      "projectId": "five-star-recomp",
+      "projectName": "Five Star Recomp",
+      "at": "2026-11-25T23:37:32Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "Five Star Recomp opened pull request #51",
+      "oneLine": "Diagnostics: the return-address scan tests an image's code sections before VirtualQuery",
+      "sources": [
+        {
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/pull/51",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Diagnostics: the return-address scan tests an image's code sections before VirtualQuery",
+          "at": "2026-11-25T23:15:15Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "thatrecompdev/five-star-recomp",
+        "name": "five star recomp",
+        "words": [
+          "five",
+          "star",
+          "recomp",
+          "five-star-recomp"
+        ],
+        "hash": "c218488d7d9a8a67",
+        "projectId": "five-star-recomp"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:8e0929e995aa9ab8c88aada212259fca97ac99a54da879e8c5aefe39111e2777",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t233555z-tuxbox-5a86d9f5",
+      "key": "update|tuxbox|activity|41565",
+      "kind": "update",
+      "projectId": "tuxbox",
+      "projectName": "TuxBox",
+      "at": "2026-11-25T23:35:55Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "TuxBox opened pull request #185",
+      "oneLine": "xshader: lower constant-lane v_readlane_b32 for Wave32 and portable Wave64",
+      "sources": [
+        {
+          "url": "https://github.com/brcly/TuxBox/pull/185",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "xshader: lower constant-lane v_readlane_b32 for Wave32 and portable Wave64",
+          "at": "2026-11-25T23:35:55Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "brcly/tuxbox",
+        "name": "tuxbox",
+        "words": [
+          "tuxbox"
+        ],
+        "hash": "980ac0c7552140c0",
+        "projectId": "tuxbox"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:f41f4f3b1f748b97433ba8a5d33d2139d9b65ecbbb368a529b899692fa119a5f",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t233202z-leonida-7d72ea23",
+      "key": "reference|leonida|activity|41565",
+      "kind": "reference",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-25T23:32:02Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "New reference to Leonida",
+      "oneLine": "A continuation of Leonida, the Xbox > PC port interface for GTA VI",
+      "sources": [
+        {
+          "url": "https://github.com/ubiquitarianism/leonida",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "ubiquitarianism/leonida",
+          "at": "2026-11-25T23:32:02Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "95d1d63666c5101e",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:31f2cc3e87f00c0b997a20e3ff1f397ef70645d5266ec753a2e417e31abe0087",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t232832z-scene-1ed3cb38",
+      "key": "reference|-|activity|41565",
+      "kind": "reference",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-25T23:28:32Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "New public repository: vuyp/gta6-pc-race",
+      "oneLine": "Automatically maintained tracking site for PC ports of the GTA VI Xbox Build. This repository is managed autonomously by Claude Fable 5.2.",
+      "sources": [
+        {
+          "url": "https://github.com/vuyp/gta6-pc-race",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "vuyp/gta6-pc-race",
+          "at": "2026-11-25T23:28:32Z",
+          "kind": "official"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "eb8d5a33b0b528cf",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source",
+          "from before the baseline"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:26db0dec371589060309bc6c4da29fe2d8e82c3881469952cf5c56a82df39459",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261125t232818z-xbox-emulator-50e15670",
+      "key": "update|xbox-emulator|activity|41565",
+      "kind": "update",
+      "projectId": "xbox-emulator",
+      "projectName": "xbox-emulator",
+      "at": "2026-11-25T23:28:18Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "xbox-emulator opened pull request #393",
+      "oneLine": "tombox-xshader: add RDNA2 S_CSELECT_B32 and S_CSELECT_B64 support",
+      "sources": [
+        {
+          "url": "https://github.com/omonkeyz/xbox-emulator/pull/393",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "tombox-xshader: add RDNA2 S_CSELECT_B32 and S_CSELECT_B64 support",
+          "at": "2026-11-25T23:28:18Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "omonkeyz/xbox-emulator",
+        "name": "xbox-emulator",
+        "words": [
+          "xbox-emulator"
+        ],
+        "hash": "504d6641ea3502e1",
+        "projectId": "xbox-emulator"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:b98373599356031dd6239e5847fe963cfe78d6b069d11be9624b22b78412ae8f",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t232808z-launcher-549dc979",
+      "key": "update|launcher|activity|41565",
+      "kind": "update",
+      "projectId": "launcher",
+      "projectName": "VILauncher",
+      "at": "2026-11-25T23:28:08Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "VILauncher opened pull request #27",
+      "oneLine": "Flatpak self-update, and say why the build list is empty",
+      "sources": [
+        {
+          "url": "https://github.com/SixLauncher/launcher/pull/27",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Flatpak self-update, and say why the build list is empty",
+          "at": "2026-11-25T23:28:08Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sixlauncher/launcher",
+        "name": "vilauncher",
+        "words": [
+          "vilauncher",
+          "launcher"
+        ],
+        "hash": "9402c081601a86d8",
+        "projectId": "launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:b01e5fa34a54dbe82a93b8eef3cccad5ec3d371bda6478c4d54a70b121b3a73b",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t230430z-gtavi-recomp-721354b0",
+      "key": "update|gtavi-recomp|activity|41565",
+      "kind": "update",
+      "projectId": "gtavi-recomp",
+      "projectName": "GTAVI-Recomp",
+      "at": "2026-11-25T23:04:30Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "GTAVI-Recomp opened pull request #19",
+      "oneLine": "Document and verify the pinned AnyPS5 runtime library tests",
+      "sources": [
+        {
+          "url": "https://github.com/JamesCicada/GTAVI-Recomp/pull/19",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Document and verify the pinned AnyPS5 runtime library tests",
+          "at": "2026-11-25T23:04:30Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "jamescicada/gtavi-recomp",
+        "name": "gtavi-recomp",
+        "words": [
+          "gtavi-recomp"
+        ],
+        "hash": "5029518b35200880",
+        "projectId": "gtavi-recomp"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:5f08015e82b33c44096b8d097ea34e51f0bc56302aea76068314b45a3aced913",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261125t225515z-notnozy-0ea2308b",
+      "key": "update|notnozy|playable|41565",
+      "kind": "update",
+      "projectId": "notnozy",
+      "projectName": "NotNozy",
+      "at": "2026-11-25T22:55:15.009Z",
+      "detectedAt": "2026-11-26T04:38:24.703Z",
+      "title": "NotNozy moved to playable",
+      "oneLine": "The project’s record moved from 0% to 82.6%.",
+      "sources": [
+        {
+          "url": "https://viportlive.com/projects/notnozy",
+          "host": "viportlive.com",
+          "outlet": "VIPortLive",
+          "title": "NotNozy record",
+          "at": "2026-11-25T22:55:15.009Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "notnozy",
+        "words": [
+          "notnozy"
+        ],
+        "hash": "ff6a8fb19de530c5",
+        "projectId": "notnozy"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d1850b887d4e7225fce1aa4c6c99a3d646be3690e5723401fa2e7448acc3c5f9",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "id": "20261126t020657z-avatarmanz-3089b490-report",
+      "itemId": "20261126t020657z-avatarmanz-3089b490",
+      "publishedAt": "2026-11-26T04:38:24.703Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "AvatarManz has a new independent test report on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "An outside report adds a reading for the project. 7.5-12 minutes after start, in the opening mission.",
+      "evidence": "The entry rests on one stored source, GitHub. 7.5-12 minutes after start, in the opening mission.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/76",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "7.5-12 minutes after start, in the opening mission",
+          "at": "2026-11-26T02:06:57Z",
+          "kind": "primary",
+          "authorHash": "810de39b0ae5",
+          "excerpt": "7.5-12 minutes after start, in the opening mission"
+        }
+      ]
+    },
+    {
+      "id": "20261126t020000z-dexnom-0b9c5dd3-report",
+      "itemId": "20261126t020000z-dexnom-0b9c5dd3",
+      "publishedAt": "2026-11-26T04:38:24.703Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "DexNom has a new independent test report on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "An outside report adds a reading for the project. 8 fps / 252 ms at 854x480, GPU 35% busy.",
+      "evidence": "The entry rests on one stored source, GitHub. 8 fps / 252 ms at 854x480, GPU 35% busy.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/quietdom/gta6-pc-dexnom",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "8 fps / 252 ms at 854x480, GPU 35% busy",
+          "at": "2026-11-26T02:00:00Z",
+          "kind": "outside",
+          "authorHash": "hand-dexnom-quietdom",
+          "excerpt": "8 fps / 252 ms at 854x480, GPU 35% busy"
+        }
+      ]
+    },
+    {
+      "id": "20261126t000000z-anyxboxx-58eda723-report",
+      "itemId": "20261126t000000z-anyxboxx-58eda723",
+      "publishedAt": "2026-11-26T04:38:24.703Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "AnyXboxX has a new build reference on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "A repository or record that was not in the baseline is now attached to the board. AnyXboxX joins the race: its copy of VIctory on the Neptune base reaches the world at 13.8 fps, and a contributor reports the first two missions played.",
+      "evidence": "The entry rests on one stored source, Project record. AnyXboxX joins the race: its copy of VIctory on the Neptune base reaches the world at 13.8 fps, and a contributor reports the first two missions played.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/LooperSalty/AnyXboxX",
+          "host": "github.com",
+          "outlet": "Project record",
+          "title": "AnyXboxX joins the race: its copy of VIctory on the Neptune base reaches the world at 13.8 fps, and a contributor report",
+          "at": "2026-11-26T00:00:00.000Z",
+          "kind": "primary",
+          "excerpt": "AnyXboxX joins the race: its copy of VIctory on the Neptune base reaches the world at 13.8 fps, and a contributor reports the first two missions played"
+        }
+      ]
+    }
+  ],
+  "baseline": {
+    "at": "2026-11-26T04:38:24.588Z",
+    "windowStart": "2026-11-25T22:38:24.588Z",
+    "count": 65,
+    "entries": [
+      {
+        "effortId": "belobug",
+        "repo": "belobug/victory-belobug-amd",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "belobug",
+        "words": [
+          "belobug"
+        ],
+        "hash": "e449215b3665ec85"
+      },
+      {
+        "effortId": "dexnom",
+        "repo": "dexnom/victory",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "dexnom",
+        "words": [
+          "dexnom"
+        ],
+        "hash": "af1971a210d6e8be"
+      },
+      {
+        "effortId": "zettrox",
+        "repo": "zettrox/ztrx",
+        "at": "2026-11-25",
+        "name": "zettrox",
+        "words": [
+          "zettrox"
+        ],
+        "hash": "2f2064f19dbc0587"
+      },
+      {
+        "effortId": "vitoriabr",
+        "repo": "uiliannn/vitoriabr",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "uilian",
+        "words": [
+          "uilian",
+          "vitoriabr"
+        ],
+        "hash": "02318d503d14e49e"
+      },
+      {
+        "effortId": "avatarmanz",
+        "repo": "avatarmanz/victory-7900xtx",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "avatarmanz",
+        "words": [
+          "avatarmanz"
+        ],
+        "hash": "250c738e81f79f12"
+      },
+      {
+        "effortId": "notnozy",
+        "repo": null,
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "notnozy",
+        "words": [
+          "notnozy"
+        ],
+        "hash": "041b5a140be3f236"
+      },
+      {
+        "effortId": "doomsday",
+        "repo": null,
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "doomsday",
+        "words": [
+          "doomsday"
+        ],
+        "hash": "f526bbe5d93b9e48"
+      },
+      {
+        "effortId": "darkworldhm",
+        "repo": null,
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "darkworldhm",
+        "words": [
+          "darkworldhm"
+        ],
+        "hash": "047f473e6ee1bb57"
+      },
+      {
+        "effortId": "suri",
+        "repo": null,
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "suri",
+        "words": [
+          "suri"
+        ],
+        "hash": "442090205cb2679e"
+      },
+      {
+        "effortId": "omonkey",
+        "repo": null,
+        "at": "2026-11-25",
+        "name": "omonkey",
+        "words": [
+          "omonkey"
+        ],
+        "hash": "2a606fb05680c8de"
+      },
+      {
+        "effortId": "cgbj",
+        "repo": null,
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "cgbj",
+        "words": [
+          "cgbj"
+        ],
+        "hash": "717470197a1215c5"
+      },
+      {
+        "effortId": "victory-gta6",
+        "repo": "fxceless/victory-fork",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "hyphennn",
+        "words": [
+          "hyphennn",
+          "victory-gta6"
+        ],
+        "hash": "b72058b01a9980c6"
+      },
+      {
+        "effortId": "marvis",
+        "repo": "marvisak/victory",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "57c7616b285d8f0b"
+      },
+      {
+        "effortId": "xbox-emulator",
+        "repo": "omonkeyz/xbox-emulator",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "xbox-emulator",
+        "words": [
+          "xbox-emulator"
+        ],
+        "hash": "6f6f2e71a6f44543"
+      },
+      {
+        "effortId": "xcl",
+        "repo": "xcl-dev/xcl",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "xcl",
+        "words": [
+          "xcl"
+        ],
+        "hash": "6ec8dcbf5e6109c5"
+      },
+      {
+        "effortId": "scarlettx",
+        "repo": "freminet/scarlettx",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "scarlettx",
+        "words": [
+          "scarlettx"
+        ],
+        "hash": "3fc294e7175914c2"
+      },
+      {
+        "effortId": "tuxbox",
+        "repo": "brcly/tuxbox",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "tuxbox",
+        "words": [
+          "tuxbox"
+        ],
+        "hash": "cc7052ae67b50bf0"
+      },
+      {
+        "effortId": "americas-recomp",
+        "repo": "realdody/americas-recomp",
+        "at": "2026-11-23",
+        "name": "americas-recomp",
+        "words": [
+          "americas-recomp"
+        ],
+        "hash": "809e922a56454b49"
+      },
+      {
+        "effortId": "leonida",
+        "repo": "itsnotrexed/leonida",
+        "at": "2026-11-23",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "b7ad389dceff9c3c"
+      },
+      {
+        "effortId": "openscarlett",
+        "repo": "californiaalmonds/openscarlett",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "openscarlett",
+        "words": [
+          "openscarlett"
+        ],
+        "hash": "d77ad1966a4a8330"
+      },
+      {
+        "effortId": "scarlett-layer",
+        "repo": "jadeowaowa/scarlett-layer",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "scarlett-layer",
+        "words": [
+          "scarlett-layer"
+        ],
+        "hash": "604b99f54e84d1e1"
+      },
+      {
+        "effortId": "xbox2windows",
+        "repo": "r0y00/xbox2windows",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "xbox2windows",
+        "words": [
+          "xbox2windows"
+        ],
+        "hash": "d410d18a1ce9c4c7"
+      },
+      {
+        "effortId": "anyxboxx",
+        "repo": "loopersalty/anyxboxx",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "anyxboxx",
+        "words": [
+          "anyxboxx"
+        ],
+        "hash": "ed678269ec684eea"
+      },
+      {
+        "effortId": "keylime",
+        "repo": "ethan00013/keylime",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "keylime",
+        "words": [
+          "keylime"
+        ],
+        "hash": "563a506452edc845"
+      },
+      {
+        "effortId": "xvalkyrie",
+        "repo": "sammwyy/xvalkyrie",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "xvalkyrie",
+        "words": [
+          "xvalkyrie"
+        ],
+        "hash": "bc7f91f9eadb0fc8"
+      },
+      {
+        "effortId": "gtavi-recomp",
+        "repo": "jamescicada/gtavi-recomp",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "gtavi-recomp",
+        "words": [
+          "gtavi-recomp"
+        ],
+        "hash": "264b151c3614201a"
+      },
+      {
+        "effortId": "anyxboxseries",
+        "repo": "edupode/anyxboxseries",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "anyxboxseries",
+        "words": [
+          "anyxboxseries"
+        ],
+        "hash": "d311c33be858002d"
+      },
+      {
+        "effortId": "scarab",
+        "repo": "p-portela/scarab",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "scarab",
+        "words": [
+          "scarab"
+        ],
+        "hash": "be076968c9099888"
+      },
+      {
+        "effortId": "anybox",
+        "repo": "dark3581/anybox",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "anybox",
+        "words": [
+          "anybox"
+        ],
+        "hash": "bfac4c60b349b2ed"
+      },
+      {
+        "effortId": "percyscarlett",
+        "repo": "rpatty-dev/percyscarlett",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "percyscarlett",
+        "words": [
+          "percyscarlett"
+        ],
+        "hash": "e15595ea1cf41957"
+      },
+      {
+        "effortId": "grandtheftxbox",
+        "repo": "zohaiblazuli/grandtheftxbox",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "grandtheftxbox",
+        "words": [
+          "grandtheftxbox"
+        ],
+        "hash": "d4d33f8976625b80"
+      },
+      {
+        "effortId": "scarlett-windows-compat",
+        "repo": "prohorovilja/nativex-runtime",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "scarlett windows compat",
+        "words": [
+          "scarlett",
+          "windows",
+          "compat",
+          "scarlett-windows-compat"
+        ],
+        "hash": "edace353e2528455"
+      },
+      {
+        "effortId": "dedsec",
+        "repo": "hylanderry/dedsec",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "dedsec",
+        "words": [
+          "dedsec"
+        ],
+        "hash": "1318903e29c1114b"
+      },
+      {
+        "effortId": "xbgtasix",
+        "repo": "ljm-233/xbgtasix",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "xbgtasix",
+        "words": [
+          "xbgtasix"
+        ],
+        "hash": "368ba95a38793150"
+      },
+      {
+        "effortId": "seriesx-emulator",
+        "repo": "anrq0/seriesx-emulator",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "seriesx emulator",
+        "words": [
+          "seriesx",
+          "emulator",
+          "seriesx-emulator"
+        ],
+        "hash": "4c87e5bf767cefdb"
+      },
+      {
+        "effortId": "gta6-compat-layer",
+        "repo": "sstgxf/scarlettcompat",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "gta6-compat-layer scarlettcompat",
+        "words": [
+          "gta6-compat-layer",
+          "scarlettcompat"
+        ],
+        "hash": "56d77dc17a26c8cc"
+      },
+      {
+        "effortId": "xlaunchvi",
+        "repo": "jptuba9/xlaunch-vi",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "xlaunchvi",
+        "words": [
+          "xlaunchvi"
+        ],
+        "hash": "e433921c821861c4"
+      },
+      {
+        "effortId": "openscarlett-ce",
+        "repo": "opencommunityedition/openscarlett",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "openscarlett community edition",
+        "words": [
+          "openscarlett",
+          "community",
+          "edition",
+          "openscarlett-ce"
+        ],
+        "hash": "e9018033b27de1d9"
+      },
+      {
+        "effortId": "port-of-the-americas",
+        "repo": "steinkoloss/port-of-the-americas",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "port of the americas",
+        "words": [
+          "port",
+          "of",
+          "the",
+          "americas",
+          "port-of-the-americas"
+        ],
+        "hash": "91b1a52aa65c6b44"
+      },
+      {
+        "effortId": "five-star-recomp",
+        "repo": "thatrecompdev/five-star-recomp",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "five star recomp",
+        "words": [
+          "five",
+          "star",
+          "recomp",
+          "five-star-recomp"
+        ],
+        "hash": "eab0f6457c7a914c"
+      },
+      {
+        "effortId": "g6recomp",
+        "repo": "kajcsi/g6recomp",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "g6recomp",
+        "words": [
+          "g6recomp"
+        ],
+        "hash": "f6d9758d6828e909"
+      },
+      {
+        "effortId": "gta6-boottest",
+        "repo": "onlymoisties/gta6-boottest",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "gta6-boottest",
+        "words": [
+          "gta6-boottest"
+        ],
+        "hash": "8457176068c8add1"
+      },
+      {
+        "effortId": "palmetto",
+        "repo": "luizwidmer/palmetto",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "palmetto",
+        "words": [
+          "palmetto"
+        ],
+        "hash": "35576b0f6e788bf2"
+      },
+      {
+        "effortId": "hugo",
+        "repo": null,
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "mashedhugo",
+        "words": [
+          "mashedhugo",
+          "hugo"
+        ],
+        "hash": "618f906af683cace"
+      },
+      {
+        "effortId": "victory-amd",
+        "repo": "joshuudev/victory-amd",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "victory-amd",
+        "words": [
+          "victory-amd"
+        ],
+        "hash": "6fa5734e36766b92"
+      },
+      {
+        "effortId": "victory-ka1qux",
+        "repo": "ka1qux/victory-ka1qux",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "victory-ka1qux",
+        "words": [
+          "victory-ka1qux"
+        ],
+        "hash": "7c2041665334ceb4"
+      },
+      {
+        "effortId": "dumbfloridamoron",
+        "repo": "crt4ever/dumbfloridamoron",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "dumbfloridamoron",
+        "words": [
+          "dumbfloridamoron"
+        ],
+        "hash": "4c26512c96348bf0"
+      },
+      {
+        "effortId": "zortos",
+        "repo": null,
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "zortos",
+        "words": [
+          "zortos"
+        ],
+        "hash": "5c20c4753c512149"
+      },
+      {
+        "effortId": "rico",
+        "repo": null,
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "rico",
+        "words": [
+          "rico"
+        ],
+        "hash": "757651a900183b84"
+      },
+      {
+        "effortId": "gta-vi-astral",
+        "repo": "archivist-atlas/gta-vi-astral",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "astral",
+        "words": [
+          "astral",
+          "gta-vi-astral"
+        ],
+        "hash": "ec85ae4be6521bb6"
+      },
+      {
+        "effortId": "victory-unified",
+        "repo": "itsbatt/victory-unified",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "victory-unified",
+        "words": [
+          "victory-unified"
+        ],
+        "hash": "351a2ccbae2611d6"
+      },
+      {
+        "effortId": "gtavi-xbox2pc",
+        "repo": "kfedora/gtavi-xbox2pc",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "gtavi-xbox2pc",
+        "words": [
+          "gtavi-xbox2pc"
+        ],
+        "hash": "8451dc37b64f5541"
+      },
+      {
+        "effortId": "americas",
+        "repo": "wertrex/americas",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "americas",
+        "words": [
+          "americas"
+        ],
+        "hash": "3461304216108290"
+      },
+      {
+        "effortId": "kelvaroq",
+        "repo": "fablinoo/kelvaroq",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "kelvaroq",
+        "words": [
+          "kelvaroq"
+        ],
+        "hash": "7a49e10880cb90f5"
+      },
+      {
+        "effortId": "launcher",
+        "repo": "sixlauncher/launcher",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "vilauncher",
+        "words": [
+          "vilauncher",
+          "launcher"
+        ],
+        "hash": "2c83d82d687b2451"
+      },
+      {
+        "effortId": "hybridgt",
+        "repo": "lowbacon/hybridgt",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "hybridgt",
+        "words": [
+          "hybridgt"
+        ],
+        "hash": "48c10c409667a194"
+      },
+      {
+        "effortId": "proton-scarlett",
+        "repo": "gabenddos/proton-scarlett",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "scarlett-proton",
+        "words": [
+          "scarlett-proton",
+          "proton-scarlett"
+        ],
+        "hash": "8b9918482aa65491"
+      },
+      {
+        "effortId": "lnx-victory",
+        "repo": "linox-idk/lnx-victory",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "lnx-victory",
+        "words": [
+          "lnx-victory"
+        ],
+        "hash": "07a226e806200442"
+      },
+      {
+        "effortId": "decant",
+        "repo": "decantlabs/decant",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "decant",
+        "words": [
+          "decant"
+        ],
+        "hash": "b96878f2ea0974f0"
+      },
+      {
+        "effortId": "bcpack-gpu-hlsl",
+        "repo": "pomxark/bcpack-gpu-hlsl",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "bcpack-gpu-hlsl",
+        "words": [
+          "bcpack-gpu-hlsl"
+        ],
+        "hash": "3b9d59c03f6f5480"
+      },
+      {
+        "effortId": "half-step-game-project",
+        "repo": "sefaalcn/half-step-game-project",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "half step game project",
+        "words": [
+          "half",
+          "step",
+          "game",
+          "project",
+          "half-step-game-project"
+        ],
+        "hash": "56029a08f0641005"
+      },
+      {
+        "effortId": "traffic",
+        "repo": null,
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "traffic",
+        "words": [
+          "traffic"
+        ],
+        "hash": "236f4e19024784d3"
+      },
+      {
+        "effortId": "carver",
+        "repo": "carverxi/victory-fork",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "carver",
+        "words": [
+          "carver"
+        ],
+        "hash": "0f8f2c799de7f43e"
+      },
+      {
+        "effortId": "soldsawn-8gb",
+        "repo": "soldsawn/victory-nvidia-8gb",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "soldsawn 8gb",
+        "words": [
+          "soldsawn",
+          "8gb",
+          "soldsawn-8gb"
+        ],
+        "hash": "3cf165ad163ee8df"
+      },
+      {
+        "effortId": "leonida-continued",
+        "repo": "ubiquitarianism/leonida",
+        "at": "2026-11-25T22:09:30.708Z",
+        "name": "leonida continued",
+        "words": [
+          "leonida",
+          "continued",
+          "leonida-continued"
+        ],
+        "hash": "386e2cfc6679c001"
+      }
+    ]
+  }
+}

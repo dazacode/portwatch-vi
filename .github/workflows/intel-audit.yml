@@ -1,0 +1,55 @@
+name: Intelligence audit
+
+# Re-reads what was published and repairs the record: dead links, edited sources, contradictions.
+# Every 6 hours, in the same data-write group. See docs/INTELLIGENCE.md.
+on:
+  schedule:
+    - cron: "20 1,7,13,19 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-write
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          package-manager-cache: false
+      - name: Identity
+        run: |
+          git config user.name "viportlive-desk[bot]"
+          git config user.email "41898282+4lwayz@users.noreply.github.com"
+
+      - name: Audit published entries
+        id: audit
+        continue-on-error: true
+        run: node scripts/intel-audit.mjs
+
+      - name: Notify corrections
+        continue-on-error: true
+        run: node scripts/intel-notify.mjs
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+      - name: Commit
+        run: |
+          git add data/intel.json
+          if git diff --cached --quiet; then echo "Nothing changed."; exit 0; fi
+          git commit -m "intel: audit $(date -u '+%F %H:%M') UTC"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Report findings
+        if: steps.audit.outcome != 'success'
+        run: echo "::warning::The audit found something; see the revisions in data/intel.json."

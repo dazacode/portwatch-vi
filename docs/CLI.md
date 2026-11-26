@@ -198,6 +198,27 @@ removal is recorded in `removedNews`, so it survives the next sync. Default `ima
 `--image <url> --credit <outlet> --link <page>` for a source's `og:image`. A leaked-game or Discord
 screenshot still belongs in no article image.
 
+## Intelligence
+
+The discovery ledger. The contract is [INTEL-DESK.md](INTEL-DESK.md); the rules are
+[INTELLIGENCE.md](INTELLIGENCE.md).
+
+```sh
+./pw intel queue --json
+./pw intel show <id> --json
+./pw intel source <id> --url https://… --outlet "…" --title "…" --excerpt "…"
+./pw intel publish <id> --note "why" --by claude
+./pw intel hold <id> --reason "…"
+./pw intel retract <id> --reason "…"
+./pw intel verify
+./pw intel rebuild
+./pw intel audit               # list past audit findings; run `node scripts/intel-audit.mjs` for a pass
+```
+
+Every write takes `--dry-run` and returns `meta.saved`. `publish` refuses a report whose numbers are not
+in a source. `retract` keeps the item and its report. Never edit `data/intel.json` by hand: `verify` fails
+the hash chain, and the next run refuses to write.
+
 ## Candidates
 
 ```sh

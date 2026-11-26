@@ -4,9 +4,10 @@
 import { CliError, usage } from './cli/lib/errors.mjs';
 import { bool, parseArgv } from './cli/lib/args.mjs';
 import { makeOutput } from './cli/lib/out.mjs';
-import { pathsFor, resolveRoot, saveOverrides } from './cli/lib/data.mjs';
+import { pathsFor, resolveRoot, saveIntel, saveOverrides } from './cli/lib/data.mjs';
 import * as read from './cli/commands/read.mjs';
 import * as write from './cli/commands/write.mjs';
+import * as intel from './cli/commands/intel.mjs';
 
 const VERSION = '0.1.0';
 const EXIT = { ok: 0, usage: 2, conflict: 3, locked: 4, internal: 5 };
@@ -33,6 +34,7 @@ const COMMANDS = {
   article: write.news,
   candidate: write.candidate,
   candidates: write.candidate,
+  intel: intel.intel,
 };
 
 const HELP = `pw — edit the VIPortLive data safely
@@ -60,6 +62,7 @@ Write (all support --dry-run)
   pick set|clear      place a project first by hand
   news add|list|...   articles
   candidate ...       review the inbox, ignore or promote
+  intel ...           the intelligence desk: queue, source, publish, retract
 
 Flags
   --json              one JSON envelope on stdout
@@ -147,8 +150,18 @@ async function main(argv) {
       out.note(`backup in ${paths.backups}`);
     }
   }
+  if (result.intel) {
+    if (bool(flags, 'dry-run')) out.line('dry run: intel ledger not written');
+    else {
+      await saveIntel(paths, result.intel);
+      saved = true;
+      out.line(`saved the intel ledger to ${paths.intel}`);
+    }
+  }
 
-  const data = Object.fromEntries(Object.entries(result).filter(([key]) => key !== 'overrides'));
+  const data = Object.fromEntries(
+    Object.entries(result).filter(([key]) => key !== 'overrides' && key !== 'intel')
+  );
   if (json) {
     out.raw(
       `${JSON.stringify(

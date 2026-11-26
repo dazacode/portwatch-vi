@@ -33,6 +33,7 @@ export function sitemapEntries(sources: Sources, now = Date.now()): MetadataRout
     page("/activity", activity.updated),
     page("/verify"),
     page("/method"),
+    page("/top-20"),
     ...tracker.efforts.map((e) => {
       const own = activity.projects[e.id]
       return page(

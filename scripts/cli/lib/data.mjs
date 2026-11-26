@@ -22,6 +22,7 @@ export function pathsFor(root, flags = {}) {
     tracker: path.join(dataDir, 'tracker.json'),
     overrides: path.join(dataDir, 'overrides.json'),
     evidence: path.join(dataDir, 'evidence.json'),
+    intel: path.join(dataDir, 'intel.json'),
     packageJson: path.join(root, 'package.json'),
     house,
     lock: path.join(house, 'lock'),
@@ -160,6 +161,21 @@ export async function saveOverrides(paths, overrides) {
     await rename(tmp, paths.overrides);
   } finally {
     await unlink(paths.lock).catch(() => {});
+  }
+}
+
+/** Write the ledger whole, after a backup, atomically. */
+export async function saveIntel(paths, intel) {
+  await lock(paths)
+  try {
+    await backup(paths, paths.intel)
+    const tmp = `${paths.intel}.tmp-${process.pid}`
+    const text = `${JSON.stringify(intel, null, 2)}\n`
+    JSON.parse(text)
+    await writeFile(tmp, text, 'utf8')
+    await rename(tmp, paths.intel)
+  } finally {
+    await unlink(paths.lock).catch(() => {})
   }
 }
 

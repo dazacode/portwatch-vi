@@ -11,6 +11,8 @@ const MINUTE = 60_000
 export const JOBS = [
   { workflow: "pulse.yml", every: 5, at: 0 },
   { workflow: "harvest.yml", every: 30, at: 0 },
+  { workflow: "intel.yml", every: 15, at: 3 },
+  { workflow: "intel-audit.yml", every: 360, at: 1 },
   { workflow: "upstream-sync.yml", every: 15, at: 10 },
   { workflow: "scout.yml", every: 180, at: 20 },
   { workflow: "editor.yml", every: 60, at: 35 },

@@ -79,6 +79,12 @@ export const PAGES = {
       "Public commits and pull requests from the projects trying to run GTA VI on PC, read from GitHub every half hour, and new repositories as they are found.",
     path: "/activity",
   },
+  intelligence: {
+    title: "Intelligence: GTA VI PC build discoveries",
+    description:
+      "Automated reports on new GTA VI PC build references, test reports and takedowns, with sources, timestamps and confidence. Unofficial.",
+    path: "/intelligence",
+  },
   verify: {
     title: "Prove a GTA VI PC run live",
     description:
@@ -90,6 +96,12 @@ export const PAGES = {
     description:
       "What each score means, how claims are checked by independent testers and live challenges, how streams are found, and the fakes to avoid.",
     path: "/method",
+  },
+  top20: {
+    title: "GTA VI on PC: the top 20 builds",
+    description:
+      "How far GTA VI runs on PC, all fan builds combined, and the top 20 by our score. Updated with the board.",
+    path: "/top-20",
   },
 }
 

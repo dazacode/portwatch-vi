@@ -1,0 +1,76 @@
+name: Intelligence
+
+# The 15-minute intelligence run: detects changes forward from each source cursor, gates them,
+# writes reports and lets the desk model decide on weak items. Shares data-write with every other
+# data job. It writes only data/intel.json. See docs/INTELLIGENCE.md.
+on:
+  schedule:
+    - cron: "3,18,33,48 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print the run and write nothing"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-write
+  cancel-in-progress: false
+
+jobs:
+  intel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          package-manager-cache: false
+      - name: Install
+        run: pnpm install --prod --frozen-lockfile --ignore-scripts
+
+      - name: Identity
+        run: |
+          git config user.name "viportlive-desk[bot]"
+          git config user.email "41898282+4lwayz@users.noreply.github.com"
+
+      - name: Baseline, once
+        run: |
+          if grep -q '"baselineAt": null' data/intel.json; then
+            node scripts/intel-baseline.mjs
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Detect and report
+        run: node scripts/intel.mjs ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          FREE_AI: ${{ vars.FREE_AI }}
+          FREE_AI_BASE_URL: ${{ vars.FREE_AI_BASE_URL }}
+          FREE_AI_MODEL: ${{ vars.FREE_AI_MODEL }}
+
+      - name: Notify Discord
+        if: ${{ !inputs.dry_run }}
+        continue-on-error: true
+        run: node scripts/intel-notify.mjs
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+      - name: Commit
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git add data/intel.json data/intel-baseline.json
+          if git diff --cached --quiet; then echo "Nothing changed."; exit 0; fi
+          git commit -m "intel: $(date -u '+%F %H:%M') UTC"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((attempt * 5))
+          done
+          echo "::error::push kept being refused"; exit 1

@@ -464,7 +464,9 @@ describe("pw news", () => {
     const result = await call([...long, "--json"])
     expect(result.code).toBe(0)
     const id = (await readOverrides()).news[0].id
-    expect(id).toBe("2026-11-25-take-two-s-dmca-erases-leonida-and-3-007-github")
+    expect(id).toBe(
+      `${new Date().toISOString().slice(0, 10)}-take-two-s-dmca-erases-leonida-and-3-007-github`
+    )
     expect(id.endsWith("-")).toBe(false)
   })
 

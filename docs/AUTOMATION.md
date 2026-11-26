@@ -13,6 +13,7 @@ What upstream did by hand, and what runs it here. Limits were checked on 24 Nove
 | Score and ranking                               | The claim                             | Our own, from claims and evidence                                     | When a page is built   |
 | Publishing data                                 | Full deploy each run                  | Read from the repo at runtime, no deploy                              | Webhook, seconds       |
 | Articles                                        | Claude and the owner                  | Automated editor, at most two a day; `NEWS_DESK=1` is the older route | GitHub Actions, 1 h    |
+| Intelligence feed                               | Not tracked                           | Deterministic ledger from the harvest, gated, audited, with reports   | GitHub Actions, 15 min |
 | Findings, re-scores, candidates, private builds | Claude editor on a PC, plus the owner | Automated editor through `./pw` with the playbook's guardrails        | GitHub Actions, 1 h    |
 | Pinned message, dashboard, board                | Owner                                 | Removed                                                               |                        |
 
@@ -67,6 +68,20 @@ deploy. No keys beyond `GITHUB_TOKEN` are required; Reddit's own keys are option
 Limits: 30 search calls a minute, 1,000 REST calls an hour for the Actions token. A run uses about
 90, well inside both. Outlet and RSS feeds are read directly and only when they answer; a blocked
 source is logged in the run summary and its stories simply expire.
+
+## The intelligence desk
+
+`intel.yml` runs every 15 minutes. It reads forward from a stored cursor per source and turns meaningful
+changes into a ledger: a new public repository, a test report, a code change, a takedown. It does not
+scrape anything itself; the harvest and scout already did. Identifiers, timestamps, fingerprints,
+deduplication and the confidence gate are code. A free model writes one report for what clears the gate,
+and decides on up to two weak held items. Without a model the report is a generated skeleton.
+
+The registry is `data/intel.json`, written only by `./pw intel`. Everything below the gate waits in
+`/intelligence/queue`; published reports go to `/intelligence`, RSS, JSON Feed, `/api/v1/intel` and
+Discord. `intel-audit.yml` re-reads what was published every six hours and can revise, demote or retract.
+The full rules and the agent contract are in [INTELLIGENCE.md](INTELLIGENCE.md) and
+[INTEL-DESK.md](INTEL-DESK.md).
 
 ## The summary, written by a free AI model
 
