@@ -1,6 +1,22 @@
 {
-  "lastRun": "2026-11-26T18:41:30.128Z",
+  "lastRun": "2026-11-26T19:41:33.243Z",
   "runs": [
+    {
+      "at": "2026-11-26T19:41:33.243Z",
+      "by": "Pollinations, gpt-oss-20b",
+      "applied": [
+        "candidate BasGame1/gta2pc",
+        "candidate 3cvil/M1LK",
+        "candidate TERT01/XSEmu_mybackup",
+        "candidate xmvo/Lumen",
+        "candidate HyperExtendedReality/strata"
+      ],
+      "skipped": [
+        "held: score anyxboxx gta.fps=15: proposed, from “15 to 20 fps, peaks at 28 fps in cutscenes”",
+        "held: candidate kalinizer/victory-polaris: has markup"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-26T18:41:30.128Z",
       "by": "Pollinations, gpt-oss-20b",

@@ -3272,6 +3272,39 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "gta2pc",
+        "summary": "Native Windows & Linux compatibility runtime and asset toolchain for GTA VI (Xbox Series).",
+        "basedOn": [],
+        "id": "gta2pc",
+        "repo": "BasGame1/gta2pc",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-26T18:51:07Z",
+          "pushedAt": "2026-11-26T19:14:01Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -3280,6 +3313,26 @@
     "reason": "Owner's call: its code went public on 26 Nov, at 25 fps reported on NVIDIA."
   },
   "ignored": [
+    {
+      "repo": "HyperExtendedReality/strata",
+      "reason": "No GTA VI mention",
+      "seenAt": "2026-11-26"
+    },
+    {
+      "repo": "xmvo/Lumen",
+      "reason": "No GTA VI mention",
+      "seenAt": "2026-11-26"
+    },
+    {
+      "repo": "TERT01/XSEmu_mybackup",
+      "reason": "No GTA VI mention",
+      "seenAt": "2026-11-26"
+    },
+    {
+      "repo": "3cvil/M1LK",
+      "reason": "No mention of GTA VI in README",
+      "seenAt": "2026-11-26"
+    },
     {
       "repo": "lepotane/VIctory-leonida",
       "reason": "README does not mention GTA VI",
@@ -3493,7 +3546,12 @@
     "1R0nim/iR0-fork",
     "zortos293/XSEmu",
     "DesignWithTommy/i95-GTA6-PC-Launcher",
-    "lepotane/VIctory-leonida"
+    "lepotane/VIctory-leonida",
+    "BasGame1/gta2pc",
+    "3cvil/M1LK",
+    "TERT01/XSEmu_mybackup",
+    "xmvo/Lumen",
+    "HyperExtendedReality/strata"
   ],
   "news": [
     {
