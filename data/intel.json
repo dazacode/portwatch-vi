@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T10:20:25.550Z",
+  "updated": "2026-11-26T10:35:21.968Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T10:02:04.000Z",
-      "lastOkAt": "2026-11-26T10:20:25.550Z",
-      "seen": 5250,
-      "events": 175,
+      "lastCursor": "2026-11-26T10:31:07.000Z",
+      "lastOkAt": "2026-11-26T10:35:21.968Z",
+      "seen": 5500,
+      "events": 193,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T08:19:21.000Z",
-      "lastOkAt": "2026-11-26T10:20:25.550Z",
+      "lastOkAt": "2026-11-26T10:35:21.968Z",
       "seen": 19,
       "events": 11,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T10:20:25.550Z",
-      "seen": 1207,
+      "lastOkAt": "2026-11-26T10:35:21.968Z",
+      "seen": 1267,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T09:58:12.446Z",
-      "lastOkAt": "2026-11-26T10:20:25.550Z",
-      "seen": 8400,
+      "lastCursor": "2026-11-26T10:28:50.942Z",
+      "lastOkAt": "2026-11-26T10:35:21.968Z",
+      "seen": 8800,
       "events": 6,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T10:20:25.550Z",
-      "seen": 2447,
+      "lastOkAt": "2026-11-26T10:35:21.968Z",
+      "seen": 2567,
       "events": 7,
       "errors": 0
     }
@@ -4688,6 +4688,64 @@
       "heldReasons": [
         "a rate cap"
       ]
+    },
+    {
+      "id": "20261126t101119z-gta6-compat-layer-95dce0f6",
+      "key": "update|gta6-compat-layer|activity|41566",
+      "kind": "update",
+      "projectId": "gta6-compat-layer",
+      "projectName": "GTA6-COMPAT-LAYER (ScarlettCompat)",
+      "at": "2026-11-26T10:11:19Z",
+      "detectedAt": "2026-11-26T10:35:21.968Z",
+      "title": "GTA6-COMPAT-LAYER (ScarlettCompat) pushed 1 commit",
+      "oneLine": "mesh-translator: menu interpolant lift + barycentrics and general mesh-to-compute (2026-11-26)",
+      "sources": [
+        {
+          "url": "https://github.com/SSTGxf/ScarlettCompat/commit/9ffe431880a04a4908dd6d87785994dfd7afbc6d",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "mesh-translator: menu interpolant lift + barycentrics and general mesh-to-compute (2026-11-26)",
+          "at": "2026-11-26T10:11:19Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sstgxf/scarlettcompat",
+        "name": "gta6-compat-layer scarlettcompat",
+        "words": [
+          "gta6-compat-layer",
+          "scarlettcompat"
+        ],
+        "hash": "4a6a550fac000246",
+        "projectId": "gta6-compat-layer"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:b5410eac26c4b9d9faed73a1ff4e8af6f442437429575382a90dd8184c9f28fb",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T10:35:21.968Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository, which is primary but not independent and provides no excerpt beyond the commit title."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T10:35:21.968Z"
     }
   ],
   "reports": [
