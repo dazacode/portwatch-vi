@@ -22,6 +22,8 @@ const cache = (days: number) => [
 const onAnswer = [{ type: "host" as const, value: "isgta6onpc.com" }]
 
 const nextConfig: NextConfig = {
+  // Scribbletune imports fs for writing MIDI files, which the soundtrack never does.
+  turbopack: { resolveAlias: { fs: { browser: "./lib/music/no-fs.ts" } } },
   redirects: async () => [
     {
       source:

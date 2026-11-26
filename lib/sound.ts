@@ -1,185 +1,136 @@
 import * as Tone from "tone"
+import { PLAYLIST } from "@/lib/music/playlist"
+import type { Beat, Rig } from "@/lib/music/track"
+import { TRACKS } from "@/lib/music/tracks"
 
-// An original score, played by synthesizers in the browser. There are no audio files and nothing to
-// license: 80s Miami synths, congas, clave and steel drum over a newsroom pulse and the ocean.
-
-const BPM = 108
-const CHORDS = [
-  ["D3", "F3", "A3", "C4", "E4"],
-  ["A#2", "D3", "F3", "A3", "C4"],
-  ["G2", "A#2", "D3", "F3", "A3"],
-  ["A2", "D3", "E3", "G3", "C#4"],
-]
-const ROOTS = ["D2", "A#1", "G1", "A1"]
-const KICK = [0, 4, 8, 12]
-const SNARE = [4, 12]
-const HAT = [2, 6, 10, 14]
-const CONGA_HIGH = [4, 12]
-const CONGA_LOW = [6, 7, 14, 15]
-// Son clave, 3-2, over two bars.
-const CLAVE = [
-  [0, 6, 12],
-  [4, 8],
-]
-// Steel drum: [bar, step, note, length in steps], over four bars.
-const MELODY: [number, number, string, number][] = [
-  [0, 0, "A4", 3],
-  [0, 3, "C5", 3],
-  [0, 6, "D5", 4],
-  [0, 12, "F5", 4],
-  [1, 0, "D5", 6],
-  [1, 8, "C5", 2],
-  [1, 10, "A4", 4],
-  [2, 0, "A#4", 3],
-  [2, 3, "D5", 3],
-  [2, 6, "F5", 4],
-  [2, 12, "G5", 4],
-  [3, 0, "E5", 6],
-  [3, 8, "C#5", 3],
-  [3, 11, "A4", 5],
-]
+// The soundtrack's player. The tracks (lib/music/tracks) compose and play their own bars; this
+// owns the mix, the order, the change from one track to the next, and the news cues.
 
 export type Cue = { kind: "slide" } | { kind: "milestone"; stars: number }
 
-/** Builds the band and schedules the loop on the current Tone context. */
-export function createScore() {
+/** The track playing now and what it holds, so it can be faded and let go. */
+type Playing = {
+  index: number
+  out: Tone.Volume
+  nodes: Tone.ToneAudioNode[]
+  play: (beat: Beat) => void
+  bars: number
+  swing: number
+  bpm: number
+  n: number
+}
+
+/** Builds the mix and the cue instruments; the tracks come and go inside it. */
+export function createScore(onTrack: (index: number) => void) {
   const master = new Tone.Volume(-6).connect(new Tone.Limiter(-2).toDestination())
   const room = new Tone.Reverb({ decay: 2.4, wet: 1 }).connect(new Tone.Volume(-12).connect(master))
   const echo = new Tone.PingPongDelay({ delayTime: "8n.", feedback: 0.32, wet: 1 }).connect(
     new Tone.Volume(-15).connect(master)
   )
-  const channel = (db: number, sends: Tone.ToneAudioNode[] = []) => {
-    const out = new Tone.Volume(db).connect(master)
-    for (const s of sends) out.connect(s)
-    return out
-  }
+  const transport = Tone.getTransport()
 
-  const pad = new Tone.PolySynth(Tone.Synth, {
-    oscillator: { type: "fatsawtooth", count: 3, spread: 24 },
-    envelope: { attack: 0.5, decay: 0.4, sustain: 0.7, release: 1.2 },
-  }).connect(new Tone.Filter(1100, "lowpass").connect(channel(-25, [room])))
-  const bass = new Tone.MonoSynth({
-    oscillator: { type: "sawtooth" },
-    envelope: { attack: 0.005, decay: 0.16, sustain: 0.25, release: 0.08 },
-    filterEnvelope: { attack: 0.005, decay: 0.14, sustain: 0.2, baseFrequency: 140, octaves: 2.6 },
-  }).connect(channel(-13))
-  const arp = new Tone.Synth({
-    oscillator: { type: "square" },
-    envelope: { attack: 0.004, decay: 0.1, sustain: 0, release: 0.08 },
-  }).connect(new Tone.Filter(2400, "lowpass").connect(channel(-26, [echo])))
-  const steel = new Tone.PolySynth(Tone.FMSynth, {
-    harmonicity: 3.01,
-    modulationIndex: 5,
-    envelope: { attack: 0.004, decay: 0.5, sustain: 0.05, release: 0.5 },
-    modulationEnvelope: { attack: 0.002, decay: 0.18, sustain: 0, release: 0.2 },
-  }).connect(channel(-17, [room, echo]))
-  const kick = new Tone.MembraneSynth({ octaves: 5, pitchDecay: 0.04 }).connect(channel(-9))
-  const snare = new Tone.NoiseSynth({
-    envelope: { attack: 0.001, decay: 0.17, sustain: 0 },
-  }).connect(new Tone.Filter(1400, "highpass").connect(channel(-18, [room])))
-  const hat = new Tone.NoiseSynth({
-    envelope: { attack: 0.001, decay: 0.045, sustain: 0 },
-  }).connect(new Tone.Filter(8000, "highpass").connect(channel(-23)))
-  const conga = (db: number) =>
-    new Tone.MembraneSynth({
-      octaves: 1.4,
-      pitchDecay: 0.012,
-      envelope: { attack: 0.001, decay: 0.2, sustain: 0, release: 0.1 },
-    }).connect(channel(db, [room]))
-  const congaHigh = conga(-18)
-  const congaLow = conga(-16)
-  const clave = new Tone.Synth({
-    oscillator: { type: "sine" },
-    envelope: { attack: 0.001, decay: 0.05, sustain: 0, release: 0.02 },
-  }).connect(channel(-24, [room]))
-  const teletype = new Tone.Synth({
-    oscillator: { type: "triangle" },
-    envelope: { attack: 0.001, decay: 0.025, sustain: 0, release: 0.01 },
-  }).connect(channel(-31, [echo]))
-  const timpani = new Tone.MembraneSynth({
-    octaves: 2,
-    pitchDecay: 0.03,
-    envelope: { attack: 0.002, decay: 1.1, sustain: 0, release: 0.6 },
-  }).connect(channel(-13, [room]))
+  // The news cues, the same over every track.
   const brass = new Tone.PolySynth(Tone.Synth, {
     oscillator: { type: "fatsawtooth", count: 3, spread: 18 },
     envelope: { attack: 0.03, decay: 0.2, sustain: 0.6, release: 0.4 },
-  }).connect(new Tone.Filter(2600, "lowpass").connect(channel(-19, [room])))
-  const sweep = new Tone.Filter(400, "bandpass").connect(channel(-19, [room]))
+  }).connect(new Tone.Filter(2600, "lowpass").connect(new Tone.Volume(-19).connect(master)))
+  brass.connect(room)
+  const sweep = new Tone.Filter(400, "bandpass").connect(new Tone.Volume(-19).connect(master))
+  sweep.connect(room)
   const whoosh = new Tone.NoiseSynth({
     noise: { type: "pink" },
     envelope: { attack: 0.18, decay: 0.35, sustain: 0 },
   }).connect(sweep)
-  const tide = new Tone.AutoFilter({ frequency: 0.09, baseFrequency: 180, octaves: 3 }).connect(
-    channel(-27)
-  )
-  const ocean = new Tone.Noise("brown").connect(tide)
-
-  const bar = new Tone.Loop((time) => {
-    const step = Tone.Time("16n").toSeconds()
-    const at = (n: number) => time + n * step
-    const n = count++
-    const chord = CHORDS[n % 4]
-    const root = ROOTS[n % 4]
-    // Eight bars each: headlines, groove, groove with steel drum, breakdown with steel drum.
-    const section = Math.floor(n / 8) % 4
-    const drums = section === 1 || section === 2
-
-    pad.triggerAttackRelease(chord, "1m", time, 0.6)
-    for (let i = 0; i < 8; i++) {
-      const note = i % 2 ? Tone.Frequency(root).transpose(12).toNote() : root
-      bass.triggerAttackRelease(note, "16n", at(i * 2), i % 4 === 0 ? 0.9 : 0.65)
-    }
-    if (section !== 3) {
-      for (let i = 0; i < 16; i++) {
-        const note = Tone.Frequency(chord[(i * 2) % chord.length]).transpose(i % 8 > 4 ? 24 : 12)
-        arp.triggerAttackRelease(note.toNote(), "32n", at(i), i % 4 === 0 ? 0.7 : 0.4)
-      }
-    }
-    for (const s of CLAVE[n % 2]) clave.triggerAttackRelease("D#6", "32n", at(s), 0.7)
-    for (const s of CONGA_HIGH) congaHigh.triggerAttackRelease("A3", "16n", at(s), 0.6)
-    for (const s of CONGA_LOW) congaLow.triggerAttackRelease("D3", "16n", at(s), s % 2 ? 0.8 : 0.6)
-    if (section === 0) {
-      for (let i = 0; i < 16; i++)
-        if ((i * 7 + n) % 5 !== 0) teletype.triggerAttackRelease("A6", "64n", at(i), 0.5)
-    }
-    if (drums) {
-      for (const s of KICK) kick.triggerAttackRelease("C1", "8n", at(s), 0.9)
-      for (const s of SNARE) snare.triggerAttackRelease("16n", at(s), 0.8)
-      for (const s of HAT) hat.triggerAttackRelease("32n", at(s), 0.6)
-    }
-    if (section >= 2) {
-      for (const [b, s, note, length] of MELODY)
-        if (b === n % 4) steel.triggerAttackRelease(note, length * step, at(s), 0.7)
-    }
-    if (n % 8 === 0) {
-      timpani.triggerAttackRelease("D2", "2n", at(0), 0.9)
-      timpani.triggerAttackRelease("A1", "2n", at(3), 0.7)
-      timpani.triggerAttackRelease("D2", "1m", at(6), 1)
-    }
-  }, "1m")
-  let count = 0
   let lastWhoosh = 0
+
+  let current: Playing | null = null
+
+  /** Starts a track's band; the one before fades under it and is let go. */
+  function load(index: number, time: number) {
+    const old = current
+    if (old) {
+      old.out.volume.cancelScheduledValues(time)
+      old.out.volume.rampTo(-80, 1.5, time)
+      window.setTimeout(() => {
+        for (const node of old.nodes) node.dispose()
+      }, 3000)
+    }
+    const id = PLAYLIST[index].id
+    const track = TRACKS[id]
+    const out = new Tone.Volume(0).connect(master)
+    const nodes: Tone.ToneAudioNode[] = [out]
+    const keep = <T extends Tone.ToneAudioNode>(node: T) => {
+      nodes.push(node)
+      return node
+    }
+    const rig: Rig = {
+      keep,
+      channel(db, sends = []) {
+        const fader = keep(new Tone.Volume(db)).connect(out)
+        for (const s of sends) fader.connect(s === "room" ? room : echo)
+        return fader
+      },
+    }
+    current = {
+      index,
+      out,
+      nodes,
+      play: track.build(rig),
+      bars: track.bars,
+      swing: track.swing ?? 0,
+      bpm: track.bpm,
+      n: 0,
+    }
+    transport.bpm.setValueAtTime(track.bpm, time)
+    onTrack(index)
+  }
+
+  // One loop plays every track, a bar at a time.
+  const bar = new Tone.Loop((time) => {
+    if (!current) return
+    if (current.n >= current.bars) load((current.index + 1) % PLAYLIST.length, time)
+    const { swing, bpm } = current
+    // From the track's own tempo: the transport's can still be the last track's at this instant.
+    const step = 60 / bpm / 4
+    const n = current.n++
+    current.play({
+      time,
+      n,
+      step,
+      at: (s) => time + s * step + (swing && Math.floor(s) % 4 === 2 ? swing * step : 0),
+    })
+  }, "1m")
 
   return {
     /** Once. Everything is then kept silent or audible by play and pause. */
-    prepare() {
-      Tone.getTransport().bpm.value = BPM
-      tide.start()
-      ocean.start()
+    prepare(index = 0) {
+      load(index, Tone.now())
       bar.start(0)
     },
     play(volume: number) {
-      Tone.getTransport().start()
+      transport.start()
       this.volume(volume)
     },
     pause() {
-      Tone.getTransport().pause()
+      transport.pause()
       master.volume.rampTo(-60, 0.3)
     },
     /** 0 to 1. */
     volume(v: number) {
       master.volume.rampTo(v <= 0 ? -60 : Tone.gainToDb(v) + 6, 0.2)
+    },
+    /** Jumps to a track now, from its first bar. */
+    select(index: number) {
+      const playing = transport.state === "started"
+      transport.stop()
+      load(((index % PLAYLIST.length) + PLAYLIST.length) % PLAYLIST.length, Tone.now())
+      if (playing) transport.start("+0.05")
+    },
+    next() {
+      this.select((current?.index ?? -1) + 1)
+    },
+    previous() {
+      this.select((current?.index ?? 1) - 1)
     },
     cue(cue: Cue) {
       const now = Tone.now() + 0.03
@@ -205,7 +156,7 @@ export function createScore() {
 export type Score = ReturnType<typeof createScore>
 
 /** Must be called from a click: browsers keep audio silent until one. */
-export async function openScore() {
+export async function openScore(onTrack: (index: number) => void) {
   await Tone.start()
-  return createScore()
+  return createScore(onTrack)
 }

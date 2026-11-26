@@ -9,6 +9,7 @@ import {
   Minimize,
   Pause,
   Play,
+  SkipForward,
   Volume2,
   VolumeX,
 } from "lucide-react"
@@ -192,6 +193,7 @@ export function Show({
       else if (e.key === "ArrowRight") go(1)
       else if (e.key === "f") toggleFull()
       else if (e.key === "m") void sound.toggle()
+      else if (e.key === "n" && sound.on) sound.next()
       else if (e.key === "p") setPaused((p) => !p)
     }
     window.addEventListener("keydown", onKey)
@@ -249,6 +251,27 @@ export function Show({
               onChange={(e) => sound.setVolume(Number(e.target.value))}
               className="w-20 accent-stripe-1 max-sm:hidden"
             />
+          )}
+          {sound.on && (
+            <>
+              <span
+                aria-live="polite"
+                title={sound.track.mood}
+                className="ml-1 max-w-28 truncate text-white/85 max-xl:hidden"
+              >
+                {sound.track.title}
+              </span>
+              <Button
+                variant="ghost"
+                size="icon"
+                className={glass}
+                aria-label={`Next track (now playing ${sound.track.title})`}
+                title="Next track (N)"
+                onClick={sound.next}
+              >
+                <SkipForward />
+              </Button>
+            </>
           )}
           <Button
             variant="ghost"

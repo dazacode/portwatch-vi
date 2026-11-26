@@ -8,6 +8,7 @@ import {
   Minimize,
   Pause,
   Play,
+  SkipForward,
   Trophy,
   Volume2,
   VolumeX,
@@ -94,6 +95,7 @@ export function Opening({
       if (el.closest("input, textarea, select, [role=dialog], [contenteditable=true]")) return
       if (e.key === "f") toggleFull()
       else if (e.key === "m") void sound.toggle()
+      else if (e.key === "n" && sound.on) sound.next()
       else if (e.key === "Escape") close()
     }
     window.addEventListener("keydown", onKey)
@@ -202,6 +204,27 @@ export function Opening({
               onChange={(e) => sound.setVolume(Number(e.target.value))}
               className="w-20 accent-stripe-1 max-sm:hidden"
             />
+          )}
+          {sound.on && (
+            <>
+              <span
+                aria-live="polite"
+                title={sound.track.mood}
+                className="ml-2 max-w-32 truncate text-sm text-white/85 max-lg:hidden"
+              >
+                {sound.track.title}
+              </span>
+              <Button
+                variant="ghost"
+                size="icon-lg"
+                className={glass}
+                aria-label={`Next track (now playing ${sound.track.title})`}
+                title="Next track (N)"
+                onClick={sound.next}
+              >
+                <SkipForward aria-hidden="true" />
+              </Button>
+            </>
           )}
           <Button
             variant="ghost"
