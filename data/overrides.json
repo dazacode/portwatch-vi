@@ -2047,6 +2047,72 @@
         "findingsSource": "From AnyXboxX's run guide at c4c93bd."
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "CarverXI/victory-fork",
+        "related": [],
+        "basedOn": [
+          "victory-gta6"
+        ],
+        "highlights": [
+          "The prologue's boat mission, HUD and minimap live",
+          "4K output on an RTX 5090",
+          "Outside RTX 5090 test reports on the fork"
+        ],
+        "blockers": [
+          "The title bar's 30-44 fps is frame-generated: the same cutscene renders at 4-7 fps",
+          "The card is idle a quarter to a third of every frame; the frame waits on its own copy-back",
+          "No long session: the cutscene is the only footage"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.75,
+          "fps": 6,
+          "stability": "unknown"
+        },
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-26T02:52:13Z",
+          "pushedAt": "2026-11-26T02:52:17Z",
+          "forks": 0,
+          "openIssues": 0,
+          "archived": false,
+          "missing": false,
+          "commits7d": 100
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Carver",
+        "evidence": "Two 4K clips on Reddit and the fork's RTX 5090 report",
+        "byline": "Public fork, one RTX 5090 machine",
+        "summary": "Carver's fork of victory-fork, run on an i9-14900K and RTX 5090. Its 4K clips show the prologue's boat mission lit and textured, but the title bar's 30-44 fps is generated on top of about 6.",
+        "id": "carver",
+        "findings": [
+          {
+            "text": "Two 4K clips show the prologue's cell and boat sequence with the HUD and minimap live; the title bar reads 24 to 44 fps.",
+            "url": "https://www.reddit.com/r/pcmasterrace/comments/1y5q6uq/gta_vi_on_pc_gameplay/"
+          },
+          {
+            "text": "On the same 14900K and RTX 5090 the frame log measures 4.2 to 7.7 fps, so the title bar's rate is generated, not rendered.",
+            "url": "https://github.com/fxceless/victory-fork/issues/1253"
+          },
+          {
+            "text": "The fork's own changes are diagnostics and a heap pass that touches only marked buffer slots; CI and run logs follow.",
+            "url": "https://github.com/CarverXI/victory-fork/commits/main"
+          }
+        ],
+        "findingsSource": "Fork commits, 26 November"
+      },
+      "changes": []
     }
   ],
   "pick": null,
