@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T08:07:12.693Z",
+  "updated": "2026-11-26T08:20:23.304Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T08:01:29.000Z",
-      "lastOkAt": "2026-11-26T08:07:12.693Z",
-      "seen": 3000,
+      "lastOkAt": "2026-11-26T08:20:23.304Z",
+      "seen": 3250,
       "events": 120,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T06:21:27.000Z",
-      "lastOkAt": "2026-11-26T08:07:12.693Z",
+      "lastOkAt": "2026-11-26T08:20:23.304Z",
       "seen": 16,
       "events": 8,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-26T07:29:38.175Z",
-      "lastOkAt": "2026-11-26T08:07:12.693Z",
-      "seen": 672,
-      "events": 19,
+      "lastCursor": "2026-11-26T08:10:17.339Z",
+      "lastOkAt": "2026-11-26T08:20:23.304Z",
+      "seen": 731,
+      "events": 20,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T07:59:17.946Z",
-      "lastOkAt": "2026-11-26T08:07:12.693Z",
-      "seen": 4800,
+      "lastOkAt": "2026-11-26T08:20:23.304Z",
+      "seen": 5200,
       "events": 3,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T08:07:12.693Z",
-      "seen": 1383,
+      "lastOkAt": "2026-11-26T08:20:23.304Z",
+      "seen": 1501,
       "events": 7,
       "errors": 0
     }
@@ -2197,10 +2197,17 @@
       "chain": "sha256:e9949929b6983c002405e7fd6a090f496103d1cee48e324d541e9077010d32a0",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T08:20:23.304Z",
+          "by": "desk",
+          "note": "The GitHub pull request title directly and exactly supports the one-line update, with no conflicting source present."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T08:20:23.304Z"
     },
     {
       "id": "20261126t053017z-belobug-4cf6e074",
@@ -2247,10 +2254,17 @@
       "chain": "sha256:68e485557b156772fd81be5971b34af253742a58411820550da071514893e5f3",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T08:20:23.304Z",
+          "by": "desk",
+          "note": "The GitHub pull request title directly states the item and no other source contradicts it."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T08:20:23.304Z"
     },
     {
       "id": "20261126t053009z-marvis-8ebfe7a6",
