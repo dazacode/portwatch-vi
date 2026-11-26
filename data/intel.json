@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T22:20:22.485Z",
+  "updated": "2026-11-26T22:36:29.298Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T22:01:22.000Z",
-      "lastOkAt": "2026-11-26T22:20:22.485Z",
-      "seen": 16750,
-      "events": 603,
+      "lastCursor": "2026-11-26T22:30:38.000Z",
+      "lastOkAt": "2026-11-26T22:36:29.298Z",
+      "seen": 17000,
+      "events": 620,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T20:47:47.000Z",
-      "lastOkAt": "2026-11-26T22:20:22.485Z",
+      "lastOkAt": "2026-11-26T22:36:29.298Z",
       "seen": 28,
       "events": 20,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T22:20:22.485Z",
-      "seen": 3983,
+      "lastOkAt": "2026-11-26T22:36:29.298Z",
+      "seen": 4044,
       "events": 23,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T21:55:58.840Z",
-      "lastOkAt": "2026-11-26T22:20:22.485Z",
-      "seen": 26800,
+      "lastCursor": "2026-11-26T22:25:05.345Z",
+      "lastOkAt": "2026-11-26T22:36:29.298Z",
+      "seen": 27200,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T10:20:22.485Z",
-      "lastOkAt": "2026-11-26T22:20:22.485Z",
-      "seen": 7831,
+      "lastCursor": "2026-11-26T10:36:29.298Z",
+      "lastOkAt": "2026-11-26T22:36:29.298Z",
+      "seen": 7954,
       "events": 7,
       "errors": 0
     }
@@ -7288,12 +7288,17 @@
           "at": "2026-11-26T15:50:23.920Z",
           "by": "desk",
           "note": "The only stored source is the project’s own repository with no excerpt, so it is primary but not independent and does not plainly corroborate the one-line claim."
+        },
+        {
+          "at": "2026-11-26T22:36:29.298Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the commit line is self-reported and unverifiable rather than plainly supported."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-26T15:50:23.920Z"
+      "deskAt": "2026-11-26T22:36:29.298Z"
     },
     {
       "id": "20261126t151541z-avatarmanz-b4c6eed2",
@@ -7520,12 +7525,17 @@
           "at": "2026-11-26T16:36:00.973Z",
           "by": "desk",
           "note": "The only stored source is a single Mastodon post that merely repeats the headline and hashtags, so it is too thin to substantiate the takedown claim."
+        },
+        {
+          "at": "2026-11-26T22:36:29.298Z",
+          "by": "desk",
+          "note": "The only source is a single Mastodon post whose excerpt is just a headline and hashtag string, so there is no substantive reporting or primary DMCA notice to support the takedown claim."
         }
       ],
       "heldReasons": [
         "low confidence"
       ],
-      "deskAt": "2026-11-26T16:36:00.973Z"
+      "deskAt": "2026-11-26T22:36:29.298Z"
     },
     {
       "id": "20261126t162842z-launcher-848b9791",
