@@ -72,15 +72,12 @@ export default async function Page() {
     <Container className="pt-8">
       <JsonLd data={standingsLd(projects)} />
       <h1 className="text-2xl font-semibold">Standings</h1>
-      <p className="mt-2 max-w-2xl text-muted-foreground">
-        Dozens of groups are trying to get the console game running on PC, and their claims are
-        spread across GitHub, streams and social media. This page puts them in one place. Projects
-        are ranked by what we can check: their own GitHub (code, README and commits), what they post
-        and stream on social media, and findings from other people. We aren’t the only or the
-        official verifier: everything here is scouted from public sources. If you’re behind a
-        project and its score or place looks wrong, you can vouch for a change:{" "}
+      <p className="mt-1 max-w-2xl text-sm text-muted-foreground sm:text-base">
+        Fan projects trying to run the console game on PC, ranked by what we can check: their code,
+        their posts and streams, and outside reports. We aren’t the official verifier. Behind a
+        project?{" "}
         <Link href="/verify" className="underline underline-offset-4 hover:text-stripe-1">
-          prove it live
+          Prove it live
         </Link>{" "}
         or{" "}
         <a
