@@ -5,7 +5,7 @@ name: Intelligence
 # data job. It writes only data/intel.json. See docs/INTELLIGENCE.md.
 on:
   schedule:
-    - cron: "3,18,33,48 * * * *"
+    - cron: "5,20,35,50 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:

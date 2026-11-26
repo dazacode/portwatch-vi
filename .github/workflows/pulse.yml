@@ -3,8 +3,8 @@ name: Pulse
 # Fallback only: the site reads GitHub's Atom feeds directly now. This branch is a single commit
 # replaced each time, in case GitHub blocks the feeds.
 on:
-  schedule:
-    - cron: "*/5 * * * *"
+  # The site reads GitHub's Atom feeds directly, so this is a fallback. Manual only: the 5-minute
+  # schedule was most of the fork's Actions usage, and GitHub suspends forks for that. See docs/AUTOMATION.md.
   workflow_dispatch: {}
 
 permissions:

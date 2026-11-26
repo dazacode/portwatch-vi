@@ -337,7 +337,7 @@ one issue a day, updated in place, so an agent has a GitHub surface without issu
 
 ## Cadence and budget
 
-New workflow `intel.yml`, `3,18,33,48 * * * *`, dispatched by the timer every 15 minutes at minute 3.
+New workflow `intel.yml`, `5,20,35,50 * * * *`, dispatched by the timer every 15 minutes at minute 5.
 It shares `data-write`, writes only `data/intel.json`, commits only when the bytes changed.
 
 | Call                                    | Per run | Per hour          |
@@ -358,7 +358,7 @@ a measured run showing <60 calls. That is a phase 4 change, not a launch setting
    the run still succeeds.
 2. Leave `FREE_AI` unset for the keyless providers, or set the repository variable `FREE_AI=off` to
    publish skeletons only.
-3. Enable Actions in the fork. The Cloudflare timer starts `intel.yml` at :03, :18, :33 and :48; GitHub's
+3. Enable Actions in the fork. The Cloudflare timer starts `intel.yml` at :05, :20, :35 and :50; GitHub's
    own schedule is a fallback.
 4. The first run creates the baseline if `baselineAt` is null. Check `/intelligence/queue` after it.
 

@@ -142,8 +142,9 @@ front-page list polls it every 15 seconds. That is the whole realtime path: no c
 in between.
 
 `pulse.yml` still writes the same commit list to the `pulse` branch as a fallback, in case GitHub
-blocks Atom reads. It runs every five minutes. If `GITHUB_TOKEN` is set on Vercel, the API falls
-back to one GraphQL request instead of the branch. GitHub's robots.txt disallows the `.atom` paths;
+blocks Atom reads. It is manual only now: its five-minute schedule was most of the fork's Actions usage,
+and GitHub suspends forks for that. Run it by hand when Atom fails. If `GITHUB_TOKEN` is set on Vercel,
+the API falls back to one GraphQL request instead of the branch. GitHub's robots.txt disallows the `.atom` paths;
 browsers and feed readers have always fetched them anyway.
 
 `scripts/milestones.mjs` runs after each sync and compares claims with the last run. Its history was

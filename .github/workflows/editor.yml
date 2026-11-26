@@ -6,7 +6,7 @@ name: Editor
 on:
   schedule:
     # Off the quarter hours, when GitHub is busiest and drops scheduled runs.
-    - cron: "35 * * * *"
+    - cron: "40 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:

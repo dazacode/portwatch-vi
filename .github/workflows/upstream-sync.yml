@@ -6,7 +6,7 @@ name: Upstream sync
 on:
   schedule:
     # Off the quarter hours, when GitHub is busiest and drops scheduled runs.
-    - cron: "7,22,37,52 * * * *"
+    - cron: "7,37 * * * *"
   workflow_dispatch: {}
 
 permissions:
