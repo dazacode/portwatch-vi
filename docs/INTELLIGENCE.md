@@ -22,8 +22,8 @@ source that lags, a pagination window that closes early, or a fetch that fails i
 ## Built
 
 Phases 0 to 3 of this plan are in the tree: the ledger and hash chain, the baseline index, the detector
-and gate, the free-model report and desk, the feed, item pages, queue, RSS, JSON Feed, API, Discord and
-the 6-hour audit. Nothing is deployed yet; the Discord secret has to be added in GitHub and the branch
+and gate, the free-model report and desk, the feed (as the News Reports tab), item pages, queue, RSS, JSON Feed, API, Discord and the 6-hour
+audit. Nothing is deployed yet; the Discord secret has to be added in GitHub and the branch
 merged. Phase 4 (comparator, overnight digest, daily desk issue, 5-minute trim) remains.
 
 ## Verdict
@@ -317,15 +317,16 @@ one issue a day, updated in place, so an agent has a GitHub surface without issu
 
 ## Pages and distribution
 
-- `/intelligence` — chronological feed, server-rendered, 60 s revalidate, cursor pagination. Filters:
-  project, kind, confidence. Held items show "Under investigation" and link to their item page.
+- `/news?show=reports` — the chronological feed, as the News page's Reports tab (server-rendered, 60 s
+  revalidate, cursor pagination, project/kind/confidence filters). `/intelligence` permanently redirects
+  here. Held items show "Under investigation" and link to their item page.
 - `/intelligence/[id]` — the report or the held item, permanent URL, `noindex` while held. JSON-LD
   `NewsArticle` with `dateModified`. A share control uses `navigator.share`, then clipboard.
 - `/intelligence/queue` — unlisted, `noindex`, newest first, with the `./pw` command and a
   `workflow_dispatch` link to publish or retract. This is the review queue.
 - `/compare?a=…&b=…` — two builds side by side: claim fields, deltas, evidence counts, shared base, links.
 - Home — five newest items under the standings.
-- Nav — "Intelligence" between Standings and News.
+- Nav — News carries the Reports tab; there is no separate Intelligence item.
 - `/intelligence/feed.xml`, `/intelligence/feed.json` (JSON Feed 1.1), `/api/v1/intel`,
   `/api/v1/intel/[id]` (CORS `*`, documented). RSS items carry the report body and the confidence word.
 - Discord: only after a successful publish. One embed per report, deduplicated on `discordAt`, `429`
