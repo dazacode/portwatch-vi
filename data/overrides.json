@@ -3452,6 +3452,83 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "WASDeKeys/victory-low-end-pc",
+        "related": [
+          "Impre-visible/victory-gtx1660"
+        ],
+        "basedOn": [
+          "cgbj"
+        ],
+        "highlights": [
+          "Clip: 19-22 fps steering a boat in the world, per title bar and an outside overlay",
+          "Parent's Linux runs: about 10 fps on a 6 GB GTX 1660, five clean runs",
+          "Outside Windows run on an RX 9070 XT: about 17 fps with the launcher's defaults"
+        ],
+        "blockers": [
+          "The clip's card uses about 12 GB at 2.7 GHz: no low-end recording yet",
+          "Heads missing in about 13 of 15 runs; ray-traced light replaced by a stand-in",
+          "Only the first playable scene measured; built on cool_fox, whose original repo is offline"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.5,
+          "fps": 20,
+          "stability": "unknown"
+        },
+        "stats": {
+          "archived": false,
+          "createdAt": "2026-11-26T09:55:37Z",
+          "forks": 10,
+          "openIssues": 0,
+          "pushedAt": "2026-11-26T22:41:06Z",
+          "stars": 19,
+          "missing": false,
+          "commits7d": 39
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "WASDeKeys low-end",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "WASDeKeys' fork of Impre-visible's GTX 1660 settings for CGBJ's cool_fox, with the source included and Windows memory fixes. A 12-second clip shows 19-22 fps in the world, but on a 12 GB card, not low-end. Self-reported.",
+        "id": "victory-low-end-pc",
+        "findings": [
+          {
+            "text": "A GitHub fork of Impre-visible/victory-gtx1660, 30 commits ahead and none behind. WASDeKeys added a copy of the cool_fox source at f4b48ad with patches 0001-0002 applied, Windows launch scripts, and fixes for Windows out-of-memory crashes.",
+            "url": "https://github.com/Impre-visible/victory-gtx1660/compare/main...WASDeKeys:victory-low-end-pc:main"
+          },
+          {
+            "text": "The parent's own measurements, all on Linux in the first playable scene: unmodified cool_fox at 360-410 ms a frame, then about 100-110 ms (9-10 fps) on a 6 GB GTX 1660 with three memory settings, over five clean runs of 4 to 8 minutes. WASDeKeys' copy keeps the figures but drops the card's name.",
+            "url": "https://github.com/Impre-visible/victory-gtx1660/blob/main/README.md"
+          },
+          {
+            "text": "The commit titled \"huge optimization changes\", read as text, is memory housekeeping: idle command-list preludes are released under pressure and fewer idle lists are pooled. It targets Windows out-of-memory crashes, not frame time.",
+            "url": "https://github.com/WASDeKeys/victory-low-end-pc/commit/f3ca1add"
+          },
+          {
+            "text": "An outside Windows run on an RX 9070 XT 16 GB with the launcher's defaults measured a median of about 60 ms a frame (16.8 fps warm), with the submitting thread, not the card, as the limit.",
+            "url": "https://github.com/WASDeKeys/victory-low-end-pc/blob/main/RESULTS.md"
+          },
+          {
+            "text": "The README lists known defects: characters' heads missing in about 13 of 15 runs, ray-traced lighting replaced by an ambient stand-in, textures one level softer, and nothing past the first playable scene measured.",
+            "url": "https://github.com/WASDeKeys/victory-low-end-pc/blob/main/README.md"
+          }
+        ],
+        "findingsSource": "From the repo's README, RESULTS.md and commits, read as text on 26 Nov, and its parent's README."
+      },
+      "changes": []
     }
   ],
   "pick": {
