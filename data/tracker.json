@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T04:18:11.884Z",
+  "updated": "2026-11-26T05:34:51.258Z",
   "site": {
     "title": "PortWatch VI",
     "heroImage": "assets/img/hero-miami.jpg"
@@ -1049,10 +1049,10 @@
       "gpu": [
         "AMD"
       ],
-      "summary": "A private build shown on NotNozy's \"GTA6 Modding Stream\" on Rumble. It looks about the same as AvatarManz's build; the owner rates its story progress at halfway. It runs on an AMD card. Code not public, and what it builds on isn't known.",
+      "summary": "A private build shown on NotNozy's \"GTA6 Modding Stream\" on Rumble. It looks about the same as AvatarManz's build; the owner rates its story progress at 80%. It runs on an AMD card. Code not public, and what it builds on isn't known.",
       "highlights": [
         "Looks about the same as AvatarManz's build, the leader on our board",
-        "Owner rates story progress at half, with a picture close to the console",
+        "Owner rates story progress at 80%, with a picture close to the console",
         "Runs on an AMD card"
       ],
       "blockers": [
@@ -1066,7 +1066,7 @@
         "menu": 1,
         "world": 1,
         "playable": 1,
-        "story": 0.6,
+        "story": 0.8,
         "render": 0.76,
         "fps": 16,
         "stability": 0.9
@@ -1094,10 +1094,10 @@
         "AMD",
         "NVIDIA"
       ],
-      "summary": "A private group's build on JoshuuDev's victory-amd fork of VIctory, verified by PortWatch. It runs GTA VI with ray-traced lighting at about 3-5 fps, almost never crashes, and the owner rates its story progress at halfway. The in-game phone renders really well, and the map menu runs at a higher frame rate. It's built mostly for AMD and also works on NVIDIA, at a lower frame rate. Code not public.",
+      "summary": "A private group's build on JoshuuDev's victory-amd fork of VIctory, verified by PortWatch. It runs GTA VI with ray-traced lighting at about 3-5 fps, almost never crashes, and the owner rates its story progress at 80%. The in-game phone renders really well, and the map menu runs at a higher frame rate. It's built mostly for AMD and also works on NVIDIA, at a lower frame rate. Code not public.",
       "highlights": [
         "Ray-traced lighting at about 3-5 fps, verified by PortWatch",
-        "Almost never crashes; owner rates story progress at half",
+        "Almost never crashes; owner rates story progress at 80%",
         "The in-game phone renders really well; the map menu runs at a higher frame rate",
         "Runs mostly on AMD; also works on NVIDIA at a lower frame rate"
       ],
@@ -1113,7 +1113,7 @@
         "menu": 1,
         "world": 1,
         "playable": 1,
-        "story": 0.6,
+        "story": 0.8,
         "render": 0.85,
         "fps": 4,
         "stability": 0.8
@@ -1141,10 +1141,10 @@
       "gpu": [
         "NVIDIA"
       ],
-      "summary": "A build shown on darkworldhm's Rumble stream on 25 Nov, running GTA VI's free roam at about 12-15 fps, swinging between 5 and 24: the highest frame rate on our board. The owner rates its story progress at halfway, and it hasn't crashed so far. The picture looks alright, with some texture or ray-tracing glitches. Reportedly on an NVIDIA RTX 50-series card. It's built on VIctory, but which fork isn't known. Code not public.",
+      "summary": "A build shown on darkworldhm's Rumble stream on 25 Nov, running GTA VI's free roam at about 12-15 fps, swinging between 5 and 24: the highest frame rate on our board. The owner rates its story progress at 80%, and it hasn't crashed so far. The picture looks alright, with some texture or ray-tracing glitches. Reportedly on an NVIDIA RTX 50-series card. It's built on VIctory, but which fork isn't known. Code not public.",
       "highlights": [
         "About 12-15 fps in free roam, up to 24: the highest frame rate on our board",
-        "Owner rates story progress at half",
+        "Owner rates story progress at 80%",
         "No crashes seen so far"
       ],
       "blockers": [
@@ -1159,7 +1159,7 @@
         "menu": 1,
         "world": 1,
         "playable": 1,
-        "story": 0.6,
+        "story": 0.8,
         "render": 0.7,
         "fps": 15,
         "stability": 0.7
@@ -1181,15 +1181,15 @@
       "evidence": "Confirmed by PortWatch",
       "byline": "Working in private · built on hyphennn's victory-fork",
       "tier": "tracked",
-      "summary": "A private build on hyphennn's victory-fork of VIctory. PortWatch confirmed a player moving around Lucia's prologue at about 3 fps; the owner now rates its story progress at halfway. Its rendering is ahead of the other builds, but code is not public.",
+      "summary": "A private build on hyphennn's victory-fork of VIctory. PortWatch confirmed a player moving around Lucia's prologue at about 3 fps; the owner now rates its story progress at 80%. Its rendering is ahead of the other builds, but code is not public.",
       "highlights": [
         "Looks almost like the retail game in Lucia's prologue",
         "PortWatch confirmed a player moving around, at about 3 fps",
-        "Owner rates story progress at half"
+        "Owner rates story progress at 80%"
       ],
       "blockers": [
         "Runs at about 3 fps",
-        "PortWatch only confirmed the prologue; half-story progress is the owner's rating",
+        "PortWatch only confirmed the prologue; 80% story progress is the owner's rating",
         "Code is private, so nobody outside can test or reproduce it"
       ],
       "provenOn": null,
@@ -1199,7 +1199,7 @@
         "menu": 1,
         "world": 1,
         "playable": 1,
-        "story": 0.6,
+        "story": 0.8,
         "render": 0.8,
         "fps": 3,
         "stability": "unknown"
@@ -1267,20 +1267,24 @@
         "xcl"
       ],
       "evidence": "Checked by PortWatch with the group",
+      "proof": {
+        "label": "Watch video",
+        "url": "https://v.redd.it/137k5pow5w3i1"
+      },
       "link": "news/2026-11-24-cgbj-in-game.html",
       "byline": "Private code · based on VIctory and XCL",
       "tier": "tracked",
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "Private VIctory/XCL build, PortWatch-verified. Owner rates story halfway, rendering 0.75 and stability 0.85. It averages 25 fps on NVIDIA with 8 GB RAM and 16 GB VRAM (not a typo); code is private.",
+      "summary": "Private VIctory/XCL build, PortWatch-verified. Owner rates story progress at 80%, rendering 0.85 and stability 0.85. It averages 20 fps on NVIDIA with 10 GB RAM and 16 GB VRAM (not a typo); code is private.",
       "highlights": [
-        "Owner ratings: half the story, rendering 0.75, stability 0.85",
-        "25 fps gameplay average, highest reported on the board (NVIDIA, 8 GB RAM and 16 GB VRAM, not a typo)",
-        "Close to the console with minor glitches; code remains private"
+        "Owner ratings: 80% story, rendering 0.85, stability 0.85",
+        "20 fps gameplay average (NVIDIA, 10 GB RAM and 16 GB VRAM, not a typo)",
+        "Graphics look close to the console; code remains private"
       ],
       "blockers": [
         "Minor visual glitches remain",
-        "Gameplay does not sustain 30 fps; 25 fps is the reported average",
+        "Gameplay does not sustain 30 fps; 20 fps is the reported average",
         "Code is private, so nobody outside the group can test or reproduce it"
       ],
       "provenOn": null,
@@ -1290,9 +1294,9 @@
         "menu": 1,
         "world": 1,
         "playable": 1,
-        "story": 0.6,
-        "render": 0.75,
-        "fps": 25,
+        "story": 0.8,
+        "render": 0.85,
+        "fps": 20,
         "stability": 0.85
       },
       "verification": "portwatch",
