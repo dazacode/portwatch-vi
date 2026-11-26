@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T20:20:23.285Z",
+  "updated": "2026-11-26T20:35:22.288Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T20:01:22.000Z",
-      "lastOkAt": "2026-11-26T20:20:23.285Z",
-      "seen": 15000,
-      "events": 536,
+      "lastCursor": "2026-11-26T20:31:14.000Z",
+      "lastOkAt": "2026-11-26T20:35:22.288Z",
+      "seen": 15250,
+      "events": 552,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T18:18:39.000Z",
-      "lastOkAt": "2026-11-26T20:20:23.285Z",
+      "lastOkAt": "2026-11-26T20:35:22.288Z",
       "seen": 25,
       "events": 17,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T20:20:23.285Z",
-      "seen": 3556,
+      "lastOkAt": "2026-11-26T20:35:22.288Z",
+      "seen": 3617,
       "events": 23,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T19:56:48.000Z",
-      "lastOkAt": "2026-11-26T20:20:23.285Z",
-      "seen": 24000,
-      "events": 24,
+      "lastCursor": "2026-11-26T20:28:10.943Z",
+      "lastOkAt": "2026-11-26T20:35:22.288Z",
+      "seen": 24400,
+      "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T08:20:23.285Z",
-      "lastOkAt": "2026-11-26T20:20:23.285Z",
-      "seen": 7040,
+      "lastCursor": "2026-11-26T08:35:22.288Z",
+      "lastOkAt": "2026-11-26T20:35:22.288Z",
+      "seen": 7153,
       "events": 7,
       "errors": 0
     }
@@ -8356,6 +8356,123 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-26T20:20:23.285Z"
+    },
+    {
+      "id": "20261126t202401z-cgbj-69c4c25a",
+      "key": "claim|cgbj|https://bsky.app/profile/niiqo.eurosky.social/post/3n3aiwpgetm2e|41567",
+      "kind": "claim",
+      "projectId": "cgbj",
+      "projectName": "CGBJ",
+      "at": "2026-11-26T20:24:01.254Z",
+      "detectedAt": "2026-11-26T20:35:22.288Z",
+      "title": "New claim about CGBJ",
+      "oneLine": "Grand Theft Auto 6 PC Port CGBJ Is 91% Complete With Playable Framerates",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/niiqo.eurosky.social/post/3n3aiwpgetm2e",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "Grand Theft Auto 6 PC Port CGBJ Is 91% Complete With Playable Framerates",
+          "at": "2026-11-26T20:24:01.254Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "Grand Theft Auto 6 PC Port CGBJ Is 91% Complete With Playable Framerates"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "cgbj",
+        "words": [
+          "cgbj"
+        ],
+        "hash": "29e35c31324009b0",
+        "projectId": "cgbj"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:007fc27d0ac7ca356ed9292e2232a70a2152728b81f79295fde43a6dedff8a06",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T20:35:22.288Z",
+          "by": "desk",
+          "note": "The only support is a single Bluesky post, which is a weak social source and insufficient on its own to substantiate a specific 91%-complete, playable-framerate claim."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-26T20:35:22.288Z"
+    },
+    {
+      "id": "20261126t195800z-launcher-3844460e",
+      "key": "claim|launcher|https://news.google.com/rss/articles/cbmi6afbvv95cuxqls1zdjvqr05az2juqviyaexidfcytujwqjywdepfceh6avdpn2nhteljvm1vsmy5t2czuwt5bi1fzvu1t3puvxmysnq4mnnvdlf6xzvnywdcmwjdylpxalltnmtysnnmrhpaak5bymnveu93dtniwjkyx2rawe5zvzzvuwxyevetthpmlvf6rdr5qvlyr00yx05hodfotxe1uulkqnvpdzhvzuw0tk16n3zfumm5avl0ampwsgsxsnfdrtj2ajrnzwd4evr4wtftx0ncohl5zg4zyxzzc3hddkfecwr6mdba?oc=5|41567",
+      "kind": "claim",
+      "projectId": "launcher",
+      "projectName": "VILauncher",
+      "at": "2026-11-26T19:58:00.000Z",
+      "detectedAt": "2026-11-26T20:35:22.288Z",
+      "title": "New claim about VILauncher",
+      "oneLine": "As GTA 6 PC port projects make significant progress, its first unofficial mod menu and…",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQLS1ZdjVqR05aZ2JuQVIyaExIdFcyTUJWQjYwdEpFcEh6aVdPN2NhTElJVm1VSmY5T2czUWt5bi1fZVU1T3puVXMySnQ4MnNVdlF6XzVNYWdCMWJDYlpXallTNmtYSnNMRHpaak5BYmNveU93dTNIWjkyX2RaWE5ZVzZVUWxYeVEtTHpmLVF6RDR5QVlyR00yX05hODFoTXE1UUlKQnVPdzhVZUw0Tk16N3ZFUmM5aVl0ampwSGsxSnFDRTJ2ajRNZWd4eVR4WTFtX0NCOHl5ZG4zYXZzc3hDdkFEcWR6MDBa?oc=5",
+          "host": "news.google.com",
+          "outlet": "Notebookcheck",
+          "title": "As GTA 6 PC port projects make significant progress, its first unofficial mod menu and launcher have surfaced",
+          "at": "2026-11-26T19:58:00.000Z",
+          "kind": "outside",
+          "authorHash": "70940f266b",
+          "excerpt": "As GTA 6 PC port projects make significant progress, its first unofficial mod menu and launcher have surfaced"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sixlauncher/launcher",
+        "name": "vilauncher",
+        "words": [
+          "vilauncher",
+          "launcher"
+        ],
+        "hash": "a09b588138ba85cd",
+        "projectId": "launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:a7f4a215c27efd472d432ddf35922cb57b9af9288497770c1784142e7ca4b37c",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T20:35:22.288Z",
+          "by": "desk",
+          "note": "The item rests on a single outside headline with no corroborating detail, so the claim is too thin to publish."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-26T20:35:22.288Z"
     }
   ],
   "reports": [
