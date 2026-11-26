@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T06:20:20.067Z",
+  "updated": "2026-11-26T06:39:39.335Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T06:01:34.000Z",
-      "lastOkAt": "2026-11-26T06:20:20.067Z",
-      "seen": 1250,
-      "events": 60,
+      "lastCursor": "2026-11-26T06:34:51.000Z",
+      "lastOkAt": "2026-11-26T06:39:39.335Z",
+      "seen": 1500,
+      "events": 75,
       "errors": 0
     },
     "evidence": {
-      "lastCursor": "2026-11-26T02:06:57.000Z",
-      "lastOkAt": "2026-11-26T06:20:20.067Z",
-      "seen": 14,
-      "events": 6,
+      "lastCursor": "2026-11-26T06:21:27.000Z",
+      "lastOkAt": "2026-11-26T06:39:39.335Z",
+      "seen": 16,
+      "events": 8,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T05:40:16.544Z",
-      "lastOkAt": "2026-11-26T06:20:20.067Z",
-      "seen": 259,
+      "lastOkAt": "2026-11-26T06:39:39.335Z",
+      "seen": 318,
       "events": 18,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T06:00:32.000Z",
-      "lastOkAt": "2026-11-26T06:20:20.067Z",
-      "seen": 2000,
-      "events": 2,
+      "lastCursor": "2026-11-26T06:29:28.000Z",
+      "lastOkAt": "2026-11-26T06:39:39.335Z",
+      "seen": 2400,
+      "events": 3,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T06:20:20.067Z",
-      "seen": 569,
+      "lastOkAt": "2026-11-26T06:39:39.335Z",
+      "seen": 685,
       "events": 7,
       "errors": 0
     }
@@ -3536,6 +3536,165 @@
       "heldReasons": [
         "low confidence"
       ]
+    },
+    {
+      "id": "20261126t062928z-leonida-43d4f296",
+      "key": "takedown|leonida|https://news.google.com/rss/articles/cbmihafbvv95cuxqtkvpwuhtv2vaoxjwmvfhvzlmzehuyurca1lyullsbvdxzzktqmhsql83mer2azi3stbtstlvmetjmhcwtmlhtuezsuxtcehec1hsethdrtzvnvhnre5hrejvovvicufurdbzq0zztnv5q1c5u0p3t2v1vnp4dgrpnwj3zmk?oc=5|41566",
+      "kind": "takedown",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-26T06:29:28.000Z",
+      "detectedAt": "2026-11-26T06:39:39.335Z",
+      "title": "Leonida in a takedown report",
+      "oneLine": "Leonida DMCA: 1 Repo, 2,900+ Forks, No GTA 6 PC Date",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTkVpWUhTV2VaOXJWMVFhVzlmZEhuYURCa1lyUllSbVdXZzktQmhSQl83MER2azI3STBtSTlvMEtjMHcwTmlHTUEzSUxtcEhEc1hseThDRTZVNVhnRE5HREJvOVVIcUFuRDBzQ0ZzTnV5Q1c5U0p3T2V1Vnp4dGRpNWJ3Zmk?oc=5",
+          "host": "news.google.com",
+          "outlet": "shattered.io",
+          "title": "Leonida DMCA: 1 Repo, 2,900+ Forks, No GTA 6 PC Date",
+          "at": "2026-11-26T06:29:28.000Z",
+          "kind": "outside",
+          "authorHash": "944c7e68a9",
+          "excerpt": "Leonida DMCA: 1 Repo, 2,900+ Forks, No GTA 6 PC Date"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "c7d4ca166354c08f",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:8775fda10bba6123944a2cc2537a99aed0ef7ed1e3f9644ccbc30da6fb5092f1",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t062127z-xcl-9c87dc10",
+      "key": "evidence|xcl|loads|41566",
+      "kind": "evidence",
+      "projectId": "xcl",
+      "projectName": "XCL",
+      "at": "2026-11-26T06:21:27Z",
+      "detectedAt": "2026-11-26T06:39:39.335Z",
+      "title": "New test evidence on XCL — loads",
+      "oneLine": "ended a run of the retail title with an access violation on the dump thread itself, at its third dump.",
+      "sources": [
+        {
+          "url": "https://github.com/xcl-dev/xcl/issues/2689",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "ended a run of the retail title with an access violation on the dump thread itself, at its third dump.",
+          "at": "2026-11-26T06:21:27Z",
+          "kind": "primary",
+          "authorHash": "099de7ed1e08",
+          "excerpt": "ended a run of the retail title with an access violation on the dump thread itself, at its third dump."
+        }
+      ],
+      "fingerprint": {
+        "repo": "xcl-dev/xcl",
+        "name": "xcl",
+        "words": [
+          "xcl"
+        ],
+        "hash": "bcea8f32ce00fa9e",
+        "projectId": "xcl"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:37e9c0d53b1fbe3244db01037e38055ff22a01c164b953d48742d16544b7f3d4",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t035921z-five-star-recomp-a1faa2bf",
+      "key": "evidence|five-star-recomp|world|41566",
+      "kind": "evidence",
+      "projectId": "five-star-recomp",
+      "projectName": "Five Star Recomp",
+      "at": "2026-11-26T03:59:21Z",
+      "detectedAt": "2026-11-26T06:39:39.335Z",
+      "title": "New test evidence on Five Star Recomp — world",
+      "oneLine": "world shows only its lights.",
+      "sources": [
+        {
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/54",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "world shows only its lights.",
+          "at": "2026-11-26T03:59:21Z",
+          "kind": "primary",
+          "authorHash": "e69cc09b5d68",
+          "excerpt": "world shows only its lights."
+        }
+      ],
+      "fingerprint": {
+        "repo": "thatrecompdev/five-star-recomp",
+        "name": "five star recomp",
+        "words": [
+          "five",
+          "star",
+          "recomp",
+          "five-star-recomp"
+        ],
+        "hash": "681a91854ddac9ef",
+        "projectId": "five-star-recomp"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "from before the baseline",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:165f410710363830084e6d552537cebe62f426b4ec748dc3b317479e10756bde",
+      "reportId": "20261126t035921z-five-star-recomp-a1faa2bf-report",
+      "discordAt": "2026-11-26T06:39:58.591Z",
+      "revisions": [],
+      "note": "model: evidence has 1, which is not in a source",
+      "publishedAt": "2026-11-26T06:39:39.335Z",
+      "heldReasons": []
     }
   ],
   "reports": [
@@ -3689,6 +3848,29 @@
           "title": "D3D12.X: a list vtable at a reused heap address gets its own methods",
           "at": "2026-11-26T05:31:01Z",
           "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261126t035921z-five-star-recomp-a1faa2bf-report",
+      "itemId": "20261126t035921z-five-star-recomp-a1faa2bf",
+      "publishedAt": "2026-11-26T06:39:39.335Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "Five Star Recomp has a new independent test report on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "An outside report adds a reading for the project. world shows only its lights.",
+      "evidence": "The entry rests on one stored source, GitHub. world shows only its lights.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/54",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "world shows only its lights.",
+          "at": "2026-11-26T03:59:21Z",
+          "kind": "primary",
+          "authorHash": "e69cc09b5d68",
+          "excerpt": "world shows only its lights."
         }
       ]
     }
