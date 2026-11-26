@@ -2734,6 +2734,72 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Native-Victory-macOS",
+        "summary": "Native macOS port of VIctory emulator, runs game code in-process, GPU to Metal, boots and shows menus",
+        "basedOn": [],
+        "id": "native-victory-macos",
+        "repo": "LakshanSivakumar/Native-Victory-macOS",
+        "stats": {
+          "stars": 1,
+          "createdAt": "2026-11-26T06:56:43Z",
+          "pushedAt": "2026-11-26T07:34:30Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "flamingo-port",
+        "summary": "Native runtime for Xbox Series build on PC, reimplements console APIs, runs without CPU emulation",
+        "basedOn": [],
+        "id": "flamingo-port",
+        "repo": "nowrokink/flamingo-port",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-26T05:08:17Z",
+          "pushedAt": "2026-11-26T05:26:24Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -2894,7 +2960,9 @@
     "Dolberthi/neptune-dolberth-nvidia-8gb",
     "lucas-TagDev/VKarameloVI",
     "deepdev237/victory-mac",
-    "GiovannaSGuerrera/Victory-RTX2080"
+    "GiovannaSGuerrera/Victory-RTX2080",
+    "LakshanSivakumar/Native-Victory-macOS",
+    "nowrokink/flamingo-port"
   ],
   "news": [
     {
