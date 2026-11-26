@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next"
 import { Schibsted_Grotesk, Yellowtail } from "next/font/google"
 import { BoardNotice } from "@/components/board/notice"
+import { ShareSheet } from "@/components/share/share-sheet"
+import { ShareToast } from "@/components/share/share-toast"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { Splash } from "@/components/splash"
@@ -55,6 +57,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </main>
           <SiteFooter />
           <BoardNotice />
+          <ShareToast />
+          <ShareSheet url={SITE.url} />
         </ThemeProvider>
       </body>
     </html>

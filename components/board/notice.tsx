@@ -47,6 +47,8 @@ export function BoardNotice() {
   return (
     <div
       role="status"
+      data-board-notice
+      data-showing={first ? "" : undefined}
       className={cn(
         "pointer-events-none fixed inset-x-3 z-30 flex justify-center lg:inset-x-auto lg:right-6 lg:bottom-6",
         home

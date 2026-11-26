@@ -2,6 +2,7 @@ import Link from "next/link"
 import { HeaderShell } from "@/components/header-shell"
 import { HolidayToggle } from "@/components/holiday/toggle"
 import { NavLink } from "@/components/nav-link"
+import { ShareButton } from "@/components/share/share-button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Wordmark } from "@/components/wordmark"
 import { SITE } from "@/lib/site"
@@ -31,6 +32,7 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="ml-auto flex items-center">
+          <ShareButton />
           <HolidayToggle />
           <ThemeToggle />
         </div>
