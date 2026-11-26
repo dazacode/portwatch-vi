@@ -722,9 +722,13 @@
           {
             "text": "README of 25 November: menus run at the game's own 30 fps and the world loads in about a minute. The intro cutscene plays at about 1 fps with textured, lit characters and buildings, and the prologue is reached with the picture complete. Ray-traced shadows and indirect light are still missing; frame rate is what keeps it unplayable.",
             "url": "https://github.com/Marvisak/VIctory/blob/63bcca43c/README.md"
+          },
+          {
+            "text": "Boot GTA 6 on PC VIctory is an open-source project that reportedly runs GTA 6's unmodified Xbox code on Windows.",
+            "url": "https://bsky.app/profile/githubprojects.bsky.social/post/3n37fj2ixd522"
           }
         ],
-        "findingsSource": "From Marvis's README at 63bcca43c, ShyVortex’s post on X and public comments on VIctory’s issue 468 and pull request 1763, 24 and 25 November. The tester reports are each tester's own; nothing was run here."
+        "findingsSource": "Bluesky, 2026-11-26"
       }
     },
     {
@@ -2847,6 +2851,120 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [
+          "places unmodified game file in memory",
+          "connects 520 of 587 components"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "whibwhi-own",
+        "summary": "Shell for running Xbox Series GTA VI executable on PC",
+        "basedOn": [],
+        "id": "whibwhi-own",
+        "repo": "ExCorvus/whibwhi-own",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-25T19:40:09Z",
+          "pushedAt": "2026-11-26T04:13:42Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "DirectStorage not implemented",
+          "file access pending"
+        ],
+        "highlights": [
+          "milestone M1 done",
+          "loader runs executable",
+          "stops at DirectStorage"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Project-Americas",
+        "summary": "Runs Xbox Series GTA VI natively on Windows 11",
+        "basedOn": [],
+        "id": "project-americas",
+        "repo": "x6j1ZiqfbxA3u12HVk/Project-Americas",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-24T13:07:15Z",
+          "pushedAt": "2026-11-26T00:36:52Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "no GTA VI PC build"
+        ],
+        "highlights": [
+          "runs on Xbox build via VIctory layer",
+          "no PC build yet"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "scripthook-vi",
+        "summary": "Script hook for GTA VI story mode using VIctory layer",
+        "basedOn": [],
+        "id": "scripthook-vi",
+        "repo": "modpapi/scripthook-vi",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-26T07:08:30Z",
+          "pushedAt": "2026-11-26T07:08:38Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -3016,7 +3134,10 @@
     "LakshanSivakumar/Native-Victory-macOS",
     "nowrokink/flamingo-port",
     "FQY55kai/ZJOU-JWXT-PC",
-    "viper-community/viper"
+    "viper-community/viper",
+    "ExCorvus/whibwhi-own",
+    "x6j1ZiqfbxA3u12HVk/Project-Americas",
+    "modpapi/scripthook-vi"
   ],
   "news": [
     {
