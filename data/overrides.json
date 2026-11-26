@@ -1954,50 +1954,6 @@
       "effort": {
         "tier": "watchlist",
         "verification": "self-reported",
-        "blockers": [
-          "currently 10 rendered fps, 7-8 fps in heavy scenes"
-        ],
-        "highlights": [
-          "playable scene at 3840×2160",
-          "menus work",
-          "character control"
-        ],
-        "gta": {
-          "loads": 0,
-          "boots": 0,
-          "menu": 0,
-          "world": 0,
-          "playable": 0,
-          "story": 0,
-          "render": 0,
-          "fps": 0,
-          "stability": "unknown"
-        },
-        "assessedAt": "2026-11-25",
-        "assessedBy": "claude",
-        "claims": [],
-        "name": "kelvaroq",
-        "summary": "Experimental Xbox Series compatibility runtime for Windows x64, written in Rust, aiming for playable scene at 3840×2160 and 30 rendered fps.",
-        "basedOn": [],
-        "id": "kelvaroq",
-        "repo": "fablinoo/kelvaroq",
-        "stats": {
-          "stars": 37,
-          "createdAt": "2026-11-24T22:58:04Z",
-          "pushedAt": "2026-11-26T03:26:25Z",
-          "forks": 4,
-          "openIssues": 2,
-          "archived": false,
-          "missing": false,
-          "commits7d": 44
-        }
-      },
-      "changes": []
-    },
-    {
-      "effort": {
-        "tier": "watchlist",
-        "verification": "self-reported",
         "blockers": [],
         "highlights": [],
         "gta": {
