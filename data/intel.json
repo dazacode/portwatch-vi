@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T08:20:23.304Z",
+  "updated": "2026-11-26T08:36:38.181Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T08:01:29.000Z",
-      "lastOkAt": "2026-11-26T08:20:23.304Z",
-      "seen": 3250,
-      "events": 120,
+      "lastCursor": "2026-11-26T08:31:15.000Z",
+      "lastOkAt": "2026-11-26T08:36:38.181Z",
+      "seen": 3500,
+      "events": 136,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T06:21:27.000Z",
-      "lastOkAt": "2026-11-26T08:20:23.304Z",
+      "lastOkAt": "2026-11-26T08:36:38.181Z",
       "seen": 16,
       "events": 8,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T08:10:17.339Z",
-      "lastOkAt": "2026-11-26T08:20:23.304Z",
-      "seen": 731,
+      "lastOkAt": "2026-11-26T08:36:38.181Z",
+      "seen": 790,
       "events": 20,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T07:59:17.946Z",
-      "lastOkAt": "2026-11-26T08:20:23.304Z",
-      "seen": 5200,
-      "events": 3,
+      "lastCursor": "2026-11-26T08:30:14.000Z",
+      "lastOkAt": "2026-11-26T08:36:38.181Z",
+      "seen": 5600,
+      "events": 5,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T08:20:23.304Z",
-      "seen": 1501,
+      "lastOkAt": "2026-11-26T08:36:38.181Z",
+      "seen": 1619,
       "events": 7,
       "errors": 0
     }
@@ -3927,6 +3927,122 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-26T07:50:24.658Z"
+    },
+    {
+      "id": "20261126t080905z-leonida-6879fd56",
+      "key": "takedown|leonida|https://news.google.com/rss/articles/cbmiowfbvv95cuxou1p6svhksev2sldpmkjotnfta2fsy01gs3jvrddyb3vpmzdyqml6dtz2qu9jmxjqwdeyckrbshb0su9kngfhzgk2z2xhce1vvlbqctfiow9xsdjrsllsvmzlr3pbt1bbskgzv2pin1npaunirm83nnjirjztcnfur2nevfzvvmyxcec3y1fzwe1ezf9odlpurhfpt2hfb0zhy29r?oc=5|41566",
+      "kind": "takedown",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-26T08:09:05.000Z",
+      "detectedAt": "2026-11-26T08:36:38.181Z",
+      "title": "Leonida in a takedown report",
+      "oneLine": "GTA 6 PC Port: Rockstar Shuts Down Leonida Project With DMCA Takedown",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOU1p6SVhKSEV2SldpMkJoTnFta2FSY01GS3JvRDdYb3VpMzdyQml6dTZ2QU9jMXJqWDEyckRBSHB0SU9KNGFhZGk2Z2xHcE1VVlBQcTFiOW9xSDJRSllSVmZlR3pBT1BBSkgzV2piN1NPaUNIRm83NnJiRjZTcnFuR2NEVFZVVmYxcEc3Y1FzWE1EZF9OdlpuRHFPT2hFb0ZHY29r?oc=5",
+          "host": "news.google.com",
+          "outlet": "MMOEXP",
+          "title": "GTA 6 PC Port: Rockstar Shuts Down Leonida Project With DMCA Takedown",
+          "at": "2026-11-26T08:09:05.000Z",
+          "kind": "outside",
+          "authorHash": "61a442758c",
+          "excerpt": "GTA 6 PC Port: Rockstar Shuts Down Leonida Project With DMCA Takedown"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "9045e5064640943e",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:826ff7c31dbaf878f60f4e11d8fbf87f8f47cdcf9b9129e8b2f1687c44f3eccc",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T08:36:38.181Z",
+          "by": "desk",
+          "note": "The only stored source is a single outside outlet whose excerpt merely repeats the headline, so the takedown claim is too thin to publish."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-26T08:36:38.181Z"
+    },
+    {
+      "id": "20261126t080634z-leonida-b78af86b",
+      "key": "takedown|leonida|https://bsky.app/profile/ahmandonk.bsky.social/post/3n377q24tgp2b|41566",
+      "kind": "takedown",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-26T08:06:34.046Z",
+      "detectedAt": "2026-11-26T08:36:38.181Z",
+      "title": "Leonida in a takedown report",
+      "oneLine": "📰 Take-Two Ajukan DMCA terhadap Leonida, Proyek GTA VI untuk PC 👉 Baca artikel lengkap…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/ahmandonk.bsky.social/post/3n377q24tgp2b",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "📰 Take-Two Ajukan DMCA terhadap Leonida, Proyek GTA VI untuk PC 👉 Baca artikel lengkap di sini:",
+          "at": "2026-11-26T08:06:34.046Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "📰 Take-Two Ajukan DMCA terhadap Leonida, Proyek GTA VI untuk PC 👉 Baca artikel lengkap di sini:"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "d7d586b65df80ddc",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:6a3f8e9bf4906f9c64cf3c4c5c2c61c845e6df4b709d16105ce4417eae47c910",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T08:36:38.181Z",
+          "by": "desk",
+          "note": "The only source is a single Bluesky teaser post that merely links to an article without stating any verifiable detail, and a social post alone is too weak to support the takedown claim."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-26T08:36:38.181Z"
     }
   ],
   "reports": [
