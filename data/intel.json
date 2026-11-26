@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T21:05:26.160Z",
+  "updated": "2026-11-26T21:20:28.432Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T21:01:10.000Z",
-      "lastOkAt": "2026-11-26T21:05:26.160Z",
-      "seen": 15750,
+      "lastOkAt": "2026-11-26T21:20:28.432Z",
+      "seen": 16000,
       "events": 569,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T18:18:39.000Z",
-      "lastOkAt": "2026-11-26T21:05:26.160Z",
+      "lastOkAt": "2026-11-26T21:20:28.432Z",
       "seen": 25,
       "events": 17,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T21:05:26.160Z",
-      "seen": 3739,
+      "lastOkAt": "2026-11-26T21:20:28.432Z",
+      "seen": 3800,
       "events": 23,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T20:57:48.251Z",
-      "lastOkAt": "2026-11-26T21:05:26.160Z",
-      "seen": 25200,
+      "lastOkAt": "2026-11-26T21:20:28.432Z",
+      "seen": 25600,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T09:05:26.160Z",
-      "lastOkAt": "2026-11-26T21:05:26.160Z",
-      "seen": 7379,
+      "lastCursor": "2026-11-26T09:20:28.432Z",
+      "lastOkAt": "2026-11-26T21:20:28.432Z",
+      "seen": 7492,
       "events": 7,
       "errors": 0
     }
@@ -7044,12 +7044,17 @@
           "at": "2026-11-26T15:05:32.126Z",
           "by": "desk",
           "note": "The commit message from the Project-Americas repository directly states the one-line update, with no conflicting sources."
+        },
+        {
+          "at": "2026-11-26T21:20:28.432Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub repository with no excerpt, so it is primary but not independent and too thin to verify the commit summary plainly.}"
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-26T15:05:32.126Z"
+      "deskAt": "2026-11-26T21:20:28.432Z"
     },
     {
       "id": "20261126t143929z-scene-8a9e2aaf",
@@ -7100,12 +7105,17 @@
           "at": "2026-11-26T15:20:23.264Z",
           "by": "desk",
           "note": "The only source is a single Bluesky post, which is a weak social source with no primary or independent confirmation of the 3,007-repo takedown figure."
+        },
+        {
+          "at": "2026-11-26T21:20:28.432Z",
+          "by": "desk",
+          "note": "The only stored source is a single Bluesky post repeating the headline, which is too thin and non-independent to substantiate the specific 3,007-repo takedown claim."
         }
       ],
       "heldReasons": [
         "low confidence"
       ],
-      "deskAt": "2026-11-26T15:20:23.264Z"
+      "deskAt": "2026-11-26T21:20:28.432Z"
     },
     {
       "id": "20261126t143853z-vitoriabr-04fd78b5",
