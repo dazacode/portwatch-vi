@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T09:50:28.040Z",
+  "updated": "2026-11-26T10:06:25.426Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T09:01:18.000Z",
-      "lastOkAt": "2026-11-26T09:50:28.040Z",
-      "seen": 4750,
-      "events": 152,
+      "lastCursor": "2026-11-26T10:02:04.000Z",
+      "lastOkAt": "2026-11-26T10:06:25.426Z",
+      "seen": 5000,
+      "events": 175,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T08:19:21.000Z",
-      "lastOkAt": "2026-11-26T09:50:28.040Z",
+      "lastOkAt": "2026-11-26T10:06:25.426Z",
       "seen": 19,
       "events": 11,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T09:50:28.040Z",
-      "seen": 1087,
+      "lastOkAt": "2026-11-26T10:06:25.426Z",
+      "seen": 1147,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T09:00:28.844Z",
-      "lastOkAt": "2026-11-26T09:50:28.040Z",
-      "seen": 7600,
-      "events": 5,
+      "lastCursor": "2026-11-26T09:58:12.446Z",
+      "lastOkAt": "2026-11-26T10:06:25.426Z",
+      "seen": 8000,
+      "events": 6,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T09:50:28.040Z",
-      "seen": 2209,
+      "lastOkAt": "2026-11-26T10:06:25.426Z",
+      "seen": 2328,
       "events": 7,
       "errors": 0
     }
@@ -4470,6 +4470,217 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-26T09:50:28.040Z"
+    },
+    {
+      "id": "20261126t095402z-hybridgt-ce7a19a1",
+      "key": "update|hybridgt|activity|41566",
+      "kind": "update",
+      "projectId": "hybridgt",
+      "projectName": "HybridGt",
+      "at": "2026-11-26T09:54:02Z",
+      "detectedAt": "2026-11-26T10:06:25.426Z",
+      "title": "HybridGt pushed 2 commits",
+      "oneLine": "cool_fox measured on this PC: CPU side 2-3x cheaper than ours, 295 ms on the GPU, 2.7 fps; plan to build on it",
+      "sources": [
+        {
+          "url": "https://github.com/LowBacon/HybridGt/commit/92866710e21896b76130cb1083f07108a06de14b",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "cool_fox measured on this PC: CPU side 2-3x cheaper than ours, 295 ms on the GPU, 2.7 fps; plan to build on it",
+          "at": "2026-11-26T09:54:02Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "lowbacon/hybridgt",
+        "name": "hybridgt",
+        "words": [
+          "hybridgt"
+        ],
+        "hash": "6f4354537a04247a",
+        "projectId": "hybridgt"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:a7519c7c13a477a4df61ccc8d8dfa37ebb75c2fb3ed9e60b9719a21123494c0b",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t095003z-marvis-d8ec4ed6",
+      "key": "claim|marvis|https://bsky.app/profile/githubprojects.bsky.social/post/3n37fj2ixd522|41566",
+      "kind": "claim",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-26T09:50:03.142Z",
+      "detectedAt": "2026-11-26T10:06:25.426Z",
+      "title": "New claim about VIctory",
+      "oneLine": "Boot GTA 6 on PC VIctory is an open-source project that reportedly runs GTA 6's…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/githubprojects.bsky.social/post/3n37fj2ixd522",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "Boot GTA 6 on PC VIctory is an open-source project that reportedly runs GTA 6's unmodified Xbox code on Windows. Explo",
+          "at": "2026-11-26T09:50:03.142Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "Boot GTA 6 on PC VIctory is an open-source project that reportedly runs GTA 6's unmodified Xbox code on Windows. Explo"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "556a7eea9646c5f3",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:40d8ac333d6cd8ac7cfed5aaa73d251965fa12a059da9a29e3214c0755be8977",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T10:06:25.426Z",
+          "by": "desk",
+          "note": "The only sourcing is a single Bluesky post, which is weak on its own and insufficient to support an extraordinary claim about running unmodified Xbox code on Windows."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-26T10:06:25.426Z"
+    },
+    {
+      "id": "20261126t093229z-soldsawn-8gb-0744f762",
+      "key": "update|soldsawn-8gb|activity|41566",
+      "kind": "update",
+      "projectId": "soldsawn-8gb",
+      "projectName": "soldsawn 8GB",
+      "at": "2026-11-26T09:32:29Z",
+      "detectedAt": "2026-11-26T10:06:25.426Z",
+      "title": "soldsawn 8GB opened pull request #4",
+      "oneLine": "GPU: the diagnostics build compiles again (watch.rs after the merge)",
+      "sources": [
+        {
+          "url": "https://github.com/soldsawn/victory-nvidia-8gb/pull/4",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "GPU: the diagnostics build compiles again (watch.rs after the merge)",
+          "at": "2026-11-26T09:32:29Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "soldsawn/victory-nvidia-8gb",
+        "name": "soldsawn 8gb",
+        "words": [
+          "soldsawn",
+          "8gb",
+          "soldsawn-8gb"
+        ],
+        "hash": "016544e23ff01019",
+        "projectId": "soldsawn-8gb"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:0ede5c60433da11f62185b2a62d7228e91efe9995c9f400f4b571d79652a6fc8",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t093104z-anybox-331d271f",
+      "key": "update|anybox|activity|41566",
+      "kind": "update",
+      "projectId": "anybox",
+      "projectName": "AnyBox",
+      "at": "2026-11-26T09:31:04Z",
+      "detectedAt": "2026-11-26T10:06:25.426Z",
+      "title": "AnyBox pushed 2 commits",
+      "oneLine": "feat(d3d12_x): lit game world, title memory in video memory, frame and hang reports",
+      "sources": [
+        {
+          "url": "https://github.com/Dark3581/AnyBox/commit/c2a5b2f26807b143b4adff466479e383780c0a33",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "feat(d3d12_x): lit game world, title memory in video memory, frame and hang reports",
+          "at": "2026-11-26T09:13:10Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "dark3581/anybox",
+        "name": "anybox",
+        "words": [
+          "anybox"
+        ],
+        "hash": "9beaeed554946845",
+        "projectId": "anybox"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:2fc9ae57331ab9f58798ed75965494cd8bf7e013fd8717eaefa28960e6168076",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
