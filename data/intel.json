@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T22:50:24.589Z",
+  "updated": "2026-11-26T23:06:21.535Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T22:30:38.000Z",
-      "lastOkAt": "2026-11-26T22:50:24.589Z",
-      "seen": 17250,
-      "events": 620,
+      "lastCursor": "2026-11-26T23:01:08.000Z",
+      "lastOkAt": "2026-11-26T23:06:21.535Z",
+      "seen": 17500,
+      "events": 640,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T20:47:47.000Z",
-      "lastOkAt": "2026-11-26T22:50:24.589Z",
+      "lastOkAt": "2026-11-26T23:06:21.535Z",
       "seen": 28,
       "events": 20,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T22:50:24.589Z",
-      "seen": 4105,
+      "lastOkAt": "2026-11-26T23:06:21.535Z",
+      "seen": 4166,
       "events": 23,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T22:25:05.345Z",
-      "lastOkAt": "2026-11-26T22:50:24.589Z",
-      "seen": 27600,
+      "lastCursor": "2026-11-26T22:43:22.341Z",
+      "lastOkAt": "2026-11-26T23:06:21.535Z",
+      "seen": 28000,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T10:50:24.589Z",
-      "lastOkAt": "2026-11-26T22:50:24.589Z",
-      "seen": 8077,
+      "lastCursor": "2026-11-26T11:06:21.535Z",
+      "lastOkAt": "2026-11-26T23:06:21.535Z",
+      "seen": 8200,
       "events": 7,
       "errors": 0
     }
@@ -8817,6 +8817,57 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-26T22:20:22.485Z"
+    },
+    {
+      "id": "20261126t225542z-gta6-compat-layer-514bd274",
+      "key": "update|gta6-compat-layer|activity|41567",
+      "kind": "update",
+      "projectId": "gta6-compat-layer",
+      "projectName": "GTA6-COMPAT-LAYER (ScarlettCompat)",
+      "at": "2026-11-26T22:55:42Z",
+      "detectedAt": "2026-11-26T23:06:21.535Z",
+      "title": "GTA6-COMPAT-LAYER (ScarlettCompat) pushed 1 commit",
+      "oneLine": "Merge PC boot #296/#288/#290 fixes with GitHub gate-walk guard",
+      "sources": [
+        {
+          "url": "https://github.com/SSTGxf/ScarlettCompat/commit/b3524e6882e514d423c911fba2390100aac805f3",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Merge PC boot #296/#288/#290 fixes with GitHub gate-walk guard",
+          "at": "2026-11-26T22:55:42Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sstgxf/scarlettcompat",
+        "name": "gta6-compat-layer scarlettcompat",
+        "words": [
+          "gta6-compat-layer",
+          "scarlettcompat"
+        ],
+        "hash": "28c916d5ca180e63",
+        "projectId": "gta6-compat-layer"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:a4997de199423271a3508b052010038db041e7eb47bc52366b48de9d8c1a73ff",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
