@@ -71,7 +71,8 @@ export function getRace(
     const byClaim = all.toSorted((a, b) => b.score - a.score)
     const racers = rateAt
       ? all
-          .toSorted((a, b) => (b.ours?.rating ?? 0) - (a.ours?.rating ?? 0) || b.score - a.score)
+          // Ties keep the board's order, so the race and the board agree.
+          .toSorted((a, b) => (b.ours?.rating ?? 0) - (a.ours?.rating ?? 0))
           .slice(0, LANES)
       : byClaim.slice(0, LANES)
     const [lead] = byClaim

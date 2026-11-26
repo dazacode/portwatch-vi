@@ -179,7 +179,8 @@ type Overrides = {
   ignored?: object[]
   decided?: string[]
   removedNews?: string[]
-  pick?: object
+  /** `pw pick clear` leaves null. */
+  pick?: object | null
 }
 
 /** Unfiltered, with our findings on top. For dates and counts, never for text that is shown. */

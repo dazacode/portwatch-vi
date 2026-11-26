@@ -1739,33 +1739,7 @@
       "changes": []
     }
   ],
-  "pick": {
-    "id": "darkworldhm",
-    "at": "2026-11-25",
-    "reason": "Placed by us, by claim: 79.5%, the highest on the board. Its Rumble stream shows free roam at about 12-15 fps, peaking at 24, the best frame rate seen. Private code, untested outside.",
-    "next": [
-      {
-        "id": "doomsday",
-        "at": "2026-11-25",
-        "reason": "Placed by us, by claim: 78.7%. PortWatch says it saw this private group's victory-amd build run ray-traced lighting at about 3-5 fps, rarely crashing. Private code."
-      },
-      {
-        "id": "dexnom",
-        "at": "2026-11-25",
-        "reason": "Placed by us, by claim: 78%, the highest with public code. PortWatch saw ray-traced lighting on an RX 7900 XTX; its README calls RT experimental, about 1 fps on, 3-4 off."
-      },
-      {
-        "id": "belobug",
-        "at": "2026-11-25",
-        "reason": "Placed by us, by claim: 77.7%, just behind DexNom. A clip posted with its repo link shows driving in a lit open world at about 4 fps; its README says not playable yet."
-      },
-      {
-        "id": "cgbj",
-        "at": "2026-11-25",
-        "reason": "Placed by us, by claim: 64.5%. The picture closest to the console of any build, driving the Gone Fishing boat at 4.5 fps, but only that mission has been shown. Private code."
-      }
-    ]
-  },
+  "pick": null,
   "ignored": [
     {
       "repo": "RandomSkelly/Series0nLinux",
