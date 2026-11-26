@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T13:20:23.022Z",
+  "updated": "2026-11-26T13:35:21.925Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T13:02:19.000Z",
-      "lastOkAt": "2026-11-26T13:20:23.022Z",
-      "seen": 8250,
-      "events": 271,
+      "lastCursor": "2026-11-26T13:31:06.000Z",
+      "lastOkAt": "2026-11-26T13:35:21.925Z",
+      "seen": 8500,
+      "events": 290,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T10:11:01.000Z",
-      "lastOkAt": "2026-11-26T13:20:23.022Z",
+      "lastOkAt": "2026-11-26T13:35:21.925Z",
       "seen": 20,
       "events": 12,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T13:20:23.022Z",
-      "seen": 1927,
+      "lastOkAt": "2026-11-26T13:35:21.925Z",
+      "seen": 1987,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T12:52:08.447Z",
-      "lastOkAt": "2026-11-26T13:20:23.022Z",
-      "seen": 13200,
-      "events": 14,
+      "lastCursor": "2026-11-26T13:15:16.000Z",
+      "lastOkAt": "2026-11-26T13:35:21.925Z",
+      "seen": 13600,
+      "events": 16,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T01:20:23.022Z",
-      "lastOkAt": "2026-11-26T13:20:23.022Z",
-      "seen": 3887,
+      "lastCursor": "2026-11-26T01:35:21.925Z",
+      "lastOkAt": "2026-11-26T13:35:21.925Z",
+      "seen": 4007,
       "events": 7,
       "errors": 0
     }
@@ -6364,6 +6364,270 @@
       "sensitive": false,
       "audit": null,
       "chain": "sha256:792026969306d60faec29b3d7f2ab3b1bb1bdd2aea29a0bd87f30639bad3a1fb",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t132832z-gta-vi-astral-0632d09f",
+      "key": "update|gta-vi-astral|activity|41567",
+      "kind": "update",
+      "projectId": "gta-vi-astral",
+      "projectName": "ASTRAL",
+      "at": "2026-11-26T13:28:32Z",
+      "detectedAt": "2026-11-26T13:35:21.925Z",
+      "title": "ASTRAL pushed 6 commits",
+      "oneLine": "Enable real PS 39/39 fullscreen composite shader alongside PS 70/70",
+      "sources": [
+        {
+          "url": "https://github.com/Archivist-Atlas/gta-vi-astral/commit/b819a2bff11c692e480bb98e03f22d93cc223ef3",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Enable real PS 39/39 fullscreen composite shader alongside PS 70/70",
+          "at": "2026-11-26T13:28:32Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "archivist-atlas/gta-vi-astral",
+        "name": "astral",
+        "words": [
+          "astral",
+          "gta-vi-astral"
+        ],
+        "hash": "ad1bf4216c429290",
+        "projectId": "gta-vi-astral"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:73d892749443b668b5f71862c2456cd5d6c1fdd7f0cf3588921ca19807915ad5",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T13:35:21.925Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub commit title with no excerpt or independent corroboration, so it is too thin to plainly support the update."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T13:35:21.925Z"
+    },
+    {
+      "id": "20261126t132316z-launcher-885199d8",
+      "key": "update|launcher|activity|41567",
+      "kind": "update",
+      "projectId": "launcher",
+      "projectName": "VILauncher",
+      "at": "2026-11-26T13:23:16Z",
+      "detectedAt": "2026-11-26T13:35:21.925Z",
+      "title": "VILauncher opened pull request #28",
+      "oneLine": "Compatibilidade em abas e backend como grade de builds",
+      "sources": [
+        {
+          "url": "https://github.com/SixLauncher/launcher/pull/28",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Compatibilidade em abas e backend como grade de builds",
+          "at": "2026-11-26T13:23:16Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sixlauncher/launcher",
+        "name": "vilauncher",
+        "words": [
+          "vilauncher",
+          "launcher"
+        ],
+        "hash": "9402c081601a86d8",
+        "projectId": "launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:7bcc7c3a5fa43a4ff52a395a74101fa87143e3b24f845bff02a594ecc6f9622b",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T13:35:21.925Z",
+          "by": "desk",
+          "note": "The sole source is the project's own repository with an empty excerpt, so the PR's content and significance are unverified and it is not independent confirmation."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T13:35:21.925Z"
+    },
+    {
+      "id": "20261126t131516z-scene-2407aa8d",
+      "key": "takedown|-|https://news.google.com/rss/articles/cbmihwfbvv95cuxpnnffskfeew4yq3vay1zkrugwvurwuk8tqmrts3i4uvf5wg53wgxjbgxibgritevyy0hlng5nqnlyq2fcnfpgemr2t20trvracvdtowxjyxrqoeq1tmmwwgg1slqzeg82d0zfwmlys3jjvuzbnvy2x1y1c3vbbersd29ks1hpqtg?oc=5|41567",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-26T13:15:16.000Z",
+      "detectedAt": "2026-11-26T13:35:21.925Z",
+      "title": "Pasquale Pillitteri in a takedown report",
+      "oneLine": "GTA 6 PC port taken down as Take-Two hits 3,007 GitHub repositories",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNnFfSkFEeW4yQ3VaY1ZkRUgwVURwUk8tQmRtS3I4UVF5WG53WGxJbGxIbGRiTEVYY0hlNG5nQnlYQ2FCNFpGemR2T20tRVRacVdTOWxJYXRQOEQ1TmMwWGg1SlQzeG82d0ZFWmlYS3JjVUZBNVY2X1Y1c3VBbERSd29kS1hpQTg?oc=5",
+          "host": "news.google.com",
+          "outlet": "Pasquale Pillitteri",
+          "title": "GTA 6 PC port taken down as Take-Two hits 3,007 GitHub repositories",
+          "at": "2026-11-26T13:15:16.000Z",
+          "kind": "outside",
+          "authorHash": "663b327dba",
+          "excerpt": "GTA 6 PC port taken down as Take-Two hits 3,007 GitHub repositories"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "c1b51c8511788dfc",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:31b6a82024111e358ca1dc925ffdf7f75c8705289e293e28ccee872e1f1b5cea",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t131344z-dexnom-718f3a35",
+      "key": "update|dexnom|activity|41567",
+      "kind": "update",
+      "projectId": "dexnom",
+      "projectName": "DexNom",
+      "at": "2026-11-26T13:13:44Z",
+      "detectedAt": "2026-11-26T13:35:21.925Z",
+      "title": "DexNom opened pull request #61",
+      "oneLine": "Respect D3D12 limits, Preload and Play, POPS diagnostics, and RTX 5060 shader/pipeline fixes",
+      "sources": [
+        {
+          "url": "https://github.com/DexNom/VIctory/pull/61",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Respect D3D12 limits, Preload and Play, POPS diagnostics, and RTX 5060 shader/pipeline fixes",
+          "at": "2026-11-26T13:13:44Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "dexnom/victory",
+        "name": "dexnom",
+        "words": [
+          "dexnom"
+        ],
+        "hash": "8f46482e794407ea",
+        "projectId": "dexnom"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:be0eae7cff1e8f41f9718a5a1ce8ee7fff3d79995cabd003e7201e50875ac398",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t131244z-scene-3394aa58",
+      "key": "takedown|-|https://bsky.app/profile/tudogta.bsky.social/post/3n37qtj6mai24|41567",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-26T13:12:44.041Z",
+      "detectedAt": "2026-11-26T13:35:21.925Z",
+      "title": "Bluesky in a takedown report",
+      "oneLine": "📰 Take-Two derruba 3.007 repos de port de GTA 6 para PC no GitHub em enorme repressão…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/tudogta.bsky.social/post/3n37qtj6mai24",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "📰 Take-Two derruba 3.007 repos de port de GTA 6 para PC no GitHub em enorme repressão DMCA — enquanto ferramentas de IA",
+          "at": "2026-11-26T13:12:44.041Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "📰 Take-Two derruba 3.007 repos de port de GTA 6 para PC no GitHub em enorme repressão DMCA — enquanto ferramentas de IA"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "a4551a2821e88bca",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:8eb434fe9f6c9acf7047b22a9968f3cd29549ef35cad91ab85922228f94c7a49",
       "reportId": null,
       "discordAt": null,
       "revisions": [],
