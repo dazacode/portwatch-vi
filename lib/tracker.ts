@@ -17,7 +17,7 @@ import { rate } from "@/lib/rating.mjs"
 import { isPrivateBuild, overall, scoreEffort } from "@/lib/scoring.mjs"
 import { goalsOf, stageLabel, stageOf, stageRank } from "@/lib/stages.mjs"
 import { getUpstream } from "@/lib/upstream"
-import { verify } from "@/lib/verification.mjs"
+import { seenByPortwatch, verify } from "@/lib/verification.mjs"
 
 export type Effort = {
   id: string
@@ -273,7 +273,7 @@ export function getStandings(tracker: Tracker, evidence: Evidence[]): Standing[]
     .map((e): Standing => {
       const s = scoreEffort(e)
       const v = verify(
-        evidence.filter((x) => x.effortId === e.id),
+        [...evidence.filter((x) => x.effortId === e.id), ...seenByPortwatch(e)],
         s.score
       )
       const ours = rate(e, v.stages)

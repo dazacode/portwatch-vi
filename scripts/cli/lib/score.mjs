@@ -2,13 +2,13 @@
 import { isPrivateBuild, scoreEffort } from '../../../lib/scoring.mjs';
 import { rate } from '../../../lib/rating.mjs';
 import { goalsOf, stageLabel, stageOf } from '../../../lib/stages.mjs';
-import { verify } from '../../../lib/verification.mjs';
+import { seenByPortwatch, verify } from '../../../lib/verification.mjs';
 
 export const evidenceFor = (state, id) => state.evidence.filter((e) => e.effortId === id);
 
 export function scoreView(state, effort) {
   const score = scoreEffort(effort);
-  const checked = verify(evidenceFor(state, effort.id), score.score);
+  const checked = verify([...evidenceFor(state, effort.id), ...seenByPortwatch(effort)], score.score);
   const ours = rate(effort, checked.stages);
   return {
     claimed: score.score,

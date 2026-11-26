@@ -40,6 +40,11 @@ const EVIDENCE = [
     "The same, when a free AI model has read the report. Its quote must be in the report, and it never counts past In the world.",
   ],
   [WEIGHTS.rule, "Matched by text rules", "The same, when only text rules have read the report."],
+  [
+    WEIGHTS.portwatch,
+    "Seen by PortWatch",
+    "The tracker this site builds on marks the build verified: its owner watched it run. Counts like a live challenge, up to the furthest stage the project claims.",
+  ],
 ].map(([weight, ...rest]) => [Math.round(Number(weight) * 100), ...rest])
 const percent = (n: number) => `${Math.round(n * 100)}%`
 const RATINGS = SIZES.map((size, i) => [size, RULES[i]])
