@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T19:20:20.660Z",
+  "updated": "2026-11-26T19:35:28.371Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T19:01:04.000Z",
-      "lastOkAt": "2026-11-26T19:20:20.660Z",
-      "seen": 14000,
-      "events": 492,
+      "lastCursor": "2026-11-26T19:31:07.000Z",
+      "lastOkAt": "2026-11-26T19:35:28.371Z",
+      "seen": 14250,
+      "events": 512,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T18:18:39.000Z",
-      "lastOkAt": "2026-11-26T19:20:20.660Z",
+      "lastOkAt": "2026-11-26T19:35:28.371Z",
       "seen": 25,
       "events": 17,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T19:20:20.660Z",
-      "seen": 3312,
+      "lastOkAt": "2026-11-26T19:35:28.371Z",
+      "seen": 3373,
       "events": 23,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T18:46:01.343Z",
-      "lastOkAt": "2026-11-26T19:20:20.660Z",
-      "seen": 22400,
+      "lastCursor": "2026-11-26T19:15:07.946Z",
+      "lastOkAt": "2026-11-26T19:35:28.371Z",
+      "seen": 22800,
       "events": 24,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T07:20:20.660Z",
-      "lastOkAt": "2026-11-26T19:20:20.660Z",
-      "seen": 6586,
+      "lastCursor": "2026-11-26T07:35:28.371Z",
+      "lastOkAt": "2026-11-26T19:35:28.371Z",
+      "seen": 6701,
       "events": 7,
       "errors": 0
     }
@@ -8106,10 +8106,17 @@
       "chain": "sha256:640520559f6a8f8b127f1d6125c3b6cdebe0ebe13c1518ac711729a198b945b6",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T19:35:28.371Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository, which is primary but not independent, and its bare excerpt 'reached the intro' is too thin to substantiate a boot claim on its own."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T19:35:28.371Z"
     },
     {
       "id": "20261126t163601z-leonida-continued-f061de7b",
