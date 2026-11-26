@@ -37,6 +37,7 @@ export function setField(state, overrides, id, path, raw, { force = false, rebas
   if (!PATCH_FIELDS.has(path)) {
     throw invalid(`${path} belongs to upstream; it cannot be patched.`, 'See `./pw fields`.');
   }
+  if (raw === UPSTREAM) return dropField(state, overrides, id, path, before);
   after = parseField(path, raw);
   if (!force && JSON.stringify(before) === JSON.stringify(after)) return { noop: true, before, after };
 
@@ -66,6 +67,21 @@ export function setField(state, overrides, id, path, raw, { force = false, rebas
   const patch = { id, from: { [path]: before }, to: { [path]: after } };
   overrides.patches.push(patch);
   return { change: { project: id, path, from: before, to: after }, before, after, patch };
+}
+
+/** `field=upstream`: our value goes, so upstream's shows. Its own numbers need no written step. */
+export const UPSTREAM = 'upstream';
+
+function dropField(state, overrides, id, path, before) {
+  const rawEffort = state.tracker.efforts.find((e) => e.id === id);
+  const after = clone(getPath(rawEffort, path));
+  const owners = patchesFor(overrides, id).filter((p) => Object.hasOwn(p.to, path));
+  if (owners.length === 0) return { noop: true, before, after };
+  for (const p of owners) {
+    delete p.to[path];
+    delete p.from[path];
+  }
+  return { change: { project: id, path, from: before, to: after }, before, after, patch: owners.at(-1) };
 }
 
 /** Put a generated change line on the same record the values were written to. */

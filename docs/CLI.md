@@ -123,6 +123,7 @@ Values:
 - `gta.stability`: `unknown`, `constant`, `often`, `sometimes`, `rarely`, `stable`, or a number 0–1
 - `summary`, `highlights` (max 3), `blockers` (max 3): JSON arrays for the lists
 - `verification`: `self-reported` or `reproduced`
+- Any patched field takes `upstream`: our value is dropped so upstream's shows, even a number off the written steps (`./pw set cgbj gta.story=upstream`)
 - `manualScore`: a number or `null`, only for an owner's hand call
 - `tier`: `tracked` or `watchlist`
 

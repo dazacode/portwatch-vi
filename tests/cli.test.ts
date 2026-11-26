@@ -363,6 +363,22 @@ describe("pw set", () => {
     expect(overrides.patches[0].to["gta.world"]).toBe(0.5)
   })
 
+  it("hands a field back to upstream, off the written steps too", async () => {
+    await call(["set", "alpha", "gta.story=0.6", "summary=Ours."])
+    const trackerFile = path.join(data, "tracker.json")
+    const tracker = JSON.parse(await readFile(trackerFile, "utf8"))
+    tracker.efforts[0].gta.story = 0.8
+    await writeFile(trackerFile, JSON.stringify(tracker, null, 2))
+
+    const result = await call(["set", "alpha", "gta.story=upstream", "--rebase", "--json"])
+    expect(result.code).toBe(0)
+    expect(json(result).data.changes[0]).toMatchObject({ path: "gta.story", to: 0.8 })
+    const patch = (await readOverrides()).patches[0]
+    expect(patch.to).not.toHaveProperty(["gta.story"])
+    expect(patch.from).not.toHaveProperty(["gta.story"])
+    expect(patch.to.summary).toBe("Ours.")
+  })
+
   it("is blocked by a lock", async () => {
     await mkdir(path.join(data, ".pw"), { recursive: true })
     await writeFile(path.join(data, ".pw", "lock"), JSON.stringify({ pid: process.pid }))
