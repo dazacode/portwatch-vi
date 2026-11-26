@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T18:20:24.880Z",
+  "updated": "2026-11-26T18:39:19.782Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T18:01:03.000Z",
-      "lastOkAt": "2026-11-26T18:20:24.880Z",
-      "seen": 13000,
-      "events": 455,
+      "lastCursor": "2026-11-26T18:35:48.000Z",
+      "lastOkAt": "2026-11-26T18:39:19.782Z",
+      "seen": 13250,
+      "events": 475,
       "errors": 0
     },
     "evidence": {
-      "lastCursor": "2026-11-26T15:15:41.000Z",
-      "lastOkAt": "2026-11-26T18:20:24.880Z",
-      "seen": 22,
-      "events": 14,
+      "lastCursor": "2026-11-26T18:18:39.000Z",
+      "lastOkAt": "2026-11-26T18:39:19.782Z",
+      "seen": 25,
+      "events": 17,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:10:17.807Z",
-      "lastOkAt": "2026-11-26T18:20:24.880Z",
-      "seen": 3068,
+      "lastOkAt": "2026-11-26T18:39:19.782Z",
+      "seen": 3129,
       "events": 22,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T17:34:38.000Z",
-      "lastOkAt": "2026-11-26T18:20:24.880Z",
-      "seen": 20800,
-      "events": 23,
+      "lastCursor": "2026-11-26T18:30:03.000Z",
+      "lastOkAt": "2026-11-26T18:39:19.782Z",
+      "seen": 21200,
+      "events": 24,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T06:20:24.880Z",
-      "lastOkAt": "2026-11-26T18:20:24.880Z",
-      "seen": 6127,
+      "lastCursor": "2026-11-26T06:39:19.782Z",
+      "lastOkAt": "2026-11-26T18:39:19.782Z",
+      "seen": 6241,
       "events": 7,
       "errors": 0
     }
@@ -7776,6 +7776,380 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-26T18:20:24.880Z"
+    },
+    {
+      "id": "20261126t183430z-scripthook-vi-d0d14313",
+      "key": "update|scripthook-vi|activity|41567",
+      "kind": "update",
+      "projectId": "scripthook-vi",
+      "projectName": "scripthook-vi",
+      "at": "2026-11-26T18:34:30Z",
+      "detectedAt": "2026-11-26T18:39:19.782Z",
+      "title": "scripthook-vi opened pull request #2",
+      "oneLine": "Async natives (Task<T>): pin the task, 64-bit model keys (ABI 1.7)",
+      "sources": [
+        {
+          "url": "https://github.com/modpapi/scripthook-vi/pull/2",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Async natives (Task<T>): pin the task, 64-bit model keys (ABI 1.7)",
+          "at": "2026-11-26T18:34:30Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "modpapi/scripthook-vi",
+        "name": "scripthook-vi",
+        "words": [
+          "scripthook-vi"
+        ],
+        "hash": "9025996149518097",
+        "projectId": "scripthook-vi"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:52dd3d56bce795832a4dd0047b818d1a388687f912472bea01f183111244e1a1",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T18:39:19.782Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub entry with no excerpt, so it is primary but not independent and too thin to plainly verify the PR claim."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T18:39:19.782Z"
+    },
+    {
+      "id": "20261126t183003z-launcher-2bf06af7",
+      "key": "claim|launcher|https://news.google.com/rss/articles/cbmiqafbvv95cuxpls14n1fnsfe5sm1la1u0ugjndzc4nhblb2c2v09nz2vtctzkq084enflqxrwtfvzu3phcmvlsjywog5qdtk1b1e1utjwrxfkn2k4ofr6njfpzjfozlpflvjuwevms3r5nm5oltbfvnf0ath5swtwt1a1m1bhawrrathnrvvvas1gnhdom1puti12azzvwkdeexvtszn4q1lvwgleaxvywjm?oc=5|41567",
+      "kind": "claim",
+      "projectId": "launcher",
+      "projectName": "VILauncher",
+      "at": "2026-11-26T18:30:03.000Z",
+      "detectedAt": "2026-11-26T18:39:19.782Z",
+      "title": "New claim about VILauncher",
+      "oneLine": "GTA 6 gets its first unofficial PC mod menu and launcher",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLS14N1FnSFE5Sm1La1U0UGJNdzc4NHBLb2c2V09nZ2VTcTZkQ084enFLQXRWTFVZU3phcmVLSjYwOG5qdTk1b1E1UTJwRXFKN2k4OFR6NjFPZjFoZlpFLVJUWEVMS3R5Nm5OLTBfVnF0aTh5SWtWT1A1M1BHaWRraThnRVVVaS1GNHdoM1puTi12azZVWkdEeXVTSzN4Q1lVWGlEaXVYWjM?oc=5",
+          "host": "news.google.com",
+          "outlet": "TweakTown",
+          "title": "GTA 6 gets its first unofficial PC mod menu and launcher",
+          "at": "2026-11-26T18:30:03.000Z",
+          "kind": "outside",
+          "authorHash": "be6607c56b",
+          "excerpt": "GTA 6 gets its first unofficial PC mod menu and launcher"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sixlauncher/launcher",
+        "name": "vilauncher",
+        "words": [
+          "vilauncher",
+          "launcher"
+        ],
+        "hash": "739b7b81e8daa1dd",
+        "projectId": "launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:8a9c405f2d47f1774a31d0e5fcb311bdea39397dfdb8337c0cfa75bc2cf361ac",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T18:39:19.782Z",
+          "by": "desk",
+          "note": "The single TweakTown item only restates its own headline without substantive detail, and one outside source alone is too thin to support a first-of-its-kind claim about an unreleased game."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-26T18:39:19.782Z"
+    },
+    {
+      "id": "20261126t182438z-i95-gta6-pc-launcher-94a54277",
+      "key": "update|i95-gta6-pc-launcher|activity|41567",
+      "kind": "update",
+      "projectId": "i95-gta6-pc-launcher",
+      "projectName": "i95-GTA6-PC-Launcher",
+      "at": "2026-11-26T18:24:38Z",
+      "detectedAt": "2026-11-26T18:39:19.782Z",
+      "title": "i95-GTA6-PC-Launcher pushed 4 commits",
+      "oneLine": "Launcher: Output folder setting in the footer; builds, source, shader caches, saves and logs all go to the chosen folder (pointer in %LOCALAPPDATA%\\6ixpack\\location.txt)",
+      "sources": [
+        {
+          "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/8f6494a5e1cb867f47bf76f83169e3e0247c832c",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Launcher: Output folder setting in the footer; builds, source, shader caches, saves and logs all go to the chosen folder",
+          "at": "2026-11-26T18:20:02Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "designwithtommy/i95-gta6-pc-launcher",
+        "name": "i95-gta6-pc-launcher",
+        "words": [
+          "i95-gta6-pc-launcher"
+        ],
+        "hash": "c5e78fb71ad29691",
+        "projectId": "i95-gta6-pc-launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:ccf680ed91bd2e1a018e8600b1fab0040304c08934c22adf93859201206de6ed",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t181839z-anyxboxx-de9ca3e0",
+      "key": "evidence|anyxboxx|world|41567",
+      "kind": "evidence",
+      "projectId": "anyxboxx",
+      "projectName": "AnyXboxX",
+      "at": "2026-11-26T18:18:39Z",
+      "detectedAt": "2026-11-26T18:39:19.782Z",
+      "title": "New test evidence on AnyXboxX — world",
+      "oneLine": "world reached at 101 s, 11.0 fps avg",
+      "sources": [
+        {
+          "url": "https://github.com/LooperSalty/AnyXboxX/issues/428",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "world reached at 101 s, 11.0 fps avg",
+          "at": "2026-11-26T18:18:39Z",
+          "kind": "primary",
+          "authorHash": "5123f6514ac5",
+          "excerpt": "world reached at 101 s, 11.0 fps avg"
+        }
+      ],
+      "fingerprint": {
+        "repo": "loopersalty/anyxboxx",
+        "name": "anyxboxx",
+        "words": [
+          "anyxboxx"
+        ],
+        "hash": "7aea36c6a03c39ce",
+        "projectId": "anyxboxx"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:82ccfa25c981cc5d676714c3eaaca0e45b2ddbf0e48a957be38e225086dd2e58",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t180437z-bcpack-gpu-hlsl-6d5a488b",
+      "key": "update|bcpack-gpu-hlsl|activity|41567",
+      "kind": "update",
+      "projectId": "bcpack-gpu-hlsl",
+      "projectName": "bcpack-gpu-hlsl",
+      "at": "2026-11-26T18:04:37Z",
+      "detectedAt": "2026-11-26T18:39:19.782Z",
+      "title": "bcpack-gpu-hlsl pushed 1 commit",
+      "oneLine": "feat(bench): add Open-World DX12 Bottleneck Suite v0.14.1 (--bottleneck-suite)",
+      "sources": [
+        {
+          "url": "https://github.com/POMXARK/bcpack-gpu-hlsl/commit/fe9f21c23b7d52774a1c6eb48a1b6b60002ed55b",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "feat(bench): add Open-World DX12 Bottleneck Suite v0.14.1 (--bottleneck-suite)",
+          "at": "2026-11-26T18:04:37Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "pomxark/bcpack-gpu-hlsl",
+        "name": "bcpack-gpu-hlsl",
+        "words": [
+          "bcpack-gpu-hlsl"
+        ],
+        "hash": "891c888c34200230",
+        "projectId": "bcpack-gpu-hlsl"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:1f48a76d40d5671dd6de362b840eef97ec3a925b81532408c39dd220649ebce4",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t173413z-xcl-f48a3575",
+      "key": "evidence|xcl|boots|41567",
+      "kind": "evidence",
+      "projectId": "xcl",
+      "projectName": "XCL",
+      "at": "2026-11-26T17:34:13Z",
+      "detectedAt": "2026-11-26T18:39:19.782Z",
+      "title": "New test evidence on XCL — boots",
+      "oneLine": "reached the intro",
+      "sources": [
+        {
+          "url": "https://github.com/xcl-dev/xcl/issues/2841",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "reached the intro",
+          "at": "2026-11-26T17:34:13Z",
+          "kind": "primary",
+          "authorHash": "ef4276e9ede4",
+          "excerpt": "reached the intro"
+        }
+      ],
+      "fingerprint": {
+        "repo": "xcl-dev/xcl",
+        "name": "xcl",
+        "words": [
+          "xcl"
+        ],
+        "hash": "6072d626c933726c",
+        "projectId": "xcl"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:640520559f6a8f8b127f1d6125c3b6cdebe0ebe13c1518ac711729a198b945b6",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t163601z-leonida-continued-f061de7b",
+      "key": "evidence|leonida-continued|boots|41567",
+      "kind": "evidence",
+      "projectId": "leonida-continued",
+      "projectName": "Leonida Continued",
+      "at": "2026-11-26T16:36:01Z",
+      "detectedAt": "2026-11-26T18:39:19.782Z",
+      "title": "New test evidence on Leonida Continued — boots",
+      "oneLine": "The FPS counter kept updating while the GTA VI title artwork stayed on screen.",
+      "sources": [
+        {
+          "url": "https://github.com/ubiquitarianism/leonida/issues/2380",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "The FPS counter kept updating while the GTA VI title artwork stayed on screen.",
+          "at": "2026-11-26T16:36:01Z",
+          "kind": "primary",
+          "authorHash": "681c357ca79a",
+          "excerpt": "The FPS counter kept updating while the GTA VI title artwork stayed on screen."
+        }
+      ],
+      "fingerprint": {
+        "repo": "ubiquitarianism/leonida",
+        "name": "leonida continued",
+        "words": [
+          "leonida",
+          "continued",
+          "leonida-continued"
+        ],
+        "hash": "7fe0e40dd7502f5c",
+        "projectId": "leonida-continued"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:90c23edf22f3741a513acb75c2a10a03998f971415df50a7c23b5b6035fcfb52",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
