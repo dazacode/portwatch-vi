@@ -172,14 +172,15 @@
       "publishedAt": "2026-11-24T11:13:57Z",
       "category": "Port",
       "title": "Exclusive: CGBJ gets GTA VI in game, walking and talking in an unlit world",
-      "dek": "CGBJ's VIctory and XCL-based build lets a player walk around and talk to NPCs. Its public source is now available at codec-d/cool_fox.",
+      "dek": "CGBJ's VIctory and XCL-based build lets a player walk around and talk to NPCs. Its code was public briefly and is private again.",
       "updatedAt": "2026-11-24",
       "body": [
         "A group called CGBJ has got GTA VI into its game world on PC, and a player can move in it. With a controller they walk around, talk to NPCs and open the in-game menu. PortWatch has verified that it gets in game. No public project has shown a player moving yet.",
         "It is far from playable, and it runs very slowly. In the run where a player walked around, the screen was black. A 77-second video posted on X on Tuesday shows more: GTA VI's opening scenes in flat colours with no lighting, from a car's interior to a street of waving NPCs, a guard and a prison yard.",
-        "CGBJ's build is based on VIctory and also takes some of XCL's work. The original project code was private, but it is now public at codec-d/cool_fox.",
+        "CGBJ's build is based on VIctory and also takes some of XCL's work. Its code is private; it was public briefly as codec-d/cool_fox on 2026-11-26.",
         "We've added CGBJ to the tracker at 72%, at our In-game stage, which puts it first. That rests on our own check: the video doesn't name the project.",
-        "Update, 2026-11-26: CGBJ's repository is public and the entry now participates in the public race as codec-d/cool_fox."
+        "Update, 2026-11-26: CGBJ's repository is public and the entry now participates in the public race as codec-d/cool_fox.",
+        "Update, later on 2026-11-26: the codec-d/cool_fox repository is offline, so CGBJ is listed as a private build again."
       ],
       "sources": [
         {
@@ -1319,10 +1320,7 @@
       "id": "cgbj",
       "name": "CGBJ",
       "avatar": "assets/img/efforts/cgbj.png",
-      "repo": "codec-d/cool_fox",
-      "gpu": [
-        "NVIDIA"
-      ],
+      "repo": null,
       "basedOn": [
         "marvis",
         "xcl"
@@ -1333,20 +1331,19 @@
         "url": "https://v.redd.it/137k5pow5w3i1"
       },
       "link": "news/2026-11-24-cgbj-in-game.html",
-      "byline": "Public code · based on VIctory and XCL",
+      "byline": "Private code · based on VIctory and XCL",
       "tier": "tracked",
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "Public VIctory/XCL build, PortWatch-verified. Owner rates story progress at 80%, rendering 0.85 and stability 0.85. It averages 25 fps on NVIDIA with 8 GB system RAM and 16 GB VRAM.",
+      "summary": "Private VIctory/XCL build, PortWatch-verified. Owner rates story progress at 80%, rendering 0.85 and stability 0.85. It averages 25 fps with 8 GB system RAM and 16 GB VRAM. Its code was public briefly and is offline now.",
       "highlights": [
         "Owner ratings: 80% story, rendering 0.85, stability 0.85",
-        "25 fps gameplay average on NVIDIA",
-        "Public GPL-3.0 source at codec-d/cool_fox"
+        "25 fps gameplay average"
       ],
       "blockers": [
         "Minor visual glitches remain",
         "Gameplay does not sustain 30 fps; 25 fps is the reported average",
-        "Independent reproduction and README verification are still needed"
+        "Code is private, so nobody outside the group can test or reproduce it"
       ],
       "provenOn": null,
       "gta": {
@@ -1361,22 +1358,10 @@
         "stability": 0.85
       },
       "verification": "portwatch",
-      "stats": {
-        "stars": 293,
-        "forks": 82,
-        "openIssues": 1,
-        "createdAt": "2026-11-26T04:16:02Z",
-        "pushedAt": "2026-11-26T06:58:37Z",
-        "archived": false,
-        "missing": true,
-        "commits7d": 100,
-        "mentions7d": 1,
-        "missingStatus": 404
-      },
+      "stats": {},
       "assessedAt": "2026-11-26",
       "assessedBy": "manual",
-      "claims": [],
-      "readmeSha": "65a0f88061b572ff84f4dd54956732be980c400c7f85c52dc5f98de10471e052"
+      "claims": []
     },
     {
       "id": "victory-gta6",
@@ -8265,6 +8250,11 @@
       "date": "2026-11-26",
       "kind": "up",
       "text": "NotNozy takes the lead at 87.8%."
+    },
+    {
+      "date": "2026-11-26",
+      "kind": "removed",
+      "text": "CGBJ moves back to Private builds: its code at codec-d/cool_fox is offline. Its rating is unchanged."
     }
   ],
   "history": [
