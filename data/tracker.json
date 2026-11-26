@@ -172,14 +172,14 @@
       "publishedAt": "2026-11-24T11:13:57Z",
       "category": "Port",
       "title": "Exclusive: CGBJ gets GTA VI in game, walking and talking in an unlit world",
-      "dek": "A private build based on VIctory and XCL lets a player walk around and talk to NPCs, very slowly. A video shows the opening scenes in flat colours, without lighting.",
+      "dek": "CGBJ's VIctory and XCL-based build lets a player walk around and talk to NPCs. Its public source is now available at codec-d/cool_fox.",
       "updatedAt": "2026-11-24",
       "body": [
         "A group called CGBJ has got GTA VI into its game world on PC, and a player can move in it. With a controller they walk around, talk to NPCs and open the in-game menu. PortWatch has verified that it gets in game. No public project has shown a player moving yet.",
         "It is far from playable, and it runs very slowly. In the run where a player walked around, the screen was black. A 77-second video posted on X on Tuesday shows more: GTA VI's opening scenes in flat colours with no lighting, from a car's interior to a street of waving NPCs, a guard and a prison yard.",
-        "CGBJ's code is private. It builds on VIctory, the open-source layer whose author first showed GTA VI's menus on a livestream on Monday, and also takes some of XCL's work. Both are public on GitHub; CGBJ's changes aren't, so nobody outside the group can test them.",
-        "We've added CGBJ to the tracker at 72%, at our In-game stage, which puts it first. That rests on our own check: the video doesn't name the project, and nobody outside the group can reproduce the result yet.",
-        "Update, 20:10 UTC: our race now ranks only projects with public code, so CGBJ's private build is listed below it without a rank, still at 72%. It counts toward our overall progress number, which omonkey's private build now leads at 76%, and it shows on the cards of VIctory and XCL as a build on their code."
+        "CGBJ's build is based on VIctory and also takes some of XCL's work. The original project code was private, but it is now public at codec-d/cool_fox.",
+        "We've added CGBJ to the tracker at 72%, at our In-game stage, which puts it first. That rests on our own check: the video doesn't name the project.",
+        "Update, 2026-11-26: CGBJ's repository is public and the entry now participates in the public race as codec-d/cool_fox."
       ],
       "sources": [
         {
@@ -1259,7 +1259,7 @@
       "id": "cgbj",
       "name": "CGBJ",
       "avatar": "assets/img/efforts/cgbj.png",
-      "repo": null,
+      "repo": "codec-d/cool_fox",
       "gpu": [
         "NVIDIA"
       ],
@@ -1273,20 +1273,20 @@
         "url": "https://v.redd.it/137k5pow5w3i1"
       },
       "link": "news/2026-11-24-cgbj-in-game.html",
-      "byline": "Private code · based on VIctory and XCL",
+      "byline": "Public code · based on VIctory and XCL",
       "tier": "tracked",
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "Private VIctory/XCL build, PortWatch-verified. Owner rates story progress at 80%, rendering 0.85 and stability 0.85. It averages 20 fps on NVIDIA with 10 GB RAM and 16 GB VRAM (not a typo); code is private.",
+      "summary": "Public VIctory/XCL build, PortWatch-verified. Owner rates story progress at 80%, rendering 0.85 and stability 0.85. It averages 25 fps on NVIDIA with 8 GB system RAM and 16 GB VRAM.",
       "highlights": [
         "Owner ratings: 80% story, rendering 0.85, stability 0.85",
-        "20 fps gameplay average (NVIDIA, 10 GB RAM and 16 GB VRAM, not a typo)",
-        "Graphics look close to the console; code remains private"
+        "25 fps gameplay average on NVIDIA",
+        "Public GPL-3.0 source at codec-d/cool_fox"
       ],
       "blockers": [
         "Minor visual glitches remain",
-        "Gameplay does not sustain 30 fps; 20 fps is the reported average",
-        "Code is private, so nobody outside the group can test or reproduce it"
+        "Gameplay does not sustain 30 fps; 25 fps is the reported average",
+        "Independent reproduction and README verification are still needed"
       ],
       "provenOn": null,
       "gta": {
@@ -1297,7 +1297,7 @@
         "playable": 1,
         "story": 0.8,
         "render": 0.85,
-        "fps": 20,
+        "fps": 25,
         "stability": 0.85
       },
       "verification": "portwatch",
