@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T23:35:29.561Z",
+  "updated": "2026-11-26T23:50:22.367Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T23:30:42.000Z",
-      "lastOkAt": "2026-11-26T23:35:29.561Z",
-      "seen": 18000,
+      "lastOkAt": "2026-11-26T23:50:22.367Z",
+      "seen": 18250,
       "events": 663,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T20:47:47.000Z",
-      "lastOkAt": "2026-11-26T23:35:29.561Z",
+      "lastOkAt": "2026-11-26T23:50:22.367Z",
       "seen": 28,
       "events": 20,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-26T23:35:29.561Z",
-      "seen": 4290,
+      "lastOkAt": "2026-11-26T23:50:22.367Z",
+      "seen": 4352,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T22:43:22.341Z",
-      "lastOkAt": "2026-11-26T23:35:29.561Z",
-      "seen": 28800,
+      "lastOkAt": "2026-11-26T23:50:22.367Z",
+      "seen": 29200,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T11:35:29.561Z",
-      "lastOkAt": "2026-11-26T23:35:29.561Z",
-      "seen": 8446,
+      "lastCursor": "2026-11-26T11:50:22.367Z",
+      "lastOkAt": "2026-11-26T23:50:22.367Z",
+      "seen": 8569,
       "events": 7,
       "errors": 0
     }
@@ -8864,10 +8864,17 @@
       "chain": "sha256:a4997de199423271a3508b052010038db041e7eb47bc52366b48de9d8c1a73ff",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T23:50:22.367Z",
+          "by": "desk",
+          "note": "The project’s own GitHub repository directly supports the commit/merge line, and no stored source contradicts it."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T23:50:22.367Z"
     },
     {
       "id": "20261126t231014z-victory-low-end-pc-41ce46ec",
@@ -9030,10 +9037,17 @@
       "chain": "sha256:bfbe5d866136c019287697419cdc244c10a337a803f83ff93366ef380bec62cd",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T23:50:22.367Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository, which is primary but not independent, and its excerpt is empty, so the 21.7 fps figure rests on a PR title alone with no corroborating detail."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T23:50:22.367Z"
     }
   ],
   "reports": [
