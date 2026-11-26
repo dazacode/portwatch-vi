@@ -1673,6 +1673,70 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": null,
+        "related": [],
+        "basedOn": [
+          "marvis",
+          "victory-gta6",
+          "victory-amd",
+          "belobug"
+        ],
+        "highlights": [
+          "Daylit streets with traffic, pedestrians and sharp shadows",
+          "About 12 fps average on an RTX 5070 Ti and i7-14700",
+          "Its source is the base of AnyXboxX, which measured 12.5 fps on an RTX 4070 SUPER"
+        ],
+        "blockers": [
+          "Tested on one Intel and NVIDIA PC only; AMD untested",
+          "No ray-traced light: indoors uses a flat ambient stand-in",
+          "Objects flash black while textures swap; no facial animation"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.75,
+          "fps": 12,
+          "stability": "unknown"
+        },
+        "stats": {},
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Traffic",
+        "evidence": "Footage posted on X",
+        "byline": "Neptune (VIctory Edit.) by Traffic and zm0kie · private build, source in AnyXboxX",
+        "summary": "Traffic's Neptune (VIctory Edit.), built with zm0kie, walks Jason through Leonida's streets in daylight with traffic, pedestrians and shadows, at about 12 fps on an RTX 5070 Ti. Its source is public as the base of AnyXboxX; Traffic says his own build is coming soon. No mission shown yet.",
+        "id": "traffic",
+        "findings": [
+          {
+            "text": "Recording: a 38-second clip shows Jason walking Leonida's streets in daylight, with traffic, pedestrians and sharp shadows. The window is titled \"Neptune (Victory Edit by Traffic & zm0kie)\" and the clip is credited to TrafficBlocker. No mission is shown.",
+            "url": "https://x.com/malexc_ai/status/2125744741023105043"
+          },
+          {
+            "text": "The overlay in that clip reads 12-13 fps (74-87 ms a frame), a 30-second average of 11.9-12.4 fps with lows of 3.9-6.4, and 5,700-9,300 draws a frame, on an RTX 5070 Ti, Core i7-14700 and 64 GB of RAM. The post says AMD is untested.",
+            "url": "https://x.com/malexc_ai/status/2125744741023105043"
+          },
+          {
+            "text": "Neptune (VIctory Edit.) 2026-11-25c is GPL-3.0-or-later source that AnyXboxX took as its base. Its notes credit fxceless/victory-fork, myokex and JoshuuDev's victory-amd, Belobug's ambient light pass, ZSlayerHQ's runtime, and zm0kie's overlay and tools. Its author has no public contact.",
+            "url": "https://github.com/LooperSalty/AnyXboxX/blob/c4c93bdc413191a9dc909998d2d53080a3f0c880/THIRD_PARTY.md"
+          },
+          {
+            "text": "Outside report: AnyXboxX's maintainer measured the Neptune base at a median of about 12.5 fps in the world (15 over the last minute, peaks of 30, no crash) on an RTX 4070 SUPER and i7-13700KF. Known issues: objects briefly black during texture swaps, no facial animation, flat ambient light indoors.",
+            "url": "https://github.com/LooperSalty/AnyXboxX/blob/c4c93bdc413191a9dc909998d2d53080a3f0c880/docs/running-gta6.md"
+          }
+        ],
+        "findingsSource": "From AnyXboxX's run guide at c4c93bd."
+      },
+      "changes": []
     }
   ],
   "pick": {
