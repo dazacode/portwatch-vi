@@ -821,27 +821,24 @@
       "name": "Belobug",
       "repo": "Belobug/VIctory-Belobug-AMD",
       "branch": "main",
-      "proof": {
-        "label": "First PC Trickshot",
-        "url": "https://www.reddit.com/r/FitGirlRepack/comments/1y55bgm/first_pc_trickshot_by_belo/"
-      },
       "tier": "tracked",
       "gpu": [
         "AMD"
       ],
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "Belobug's VIctory fork runs on AMD Radeon; PortWatch saw its lit open world and mission gameplay at about 8 fps. The owner now reports ray tracing working on AMD; the README still describes the ray-tracing path as failing.",
+      "summary": "Belobug's VIctory fork runs on AMD Radeon and is now very playable: about 22 fps on average with no crashes, using about 30 GB of RAM and 12 GB of video memory. Its lit open world plays through missions, and its picture is rated just below DexNom's. Its README hasn't caught up yet: it still reports 5-7 fps.",
       "highlights": [
         "Platform: AMD Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
-        "The open world is lit, with textures, people, vehicles, vegetation, water and sky",
+        "Very playable: about 22 fps on average and no crashes, using about 30 GB of RAM and 12 GB of video memory",
+        "Lit open world with textures, people, vehicles, vegetation, water and sky; its picture is rated just below DexNom's",
         "Owner reports ray-traced lighting now working on AMD",
-        "Plays through missions and rarely crashes; built on VIctory's main and upstream pull requests"
+        "Plays through missions; built on VIctory's main and upstream pull requests"
       ],
       "blockers": [
-        "About 8 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
+        "Its README still reports 5-7 fps, calls the build \"not playable yet\" and lists more video memory than a 16 GB card has",
         "Ray tracing is reported working on AMD; the README says enabling its ray-tracing path still ends in device removal",
-        "Needs about 22 GB of RAM and more than 16 GB of video memory; tested on one AMD PC only, nothing on NVIDIA or Intel yet"
+        "Tested on one AMD PC only; nothing on NVIDIA or Intel yet"
       ],
       "provenOn": null,
       "gta": {
@@ -851,9 +848,9 @@
         "world": 1,
         "playable": 1,
         "story": 0.5,
-        "render": 0.7,
-        "fps": 8,
-        "stability": 0.7
+        "render": 0.8,
+        "fps": 22,
+        "stability": 1
       },
       "verification": "portwatch",
       "stats": {
@@ -1053,10 +1050,10 @@
       ],
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "AvatarManz's fork of VIctory, tuned for speed on an AMD Radeon RX 7900 XTX. It brings victory-fork's, DexNom's and Belobug's work together on VIctory and adds its own speed-ups: the game's draw calls translated on eight threads of its own, frames prepared on a separate thread, and textures uploaded on their own queue. PortWatch has verified it: GTA VI runs at about 16 fps on average in game, the highest average on our board, with sound, as far into the story as the leading builds. Its README measures 13-22 fps indoors and on the first boat mission, and a 41-minute session without a crash.",
+      "summary": "AvatarManz's fork of VIctory, tuned for speed on an AMD Radeon RX 7900 XTX. It brings victory-fork's, DexNom's and Belobug's work together on VIctory and adds its own speed-ups: the game's draw calls translated on eight threads of its own, frames prepared on a separate thread, and textures uploaded on their own queue. PortWatch has verified it: GTA VI runs at about 16 fps on average in game, with sound, as far into the story as the leading builds. Its README measures 13-22 fps indoors and on the first boat mission, and a 41-minute session without a crash.",
       "highlights": [
         "Platform: AMD Radeon RX 7900 XTX, Intel Core i9-12900K, 64 GB RAM, Windows 11",
-        "About 16 fps on average in game, verified by PortWatch: the highest average on our board. Its README: 13-20 fps indoors in the prologue, 19-22 on the first boat mission, 30 in menus",
+        "About 16 fps on average in game, verified by PortWatch. Its README: 13-20 fps indoors in the prologue, 19-22 on the first boat mission, 30 in menus",
         "41 minutes in one session without a crash (its README); sound works",
         "Brings victory-fork, DexNom and Belobug together on VIctory, history and credits kept; builds from source, no prebuilt downloads; GPL-3.0-or-later"
       ],
@@ -8316,6 +8313,11 @@
       "date": "2026-11-26",
       "kind": "new",
       "text": "Scout spotted RandomSkelly/Series0nLinux (possible effort, substance 55)."
+    },
+    {
+      "date": "2026-11-26",
+      "kind": "up",
+      "text": "Belobug takes #1 in the race at 86.1% (from 77.2%): it's now very playable, at about 22 fps on average with no crashes, using about 30 GB of RAM and 12 GB of video memory. Its rendering goes to 0.8, just below DexNom's 0.85. AvatarManz (81.8%) is now #2 and DexNom (77.4%) #3."
     }
   ],
   "history": [
