@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T19:35:28.371Z",
+  "updated": "2026-11-26T19:50:23.797Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T19:31:07.000Z",
-      "lastOkAt": "2026-11-26T19:35:28.371Z",
-      "seen": 14250,
+      "lastOkAt": "2026-11-26T19:50:23.797Z",
+      "seen": 14500,
       "events": 512,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T18:18:39.000Z",
-      "lastOkAt": "2026-11-26T19:35:28.371Z",
+      "lastOkAt": "2026-11-26T19:50:23.797Z",
       "seen": 25,
       "events": 17,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T19:35:28.371Z",
-      "seen": 3373,
+      "lastOkAt": "2026-11-26T19:50:23.797Z",
+      "seen": 3434,
       "events": 23,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T19:15:07.946Z",
-      "lastOkAt": "2026-11-26T19:35:28.371Z",
-      "seen": 22800,
+      "lastOkAt": "2026-11-26T19:50:23.797Z",
+      "seen": 23200,
       "events": 24,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T07:35:28.371Z",
-      "lastOkAt": "2026-11-26T19:35:28.371Z",
-      "seen": 6701,
+      "lastCursor": "2026-11-26T07:50:23.797Z",
+      "lastOkAt": "2026-11-26T19:50:23.797Z",
+      "seen": 6814,
       "events": 7,
       "errors": 0
     }
@@ -8167,10 +8167,17 @@
       "chain": "sha256:90c23edf22f3741a513acb75c2a10a03998f971415df50a7c23b5b6035fcfb52",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T19:50:23.797Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository and merely repeats the one-line claim, so it is primary but not independent and too thin to publish."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T19:50:23.797Z"
     }
   ],
   "reports": [
