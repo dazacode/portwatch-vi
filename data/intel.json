@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T21:20:28.432Z",
+  "updated": "2026-11-26T21:50:21.067Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T21:01:10.000Z",
-      "lastOkAt": "2026-11-26T21:20:28.432Z",
-      "seen": 16000,
-      "events": 569,
+      "lastCursor": "2026-11-26T21:35:55.000Z",
+      "lastOkAt": "2026-11-26T21:50:21.067Z",
+      "seen": 16250,
+      "events": 586,
       "errors": 0
     },
     "evidence": {
-      "lastCursor": "2026-11-26T18:18:39.000Z",
-      "lastOkAt": "2026-11-26T21:20:28.432Z",
-      "seen": 25,
-      "events": 17,
+      "lastCursor": "2026-11-26T20:47:47.000Z",
+      "lastOkAt": "2026-11-26T21:50:21.067Z",
+      "seen": 28,
+      "events": 20,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T21:20:28.432Z",
-      "seen": 3800,
+      "lastOkAt": "2026-11-26T21:50:21.067Z",
+      "seen": 3861,
       "events": 23,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T20:57:48.251Z",
-      "lastOkAt": "2026-11-26T21:20:28.432Z",
-      "seen": 25600,
+      "lastCursor": "2026-11-26T21:34:33.848Z",
+      "lastOkAt": "2026-11-26T21:50:21.067Z",
+      "seen": 26000,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T09:20:28.432Z",
-      "lastOkAt": "2026-11-26T21:20:28.432Z",
-      "seen": 7492,
+      "lastCursor": "2026-11-26T09:50:21.067Z",
+      "lastOkAt": "2026-11-26T21:50:21.067Z",
+      "seen": 7605,
       "events": 7,
       "errors": 0
     }
@@ -8503,6 +8503,279 @@
         "low confidence"
       ],
       "deskAt": "2026-11-26T20:35:22.288Z"
+    },
+    {
+      "id": "20261126t210637z-xvalkyrie-cc75ac38",
+      "key": "update|xvalkyrie|activity|41567",
+      "kind": "update",
+      "projectId": "xvalkyrie",
+      "projectName": "XValkyrie",
+      "at": "2026-11-26T21:06:37Z",
+      "detectedAt": "2026-11-26T21:50:21.067Z",
+      "title": "XValkyrie pushed 4 commits",
+      "oneLine": "feat(cli): shader-journal extracts what a title's journal has not made, so that its shaders are looked into with shader-corpus and shader-source",
+      "sources": [
+        {
+          "url": "https://github.com/sammwyy/xvalkyrie/commit/f348dd155c7f5e0594c68911746bb114112a53da",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "feat(cli): shader-journal extracts what a title's journal has not made, so that its shaders are looked into with shader-",
+          "at": "2026-11-26T21:06:37Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sammwyy/xvalkyrie",
+        "name": "xvalkyrie",
+        "words": [
+          "xvalkyrie"
+        ],
+        "hash": "0448e0425825bcac",
+        "projectId": "xvalkyrie"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:2dcabffafbe28b4d4afe8b5392606ba80841b9bdb0f082ea4910636824a983f0",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T21:50:21.067Z",
+          "by": "desk",
+          "note": "The only stored source is XValkyrie’s own repository, which is primary but not independent, and the excerpt is empty, so the commit-summary line is not plainly supported by independent corroboration."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T21:50:21.067Z"
+    },
+    {
+      "id": "20261126t210444z-vitoria-spark-e9244fb3",
+      "key": "update|vitoria-spark|activity|41567",
+      "kind": "update",
+      "projectId": "vitoria-spark",
+      "projectName": "VItoria Spark",
+      "at": "2026-11-26T21:04:44Z",
+      "detectedAt": "2026-11-26T21:50:21.067Z",
+      "title": "VItoria Spark pushed 1 commit",
+      "oneLine": "Warn against the write-combined copy-back skip: it loses shader writes",
+      "sources": [
+        {
+          "url": "https://github.com/martindevbr/VItoria-Spark/commit/50cb71e61e70f79bb73d5543f601f6a97813583b",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Warn against the write-combined copy-back skip: it loses shader writes",
+          "at": "2026-11-26T21:04:44Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "martindevbr/vitoria-spark",
+        "name": "vitoria spark",
+        "words": [
+          "vitoria",
+          "spark",
+          "vitoria-spark"
+        ],
+        "hash": "837827c8be611646",
+        "projectId": "vitoria-spark"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:0efd430aaa848f60904b295afff53b4fb9b48b257a5f0ab664844f4f4e02ed00",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T21:50:21.067Z",
+          "by": "desk",
+          "note": "The only source is the project’s own repository with an empty excerpt, so it is primary but not independent and does not plainly substantiate the one-line claim beyond repeating the commit title."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T21:50:21.067Z"
+    },
+    {
+      "id": "20261126t204747z-belobug-e07cb5a2",
+      "key": "evidence|belobug|world|41567",
+      "kind": "evidence",
+      "projectId": "belobug",
+      "projectName": "Belobug",
+      "at": "2026-11-26T20:47:47Z",
+      "detectedAt": "2026-11-26T21:50:21.067Z",
+      "title": "New test evidence on Belobug — world",
+      "oneLine": "gameplay ran at about 3 fps.",
+      "sources": [
+        {
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/338",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "gameplay ran at about 3 fps.",
+          "at": "2026-11-26T20:47:47Z",
+          "kind": "primary",
+          "authorHash": "1be381b7dd06",
+          "excerpt": "gameplay ran at about 3 fps."
+        }
+      ],
+      "fingerprint": {
+        "repo": "belobug/victory-belobug-amd",
+        "name": "belobug",
+        "words": [
+          "belobug"
+        ],
+        "hash": "6248cb5cd2880b41",
+        "projectId": "belobug"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:043b4512275d7fca8af35ef466fbe703f547ce1a201112db9c06098582e637ec",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t202100z-xcl-85212b6d",
+      "key": "evidence|xcl|menu|41567",
+      "kind": "evidence",
+      "projectId": "xcl",
+      "projectName": "XCL",
+      "at": "2026-11-26T20:21:00Z",
+      "detectedAt": "2026-11-26T21:50:21.067Z",
+      "title": "New test evidence on XCL — menu",
+      "oneLine": "At the title screen / first menus ( 30 fps), the title creates a compute pipeline",
+      "sources": [
+        {
+          "url": "https://github.com/xcl-dev/xcl/issues/2874",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "At the title screen / first menus ( 30 fps), the title creates a compute pipeline",
+          "at": "2026-11-26T20:21:00Z",
+          "kind": "primary",
+          "authorHash": "9f8e09f0c707",
+          "excerpt": "At the title screen / first menus ( 30 fps), the title creates a compute pipeline"
+        }
+      ],
+      "fingerprint": {
+        "repo": "xcl-dev/xcl",
+        "name": "xcl",
+        "words": [
+          "xcl"
+        ],
+        "hash": "379a1bf44c2af61c",
+        "projectId": "xcl"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:202174fdbc04f77a8f6f8c97cbcd1fbd1db06faea5fbd9215acc4fcd3d6ac4e9",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t191747z-victory-gta6-b5d9327e",
+      "key": "evidence|victory-gta6|menu|41567",
+      "kind": "evidence",
+      "projectId": "victory-gta6",
+      "projectName": "hyphennn",
+      "at": "2026-11-26T19:17:47Z",
+      "detectedAt": "2026-11-26T21:50:21.067Z",
+      "title": "New test evidence on hyphennn — menu",
+      "oneLine": "reaches the menus",
+      "sources": [
+        {
+          "url": "https://github.com/fxceless/victory-fork/issues/1370",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "reaches the menus",
+          "at": "2026-11-26T19:17:47Z",
+          "kind": "primary",
+          "authorHash": "005b02159642",
+          "excerpt": "reaches the menus"
+        }
+      ],
+      "fingerprint": {
+        "repo": "fxceless/victory-fork",
+        "name": "hyphennn",
+        "words": [
+          "hyphennn",
+          "victory-gta6"
+        ],
+        "hash": "11c05232500dc292",
+        "projectId": "victory-gta6"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:035f84c45cadaeb89bfeaf162bdbb66596e591e49784ec69a008351ea50804ed",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
