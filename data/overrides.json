@@ -931,6 +931,58 @@
           "text": "Frame rate 4 → 6, from its README's 5-8 fps on one RX 9070 XT"
         }
       ]
+    },
+    {
+      "id": "notnozy",
+      "from": {
+        "highlights": [
+          "Looks about the same as AvatarManz's build, the leader on our board",
+          "As far into the story as the leading builds, with a picture close to the console",
+          "Runs on an AMD card"
+        ],
+        "blockers": [
+          "No measured frame rate, crash record or test PC given: the values follow AvatarManz's build, which it looks about the same as",
+          "Code is private, so nobody outside can test or reproduce it"
+        ],
+        "assessedAt": "2026-11-25",
+        "assessedBy": "manual"
+      },
+      "to": {
+        "highlights": [
+          "A cutscene close-up reached 30.0 fps",
+          "As far into the story as the leading builds, with a picture close to the console",
+          "Runs on an AMD card"
+        ],
+        "blockers": [
+          "30 fps is a cutscene at 1,340 draws; gameplay and crash reports are unmeasured",
+          "Code is private, so nobody outside can test or reproduce it"
+        ],
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude"
+      },
+      "changes": [
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "A cutscene close-up reached 30.0 fps; gameplay and crashes still unmeasured"
+        }
+      ]
+    },
+    {
+      "id": "notnozy",
+      "from": {
+        "findings": null,
+        "findingsSource": null
+      },
+      "to": {
+        "findings": [
+          {
+            "text": "A cutscene close-up of Lucia runs at 30.0 fps (33.3 ms, 1,340 draws); the window names the base Victory.",
+            "url": "https://x.com/Mamozziee/status/2125768619019645118"
+          }
+        ],
+        "findingsSource": "Mamozziee's post of 26 November; the still is Nozy's build."
+      }
     }
   ],
   "added": [
@@ -978,7 +1030,14 @@
         "assessedAt": "2026-11-26",
         "assessedBy": "manual",
         "claims": [],
-        "manualScore": 70
+        "manualScore": 70,
+        "findings": [
+          {
+            "text": "A stream still reads 19.0 fps (52.8 ms, 841 draws, 339 dropped) in a lit interior with Lucia and a second character, on a build titled Flamingo: a peak in a light scene.",
+            "url": "https://rumble.com/v7iwbii-gta-6-baby.html"
+          }
+        ],
+        "findingsSource": "Hugo's Rumble stream, GTA 6 BABY (kraithz), sent by the owner."
       },
       "changes": [
         {

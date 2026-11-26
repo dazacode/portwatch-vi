@@ -115,7 +115,7 @@
       "kind": "free",
       "stage": "world",
       "outcome": "reached",
-      "quote": "Reach the world — the opening cutscene, then the prison interior",
+      "quote": "Reach the world \u2014 the opening cutscene, then the prison interior",
       "commit": "a253706",
       "gpu": "RTX 5080",
       "url": "https://github.com/fxceless/victory-fork/issues/1038",
@@ -685,6 +685,30 @@
       "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/11",
       "at": "2026-11-25T23:19:21Z",
       "by": "c9f956901560"
+    },
+    {
+      "effortId": "avatarmanz",
+      "kind": "tester",
+      "stage": "playable",
+      "outcome": "reached",
+      "quote": "an 11-minute session that reached gameplay (prison yard)",
+      "commit": "0a43566",
+      "gpu": "RTX 4070 Ti SUPER",
+      "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/70",
+      "at": "2026-11-26T01:34:08Z",
+      "by": "hand-avatar-70"
+    },
+    {
+      "effortId": "dexnom",
+      "kind": "tester",
+      "stage": "playable",
+      "outcome": "reached",
+      "quote": "8 fps / 252 ms at 854x480, GPU 35% busy",
+      "commit": "921d8d3",
+      "gpu": "RX 6800",
+      "url": "https://github.com/quietdom/gta6-pc-dexnom",
+      "at": "2026-11-26T02:00:00Z",
+      "by": "hand-dexnom-quietdom"
     }
   ]
 }
