@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T12:50:24.953Z",
+  "updated": "2026-11-26T13:06:46.357Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T12:02:35.000Z",
-      "lastOkAt": "2026-11-26T12:50:24.953Z",
-      "seen": 7750,
-      "events": 251,
+      "lastCursor": "2026-11-26T13:02:19.000Z",
+      "lastOkAt": "2026-11-26T13:06:46.357Z",
+      "seen": 8000,
+      "events": 271,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T10:11:01.000Z",
-      "lastOkAt": "2026-11-26T12:50:24.953Z",
+      "lastOkAt": "2026-11-26T13:06:46.357Z",
       "seen": 20,
       "events": 12,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T12:50:24.953Z",
-      "seen": 1807,
+      "lastOkAt": "2026-11-26T13:06:46.357Z",
+      "seen": 1867,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T11:58:26.000Z",
-      "lastOkAt": "2026-11-26T12:50:24.953Z",
-      "seen": 12400,
-      "events": 13,
+      "lastCursor": "2026-11-26T12:52:08.447Z",
+      "lastOkAt": "2026-11-26T13:06:46.357Z",
+      "seen": 12800,
+      "events": 14,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T00:50:24.953Z",
-      "lastOkAt": "2026-11-26T12:50:24.953Z",
-      "seen": 3647,
+      "lastCursor": "2026-11-26T01:06:46.357Z",
+      "lastOkAt": "2026-11-26T13:06:46.357Z",
+      "seen": 3767,
       "events": 7,
       "errors": 0
     }
@@ -5822,6 +5822,539 @@
       "revisions": [],
       "heldReasons": [
         "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t130151z-five-star-recomp-8cac8ecf",
+      "key": "update|five-star-recomp|activity|41567",
+      "kind": "update",
+      "projectId": "five-star-recomp",
+      "projectName": "Five Star Recomp",
+      "at": "2026-11-26T13:01:51Z",
+      "detectedAt": "2026-11-26T13:06:46.357Z",
+      "title": "Five Star Recomp opened pull request #59",
+      "oneLine": "DirectStorage: zlib requests inflate with the runtime's native zlib",
+      "sources": [
+        {
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/pull/59",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "DirectStorage: zlib requests inflate with the runtime's native zlib",
+          "at": "2026-11-26T13:01:51Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "thatrecompdev/five-star-recomp",
+        "name": "five star recomp",
+        "words": [
+          "five",
+          "star",
+          "recomp",
+          "five-star-recomp"
+        ],
+        "hash": "c218488d7d9a8a67",
+        "projectId": "five-star-recomp"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:b1ff7080fe37e87f039a152c60fbaf24c463b145650fa484bbe37c1339d95988",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T13:06:46.357Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository entry with an empty excerpt, so the claim rests on a single non-independent primary source that the pipeline merely repeats."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T13:06:46.357Z"
+    },
+    {
+      "id": "20261126t130119z-belobug-db51fa20",
+      "key": "update|belobug|activity|41567",
+      "kind": "update",
+      "projectId": "belobug",
+      "projectName": "Belobug",
+      "at": "2026-11-26T13:01:19Z",
+      "detectedAt": "2026-11-26T13:06:46.357Z",
+      "title": "Belobug opened pull request #253",
+      "oneLine": "in_parallel runs on kept threads instead of starting new ones on every call (#163)",
+      "sources": [
+        {
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/253",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "in_parallel runs on kept threads instead of starting new ones on every call (#163)",
+          "at": "2026-11-26T13:01:19Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "belobug/victory-belobug-amd",
+        "name": "belobug",
+        "words": [
+          "belobug"
+        ],
+        "hash": "7749e38a7e252a81",
+        "projectId": "belobug"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:a2c99f188cffcbd18515a8b6f78f105aa14e494d898ce9793cd1d0c86ad2a683",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T13:06:46.357Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the claim rests on a title alone and is neither independent nor substantiated in detail."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T13:06:46.357Z"
+    },
+    {
+      "id": "20261126t125935z-kelvaroq-9200b956",
+      "key": "update|kelvaroq|activity|41567",
+      "kind": "update",
+      "projectId": "kelvaroq",
+      "projectName": "Kelvaroq",
+      "at": "2026-11-26T12:59:35Z",
+      "detectedAt": "2026-11-26T13:06:46.357Z",
+      "title": "Kelvaroq pushed 2 commits",
+      "oneLine": "README: Discord for live announcements; the memory layer now runs in the open world, speed is the last step (target 5 ms per frame)",
+      "sources": [
+        {
+          "url": "https://github.com/fablinoo/kelvaroq/commit/8de19cd8b9a9eebde2468ffd0cf26f55d1d29c17",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "README: Discord for live announcements; the memory layer now runs in the open world, speed is the last step (target 5 ms",
+          "at": "2026-11-26T12:55:13Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "fablinoo/kelvaroq",
+        "name": "kelvaroq",
+        "words": [
+          "kelvaroq"
+        ],
+        "hash": "f464c8580c8c2192",
+        "projectId": "kelvaroq"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:63c957082050da89582f5cb8eac9edc7c7a32318381d59d4cdd7fa683290a7d8",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t125223z-scene-5689155a",
+      "key": "reference|-|activity|41567",
+      "kind": "duplicate",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-26T12:52:23Z",
+      "detectedAt": "2026-11-26T13:06:46.357Z",
+      "title": "A new repository may duplicate unknown",
+      "oneLine": "Automatically maintained tracking site for PC ports of the GTA VI Xbox Build. This repository is managed autonomously by Claude Fable 5.2.",
+      "sources": [
+        {
+          "url": "https://github.com/vuyp/gta6-pc-race",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "vuyp/gta6-pc-race",
+          "at": "2026-11-26T12:52:23Z",
+          "kind": "official"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "eb8d5a33b0b528cf",
+        "projectId": null
+      },
+      "similar": [
+        {
+          "effortId": "unknown",
+          "score": 1
+        },
+        {
+          "effortId": "unknown",
+          "score": 1
+        }
+      ],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:25d47db3b5be8262653ebf8c88c4b8849bef1b55d8968465d60b0b7e6cf5cf28",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "duplicate build reference",
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t125018z-leonida-a57aa4f6",
+      "key": "reference|leonida|activity|41567",
+      "kind": "duplicate",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-26T12:50:18Z",
+      "detectedAt": "2026-11-26T13:06:46.357Z",
+      "title": "Leonida may duplicate leonida-continued",
+      "oneLine": "Tracking efforts to run the leaked GTA 6 Xbox Series build on Windows: Leonida successors, xcl, and other ports — evidence-graded, no downloads.",
+      "sources": [
+        {
+          "url": "https://github.com/ADWMC/gta6-windows-tracker",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "ADWMC/gta6-windows-tracker",
+          "at": "2026-11-26T12:50:18Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "f5c9fa27f20110c2",
+        "projectId": "leonida"
+      },
+      "similar": [
+        {
+          "effortId": "leonida-continued",
+          "score": 0.78
+        },
+        {
+          "effortId": "leonida-continued",
+          "score": 0.78
+        }
+      ],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:164451aae534413e4356f8775fac12d549c7e82d05df5d087a6f0e3d15090519",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "duplicate build reference"
+      ]
+    },
+    {
+      "id": "20261126t124857z-anyxboxx-02ace82d",
+      "key": "update|anyxboxx|activity|41567",
+      "kind": "update",
+      "projectId": "anyxboxx",
+      "projectName": "AnyXboxX",
+      "at": "2026-11-26T12:48:57Z",
+      "detectedAt": "2026-11-26T13:06:46.357Z",
+      "title": "AnyXboxX opened pull request #252",
+      "oneLine": "docs: remove the remaining Leonida references and credits (stacked on #342)",
+      "sources": [
+        {
+          "url": "https://github.com/LooperSalty/AnyXboxX/pull/252",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "docs: remove the remaining Leonida references and credits (stacked on #342)",
+          "at": "2026-11-26T12:48:57Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "loopersalty/anyxboxx",
+        "name": "anyxboxx",
+        "words": [
+          "anyxboxx"
+        ],
+        "hash": "2da14ac27c2039cc",
+        "projectId": "anyxboxx"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:a358118fdd624440300854e14d7ece801233a3b9daa2ed803dec4c229b4a0527",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t124342z-marvis-2fe7d96c",
+      "key": "reference|marvis|activity|41567",
+      "kind": "reference",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-26T12:43:42Z",
+      "detectedAt": "2026-11-26T13:06:46.357Z",
+      "title": "New reference to VIctory",
+      "oneLine": "Archive of Leonida, xcl and VIctory (GTA VI on PC projects), saved 2026-11-23",
+      "sources": [
+        {
+          "url": "https://github.com/Guernica4u/GTA6-PC-Port-Archive",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Guernica4u/GTA6-PC-Port-Archive",
+          "at": "2026-11-26T12:43:42Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "3057e5affa09d5bf",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:95be7deb86a6dfd767c28c6f7fef3f5562a9b81b40d50d2e6938630e0f3a9f0a",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t123738z-ccs03-23561e26",
+      "key": "update|ccs03|activity|41567",
+      "kind": "update",
+      "projectId": "ccs03",
+      "projectName": "CCS03",
+      "at": "2026-11-26T12:37:38Z",
+      "detectedAt": "2026-11-26T13:06:46.357Z",
+      "title": "CCS03 opened pull request #48",
+      "oneLine": "Shaders: trace a descriptor at a join only over the lanes that run it (AlphTransmissionPrefilterMip on 32-lane hosts)",
+      "sources": [
+        {
+          "url": "https://github.com/JozefDeTremmerie/CCS03/pull/48",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Shaders: trace a descriptor at a join only over the lanes that run it (AlphTransmissionPrefilterMip on 32-lane hosts)",
+          "at": "2026-11-26T12:37:38Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "jozefdetremmerie/ccs03",
+        "name": "ccs03",
+        "words": [
+          "ccs03"
+        ],
+        "hash": "953640833ea00c91",
+        "projectId": "ccs03"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d981b0df8a63dc4865f67116617c642d15e0a873025cd33c13324bfb6443d045",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t123444z-openscarlett-04892c71",
+      "key": "update|openscarlett|activity|41567",
+      "kind": "update",
+      "projectId": "openscarlett",
+      "projectName": "OpenScarlett",
+      "at": "2026-11-26T12:34:44Z",
+      "detectedAt": "2026-11-26T13:06:46.357Z",
+      "title": "OpenScarlett pushed 1 commit",
+      "oneLine": "fix(loader,d3d12_xs): expand Scarlett PRT pool, guard out-of-band descriptor pools and unbound shader vars",
+      "sources": [
+        {
+          "url": "https://github.com/californiaAlmonds/OpenScarlett/commit/4e67f0cb418e1ab22a4da6ad92cf55610711d622",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "fix(loader,d3d12_xs): expand Scarlett PRT pool, guard out-of-band descriptor pools and unbound shader vars",
+          "at": "2026-11-26T12:34:44Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "californiaalmonds/openscarlett",
+        "name": "openscarlett",
+        "words": [
+          "openscarlett"
+        ],
+        "hash": "9d0d57494824257f",
+        "projectId": "openscarlett"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:09023899657c0f56dc3dfc73a49327c8a07aef760d4a84edc1ec702ed1464a86",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t122437z-scene-c47de989",
+      "key": "takedown|-|https://gamerant.com/gta-6-which-characters-survive-vcia-takedown/|41567",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-26T12:24:37.000Z",
+      "detectedAt": "2026-11-26T13:06:46.357Z",
+      "title": "Game Rant in a takedown report",
+      "oneLine": "GTA 6: Who Can You Save in VCIA Takedown?",
+      "sources": [
+        {
+          "url": "https://gamerant.com/gta-6-which-characters-survive-vcia-takedown/",
+          "host": "gamerant.com",
+          "outlet": "Game Rant",
+          "title": "GTA 6: Who Can You Save in VCIA Takedown?",
+          "at": "2026-11-26T12:24:37.000Z",
+          "kind": "outside",
+          "authorHash": "a52979df17",
+          "excerpt": "GTA 6: Who Can You Save in VCIA Takedown?"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "7df4443644b42094",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:792026969306d60faec29b3d7f2ab3b1bb1bdd2aea29a0bd87f30639bad3a1fb",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
       ]
     }
   ],
