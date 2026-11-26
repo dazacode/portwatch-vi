@@ -821,19 +821,24 @@
       "name": "Belobug",
       "repo": "Belobug/VIctory-Belobug-AMD",
       "branch": "main",
+      "proof": {
+        "label": "Belo Top Dawg",
+        "url": "https://www.reddit.com/r/FitGirlRepack/comments/1y67xnd/belo_top_dawg/"
+      },
       "tier": "tracked",
       "gpu": [
         "AMD"
       ],
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "Belobug's VIctory fork runs on AMD Radeon and is now very playable: about 22 fps on average with no crashes, using about 30 GB of RAM and 12 GB of video memory. Its lit open world plays through missions, and its picture is rated just below DexNom's. Its README hasn't caught up yet: it still reports 5-7 fps.",
+      "summary": "Belobug's VIctory fork runs on AMD Radeon and is now very playable: about 22 fps on average with no crashes, using about 30 GB of RAM and 12 GB of video memory. Its lit open world plays through missions, with story progress rated 80%, level with CGBJ, and its picture is rated just below DexNom's. Its README hasn't caught up yet: it still reports 5-7 fps.",
       "highlights": [
         "Platform: AMD Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
         "Very playable: about 22 fps on average and no crashes, using about 30 GB of RAM and 12 GB of video memory",
         "Lit open world with textures, people, vehicles, vegetation, water and sky; its picture is rated just below DexNom's",
         "Owner reports ray-traced lighting now working on AMD",
-        "Plays through missions; built on VIctory's main and upstream pull requests"
+        "Plays through missions; story progress rated 80%, level with CGBJ",
+        "Built on VIctory's main and upstream pull requests"
       ],
       "blockers": [
         "Its README still reports 5-7 fps, calls the build \"not playable yet\" and lists more video memory than a 16 GB card has",
@@ -847,7 +852,7 @@
         "menu": 1,
         "world": 1,
         "playable": 1,
-        "story": 0.5,
+        "story": 0.8,
         "render": 0.8,
         "fps": 22,
         "stability": 1
@@ -8318,6 +8323,11 @@
       "date": "2026-11-26",
       "kind": "up",
       "text": "Belobug takes #1 in the race at 86.1% (from 77.2%): it's now very playable, at about 22 fps on average with no crashes, using about 30 GB of RAM and 12 GB of video memory. Its rendering goes to 0.8, just below DexNom's 0.85. AvatarManz (81.8%) is now #2 and DexNom (77.4%) #3."
+    },
+    {
+      "date": "2026-11-26",
+      "kind": "up",
+      "text": "Belobug's story progress goes to 80%, level with CGBJ: 91.3% (from 86.1%), the highest score on our board. It now leads our overall number, ahead of CGBJ (89.6%) and NotNozy (87.1%), and stays #1 in the race."
     }
   ],
   "history": [
