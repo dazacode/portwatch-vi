@@ -1097,15 +1097,15 @@
         "publicLater": true,
         "byline": "Streamed live · private code, built on the public forks",
         "tier": "tracked",
-        "summary": "Hugo's private build, MashedHugo, renders Lucia's prologue close to the console — lighting, shadows, hair and faces — with floating geometry and pixelation. A stream still the owner saw reads 19 fps in a lit interior: a peak in a light scene, not a sustained rate. Last seen stuck at the boat mission; whether it gets past the prologue isn't known. Code private for now.",
+        "summary": "Hugo's private build, MashedHugo (titled Flamingo), renders Lucia's prologue close to the console: lighting, shadows, hair and faces, with floating geometry and pixelation. A screenshot Hugo posted on 26 Nov reads 17.4 fps indoors, with every shader and pipeline on the overlay working and 224 draws a frame still dropped; an earlier stream still read 19 fps. Both are light indoor scenes, not a sustained rate. Last seen stuck at the boat mission. Code private for now.",
         "highlights": [
           "Lighting, shadows, hair and faces close to the console",
-          "A player walks the prison, talks to cellmates and opens the pause menu",
-          "From 0.08 fps to 2 fps in about an hour"
+          "26 Nov overlay: 2,566 shaders and 2,319 pipelines, none failing",
+          "A player walks the prison, talks to cellmates and opens the pause menu"
         ],
         "blockers": [
-          "Floating geometry, black faces and pixelated textures",
-          "19 fps peak in a light scene, not sustained. Boat mission still won't spawn",
+          "Blocky, pixelated textures on faces and walls, and floating geometry",
+          "17-19 fps only in light indoor scenes, with 224 draws a frame dropped; boat mission last seen not spawning",
           "Code is private for now, so nobody outside can test it"
         ],
         "provenOn": null,
@@ -1123,7 +1123,7 @@
         "verification": "self-reported",
         "stats": {},
         "assessedAt": "2026-11-26",
-        "assessedBy": "manual",
+        "assessedBy": "claude",
         "claims": [],
         "manualScore": 70,
         "findings": [
@@ -1159,6 +1159,11 @@
           "date": "2026-11-26",
           "kind": "up",
           "text": "A lit interior run at 19 fps in a light scene; hand score raised"
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "new",
+          "text": "MashedHugo: Hugo's 26 Nov screenshot reads 17.4 fps indoors, with no shader or pipeline failures and 224 draws a frame still dropped. Like the earlier 19 fps, it is a light scene; scores unchanged."
         }
       ]
     },
