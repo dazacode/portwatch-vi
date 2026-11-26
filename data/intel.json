@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T15:20:23.264Z",
+  "updated": "2026-11-26T15:50:23.920Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T15:01:23.000Z",
-      "lastOkAt": "2026-11-26T15:20:23.264Z",
-      "seen": 10250,
-      "events": 352,
+      "lastCursor": "2026-11-26T15:35:11.000Z",
+      "lastOkAt": "2026-11-26T15:50:23.920Z",
+      "seen": 10500,
+      "events": 371,
       "errors": 0
     },
     "evidence": {
-      "lastCursor": "2026-11-26T10:11:01.000Z",
-      "lastOkAt": "2026-11-26T15:20:23.264Z",
-      "seen": 20,
-      "events": 12,
+      "lastCursor": "2026-11-26T15:15:41.000Z",
+      "lastOkAt": "2026-11-26T15:50:23.920Z",
+      "seen": 22,
+      "events": 14,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T15:20:23.264Z",
-      "seen": 2407,
+      "lastOkAt": "2026-11-26T15:50:23.920Z",
+      "seen": 2467,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T15:00:15.000Z",
-      "lastOkAt": "2026-11-26T15:20:23.264Z",
-      "seen": 16400,
-      "events": 19,
+      "lastCursor": "2026-11-26T15:34:02.740Z",
+      "lastOkAt": "2026-11-26T15:50:23.920Z",
+      "seen": 16800,
+      "events": 21,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T03:20:23.264Z",
-      "lastOkAt": "2026-11-26T15:20:23.264Z",
-      "seen": 4845,
+      "lastCursor": "2026-11-26T03:50:23.920Z",
+      "lastOkAt": "2026-11-26T15:50:23.920Z",
+      "seen": 4963,
       "events": 7,
       "errors": 0
     }
@@ -7103,6 +7103,274 @@
       "sensitive": false,
       "audit": null,
       "chain": "sha256:6f702ccae4cf306a2ae8a8b7d8a8eed4e0753c397961170effe3614be213ec1d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t153402z-leonida-55f1ad0e",
+      "key": "takedown|leonida|https://bsky.app/profile/patrickorourke.bsky.social/post/3n37yq5hbuk2h|41567",
+      "kind": "takedown",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-26T15:34:02.740Z",
+      "detectedAt": "2026-11-26T15:50:23.920Z",
+      "title": "Leonida in a takedown report",
+      "oneLine": "I wouldn't be surprised to learn that CGBJ was taken down by a Rockstar DMCA, just like…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/patrickorourke.bsky.social/post/3n37yq5hbuk2h",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "I wouldn't be surprised to learn that CGBJ was taken down by a Rockstar DMCA, just like Leonida was. It seems like it di",
+          "at": "2026-11-26T15:34:02.740Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "I wouldn't be surprised to learn that CGBJ was taken down by a Rockstar DMCA, just like Leonida was. It seems like it di"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "93d6347cc6f1c45b",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:ddc4884ee1ed24e49d84faddcbd473aeea78119452c3ca92af224877cab2a14a",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T15:50:23.920Z",
+          "by": "desk",
+          "note": "The only source is a single speculative social post (\"I wouldn't be surprised to learn…\") that asserts no verified takedown, so the claim is thin and unconfirmed."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-26T15:50:23.920Z"
+    },
+    {
+      "id": "20261126t151711z-victory-ka1qux-081ee785",
+      "key": "update|victory-ka1qux|activity|41567",
+      "kind": "update",
+      "projectId": "victory-ka1qux",
+      "projectName": "victory-ka1qux",
+      "at": "2026-11-26T15:17:11Z",
+      "detectedAt": "2026-11-26T15:50:23.920Z",
+      "title": "victory-ka1qux pushed 2 commits",
+      "oneLine": "GPU tests: the depth bounds check also skips Microsoft's Basic Render Driver",
+      "sources": [
+        {
+          "url": "https://github.com/ka1qux/BRVIctory-ka1qux/commit/05e4d5017c62f2ccb3ebe98f06a5cdcbe7064563",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "GPU tests: the depth bounds check also skips Microsoft's Basic Render Driver",
+          "at": "2026-11-26T15:17:11Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "ka1qux/victory-ka1qux",
+        "name": "victory-ka1qux",
+        "words": [
+          "victory-ka1qux"
+        ],
+        "hash": "9282325851c86080",
+        "projectId": "victory-ka1qux"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:b951d90b3b84cc2dd05af66a33dedab9bcde84352cdf1e368e231dbe0d687694",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T15:50:23.920Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository with no excerpt, so it is primary but not independent and does not plainly corroborate the one-line claim."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T15:50:23.920Z"
+    },
+    {
+      "id": "20261126t151541z-avatarmanz-b4c6eed2",
+      "key": "evidence|avatarmanz|world|41567",
+      "kind": "evidence",
+      "projectId": "avatarmanz",
+      "projectName": "AvatarManz",
+      "at": "2026-11-26T15:15:41Z",
+      "detectedAt": "2026-11-26T15:50:23.920Z",
+      "title": "New test evidence on AvatarManz — world",
+      "oneLine": "In game with port 3 on, the first minutes made 676 pipelines while playing (frames of 200-450 ms), and some ground shadows stayed black.",
+      "sources": [
+        {
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/302",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "In game with port 3 on, the first minutes made 676 pipelines while playing (frames of 200-450 ms), and some ground shado",
+          "at": "2026-11-26T15:15:41Z",
+          "kind": "primary",
+          "authorHash": "00d283400364",
+          "excerpt": "In game with port 3 on, the first minutes made 676 pipelines while playing (frames of 200-450 ms), and some ground shadows stayed black."
+        }
+      ],
+      "fingerprint": {
+        "repo": "avatarmanz/victory-7900xtx",
+        "name": "avatarmanz",
+        "words": [
+          "avatarmanz"
+        ],
+        "hash": "28ce8c05f6070a1e",
+        "projectId": "avatarmanz"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:9934bed9d1f90dc3482bb1e51cdbdba21b67f736fe40af42644e0f2db8b3b140",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t150936z-scene-d0354bc6",
+      "key": "takedown|-|https://bsky.app/profile/levelupgamesnews.bsky.social/post/3n37xehokc52g|41567",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-26T15:09:36.946Z",
+      "detectedAt": "2026-11-26T15:50:23.920Z",
+      "title": "Bluesky in a takedown report",
+      "oneLine": "🚨 Take-Two just wiped 3,007 GTA 6 PC port repos! VideoCardz: a DMCA takedown hit 3,007…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/levelupgamesnews.bsky.social/post/3n37xehokc52g",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "🚨 Take-Two just wiped 3,007 GTA 6 PC port repos! VideoCardz: a DMCA takedown hit 3,007 GitHub repos. Plus: Rockstar cut",
+          "at": "2026-11-26T15:09:36.946Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "🚨 Take-Two just wiped 3,007 GTA 6 PC port repos! VideoCardz: a DMCA takedown hit 3,007 GitHub repos. Plus: Rockstar cut"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "70cc1dffb1fd08fd",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:e22744fde430384b264a0311fe80d4903ac9424d40138e5c77ad4021204d2204",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t141640z-kelvaroq-86480c6d",
+      "key": "evidence|kelvaroq|loads|41567",
+      "kind": "evidence",
+      "projectId": "kelvaroq",
+      "projectName": "Kelvaroq",
+      "at": "2026-11-26T14:16:40Z",
+      "detectedAt": "2026-11-26T15:50:23.920Z",
+      "title": "New test evidence on Kelvaroq — loads",
+      "oneLine": "When launching the game, the native engine initially starts normally",
+      "sources": [
+        {
+          "url": "https://github.com/stellarr-studio/kelvaroq/issues/4",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "When launching the game, the native engine initially starts normally",
+          "at": "2026-11-26T14:16:40Z",
+          "kind": "outside",
+          "authorHash": "872cded680d3",
+          "excerpt": "When launching the game, the native engine initially starts normally"
+        }
+      ],
+      "fingerprint": {
+        "repo": "fablinoo/kelvaroq",
+        "name": "kelvaroq",
+        "words": [
+          "kelvaroq"
+        ],
+        "hash": "f0abef2ff54fe0f2",
+        "projectId": "kelvaroq"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "1 outside source",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:67514fad532af9d7b6e8d12edd44502f5bd292e2e928ad26efcd1a4af94f6860",
       "reportId": null,
       "discordAt": null,
       "revisions": [],
