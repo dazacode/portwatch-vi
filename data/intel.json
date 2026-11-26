@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T16:20:26.881Z",
+  "updated": "2026-11-26T16:36:00.973Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T16:01:01.000Z",
-      "lastOkAt": "2026-11-26T16:20:26.881Z",
-      "seen": 11000,
-      "events": 386,
+      "lastCursor": "2026-11-26T16:31:00.000Z",
+      "lastOkAt": "2026-11-26T16:36:00.973Z",
+      "seen": 11250,
+      "events": 402,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T15:15:41.000Z",
-      "lastOkAt": "2026-11-26T16:20:26.881Z",
+      "lastOkAt": "2026-11-26T16:36:00.973Z",
       "seen": 22,
       "events": 14,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T16:20:26.881Z",
-      "seen": 2587,
+      "lastOkAt": "2026-11-26T16:36:00.973Z",
+      "seen": 2647,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T15:57:47.040Z",
-      "lastOkAt": "2026-11-26T16:20:26.881Z",
-      "seen": 17600,
-      "events": 21,
+      "lastCursor": "2026-11-26T16:30:05.000Z",
+      "lastOkAt": "2026-11-26T16:36:00.973Z",
+      "seen": 18000,
+      "events": 22,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T04:20:26.881Z",
-      "lastOkAt": "2026-11-26T16:20:26.881Z",
-      "seen": 5199,
+      "lastCursor": "2026-11-26T04:36:00.973Z",
+      "lastOkAt": "2026-11-26T16:36:00.973Z",
+      "seen": 5317,
       "events": 7,
       "errors": 0
     }
@@ -7405,6 +7405,115 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-26T16:20:26.881Z"
+    },
+    {
+      "id": "20261126t163005z-leonida-38c3777c",
+      "key": "takedown|leonida|https://social.tchncs.de/@tarnkappeinfo/117683690257261135|41567",
+      "kind": "takedown",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-26T16:30:05.000Z",
+      "detectedAt": "2026-11-26T16:36:00.973Z",
+      "title": "Leonida in a takedown report",
+      "oneLine": "📬 GTA 6 PC-Port: Take-Two zerschlägt Project Leonida per DMCA # Gaming # Rechtssachen #…",
+      "sources": [
+        {
+          "url": "https://social.tchncs.de/@tarnkappeinfo/117683690257261135",
+          "host": "social.tchncs.de",
+          "outlet": "Mastodon",
+          "title": "📬 GTA 6 PC-Port: Take-Two zerschlägt Project Leonida per DMCA # Gaming # Rechtssachen # DMCA # github # G",
+          "at": "2026-11-26T16:30:05.000Z",
+          "kind": "outside",
+          "authorHash": "a53bdbbb43",
+          "excerpt": "📬 GTA 6 PC-Port: Take-Two zerschlägt Project Leonida per DMCA # Gaming # Rechtssachen # DMCA # github # G"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "95c5a0c67dd01d9f",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:f4d2c9fab10e4d2cee772a557d3d57a290e471522fd96154730d6fd7a2a9042c",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T16:36:00.973Z",
+          "by": "desk",
+          "note": "The only stored source is a single Mastodon post that merely repeats the headline and hashtags, so it is too thin to substantiate the takedown claim."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-26T16:36:00.973Z"
+    },
+    {
+      "id": "20261126t162842z-launcher-848b9791",
+      "key": "reference|launcher|activity|41567",
+      "kind": "reference",
+      "projectId": "launcher",
+      "projectName": "VILauncher",
+      "at": "2026-11-26T16:28:42Z",
+      "detectedAt": "2026-11-26T16:36:00.973Z",
+      "title": "New reference to VILauncher",
+      "oneLine": "i95: one open-source GTA VI (GTA 6) PC launcher for every Xbox runtime on the GTA VI PC race (VIctory and its forks, KLBF Lab, Flamingo, Belobug, VItoriaBr, ScarlettPort, Vilocity and more). Pick one",
+      "sources": [
+        {
+          "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "DesignWithTommy/i95-GTA6-PC-Launcher",
+          "at": "2026-11-26T16:28:42Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sixlauncher/launcher",
+        "name": "vilauncher",
+        "words": [
+          "vilauncher",
+          "launcher"
+        ],
+        "hash": "00d0c48b227cda19",
+        "projectId": "launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:5c867189f690032f1372b7c5e5a028a4f27f34996bc64b54972f4ecbdaa32da5",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
