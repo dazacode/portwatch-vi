@@ -64,7 +64,7 @@ describe("getRace", () => {
     const list = [project("a", 80), project("b", 60), project("c", 40)]
     const moves = list.map((p, i) => move(p.id, `2026-11-24T1${i}:00:00Z`, 0, p.score, true))
     // Our score backs the smaller claims more.
-    const rateAt = (p: { id: string }, claim: number) => ({ rating: 100 - claim, parts: [] })
+    const rateAt = (_: unknown, claim: number) => ({ rating: 100 - claim, parts: [] })
     const race = getRace(list, moves, [], NOW, rateAt)
     const last = race.at(-1)
     expect(last && names(last)).toEqual(["c", "b", "a"])
