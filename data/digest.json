@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-26T21:36:22.778Z",
+ "updated": "2026-11-26T22:01:55.517Z",
  "now": {
   "hash": "1dfffaa25e13bbf2",
   "at": "2026-11-26T21:36:22.778Z",
@@ -76,63 +76,105 @@
   ]
  },
  "notes": {
-  "commit:3b0b84a": {
-   "hash": "85933979b74154e5",
-   "text": "Five Star Recomp's commit says device loss is likely fixed by nulling released textures' views, not the GPU timeout.",
+  "commit:4ba7625": {
+   "hash": "efe8958f54d92745",
+   "text": "i95-GTA6-PC-Launcher's commit says it pulled upstream changes from CGBJ, KLBF Lab, VI-BR-PORT and Vice-Tay.",
    "by": "Kilo Gateway, particle-ai/particle-1:free",
-   "at": "2026-11-26T21:36:22.778Z"
+   "at": "2026-11-26T22:01:55.517Z"
   },
-  "commit:555af19": {
-   "hash": "0f4e3a05360d9628",
-   "text": "Palmetto's commit says diagnostics show the stream opens, and the blocker is the out record's state word, not registration.",
+  "commit:ca868de": {
+   "hash": "7a2b76155874a3fd",
+   "text": "GMAC's commit says the README reports graphics fully running, loading fixed and CPU/GPU overlap.",
    "by": "Kilo Gateway, particle-ai/particle-1:free",
-   "at": "2026-11-26T21:36:22.778Z"
+   "at": "2026-11-26T22:01:55.517Z"
   },
-  "commit:e76ff6a": {
-   "hash": "a05ae84495c70282",
-   "text": "TuxBox's commit says it merges pull request #268 for a fix to xshader mesh launch.",
+  "commit:198727c": {
+   "hash": "f09d074b17b9cbf7",
+   "text": "whibwhi-own's commit says findings show vkd3d-proton takes the builder root signature at slot 62 and its shader converter misses one instruction.",
    "by": "Kilo Gateway, particle-ai/particle-1:free",
-   "at": "2026-11-26T21:36:22.778Z"
+   "at": "2026-11-26T22:01:55.517Z"
   },
-  "commit:a1041ee": {
-   "hash": "169b576fddca3cf4",
-   "text": "Xin-Leonida's commit says the translator recovers ordinary instructions that llvm-mc skipped.",
+  "commit:e5a7c89": {
+   "hash": "e3d3034412cea3da",
+   "text": "Leonida Continued's commit says it merges a pull request about title writeback asking first.",
    "by": "Kilo Gateway, particle-ai/particle-1:free",
-   "at": "2026-11-26T21:36:22.778Z"
+   "at": "2026-11-26T22:01:55.517Z"
   },
-  "commit:af1ae0e": {
-   "hash": "054dc77699c921b6",
-   "text": "i95-GTA6-PC-Launcher's commit says it re-ranked to vuyp's tracker as checks resumed, with several projects leading and lists updated.",
+  "commit:c3c4a0c": {
+   "hash": "aaaa26b7d7f04049",
+   "text": "Project-Americas's commit says a handoff covers batched fixes, the loading loop at full speed and shader numbers.",
    "by": "Kilo Gateway, particle-ai/particle-1:free",
-   "at": "2026-11-26T21:36:22.778Z"
+   "at": "2026-11-26T22:01:55.517Z"
   },
-  "commit:27a2dd7": {
-   "hash": "92c9a1026e21f482",
-   "text": "Five Star Recomp's commit says PIX captures start through the event runtime; the pipeline cache is read only with PIX loaded.",
+  "commit:21747ab": {
+   "hash": "4e28fda530bf2d31",
+   "text": "Project-Americas's commit says large dispatches are named and those over D3D12's 65,535 groups per dimension are skipped.",
    "by": "Kilo Gateway, particle-ai/particle-1:free",
-   "at": "2026-11-26T21:36:22.778Z"
+   "at": "2026-11-26T22:01:55.517Z"
   },
-  "commit:3009640": {
-   "hash": "19f952f817414151",
-   "text": "Native-Victory-macOS's commit says Metal heap residency sets are on by default only from 32 GiB.",
+  "commit:011d446": {
+   "hash": "5cdb46557a4d25ef",
+   "text": "Leonida Continued's commit says it merges a pull request about dispatch width counters.",
    "by": "Kilo Gateway, particle-ai/particle-1:free",
-   "at": "2026-11-26T21:36:22.778Z"
+   "at": "2026-11-26T22:01:55.517Z"
   },
-  "commit:62a4c59": {
-   "hash": "1b63ed8efa44a546",
-   "text": "i95-GTA6-PC-Launcher's commit says it checked and pulled held upstreams, including AnyXboxX and CGBJ changes and a port preset.",
+  "commit:4b62451": {
+   "hash": "5c78d45a1ec7bdc0",
+   "text": "whibwhi-own's commit says findings cover the measurement log and the current state of the shell.",
    "by": "Kilo Gateway, particle-ai/particle-1:free",
-   "at": "2026-11-26T21:36:22.778Z"
+   "at": "2026-11-26T22:01:55.517Z"
   }
  },
  "stories": {
+  "2026-11-26-bsky.app-gta-6-on-pc-not-yet-ps5-and-xbox-series-x-s-only-rockstar-has-not-announced-a-pc-version-o": {
+   "hash": "bbb54b4098b19803",
+   "topic": "Official",
+   "importance": 3,
+   "weight": 16,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-26-mastodon.social-dataminers-found-gta-6-console-graphics-settings-ps5-and-xbox-series-x-share-identical-pre": {
+   "hash": "0dc846fd4386bae1",
+   "topic": "Leak",
+   "importance": 2,
+   "weight": 10,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-26-mastodon.cl-gta-6-est-llenando-los-talleres-de-xbox-series-x-y-s-que-se-sobrecalientan-se-apagan-y-dej": {
+   "hash": "acd699b43539308e",
+   "topic": "Community",
+   "importance": null,
+   "weight": 2,
+   "summary": null,
+   "by": null
+  },
   "2026-11-26-bsky.app-after-removing-gta-6-pc-ports-github-celebrates-app-popular-in-ps5-piracy-groups-https-www": {
    "hash": "2140a3f82e02b110",
    "topic": "Port",
    "importance": null,
-   "weight": 26,
+   "weight": 16,
+   "lead": "2026-11-26-news.google.com-after-removing-gta-6-pc-ports-github-celebrates-app-popular-in-ps5-piracy-groups",
    "summary": null,
    "by": null
+  },
+  "2026-11-26-news.google.com-unofficial-gta-6-pc-ports-keep-advancing-after-take-two-clears-thousands-of-github-reposit": {
+   "hash": "92e302a2acc869e1",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-26-news.google.com-after-removing-gta-6-pc-ports-github-celebrates-app-popular-in-ps5-piracy-groups": {
+   "hash": "40c6b0bc5797a751",
+   "topic": "Takedown",
+   "importance": 3,
+   "weight": 48,
+   "similar": 1,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
   "2026-11-26-boards.4chan.org-people-are-so-focused-on-gta6-that-they-fail-to-realize-the-momentum-this-situation-is-giv": {
    "hash": "5258f12f4932f10e",
@@ -144,20 +186,20 @@
   },
   "2026-11-26-bsky.app-take-two-derruba-mais-de-3-mil-ports-de-gta-6-para-pc-no-github-canaltech-com-br-games-tak": {
    "hash": "da0c622b72c9e822",
-   "topic": "Official",
-   "importance": null,
-   "weight": 22,
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 64,
    "similar": 1,
    "summary": null,
-   "by": null
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
   "2026-11-26-mastodon.cl-gta-6-en-pc-supera-por-primera-vez-los-60-fps-en-una-escena-con-luc-a-y-el-port-m-s-avanza": {
    "hash": "a1b5ef35ff1825a2",
    "topic": "Port",
-   "importance": null,
-   "weight": 26,
-   "summary": null,
-   "by": null
+   "importance": 4,
+   "weight": 38,
+   "summary": "GTA 6 on PC reportedly surpasses 60 FPS in a Lucía scene, and the most advanced port reaches 91%.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
   "2026-11-26-bsky.app-want-more-full-story-https-gamerminimap-com-en-gta-6-news-gta-vi-missing-persons-port-gell": {
    "hash": "28e6685552c3c5e4",
@@ -215,13 +257,13 @@
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
-  "2026-11-26-news.google.com-rockstar-developer-explains-how-players-should-experience-gta-vi": {
-   "hash": "027e15fefad302c0",
+  "2026-11-26-rockstarintel.com-rockstar-developer-explains-how-players-should-experience-gta-vi": {
+   "hash": "dc0ad4f1c35ce7ea",
    "topic": "Official",
-   "importance": 3,
-   "weight": 24,
+   "importance": 2,
+   "weight": 12,
    "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
   "2026-11-26-bsky.app-grand-theft-auto-6-pc-port-cgbj-is-91-complete-with-playable-framerates-https-www-dsogamin": {
    "hash": "dbd918f6f8a5ac1c",
@@ -278,6 +320,14 @@
    "topic": "Community",
    "importance": 1,
    "weight": 0,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-26-news.google.com-rockstar-hints-massive-gta-6-map-saved-room-for-future-content": {
+   "hash": "240062689df9ee9e",
+   "topic": "Official",
+   "importance": 2,
+   "weight": 12,
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
@@ -361,14 +411,6 @@
    "summary": "Post claims Take-Two wiped 3,007 GitHub repos to stop ports built from leaked files, with no official date.",
    "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
-  "2026-11-26-news.google.com-rockstar-hints-massive-gta-6-map-saved-room-for-future-content": {
-   "hash": "240062689df9ee9e",
-   "topic": "Official",
-   "importance": 2,
-   "weight": 12,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
-  },
   "2026-11-26-news.google.com-gta-6-gets-its-first-unofficial-pc-mod-menu-and-launcher": {
    "hash": "412b25bb3ee963d3",
    "topic": "Port",
@@ -401,6 +443,15 @@
    "weight": 40,
    "similar": 1,
    "summary": "Modders reportedly bypassed the 30 FPS limit on jailbroken PS5 consoles while gamers wait for a PC port.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-26-news.google.com-microsoft-owned-github-deletes-unhinged-post-celebrating-playstation-5-emulators-success-f": {
+   "hash": "b3aadb8cca8c0dd5",
+   "topic": "Takedown",
+   "importance": 2,
+   "weight": 36,
+   "similar": 1,
+   "summary": "Microsoft-owned GitHub deleted a post celebrating a PlayStation 5 emulator after GTA 6 launched.",
    "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
   "2026-11-26-bsky.app-gta-vi-recomp-build-for-pc-is-out-magnet-xt-urn-btih-4d3466300cc9ab871549e0afcac2792bba6af": {
@@ -653,15 +704,6 @@
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
-  "2026-11-26-news.google.com-microsoft-owned-github-deletes-unhinged-post-celebrating-playstation-5-emulators-success-f": {
-   "hash": "b3aadb8cca8c0dd5",
-   "topic": "Takedown",
-   "importance": 2,
-   "weight": 36,
-   "similar": 1,
-   "summary": "Microsoft-owned GitHub deleted a post celebrating a PlayStation 5 emulator after GTA 6 launched.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
   "2026-11-26-news.google.com-modders-reverse-engineer-pc-port-for-gta-6-even-before-release-announcement": {
    "hash": "556ac44e2b86b3ab",
    "topic": "Port",
@@ -786,14 +828,6 @@
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
-  "2026-11-26-news.google.com-a-deleted-gta-6-leak-may-have-revealed-rockstars-graphics-settings": {
-   "hash": "c496ee485b0ddefe",
-   "topic": "Leak",
-   "importance": 2,
-   "weight": 18,
-   "summary": null,
-   "by": "Kilo Gateway, reflection/beam-free"
-  },
   "2026-11-26-news.google.com-rockstar-north-chief-was-praying-gta-6s-big-story-reveal-stayed-under-wraps-ahead-of-launc": {
    "hash": "736d46d65e5fed56",
    "topic": "Official",
@@ -801,6 +835,14 @@
    "weight": 24,
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-26-news.google.com-a-deleted-gta-6-leak-may-have-revealed-rockstars-graphics-settings": {
+   "hash": "c496ee485b0ddefe",
+   "topic": "Leak",
+   "importance": 2,
+   "weight": 18,
+   "summary": null,
+   "by": "Kilo Gateway, reflection/beam-free"
   },
   "2026-11-26-news.google.com-gta-6-pc-download-file-targets-crypto-wallets-with-malware": {
    "hash": "6cb147df63dee667",
@@ -978,11 +1020,11 @@
   },
   "2026-11-26-news.google.com-gta-vi-launch-glitches-5-issues-rockstar-logged": {
    "hash": "eb93511bc132e71f",
-   "topic": "Official",
-   "importance": null,
-   "weight": 24,
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
    "summary": null,
-   "by": null
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
   "2026-11-26-news.google.com-gta-6-pc-port-taken-down-as-take-two-hits-3-007-github-repositories": {
    "hash": "c3508106e7a3b7a5",
@@ -1142,6 +1184,15 @@
    "weight": 82,
    "similar": 5,
    "summary": "Take-Two removed 3,007 GTA 6 PC port repositories from GitHub in a DMCA crackdown, reports say.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-26-tomshardware.com-take-two-wipes-out-3-007-gta-6-pc-port-repos-from-github-in-massive-dmca-crackdown": {
+   "hash": "661b852cd8d39f8d",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 56,
+   "lead": "2026-11-26-news.google.com-take-two-wipes-out-3-007-gta-6-pc-port-repos-from-github-in-massive-dmca-crackdown-as-ai-t",
+   "summary": null,
    "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
   "2026-11-26-bsky.app-gta-6-fans-are-using-ai-to-recompile-the-leaked-xbox-build-for-pc-but-despite-take-twos-ef": {
@@ -1635,10 +1686,10 @@
   "2026-11-26-news.google.com-gta-6-leak-could-spark-ai-made-pc-build-and-renew-fears-over-game-ownership": {
    "hash": "fd35cc720d75c322",
    "topic": "Leak",
-   "importance": null,
-   "weight": 30,
+   "importance": 2,
+   "weight": 18,
    "summary": null,
-   "by": null
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
   "2026-11-26-bsky.app-trending-leaker-cyberleek-releases-the-xbox-build-executable-for-gta-6-https-brown-wombat-": {
    "hash": "2e7476e1b35397a7",
@@ -1711,6 +1762,15 @@
    "weight": 34,
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-26-news.google.com-gta-6-on-pc-unofficial-port-gets-better-fps-chapter-1-reportedly-playable": {
+   "hash": "5f82d8e6e14f6c62",
+   "topic": "Port",
+   "importance": 4,
+   "weight": 52,
+   "similar": 1,
+   "summary": null,
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
   "2026-11-26-bsky.app-gta-6-di-pc-berpotensi-lebih-cepat-metode-recomp-mulai-menarik-perhatian-gamer": {
    "hash": "f7faed3cba8789bd",
@@ -1868,15 +1928,6 @@
    "lead": "2026-11-26-bsky.app-recompila-o-n-o-oficial-de-gta-6-para-pc-circula-em-torrents-tudogta-com-br-post-cmwxswemk",
    "summary": null,
    "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
-  "2026-11-26-msn.com-take-two-wipes-out-3-007-gta-6-pc-port-repos-from-github-in-massive-dmca-crackdown": {
-   "hash": "c1295b8ebc1567a5",
-   "topic": "Takedown",
-   "importance": 5,
-   "weight": 56,
-   "lead": "2026-11-26-news.google.com-take-two-wipes-out-3-007-gta-6-pc-port-repos-from-github-in-massive-dmca-crackdown-as-ai-t",
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-26-fandomwire.com-gta-6-finally-delivers-a-gta-vice-city-feature-rockstar-scrapped-24-years-ago": {
    "hash": "910f30d628d5e1d6",
@@ -2239,15 +2290,6 @@
    "weight": 26,
    "summary": null,
    "by": "Kilo Gateway, reflection/beam-free"
-  },
-  "2026-11-25-msn.com-gta-6-on-pc-unofficial-port-gets-better-fps-chapter-1-reportedly-playable": {
-   "hash": "9de9f236f63928e7",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 40,
-   "similar": 1,
-   "summary": "Unofficial port improves FPS, chapter 1 playable.",
-   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-25-gamerant.com-grand-theft-auto-6-black-friday-sale-is-a-great-deal-on-rockstars-sequel": {
    "hash": "d873ce9c57ff643e",
@@ -3155,18 +3197,18 @@
   },
   "2026-11-25-news.google.com-i-stay-horrified-and-impressed-by-how-stupidly-fast-this-is-advancing-unofficial-pc-ports-": {
    "hash": "6b226420d2ad70f4",
-   "topic": "Official",
-   "importance": null,
-   "weight": 24,
-   "summary": null,
-   "by": null
+   "topic": "Port",
+   "importance": 4,
+   "weight": 46,
+   "summary": "Unofficial GTA 6 PC ports are making rapid progress, and Chapter 1 is reportedly now playable.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
   "2026-11-25-techradar.com-unofficial-gta-6-pc-ports-are-speeding-ahead-with-chapter-1-now-playable": {
    "hash": "823faee05b108f46",
    "topic": "Port",
    "importance": 3,
    "weight": 24,
-   "lead": "2026-11-25-msn.com-gta-6-on-pc-unofficial-port-gets-better-fps-chapter-1-reportedly-playable",
+   "lead": "2026-11-26-news.google.com-gta-6-on-pc-unofficial-port-gets-better-fps-chapter-1-reportedly-playable",
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
@@ -3321,8 +3363,7 @@
    "hash": "9b6e56048147b330",
    "topic": "Takedown",
    "importance": 5,
-   "weight": 64,
-   "similar": 1,
+   "weight": 58,
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
@@ -3349,50 +3390,37 @@
    "weight": 58,
    "summary": "Take-Two DMCA sweep deletes 3,007 GTA 6 PC port repos, Leonida eliminated.",
    "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-25-bsky.app-rockstar-derruba-port-n-o-oficial-de-gta-6-para-pc-criado-por-jovem-de-15-anos": {
-   "hash": "ca0f05edd6adaee4",
-   "topic": "Takedown",
-   "importance": 5,
-   "weight": 48,
-   "lead": "2026-11-25-bsky.app-rockstar-derruba-port-n-o-oficial-de-gta-6-para-pc-criado-por-jovem-de-15-anos-canaltech-c",
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-25-news.google.com-moment-cyber-hacker-who-stole-clips-of-gta-6-and-leaked-them-online-is-arrested-in-hotel-r": {
-   "hash": "fd09f11da2e6da13",
-   "topic": "Leak",
-   "importance": 3,
-   "weight": 30,
-   "summary": "A hacker who stole and leaked GTA 6 clips is arrested in a hotel room.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
-  "2026-11-25-bsky.app-ports-n-o-oficiais-de-gta-6-para-pc-continuam-avan-ando-apesar-das-a-es-da-take-two": {
-   "hash": "ed1251c875e69518",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 26,
-   "summary": null,
-   "by": "Kilo Gateway, reflection/beam-free"
-  },
-  "2026-11-25-fosstodon.org-gta6-pc-port-progress-is-crazy": {
-   "hash": "c7a806b10cd66844",
-   "topic": "Community",
-   "importance": 1,
-   "weight": 0,
-   "summary": null,
-   "by": "Kilo Gateway, reflection/beam-free"
-  },
-  "2026-11-25-mastodon.social-gta-6-has-its-first-patch-on-ps5-and-xbox-autosaves-mission-phone-calls-and-weather-are-fi": {
-   "hash": "4150bea6cf203513",
-   "topic": "Official",
-   "importance": 3,
-   "weight": 16,
-   "summary": "GTA 6 receives first PS5 and Xbox patch fixing autosaves, mission calls, weather.",
-   "by": "Pollinations, gpt-oss-20b"
   }
  },
  "projects": {
+  "i95-gta6-pc-launcher": {
+   "hash": "7ffe946e880d9fce",
+   "count": 15,
+   "summary": "i95-GTA6-PC-Launcher's recent commits mention re-ranking to vuyp's tracker, upstream checks, bot removal, and README updates.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-26T21:36:22.778Z"
+  },
+  "whibwhi-own": {
+   "hash": "9cfa70652e883f51",
+   "count": 15,
+   "summary": "whibwhi-own's recent commits mention console Direct3D 12 calls answered, memory descriptor heaps, buffer views, and mapping executable descriptor writes.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-26T21:01:56.171Z"
+  },
+  "five-star-recomp": {
+   "hash": "f998c0e1ad42be24",
+   "count": 15,
+   "summary": "Five Star Recomp's recent commits mention device loss fixes, startup freeze fixes, and ray-tracing stand-in fills.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-26T21:36:22.778Z"
+  },
+  "native-victory-macos": {
+   "hash": "f35456de986b6744",
+   "count": 15,
+   "summary": "Native-Victory-macOS's recent commits mention heap indexing, DispatchX thread counts, shaders indexing descriptor heap, first world frame with mesh pipelines, and ExecuteIndirect mesh signature.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-26T21:01:56.171Z"
+  },
   "palmetto": {
    "hash": "95984b47c4f2b398",
    "count": 15,
@@ -3414,34 +3442,6 @@
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-26T19:02:03.053Z"
   },
-  "i95-gta6-pc-launcher": {
-   "hash": "7ffe946e880d9fce",
-   "count": 15,
-   "summary": "i95-GTA6-PC-Launcher's recent commits mention re-ranking to vuyp's tracker, upstream checks, bot removal, and README updates.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-26T21:36:22.778Z"
-  },
-  "native-victory-macos": {
-   "hash": "f35456de986b6744",
-   "count": 15,
-   "summary": "Native-Victory-macOS's recent commits mention heap indexing, DispatchX thread counts, shaders indexing descriptor heap, first world frame with mesh pipelines, and ExecuteIndirect mesh signature.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-26T21:01:56.171Z"
-  },
-  "whibwhi-own": {
-   "hash": "9cfa70652e883f51",
-   "count": 15,
-   "summary": "whibwhi-own's recent commits mention console Direct3D 12 calls answered, memory descriptor heaps, buffer views, and mapping executable descriptor writes.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-26T21:01:56.171Z"
-  },
-  "five-star-recomp": {
-   "hash": "f998c0e1ad42be24",
-   "count": 15,
-   "summary": "Five Star Recomp's recent commits mention device loss fixes, startup freeze fixes, and ray-tracing stand-in fills.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-26T21:36:22.778Z"
-  },
   "launcher": {
    "hash": "c7d126bd6e07b075",
    "count": 15,
@@ -3449,19 +3449,19 @@
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-26T21:36:22.778Z"
   },
-  "xvalkyrie": {
-   "hash": "35c61a2ac859f569",
+  "leonida-continued": {
+   "hash": "040f41941cc2d96b",
    "count": 15,
-   "summary": "XValkyrie's recent commits mention shader-journal extraction, watchdog dump details, pipeline fixes, shader reductions, debug settings, and upload test behavior.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-26T21:36:22.778Z"
+   "summary": "Leonida Continued's recent pull requests mention title write-back, GPU test setup, and bindless dimension limits.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-26T22:01:55.517Z"
   },
-  "vitoria-spark": {
-   "hash": "82a8eaad5daa4d51",
+  "project-americas": {
+   "hash": "8eb37b9ae7a6ab9c",
    "count": 15,
-   "summary": "VItoria Spark’s recent commits mention write-combined copy-back skip warning, wave pairing opt-in, Linux support documentation, and shader wave-wide branches.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-26T21:36:22.778Z"
+   "summary": "Project-Americas' recent commits mention batched fixes, loading loop speed, shader numbers, and large dispatch limits.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-26T22:01:55.517Z"
   }
  }
 }
