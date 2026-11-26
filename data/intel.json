@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T09:05:25.577Z",
+  "updated": "2026-11-26T09:20:23.029Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T09:01:18.000Z",
-      "lastOkAt": "2026-11-26T09:05:25.577Z",
-      "seen": 4000,
+      "lastOkAt": "2026-11-26T09:20:23.029Z",
+      "seen": 4250,
       "events": 152,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T06:21:27.000Z",
-      "lastOkAt": "2026-11-26T09:05:25.577Z",
+      "lastOkAt": "2026-11-26T09:20:23.029Z",
       "seen": 16,
       "events": 8,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T08:10:17.339Z",
-      "lastOkAt": "2026-11-26T09:05:25.577Z",
-      "seen": 908,
+      "lastOkAt": "2026-11-26T09:20:23.029Z",
+      "seen": 967,
       "events": 20,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T09:00:28.844Z",
-      "lastOkAt": "2026-11-26T09:05:25.577Z",
-      "seen": 6400,
+      "lastOkAt": "2026-11-26T09:20:23.029Z",
+      "seen": 6800,
       "events": 5,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T09:05:25.577Z",
-      "seen": 1855,
+      "lastOkAt": "2026-11-26T09:20:23.029Z",
+      "seen": 1973,
       "events": 7,
       "errors": 0
     }
@@ -2427,10 +2427,17 @@
       "chain": "sha256:17de37ee408db86920149c18b5df8378ad3956acb7a2a6fc342d51ec99d69637",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T09:20:23.029Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub item with an empty excerpt, so it does not plainly verify the PR number or that the pull request was opened."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T09:20:23.029Z"
     },
     {
       "id": "20261126t052844z-avatarmanz-9434e78a",
@@ -4218,10 +4225,17 @@
       "chain": "sha256:1808350c59af43e8e461e74a58568825cef4c1ad1d32580b8be4bd921443fd74",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T09:20:23.029Z",
+          "by": "desk",
+          "note": "The primary source from the project's own repository confirms the pull request title, and no conflicting information is present."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T09:20:23.029Z"
     }
   ],
   "reports": [
