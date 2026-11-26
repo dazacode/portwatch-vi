@@ -21,20 +21,43 @@ const one = (n: number) => Math.round(n * 10) / 10
 
 export type Stage = { label: string; at: number }
 
-/** Our score drawn part by part, in the ladder's colours. */
+/**
+ * Each stage as its own block, as wide as the project claims it, so the blocks line up with the
+ * stages. The solid part counts in our score; the faded rest is claimed but not confirmed.
+ */
 function Parts({ ours }: { ours: Ours | undefined }) {
+  // Parts that share a colour (picture, speed and stability) are one block.
+  const blocks: Ours["parts"] = []
+  for (const p of ours?.parts ?? []) {
+    if (p.claimed <= 0) continue
+    const last = blocks.at(-1)
+    if (last && scoreColor(last.key) === scoreColor(p.key)) {
+      last.claimed += p.claimed
+      last.counted += p.counted
+      last.label = SCORE_KEYS.find((k) => k.keys.includes(p.key))?.label ?? last.label
+    } else blocks.push({ ...p })
+  }
   return (
-    <span className="absolute inset-y-0 left-0 flex w-full gap-px">
-      {ours?.parts
-        .filter((p) => p.counted > 0)
-        .map((p) => (
+    <span className="absolute inset-0 flex">
+      {blocks.map((p) => {
+        const color = scoreColor(p.key)
+        return (
           <span
             key={p.key}
-            title={`${p.label}: ${one(p.counted)} of ${one(p.claimed)} claimed`}
-            className="block h-full shrink-0 transition-[width] duration-700 ease-out first:rounded-l-full last:rounded-r-full motion-reduce:transition-none"
-            style={{ width: `${p.counted}%`, backgroundColor: scoreColor(p.key) }}
-          />
-        ))}
+            title={`${p.label}: ${one(p.counted)} of ${one(p.claimed)} counts`}
+            className="relative block h-full shrink-0 shadow-[inset_-1px_0_0_var(--background)] transition-[width] duration-700 ease-out motion-reduce:transition-none"
+            style={{
+              width: `${p.claimed}%`,
+              backgroundColor: `color-mix(in oklab, ${color} 28%, transparent)`,
+            }}
+          >
+            <span
+              className="absolute inset-y-0 left-0 transition-[width] duration-700 ease-out motion-reduce:transition-none"
+              style={{ width: `${(p.counted / p.claimed) * 100}%`, backgroundColor: color }}
+            />
+          </span>
+        )
+      })}
     </span>
   )
 }
@@ -112,7 +135,7 @@ export function Race({ frames, stages }: { frames: Frame[]; stages: Stage[] }) {
             How far GTA VI runs on PC
           </h2>
           <div className="mt-1 flex flex-wrap items-baseline gap-x-6 gap-y-1">
-            <p className="flex items-baseline gap-2">
+            <p className="flex flex-wrap items-baseline gap-x-2">
               <NumberFlow
                 value={lead.score}
                 suffix="%"
@@ -124,22 +147,26 @@ export function Race({ frames, stages }: { frames: Frame[]; stages: Stage[] }) {
                 <span translate="no" className="font-bold">
                   {lead.name}
                 </span>
+                {lead.ours && (
+                  <span className="text-muted-foreground">
+                    , {lead.ours.rating}% of it counts in our score
+                  </span>
+                )}
               </span>
             </p>
-            {best && (
-              <p className="flex items-baseline gap-2">
+            {best && best.id !== lead.id && (
+              <p className="text-sm">
+                Highest by our count:{" "}
+                <span translate="no" className="font-bold">
+                  {best.name}
+                </span>
+                ,{" "}
                 <NumberFlow
                   value={best.rating}
                   suffix="%"
                   format={{ minimumFractionDigits: 1, maximumFractionDigits: 1 }}
-                  className="text-3xl font-extrabold tracking-tight text-step-6 [--number-flow-mask-height:0.08em]"
+                  className="font-bold [--number-flow-mask-height:0.08em]"
                 />
-                <span className="text-sm">
-                  {now ? "by our count" : "was ours"},{" "}
-                  <span translate="no" className="font-bold">
-                    {best.name}
-                  </span>
-                </span>
               </p>
             )}
           </div>
@@ -182,11 +209,7 @@ export function Race({ frames, stages }: { frames: Frame[]; stages: Stage[] }) {
       {/* The whole game, 0 to 100, with the stages on it. */}
       <div aria-hidden="true" className="mt-4">
         <div className="relative h-4 overflow-hidden rounded-full bg-foreground/10">
-          <span
-            className="absolute inset-y-0 left-0 rounded-full bg-primary/40 transition-[width] duration-700 ease-out motion-reduce:transition-none"
-            style={{ width: `${lead.score}%` }}
-          />
-          <Parts ours={best} />
+          <Parts ours={lead.ours} />
         </div>
         <div className="relative mt-1 h-4">
           {stages.map((s) => (
@@ -267,13 +290,6 @@ export function Race({ frames, stages }: { frames: Frame[]; stages: Stage[] }) {
                     aria-hidden="true"
                     className="relative block h-2.5 overflow-hidden rounded-full bg-foreground/10"
                   >
-                    <span
-                      className={cn(
-                        "absolute inset-y-0 left-0 rounded-full transition-[width,background-color] duration-700 ease-out motion-reduce:transition-none",
-                        lane === 0 ? "bg-primary/45" : "bg-muted-foreground/40"
-                      )}
-                      style={{ width: `${here?.score ?? 0}%` }}
-                    />
                     <Parts ours={ours} />
                   </span>
                   <span
@@ -296,8 +312,12 @@ export function Race({ frames, stages }: { frames: Frame[]; stages: Stage[] }) {
       <div className="mt-3 border-t border-foreground/10 pt-3 text-[0.6875rem] text-muted-foreground">
         <ul className="flex flex-wrap gap-x-4 gap-y-1">
           <li className="flex items-center gap-1.5">
-            <span aria-hidden="true" className="h-2 w-5 rounded-full bg-muted-foreground/40" />
-            Claimed
+            <span aria-hidden="true" className="h-2.5 w-5 rounded-sm bg-foreground/80" />
+            Counts in our score
+          </li>
+          <li className="flex items-center gap-1.5">
+            <span aria-hidden="true" className="h-2.5 w-5 rounded-sm bg-foreground/25" />
+            Claimed, not confirmed
           </li>
           {SCORE_KEYS.map((k) => (
             <li key={k.label} className="flex items-center gap-1.5">
@@ -311,8 +331,9 @@ export function Race({ frames, stages }: { frames: Frame[]; stages: Stage[] }) {
           ))}
         </ul>
         <p className="mt-1.5 max-w-3xl">
-          The light bar is what a project claims, the number PortWatch ranks by. The colours are our
-          score for it: each step counts half until people outside the project confirm it, and
+          Each block is a stage, drawn as far as the project claims it, so the blocks line up with
+          the stages. The solid part counts in our score; the faded rest is claimed, the way
+          PortWatch counts it. A stage counts half until people outside the project confirm it, and
           everything past Runnable counts half until anyone can.{" "}
           <Link href="/method" className="underline underline-offset-4 hover:text-stripe-1">
             How projects are scored
