@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T08:36:38.181Z",
+  "updated": "2026-11-26T08:50:22.416Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T08:31:15.000Z",
-      "lastOkAt": "2026-11-26T08:36:38.181Z",
-      "seen": 3500,
+      "lastOkAt": "2026-11-26T08:50:22.416Z",
+      "seen": 3750,
       "events": 136,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T06:21:27.000Z",
-      "lastOkAt": "2026-11-26T08:36:38.181Z",
+      "lastOkAt": "2026-11-26T08:50:22.416Z",
       "seen": 16,
       "events": 8,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T08:10:17.339Z",
-      "lastOkAt": "2026-11-26T08:36:38.181Z",
-      "seen": 790,
+      "lastOkAt": "2026-11-26T08:50:22.416Z",
+      "seen": 849,
       "events": 20,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T08:30:14.000Z",
-      "lastOkAt": "2026-11-26T08:36:38.181Z",
-      "seen": 5600,
+      "lastOkAt": "2026-11-26T08:50:22.416Z",
+      "seen": 6000,
       "events": 5,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T08:36:38.181Z",
-      "seen": 1619,
+      "lastOkAt": "2026-11-26T08:50:22.416Z",
+      "seen": 1737,
       "events": 7,
       "errors": 0
     }
@@ -2312,10 +2312,17 @@
       "chain": "sha256:d128ddcb00c73384afb08712a4e6f99d842da33a76595cf45835bddb73f926cf",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T08:50:22.416Z",
+          "by": "desk",
+          "note": "The only source is an empty-excerpt GitHub archive entry, which is too thin to plainly support the specific archive contents and date in the one line."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T08:50:22.416Z"
     },
     {
       "id": "20261126t052919z-victory-gta6-8583f5fe",
@@ -2363,10 +2370,17 @@
       "chain": "sha256:689a51fc63f1b8d798261e1e6c7be1870924a4bcc89ac9153860f21f1f0f9e64",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T08:50:22.416Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub entry with no excerpt, so it is primary but not independent and too thin to verify the one-line claim."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T08:50:22.416Z"
     },
     {
       "id": "20261126t052853z-gtavi-recomp-8f2d07bb",
