@@ -25,7 +25,16 @@ import {
 export const revalidate = 300
 
 export async function generateMetadata(): Promise<Metadata> {
-  return pageMeta(standingsMeta((await getTracker()).efforts.length))
+  return pageMeta({
+    ...standingsMeta((await getTracker()).efforts.length),
+    // The race as it stands, drawn fresh from the board.
+    image: {
+      url: "/race/wide/image",
+      width: 1600,
+      height: 900,
+      alt: "GTA VI on PC, the race: the leader and the chasing pack by our score",
+    },
+  })
 }
 
 export default async function Page() {

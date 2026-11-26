@@ -21,12 +21,15 @@ export function pageMeta({
   description,
   path,
   published,
+  image = OG_IMAGE,
 }: {
   title: string
   description: string
   path: string
   /** Makes it an article. */
   published?: string
+  /** The link preview. The site's own card unless a page has a better one. */
+  image?: { url: string; width: number; height: number; alt: string }
 }): Metadata {
   return {
     title: path === "/" ? { absolute: title } : title,
@@ -41,9 +44,9 @@ export function pageMeta({
       url: path,
       title,
       description,
-      images: [OG_IMAGE],
+      images: [image],
     },
-    twitter: { card: "summary_large_image", title, description, images: [OG_IMAGE] },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
   }
 }
 
