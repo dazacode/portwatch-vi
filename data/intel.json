@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T09:35:31.101Z",
+  "updated": "2026-11-26T09:50:28.040Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T09:01:18.000Z",
-      "lastOkAt": "2026-11-26T09:35:31.101Z",
-      "seen": 4500,
+      "lastOkAt": "2026-11-26T09:50:28.040Z",
+      "seen": 4750,
       "events": 152,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T08:19:21.000Z",
-      "lastOkAt": "2026-11-26T09:35:31.101Z",
+      "lastOkAt": "2026-11-26T09:50:28.040Z",
       "seen": 19,
       "events": 11,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T09:35:31.101Z",
-      "seen": 1027,
+      "lastOkAt": "2026-11-26T09:50:28.040Z",
+      "seen": 1087,
       "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T09:00:28.844Z",
-      "lastOkAt": "2026-11-26T09:35:31.101Z",
-      "seen": 7200,
+      "lastOkAt": "2026-11-26T09:50:28.040Z",
+      "seen": 7600,
       "events": 5,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T09:35:31.101Z",
-      "seen": 2091,
+      "lastOkAt": "2026-11-26T09:50:28.040Z",
+      "seen": 2209,
       "events": 7,
       "errors": 0
     }
@@ -4400,10 +4400,17 @@
       "chain": "sha256:081798c43a06374f49b0bc8f4383d2b802ffae90296603fa7918bcda599bfafb",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T09:50:28.040Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository excerpt repeating the claim, so it is primary but not independent and too thin to publish."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T09:50:28.040Z"
     },
     {
       "id": "20261126t075615z-tuxbox-b119a09c",
@@ -4452,10 +4459,17 @@
       "chain": "sha256:67ef08217602eb47d67092ed3ebf2772fa6259a6d50aded5143000c635bafecf",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T09:50:28.040Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository repeating the claim verbatim, which is primary but not independent and too thin to verify the 10–21 s range."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T09:50:28.040Z"
     }
   ],
   "reports": [
