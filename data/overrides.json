@@ -3376,6 +3376,82 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [
+          "World works at nearly 20 fps on RTX 5080",
+          "Playable with controller",
+          "18.7‑20.2 fps over 12‑minute run"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "playablegames-peppa",
+        "summary": "VIctory fork for NVIDIA: a compatibility layer that runs an Xbox Series (Scarlett) title on Windows.",
+        "basedOn": [],
+        "id": "playablegames-peppa",
+        "repo": "Peppacodes/playablegames-peppa",
+        "stats": {
+          "stars": 2,
+          "createdAt": "2026-11-26T09:22:13Z",
+          "pushedAt": "2026-11-26T21:53:00Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "Not feature‑complete",
+          "Upstream not target"
+        ],
+        "highlights": [
+          "Runs on AMD RX 560 XT 8 GB",
+          "D3D12 Feature Level 12_0"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "victory-polaris",
+        "summary": "GTA VI Xbox emulator patches for AMD Polaris (RX 560 XT / GCN 4).",
+        "basedOn": [],
+        "id": "victory-polaris",
+        "repo": "kalinizer/victory-polaris",
+        "stats": {
+          "stars": 1,
+          "createdAt": "2026-11-26T17:02:33Z",
+          "pushedAt": "2026-11-26T18:41:50Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -3623,7 +3699,9 @@
     "TERT01/XSEmu_mybackup",
     "xmvo/Lumen",
     "HyperExtendedReality/strata",
-    "martindevbr/VItoria-Spark"
+    "martindevbr/VItoria-Spark",
+    "Peppacodes/playablegames-peppa",
+    "kalinizer/victory-polaris"
   ],
   "news": [
     {
