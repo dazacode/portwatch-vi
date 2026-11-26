@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T10:35:21.968Z",
+  "updated": "2026-11-26T10:50:22.492Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T10:31:07.000Z",
-      "lastOkAt": "2026-11-26T10:35:21.968Z",
-      "seen": 5500,
+      "lastOkAt": "2026-11-26T10:50:22.492Z",
+      "seen": 5750,
       "events": 193,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T08:19:21.000Z",
-      "lastOkAt": "2026-11-26T10:35:21.968Z",
+      "lastOkAt": "2026-11-26T10:50:22.492Z",
       "seen": 19,
       "events": 11,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T10:35:21.968Z",
-      "seen": 1267,
+      "lastOkAt": "2026-11-26T10:50:22.492Z",
+      "seen": 1327,
       "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T10:28:50.942Z",
-      "lastOkAt": "2026-11-26T10:35:21.968Z",
-      "seen": 8800,
+      "lastOkAt": "2026-11-26T10:50:22.492Z",
+      "seen": 9200,
       "events": 6,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T10:35:21.968Z",
-      "seen": 2567,
+      "lastOkAt": "2026-11-26T10:50:22.492Z",
+      "seen": 2687,
       "events": 7,
       "errors": 0
     }
@@ -4516,10 +4516,17 @@
       "chain": "sha256:a7519c7c13a477a4df61ccc8d8dfa37ebb75c2fb3ed9e60b9719a21123494c0b",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T10:50:22.492Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub entry with no excerpt, so the measurement and plan claim is not independently or plainly substantiated."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T10:50:22.492Z"
     },
     {
       "id": "20261126t095003z-marvis-d8ec4ed6",
@@ -4684,10 +4691,17 @@
       "chain": "sha256:2fc9ae57331ab9f58798ed75965494cd8bf7e013fd8717eaefa28960e6168076",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T10:50:22.492Z",
+          "by": "desk",
+          "note": "The only stored source is AnyBox's own repository entry with an empty excerpt, so the commit line is a non-independent self-description that nothing else corroborates."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T10:50:22.492Z"
     },
     {
       "id": "20261126t101119z-gta6-compat-layer-95dce0f6",
