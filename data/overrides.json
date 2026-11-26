@@ -1105,14 +1105,14 @@
         "publicLater": true,
         "byline": "Streamed live · private code, built on the public forks",
         "tier": "tracked",
-        "summary": "Hugo's private build, MashedHugo (titled Flamingo), renders Lucia's prologue close to the console: lighting, shadows, hair and faces, with floating geometry and pixelation. Hugo's 26 Nov screenshots read 17.4 fps indoors with Lucia, then 22 fps on overlay-only shots with no scene in view, about 700 draws a frame and 514 to 618 dropped. Every shader and pipeline on the overlay works. None of it shows a sustained rate in gameplay. Last seen stuck at the boat mission. Code private for now.",
+        "summary": "Hugo's private build, MashedHugo (titled Flamingo), renders Lucia's prologue close to the console: lighting, shadows, hair and faces, with floating geometry and pixelation. Hugo's 26 Nov screenshots read 17 to 22 fps indoors: the newest, at 20 fps, shows Lucia by a lamp with her face drawn black, and two show only the overlay. Every shader and pipeline on the overlay works, but 224 to 618 draws a frame are dropped. None of it shows a sustained rate in gameplay. Last seen stuck at the boat mission. Code private for now.",
         "highlights": [
           "Lighting, shadows, hair and faces close to the console",
           "26 Nov overlay: 2,568 shaders and 2,323 pipelines, none failing",
           "A player walks the prison, talks to cellmates and opens the pause menu"
         ],
         "blockers": [
-          "Blocky, pixelated textures on faces and walls, and floating geometry",
+          "Faces drawn black or pixelated, blocky textures and floating geometry",
           "17-22 fps only in light or unseen scenes, up to 618 draws dropped; boat mission stuck",
           "Code is private for now, so nobody outside can test it"
         ],
@@ -1177,6 +1177,11 @@
           "date": "2026-11-26",
           "kind": "new",
           "text": "MashedHugo: two more overlay shots from Hugo read 22 fps, but show no scene, draw about 700 calls a frame and drop 514 to 618, with the GPU timer near 0 ms. Scores unchanged."
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "new",
+          "text": "MashedHugo: Hugo's newest shot reads 20 fps indoors with Lucia by a lamp, her face drawn black and 359 draws a frame dropped. Scores unchanged."
         }
       ]
     },
