@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T14:35:20.564Z",
+  "updated": "2026-11-26T14:50:30.352Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T14:30:54.000Z",
-      "lastOkAt": "2026-11-26T14:35:20.564Z",
-      "seen": 9500,
+      "lastOkAt": "2026-11-26T14:50:30.352Z",
+      "seen": 9750,
       "events": 329,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T10:11:01.000Z",
-      "lastOkAt": "2026-11-26T14:35:20.564Z",
+      "lastOkAt": "2026-11-26T14:50:30.352Z",
       "seen": 20,
       "events": 12,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T14:35:20.564Z",
-      "seen": 2227,
+      "lastOkAt": "2026-11-26T14:50:30.352Z",
+      "seen": 2287,
       "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T14:24:29.000Z",
-      "lastOkAt": "2026-11-26T14:35:20.564Z",
-      "seen": 15200,
+      "lastOkAt": "2026-11-26T14:50:30.352Z",
+      "seen": 15600,
       "events": 18,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T02:35:20.564Z",
-      "lastOkAt": "2026-11-26T14:35:20.564Z",
-      "seen": 4487,
+      "lastCursor": "2026-11-26T02:50:30.352Z",
+      "lastOkAt": "2026-11-26T14:50:30.352Z",
+      "seen": 4607,
       "events": 7,
       "errors": 0
     }
@@ -6217,10 +6217,17 @@
       "chain": "sha256:95be7deb86a6dfd767c28c6f7fef3f5562a9b81b40d50d2e6938630e0f3a9f0a",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T14:50:30.352Z",
+          "by": "desk",
+          "note": "The GitHub repository is a primary source, but the provided excerpt is empty and does not explicitly confirm the existence of the specific archive mentioned, making the evidence too thin to publish."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T14:50:30.352Z"
     },
     {
       "id": "20261126t123738z-ccs03-23561e26",
@@ -6644,10 +6651,17 @@
       "chain": "sha256:8eb434fe9f6c9acf7047b22a9968f3cd29549ef35cad91ab85922228f94c7a49",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T14:50:30.352Z",
+          "by": "desk",
+          "note": "The only source is a single Bluesky post, and a social post alone is too weak to support a specific takedown count without corroboration from GitHub, Take-Two, or another outlet."
+        }
+      ],
       "heldReasons": [
         "low confidence"
-      ]
+      ],
+      "deskAt": "2026-11-26T14:50:30.352Z"
     },
     {
       "id": "20261126t135822z-xin-leonida-471e2975",
