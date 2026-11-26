@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T20:50:22.484Z",
+  "updated": "2026-11-26T21:05:26.160Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T20:31:14.000Z",
-      "lastOkAt": "2026-11-26T20:50:22.484Z",
-      "seen": 15500,
-      "events": 552,
+      "lastCursor": "2026-11-26T21:01:10.000Z",
+      "lastOkAt": "2026-11-26T21:05:26.160Z",
+      "seen": 15750,
+      "events": 569,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T18:18:39.000Z",
-      "lastOkAt": "2026-11-26T20:50:22.484Z",
+      "lastOkAt": "2026-11-26T21:05:26.160Z",
       "seen": 25,
       "events": 17,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T20:50:22.484Z",
-      "seen": 3678,
+      "lastOkAt": "2026-11-26T21:05:26.160Z",
+      "seen": 3739,
       "events": 23,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T20:28:10.943Z",
-      "lastOkAt": "2026-11-26T20:50:22.484Z",
-      "seen": 24800,
+      "lastCursor": "2026-11-26T20:57:48.251Z",
+      "lastOkAt": "2026-11-26T21:05:26.160Z",
+      "seen": 25200,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T08:50:22.484Z",
-      "lastOkAt": "2026-11-26T20:50:22.484Z",
-      "seen": 7266,
+      "lastCursor": "2026-11-26T09:05:26.160Z",
+      "lastOkAt": "2026-11-26T21:05:26.160Z",
+      "seen": 7379,
       "events": 7,
       "errors": 0
     }
@@ -6803,12 +6803,17 @@
           "at": "2026-11-26T14:07:18.705Z",
           "by": "desk",
           "note": "A README-only pull request from the project's own repository is a thin, non-substantive source with no independent corroboration and an empty excerpt."
+        },
+        {
+          "at": "2026-11-26T21:05:26.160Z",
+          "by": "desk",
+          "note": "A routine README pull request in the project's own repository, with an empty excerpt and no independent corroboration, is too thin to publish as tracker news."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-26T14:07:18.705Z"
+      "deskAt": "2026-11-26T21:05:26.160Z"
     },
     {
       "id": "20261126t133359z-littlethings-build-dfa0b588",
@@ -6860,12 +6865,17 @@
           "at": "2026-11-26T14:20:21.302Z",
           "by": "desk",
           "note": "The GitHub pull request is a primary source confirming that littlethings-build opened pull request #1."
+        },
+        {
+          "at": "2026-11-26T21:05:26.160Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, and the one-line summary is truncated mid-detail, so the stored material does not plainly support the line as written."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-26T14:20:21.302Z"
+      "deskAt": "2026-11-26T21:05:26.160Z"
     },
     {
       "id": "20261126t133315z-scene-a2b7dd45",
