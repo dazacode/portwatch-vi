@@ -111,37 +111,39 @@
     {
       "id": "cgbj",
       "from": {
-        "summary": "A private build based on VIctory, using some of XCL's work. PortWatch verified it gets in game: a player moves and talks to NPCs, very slowly. A video shows the opening in flat, unlit colours. Code not public.",
+        "summary": "Private VIctory/XCL build, PortWatch-verified. Owner rates story halfway, rendering 0.75 and stability 0.85. It averages 25 fps on NVIDIA with 8 GB RAM and 16 GB VRAM (not a typo); code is private.",
         "highlights": [
-          "A player moves with a controller, talks to NPCs and opens the in-game menu",
-          "A video on X shows the opening scenes in flat colours: a car, a street, a prison yard",
-          "Built on VIctory's runtime, with some of XCL's work added"
+          "Owner ratings: half the story, rendering 0.75, stability 0.85",
+          "25 fps gameplay average, highest reported on the board (NVIDIA, 8 GB RAM and 16 GB VRAM, not a typo)",
+          "Close to the console with minor glitches; code remains private"
         ],
         "blockers": [
-          "No lighting yet, and the screen was black while a player walked around",
-          "Runs very slowly",
+          "Minor visual glitches remain",
+          "Gameplay does not sustain 30 fps; 25 fps is the reported average",
           "Code is private, so nobody outside the group can test or reproduce it"
         ],
-        "gta.story": 0,
-        "gta.render": 0.25,
-        "gta.fps": 4
+        "gta.story": 0.6,
+        "gta.render": 0.75,
+        "gta.fps": 25,
+        "assessedBy": "manual"
       },
       "to": {
-        "summary": "A private build based on VIctory and XCL. It plays Jason and Donnie's boat mission, \"Gone Fishing\", with the two characters, water, sky and birds close to the console. Black patches and a boat artifact remain, at about 4 fps. Code not public.",
+        "summary": "A private build based on VIctory and XCL. Upstream's owner says PortWatch has seen it and rates it at half the story, rendering 0.75 and stability 0.85, averaging 25 fps on NVIDIA with 8 GB of RAM and 16 GB of video memory. No public recording shows that yet: the last public shots, of the Gone Fishing boat mission on 25 Nov, measured 3.2 to 4.5 fps. Code not public.",
         "highlights": [
-          "Plays Jason and Donnie's \"Gone Fishing\" boat mission",
-          "Water, clouds, birds and detailed characters close to the console",
-          "Pause map, mission markers, money and HUD all work"
+          "Upstream's owner rates it at half the story, rendering 0.75 and stability 0.85",
+          "Public shots on 25 Nov show Jason and Donnie's \"Gone Fishing\" boat mission",
+          "Water, clouds, birds and detailed characters close to the console"
         ],
         "blockers": [
-          "Black patches across the clothes and a black artifact at the boat",
-          "About 4 fps",
+          "The 25 fps average is the owner's word; the last public shots measured 3.2-4.5 fps",
+          "Gameplay doesn't hold 30 fps; minor visual glitches remain",
           "Code is private, so nobody outside the group can test or reproduce it"
         ],
-        "gta.story": 0.1,
-        "gta.render": 0.9,
-        "gta.fps": 4.5,
-        "assessedAt": "2026-11-25"
+        "gta.story": 0.6,
+        "gta.render": 0.75,
+        "gta.fps": 25,
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude"
       },
       "changes": [
         {
@@ -214,7 +216,19 @@
           }
         ],
         "findingsSource": "From onyx's and Mamozziee's tweets of 25 November; onyx says he only posts CGBJ's milestones."
-      }
+      },
+      "changes": [
+        {
+          "date": "2026-11-26",
+          "kind": "down",
+          "text": "CGBJ: summary, highlights, blockers changed; score 86.7% → 73.0%."
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "CGBJ: gta.story, gta.render, gta.fps changed; score 73.0% → 86.7%."
+        }
+      ]
     },
     {
       "id": "victory-gta6",
@@ -344,6 +358,10 @@
           {
             "text": "Project Leonida’s Discord server was closed by Rockstar and Take‑Two.",
             "url": "https://bsky.app/profile/redpixelgate.bsky.social/post/3n35n5c37zz2v"
+          },
+          {
+            "text": "Revived the same night: ubiquitarianism/leonida was created at 23:54 UTC on 23 November, minutes after this repo was found offline, and carries Leonida on as \"Leonida Continued\", with the whole commit history and new maintainers. NotRexed isn't part of it. It is tracked as its own entry.",
+            "url": "https://github.com/ubiquitarianism/leonida"
           }
         ]
       }
@@ -556,22 +574,22 @@
     {
       "id": "belobug",
       "from": {
-        "summary": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 4 fps and rarely crashes.",
+        "summary": "Belobug's VIctory fork runs on AMD Radeon; PortWatch saw its near-console open world and mission gameplay at about 8 fps. The owner now reports ray tracing working on AMD; the README still describes the ray-tracing path as failing.",
         "highlights": [
           "Platform: AMD Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
           "The open world looks close to the retail game: lit, with textures, people, vehicles, vegetation, water and sky",
-          "Plays through missions and rarely crashes",
-          "Built on VIctory's main and upstream pull requests, not on victory-fork; GPL-3.0"
+          "Owner reports ray-traced lighting now working on AMD",
+          "Plays through missions and rarely crashes; built on VIctory's main and upstream pull requests"
         ],
-        "assessedAt": "2026-11-25",
+        "assessedAt": "2026-11-26",
         "assessedBy": "manual"
       },
       "to": {
-        "summary": "Belobug's VIctory fork for AMD Radeon, tested by its author on one PC (RX 9070 XT, Ryzen 7 9800X3D). GTA VI's open world renders lit; its README reports 5 to 8 fps, less while driving, and says \"not playable yet\". A clip posted with its repo link shows driving. Outside testers on other RX 9070 XT PCs report about 3 to 8 fps; one found the first boat mission fails within seconds, and two older Radeon cards lose the device. Upstream's owner says they have seen it run, that it plays missions and rarely crashes, and links a video we have not viewed. For the owner: story 0.5 is above First act, yet the sources show free driving in Chapter 1 and no mission past the opening. Self-reported.",
+        "summary": "Belobug's VIctory fork for AMD Radeon, tested by its author on one RX 9070 XT PC. GTA VI's open world renders lit; its README reports 5 to 8 fps and says \"not playable yet\". Outside testers on other RX 9070 XT PCs report 3 to 8 fps; one found the first boat mission fails within seconds. Upstream's owner says PortWatch saw missions at about 8 fps and ray tracing now working on AMD; the README still says ray-traced light doesn't run and turning it on removes the device. For the owner: story 0.5 is above First act, yet the sources show free driving in Chapter 1 and no mission past the opening. Self-reported.",
         "highlights": [
           "The open world renders lit, with textures, people, vehicles, vegetation, water and sky",
           "A 9-second clip posted with its repo link shows driving at about four frames a second",
-          "Upstream's word: plays through missions, rarely crashes"
+          "Upstream's word: plays missions at about 8 fps and rarely crashes"
         ],
         "assessedAt": "2026-11-26",
         "assessedBy": "claude"
@@ -617,15 +635,15 @@
       "id": "belobug",
       "from": {
         "blockers": [
-          "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
-          "Moving vehicles lose or stretch parts, distant trees aren't drawn, and a flat constant stands in for ray-traced light in the shade",
+          "About 8 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
+          "Ray tracing is reported working on AMD; the README says enabling its ray-tracing path still ends in device removal",
           "Needs about 22 GB of RAM and more than 16 GB of video memory; tested on one AMD PC only, nothing on NVIDIA or Intel yet"
         ]
       },
       "to": {
         "blockers": [
           "5-8 fps on its author's PC, less while driving; its README calls that \"not playable yet\"",
-          "Phone out turns the world black; no ray-traced light; 266 shader programs don't translate, their draws dropped",
+          "Phone out turns the world black; README: no ray-traced light; 266 shader programs don't translate",
           "Needs about 22 GB RAM and over 16 GB video memory; two RDNA2 cards lost the device"
         ]
       }
@@ -919,16 +937,26 @@
     {
       "id": "belobug",
       "from": {
-        "gta.fps": 4
+        "gta.fps": 8
       },
       "to": {
-        "gta.fps": 6
+        "gta.fps": 8
       },
       "changes": [
         {
           "date": "2026-11-26",
           "kind": "up",
           "text": "Frame rate 4 → 6, from its README's 5-8 fps on one RX 9070 XT"
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "down",
+          "text": "Belobug: summary, highlights, blockers changed; score 79.0% → 78.4%."
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "Belobug: gta.fps changed; score 78.4% → 79.0%."
         }
       ]
     },
@@ -937,21 +965,21 @@
       "from": {
         "highlights": [
           "Looks about the same as AvatarManz's build, the leader on our board",
-          "As far into the story as the leading builds, with a picture close to the console",
+          "Owner rates story progress at half, with a picture close to the console",
           "Runs on an AMD card"
         ],
         "blockers": [
           "No measured frame rate, crash record or test PC given: the values follow AvatarManz's build, which it looks about the same as",
           "Code is private, so nobody outside can test or reproduce it"
         ],
-        "assessedAt": "2026-11-25",
+        "assessedAt": "2026-11-26",
         "assessedBy": "manual"
       },
       "to": {
         "highlights": [
           "A cutscene close-up reached 30.0 fps",
           "Free-roam gameplay on stream, with HUD and minimap working",
-          "As far into the story as the leading builds, with a picture close to the console"
+          "Upstream's owner rates its story at half, with a picture close to the console"
         ],
         "blockers": [
           "30 fps is a cutscene or loading peak; free roam ran with no fps overlay, so gameplay is unmeasured",
@@ -993,6 +1021,26 @@
           "date": "2026-11-26",
           "kind": "up",
           "text": "Stream shows free-roam gameplay and repeated crashes; 30 fps stays a cutscene peak"
+        }
+      ]
+    },
+    {
+      "id": "leonida",
+      "from": {
+        "summary": "Made just for GTA VI, by Hookshot's author. Taken offline on Nov 23: its Discord vanished, the GitHub repo was deleted and the creator said he quit. Last result: the exe ran, frames stayed black.",
+        "assessedAt": "2026-11-23",
+        "assessedBy": "claude"
+      },
+      "to": {
+        "summary": "Made just for GTA VI, by Hookshot's author. Taken offline on Nov 23: its Discord vanished, the GitHub repo was deleted and the creator said he quit. Minutes later the work came back as Leonida Continued, a community continuation with its full history, now listed separately.",
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude"
+      },
+      "changes": [
+        {
+          "date": "2026-11-26",
+          "kind": "new",
+          "text": "Leonida is back from the dead: Leonida Continued (ubiquitarianism/leonida), created at 23:54 UTC on Nov 23 with the full history, now boots GTA VI through its start prompt into the world load. It joins at 25%; the original repo stays offline."
         }
       ]
     }
@@ -2200,6 +2248,85 @@
           }
         ],
         "findingsSource": "From soldsawn's and ad3lre's public READMEs, commits and pull requests, 26 November. Code read as text, not built or run."
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "ubiquitarianism/leonida",
+        "related": [],
+        "basedOn": [
+          "leonida"
+        ],
+        "highlights": [
+          "Boots past the launch movie, first-run pages and start prompt into the world load",
+          "Runs on native Windows and on Linux through Proton, on three test PCs",
+          "All 26,503 shaders translate and pass validation; their output isn't checked"
+        ],
+        "blockers": [
+          "No world frame verified yet on any test machine; nothing playable",
+          "NotRexed left; maintained by new hands from a new account",
+          "Upstream lists the repo as a copy of the original"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 0.5,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "stats": {
+          "archived": false,
+          "createdAt": "2026-11-23T23:54:39Z",
+          "forks": 535,
+          "openIssues": 1403,
+          "pushedAt": "2026-11-26T03:35:47Z",
+          "stars": 2358,
+          "missing": false,
+          "commits7d": 100
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Leonida Continued",
+        "branch": "main",
+        "approach": "Static recompilation",
+        "target": "GTA VI only",
+        "summary": "Leonida back from the dead: a community continuation that keeps NotRexed's full history, started minutes after the original repo went offline on Nov 23. GTA VI now boots through its launch movie, first-run pages and start prompt and loads into the world, but no world frame has been seen. NotRexed isn't involved. Self-reported.",
+        "id": "leonida-continued",
+        "findings": [
+          {
+            "text": "Died and came back the same night: the original repo (moved to ProjectLeonida/Leonida at 22:08 UTC) was found answering 404 at 23:47 UTC on 23 November. ubiquitarianism/leonida was created at 23:54 UTC as \"Leonida Continued\", with the whole commit history. Its own merges began at 03:36 UTC on 24 November. ItsNotRexed/Leonida still answers 404.",
+            "url": "https://github.com/ubiquitarianism/leonida/commits/main"
+          },
+          {
+            "text": "Its README says NotRexed has left the project and that development continues here with the full history, crediting NotRexed and the earlier contributors. NotRexed's 4,215 commits lead its contributor list. The merging is now done by others, mostly aslan2142, from an account that has no other public repos.",
+            "url": "https://github.com/ubiquitarianism/leonida/blob/8d686309b/README.md"
+          },
+          {
+            "text": "README at 8d686309b: nothing is playable. From the player's own copy, the game shows its launch movie, the first-run pages and the start prompt, which answer a pad or the keyboard, then runs the story load to its end and enters the world phase. No world frame has been verified on any test machine.",
+            "url": "https://github.com/ubiquitarianism/leonida/blob/8d686309b/README.md#project-status"
+          },
+          {
+            "text": "The test report covers three PCs: Linux under Proton (Ryzen 5 5600X, RTX 4070, 16 GB RAM, about 80 boots on 24 November) and two on native Windows 11 (i9-13900K with RTX 4070 Ti; Ryzen 7 9800X3D with RTX 5070, no results yet). Windows reaches each stage three to five times faster than Linux.",
+            "url": "https://github.com/ubiquitarianism/leonida/blob/8d686309b/docs/linux_proton.md"
+          },
+          {
+            "text": "Pull request 1643 changed the README from \"the game does not boot yet\" to booting through the story load, after the boot work in pull requests 321, 939 and 984 was merged. It adds no new measurement of its own.",
+            "url": "https://github.com/ubiquitarianism/leonida/pull/1643"
+          },
+          {
+            "text": "Issue 2147 (25 November): on an NVIDIA Volta card under Wine, the retail boot stops on a breakpoint instruction after about 1,653 Direct3D 12 calls, with no world frame.",
+            "url": "https://github.com/ubiquitarianism/leonida/issues/2147"
+          }
+        ],
+        "findingsSource": "From the continuation's public README, docs, commits and issues, and GitHub's API, 26 November. Code not built or run."
       },
       "changes": []
     }
