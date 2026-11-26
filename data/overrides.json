@@ -128,14 +128,14 @@
         "assessedBy": "manual"
       },
       "to": {
-        "summary": "A private build based on VIctory and XCL. Upstream's owner says PortWatch has seen it and rates it at half the story, rendering 0.75 and stability 0.85, averaging 25 fps on NVIDIA with 8 GB of RAM and 16 GB of video memory. No public recording shows that yet: the last public shots, of the Gone Fishing boat mission on 25 Nov, measured 3.2 to 4.5 fps. Code not public.",
+        "summary": "A private build based on VIctory and XCL. Upstream's owner rates it at half the story, rendering 0.75 and stability 0.85, averaging 25 fps on NVIDIA. A clip posted on 26 Nov backs the frame rate: the Gone Fishing mission plays at about 23 fps on NVIDIA's overlay, with the HUD and objectives working. It comes from a fan account, not the group. Code not public.",
         "highlights": [
+          "A 26 Nov clip shows the Gone Fishing mission at about 23 fps on NVIDIA's overlay",
           "Upstream's owner rates it at half the story, rendering 0.75 and stability 0.85",
-          "Public shots on 25 Nov show Jason and Donnie's \"Gone Fishing\" boat mission",
           "Water, clouds, birds and detailed characters close to the console"
         ],
         "blockers": [
-          "The 25 fps average is the owner's word; the last public shots measured 3.2-4.5 fps",
+          "The 23 fps clip comes from a fan account, not the group; the 25 Nov shots measured 3.2-4.5 fps",
           "Gameplay doesn't hold 30 fps; minor visual glitches remain",
           "Code is private, so nobody outside the group can test or reproduce it"
         ],
@@ -213,9 +213,21 @@
           {
             "text": "A later shot shows a woman from behind on a balcony above palms, a beach and a tower under construction, with lit sky and foliage. Edges are blocky and shadowed areas black. onyx says a PS5 save was reverse engineered to get there and that you could move around, but has no more information. The post doesn't name CGBJ, and a loaded save isn't story progress.",
             "url": "https://x.com/onyx_BL/status/2125435141690626161"
+          },
+          {
+            "text": "A 55-second clip of the \"Gone Fishing\" mission: a cutscene with Jason and Donnie on the boat and a seaplane overhead, then the boat driven toward a bridge with the HUD, minimap and the objectives \"Follow the plane\" and \"Collect the package\".",
+            "url": "https://x.com/kunaiposting/status/2125822259600503022"
+          },
+          {
+            "text": "NVIDIA's overlay reads 23 fps while the boat is driven, and the clip shows 19 to 24 new pictures a second, so it is not a slowed capture of a 4 fps run.",
+            "url": "https://x.com/kunaiposting/status/2125822259600503022"
+          },
+          {
+            "text": "The poster calls it CGBJ's next milestone build, almost ready. The account is a fan's, not the group's, and nothing from the group confirms the clip yet.",
+            "url": "https://x.com/kunaiposting/status/2125822259600503022"
           }
         ],
-        "findingsSource": "From onyx's and Mamozziee's tweets of 25 November; onyx says he only posts CGBJ's milestones."
+        "findingsSource": "From onyx's and Mamozziee's tweets of 25 November (onyx says he only posts CGBJ's milestones), and a clip a fan account posted on 26 November."
       },
       "changes": [
         {
@@ -227,6 +239,11 @@
           "date": "2026-11-26",
           "kind": "up",
           "text": "CGBJ: gta.story, gta.render, gta.fps changed; score 73.0% → 86.7%."
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "new",
+          "text": "CGBJ: a clip posted on 26 Nov shows the Gone Fishing mission at about 23 fps on NVIDIA's overlay, the first public recording near the owner's 25 fps. It comes from a fan account; scores are unchanged."
         }
       ]
     },
