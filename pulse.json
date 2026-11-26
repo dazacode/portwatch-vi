@@ -1,0 +1,299 @@
+{
+  "at": "2026-11-26T05:55:20.370Z",
+  "commits": {
+    "belobug": {
+      "sha": "81ebb7b",
+      "message": "RX 9070 XT fixes: magenta filter, VRAM eviction, keep_shown guard, lock-free compiler VEH",
+      "at": "2026-11-26T00:56:08Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/commit/81ebb7bdc9b7ca6ec2f3169973f50be77c7c803c"
+    },
+    "dexnom": {
+      "sha": "64bd58f",
+      "message": "Document experimental NVIDIA test modes",
+      "at": "2026-11-26T01:12:07Z",
+      "url": "https://github.com/DexNom/VIctory/commit/64bd58f5fb794216894bc0e33e03a3a64d19c347"
+    },
+    "vitoriabr": {
+      "sha": "1361e19",
+      "message": "docs: record the current render and PortWatch evidence fields",
+      "at": "2026-11-26T04:09:08Z",
+      "url": "https://github.com/uiliannn/VItoriaBr/commit/1361e190b7f46df996f00ea1b540ecf66785127f"
+    },
+    "avatarmanz": {
+      "sha": "9c23e8d",
+      "message": "Renderer port 1: know the 32-bit heap by the kind the title really asks with",
+      "at": "2026-11-26T05:40:32Z",
+      "url": "https://github.com/avatarmanz/VIctory-7900XTX/commit/9c23e8dd40cac6fb4a2aa8c804587e7c2e2a5853"
+    },
+    "victory-gta6": {
+      "sha": "46bf535",
+      "message": "diagnostics: runs 307 to 309 (the remapping time is the system's own calls; no page-mapping copy is a repeat; the texture worker measured), ",
+      "at": "2026-11-26T05:52:08Z",
+      "url": "https://github.com/fxceless/victory-fork/commit/46bf5351707b1697c04e5d871c30973ebaa3e973"
+    },
+    "marvis": {
+      "sha": "63bcca4",
+      "message": "update readme",
+      "at": "2026-11-25T23:27:42Z",
+      "url": "https://github.com/Marvisak/VIctory/commit/63bcca43c6a00a758510398fa43096ce7e4f7df0"
+    },
+    "xbox-emulator": {
+      "sha": "a618736",
+      "message": "Merge #347: tombox-xshader: size structured buffer elements from the FSSM stride (stacked on #289)",
+      "at": "2026-11-25T13:19:29Z",
+      "url": "https://github.com/omonkeyz/xbox-emulator/commit/a618736df799d21d9a565d08893355fc3c96fdf5"
+    },
+    "xcl": {
+      "sha": "b49be18",
+      "message": "Shaders: reuse offline compute PSOs and compact repeated atomic shaders",
+      "at": "2026-11-26T00:48:16Z",
+      "url": "https://github.com/xcl-dev/xcl/commit/b49be1836844fe0b0cdb3211dce3cb7fb4e21ac7"
+    },
+    "scarlettx": {
+      "sha": "01c642c",
+      "message": "Frame pacing: --fcap N replaces --uncapped; status refresh for fullscreen, rumble and pacing",
+      "at": "2026-11-22T10:38:04Z",
+      "url": "https://github.com/Freminet/ScarlettX/commit/01c642cf62a6d9978f535e2c438c488ebcb4cd39"
+    },
+    "tuxbox": {
+      "sha": "ac4f099",
+      "message": "launch ProjectScarlett offline and settle launcher defaults",
+      "at": "2026-11-26T03:12:59Z",
+      "url": "https://github.com/brcly/TuxBox/commit/ac4f0993d7ec0137cb9280f2cd9ed24c875e8141"
+    },
+    "openscarlett": {
+      "sha": "ddb0781",
+      "message": "docs(readme): condense README, update live status, and remove UE5 claims",
+      "at": "2026-11-26T05:20:54Z",
+      "url": "https://github.com/californiaAlmonds/OpenScarlett/commit/ddb07818fb6d2cc73744dfa3b33e2fa963526c3d"
+    },
+    "scarlett-layer": {
+      "sha": "0e436b3",
+      "message": "fix(tests): align ILocalGameInputReading and ILocalGIRead vtables with GDK v0 IGameInputReading",
+      "at": "2026-11-24T00:30:33Z",
+      "url": "https://github.com/jadeowaowa/scarlett-layer/commit/0e436b3e1c654765b193c1cb705918fbf101b10b"
+    },
+    "xbox2windows": {
+      "sha": "594bb3c",
+      "message": "startup: bind a compute heap record whose index is read from a table buffer (#2580)",
+      "at": "2026-11-26T05:50:39Z",
+      "url": "https://github.com/R0Y00/Xbox2Windows/commit/594bb3ce639be18bd8b28cf950f362506d275b66"
+    },
+    "anyxboxx": {
+      "sha": "c4c93bd",
+      "message": "chore: integrate ready contributor PRs (#271 #250 #245 #247 #246 #251 #241 #260 #235 #230 #232)",
+      "at": "2026-11-26T00:15:03Z",
+      "url": "https://github.com/LooperSalty/AnyXboxX/commit/c4c93bdc413191a9dc909998d2d53080a3f0c880"
+    },
+    "xvalkyrie": {
+      "sha": "42db5d7",
+      "message": "fix(shader): descriptors of one table loaded by places known only when the shader runs share the variable of their place where they meet in ",
+      "at": "2026-11-26T03:42:28Z",
+      "url": "https://github.com/sammwyy/xvalkyrie/commit/42db5d78f1fce93bdc11f70c2be16b2cb920ad8f"
+    },
+    "gtavi-recomp": {
+      "sha": "0b332f8",
+      "message": "chore: regenerate progress after merging #11 and #15",
+      "at": "2026-11-25T12:51:18Z",
+      "url": "https://github.com/JamesCicada/GTAVI-Recomp/commit/0b332f88343b0fdebf20a640a5c625a2132a521b"
+    },
+    "anyxboxseries": {
+      "sha": "9ca2d05",
+      "message": "Sync current VIctory source snapshot",
+      "at": "2026-11-25T04:08:39Z",
+      "url": "https://github.com/edupode/anyxboxseries/commit/9ca2d05329fe878db6abea6060889f9a95566719"
+    },
+    "scarab": {
+      "sha": "8140e0b",
+      "message": "docs: simplify the README to the basics",
+      "at": "2026-11-23T12:24:21Z",
+      "url": "https://github.com/p-portela/SCARAB/commit/8140e0be4908499a5c4381eb4532410f05e39369"
+    },
+    "percyscarlett": {
+      "sha": "e44c465",
+      "message": "README: fix path",
+      "at": "2026-11-25T09:58:33Z",
+      "url": "https://github.com/rpatty-dev/PercyScarlett/commit/e44c465e47ab5b29ca87777cd00875e2ae0d8c0d"
+    },
+    "scarlett-windows-compat": {
+      "sha": "b3087ce",
+      "message": "Export bounded native pipeline diagnostics as validated JSON",
+      "at": "2026-11-24T20:33:32Z",
+      "url": "https://github.com/ProhorovIlja/NativeX-Runtime/commit/b3087ce0ab191227dc9e7af37cab97a0b097bb98"
+    },
+    "dedsec": {
+      "sha": "c44b38c",
+      "message": "feat(sprint4): add GameInput/KBM, XAudio2 Full, Bink2 Decoder",
+      "at": "2026-11-23T22:48:01Z",
+      "url": "https://github.com/Hylanderry/DedSec/commit/c44b38ca0207900cd27c687bb9213a6c8474bc69"
+    },
+    "xbgtasix": {
+      "sha": "456ad62",
+      "message": "更新 README.md",
+      "at": "2026-11-25T23:09:30Z",
+      "url": "https://github.com/ljm-233/Xbgtasix/commit/456ad621a16d6fa4614e0dfbc952256914adc013"
+    },
+    "seriesx-emulator": {
+      "sha": "b39a8ea",
+      "message": "Document DexNom external rendering results",
+      "at": "2026-11-25T17:03:56Z",
+      "url": "https://github.com/anrq0/SeriesX-Emulator/commit/b39a8ea05397ec5aab7d627265fbbc0aaf74cec2"
+    },
+    "gta6-compat-layer": {
+      "sha": "1a9d257",
+      "message": "mesh-translator: add victory-mesh mesh-as-compute translator",
+      "at": "2026-11-26T04:48:00Z",
+      "url": "https://github.com/SSTGxf/ScarlettCompat/commit/1a9d257032b3c28a71898d68a47fb46138eb9303"
+    },
+    "openscarlett-ce": {
+      "sha": "e043ba4",
+      "message": "Programs read the words of table and heap memory; the GPU arena is the title's memory",
+      "at": "2026-11-25T09:45:17Z",
+      "url": "https://github.com/OpenCommunityEdition/OpenScarlett/commit/e043ba44c9b894656939f21d4d33ef2c97e5f081"
+    },
+    "port-of-the-americas": {
+      "sha": "0f3be36",
+      "message": "docs: pipeline precompile and prewarm (ram_plan section 9, abi_matrix 8.34)",
+      "at": "2026-11-25T00:00:15Z",
+      "url": "https://github.com/Steinkoloss/port-of-the-americas/commit/0f3be36aaefe69c25f06e05222b88453f3557acd"
+    },
+    "five-star-recomp": {
+      "sha": "3cec43b",
+      "message": "Merge lane-world: warm-ups honour --skip-pipelines",
+      "at": "2026-11-26T05:48:22Z",
+      "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/3cec43bf85e4405239033773a41f0a30f0abd259"
+    },
+    "g6recomp": {
+      "sha": "82ccaa5",
+      "message": "Route VirtualAlloc and VirtualFree through memory_tracker",
+      "at": "2026-11-24T07:51:40Z",
+      "url": "https://github.com/Kajcsi/G6Recomp/commit/82ccaa5d4b3fdc1edb9cdd95c8dbab4ee7cde352"
+    },
+    "gta6-boottest": {
+      "sha": "32683d8",
+      "message": "README: helper shader build steps, current status, new switches",
+      "at": "2026-11-24T01:09:50Z",
+      "url": "https://github.com/OnlyMoisties/GTA6-BootTest/commit/32683d8fe2841bddeb0b437109e97bc32cf55724"
+    },
+    "palmetto": {
+      "sha": "a81a914",
+      "message": "diagnostics: name the writer of the renderer object, and test the submit-wait and pacing knobs",
+      "at": "2026-11-26T04:34:56Z",
+      "url": "https://github.com/luizwidmer/palmetto/commit/a81a91415a55b952723408d36669de94571dc724"
+    },
+    "victory-amd": {
+      "sha": "003beef",
+      "message": "Merge memory-gap: the remap lock per 16 MB of addresses, frametime dump",
+      "at": "2026-11-25T08:22:49Z",
+      "url": "https://github.com/JoshuuDev/victory-amd/commit/003beef2b915341eba88974de021e3118250cb6c"
+    },
+    "victory-ka1qux": {
+      "sha": "6a7e871",
+      "message": "README: the state of 26/11 (title memory in place, frame-time switches, picture fixes, FSR 4.1.2 on the host)",
+      "at": "2026-11-26T02:56:19Z",
+      "url": "https://github.com/ka1qux/BRVIctory-ka1qux/commit/6a7e871d433b7af3836666ebb0c935dbb1f3cf62"
+    },
+    "dumbfloridamoron": {
+      "sha": "7d5338f",
+      "message": "README: raw compute pipelines written and off by default; about 350 draws a frame dropped in the heavy scene; line and test counts",
+      "at": "2026-11-25T16:43:22Z",
+      "url": "https://github.com/crt4ever/DumbFloridaMoron/commit/7d5338f7124ab2730f7e0b3687886926efd3f87a"
+    },
+    "gta-vi-astral": {
+      "sha": "d5b7912",
+      "message": "fix(audio/pacing): 60Hz WaitFrameEventX timer pacing and README audio update",
+      "at": "2026-11-25T19:09:09Z",
+      "url": "https://github.com/Archivist-Atlas/gta-vi-astral/commit/d5b7912e0ca7a06f3bc41543bb558ef7608160d4"
+    },
+    "victory-unified": {
+      "sha": "d5b5fca",
+      "message": "victory-gpu, scripts, README: fix mapped_bytes VirtualQuery stall, tune 1080p + QUEUE2 + 2560MB VRAM for RTX 3070",
+      "at": "2026-11-25T21:46:00Z",
+      "url": "https://github.com/Itsbatt/victory-unified/commit/d5b5fca6cf3c325634f90eb897aa43d0eb665847"
+    },
+    "gtavi-xbox2pc": {
+      "sha": "0d24bbd",
+      "message": "Fix badge link formatting in README.md",
+      "at": "2026-11-25T15:46:10Z",
+      "url": "https://github.com/kfedora/GTAVI-Xbox2PC/commit/0d24bbdd73db9effdd642a4090d0c8bc28cf0390"
+    },
+    "americas": {
+      "sha": "bd41727",
+      "message": "Adaptive throttle, bounded texture visit, opt-in submission batching; status update",
+      "at": "2026-11-26T05:45:21Z",
+      "url": "https://github.com/Wertrex/Americas/commit/bd41727b692dcbcb166f1bf1c21435d1c69ae360"
+    },
+    "kelvaroq": {
+      "sha": "0a3c30d",
+      "message": "Launcher: hardware detection (GPU vendor and model, VRAM, driver, D3D12 requirements, CPU, RAM, Windows build) and automatic engine settings",
+      "at": "2026-11-26T03:24:06Z",
+      "url": "https://github.com/fablinoo/kelvaroq/commit/0a3c30d0fd5d5f01e0de932706039b793ae8b0c9"
+    },
+    "launcher": {
+      "sha": "4baf259",
+      "message": "Flatpak self-update, and say why the build list is empty",
+      "at": "2026-11-25T23:47:57Z",
+      "url": "https://github.com/SixLauncher/launcher/commit/4baf25900e7266047f33acbd45eeb1052dbe01c6"
+    },
+    "hybridgt": {
+      "sha": "30929e6",
+      "message": "Night session: intro triangles fixed (rectangle stage on), median 2.1 -> 5.6 fps in the intro, body-less characters traced to the pre-skinne",
+      "at": "2026-11-25T22:09:22Z",
+      "url": "https://github.com/LowBacon/HybridGt/commit/30929e61aaedf33425e8bea9db064ac454f186e1"
+    },
+    "proton-scarlett": {
+      "sha": "7273b7c",
+      "message": "Track the original offscreen clear on both adapters",
+      "at": "2026-11-25T01:40:36Z",
+      "url": "https://github.com/gabenddos/proton-scarlett/commit/7273b7cf711349a35fe581bf1d06b704fc124b90"
+    },
+    "lnx-victory": {
+      "sha": "c04e615",
+      "message": "Build fix after the picked bind cache: default hasher for the bound set",
+      "at": "2026-11-25T22:49:14Z",
+      "url": "https://github.com/Linox-IDK/LNX-victory/commit/c04e6159c1452a24afa73e205a52b31bf0e9d24a"
+    },
+    "decant": {
+      "sha": "a54a20f",
+      "message": "Save manifest periodically, lower live O0 threshold, and offload PSO library writes",
+      "at": "2026-11-26T01:14:39Z",
+      "url": "https://github.com/decantlabs/decant/commit/a54a20f671d9ec764b872768b94829baff545007"
+    },
+    "bcpack-gpu-hlsl": {
+      "sha": "2dca722",
+      "message": "chore: bump sdk submodule to v0.14.0",
+      "at": "2026-11-26T01:41:23Z",
+      "url": "https://github.com/POMXARK/bcpack-gpu-hlsl/commit/2dca7226c8a5397ef575c8764546e8f86a514232"
+    },
+    "half-step-game-project": {
+      "sha": "2e88bdc",
+      "message": "watch: log unhandled write faults with the guard state of their block",
+      "at": "2026-11-25T22:35:44Z",
+      "url": "https://github.com/sefaalcn/half-step-game-project/commit/2e88bdcaff3f5229410002859212cc064130618e"
+    },
+    "carver": {
+      "sha": "97f8dbc",
+      "message": "CI: the lints the checks deny are fixed, and run logs under diagnostics/ get a rule of their own in the asset policy",
+      "at": "2026-11-26T02:39:50Z",
+      "url": "https://github.com/CarverXI/victory-fork/commit/97f8dbcc7a2b5e0293a049898a4816d3d15c173a"
+    },
+    "soldsawn-8gb": {
+      "sha": "c09a44e",
+      "message": "chore: keep soldsawn/main history on v11 publish",
+      "at": "2026-11-25T21:55:30Z",
+      "url": "https://github.com/soldsawn/victory-nvidia-8gb/commit/c09a44e97df4170ef0caa8cc236f7cb46fd1ce90"
+    },
+    "leonida-continued": {
+      "sha": "a73a57e",
+      "message": "device-fault: AMD buffer-marker breadcrumbs name the dispatch that hung (RT-DEVICE-MARKERS-AMD)",
+      "at": "2026-11-26T03:35:46Z",
+      "url": "https://github.com/ubiquitarianism/leonida/commit/a73a57e1339be072baf5522351c8ec7f1482b56b"
+    },
+    "ccs03": {
+      "sha": "ea77f2d",
+      "message": "Shader report: names for every program, hashes of the executable's own containers as a run gives them",
+      "at": "2026-11-26T01:59:26Z",
+      "url": "https://github.com/JozefDeTremmerie/CCS03/commit/ea77f2dc606167b605dfcbcf916d0235a59eab36"
+    }
+  }
+}
