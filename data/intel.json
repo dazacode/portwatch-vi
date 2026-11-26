@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T20:35:22.288Z",
+  "updated": "2026-11-26T20:50:22.484Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T20:31:14.000Z",
-      "lastOkAt": "2026-11-26T20:35:22.288Z",
-      "seen": 15250,
+      "lastOkAt": "2026-11-26T20:50:22.484Z",
+      "seen": 15500,
       "events": 552,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T18:18:39.000Z",
-      "lastOkAt": "2026-11-26T20:35:22.288Z",
+      "lastOkAt": "2026-11-26T20:50:22.484Z",
       "seen": 25,
       "events": 17,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T20:35:22.288Z",
-      "seen": 3617,
+      "lastOkAt": "2026-11-26T20:50:22.484Z",
+      "seen": 3678,
       "events": 23,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T20:28:10.943Z",
-      "lastOkAt": "2026-11-26T20:35:22.288Z",
-      "seen": 24400,
+      "lastOkAt": "2026-11-26T20:50:22.484Z",
+      "seen": 24800,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T08:35:22.288Z",
-      "lastOkAt": "2026-11-26T20:35:22.288Z",
-      "seen": 7153,
+      "lastCursor": "2026-11-26T08:50:22.484Z",
+      "lastOkAt": "2026-11-26T20:50:22.484Z",
+      "seen": 7266,
       "events": 7,
       "errors": 0
     }
@@ -6741,12 +6741,17 @@
           "at": "2026-11-26T14:07:18.705Z",
           "by": "desk",
           "note": "The pull request is a clear dependency bump in the project’s own repository, with no conflicting sources."
+        },
+        {
+          "at": "2026-11-26T20:50:22.484Z",
+          "by": "desk",
+          "note": "A routine dependency-bump pull request in the project's own repository is a single non-independent source and carries no substantive GTA VI on PC tracking news."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-26T14:07:18.705Z"
+      "deskAt": "2026-11-26T20:50:22.484Z"
     },
     {
       "id": "20261126t135141z-americaslauncher-5949455e",
@@ -6967,12 +6972,17 @@
           "at": "2026-11-26T14:35:20.564Z",
           "by": "desk",
           "note": "The item rests on a single outside GamesRadar report with no independent corroboration, so the stored sources are too thin to publish."
+        },
+        {
+          "at": "2026-11-26T20:50:22.484Z",
+          "by": "desk",
+          "note": "Only one outside source supports the truncated one-line claim, so the item is too thin to publish."
         }
       ],
       "heldReasons": [
         "low confidence"
       ],
-      "deskAt": "2026-11-26T14:35:20.564Z"
+      "deskAt": "2026-11-26T20:50:22.484Z"
     },
     {
       "id": "20261126t144436z-project-americas-58a87c14",
