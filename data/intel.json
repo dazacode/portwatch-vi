@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T06:50:25.028Z",
+  "updated": "2026-11-26T07:05:19.852Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T06:34:51.000Z",
-      "lastOkAt": "2026-11-26T06:50:25.028Z",
-      "seen": 1750,
-      "events": 75,
+      "lastCursor": "2026-11-26T07:01:33.000Z",
+      "lastOkAt": "2026-11-26T07:05:19.852Z",
+      "seen": 2000,
+      "events": 87,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T06:21:27.000Z",
-      "lastOkAt": "2026-11-26T06:50:25.028Z",
+      "lastOkAt": "2026-11-26T07:05:19.852Z",
       "seen": 16,
       "events": 8,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T05:40:16.544Z",
-      "lastOkAt": "2026-11-26T06:50:25.028Z",
-      "seen": 377,
+      "lastOkAt": "2026-11-26T07:05:19.852Z",
+      "seen": 436,
       "events": 18,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T06:29:28.000Z",
-      "lastOkAt": "2026-11-26T06:50:25.028Z",
-      "seen": 2800,
+      "lastCursor": "2026-11-26T06:54:33.640Z",
+      "lastOkAt": "2026-11-26T07:05:19.852Z",
+      "seen": 3200,
       "events": 3,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T06:50:25.028Z",
-      "seen": 801,
+      "lastOkAt": "2026-11-26T07:05:19.852Z",
+      "seen": 917,
       "events": 7,
       "errors": 0
     }
@@ -1749,11 +1749,17 @@
           "at": "2026-11-26T06:20:20.067Z",
           "by": "desk",
           "note": "The only stored source is the project's own repository with an empty excerpt, so nothing in the record plainly substantiates the 82.6% to 87.8% move and it is not independent."
+        },
+        {
+          "at": "2026-11-26T07:05:19.852Z",
+          "by": "desk",
+          "note": "The only source is the project’s own repository with no excerpt, so the 82.6% to 87.8% change is not plainly supported by stored evidence."
         }
       ],
       "heldReasons": [
         "low confidence"
-      ]
+      ],
+      "deskAt": "2026-11-26T07:05:19.852Z"
     },
     {
       "id": "20261126t054016z-doomsday-139ff0df",
