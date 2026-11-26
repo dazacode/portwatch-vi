@@ -42,24 +42,24 @@ export default async function Page() {
   const board = getBoardEvents(projects, records, milestones)
   const now = new Date().toISOString()
   const stages = STEPS.filter((m) => m.at > 0).map(({ label, at }) => ({ label, at }))
-  // Our score at each moment of the race: the claim then, and the reports filed by then.
-  const slim = (parts: Project["parts"]) =>
-    parts.map(({ key, label, claimed, counted }) => ({
-      key,
-      label,
-      claimed: Math.round(claimed * 100) / 100,
-      counted: Math.round(counted * 100) / 100,
-    }))
-  const rateAt: RateAt = (p, claim, at) =>
-    at === now
-      ? { rating: p.rating, parts: slim(p.parts) }
-      : scoreAt(
-          claim,
-          evidence.filter((e) => e.effortId === p.id && Date.parse(e.at) <= Date.parse(at)),
-          p.parts
-        )
+  // Our score at each moment of the race: the claim then, and the reports filed by then. Only the
+  // total is drawn, so the parts stay on the server.
+  const rateAt: RateAt = (p, claim, at) => ({
+    rating:
+      at === now
+        ? p.rating
+        : scoreAt(
+            claim,
+            evidence.filter((e) => e.effortId === p.id && Date.parse(e.at) <= Date.parse(at)),
+            p.parts
+          ).rating,
+    parts: [],
+  })
   const draw = (list: Project[]) => ({
     race: getRace(list, milestones, board, now, rateAt),
+    playable:
+      list.find((p) => p.rank !== null && p.goals.some((g) => g.key === "smooth" && g.met))?.name ??
+      null,
     entries: list.map(toEntry),
     board: <Board projects={list} />,
     rows: Object.fromEntries(list.map((p) => [p.id, <ProjectRow key={p.id} project={p} />])),

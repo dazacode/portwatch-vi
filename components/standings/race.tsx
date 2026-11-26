@@ -1,93 +1,73 @@
 "use client"
 
 import NumberFlow from "@number-flow/react"
-import { Lock, Pause, Play, RotateCcw } from "lucide-react"
+import { ChevronRight, Lock, Pause, Play, RotateCcw } from "lucide-react"
 import Link from "next/link"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { utcDay, utcTime } from "@/lib/format"
+import { ROAD } from "@/lib/ladder"
 import { type Frame, LANES } from "@/lib/race"
-import { type Ours, SCORE_KEYS, scoreColor } from "@/lib/score-colors"
+import { BASELINE_FPS } from "@/lib/stages.mjs"
 import { cn } from "@/lib/utils"
 
 const STEP = 900
-const LANE = 2
+const LANE = 2.75
 
-// Name, bar, claimed, ours.
+// Project, bar, assessed, claimed.
 const COLUMNS =
-  "grid grid-cols-[6.5rem_minmax(0,1fr)_2.75rem_2.75rem] gap-x-2.5 sm:grid-cols-[9rem_minmax(0,1fr)_3.5rem_3.5rem]"
+  "grid grid-cols-[7.5rem_minmax(0,1fr)_3rem_3rem] gap-x-3 sm:grid-cols-[11rem_minmax(0,1fr)_4.5rem_4.5rem]"
 
-const one = (n: number) => Math.round(n * 10) / 10
+const ONE = { minimumFractionDigits: 1, maximumFractionDigits: 1 }
 
 export type Stage = { label: string; at: number }
 
-/**
- * Each stage as its own block, as wide as the project claims it, so the blocks line up with the
- * stages. The solid part counts in our score; the faded rest is claimed but not confirmed.
- */
-function Parts({ ours }: { ours: Ours | undefined }) {
-  // Parts that share a colour (picture, speed and stability) are one block.
-  const blocks: Ours["parts"] = []
-  for (const p of ours?.parts ?? []) {
-    if (p.claimed <= 0) continue
-    const last = blocks.at(-1)
-    if (last && scoreColor(last.key) === scoreColor(p.key)) {
-      last.claimed += p.claimed
-      last.counted += p.counted
-      last.label = SCORE_KEYS.find((k) => k.keys.includes(p.key))?.label ?? last.label
-    } else blocks.push({ ...p })
-  }
+/** The furthest stage a claim reaches, by name. */
+const stageOf = (stages: Stage[], claim: number) =>
+  stages.filter((s) => s.at <= claim).at(-1)?.label ?? "Groundwork"
+
+function Tile({
+  label,
+  children,
+  note,
+  strong = false,
+}: {
+  label: string
+  children: React.ReactNode
+  note: React.ReactNode
+  strong?: boolean
+}) {
   return (
-    <span className="absolute inset-0 flex">
-      {blocks.map((p) => {
-        const color = scoreColor(p.key)
-        return (
-          <span
-            key={p.key}
-            title={`${p.label}: ${one(p.counted)} of ${one(p.claimed)} counts`}
-            className="relative block h-full shrink-0 shadow-[inset_-1px_0_0_var(--background)] transition-[width] duration-700 ease-out motion-reduce:transition-none"
-            style={{
-              width: `${p.claimed}%`,
-              backgroundColor: `color-mix(in oklab, ${color} 28%, transparent)`,
-            }}
-          >
-            <span
-              className="absolute inset-y-0 left-0 transition-[width] duration-700 ease-out motion-reduce:transition-none"
-              style={{ width: `${(p.counted / p.claimed) * 100}%`, backgroundColor: color }}
-            />
-          </span>
-        )
-      })}
-    </span>
+    <div className={cn("rounded-xl px-4 py-3", strong ? "bg-primary/12" : "bg-foreground/5")}>
+      <p className="text-xs text-muted-foreground">{label}</p>
+      <div
+        className={cn("mt-0.5 text-3xl font-extrabold tracking-tight", strong && "text-primary")}
+      >
+        {children}
+      </div>
+      <p className="mt-0.5 text-xs text-muted-foreground">{note}</p>
+    </div>
   )
 }
 
 /**
- * How far GTA VI runs on PC, and the race that led there: what each leader claims, the number
- * PortWatch ranks by, with our score for the same project drawn over it. The replay moves the
- * claims as they were recorded; our score is today's, so it shows once the replay reaches now.
+ * Does GTA VI run on PC, how far, and who has got furthest. Ranked by our score: a claim counts
+ * half until people outside the project confirm it. The claim is shown too, as the lighter part of
+ * each bar. The history plays only when asked, so a first visit opens on today.
  */
-export function Race({ frames, stages }: { frames: Frame[]; stages: Stage[] }) {
+export function Race({
+  frames,
+  stages,
+  playable,
+}: {
+  frames: Frame[]
+  stages: Stage[]
+  /** The first project to reach our Playable goal with proof, if any has. */
+  playable: string | null
+}) {
   const end = frames.length - 1
   const [at, setAt] = useState(end)
   const [playing, setPlaying] = useState(false)
-  const root = useRef<HTMLElement>(null)
-
-  useEffect(() => {
-    const el = root.current
-    if (!el || end < 1 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
-    const watcher = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) return
-        watcher.disconnect()
-        setAt(0)
-        setPlaying(true)
-      },
-      { threshold: 0.4 }
-    )
-    watcher.observe(el)
-    return () => watcher.disconnect()
-  }, [end])
 
   useEffect(() => {
     if (!playing) return
@@ -101,13 +81,11 @@ export function Race({ frames, stages }: { frames: Frame[]; stages: Stage[] }) {
 
   const index = Math.min(at, end)
   const frame = frames[index]
-  const lead = frame?.racers[0]
-  if (!frame || !lead) return null
-
+  if (!frame || frame.racers.length === 0) return null
   const now = index === end
-  const best = frame.best
+  const { best, furthest } = frame
+
   // Everyone who is ever in a lane keeps one element, so it can move between lanes.
-  // Today’s order first, which is the order they are read in.
   const everyone = [
     ...new Map(
       frames
@@ -116,230 +94,304 @@ export function Race({ frames, stages }: { frames: Frame[]; stages: Stage[] }) {
         .map((r) => [r.id, r])
     ).values(),
   ]
-  const lanes = Math.max(...frames.map((f) => f.racers.length))
-  const when = now ? "Now" : `${utcDay(frame.at)}, ${utcTime(frame.at)}`
+  const lanes = Math.min(LANES, Math.max(...frames.map((f) => f.racers.length)))
+  const when = now ? "Today" : `${utcDay(frame.at)}, ${utcTime(frame.at)} UTC`
   const replay = () => {
     if (!playing && now) setAt(0)
     setPlaying(!playing)
   }
 
   return (
-    <section ref={root} aria-labelledby="race" className="pane px-4 py-4 sm:px-6 sm:py-5">
-      {/* How far GTA VI runs on PC */}
-      <div className="flex flex-wrap items-start justify-between gap-x-6 gap-y-3">
-        <div className="min-w-0">
-          <h2
-            id="race"
-            className="text-xs font-medium tracking-wide text-muted-foreground uppercase"
-          >
-            How far GTA VI runs on PC
-          </h2>
-          <div className="mt-1 flex flex-wrap items-baseline gap-x-6 gap-y-1">
-            <p className="flex flex-wrap items-baseline gap-x-2">
-              <NumberFlow
-                value={lead.score}
-                suffix="%"
-                format={{ minimumFractionDigits: 1, maximumFractionDigits: 1 }}
-                className="text-3xl font-extrabold tracking-tight [--number-flow-mask-height:0.08em]"
-              />
-              <span className="text-sm">
-                {now ? "claimed" : "was claimed"} by{" "}
-                <span translate="no" className="font-bold">
-                  {lead.name}
-                </span>
-                {lead.ours && (
-                  <span className="text-muted-foreground">
-                    , {lead.ours.rating}% of it counts in our score
-                  </span>
-                )}
-              </span>
-            </p>
-            {best && best.id !== lead.id && (
-              <p className="text-sm">
-                Highest by our count:{" "}
-                <span translate="no" className="font-bold">
+    <section aria-labelledby="race" className="pane px-4 py-4 sm:px-6 sm:py-5">
+      <h2 id="race" className="text-lg font-semibold">
+        How far GTA VI runs on PC
+      </h2>
+      <p className="text-sm text-muted-foreground">
+        {now ? "Today" : `As it stood on ${when}`}. No official PC version exists; these are fan
+        projects running the console game.
+      </p>
+
+      {/* The answer, in three numbers. */}
+      <div className="mt-4 grid gap-3 sm:grid-cols-3">
+        <Tile
+          strong
+          label="Furthest we can back up"
+          note={
+            best ? (
+              <>
+                <span translate="no" className="font-semibold text-foreground">
                   {best.name}
-                </span>
-                ,{" "}
-                <NumberFlow
-                  value={best.rating}
-                  suffix="%"
-                  format={{ minimumFractionDigits: 1, maximumFractionDigits: 1 }}
-                  className="font-bold [--number-flow-mask-height:0.08em]"
+                </span>{" "}
+                · our score, checked against outside reports
+              </>
+            ) : (
+              "Our score, checked against outside reports"
+            )
+          }
+        >
+          {best ? <NumberFlow value={best.rating} suffix="%" format={ONE} /> : "—"}
+        </Tile>
+        <Tile
+          label="Furthest claimed"
+          note={
+            furthest ? (
+              <>
+                <span translate="no" className="font-semibold text-foreground">
+                  {furthest.name}
+                </span>{" "}
+                · what the project says about itself
+              </>
+            ) : (
+              "What projects say about themselves"
+            )
+          }
+        >
+          {furthest ? <NumberFlow value={furthest.score} suffix="%" format={ONE} /> : "—"}
+        </Tile>
+        <Tile
+          label="Playable on PC?"
+          note={
+            playable ? (
+              <>
+                <span translate="no" className="font-semibold text-foreground">
+                  {playable}
+                </span>{" "}
+                has shown {BASELINE_FPS}+ fps and a clean picture, with proof
+              </>
+            ) : (
+              `No build has shown ${BASELINE_FPS}+ fps with a clean picture, with proof`
+            )
+          }
+        >
+          {playable ? "Yes" : "Not yet"}
+        </Tile>
+      </div>
+
+      {/* Who has got furthest. */}
+      <div className="mt-6">
+        <div className="flex flex-wrap items-baseline justify-between gap-x-4">
+          <h3 className="text-sm font-semibold">Leaders, by our score</h3>
+          <p className="text-xs text-muted-foreground">Select a project for its full breakdown</p>
+        </div>
+
+        <div className="relative mt-2">
+          {/* Stage lines behind the bars, with their names above. */}
+          <div aria-hidden="true" className={cn("absolute inset-0", COLUMNS)}>
+            <div className="relative col-start-2 h-full">
+              {stages.map((s) => (
+                <div
+                  key={s.label}
+                  className="absolute inset-y-0 border-l border-foreground/10"
+                  style={{ left: `${s.at}%` }}
                 />
-              </p>
-            )}
+              ))}
+            </div>
           </div>
-        </div>
-        {end > 0 && (
-          <div className="flex items-center gap-2 max-sm:w-full">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="max-sm:size-10"
-              aria-label={playing ? "Pause the race" : now ? "Replay the race" : "Play"}
-              onClick={replay}
-            >
-              {playing ? (
-                <Pause aria-hidden="true" />
-              ) : now ? (
-                <RotateCcw aria-hidden="true" />
-              ) : (
-                <Play aria-hidden="true" />
-              )}
-            </Button>
-            <input
-              type="range"
-              aria-label="Moment in the race"
-              aria-valuetext={`${when}, ${lead.name} first with ${lead.score}%`}
-              min={0}
-              max={end}
-              value={index}
-              onChange={(e) => {
-                setPlaying(false)
-                setAt(Number(e.target.value))
-              }}
-              className="h-6 min-w-0 accent-primary max-sm:flex-1 sm:w-36"
-            />
-            <span className="w-26 shrink-0 text-right text-xs text-muted-foreground">{when}</span>
-          </div>
-        )}
-      </div>
-
-      {/* The whole game, 0 to 100, with the stages on it. */}
-      <div aria-hidden="true" className="mt-4">
-        <div className="relative h-4 overflow-hidden rounded-full bg-foreground/10">
-          <Parts ours={lead.ours} />
-        </div>
-        <div className="relative mt-1 h-4">
-          {stages.map((s) => (
-            <span
-              key={s.label}
-              className={cn(
-                "absolute top-0 border-l border-foreground/20 pl-1 text-[0.6875rem] leading-4 whitespace-nowrap text-muted-foreground",
-                s.at === 100 && "-translate-x-full border-r border-l-0 pr-1 pl-0",
-                s.at === 100 ? "max-sm:hidden" : s.at !== 50 && "max-lg:hidden"
-              )}
-              style={{ left: `${s.at}%` }}
-            >
-              {s.label}
-            </span>
-          ))}
-        </div>
-      </div>
-
-      {/* Who is behind whom. */}
-      <div className="mt-5 border-t border-foreground/10 pt-3">
-        <div aria-hidden="true" className={cn("text-[0.6875rem] text-muted-foreground", COLUMNS)}>
-          <span>Project</span>
-          <span />
-          <span className="text-right">Claimed</span>
-          <span className="text-right">Ours</span>
-        </div>
-        <ol className="relative mt-1" style={{ height: `${Math.min(lanes, LANES) * LANE}rem` }}>
-          {everyone.map((r) => {
-            const lane = frame.racers.findIndex((x) => x.id === r.id)
-            const here = frame.racers[lane]
-            const out = !here
-            const ours = (here ?? r).ours
-            const claim = (here ?? r).score
-            return (
-              <li
-                key={r.id}
-                inert={out}
-                aria-hidden={out}
-                className={cn(
-                  "absolute inset-x-0 top-0 transition-[translate,opacity] duration-700 ease-out motion-reduce:transition-none",
-                  out && "opacity-0"
-                )}
-                style={{
-                  height: `${LANE}rem`,
-                  translate: `0 ${(out ? LANES - 1 : lane) * LANE}rem`,
-                }}
-              >
-                <Link
-                  href={`/projects/${r.id}`}
-                  aria-label={`${r.name}: claims ${claim}%${ours ? `, ${ours.rating}% by our count` : ""}`}
+          <div
+            aria-hidden="true"
+            className={cn("relative text-[0.6875rem] text-muted-foreground", COLUMNS)}
+          >
+            <span>Project</span>
+            <span className="relative h-4">
+              {stages.map((s) => (
+                <span
+                  key={s.label}
                   className={cn(
-                    "group h-full items-center rounded-md text-xs sm:text-sm focus-visible:outline-2 focus-visible:outline-ring",
-                    COLUMNS
+                    "absolute top-0 whitespace-nowrap",
+                    s.at === 100 ? "right-0" : "pl-1",
+                    s.at === 100 ? "max-sm:hidden" : s.at !== 50 && "max-lg:hidden"
                   )}
+                  style={s.at === 100 ? undefined : { left: `${s.at}%` }}
                 >
-                  <span className="flex min-w-0 items-baseline gap-1.5">
-                    <span className="w-3.5 shrink-0 text-right text-[0.6875rem] text-muted-foreground tabular-nums">
-                      {out ? "" : lane + 1}
+                  {s.label}
+                </span>
+              ))}
+            </span>
+            <span className="text-right font-medium text-foreground">Our score</span>
+            <span className="text-right">Claimed</span>
+          </div>
+
+          <ol className="relative mt-1" style={{ height: `${lanes * LANE}rem` }}>
+            {everyone.map((r) => {
+              const lane = frame.racers.findIndex((x) => x.id === r.id)
+              const here = frame.racers[lane]
+              const out = !here
+              const shown = here ?? r
+              const ours = shown.ours?.rating ?? 0
+              return (
+                <li
+                  key={r.id}
+                  inert={out}
+                  aria-hidden={out}
+                  className={cn(
+                    "absolute inset-x-0 top-0 transition-[translate,opacity] duration-700 ease-out motion-reduce:transition-none",
+                    out && "opacity-0"
+                  )}
+                  style={{
+                    height: `${LANE}rem`,
+                    translate: `0 ${(out ? lanes - 1 : lane) * LANE}rem`,
+                  }}
+                >
+                  <Link
+                    href={`/projects/${r.id}`}
+                    aria-label={`${out ? "" : `${lane + 1}. `}${r.name}${r.isPrivate ? ", private build" : ""}: our score ${ours}%, claims ${shown.score}%, ${stageOf(stages, shown.score)}`}
+                    className={cn(
+                      "group h-full items-center rounded-md px-1 -mx-1 text-sm hover:bg-foreground/5 focus-visible:outline-2 focus-visible:outline-ring",
+                      COLUMNS
+                    )}
+                  >
+                    <span className="flex min-w-0 items-center gap-2">
+                      <span className="w-4 shrink-0 text-right text-xs text-muted-foreground tabular-nums">
+                        {out ? "" : lane + 1}
+                      </span>
+                      <span className="min-w-0 leading-tight">
+                        <span className="flex items-center gap-1.5">
+                          <span
+                            translate="no"
+                            className={cn(
+                              "truncate group-hover:underline",
+                              lane === 0 ? "font-bold" : "font-medium"
+                            )}
+                          >
+                            {r.name}
+                          </span>
+                          {r.isPrivate && (
+                            <Lock
+                              aria-hidden="true"
+                              className="size-3 shrink-0 text-muted-foreground"
+                            />
+                          )}
+                        </span>
+                        <span className="block truncate text-[0.6875rem] text-muted-foreground">
+                          Claims: {stageOf(stages, shown.score)}
+                        </span>
+                      </span>
                     </span>
                     <span
-                      translate="no"
-                      className={cn(
-                        "truncate group-hover:underline",
-                        lane === 0 ? "font-bold" : "font-medium"
-                      )}
+                      aria-hidden="true"
+                      className="relative block h-3 overflow-hidden rounded-full bg-foreground/8"
                     >
-                      {r.name}
-                    </span>
-                    {r.isPrivate && (
-                      <Lock
-                        role="img"
-                        aria-label="private build"
-                        className="size-3 shrink-0 self-center text-muted-foreground"
+                      <span
+                        className="absolute inset-y-0 left-0 rounded-full bg-foreground/18 transition-[width] duration-700 ease-out motion-reduce:transition-none"
+                        style={{ width: `${shown.score}%` }}
                       />
-                    )}
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="relative block h-2.5 overflow-hidden rounded-full bg-foreground/10"
-                  >
-                    <Parts ours={ours} />
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="text-right text-muted-foreground tabular-nums"
-                  >
-                    {claim}%
-                  </span>
-                  <span aria-hidden="true" className="text-right font-semibold tabular-nums">
-                    {ours ? `${ours.rating}%` : "·"}
-                  </span>
-                </Link>
-              </li>
-            )
-          })}
-        </ol>
+                      <span
+                        className={cn(
+                          "absolute inset-y-0 left-0 rounded-full transition-[width] duration-700 ease-out motion-reduce:transition-none",
+                          lane === 0 ? "bg-primary" : "bg-primary/75"
+                        )}
+                        style={{ width: `${ours}%` }}
+                      />
+                    </span>
+                    <span aria-hidden="true" className="text-right font-bold tabular-nums">
+                      {shown.ours ? `${ours}%` : "—"}
+                    </span>
+                    <span
+                      aria-hidden="true"
+                      className="flex items-center justify-end gap-1 text-right text-muted-foreground tabular-nums"
+                    >
+                      {shown.score}%
+                      <ChevronRight className="size-3.5 shrink-0 opacity-0 group-hover:opacity-100 max-sm:hidden" />
+                    </span>
+                  </Link>
+                </li>
+              )
+            })}
+          </ol>
+        </div>
       </div>
 
-      {/* What the colours mean. */}
-      <div className="mt-3 border-t border-foreground/10 pt-3 text-[0.6875rem] text-muted-foreground">
-        <ul className="flex flex-wrap gap-x-4 gap-y-1">
+      {/* History, out of the way. */}
+      {end > 0 && (
+        <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-foreground/10 pt-3 text-xs text-muted-foreground">
+          <span>History</span>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="size-8"
+            aria-label={playing ? "Pause the history" : now ? "Replay the history" : "Play"}
+            onClick={replay}
+          >
+            {playing ? (
+              <Pause aria-hidden="true" />
+            ) : now ? (
+              <RotateCcw aria-hidden="true" />
+            ) : (
+              <Play aria-hidden="true" />
+            )}
+          </Button>
+          <input
+            type="range"
+            aria-label="Moment in the history"
+            aria-valuetext={when}
+            min={0}
+            max={end}
+            value={index}
+            onChange={(e) => {
+              setPlaying(false)
+              setAt(Number(e.target.value))
+            }}
+            className="h-6 min-w-0 flex-1 accent-primary sm:max-w-64"
+          />
+          <span className="font-medium text-foreground">{when}</span>
+          {!now && (
+            <button
+              type="button"
+              className="underline underline-offset-4 hover:text-foreground"
+              onClick={() => {
+                setPlaying(false)
+                setAt(end)
+              }}
+            >
+              Back to today
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* What it all means. */}
+      <div className="mt-3 border-t border-foreground/10 pt-3 text-xs text-muted-foreground">
+        <ul className="flex flex-wrap gap-x-5 gap-y-1.5">
           <li className="flex items-center gap-1.5">
-            <span aria-hidden="true" className="h-2.5 w-5 rounded-sm bg-foreground/80" />
-            Counts in our score
+            <span aria-hidden="true" className="h-2.5 w-5 rounded-full bg-primary" />
+            <span>
+              <span className="font-medium text-foreground">Our score</span>: a claim counts half
+              until people outside the project confirm it
+            </span>
           </li>
           <li className="flex items-center gap-1.5">
-            <span aria-hidden="true" className="h-2.5 w-5 rounded-sm bg-foreground/25" />
-            Claimed, not confirmed
+            <span aria-hidden="true" className="h-2.5 w-5 rounded-full bg-foreground/18" />
+            <span>
+              <span className="font-medium text-foreground">Claimed</span>: what the project says,
+              the number PortWatch ranks by
+            </span>
           </li>
-          {SCORE_KEYS.map((k) => (
-            <li key={k.label} className="flex items-center gap-1.5">
-              <span
-                aria-hidden="true"
-                className="size-2.5 rounded-sm"
-                style={{ backgroundColor: k.color }}
-              />
-              {k.label}
-            </li>
-          ))}
+          <li className="flex items-center gap-1.5">
+            <Lock aria-hidden="true" className="size-3" />
+            <span>
+              <span className="font-medium text-foreground">Private build</span>: no public code, so
+              nobody outside can test it
+            </span>
+          </li>
         </ul>
-        <p className="mt-1.5 max-w-3xl">
-          Each block is a stage, drawn as far as the project claims it, so the blocks line up with
-          the stages. The solid part counts in our score; the faded rest is claimed, the way
-          PortWatch counts it. A stage counts half until people outside the project confirm it, and
-          everything past Runnable counts half until anyone can.{" "}
-          <Link href="/method" className="underline underline-offset-4 hover:text-stripe-1">
+        <details className="group mt-2">
+          <summary className="w-fit cursor-pointer list-none underline underline-offset-4 hover:text-foreground">
+            What the stages mean
+          </summary>
+          <ol className="mt-2 grid gap-x-6 gap-y-1 sm:grid-cols-2">
+            {ROAD.map((m) => (
+              <li key={m.key}>
+                <span className="font-medium text-foreground">{m.label}</span>: {m.hint}
+              </li>
+            ))}
+          </ol>
+          <Link
+            href="/method"
+            className="mt-2 inline-block underline underline-offset-4 hover:text-foreground"
+          >
             How projects are scored
           </Link>
-          {!now && " Earlier moments use the claim then and the reports filed by then."}
-        </p>
+        </details>
       </div>
     </section>
   )

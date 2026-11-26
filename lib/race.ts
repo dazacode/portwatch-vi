@@ -13,8 +13,16 @@ export type Racer = {
   /** Our score for it at that moment, when the caller can work it out. */
   ours?: Ours
 }
-/** The furthest projects at one moment, best first, and the highest by our count then. */
-export type Frame = { at: string; racers: Racer[]; best?: Ours & { id: string; name: string } }
+/**
+ * The leading projects at one moment, and who led each way then: the highest by our count and the
+ * furthest claim. Lanes go by our count when it is known, else by the claim.
+ */
+export type Frame = {
+  at: string
+  racers: Racer[]
+  best?: Ours & { id: string; name: string }
+  furthest?: { id: string; name: string; score: number }
+}
 
 /** Our score for a project that claims `claim` at the moment `at`. */
 export type RateAt = (project: Project, claim: number, at: string) => Ours
@@ -52,7 +60,7 @@ export function getRace(
     const first = moves.find((m) => m.id === p.id)
     if (first && !first.debut) score.set(p.id, first.from)
   }
-  const top = (at: string): Pick<Frame, "racers" | "best"> => {
+  const top = (at: string): Pick<Frame, "racers" | "best" | "furthest"> => {
     const all = running.flatMap((p) => {
       const s = score.get(p.id)
       if (s === undefined) return []
@@ -60,15 +68,22 @@ export function getRace(
       if (rateAt) racer.ours = rateAt(p, s, at)
       return [racer]
     })
-    const racers = all.toSorted((a, b) => b.score - a.score).slice(0, LANES)
-    const first = all
-      .filter((r) => r.ours)
-      .toSorted((a, b) => (b.ours?.rating ?? 0) - (a.ours?.rating ?? 0))[0]
+    const byClaim = all.toSorted((a, b) => b.score - a.score)
+    const racers = rateAt
+      ? all
+          .toSorted((a, b) => (b.ours?.rating ?? 0) - (a.ours?.rating ?? 0) || b.score - a.score)
+          .slice(0, LANES)
+      : byClaim.slice(0, LANES)
+    const [lead] = byClaim
+    const furthest = lead ? { id: lead.id, name: lead.name, score: lead.score } : undefined
+    const first = rateAt ? racers[0] : undefined
     const best = first?.ours ? { id: first.id, name: first.name, ...first.ours } : undefined
-    return best ? { racers, best } : { racers }
+    return { racers, ...(best && { best }), ...(furthest && { furthest }) }
   }
-  const same = (a: Pick<Frame, "racers" | "best">, b: Pick<Frame, "racers" | "best">) =>
-    JSON.stringify([a.racers, a.best]) === JSON.stringify([b.racers, b.best])
+  type Moment = Pick<Frame, "racers" | "best" | "furthest">
+  const same = (a: Moment, b: Moment) =>
+    JSON.stringify([a.racers, a.best, a.furthest]) ===
+    JSON.stringify([b.racers, b.best, b.furthest])
 
   const frames: Frame[] = []
   for (const [i, m] of moves.entries()) {

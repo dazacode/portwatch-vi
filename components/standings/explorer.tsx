@@ -36,6 +36,8 @@ import {
 
 type View = {
   race: Frame[]
+  /** The first project to reach our Playable goal with proof, if any has. */
+  playable: string | null
   entries: Entry[]
   /** The grouped view, and one table row for each project. Both are drawn on the server. */
   board: React.ReactNode
@@ -124,7 +126,8 @@ function ExplorerView({
   filters,
   onChange,
 }: Props & { filters: Filters; onChange: (next: Filters) => void }) {
-  const { race, entries, board, rows } = filters.ranks === "everyone" ? everyone : publicOnly
+  const { race, playable, entries, board, rows } =
+    filters.ranks === "everyone" ? everyone : publicOnly
   const set = (patch: Partial<Filters>) => onChange({ ...filters, ...patch })
   // The button goes away with the filters, so focus moves to the search.
   const clear = () => {
@@ -277,7 +280,7 @@ function ExplorerView({
 
       {grouped && (
         <div className="mt-4">
-          <Race key={filters.ranks} frames={race} stages={stages} />
+          <Race key={filters.ranks} frames={race} stages={stages} playable={playable} />
         </div>
       )}
 
