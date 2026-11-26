@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T19:50:23.797Z",
+  "updated": "2026-11-26T20:06:58.398Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T19:31:07.000Z",
-      "lastOkAt": "2026-11-26T19:50:23.797Z",
-      "seen": 14500,
-      "events": 512,
+      "lastCursor": "2026-11-26T20:01:22.000Z",
+      "lastOkAt": "2026-11-26T20:06:58.398Z",
+      "seen": 14750,
+      "events": 536,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T18:18:39.000Z",
-      "lastOkAt": "2026-11-26T19:50:23.797Z",
+      "lastOkAt": "2026-11-26T20:06:58.398Z",
       "seen": 25,
       "events": 17,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T19:50:23.797Z",
-      "seen": 3434,
+      "lastOkAt": "2026-11-26T20:06:58.398Z",
+      "seen": 3495,
       "events": 23,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T19:15:07.946Z",
-      "lastOkAt": "2026-11-26T19:50:23.797Z",
-      "seen": 23200,
+      "lastCursor": "2026-11-26T19:56:48.000Z",
+      "lastOkAt": "2026-11-26T20:06:58.398Z",
+      "seen": 23600,
       "events": 24,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T07:50:23.797Z",
-      "lastOkAt": "2026-11-26T19:50:23.797Z",
-      "seen": 6814,
+      "lastCursor": "2026-11-26T08:06:58.398Z",
+      "lastOkAt": "2026-11-26T20:06:58.398Z",
+      "seen": 6927,
       "events": 7,
       "errors": 0
     }
@@ -8178,6 +8178,170 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-26T19:50:23.797Z"
+    },
+    {
+      "id": "20261126t195809z-gta2pc-115d6e65",
+      "key": "update|gta2pc|activity|41567",
+      "kind": "update",
+      "projectId": "gta2pc",
+      "projectName": "gta2pc",
+      "at": "2026-11-26T19:58:09Z",
+      "detectedAt": "2026-11-26T20:06:58.398Z",
+      "title": "gta2pc opened pull request #1",
+      "oneLine": "deps: bump third_party/rpf9-explorer from `e293917` to `c6235a1`",
+      "sources": [
+        {
+          "url": "https://github.com/BasGame1/gta2pc/pull/1",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "deps: bump third_party/rpf9-explorer from `e293917` to `c6235a1`",
+          "at": "2026-11-26T19:58:09Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "basgame1/gta2pc",
+        "name": "gta2pc",
+        "words": [
+          "gta2pc"
+        ],
+        "hash": "90078c54615000c0",
+        "projectId": "gta2pc"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:4245f0a1cc590eb8d712a0aad889d3db21aec618948cad6e4e945f3785eaa27d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T20:06:58.398Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository entry, which is primary but not independent and provides no excerpt confirming the dependency bump.}  {"
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T20:06:58.398Z"
+    },
+    {
+      "id": "20261126t194616z-anybox-3747c137",
+      "key": "update|anybox|activity|41567",
+      "kind": "update",
+      "projectId": "anybox",
+      "projectName": "AnyBox",
+      "at": "2026-11-26T19:46:16Z",
+      "detectedAt": "2026-11-26T20:06:58.398Z",
+      "title": "AnyBox pushed 3 commits",
+      "oneLine": "fix(runtime): find the first frame outside ab_runtime instead of skipping a fixed count",
+      "sources": [
+        {
+          "url": "https://github.com/Dark3581/AnyBox/commit/f8b7f301cf29f49f643b055193b179fc1fef6792",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "fix(runtime): find the first frame outside ab_runtime instead of skipping a fixed count",
+          "at": "2026-11-26T19:46:16Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "dark3581/anybox",
+        "name": "anybox",
+        "words": [
+          "anybox"
+        ],
+        "hash": "b9244e4012ff7559",
+        "projectId": "anybox"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:80507baa2144bd9f83e11feb8b5a1903c5b602b9f00bd7e2333dc93382efea18",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T20:06:58.398Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own commit title with an empty excerpt, so the one-line claim rests on a non-independent primary source that merely restates itself and cannot be corroborated."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T20:06:58.398Z"
+    },
+    {
+      "id": "20261126t194524z-victory-unified-8fec9355",
+      "key": "update|victory-unified|activity|41567",
+      "kind": "update",
+      "projectId": "victory-unified",
+      "projectName": "victory-unified",
+      "at": "2026-11-26T19:45:24Z",
+      "detectedAt": "2026-11-26T20:06:58.398Z",
+      "title": "victory-unified pushed 3 commits",
+      "oneLine": "README: detailed how-to-run guide (prereqs, victory.toml, diag/release build, shader/warm pre-pass, play.ps1 -Exe options, Series S/X profile)",
+      "sources": [
+        {
+          "url": "https://github.com/Itsbatt/victory-unified/commit/e20f64c8345d0aaf69aeddbd8476ab2a080fc712",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "README: detailed how-to-run guide (prereqs, victory.toml, diag/release build, shader/warm pre-pass, play.ps1 -Exe option",
+          "at": "2026-11-26T19:45:24Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsbatt/victory-unified",
+        "name": "victory-unified",
+        "words": [
+          "victory-unified"
+        ],
+        "hash": "049a689f0a677c37",
+        "projectId": "victory-unified"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:c484d3da9279b6d9f6f81f0bfbc6cb886b88eacd21930bb0916dc21f5f725204",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
