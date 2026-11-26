@@ -334,14 +334,26 @@ export function getStandings(tracker: Tracker, evidence: Evidence[]): Standing[]
     )
 }
 
+/** The sign on the home page: Yes, Yes unofficially, Maybe or Not yet. */
+export type Verdict = "yes" | "unofficial" | "maybe" | "no"
+
 export function getAnswer(tracker: Tracker) {
   const { leader } = overall(tracker.efforts)
-  const stages = tracker.efforts.filter((e) => !e.nuked).map(stageOf)
+  const live = tracker.efforts.filter((e) => !e.nuked)
+  const stages = live.map(stageOf)
   const furthest = stages.sort((a, b) => stageRank(b) - stageRank(a))[0] ?? "groundwork"
+  const done = furthest === "complete"
+  /** A community build has reached our Playable goal: GTA VI runs on PC, though not from Rockstar. */
+  const unofficial = stageRank(furthest) >= stageRank("smooth")
+  /** A recording shows a community build at Playable speed on some PC, but none has the picture yet, or runs that well on most PCs. */
+  const fast = live.some((e) =>
+    goalsOf(e).some((g) => g.checks.some((c) => c.key === "fps" && c.met))
+  )
+  const verdict: Verdict = done ? "yes" : unofficial ? "unofficial" : fast ? "maybe" : "no"
   return {
-    done: furthest === "complete",
-    /** A community build has reached our Playable goal: GTA VI runs on PC, though not from Rockstar. */
-    unofficial: stageRank(furthest) >= stageRank("smooth"),
+    done,
+    unofficial,
+    verdict,
     furthest: stageLabel(furthest),
     leader: leader ? { name: leader.effort.name as string, score: leader.score as number } : null,
   }

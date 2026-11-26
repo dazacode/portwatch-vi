@@ -26,6 +26,7 @@ import { Leaders } from "@/components/opening/leaders"
 import { Button } from "@/components/ui/button"
 import { useFullscreen } from "@/components/use-fullscreen"
 import type { Broadcast } from "@/lib/broadcast"
+import type { Verdict } from "@/lib/tracker"
 import { cn } from "@/lib/utils"
 
 // Only during a holiday, so not in the first download.
@@ -45,8 +46,7 @@ const glass = "text-white hover:bg-white/20 hover:text-white dark:hover:bg-white
 /** The first screen: the answer and the clock over Miami. Everything else opens on request. */
 export function Opening({
   broadcast,
-  done,
-  unofficial,
+  verdict,
   sound,
   panel,
   onPanel,
@@ -56,10 +56,8 @@ export function Opening({
   phone,
 }: {
   broadcast: Broadcast
-  /** GTA VI runs on PC, start to finish. */
-  done: boolean
-  /** A fan build is Playable. */
-  unofficial: boolean
+  /** What the sign says. */
+  verdict: Verdict
   sound: ReturnType<typeof useSound>
   panel: Panel | null
   onPanel: (panel: Panel | null) => void
@@ -119,7 +117,7 @@ export function Opening({
             panel ? "gap-2" : "gap-[clamp(0.75rem,4svh,2.5rem)] short:gap-2"
           )}
         >
-          <Answer done={done} unofficial={unofficial} compact={panel !== null} still={still} />
+          <Answer verdict={verdict} compact={panel !== null} still={still} />
           {drop && <Clock drop={drop} at={at} compact={panel !== null} />}
         </div>
         {panel && (

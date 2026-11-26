@@ -3,6 +3,7 @@ import { challengeStage } from "@/lib/challenge.mjs"
 import { compareToLast, headline, type Milestone, rate } from "@/lib/milestones"
 import { MILESTONES, scoreEffort } from "@/lib/scoring.mjs"
 import { goalsOf, STAGE_ORDER, stageLabel, stageOf } from "@/lib/stages.mjs"
+import { getAnswer, type Tracker } from "@/lib/tracker"
 import { addMilestones, scores } from "@/scripts/lib/milestones.mjs"
 
 const IN = { loads: 1, boots: 1, menu: 1, world: 1, playable: 1 }
@@ -75,5 +76,25 @@ describe("our stages", () => {
   it("challenges a playable build in the game, not in the menu", () => {
     expect(challengeStage("smooth")).toBe("playable")
     expect(challengeStage("beaten")).toBe("playable")
+  })
+})
+
+describe("the sign on the home page", () => {
+  const verdict = (...efforts: object[]) =>
+    getAnswer({ efforts: efforts.map((e) => ({ stats: {}, ...e })) } as unknown as Tracker).verdict
+  it("says not yet while no build has a recorded Playable speed", () => {
+    expect(verdict(build({ fps: 5, render: 0.5 }, both))).toBe("no")
+    expect(verdict(build({ fps: 25, render: 0.5 }))).toBe("no")
+  })
+  it("says maybe for a recorded 20 fps without the picture", () => {
+    expect(verdict(build({ fps: 25, render: 0.7 }, { fps: URL, render: URL }))).toBe("maybe")
+  })
+  it("says yes, unofficially once a build reaches Playable", () => {
+    expect(verdict(build({ fps: 22, render: 0.75 }, both))).toBe("unofficial")
+  })
+  it("ignores a build that was taken down", () => {
+    expect(verdict({ ...build({ fps: 25, render: 0.7 }, both), nuked: { at: "2026-11-26" } })).toBe(
+      "no"
+    )
   })
 })

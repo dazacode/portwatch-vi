@@ -1,22 +1,34 @@
 import Link from "next/link"
 import { buttonVariants } from "@/components/ui/button"
+import type { Verdict } from "@/lib/tracker"
 import { cn } from "@/lib/utils"
+
+const SIGN: Record<Verdict, string> = {
+  yes: "Yes",
+  unofficial: "Yes",
+  maybe: "Maybe",
+  no: "Not yet",
+}
+
+/** Under the sign when the answer isn't Rockstar's. Maybe: a fan build is fast on a high-end PC, not yet on most. */
+const NOTE: Partial<Record<Verdict, string>> = {
+  unofficial: "Unofficially",
+  maybe: "On high-end PCs, unofficially",
+}
 
 /** The question everyone comes with, answered by a sign that writes itself and catches. */
 export function Answer({
-  done,
-  unofficial,
+  verdict,
   compact,
   still,
 }: {
-  done: boolean
-  /** A fan build is Playable, so the answer is yes, but not from Rockstar. */
-  unofficial: boolean
+  verdict: Verdict
   /** Beside an open panel. */
   compact: boolean
   still: boolean
 }) {
-  const text = done || unofficial ? "Yes" : "Not yet"
+  const text = SIGN[verdict]
+  const note = NOTE[verdict]
   return (
     <div
       className={cn(
@@ -49,11 +61,11 @@ export function Answer({
           {text}
         </span>
       </p>
-      {unofficial && !done && (
+      {note && (
         <div
           className={cn(
             "flex flex-col items-center gap-3",
-            // Clear of the tail of the Y, which hangs below the sign.
+            // Clear of the tail of the y, which hangs below the sign.
             compact
               ? "mt-[clamp(0.25rem,3svh,1.5rem)] gap-2 max-lg:mt-0"
               : "mt-[clamp(0.5rem,6svh,3.5rem)] short:mt-0"
@@ -65,7 +77,7 @@ export function Answer({
               compact ? "text-xs" : "text-sm sm:text-base"
             )}
           >
-            Unofficially
+            {note}
           </p>
           <Link
             href="/standings"

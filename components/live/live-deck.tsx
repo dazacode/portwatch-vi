@@ -16,6 +16,7 @@ import { useIdle } from "@/components/use-idle"
 import { usePhone } from "@/components/use-phone"
 import type { Broadcast } from "@/lib/broadcast"
 import { channelKey, type Snapshot, type Stream } from "@/lib/live/types"
+import type { Verdict } from "@/lib/tracker"
 import { TRAILERS } from "@/lib/trailers"
 import { scrollBehavior } from "@/lib/utils"
 
@@ -98,16 +99,13 @@ export function LiveDeck({
   broadcast,
   projects,
   answer,
-  done,
-  unofficial,
+  verdict,
 }: {
   initial: Snapshot
   broadcast: Broadcast
   projects: Record<string, string>
   answer: string
-  done: boolean
-  /** A fan build is Playable. */
-  unofficial: boolean
+  verdict: Verdict
 }) {
   const live = useSWR<Snapshot>("/api/live", fetcher, { ...REFRESH, fallbackData: initial })
   const show = useSWR<Broadcast>("/api/broadcast", fetcher, { ...REFRESH, fallbackData: broadcast })
@@ -220,8 +218,7 @@ export function LiveDeck({
           </div>
           <Opening
             broadcast={onAir}
-            done={done}
-            unofficial={unofficial}
+            verdict={verdict}
             sound={sound}
             panel={view.panel}
             onPanel={view.openPanel}

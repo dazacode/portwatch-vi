@@ -48,7 +48,12 @@ export default async function Page() {
     (p) => p.rank !== null
   )
   const answer = getAnswer(tracker)
-  const verdict = answer.done ? "Yes." : answer.unofficial ? "Yes, unofficially." : "Not yet."
+  const verdict = {
+    yes: "Yes.",
+    unofficial: "Yes, unofficially.",
+    maybe: "Maybe: a fan build plays at 20 fps or more on a high-end PC, not yet on most.",
+    no: "Not yet.",
+  }[answer.verdict]
   const projects = Object.fromEntries(standings.map((s) => [s.id, s.name]))
 
   return (
@@ -63,8 +68,7 @@ export default async function Page() {
         broadcast={broadcast}
         projects={projects}
         answer={`GTA VI on PC? ${verdict}`}
-        done={answer.done}
-        unofficial={answer.unofficial}
+        verdict={answer.verdict}
       />
       <Container>
         <DigestSummary summary={getSummary(digest, feed, tracker)} compact />
