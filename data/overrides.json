@@ -129,11 +129,11 @@
         ]
       },
       "to": {
-        "summary": "Public on 26 Nov at codec-d/cool_fox (GPL-3.0), now in open beta with a Windows launcher for NVIDIA and AMD. It is avatarmanz's VIctory-7900XTX with codec-d's NVIDIA and memory work on top. Owner: 25 fps, 80% story, rendering 0.85.",
+        "summary": "Its code went public on 26 Nov at codec-d/cool_fox (GPL-3.0). codec-d took that repo down later the same day, but the code is still up through forks and unchanged mirrors, such as DoubleGhosty/cool_fox. Open beta with a Windows launcher for NVIDIA and AMD. Owner: 25 fps, 80% story, rendering 0.85.",
         "highlights": [
           "Open beta and a Windows launcher out on 26 Nov, for NVIDIA and AMD",
           "Upstream's owner reports 25 fps gameplay on NVIDIA, 80% story, rendering 0.85",
-          "Code public on 26 Nov: codec-d/cool_fox, GPL-3.0, 490 stars in three hours"
+          "Code still up through forks: dozens of GPL-3.0 copies keep it public after the original repo went down"
         ],
         "blockers": [
           "Nobody outside the group has reported a run of the public code yet",
@@ -288,6 +288,10 @@
           {
             "text": "The repository was created at 04:16 UTC on 26 Nov and by 07:15 had 490 stars and 134 forks under GPL-3.0; GitHub counts 627 commits on main.",
             "url": "https://github.com/codec-d/cool_fox"
+          },
+          {
+            "text": "codec-d/cool_fox answers 404 since 26 Nov: removed from codec-d's own account, with no DMCA notice. The code stays public through its forks and unchanged mirrors, such as DoubleGhosty/cool_fox (GPL-3.0, commit f4b48ad, source only).",
+            "url": "https://github.com/DoubleGhosty/cool_fox"
           }
         ],
         "findingsSource": "From codec-d/cool_fox's README, docs, code and release, kunaiposting's and codewzada's posts, GitHub's API and codec-d's commits of 26 Nov."
@@ -1217,7 +1221,8 @@
       "from": {
         "basedOn": [
           "marvis",
-          "xcl"
+          "xcl",
+          "avatarmanz"
         ]
       },
       "to": {
@@ -1226,7 +1231,14 @@
           "xcl",
           "avatarmanz"
         ]
-      }
+      },
+      "changes": [
+        {
+          "date": "2026-11-26",
+          "kind": "new",
+          "text": "Original repo taken down by its author on 26 Nov; the code stays public through forks and mirrors"
+        }
+      ]
     }
   ],
   "added": [
