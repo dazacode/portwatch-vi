@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T08:50:22.416Z",
+  "updated": "2026-11-26T09:05:25.577Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T08:31:15.000Z",
-      "lastOkAt": "2026-11-26T08:50:22.416Z",
-      "seen": 3750,
-      "events": 136,
+      "lastCursor": "2026-11-26T09:01:18.000Z",
+      "lastOkAt": "2026-11-26T09:05:25.577Z",
+      "seen": 4000,
+      "events": 152,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T06:21:27.000Z",
-      "lastOkAt": "2026-11-26T08:50:22.416Z",
+      "lastOkAt": "2026-11-26T09:05:25.577Z",
       "seen": 16,
       "events": 8,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T08:10:17.339Z",
-      "lastOkAt": "2026-11-26T08:50:22.416Z",
-      "seen": 849,
+      "lastOkAt": "2026-11-26T09:05:25.577Z",
+      "seen": 908,
       "events": 20,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T08:30:14.000Z",
-      "lastOkAt": "2026-11-26T08:50:22.416Z",
-      "seen": 6000,
+      "lastCursor": "2026-11-26T09:00:28.844Z",
+      "lastOkAt": "2026-11-26T09:05:25.577Z",
+      "seen": 6400,
       "events": 5,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T08:50:22.416Z",
-      "seen": 1737,
+      "lastOkAt": "2026-11-26T09:05:25.577Z",
+      "seen": 1855,
       "events": 7,
       "errors": 0
     }
@@ -4057,6 +4057,171 @@
         "low confidence"
       ],
       "deskAt": "2026-11-26T08:36:38.181Z"
+    },
+    {
+      "id": "20261126t090056z-gta-vi-astral-54b26619",
+      "key": "update|gta-vi-astral|activity|41566",
+      "kind": "update",
+      "projectId": "gta-vi-astral",
+      "projectName": "ASTRAL",
+      "at": "2026-11-26T09:00:56Z",
+      "detectedAt": "2026-11-26T09:05:25.577Z",
+      "title": "ASTRAL pushed 3 commits",
+      "oneLine": "feat(gpu/shader): separate PS CBV (b1) and multi-SRV (t0..t3) descriptor bindings",
+      "sources": [
+        {
+          "url": "https://github.com/Archivist-Atlas/gta-vi-astral/commit/6ef88cb1795e89e4f83d052e180991633eb40c71",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "feat(gpu/shader): separate PS CBV (b1) and multi-SRV (t0..t3) descriptor bindings",
+          "at": "2026-11-26T08:48:35Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "archivist-atlas/gta-vi-astral",
+        "name": "astral",
+        "words": [
+          "astral",
+          "gta-vi-astral"
+        ],
+        "hash": "8f01621fee875b30",
+        "projectId": "gta-vi-astral"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:7a48520327ac17295b124b114a4a452e91ee4e2ff7f91f8fdab01d84625b2ddf",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T09:05:25.577Z",
+          "by": "desk",
+          "note": "The project’s GitHub repository directly shows the commit titled with the same shader descriptor-binding change, and no stored source contradicts it."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T09:05:25.577Z"
+    },
+    {
+      "id": "20261126t085831z-native-victory-macos-d5a95ece",
+      "key": "update|native-victory-macos|activity|41566",
+      "kind": "update",
+      "projectId": "native-victory-macos",
+      "projectName": "Native-Victory-macOS",
+      "at": "2026-11-26T08:58:31Z",
+      "detectedAt": "2026-11-26T09:05:25.577Z",
+      "title": "Native-Victory-macOS opened pull request #12",
+      "oneLine": "macos: default run-native.sh to --console series-s on <=16 GB Macs",
+      "sources": [
+        {
+          "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/12",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "macos: default run-native.sh to --console series-s on <=16 GB Macs",
+          "at": "2026-11-26T08:58:31Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "lakshansivakumar/native-victory-macos",
+        "name": "native-victory-macos",
+        "words": [
+          "native-victory-macos"
+        ],
+        "hash": "4d20e00c5b7f2ae5",
+        "projectId": "native-victory-macos"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:99e16624ffc64adb3d4e96d1895b1e2d16ebc61bd8b9f5359c502346a80ad182",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T09:05:25.577Z",
+          "by": "desk",
+          "note": "The GitHub pull request title directly matches the one-line description and is a primary source with no conflicting evidence."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T09:05:25.577Z"
+    },
+    {
+      "id": "20261126t084929z-xbox-emulator-231a1100",
+      "key": "update|xbox-emulator|activity|41566",
+      "kind": "update",
+      "projectId": "xbox-emulator",
+      "projectName": "xbox-emulator",
+      "at": "2026-11-26T08:49:29Z",
+      "detectedAt": "2026-11-26T09:05:25.577Z",
+      "title": "xbox-emulator opened pull request #395",
+      "oneLine": "Fix the PE relocation block validation",
+      "sources": [
+        {
+          "url": "https://github.com/omonkeyz/xbox-emulator/pull/395",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Fix the PE relocation block validation",
+          "at": "2026-11-26T08:49:29Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "omonkeyz/xbox-emulator",
+        "name": "xbox-emulator",
+        "words": [
+          "xbox-emulator"
+        ],
+        "hash": "504d6641ea3502e1",
+        "projectId": "xbox-emulator"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:1808350c59af43e8e461e74a58568825cef4c1ad1d32580b8be4bd921443fd74",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
