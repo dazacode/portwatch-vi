@@ -111,20 +111,20 @@
     {
       "id": "cgbj",
       "from": {
-        "summary": "A private build based on VIctory, using some of XCL's work. PortWatch verified it gets in game: a player moves and talks to NPCs, very slowly. A video shows the opening in flat, unlit colours. Code not public.",
+        "summary": "Private VIctory/XCL build, PortWatch-verified. Owner rates story halfway, rendering 0.75 and stability 0.85. It averages 25 fps on NVIDIA with 8 GB RAM and 16 GB VRAM (not a typo); code is private.",
         "highlights": [
-          "A player moves with a controller, talks to NPCs and opens the in-game menu",
-          "A video on X shows the opening scenes in flat colours: a car, a street, a prison yard",
-          "Built on VIctory's runtime, with some of XCL's work added"
+          "Owner ratings: half the story, rendering 0.75, stability 0.85",
+          "25 fps gameplay average, highest reported on the board (NVIDIA, 8 GB RAM and 16 GB VRAM, not a typo)",
+          "Close to the console with minor glitches; code remains private"
         ],
         "blockers": [
-          "No lighting yet, and the screen was black while a player walked around",
-          "Runs very slowly",
+          "Minor visual glitches remain",
+          "Gameplay does not sustain 30 fps; 25 fps is the reported average",
           "Code is private, so nobody outside the group can test or reproduce it"
         ],
-        "gta.story": 0,
-        "gta.render": 0.25,
-        "gta.fps": 4,
+        "gta.story": 0.6,
+        "gta.render": 0.75,
+        "gta.fps": 25,
         "assessedBy": "manual"
       },
       "to": {
@@ -574,14 +574,14 @@
     {
       "id": "belobug",
       "from": {
-        "summary": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 4 fps and rarely crashes.",
+        "summary": "Belobug's VIctory fork runs on AMD Radeon; PortWatch saw its near-console open world and mission gameplay at about 8 fps. The owner now reports ray tracing working on AMD; the README still describes the ray-tracing path as failing.",
         "highlights": [
           "Platform: AMD Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
           "The open world looks close to the retail game: lit, with textures, people, vehicles, vegetation, water and sky",
-          "Plays through missions and rarely crashes",
-          "Built on VIctory's main and upstream pull requests, not on victory-fork; GPL-3.0"
+          "Owner reports ray-traced lighting now working on AMD",
+          "Plays through missions and rarely crashes; built on VIctory's main and upstream pull requests"
         ],
-        "assessedAt": "2026-11-25",
+        "assessedAt": "2026-11-26",
         "assessedBy": "manual"
       },
       "to": {
@@ -635,8 +635,8 @@
       "id": "belobug",
       "from": {
         "blockers": [
-          "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
-          "Moving vehicles lose or stretch parts, distant trees aren't drawn, and a flat constant stands in for ray-traced light in the shade",
+          "About 8 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
+          "Ray tracing is reported working on AMD; the README says enabling its ray-tracing path still ends in device removal",
           "Needs about 22 GB of RAM and more than 16 GB of video memory; tested on one AMD PC only, nothing on NVIDIA or Intel yet"
         ]
       },
@@ -937,7 +937,7 @@
     {
       "id": "belobug",
       "from": {
-        "gta.fps": 4
+        "gta.fps": 8
       },
       "to": {
         "gta.fps": 8
@@ -965,14 +965,14 @@
       "from": {
         "highlights": [
           "Looks about the same as AvatarManz's build, the leader on our board",
-          "As far into the story as the leading builds, with a picture close to the console",
+          "Owner rates story progress at half, with a picture close to the console",
           "Runs on an AMD card"
         ],
         "blockers": [
           "No measured frame rate, crash record or test PC given: the values follow AvatarManz's build, which it looks about the same as",
           "Code is private, so nobody outside can test or reproduce it"
         ],
-        "assessedAt": "2026-11-25",
+        "assessedAt": "2026-11-26",
         "assessedBy": "manual"
       },
       "to": {
