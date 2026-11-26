@@ -111,37 +111,31 @@
     {
       "id": "cgbj",
       "from": {
-        "summary": "Private VIctory/XCL build, PortWatch-verified. Owner rates story halfway, rendering 0.75 and stability 0.85. It averages 25 fps on NVIDIA with 8 GB RAM and 16 GB VRAM (not a typo); code is private.",
+        "summary": "Private VIctory/XCL build, PortWatch-verified. Owner rates story progress at 80%, rendering 0.85 and stability 0.85. It averages 20 fps on NVIDIA with 10 GB RAM and 16 GB VRAM (not a typo); code is private.",
         "highlights": [
-          "Owner ratings: half the story, rendering 0.75, stability 0.85",
-          "25 fps gameplay average, highest reported on the board (NVIDIA, 8 GB RAM and 16 GB VRAM, not a typo)",
-          "Close to the console with minor glitches; code remains private"
+          "Owner ratings: 80% story, rendering 0.85, stability 0.85",
+          "20 fps gameplay average (NVIDIA, 10 GB RAM and 16 GB VRAM, not a typo)",
+          "Graphics look close to the console; code remains private"
         ],
         "blockers": [
           "Minor visual glitches remain",
-          "Gameplay does not sustain 30 fps; 25 fps is the reported average",
+          "Gameplay does not sustain 30 fps; 20 fps is the reported average",
           "Code is private, so nobody outside the group can test or reproduce it"
         ],
-        "gta.story": 0.6,
-        "gta.render": 0.75,
-        "gta.fps": 25,
         "assessedBy": "manual"
       },
       "to": {
-        "summary": "A private build based on VIctory and XCL. Upstream's owner rates it at half the story, rendering 0.75 and stability 0.85, averaging 25 fps on NVIDIA. A clip posted on 26 Nov backs the frame rate: the Gone Fishing mission plays at about 23 fps on NVIDIA's overlay, with the HUD and objectives working. It comes from a fan account, not the group. Code not public.",
+        "summary": "A private build based on VIctory and XCL. Upstream's owner says PortWatch checked it with the group and now rates it at 80% of the story, rendering 0.85 and stability 0.85, averaging 20 fps on NVIDIA with 10 GB of RAM and 16 GB of video memory. A clip posted on 26 Nov backs the frame rate: the Gone Fishing mission plays at about 23 fps on NVIDIA's overlay. It comes from a fan account, and no public footage shows the story past that opening mission. Code not public.",
         "highlights": [
           "A 26 Nov clip shows the Gone Fishing mission at about 23 fps on NVIDIA's overlay",
-          "Upstream's owner rates it at half the story, rendering 0.75 and stability 0.85",
+          "Upstream's owner rates it at 80% of the story, rendering 0.85 and stability 0.85",
           "Water, clouds, birds and detailed characters close to the console"
         ],
         "blockers": [
-          "The 23 fps clip comes from a fan account, not the group; the 25 Nov shots measured 3.2-4.5 fps",
+          "The 23 fps clip is from a fan account; no public footage shows the story past the opening",
           "Gameplay doesn't hold 30 fps; minor visual glitches remain",
           "Code is private, so nobody outside the group can test or reproduce it"
         ],
-        "gta.story": 0.6,
-        "gta.render": 0.75,
-        "gta.fps": 25,
         "assessedAt": "2026-11-26",
         "assessedBy": "claude"
       },
@@ -990,7 +984,7 @@
       "from": {
         "highlights": [
           "Looks about the same as AvatarManz's build, the leader on our board",
-          "Owner rates story progress at half, with a picture close to the console",
+          "Owner rates story progress at 80%, with a picture close to the console",
           "Runs on an AMD card"
         ],
         "blockers": [
@@ -1004,7 +998,7 @@
         "highlights": [
           "A cutscene close-up reached 30.0 fps",
           "Free-roam gameplay on stream, with HUD and minimap working",
-          "Upstream's owner rates its story at half, with a picture close to the console"
+          "Upstream's owner rates its story at 80%, with a picture close to the console"
         ],
         "blockers": [
           "30 fps is a cutscene or loading peak; free roam ran with no fps overlay, so gameplay is unmeasured",
@@ -1046,6 +1040,11 @@
           "date": "2026-11-26",
           "kind": "up",
           "text": "Stream shows free-roam gameplay and repeated crashes; 30 fps stays a cutscene peak"
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "new",
+          "text": "NotNozy: upstream's owner now rates its story at 80%, up from half."
         }
       ]
     },
@@ -1084,6 +1083,11 @@
           "date": "2026-11-26",
           "kind": "up",
           "text": "CGBJ reaches Playable: a 26 Nov clip shows the Gone Fishing mission at about 23 fps on NVIDIA's overlay, with textures and lighting close to the console. It comes from a fan account; the group hasn't confirmed it."
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "CGBJ: upstream's owner now rates it at 80% of the story and rendering 0.85, with a 20 fps average, down from 25. Public footage still shows only the opening mission."
         }
       ]
     }
