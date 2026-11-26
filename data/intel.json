@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T17:20:24.348Z",
+  "updated": "2026-11-26T17:35:21.278Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T17:01:12.000Z",
-      "lastOkAt": "2026-11-26T17:20:24.348Z",
-      "seen": 12000,
-      "events": 419,
+      "lastCursor": "2026-11-26T17:31:39.000Z",
+      "lastOkAt": "2026-11-26T17:35:21.278Z",
+      "seen": 12250,
+      "events": 437,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T15:15:41.000Z",
-      "lastOkAt": "2026-11-26T17:20:24.348Z",
+      "lastOkAt": "2026-11-26T17:35:21.278Z",
       "seen": 22,
       "events": 14,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T17:20:24.348Z",
-      "seen": 2827,
+      "lastOkAt": "2026-11-26T17:35:21.278Z",
+      "seen": 2887,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T17:00:47.243Z",
-      "lastOkAt": "2026-11-26T17:20:24.348Z",
-      "seen": 19200,
+      "lastCursor": "2026-11-26T17:27:07.147Z",
+      "lastOkAt": "2026-11-26T17:35:21.278Z",
+      "seen": 19600,
       "events": 23,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T05:20:24.348Z",
-      "lastOkAt": "2026-11-26T17:20:24.348Z",
-      "seen": 5665,
+      "lastCursor": "2026-11-26T05:35:21.278Z",
+      "lastOkAt": "2026-11-26T17:35:21.278Z",
+      "seen": 5781,
       "events": 7,
       "errors": 0
     }
@@ -7591,6 +7591,106 @@
         "low confidence"
       ],
       "deskAt": "2026-11-26T17:05:20.410Z"
+    },
+    {
+      "id": "20261126t171959z-whibwhi-own-3c910b47",
+      "key": "update|whibwhi-own|activity|41567",
+      "kind": "update",
+      "projectId": "whibwhi-own",
+      "projectName": "whibwhi-own",
+      "at": "2026-11-26T17:19:59Z",
+      "detectedAt": "2026-11-26T17:35:21.278Z",
+      "title": "whibwhi-own pushed 15 commits",
+      "oneLine": "Test of the shader program walk: every format, constants after an instruction, every way to stop (bugfix: undid AI trap)",
+      "sources": [
+        {
+          "url": "https://github.com/ExCorvus/whibwhi-own/commit/4fdfc8a3c7944d97fc6d560a5a5f973bee300734",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Test of the shader program walk: every format, constants after an instruction, every way to stop (bugfix: undid AI trap)",
+          "at": "2026-11-26T17:01:46Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "excorvus/whibwhi-own",
+        "name": "whibwhi-own",
+        "words": [
+          "whibwhi-own"
+        ],
+        "hash": "7a15c8c8a876df52",
+        "projectId": "whibwhi-own"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:f5e556ad5ed868aff3d148be4808a2c2dac564d21df1280a20c313d03e7f3500",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t171058z-hybridgt-94b69fd0",
+      "key": "update|hybridgt|activity|41567",
+      "kind": "update",
+      "projectId": "hybridgt",
+      "projectName": "HybridGt",
+      "at": "2026-11-26T17:10:58Z",
+      "detectedAt": "2026-11-26T17:35:21.278Z",
+      "title": "HybridGt pushed 2 commits",
+      "oneLine": "All 26,084 shader programs translate (ray-traced shadow tracers too), compute 2,682 of 2,682 pipelines; every workspace test and the asset policy pass; patch regenerated",
+      "sources": [
+        {
+          "url": "https://github.com/LowBacon/HybridGt/commit/0da47d31e668960a9b8deb3e77283e2f7453292d",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "All 26,084 shader programs translate (ray-traced shadow tracers too), compute 2,682 of 2,682 pipelines; every workspace ",
+          "at": "2026-11-26T17:10:50Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "lowbacon/hybridgt",
+        "name": "hybridgt",
+        "words": [
+          "hybridgt"
+        ],
+        "hash": "dd5986c008451b84",
+        "projectId": "hybridgt"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:05ded0bb26fb8d8b27bf4781d4d9b0e5c2174e070cc1f859605e28664adb4640",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
