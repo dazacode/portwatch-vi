@@ -18,7 +18,6 @@ export const scoreColor = (key: string) =>
 
 /** Our score for one project, part by part: small enough to send to the browser. */
 export type Ours = {
-  name: string
   rating: number
   parts: { key: string; label: string; claimed: number; counted: number }[]
 }

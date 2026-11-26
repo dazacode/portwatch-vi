@@ -7,12 +7,12 @@ import { Board } from "@/components/standings/board"
 import { Explorer, ExplorerFallback } from "@/components/standings/explorer"
 import { ProjectRow } from "@/components/standings/project-row"
 import { getBoardEvents } from "@/lib/board"
-import { getRace } from "@/lib/race"
-import type { Ours } from "@/lib/score-colors"
+import { getRace, type RateAt } from "@/lib/race"
+import { scoreAt } from "@/lib/score-at"
 import { pageMeta, standingsLd, standingsMeta } from "@/lib/seo"
 import { SITE } from "@/lib/site"
 import { STEPS } from "@/lib/stages.mjs"
-import { getProjects, isGone, type Project, toEntry } from "@/lib/standings"
+import { getProjects, type Project, toEntry } from "@/lib/standings"
 import {
   getActivity,
   getEvidence,
@@ -42,30 +42,28 @@ export default async function Page() {
   const board = getBoardEvents(projects, records, milestones)
   const now = new Date().toISOString()
   const stages = STEPS.filter((m) => m.at > 0).map(({ label, at }) => ({ label, at }))
-  const draw = (list: Project[]) => {
-    const race = getRace(list, milestones, board, now)
-    const ours = (p: Project): Ours => ({
-      name: p.name,
-      rating: p.rating,
-      parts: p.parts.map(({ key, label, claimed, counted }) => ({ key, label, claimed, counted })),
-    })
-    // Only who is ever in a lane: the rest isn't drawn.
-    const seen = new Set(race.flatMap((f) => f.racers.map((r) => r.id)))
-    const scores = Object.fromEntries(
-      list.filter((p) => seen.has(p.id)).map((p) => [p.id, ours(p)])
-    )
-    const top = list
-      .filter((p) => p.rank !== null && !isGone(p))
-      .toSorted((a, b) => b.rating - a.rating)[0]
-    return {
-      race,
-      scores,
-      best: top ? { id: top.id, ...ours(top) } : undefined,
-      entries: list.map(toEntry),
-      board: <Board projects={list} />,
-      rows: Object.fromEntries(list.map((p) => [p.id, <ProjectRow key={p.id} project={p} />])),
-    }
-  }
+  // Our score at each moment of the race: the claim then, and the reports filed by then.
+  const slim = (parts: Project["parts"]) =>
+    parts.map(({ key, label, claimed, counted }) => ({
+      key,
+      label,
+      claimed: Math.round(claimed * 100) / 100,
+      counted: Math.round(counted * 100) / 100,
+    }))
+  const rateAt: RateAt = (p, claim, at) =>
+    at === now
+      ? { rating: p.rating, parts: slim(p.parts) }
+      : scoreAt(
+          claim,
+          evidence.filter((e) => e.effortId === p.id && Date.parse(e.at) <= Date.parse(at)),
+          p.parts
+        )
+  const draw = (list: Project[]) => ({
+    race: getRace(list, milestones, board, now, rateAt),
+    entries: list.map(toEntry),
+    board: <Board projects={list} />,
+    rows: Object.fromEntries(list.map((p) => [p.id, <ProjectRow key={p.id} project={p} />])),
+  })
   const view = {
     ranked: draw(projects),
     everyone: draw(getProjects(standings, sources, { withPrivate: true })),

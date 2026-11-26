@@ -22,21 +22,16 @@ const one = (n: number) => Math.round(n * 10) / 10
 export type Stage = { label: string; at: number }
 
 /** Our score drawn part by part, in the ladder's colours. */
-function Parts({ ours, shown }: { ours: Ours | undefined; shown: boolean }) {
+function Parts({ ours }: { ours: Ours | undefined }) {
   return (
-    <span
-      className={cn(
-        "absolute inset-y-0 left-0 flex w-full gap-px transition-opacity duration-500 motion-reduce:transition-none",
-        !shown && "opacity-0"
-      )}
-    >
+    <span className="absolute inset-y-0 left-0 flex w-full gap-px">
       {ours?.parts
         .filter((p) => p.counted > 0)
         .map((p) => (
           <span
             key={p.key}
             title={`${p.label}: ${one(p.counted)} of ${one(p.claimed)} claimed`}
-            className="block h-full shrink-0 first:rounded-l-full last:rounded-r-full"
+            className="block h-full shrink-0 transition-[width] duration-700 ease-out first:rounded-l-full last:rounded-r-full motion-reduce:transition-none"
             style={{ width: `${p.counted}%`, backgroundColor: scoreColor(p.key) }}
           />
         ))}
@@ -49,18 +44,7 @@ function Parts({ ours, shown }: { ours: Ours | undefined; shown: boolean }) {
  * PortWatch ranks by, with our score for the same project drawn over it. The replay moves the
  * claims as they were recorded; our score is today's, so it shows once the replay reaches now.
  */
-export function Race({
-  frames,
-  stages,
-  scores,
-  best,
-}: {
-  frames: Frame[]
-  stages: Stage[]
-  scores: Record<string, Ours>
-  /** The highest score by our count, today. */
-  best?: Ours & { id: string }
-}) {
+export function Race({ frames, stages }: { frames: Frame[]; stages: Stage[] }) {
   const end = frames.length - 1
   const [at, setAt] = useState(end)
   const [playing, setPlaying] = useState(false)
@@ -98,6 +82,7 @@ export function Race({
   if (!frame || !lead) return null
 
   const now = index === end
+  const best = frame.best
   // Everyone who is ever in a lane keeps one element, so it can move between lanes.
   // Today’s order first, which is the order they are read in.
   const everyone = [
@@ -142,17 +127,15 @@ export function Race({
               </span>
             </p>
             {best && (
-              <p
-                className={cn(
-                  "flex items-baseline gap-2 transition-opacity duration-500 motion-reduce:transition-none",
-                  !now && "opacity-0"
-                )}
-              >
-                <span className="text-3xl font-extrabold tracking-tight text-step-6">
-                  {best.rating}%
-                </span>
+              <p className="flex items-baseline gap-2">
+                <NumberFlow
+                  value={best.rating}
+                  suffix="%"
+                  format={{ minimumFractionDigits: 1, maximumFractionDigits: 1 }}
+                  className="text-3xl font-extrabold tracking-tight text-step-6 [--number-flow-mask-height:0.08em]"
+                />
                 <span className="text-sm">
-                  by our count,{" "}
+                  {now ? "by our count" : "was ours"},{" "}
                   <span translate="no" className="font-bold">
                     {best.name}
                   </span>
@@ -203,7 +186,7 @@ export function Race({
             className="absolute inset-y-0 left-0 rounded-full bg-primary/40 transition-[width] duration-700 ease-out motion-reduce:transition-none"
             style={{ width: `${lead.score}%` }}
           />
-          <Parts ours={best} shown={now} />
+          <Parts ours={best} />
         </div>
         <div className="relative mt-1 h-4">
           {stages.map((s) => (
@@ -235,7 +218,7 @@ export function Race({
             const lane = frame.racers.findIndex((x) => x.id === r.id)
             const here = frame.racers[lane]
             const out = !here
-            const ours = scores[r.id]
+            const ours = (here ?? r).ours
             const claim = (here ?? r).score
             return (
               <li
@@ -253,7 +236,7 @@ export function Race({
               >
                 <Link
                   href={`/projects/${r.id}`}
-                  aria-label={`${r.name}: claims ${claim}%${ours && now ? `, ${ours.rating}% by our count` : ""}`}
+                  aria-label={`${r.name}: claims ${claim}%${ours ? `, ${ours.rating}% by our count` : ""}`}
                   className={cn(
                     "group h-full items-center rounded-md text-xs sm:text-sm focus-visible:outline-2 focus-visible:outline-ring",
                     COLUMNS
@@ -291,7 +274,7 @@ export function Race({
                       )}
                       style={{ width: `${here?.score ?? 0}%` }}
                     />
-                    <Parts ours={ours} shown={now} />
+                    <Parts ours={ours} />
                   </span>
                   <span
                     aria-hidden="true"
@@ -300,7 +283,7 @@ export function Race({
                     {claim}%
                   </span>
                   <span aria-hidden="true" className="text-right font-semibold tabular-nums">
-                    {now && ours ? `${ours.rating}%` : "·"}
+                    {ours ? `${ours.rating}%` : "·"}
                   </span>
                 </Link>
               </li>
@@ -328,18 +311,13 @@ export function Race({
           ))}
         </ul>
         <p className="mt-1.5 max-w-3xl">
-          {now ? (
-            <>
-              The light bar is what a project claims, the number PortWatch ranks by. The colours are
-              our score for it: each step counts half until people outside the project confirm it,
-              and everything past Runnable counts half until anyone can.{" "}
-              <Link href="/method" className="underline underline-offset-4 hover:text-stripe-1">
-                How projects are scored
-              </Link>
-            </>
-          ) : (
-            "Replaying the claims as they were recorded. Our score is today’s, so it shows at the end."
-          )}
+          The light bar is what a project claims, the number PortWatch ranks by. The colours are our
+          score for it: each step counts half until people outside the project confirm it, and
+          everything past Runnable counts half until anyone can.{" "}
+          <Link href="/method" className="underline underline-offset-4 hover:text-stripe-1">
+            How projects are scored
+          </Link>
+          {!now && " Earlier moments use the claim then and the reports filed by then."}
         </p>
       </div>
     </section>
