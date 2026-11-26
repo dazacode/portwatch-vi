@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T17:05:20.410Z",
+  "updated": "2026-11-26T17:20:24.348Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T17:01:12.000Z",
-      "lastOkAt": "2026-11-26T17:05:20.410Z",
-      "seen": 11750,
+      "lastOkAt": "2026-11-26T17:20:24.348Z",
+      "seen": 12000,
       "events": 419,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T15:15:41.000Z",
-      "lastOkAt": "2026-11-26T17:05:20.410Z",
+      "lastOkAt": "2026-11-26T17:20:24.348Z",
       "seen": 22,
       "events": 14,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T17:05:20.410Z",
-      "seen": 2767,
+      "lastOkAt": "2026-11-26T17:20:24.348Z",
+      "seen": 2827,
       "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T17:00:47.243Z",
-      "lastOkAt": "2026-11-26T17:05:20.410Z",
-      "seen": 18800,
+      "lastOkAt": "2026-11-26T17:20:24.348Z",
+      "seen": 19200,
       "events": 23,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T05:05:20.410Z",
-      "lastOkAt": "2026-11-26T17:05:20.410Z",
-      "seen": 5549,
+      "lastCursor": "2026-11-26T05:20:24.348Z",
+      "lastOkAt": "2026-11-26T17:20:24.348Z",
+      "seen": 5665,
       "events": 7,
       "errors": 0
     }
@@ -6274,10 +6274,17 @@
       "chain": "sha256:d981b0df8a63dc4865f67116617c642d15e0a873025cd33c13324bfb6443d045",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T17:20:24.348Z",
+          "by": "desk",
+          "note": "The GitHub pull request title directly matches the one-line description, and no conflicting sources exist."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T17:20:24.348Z"
     },
     {
       "id": "20261126t123444z-openscarlett-04892c71",
@@ -6324,10 +6331,17 @@
       "chain": "sha256:09023899657c0f56dc3dfc73a49327c8a07aef760d4a84edc1ec702ed1464a86",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T17:20:24.348Z",
+          "by": "desk",
+          "note": "The project’s GitHub commit title directly and exactly supports the one-line update, with no conflicting source."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T17:20:24.348Z"
     },
     {
       "id": "20261126t122437z-scene-c47de989",
