@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T23:20:22.756Z",
+  "updated": "2026-11-26T23:35:29.561Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T23:01:08.000Z",
-      "lastOkAt": "2026-11-26T23:20:22.756Z",
-      "seen": 17750,
-      "events": 640,
+      "lastCursor": "2026-11-26T23:30:42.000Z",
+      "lastOkAt": "2026-11-26T23:35:29.561Z",
+      "seen": 18000,
+      "events": 663,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T20:47:47.000Z",
-      "lastOkAt": "2026-11-26T23:20:22.756Z",
+      "lastOkAt": "2026-11-26T23:35:29.561Z",
       "seen": 28,
       "events": 20,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-26T23:20:22.756Z",
-      "seen": 4228,
+      "lastOkAt": "2026-11-26T23:35:29.561Z",
+      "seen": 4290,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T22:43:22.341Z",
-      "lastOkAt": "2026-11-26T23:20:22.756Z",
-      "seen": 28400,
+      "lastOkAt": "2026-11-26T23:35:29.561Z",
+      "seen": 28800,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T11:20:22.756Z",
-      "lastOkAt": "2026-11-26T23:20:22.756Z",
-      "seen": 8323,
+      "lastCursor": "2026-11-26T11:35:29.561Z",
+      "lastOkAt": "2026-11-26T23:35:29.561Z",
+      "seen": 8446,
       "events": 7,
       "errors": 0
     }
@@ -8927,6 +8927,113 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-26T23:20:22.756Z"
+    },
+    {
+      "id": "20261126t232417z-decant-6cc6fb63",
+      "key": "update|decant|activity|41567",
+      "kind": "update",
+      "projectId": "decant",
+      "projectName": "Decant",
+      "at": "2026-11-26T23:24:17Z",
+      "detectedAt": "2026-11-26T23:35:29.561Z",
+      "title": "Decant pushed 3 commits",
+      "oneLine": "shader: allow swizzles in barrier skip regions and fold single-lane mask search readlane",
+      "sources": [
+        {
+          "url": "https://github.com/decantlabs/decant/commit/7d7d0651299599e3c20d2d641c9f751f279c0494",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "shader: allow swizzles in barrier skip regions and fold single-lane mask search readlane",
+          "at": "2026-11-26T23:24:17Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "decantlabs/decant",
+        "name": "decant",
+        "words": [
+          "decant"
+        ],
+        "hash": "e45313d37c3118e4",
+        "projectId": "decant"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:9ef77cc0dd457bbf37b04007e07cda80295d68702d8eb86f52ea6a635aed9d98",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T23:35:29.561Z",
+          "by": "desk",
+          "note": "The commit message in the project’s own GitHub repository directly matches the one-line description, with no conflicting sources."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T23:35:29.561Z"
+    },
+    {
+      "id": "20261126t231549z-playablegames-peppa-f772755a",
+      "key": "update|playablegames-peppa|activity|41567",
+      "kind": "update",
+      "projectId": "playablegames-peppa",
+      "projectName": "playablegames-peppa",
+      "at": "2026-11-26T23:15:49Z",
+      "detectedAt": "2026-11-26T23:35:29.561Z",
+      "title": "playablegames-peppa opened pull request #18",
+      "oneLine": "README and launcher: 21.7 fps in the house, and the settings behind it",
+      "sources": [
+        {
+          "url": "https://github.com/Peppacodes/playablegames-peppa/pull/18",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "README and launcher: 21.7 fps in the house, and the settings behind it",
+          "at": "2026-11-26T23:15:49Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "peppacodes/playablegames-peppa",
+        "name": "playablegames-peppa",
+        "words": [
+          "playablegames-peppa"
+        ],
+        "hash": "cc180a146c1d4610",
+        "projectId": "playablegames-peppa"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:bfbe5d866136c019287697419cdc244c10a337a803f83ff93366ef380bec62cd",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
