@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T16:50:23.533Z",
+  "updated": "2026-11-26T17:05:20.410Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T16:31:00.000Z",
-      "lastOkAt": "2026-11-26T16:50:23.533Z",
-      "seen": 11500,
-      "events": 402,
+      "lastCursor": "2026-11-26T17:01:12.000Z",
+      "lastOkAt": "2026-11-26T17:05:20.410Z",
+      "seen": 11750,
+      "events": 419,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T15:15:41.000Z",
-      "lastOkAt": "2026-11-26T16:50:23.533Z",
+      "lastOkAt": "2026-11-26T17:05:20.410Z",
       "seen": 22,
       "events": 14,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T16:50:23.533Z",
-      "seen": 2707,
+      "lastOkAt": "2026-11-26T17:05:20.410Z",
+      "seen": 2767,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T16:30:05.000Z",
-      "lastOkAt": "2026-11-26T16:50:23.533Z",
-      "seen": 18400,
-      "events": 22,
+      "lastCursor": "2026-11-26T17:00:47.243Z",
+      "lastOkAt": "2026-11-26T17:05:20.410Z",
+      "seen": 18800,
+      "events": 23,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T04:50:23.533Z",
-      "lastOkAt": "2026-11-26T16:50:23.533Z",
-      "seen": 5433,
+      "lastCursor": "2026-11-26T05:05:20.410Z",
+      "lastOkAt": "2026-11-26T17:05:20.410Z",
+      "seen": 5549,
       "events": 7,
       "errors": 0
     }
@@ -7510,10 +7510,73 @@
       "chain": "sha256:5c867189f690032f1372b7c5e5a028a4f27f34996bc64b54972f4ecbdaa32da5",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T17:05:20.410Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub repository with no excerpt, so it is primary but not independent and does not plainly substantiate the broad “every Xbox runtime” claim.} }</final>{"
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T17:05:20.410Z"
+    },
+    {
+      "id": "20261126t170047z-scene-53c99b47",
+      "key": "takedown|-|https://bsky.app/profile/videocardz.com/post/3n3a5lbpw5y24|41567",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-26T17:00:47.243Z",
+      "detectedAt": "2026-11-26T17:05:20.410Z",
+      "title": "Bluesky in a takedown report",
+      "oneLine": "GitHub promotes PS5-to-PC translation layer amid GTA VI PC port takedowns, then deletes…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/videocardz.com/post/3n3a5lbpw5y24",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "GitHub promotes PS5-to-PC translation layer amid GTA VI PC port takedowns, then deletes the post",
+          "at": "2026-11-26T17:00:47.243Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "GitHub promotes PS5-to-PC translation layer amid GTA VI PC port takedowns, then deletes the post"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "e0d1018350400165",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:12d3379e9dfac7e80be7d9c8c097b889141d4161287628710ef6cdf856eed2dd",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T17:05:20.410Z",
+          "by": "desk",
+          "note": "A single Bluesky post is too weak to support the claim without independent corroboration."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-26T17:05:20.410Z"
     }
   ],
   "reports": [
