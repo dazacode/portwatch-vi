@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T18:39:19.782Z",
+  "updated": "2026-11-26T18:50:24.904Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T18:35:48.000Z",
-      "lastOkAt": "2026-11-26T18:39:19.782Z",
-      "seen": 13250,
+      "lastOkAt": "2026-11-26T18:50:24.904Z",
+      "seen": 13500,
       "events": 475,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T18:18:39.000Z",
-      "lastOkAt": "2026-11-26T18:39:19.782Z",
+      "lastOkAt": "2026-11-26T18:50:24.904Z",
       "seen": 25,
       "events": 17,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-26T18:10:17.807Z",
-      "lastOkAt": "2026-11-26T18:39:19.782Z",
-      "seen": 3129,
-      "events": 22,
+      "lastCursor": "2026-11-26T18:41:42.335Z",
+      "lastOkAt": "2026-11-26T18:50:24.904Z",
+      "seen": 3190,
+      "events": 23,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T18:30:03.000Z",
-      "lastOkAt": "2026-11-26T18:39:19.782Z",
-      "seen": 21200,
+      "lastOkAt": "2026-11-26T18:50:24.904Z",
+      "seen": 21600,
       "events": 24,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T06:39:19.782Z",
-      "lastOkAt": "2026-11-26T18:39:19.782Z",
-      "seen": 6241,
+      "lastCursor": "2026-11-26T06:50:24.904Z",
+      "lastOkAt": "2026-11-26T18:50:24.904Z",
+      "seen": 6356,
       "events": 7,
       "errors": 0
     }
@@ -7990,10 +7990,17 @@
       "chain": "sha256:82ccfa25c981cc5d676714c3eaaca0e45b2ddbf0e48a957be38e225086dd2e58",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T18:50:24.904Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository, which is primary but not independent, so the test result is too thinly corroborated to publish."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T18:50:24.904Z"
     },
     {
       "id": "20261126t180437z-bcpack-gpu-hlsl-6d5a488b",
