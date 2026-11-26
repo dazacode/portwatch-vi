@@ -831,10 +831,10 @@
       ],
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "Belobug's VIctory fork runs on AMD Radeon; PortWatch saw its near-console open world and mission gameplay at about 8 fps. The owner now reports ray tracing working on AMD; the README still describes the ray-tracing path as failing.",
+      "summary": "Belobug's VIctory fork runs on AMD Radeon; PortWatch saw its lit open world and mission gameplay at about 8 fps. The owner now reports ray tracing working on AMD; the README still describes the ray-tracing path as failing.",
       "highlights": [
         "Platform: AMD Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
-        "The open world looks close to the retail game: lit, with textures, people, vehicles, vegetation, water and sky",
+        "The open world is lit, with textures, people, vehicles, vegetation, water and sky",
         "Owner reports ray-traced lighting now working on AMD",
         "Plays through missions and rarely crashes; built on VIctory's main and upstream pull requests"
       ],
@@ -851,7 +851,7 @@
         "world": 1,
         "playable": 1,
         "story": 0.5,
-        "render": 0.85,
+        "render": 0.7,
         "fps": 8,
         "stability": 0.7
       },
@@ -883,11 +883,11 @@
       ],
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "DexNom Runtime, a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it: the open world looks close to the retail game, and it plays through missions at about 3-4 fps (about 1 fps with ray tracing on), rarely crashing.",
+      "summary": "DexNom Runtime, a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it. Its picture is the best-rated on our board, though lighting and materials still have problems, and it plays through missions at about 3-4 fps (about 1 fps with ray tracing on), rarely crashing.",
       "highlights": [
         "Platform: AMD Radeon RX 7900 XTX, Windows x64",
         "Ray-traced lighting working, seen by PortWatch: the first AMD build on our board to get it",
-        "The open world looks close to the retail game and plays through missions",
+        "Best-rated picture on our board; plays through missions",
         "Translates 25,742 of the 25,758 shaders in its test archive; all 2,191 vertex shaders pass Microsoft's DXIL validator (its report)",
         "Builds from source with its own Setup.cmd; no prebuilt downloads; GPL-3.0"
       ],
@@ -904,7 +904,7 @@
         "world": 1,
         "playable": 1,
         "story": 0.5,
-        "render": 0.9,
+        "render": 0.85,
         "fps": 3,
         "stability": 0.7
       },
@@ -1053,7 +1053,7 @@
       ],
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "AvatarManz's fork of VIctory, tuned for speed on an AMD Radeon RX 7900 XTX. It brings victory-fork's, DexNom's and Belobug's work together on VIctory and adds its own speed-ups: the game's draw calls translated on eight threads of its own, frames prepared on a separate thread, and textures uploaded on their own queue. PortWatch has verified it: GTA VI runs at about 16 fps on average in game, the highest average on our board, with sound, as far into the story as the leading builds and with a picture close to the console. Its README measures 13-22 fps indoors and on the first boat mission, and a 41-minute session without a crash.",
+      "summary": "AvatarManz's fork of VIctory, tuned for speed on an AMD Radeon RX 7900 XTX. It brings victory-fork's, DexNom's and Belobug's work together on VIctory and adds its own speed-ups: the game's draw calls translated on eight threads of its own, frames prepared on a separate thread, and textures uploaded on their own queue. PortWatch has verified it: GTA VI runs at about 16 fps on average in game, the highest average on our board, with sound, as far into the story as the leading builds. Its README measures 13-22 fps indoors and on the first boat mission, and a 41-minute session without a crash.",
       "highlights": [
         "Platform: AMD Radeon RX 7900 XTX, Intel Core i9-12900K, 64 GB RAM, Windows 11",
         "About 16 fps on average in game, verified by PortWatch: the highest average on our board. Its README: 13-20 fps indoors in the prologue, 19-22 on the first boat mission, 30 in menus",
@@ -1073,7 +1073,7 @@
         "world": 1,
         "playable": 1,
         "story": 0.5,
-        "render": 0.8,
+        "render": 0.7,
         "fps": 16,
         "stability": 0.9
       },
@@ -1113,7 +1113,7 @@
       "summary": "A private build shown on NotNozy's \"GTA6 Modding Stream\" on Rumble. It looks about the same as AvatarManz's build; the owner rates its story progress at 80%. It runs on an AMD card. Code not public, and what it builds on isn't known.",
       "highlights": [
         "Looks about the same as AvatarManz's build, the leader on our board",
-        "Owner rates story progress at 80%, with a picture close to the console",
+        "Owner rates story progress at 80%",
         "Runs on an AMD card"
       ],
       "blockers": [
@@ -1128,7 +1128,7 @@
         "world": 1,
         "playable": 1,
         "story": 0.8,
-        "render": 0.76,
+        "render": 0.7,
         "fps": 16,
         "stability": 0.9
       },
@@ -1163,7 +1163,7 @@
         "Runs mostly on AMD; also works on NVIDIA at a lower frame rate"
       ],
       "blockers": [
-        "Rendering slightly behind DexNom's",
+        "Ray-traced lighting works, but textures look worse than DexNom's",
         "About 3-5 fps",
         "Code is private, so nobody outside can test or reproduce it"
       ],
@@ -1175,7 +1175,7 @@
         "world": 1,
         "playable": 1,
         "story": 0.8,
-        "render": 0.85,
+        "render": 0.7,
         "fps": 4,
         "stability": 0.8
       },
@@ -1242,9 +1242,8 @@
       "evidence": "Confirmed by PortWatch",
       "byline": "Working in private · built on hyphennn's victory-fork",
       "tier": "tracked",
-      "summary": "A private build on hyphennn's victory-fork of VIctory. PortWatch confirmed a player moving around Lucia's prologue at about 3 fps; the owner now rates its story progress at 80%. Its rendering is ahead of the other builds, but code is not public.",
+      "summary": "A private build on hyphennn's victory-fork of VIctory. PortWatch confirmed a player moving around Lucia's prologue at about 3 fps; the owner now rates its story progress at 80%. Code is not public.",
       "highlights": [
-        "Looks almost like the retail game in Lucia's prologue",
         "PortWatch confirmed a player moving around, at about 3 fps",
         "Owner rates story progress at 80%"
       ],
@@ -1261,7 +1260,7 @@
         "world": 1,
         "playable": 1,
         "story": 0.8,
-        "render": 0.8,
+        "render": 0.7,
         "fps": 3,
         "stability": "unknown"
       },
@@ -1335,9 +1334,9 @@
       "tier": "tracked",
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "Private VIctory/XCL build, PortWatch-verified. Owner rates story progress at 80%, rendering 0.85 and stability 0.85. It averages 25 fps with 8 GB system RAM and 16 GB VRAM. Its code was public briefly and is offline now.",
+      "summary": "Private VIctory/XCL build, PortWatch-verified. Owner rates story progress at 80%, rendering 0.7 and stability 0.85. It averages 25 fps with 8 GB system RAM and 16 GB VRAM. Its code was public briefly and is offline now.",
       "highlights": [
-        "Owner ratings: 80% story, rendering 0.85, stability 0.85",
+        "Owner ratings: 80% story, rendering 0.7, stability 0.85",
         "25 fps gameplay average"
       ],
       "blockers": [
@@ -1353,7 +1352,7 @@
         "world": 1,
         "playable": 1,
         "story": 0.8,
-        "render": 0.85,
+        "render": 0.7,
         "fps": 25,
         "stability": 0.85
       },
@@ -8255,6 +8254,11 @@
       "date": "2026-11-26",
       "kind": "removed",
       "text": "CGBJ moves back to Private builds: its code at codec-d/cool_fox is offline. Its rating is unchanged."
+    },
+    {
+      "date": "2026-11-26",
+      "kind": "down",
+      "text": "Rendering re-rated: DexNom's is the only picture close to the console, at 0.85; every other build above 0.7 drops to 0.7. DexNom moves to #2 at 77.4%, just ahead of Belobug (77.2%), behind AvatarManz (81.8%); CGBJ still leads our overall number at 89.6%."
     }
   ],
   "history": [
