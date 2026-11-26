@@ -1113,7 +1113,7 @@
         "publicLater": true,
         "byline": "Streamed live · private code, built on the public forks",
         "tier": "tracked",
-        "summary": "Hugo's private build, MashedHugo (titled Flamingo), renders Lucia's prologue close to the console: lighting, shadows, hair and faces, with floating geometry and pixelation. Hugo's 26 Nov screenshots read 17 to 22 fps indoors: the newest, at 20 fps, shows Lucia by a lamp with her face drawn black, and two show only the overlay. Every shader and pipeline on the overlay works, but 224 to 618 draws a frame are dropped. None of it shows a sustained rate in gameplay. Last seen stuck at the boat mission. Code private for now.",
+        "summary": "Hugo's private build, MashedHugo (titled Flamingo), renders Lucia's prologue close to the console: lighting, shadows, hair and faces, with floating geometry and pixelation. A 46-second recording of his stream, posted on 26 Nov, measures 11.5 fps on the overlay's own frame counter while he faces a corner indoors: 17 to 23 fps at best, with stalls of up to 1.5 s a frame. No shader or pipeline fails, but 200 to 400 draws a frame are dropped. Last seen stuck at the boat mission. Code private for now.",
         "highlights": [
           "Lighting, shadows, hair and faces close to the console",
           "26 Nov overlay: 2,568 shaders and 2,323 pipelines, none failing",
@@ -1121,7 +1121,7 @@
         ],
         "blockers": [
           "Faces drawn black or pixelated, blocky textures and floating geometry",
-          "17-22 fps only in light or unseen scenes, up to 618 draws dropped; boat mission stuck",
+          "11.5 fps average facing a corner, stalls up to 1.5 s, draws dropped; boat mission stuck",
           "Code is private for now, so nobody outside can test it"
         ],
         "provenOn": null,
@@ -1133,7 +1133,7 @@
           "playable": 1,
           "story": 0,
           "render": 0.75,
-          "fps": 8,
+          "fps": 11.5,
           "stability": "unknown"
         },
         "verification": "self-reported",
@@ -1146,6 +1146,10 @@
           {
             "text": "A stream still reads 19.0 fps (52.8 ms, 841 draws, 339 dropped) in a lit interior with Lucia and a second character, on a build titled Flamingo: a peak in a light scene.",
             "url": "https://rumble.com/v7iwbii-gta-6-baby.html"
+          },
+          {
+            "text": "A 46-second recording of Hugo's Discord stream, posted on X at 05:52 UTC on 26 Nov: the overlay's frame counter runs from 6,559 to 7,063 in 44 s (11.5 fps) as he faces a corner by a sink and lamp. It reads 23.1 fps at the start, stalls at 0.7 to 2 fps (up to 1.47 s a frame) for about 10 s, then holds 17 to 19. All 2,615 shaders and 2,368 pipelines work; 202 to 411 draws a frame are dropped.",
+            "url": "https://x.com/codewzada/status/2125829923755757712"
           }
         ],
         "findingsSource": "Hugo's Rumble stream, GTA 6 BABY (kraithz), sent by the owner."
@@ -1190,6 +1194,11 @@
           "date": "2026-11-26",
           "kind": "new",
           "text": "MashedHugo: Hugo's newest shot reads 20 fps indoors with Lucia by a lamp, her face drawn black and 359 draws a frame dropped. Scores unchanged."
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "MashedHugo: a 46-second recording of Hugo's stream measures 11.5 fps on the overlay's frame counter, up from 8, facing a corner indoors. Peaks of 23 fps last a second or two; the Playable goal's 20 fps isn't shown."
         }
       ]
     },
