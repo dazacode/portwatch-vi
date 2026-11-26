@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T18:50:24.904Z",
+  "updated": "2026-11-26T19:05:54.961Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T18:35:48.000Z",
-      "lastOkAt": "2026-11-26T18:50:24.904Z",
-      "seen": 13500,
-      "events": 475,
+      "lastCursor": "2026-11-26T19:01:04.000Z",
+      "lastOkAt": "2026-11-26T19:05:54.961Z",
+      "seen": 13750,
+      "events": 492,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T18:18:39.000Z",
-      "lastOkAt": "2026-11-26T18:50:24.904Z",
+      "lastOkAt": "2026-11-26T19:05:54.961Z",
       "seen": 25,
       "events": 17,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T18:50:24.904Z",
-      "seen": 3190,
+      "lastOkAt": "2026-11-26T19:05:54.961Z",
+      "seen": 3251,
       "events": 23,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T18:30:03.000Z",
-      "lastOkAt": "2026-11-26T18:50:24.904Z",
-      "seen": 21600,
+      "lastCursor": "2026-11-26T18:46:01.343Z",
+      "lastOkAt": "2026-11-26T19:05:54.961Z",
+      "seen": 22000,
       "events": 24,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T06:50:24.904Z",
-      "lastOkAt": "2026-11-26T18:50:24.904Z",
-      "seen": 6356,
+      "lastCursor": "2026-11-26T07:05:54.961Z",
+      "lastOkAt": "2026-11-26T19:05:54.961Z",
+      "seen": 6471,
       "events": 7,
       "errors": 0
     }
@@ -8047,10 +8047,17 @@
       "chain": "sha256:1f48a76d40d5671dd6de362b840eef97ec3a925b81532408c39dd220649ebce4",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T19:05:54.961Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own commit feed, which is primary but not independent, and a bare commit-message line about a routine push is too thin to publish without corroboration."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T19:05:54.961Z"
     },
     {
       "id": "20261126t173413z-xcl-f48a3575",
