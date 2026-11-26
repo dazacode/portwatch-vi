@@ -354,7 +354,7 @@
         "findings": null
       },
       "to": {
-        "findingsSource": "Bluesky, 2026-11-25",
+        "findingsSource": "TechRadar, 2026-11-26",
         "findings": [
           {
             "text": "On 25 November at 03:16 UTC its creator, NotRexed, posted: “Ignore my other posts. Something’s coming soon.” The post names no project and gives no date. Two days earlier they had posted that they quit.",
@@ -379,6 +379,14 @@
           {
             "text": "Revived the same night: ubiquitarianism/leonida was created at 23:54 UTC on 23 November, minutes after this repo was found offline, and carries Leonida on as \"Leonida Continued\", with the whole commit history and new maintainers. NotRexed isn't part of it. It is tracked as its own entry.",
             "url": "https://github.com/ubiquitarianism/leonida"
+          },
+          {
+            "text": "Rockstar built a new audio system to model NPC dialogue across GTA 6’s Leonida.",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONllYdFg1V2pGaTZzd0tpeDlrWG50TTNYZF9iWHg0cGdfR0E3Sk1jQWItSEszemhuUm1kLW44ZDlGblhrUEJCOEY2RFBzTnBTbHJLQy1LR1ZGQ1RIZTZ6NlZFMFlCVUp0eE5zWnZ3Z1FNSUw4Q0dnTU9aMkpDNUhVbA?oc=5"
+          },
+          {
+            "text": "GTA 6 dev explains new system captures dialogue dynamic range and models propagation through space.",
+            "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxOWUVZRndhdm5GMUoyZG96dGNjUEVJMTFtR0lvdmFBRThIb3ZHUkhWMk9HSFdkbldDMkNvUG1kb2ZMSWNLTmxfcFF6aURrZXFxa2lwYkVtOVQ2QXZqemxSai16aXh2X2JUYmZCbF9iWEYwUXBOTnNnMWV1MWREOEU3MzBRaXhBb3NGVkl0dnJZbHdhTUVUNktST3RvSkppdmNfVHNKeVhoaXcwWDNsSUN2dElwYkF4Y25FM2M0MmZIQUQtMm9iVXEwbmprUUJHNzRqX0JSclhBektVRnNMSmxYZFBQUEhXVnlHS1VGTTFncFc2X2hhd0VBYTJpTWxmNU9iSU5fSmhSLXhaRnEtLUdIOXhFQUxGQUlNdnBhU2lXUlp2NG1tMW9YbzZJSlF5LVBTcEMyaWIyWlpIenE4UjhUN0UyRW5CM085VGtLSnptZ0ZrSVM2T2J1MGQ1VVBYUjlCalBpMG82V3B4ZURCREE?oc=5"
           }
         ]
       }
@@ -2369,10 +2377,63 @@
         "findingsSource": "From the continuation's public README, docs, commits and issues, and GitHub's API, 26 November. Code not built or run."
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "CCS03",
+        "summary": "Community fork building on victory-fork to run GTA VI on Windows PC",
+        "basedOn": [],
+        "id": "ccs03",
+        "repo": "JozefDeTremmerie/CCS03",
+        "stats": {
+          "stars": 11,
+          "createdAt": "2026-11-24T10:58:15Z",
+          "pushedAt": "2026-11-26T01:20:39Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": null,
   "ignored": [
+    {
+      "repo": "DesignWithTommy/i95",
+      "reason": "README describes launcher for runtimes, not own GTA VI work",
+      "seenAt": "2026-11-26"
+    },
+    {
+      "repo": "zsy-miao/ScarlettVI",
+      "reason": "README describes generic compatibility layer, no GTA VI focus",
+      "seenAt": "2026-11-26"
+    },
+    {
+      "repo": "zsy-miao/rebox",
+      "reason": "README describes Xbox Series emulator, no GTA VI focus",
+      "seenAt": "2026-11-26"
+    },
+    {
+      "repo": "RKouchoo/rdna4rage",
+      "reason": "README describes generic Xbox Series X title support, not GTA VI",
+      "seenAt": "2026-11-26"
+    },
     {
       "repo": "RandomSkelly/Series0nLinux",
       "reason": "readme describes compatibility layer, no GTA VI work",
@@ -2496,7 +2557,12 @@
     "baummarder/xHoly",
     "ihaterockstargames/sixth-star",
     "Ryanabcraft/scarlett-victory-bench",
-    "RandomSkelly/Series0nLinux"
+    "RandomSkelly/Series0nLinux",
+    "JozefDeTremmerie/CCS03",
+    "RKouchoo/rdna4rage",
+    "zsy-miao/rebox",
+    "zsy-miao/ScarlettVI",
+    "DesignWithTommy/i95"
   ],
   "news": [
     {
