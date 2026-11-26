@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T07:37:39.644Z",
+  "updated": "2026-11-26T09:13:40.493Z",
   "site": {
     "title": "PortWatch VI",
     "heroImage": "assets/img/hero-miami.jpg"
@@ -757,6 +757,64 @@
     }
   ],
   "efforts": [
+    {
+      "id": "kelvaroq",
+      "name": "Kelvaroq",
+      "repo": "fablinoo/kelvaroq",
+      "branch": "main",
+      "proof": {
+        "label": "36-minute external playtest",
+        "url": "https://github.com/fablinoo/kelvaroq#external-playtest-one-36-minute-session"
+      },
+      "tier": "tracked",
+      "gpu": [
+        "NVIDIA"
+      ],
+      "approach": "Compatibility layer",
+      "target": "GTA VI only",
+      "summary": "Kelvaroq is a public Rust runtime built on VIctory and victory-fork. It adds rendering patches and measured submission improvements, and runs GTA VI through the prologue and first mission.",
+      "highlights": [
+        "Public source under GPL-3.0, with pinned upstream revisions and a documented patch series",
+        "The prologue is playable at about 10 fps, with 7-8 fps in heavier views",
+        "An external 36-minute RTX 4090 playtest reached the first mission without a crash"
+      ],
+      "blockers": [
+        "CPU submission and synchronization remain the main bottleneck",
+        "Missing shader pipelines, 7% dropped draws and VRAM pressure remain",
+        "One-session stability evidence and two-platform performance measurements are limited"
+      ],
+      "provenOn": null,
+      "gta": {
+        "loads": 1,
+        "boots": 1,
+        "menu": 1,
+        "world": 1,
+        "playable": 1,
+        "story": 0.25,
+        "render": 0.25,
+        "fps": 10,
+        "stability": 0.8
+      },
+      "basedOn": [
+        "marvis",
+        "victory-gta6"
+      ],
+      "stats": {
+        "stars": 37,
+        "forks": 4,
+        "openIssues": 2,
+        "createdAt": "2026-11-24T22:58:04Z",
+        "pushedAt": "2026-11-26T03:26:25Z",
+        "archived": false,
+        "missing": false,
+        "commits7d": 100
+      },
+      "assessedAt": "2026-11-26",
+      "assessedBy": "manual",
+      "claims": [],
+      "readmeSha": "439d455589a3e8b468fd0f7afdca56bfe9e5c639",
+      "readmeChangedAt": "2026-11-26"
+    },
     {
       "id": "belobug",
       "name": "Belobug",
@@ -7451,11 +7509,6 @@
       "seenAt": "2026-11-25"
     },
     {
-      "repo": "fablinoo/kelvaroq",
-      "reason": "Built on VIctory and victory-fork; its prologue results come from their code",
-      "seenAt": "2026-11-25"
-    },
-    {
       "repo": "Melow-code/Vader",
       "reason": "Merges ztrx (nuked) and victory-fork for NVIDIA cards; no results of its own",
       "seenAt": "2026-11-25"
@@ -8167,7 +8220,7 @@
     "lastRun": "2026-11-26T07:37:39.644Z",
     "lastSummary": "32 refreshed, 5 READMEs changed, 5 new candidates, 0 flagged.",
     "lastDmcaCheck": "2026-11-26T07:37:39.644Z",
-    "lastEditorRun": "2026-11-25T19:48:37.000Z"
+    "lastEditorRun": "2026-11-26T09:13:40.493Z"
   },
   "headlines": [
     {
