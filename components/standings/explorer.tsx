@@ -19,6 +19,7 @@ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { getRanks, setRanks, useRanks } from "@/components/use-ranks"
 import { GPUS, gpuTitle } from "@/lib/gpu"
 import type { Frame } from "@/lib/race"
+import type { Ours } from "@/lib/score-colors"
 import {
   applyFilters,
   type Code,
@@ -36,8 +37,9 @@ import {
 
 type View = {
   race: Frame[]
-  /** The race's leaders again: the claim beside our score, drawn on the server. */
-  compare: React.ReactNode
+  /** Our score for everyone in a lane, and the highest by our count. */
+  scores: Record<string, Ours>
+  best?: Ours & { id: string }
   entries: Entry[]
   /** The grouped view, and one table row for each project. Both are drawn on the server. */
   board: React.ReactNode
@@ -45,7 +47,7 @@ type View = {
 }
 
 /** The same projects twice: with private builds left out of the ranks, and ranked with the rest. */
-type Props = { ranked: View; everyone: View; stages: Stage[]; note?: string }
+type Props = { ranked: View; everyone: View; stages: Stage[] }
 
 const CODES: { key: Code; label: string }[] = [
   { key: "all", label: "All" },
@@ -123,11 +125,10 @@ function ExplorerView({
   ranked: publicOnly,
   everyone,
   stages,
-  note,
   filters,
   onChange,
 }: Props & { filters: Filters; onChange: (next: Filters) => void }) {
-  const { race, compare, entries, board, rows } =
+  const { race, scores, best, entries, board, rows } =
     filters.ranks === "everyone" ? everyone : publicOnly
   const set = (patch: Partial<Filters>) => onChange({ ...filters, ...patch })
   // The button goes away with the filters, so focus moves to the search.
@@ -281,13 +282,7 @@ function ExplorerView({
 
       {grouped && (
         <div className="mt-4">
-          <Race
-            key={filters.ranks}
-            frames={race}
-            stages={stages}
-            note={filters.ranks === "public" ? note : undefined}
-          />
-          <div className="mt-3">{compare}</div>
+          <Race key={filters.ranks} frames={race} scores={scores} best={best} stages={stages} />
         </div>
       )}
 

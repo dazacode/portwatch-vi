@@ -45,11 +45,18 @@ describe("getRace", () => {
   })
 
   it("joins moves of the same half hour and keeps to the lanes", () => {
-    const list = Array.from({ length: 8 }, (_, i) => project(`p${i}`, i + 1))
-    const moves = list.map((p, i) => move(p.id, `2026-11-24T10:0${i}:00Z`, 0, p.score, true))
+    const list = Array.from({ length: LANES + 2 }, (_, i) => project(`p${i}`, i + 1))
+    const moves = list.map((p, i) =>
+      move(p.id, `2026-11-24T10:${String(i).padStart(2, "0")}:00Z`, 0, p.score, true)
+    )
     const race = getRace(list, moves, [], NOW)
     expect(race).toHaveLength(1)
-    expect(names(race[0])).toEqual(["p7", "p6", "p5", "p4", "p3"])
+    expect(names(race[0])).toEqual(
+      list
+        .map((p) => p.id)
+        .toReversed()
+        .slice(0, LANES)
+    )
     expect(race[0].racers).toHaveLength(LANES)
   })
 })

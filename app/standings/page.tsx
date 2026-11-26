@@ -4,15 +4,15 @@ import { Suspense } from "react"
 import { Container } from "@/components/container"
 import { JsonLd } from "@/components/json-ld"
 import { Board } from "@/components/standings/board"
-import { ClaimVsScore } from "@/components/standings/claim-vs-score"
 import { Explorer, ExplorerFallback } from "@/components/standings/explorer"
 import { ProjectRow } from "@/components/standings/project-row"
 import { getBoardEvents } from "@/lib/board"
 import { getRace } from "@/lib/race"
+import type { Ours } from "@/lib/score-colors"
 import { pageMeta, standingsLd, standingsMeta } from "@/lib/seo"
 import { SITE } from "@/lib/site"
 import { STEPS } from "@/lib/stages.mjs"
-import { getProjects, type Project, toEntry } from "@/lib/standings"
+import { getProjects, isGone, type Project, toEntry } from "@/lib/standings"
 import {
   getActivity,
   getEvidence,
@@ -44,11 +44,23 @@ export default async function Page() {
   const stages = STEPS.filter((m) => m.at > 0).map(({ label, at }) => ({ label, at }))
   const draw = (list: Project[]) => {
     const race = getRace(list, milestones, board, now)
-    // The same projects the race ends on, so the two can be read side by side.
-    const leaders = (race.at(-1)?.racers ?? []).flatMap((r) => list.filter((p) => p.id === r.id))
+    const ours = (p: Project): Ours => ({
+      name: p.name,
+      rating: p.rating,
+      parts: p.parts.map(({ key, label, claimed, counted }) => ({ key, label, claimed, counted })),
+    })
+    // Only who is ever in a lane: the rest isn't drawn.
+    const seen = new Set(race.flatMap((f) => f.racers.map((r) => r.id)))
+    const scores = Object.fromEntries(
+      list.filter((p) => seen.has(p.id)).map((p) => [p.id, ours(p)])
+    )
+    const top = list
+      .filter((p) => p.rank !== null && !isGone(p))
+      .toSorted((a, b) => b.rating - a.rating)[0]
     return {
       race,
-      compare: <ClaimVsScore projects={leaders} />,
+      scores,
+      best: top ? { id: top.id, ...ours(top) } : undefined,
       entries: list.map(toEntry),
       board: <Board projects={list} />,
       rows: Object.fromEntries(list.map((p) => [p.id, <ProjectRow key={p.id} project={p} />])),
@@ -58,13 +70,6 @@ export default async function Page() {
     ranked: draw(projects),
     everyone: draw(getProjects(standings, sources, { withPrivate: true })),
   }
-  // The furthest claim isn't always first by score, and this says who is.
-  const [first] = projects
-  const furthest = view.ranked.race.at(-1)?.racers[0]
-  const note =
-    first && furthest && first.id !== furthest.id
-      ? `First by score: ${first.name}, ${first.rating}%.`
-      : undefined
   return (
     <Container className="pt-8">
       <JsonLd data={standingsLd(projects)} />
@@ -88,8 +93,8 @@ export default async function Page() {
         </a>
         .
       </p>
-      <Suspense fallback={<ExplorerFallback {...view} stages={stages} note={note} />}>
-        <Explorer {...view} stages={stages} note={note} />
+      <Suspense fallback={<ExplorerFallback {...view} stages={stages} />}>
+        <Explorer {...view} stages={stages} />
       </Suspense>
     </Container>
   )

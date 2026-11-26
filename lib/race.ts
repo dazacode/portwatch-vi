@@ -2,7 +2,7 @@ import type { BoardEvent } from "@/lib/board"
 import type { Milestone } from "@/lib/milestones"
 import { isGone, type Project } from "@/lib/standings"
 
-export const LANES = 5
+export const LANES = 8
 
 export type Racer = { id: string; name: string; score: number; isPrivate: boolean }
 /** The furthest projects at one moment, best first. */
