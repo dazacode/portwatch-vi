@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T22:05:38.351Z",
+  "updated": "2026-11-26T22:20:22.485Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T22:01:22.000Z",
-      "lastOkAt": "2026-11-26T22:05:38.351Z",
-      "seen": 16500,
+      "lastOkAt": "2026-11-26T22:20:22.485Z",
+      "seen": 16750,
       "events": 603,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T20:47:47.000Z",
-      "lastOkAt": "2026-11-26T22:05:38.351Z",
+      "lastOkAt": "2026-11-26T22:20:22.485Z",
       "seen": 28,
       "events": 20,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T18:41:42.335Z",
-      "lastOkAt": "2026-11-26T22:05:38.351Z",
-      "seen": 3922,
+      "lastOkAt": "2026-11-26T22:20:22.485Z",
+      "seen": 3983,
       "events": 23,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T21:55:58.840Z",
-      "lastOkAt": "2026-11-26T22:05:38.351Z",
-      "seen": 26400,
+      "lastOkAt": "2026-11-26T22:20:22.485Z",
+      "seen": 26800,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T10:05:38.351Z",
-      "lastOkAt": "2026-11-26T22:05:38.351Z",
-      "seen": 7718,
+      "lastCursor": "2026-11-26T10:20:22.485Z",
+      "lastOkAt": "2026-11-26T22:20:22.485Z",
+      "seen": 7831,
       "events": 7,
       "errors": 0
     }
@@ -7226,12 +7226,17 @@
           "at": "2026-11-26T15:50:23.920Z",
           "by": "desk",
           "note": "The only source is a single speculative social post (\"I wouldn't be surprised to learn…\") that asserts no verified takedown, so the claim is thin and unconfirmed."
+        },
+        {
+          "at": "2026-11-26T22:20:22.485Z",
+          "by": "desk",
+          "note": "The only source is a speculative social post that does not substantiate a Rockstar DMCA takedown of Leonida."
         }
       ],
       "heldReasons": [
         "low confidence"
       ],
-      "deskAt": "2026-11-26T15:50:23.920Z"
+      "deskAt": "2026-11-26T22:20:22.485Z"
     },
     {
       "id": "20261126t151711z-victory-ka1qux-081ee785",
@@ -8786,10 +8791,17 @@
       "chain": "sha256:035f84c45cadaeb89bfeaf162bdbb66596e591e49784ec69a008351ea50804ed",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T22:20:22.485Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository and its excerpt merely repeats the content-free phrase 'reaches the menus', giving no build, platform or context to support a publishable line."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T22:20:22.485Z"
     }
   ],
   "reports": [
