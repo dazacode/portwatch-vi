@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T15:05:32.126Z",
+  "updated": "2026-11-26T15:20:23.264Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T15:01:23.000Z",
-      "lastOkAt": "2026-11-26T15:05:32.126Z",
-      "seen": 10000,
+      "lastOkAt": "2026-11-26T15:20:23.264Z",
+      "seen": 10250,
       "events": 352,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T10:11:01.000Z",
-      "lastOkAt": "2026-11-26T15:05:32.126Z",
+      "lastOkAt": "2026-11-26T15:20:23.264Z",
       "seen": 20,
       "events": 12,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T15:05:32.126Z",
-      "seen": 2347,
+      "lastOkAt": "2026-11-26T15:20:23.264Z",
+      "seen": 2407,
       "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T15:00:15.000Z",
-      "lastOkAt": "2026-11-26T15:05:32.126Z",
-      "seen": 16000,
+      "lastOkAt": "2026-11-26T15:20:23.264Z",
+      "seen": 16400,
       "events": 19,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T03:05:32.126Z",
-      "lastOkAt": "2026-11-26T15:05:32.126Z",
-      "seen": 4727,
+      "lastCursor": "2026-11-26T03:20:23.264Z",
+      "lastOkAt": "2026-11-26T15:20:23.264Z",
+      "seen": 4845,
       "events": 7,
       "errors": 0
     }
@@ -7047,10 +7047,17 @@
       "chain": "sha256:8c81e7a61cd6f3ec2871c8f16d90e41b1fe278fecb3a3a0e9f2819c921d0e327",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T15:20:23.264Z",
+          "by": "desk",
+          "note": "The only source is a single Bluesky post, which is a weak social source with no primary or independent confirmation of the 3,007-repo takedown figure."
+        }
+      ],
       "heldReasons": [
         "low confidence"
-      ]
+      ],
+      "deskAt": "2026-11-26T15:20:23.264Z"
     },
     {
       "id": "20261126t143853z-vitoriabr-04fd78b5",
