@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T16:05:25.890Z",
+  "updated": "2026-11-26T16:20:26.881Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T16:01:01.000Z",
-      "lastOkAt": "2026-11-26T16:05:25.890Z",
-      "seen": 10750,
+      "lastOkAt": "2026-11-26T16:20:26.881Z",
+      "seen": 11000,
       "events": 386,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T15:15:41.000Z",
-      "lastOkAt": "2026-11-26T16:05:25.890Z",
+      "lastOkAt": "2026-11-26T16:20:26.881Z",
       "seen": 22,
       "events": 14,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T16:05:25.890Z",
-      "seen": 2527,
+      "lastOkAt": "2026-11-26T16:20:26.881Z",
+      "seen": 2587,
       "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T15:57:47.040Z",
-      "lastOkAt": "2026-11-26T16:05:25.890Z",
-      "seen": 17200,
+      "lastOkAt": "2026-11-26T16:20:26.881Z",
+      "seen": 17600,
       "events": 21,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T04:05:25.890Z",
-      "lastOkAt": "2026-11-26T16:05:25.890Z",
-      "seen": 5081,
+      "lastCursor": "2026-11-26T04:20:26.881Z",
+      "lastOkAt": "2026-11-26T16:20:26.881Z",
+      "seen": 5199,
       "events": 7,
       "errors": 0
     }
@@ -7105,10 +7105,17 @@
       "chain": "sha256:6f702ccae4cf306a2ae8a8b7d8a8eed4e0753c397961170effe3614be213ec1d",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T16:20:26.881Z",
+          "by": "desk",
+          "note": "The only support is a project-owned pull request title with an empty excerpt, which is a self-description rather than independent confirmation of the specific 29/29 FSR4 claim."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T16:20:26.881Z"
     },
     {
       "id": "20261126t153402z-leonida-55f1ad0e",
@@ -7387,10 +7394,17 @@
       "chain": "sha256:67514fad532af9d7b6e8d12edd44502f5bd292e2e928ad26efcd1a4af94f6860",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T16:20:26.881Z",
+          "by": "desk",
+          "note": "The single GitHub source only restates the headline line verbatim with no supporting detail, so it is too thin to confirm the claim."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T16:20:26.881Z"
     }
   ],
   "reports": [
