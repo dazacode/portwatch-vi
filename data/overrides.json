@@ -2965,6 +2965,78 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "gta-pipeline-reconstruction",
+        "summary": "Shell for running the original GTA VI executable on PC, placing unmodified game file in memory and connecting 520 of its 587 components",
+        "basedOn": [],
+        "id": "gta-pipeline-reconstruction",
+        "repo": "ExCorvus/gta-pipeline-reconstruction",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-25T20:40:45Z",
+          "pushedAt": "2026-11-25T22:59:37Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "Not playable yet",
+          "No code published",
+          "No game files included"
+        ],
+        "highlights": [
+          "Boot, first-run screens, intro video with sound work, 45-60 fps"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "GMAC",
+        "summary": "Runs the Xbox Series build of GTA VI on M-series Macs using Wine, D3DMetal and Rosetta 2, but is not playable yet and no code is published",
+        "basedOn": [],
+        "id": "gmac",
+        "repo": "Zarexdevs/GMAC",
+        "stats": {
+          "stars": 2,
+          "createdAt": "2026-11-25T22:23:10Z",
+          "pushedAt": "2026-11-26T00:39:59Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -2973,6 +3045,16 @@
     "reason": "Owner's call: its code went public on 26 Nov, at 25 fps reported on NVIDIA."
   },
   "ignored": [
+    {
+      "repo": "lukinhasnojento/gta6-port-knowledge",
+      "reason": "Only documentation, no code",
+      "seenAt": "2026-11-26"
+    },
+    {
+      "repo": "Puneetkewlani/consoleX",
+      "reason": "Readme describes a compatibility layer, not GTA VI",
+      "seenAt": "2026-11-26"
+    },
     {
       "repo": "FQY55kai/ZJOU-JWXT-PC",
       "reason": "readme does not mention GTA VI",
@@ -3137,7 +3219,11 @@
     "viper-community/viper",
     "ExCorvus/whibwhi-own",
     "x6j1ZiqfbxA3u12HVk/Project-Americas",
-    "modpapi/scripthook-vi"
+    "modpapi/scripthook-vi",
+    "Puneetkewlani/consoleX",
+    "ExCorvus/gta-pipeline-reconstruction",
+    "lukinhasnojento/gta6-port-knowledge",
+    "Zarexdevs/GMAC"
   ],
   "news": [
     {
