@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T10:06:25.426Z",
+  "updated": "2026-11-26T10:20:25.550Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T10:02:04.000Z",
-      "lastOkAt": "2026-11-26T10:06:25.426Z",
-      "seen": 5000,
+      "lastOkAt": "2026-11-26T10:20:25.550Z",
+      "seen": 5250,
       "events": 175,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T08:19:21.000Z",
-      "lastOkAt": "2026-11-26T10:06:25.426Z",
+      "lastOkAt": "2026-11-26T10:20:25.550Z",
       "seen": 19,
       "events": 11,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T10:06:25.426Z",
-      "seen": 1147,
+      "lastOkAt": "2026-11-26T10:20:25.550Z",
+      "seen": 1207,
       "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T09:58:12.446Z",
-      "lastOkAt": "2026-11-26T10:06:25.426Z",
-      "seen": 8000,
+      "lastOkAt": "2026-11-26T10:20:25.550Z",
+      "seen": 8400,
       "events": 6,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T10:06:25.426Z",
-      "seen": 2328,
+      "lastOkAt": "2026-11-26T10:20:25.550Z",
+      "seen": 2447,
       "events": 7,
       "errors": 0
     }
@@ -4627,10 +4627,17 @@
       "chain": "sha256:0ede5c60433da11f62185b2a62d7228e91efe9995c9f400f4b571d79652a6fc8",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T10:20:25.550Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the build-status claim rests on a PR title alone and is neither independent nor verified."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T10:20:25.550Z"
     },
     {
       "id": "20261126t093104z-anybox-331d271f",
