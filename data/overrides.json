@@ -3185,6 +3185,76 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [
+          "tuned for GTX 1060 6GB"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "GabeGTA6",
+        "summary": "Rust compatibility layer for GTA VI Xbox Series on Windows, tuned for small NVIDIA cards",
+        "basedOn": [],
+        "id": "gabegta6",
+        "repo": "GabrieelDuart/GabeGTA6",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-26T09:52:11Z",
+          "pushedAt": "2026-11-26T12:23:35Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [
+          "builds every runtime from source"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-26",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "i95-GTA6-PC-Launcher",
+        "summary": "Launcher for every GTA VI Xbox Series runtime, builds each from source",
+        "basedOn": [],
+        "id": "i95-gta6-pc-launcher",
+        "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
+        "stats": {
+          "stars": 9,
+          "createdAt": "2026-11-23T23:52:16Z",
+          "pushedAt": "2026-11-26T16:19:16Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -3193,6 +3263,26 @@
     "reason": "Owner's call: its code went public on 26 Nov, at 25 fps reported on NVIDIA."
   },
   "ignored": [
+    {
+      "repo": "lepotane/VIctory-leonida",
+      "reason": "README does not mention GTA VI",
+      "seenAt": "2026-11-26"
+    },
+    {
+      "repo": "zortos293/XSEmu",
+      "reason": "README does not mention GTA VI",
+      "seenAt": "2026-11-26"
+    },
+    {
+      "repo": "1R0nim/iR0-fork",
+      "reason": "README does not mention GTA VI",
+      "seenAt": "2026-11-26"
+    },
+    {
+      "repo": "bolado-dev/mandy-port",
+      "reason": "README does not mention GTA VI",
+      "seenAt": "2026-11-26"
+    },
     {
       "repo": "halo-tom/gta6-xbox-on-pc",
       "reason": "Only contains measurements, no running effort",
@@ -3380,7 +3470,13 @@
     "XinYulian/xin-leonida",
     "isaac-btw/AmericasLauncher",
     "felixwaschosenn/littlethings-build",
-    "halo-tom/gta6-xbox-on-pc"
+    "halo-tom/gta6-xbox-on-pc",
+    "GabrieelDuart/GabeGTA6",
+    "bolado-dev/mandy-port",
+    "1R0nim/iR0-fork",
+    "zortos293/XSEmu",
+    "DesignWithTommy/i95-GTA6-PC-Launcher",
+    "lepotane/VIctory-leonida"
   ],
   "news": [
     {
