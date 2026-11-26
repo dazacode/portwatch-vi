@@ -434,20 +434,20 @@
       "to": {
         "findings": [
           {
-            "text": "README: “not playable yet”, at 5 to 7 fps in the world. That is 5.4 to 6.7 standing still in a scene of 8,400 draws and less while driving, on one PC (RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM). An earlier version that day said 3 to 5. Nothing has been run on NVIDIA or Intel.",
-            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/a59f3e52/README.md"
+            "text": "README at 4f62c2a5: “not playable yet”. Its table gives 5 to 8 fps in the world, 7.2 to 7.7 standing still in a scene of 8,800 draws and less while driving, on one PC (RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM); its headline still says 5 to 7. Earlier versions that day said 3 to 5, then 5 to 7. The frame rate is now drawn in the picture. Nothing has been run on NVIDIA or Intel by its author.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4f62c2a5/README.md"
           },
           {
             "text": "README: the world renders lit, with textures, people, vehicles, vegetation, water and sky, and saves load and store. Boot and menus run at 30 fps, as in VIctory. The repo has no screenshot or recording.",
             "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4cbe9d76/README.md"
           },
           {
-            "text": "README: moving vehicles are whole and distant trees are drawn, both listed as broken in an earlier version that day. Still broken: with the in-game phone out the world is unlit (black) and the phone is an empty outline. About 380 draws a frame are dropped in the world for want of a host pipeline.",
-            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/a59f3e52/README.md"
+            "text": "README at 4f62c2a5: moving vehicles are whole and distant trees are drawn, both listed as broken early on 25 November. Still broken: with the in-game phone out the world is unlit (black) and the phone is an empty outline. The earlier figure of about 380 dropped draws is gone: 266 of the game’s shader programs do not translate (ray-tracing builders, a family of geometry shaders, and 71 mesh shaders over the host’s 32 KiB of outputs), and the AMD driver’s compiler crashes on one more. Streamed textures are capped at 1024 pixels a side.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4f62c2a5/README.md"
           },
           {
-            "text": "README: the game’s ray-traced indirect light does not run. A constant stands in for it (0.6 by default), with less in creases and under objects; the README calls that too much at night and too little at noon. With VICTORY_RAYS=1 the device is removed after a minute and a half.",
-            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/a59f3e52/README.md"
+            "text": "README at 4f62c2a5: the game’s ray-traced indirect light does not run. What stands in for it now follows the sky dome the game draws, by day and by night, and is on by default since that commit; the fixed 0.6 before it was too much at night and too little at noon. With VICTORY_RAYS=1 the device is removed after a minute and a half.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/blob/4f62c2a5/README.md"
           },
           {
             "text": "A commit measures the main speed-up at one place: 225 to 72 ms of GPU time a frame, 2.6 to 3.9 fps, by moving about 9,300 small dispatches and barriers out of the draws. A later one changes its default to stop flicker; the README gives about 80 ms.",
@@ -488,9 +488,33 @@
           {
             "text": "Recording, not named as Belobug’s: 57 seconds that Dany posted on 25 November, 10:03 UTC, as “the latest status of the GTA 6 PC port”. Jason walks, gets on a bike and rides through lit streets; areas in shade are near black. Task Manager, in French, shows an RX 9070 XT with 24 GB of graphics memory in use, which fits Belobug’s README. The picture changes about eight times a second, above the README’s 5 to 7; we could not confirm the clip’s speed, so it does not move fps.",
             "url": "https://x.com/_Dany892_/status/2125530703010156995"
+          },
+          {
+            "text": "Shader clean-up passes added on 25 November are credited to “the VIctory fork at commit ba8697aa”, with no repo named; we did not find that commit in Marvisak/VIctory, fxceless/victory-fork, DexNom/VIctory or myokex/victory-amd. The README still says no victory-fork code is in it, and that the first start after such a change has no water until a restart.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/commit/ae75a66a"
+          },
+          {
+            "text": "A second branch, rx9070xt, pushed at 00:56 UTC on 26 November, is another tree: avatarmanz/VIctory-7900XTX’s main, which started from fxceless/victory-fork, with one commit of Belobug’s on top (“RX 9070 XT fixes”). Its README is still avatarmanz’s, for an RX 7900 XTX. The main branch we follow does not include it.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/commit/81ebb7bd"
+          },
+          {
+            "text": "Outside measurement, in its issues: on an i9-14900K with an RX 9070 XT, the same spot went from 4.5 to 6.5 fps standing still with a59f3e52, about 153 ms a frame. The tester’s profile has the submitting thread waiting on the card about 43% of the time.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/163"
+          },
+          {
+            "text": "Outside report: on an RX 9070 XT with a Ryzen 5 5600 at 71652a2c, the prologue played through to Jason’s first boat mission, where the boat sat below the waterline and the mission failed within seconds (“Cal fell off the boat”); 3.2 to 3.9 fps, no device loss in 25 minutes. The texture read-back other forks use for this is not in main at 4f62c2a5. Another tester’s port of it kept the boat afloat, but that run had not finished the mission.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/196"
+          },
+          {
+            "text": "Outside report: one RX 9070 XT ran 67 minutes at a 4.4 fps median without a crash on 01aadd1, but later starts died before the world at one place in the game’s code, 9 times in a row, until 000ffdd4 (then a 53-minute run). At 4f62c2a5 it came back, 2 of 2; the tester narrows it to 705a2d09 or c28201ff.",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/143"
+          },
+          {
+            "text": "Outside reports from other cards: an RX 6600 and an RX 6950 XT (RDNA2) lost the device within minutes of the world in every reported run, on 01aadd1, 000ffdd4 and 4f62c2a5. NVIDIA users report exits at start-up and missing models (issues #121, #149, #170).",
+            "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/151"
           }
         ],
-        "findingsSource": "From Belobug’s README, commits and code at 4cbe9d76, its README at a59f3e52 and later commit titles, its public GitHub profile, upstream’s tracker and two clips posted on X by Dany, on 25 November. Code read as text, not run; clips watched."
+        "findingsSource": "From Belobug’s README, commits and code at 4cbe9d76, its README at a59f3e52 and later commit titles, its public GitHub profile, upstream’s tracker and two clips posted on X by Dany, on 25 November; then its README, commits and code at 4f62c2a5, its rx9070xt branch at 81ebb7bd and issues #143, #151, #163 and #196, on 26 November. Code read as text, not run; clips watched."
       }
     },
     {
@@ -505,7 +529,7 @@
         ]
       },
       "to": {
-        "summary": "Belobug's VIctory fork for AMD Radeon, tested on one PC (RX 9070 XT, Ryzen 7 9800X3D). GTA VI's open world renders lit; its README reports 5 to 7 fps, less while driving, and says \"not playable yet\". A clip posted with its repo link shows driving. Upstream's owner says they have seen it run, that it plays missions and rarely crashes, and links a video we have not viewed. Self-reported.",
+        "summary": "Belobug's VIctory fork for AMD Radeon, tested by its author on one PC (RX 9070 XT, Ryzen 7 9800X3D). GTA VI's open world renders lit; its README reports 5 to 8 fps, less while driving, and says \"not playable yet\". A clip posted with its repo link shows driving. Outside testers on other RX 9070 XT PCs report about 3 to 8 fps; one found the first boat mission fails within seconds (\"Cal fell off the boat\"), and two older Radeon cards lose the device. Upstream's owner says they have seen it run, that it plays missions and rarely crashes, and links a video we have not viewed. Self-reported.",
         "highlights": [
           "The open world renders lit, with textures, people, vehicles, vegetation, water and sky",
           "A 9-second clip posted with its repo link shows driving at about four frames a second",
@@ -556,16 +580,17 @@
       },
       "to": {
         "blockers": [
-          "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
-          "The world goes black with the phone out; no ray-traced light; about 380 draws a frame are dropped",
-          "Needs about 22 GB of RAM and over 16 GB of video memory; tested on one AMD PC only"
+          "About 4 fps; its README reports 5-8 fps (less while driving) and calls that \"not playable yet\"",
+          "Phone out turns the world black; no ray-traced light; 266 shader programs don't translate, their draws dropped",
+          "Needs about 22 GB RAM and over 16 GB video memory; two RDNA2 cards lost the device"
         ]
       }
     },
     {
       "id": "dexnom",
       "from": {
-        "findings": null
+        "findings": null,
+        "findingsSource": null
       },
       "to": {
         "findings": [
@@ -580,8 +605,25 @@
           {
             "text": "Fifteen commits on 25 November, the newest at 17:46 UTC: pixel quad sampling repaired (incorrect edge pixels from 32 to zero in two tests), ray buffer views grown past 1,023, sparse textures recovered and 40 shader variants restored.",
             "url": "https://github.com/DexNom/VIctory/commits/main"
+          },
+          {
+            "text": "README: renamed DexNom RayTime (AMD). Its tested profile is a new FSR Quality 4K shortcut: ray tracing on, rendered at 2560×1440 and upscaled to 3840×2160 by AMD FSR 4.1.2 in place of the game's own TAA. The FSR library isn't included; players supply it themselves.",
+            "url": "https://github.com/DexNom/VIctory/blob/64bd58f/README.md"
+          },
+          {
+            "text": "README: a fresh download of that build reached the City waterfront on an RX 7900 XTX (Core Ultra 9 285K, 64 GB DDR5) with ray tracing and FSR on, at about 1.1-1.3 fps once warm and with no dropped draws. Some materials still render black.",
+            "url": "https://github.com/DexNom/VIctory/blob/64bd58f/README.md"
+          },
+          {
+            "text": "README: NVIDIA play is still untested. It now lists two NVIDIA modes to try: ray tracing off with a simple ambient fill standing in for lighting, or a partial mode that traces only the prebuilt world structure, so moving objects may lack shadows and reflections.",
+            "url": "https://github.com/DexNom/VIctory/blob/64bd58f/README.md"
+          },
+          {
+            "text": "BENCHMARK.md: with ray tracing on in Chapter 1's city, a fix to how memory writes are tracked cut the mean frame time from 3,469 ms to 969 ms (0.29 to 1.03 fps over 50 frames). One run on one RX 7900 XTX.",
+            "url": "https://github.com/DexNom/VIctory/blob/64bd58f/BENCHMARK.md"
           }
-        ]
+        ],
+        "findingsSource": "From its test report at commit 64bd58f."
       }
     },
     {
@@ -611,6 +653,76 @@
           }
         ]
       }
+    },
+    {
+      "id": "dexnom",
+      "from": {
+        "summary": "DexNom Runtime, a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it: the open world looks close to the retail game, and it plays through missions at about 3-4 fps (about 1 fps with ray tracing on), rarely crashing."
+      },
+      "to": {
+        "summary": "DexNom RayTime (formerly DexNom Runtime), a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it: the open world looks close to the retail game, and it plays through missions at about 3-4 fps (about 1 fps with ray tracing on), rarely crashing."
+      }
+    },
+    {
+      "id": "avatarmanz",
+      "from": {
+        "findings": null,
+        "findingsSource": null
+      },
+      "to": {
+        "findings": [
+          {
+            "text": "No new commits since 0a43566 (22:14 UTC on 25 Nov) and still no releases or tags. In its first three hours public the repo drew about 60 issues and pull requests from outside testers; the author hadn't answered any by 01:15 UTC on 26 Nov.",
+            "url": "https://github.com/avatarmanz/VIctory-7900XTX/commit/0a43566532c57b34a5397d6fdc91e419de32e8e9"
+          },
+          {
+            "text": "An RTX 5070 Ti got into the world at a median of 10.7-11.9 fps on the Series X profile (16.6 on Series S), with no device loss in four runs. play.ps1's default VICTORY_THIN switch blurred the whole picture on that card; without it the picture was sharp.",
+            "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/62"
+          },
+          {
+            "text": "On an RTX 4060 Ti the picture came out right (faces, hair, trees, sky, vehicles, HUD) apart from a magenta band across the lower half, but at 2-3 fps with the card idle while pipelines were made. The run used 29.4 GB of memory.",
+            "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/61"
+          },
+          {
+            "text": "Under Linux (Proton) on an RX 7900 XTX, play.ps1's defaults drew characters without faces. With VICTORY_RELAY=1 and VICTORY_CARD_STEPS=0 the geometry was right, at a median of 208 ms a frame (about 5 fps), with no crash in 14 minutes.",
+            "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/13"
+          },
+          {
+            "text": "On an RX 9070 XT (RDNA 4) the AMD driver's shader compiler crashes while pipelines are made, as in several other reports. A workaround switch (VICTORY_SHADER_OPT=59) played 25 minutes of Lucia's prologue at 8.7-11.3 fps before the same crash came back.",
+            "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/44#issuecomment-7179054279"
+          },
+          {
+            "text": "An RX 6800 (RDNA 2, 32 GB RAM) lost the device within the first minute in every run, with or without play.ps1's switches. The same tester says fxceless's victory-fork runs 3-7 minutes at a time on that PC.",
+            "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/34"
+          },
+          {
+            "text": "play.ps1's -Safe mode, which the README says to try first, still sets VICTORY_RELAY=2 and VICTORY_CARD_STEPS=2; it leaves out THIN, JOIN_PARTS and UPLOAD_AHEAD and turns off two other switches. Testers tie those two to broken characters and lost devices (issue 25).",
+            "url": "https://github.com/avatarmanz/VIctory-7900XTX/blob/0a43566532c57b34a5397d6fdc91e419de32e8e9/scripts/play.ps1"
+          },
+          {
+            "text": "A user reports Windows Defender flagged the ZIP of the main branch as a Trojan and deleted it. The issue is unanswered and nobody has said what set it off; the tree holds source code, with no executables.",
+            "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/21"
+          }
+        ],
+        "findingsSource": "Issue 21, 25 Nov; tree read as text at 0a43566."
+      }
+    },
+    {
+      "id": "avatarmanz",
+      "from": {
+        "blockers": [
+          "Busy street chases drop to 6-10 fps, with single frames far longer; outdoors on foot runs at about 11-17 fps (its README)",
+          "Trees, plants and far buildings flicker outdoors in places, dim rooms are too dark without ray tracing, and new textures appear late",
+          "Uses 40-46 GB of memory (64 GB of RAM recommended); tested on one PC only, not yet reproduced by others"
+        ]
+      },
+      "to": {
+        "blockers": [
+          "Busy street chases drop to 6-10 fps, and outdoors on foot runs at about 11-17 fps (its README)",
+          "Trees and far buildings flicker outdoors, dim rooms are too dark without ray tracing, and new textures appear late",
+          "Needs 40-46 GB of memory. Outside testers report crashes or lost devices on RX 6000 and RX 9000 cards"
+        ]
+      }
     }
   ],
   "added": [
@@ -630,7 +742,7 @@
         "publicLater": true,
         "byline": "Streamed live · private code, built on the public forks",
         "tier": "tracked",
-        "summary": "Hugo's private build, MashedHugo, renders Lucia's prologue close to the console — lighting, shadows, hair and faces — with floating geometry and pixelation. About 2 fps. Last seen stuck at the boat mission; whether it gets past the prologue isn't known. Code private for now.",
+        "summary": "Hugo's private build, MashedHugo, renders Lucia's prologue close to the console — lighting, shadows, hair and faces — with floating geometry and pixelation. About 3.7 fps. Last seen stuck at the boat mission; whether it gets past the prologue isn't known. Code private for now.",
         "highlights": [
           "Lighting, shadows, hair and faces close to the console",
           "A player walks the prison, talks to cellmates and opens the pause menu",
@@ -638,7 +750,7 @@
         ],
         "blockers": [
           "Floating geometry, black faces and pixelated textures",
-          "About 2 fps; the boat mission still won't spawn",
+          "About 3.7 fps (267.8 ms a frame); his 20 fps with Lucia is unconfirmed. Boat mission still won't spawn",
           "Code is private for now, so nobody outside can test it"
         ],
         "provenOn": null,
@@ -650,12 +762,12 @@
           "playable": 1,
           "story": 0,
           "render": 0.75,
-          "fps": 2,
+          "fps": 3.7,
           "stability": "unknown"
         },
         "verification": "self-reported",
         "stats": {},
-        "assessedAt": "2026-11-25",
+        "assessedAt": "2026-11-26",
         "assessedBy": "manual",
         "claims": [],
         "manualScore": 57
@@ -675,6 +787,11 @@
           "date": "2026-11-25",
           "kind": "down",
           "text": "MashedHugo moves below builds that are past the prologue, to a hand-set 57% (our call): it was last seen stuck at the prologue's boat mission, and whether it gets further isn't known. Its measured values are unchanged."
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "up",
+          "text": "MashedHugo's overlay reads 3.7 fps, up from 2 (owner's screenshot)"
         }
       ]
     },
