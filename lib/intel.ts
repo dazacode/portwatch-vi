@@ -49,6 +49,7 @@ export type IntelItem = {
   sensitive?: boolean
   heldReasons?: string[]
   publishedAt?: string
+  deskAt?: string
   note?: string
   audit: IntelAudit | null
   chain: string

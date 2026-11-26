@@ -160,6 +160,7 @@ if (!dryRun) {
 if (ai && !noDesk) {
   const weak = ledger.items
     .filter((i) => i.status === 'held' && i.kind !== 'ingest-gap' && !i.audit && i.sources?.length && !i.confidence?.conflict)
+    .filter((i) => !i.deskAt || Date.parse(i.deskAt) < now.getTime() - 6 * 36e5)
     .filter((i) => !i.heldReasons?.includes('duplicate build reference') && !i.sensitive)
     .sort((a, b) => Date.parse(b.at) - Date.parse(a.at))
     .slice(0, DESK_DECISIONS)
@@ -167,6 +168,7 @@ if (ai && !noDesk) {
     const reply = await askDesk(ai, item)
     log(`  desk ${item.id}: ${reply.ok ? reply.decision : reply.why}`)
     if (!reply.ok) continue
+    item.deskAt = iso
     item.revisions.push({ at: iso, by: 'desk', note: reply.reason })
     if (reply.decision === 'retract') {
       item.status = 'retracted'
