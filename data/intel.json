@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T12:35:34.113Z",
+  "updated": "2026-11-26T12:50:24.953Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-26T12:02:35.000Z",
-      "lastOkAt": "2026-11-26T12:35:34.113Z",
-      "seen": 7500,
+      "lastOkAt": "2026-11-26T12:50:24.953Z",
+      "seen": 7750,
       "events": 251,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T10:11:01.000Z",
-      "lastOkAt": "2026-11-26T12:35:34.113Z",
+      "lastOkAt": "2026-11-26T12:50:24.953Z",
       "seen": 20,
       "events": 12,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T12:35:34.113Z",
-      "seen": 1747,
+      "lastOkAt": "2026-11-26T12:50:24.953Z",
+      "seen": 1807,
       "events": 21,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T11:58:26.000Z",
-      "lastOkAt": "2026-11-26T12:35:34.113Z",
-      "seen": 12000,
+      "lastOkAt": "2026-11-26T12:50:24.953Z",
+      "seen": 12400,
       "events": 13,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T00:35:34.113Z",
-      "lastOkAt": "2026-11-26T12:35:34.113Z",
-      "seen": 3527,
+      "lastCursor": "2026-11-26T00:50:24.953Z",
+      "lastOkAt": "2026-11-26T12:50:24.953Z",
+      "seen": 3647,
       "events": 7,
       "errors": 0
     }
@@ -5454,10 +5454,17 @@
       "chain": "sha256:a3bdfeda2ea2b5fc59552471a0e019cc7cab334eeb3507d57f3bf3a68cf3ef20",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T12:50:24.953Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub entry with an empty excerpt, so it is primary but not independent and too thin to plainly support the one-line claim."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T12:50:24.953Z"
     },
     {
       "id": "20261126t120108z-palmetto-3196e2bc",
@@ -5504,10 +5511,17 @@
       "chain": "sha256:4e98dc4d156eb479c80ca6e27560045962f29319fba77a621105ef3e3e848753",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T12:50:24.953Z",
+          "by": "desk",
+          "note": "The only source is Palmetto's own repository with an empty excerpt, so the item rests on a single non-independent primary record that merely restates the PR title without independent corroboration."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T12:50:24.953Z"
     },
     {
       "id": "20261126t120051z-avatarmanz-54b0ab7a",
