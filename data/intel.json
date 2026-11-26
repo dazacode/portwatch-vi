@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T07:50:24.658Z",
+  "updated": "2026-11-26T08:07:12.693Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T07:30:57.000Z",
-      "lastOkAt": "2026-11-26T07:50:24.658Z",
-      "seen": 2750,
-      "events": 104,
+      "lastCursor": "2026-11-26T08:01:29.000Z",
+      "lastOkAt": "2026-11-26T08:07:12.693Z",
+      "seen": 3000,
+      "events": 120,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T06:21:27.000Z",
-      "lastOkAt": "2026-11-26T07:50:24.658Z",
+      "lastOkAt": "2026-11-26T08:07:12.693Z",
       "seen": 16,
       "events": 8,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T07:29:38.175Z",
-      "lastOkAt": "2026-11-26T07:50:24.658Z",
-      "seen": 613,
+      "lastOkAt": "2026-11-26T08:07:12.693Z",
+      "seen": 672,
       "events": 19,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T07:30:28.845Z",
-      "lastOkAt": "2026-11-26T07:50:24.658Z",
-      "seen": 4400,
+      "lastCursor": "2026-11-26T07:59:17.946Z",
+      "lastOkAt": "2026-11-26T08:07:12.693Z",
+      "seen": 4800,
       "events": 3,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T07:50:24.658Z",
-      "seen": 1265,
+      "lastOkAt": "2026-11-26T08:07:12.693Z",
+      "seen": 1383,
       "events": 7,
       "errors": 0
     }
@@ -1989,10 +1989,17 @@
       "chain": "sha256:74e348879655019353bb2b726c89ab0623324dea634fecb5bd20e7c748e6dd71",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-26T08:07:12.693Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository, which is not independent, so the claim cannot be confirmed without additional evidence."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-26T08:07:12.693Z"
     },
     {
       "id": "20261126t053123z-leonida-continued-fc789f0b",
