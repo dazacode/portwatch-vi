@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T11:20:27.077Z",
+  "updated": "2026-11-26T11:35:28.371Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T11:01:12.000Z",
-      "lastOkAt": "2026-11-26T11:20:27.077Z",
-      "seen": 6250,
-      "events": 212,
+      "lastCursor": "2026-11-26T11:31:07.000Z",
+      "lastOkAt": "2026-11-26T11:35:28.371Z",
+      "seen": 6500,
+      "events": 234,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T08:19:21.000Z",
-      "lastOkAt": "2026-11-26T11:20:27.077Z",
+      "lastOkAt": "2026-11-26T11:35:28.371Z",
       "seen": 19,
       "events": 11,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T09:35:13.990Z",
-      "lastOkAt": "2026-11-26T11:20:27.077Z",
-      "seen": 1447,
+      "lastOkAt": "2026-11-26T11:35:28.371Z",
+      "seen": 1507,
       "events": 21,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T10:57:31.747Z",
-      "lastOkAt": "2026-11-26T11:20:27.077Z",
-      "seen": 10000,
-      "events": 8,
+      "lastCursor": "2026-11-26T11:29:38.745Z",
+      "lastOkAt": "2026-11-26T11:35:28.371Z",
+      "seen": 10400,
+      "events": 9,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-26T00:00:00.000Z",
-      "lastOkAt": "2026-11-26T11:20:27.077Z",
-      "seen": 2927,
+      "lastOkAt": "2026-11-26T11:35:28.371Z",
+      "seen": 3047,
       "events": 7,
       "errors": 0
     }
@@ -4890,6 +4890,171 @@
         "low confidence"
       ],
       "deskAt": "2026-11-26T11:05:44.044Z"
+    },
+    {
+      "id": "20261126t112949z-whibwhi-own-3ab5ef35",
+      "key": "update|whibwhi-own|activity|41566",
+      "kind": "update",
+      "projectId": "whibwhi-own",
+      "projectName": "whibwhi-own",
+      "at": "2026-11-26T11:29:49Z",
+      "detectedAt": "2026-11-26T11:35:28.371Z",
+      "title": "whibwhi-own pushed 11 commits",
+      "oneLine": "The PC shader container writer: layout, checksum, token forms and what is not covered",
+      "sources": [
+        {
+          "url": "https://github.com/ExCorvus/whibwhi-own/commit/5871de6e3a01018e2df60535ce48e36e723bb59a",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "The PC shader container writer: layout, checksum, token forms and what is not covered",
+          "at": "2026-11-26T11:29:48Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "excorvus/whibwhi-own",
+        "name": "whibwhi-own",
+        "words": [
+          "whibwhi-own"
+        ],
+        "hash": "b71a934a084affd1",
+        "projectId": "whibwhi-own"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:b192839dc7f14b579469cd0a3914554668babb77396ca6b0b2e433bc144d8655",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T11:35:28.371Z",
+          "by": "desk",
+          "note": "The only source is the project’s own repository with an empty excerpt, so it is primary but not independent and does not plainly substantiate the one-line claim."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T11:35:28.371Z"
+    },
+    {
+      "id": "20261126t110725z-palmetto-cd962369",
+      "key": "update|palmetto|activity|41566",
+      "kind": "update",
+      "projectId": "palmetto",
+      "projectName": "Palmetto",
+      "at": "2026-11-26T11:07:25Z",
+      "detectedAt": "2026-11-26T11:35:28.371Z",
+      "title": "Palmetto opened pull request #5",
+      "oneLine": "crash report: dump every thread, not only the faulting one (O3)",
+      "sources": [
+        {
+          "url": "https://github.com/luizwidmer/palmetto/pull/5",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "crash report: dump every thread, not only the faulting one (O3)",
+          "at": "2026-11-26T11:07:25Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "luizwidmer/palmetto",
+        "name": "palmetto",
+        "words": [
+          "palmetto"
+        ],
+        "hash": "3805aa8734408892",
+        "projectId": "palmetto"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:3ac39a65135c04c7ca1be1a6d7b230330368ceb734bb5ebdc86bac088146b025",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-26T11:35:28.371Z",
+          "by": "desk",
+          "note": "The project's own GitHub pull request title matches the one line verbatim and no source contradicts it, so the claim that PR #5 was opened with that description is plainly supported."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-26T11:35:28.371Z"
+    },
+    {
+      "id": "20261126t110546z-cgbj-2c0493be",
+      "key": "claim|cgbj|https://bsky.app/profile/tudogta.bsky.social/post/3n37jqiucbk2s|41566",
+      "kind": "claim",
+      "projectId": "cgbj",
+      "projectName": "CGBJ",
+      "at": "2026-11-26T11:05:46.845Z",
+      "detectedAt": "2026-11-26T11:35:28.371Z",
+      "title": "New claim about CGBJ",
+      "oneLine": "📰 Rockstar removeu o port de 25 FPS do GTA 6 PC do CGBJ do GitHub",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/tudogta.bsky.social/post/3n37jqiucbk2s",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "📰 Rockstar removeu o port de 25 FPS do GTA 6 PC do CGBJ do GitHub",
+          "at": "2026-11-26T11:05:46.845Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "📰 Rockstar removeu o port de 25 FPS do GTA 6 PC do CGBJ do GitHub"
+        }
+      ],
+      "fingerprint": {
+        "repo": "codec-d/cool_fox",
+        "name": "cgbj",
+        "words": [
+          "cgbj"
+        ],
+        "hash": "3ac0470380688d82",
+        "projectId": "cgbj"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:3de272cdde1e875c5a24b85de21407b3f5aed2b31e1b503bcc2220eaf9615ce5",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
     }
   ],
   "reports": [
