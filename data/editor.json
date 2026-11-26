@@ -1,6 +1,21 @@
 {
-  "lastRun": "2026-11-26T12:41:34.519Z",
+  "lastRun": "2026-11-26T13:41:49.292Z",
   "runs": [
+    {
+      "at": "2026-11-26T13:41:49.292Z",
+      "by": "Pollinations, gpt-oss-20b",
+      "applied": [
+        "candidate XinYulian/xin-leonida",
+        "candidate isaac-btw/AmericasLauncher",
+        "candidate felixwaschosenn/littlethings-build",
+        "candidate halo-tom/gta6-xbox-on-pc"
+      ],
+      "skipped": [
+        "held: candidate GabrieelDuart/GabeGTA6: a name not in the source (GPUs)",
+        "held: candidate zortos293/XSEmu: has markup"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-26T12:41:34.519Z",
       "by": "Pollinations, gpt-oss-20b",
