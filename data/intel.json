@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T18:35:38.868Z",
+  "updated": "2026-11-27T18:50:26.284Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T18:01:03.000Z",
-      "lastOkAt": "2026-11-27T18:35:38.868Z",
-      "seen": 36750,
+      "lastOkAt": "2026-11-27T18:50:26.284Z",
+      "seen": 37000,
       "events": 1290,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T18:35:38.868Z",
+      "lastOkAt": "2026-11-27T18:50:26.284Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T18:35:38.868Z",
-      "seen": 8956,
+      "lastOkAt": "2026-11-27T18:50:26.284Z",
+      "seen": 9019,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T18:00:24.949Z",
-      "lastOkAt": "2026-11-27T18:35:38.868Z",
-      "seen": 58800,
+      "lastOkAt": "2026-11-27T18:50:26.284Z",
+      "seen": 59200,
       "events": 43,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T06:35:38.868Z",
-      "lastOkAt": "2026-11-27T18:35:38.868Z",
-      "seen": 17679,
+      "lastCursor": "2026-11-27T06:50:26.284Z",
+      "lastOkAt": "2026-11-27T18:50:26.284Z",
+      "seen": 17803,
       "events": 12,
       "errors": 0
     }
@@ -12658,12 +12658,17 @@
           "at": "2026-11-27T12:20:22.682Z",
           "by": "desk",
           "note": "The only stored source is the project's own GitHub entry with no excerpt, so it is a thin, non-independent record that does not plainly support the one-line item."
+        },
+        {
+          "at": "2026-11-27T18:50:26.284Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub entry with no excerpt, so it is primary but not independent and too thin to verify the one-line claim."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T12:20:22.682Z"
+      "deskAt": "2026-11-27T18:50:26.284Z"
     },
     {
       "id": "20261127t120113z-marvis-d042dab6",
@@ -15113,10 +15118,17 @@
       "chain": "sha256:62c1c11f6c66bc08cb5cc9c3401882268cb4b1c4f4dfa26ab1e2870c9dbbea9b",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T18:50:26.284Z",
+          "by": "desk",
+          "note": "The two GitHub excerpts are from the project’s own repository and do not independently corroborate the claim, while the 229 ms/frame figure also leaves the “runs” wording ambiguous."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T18:50:26.284Z"
     }
   ],
   "reports": [
