@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T00:20:24.386Z",
+  "updated": "2026-11-27T00:50:20.574Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T00:01:44.000Z",
-      "lastOkAt": "2026-11-27T00:20:24.386Z",
-      "seen": 18750,
-      "events": 687,
+      "lastCursor": "2026-11-27T00:35:55.000Z",
+      "lastOkAt": "2026-11-27T00:50:20.574Z",
+      "seen": 19000,
+      "events": 707,
       "errors": 0
     },
     "evidence": {
-      "lastCursor": "2026-11-26T20:47:47.000Z",
-      "lastOkAt": "2026-11-27T00:20:24.386Z",
-      "seen": 28,
-      "events": 20,
+      "lastCursor": "2026-11-26T21:53:31.000Z",
+      "lastOkAt": "2026-11-27T00:50:20.574Z",
+      "seen": 30,
+      "events": 22,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T00:20:24.386Z",
-      "seen": 4476,
+      "lastOkAt": "2026-11-27T00:50:20.574Z",
+      "seen": 4538,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T23:53:07.445Z",
-      "lastOkAt": "2026-11-27T00:20:24.386Z",
-      "seen": 30000,
+      "lastCursor": "2026-11-27T00:20:27.000Z",
+      "lastOkAt": "2026-11-27T00:50:20.574Z",
+      "seen": 30400,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T12:20:24.386Z",
-      "lastOkAt": "2026-11-27T00:20:24.386Z",
-      "seen": 8815,
+      "lastCursor": "2026-11-26T12:50:20.574Z",
+      "lastOkAt": "2026-11-27T00:50:20.574Z",
+      "seen": 8938,
       "events": 7,
       "errors": 0
     }
@@ -9474,6 +9474,785 @@
       "heldReasons": [
         "a rate cap"
       ]
+    },
+    {
+      "id": "20261127t003507z-belobug-5d1c1caa",
+      "key": "update|belobug|activity|41568",
+      "kind": "update",
+      "projectId": "belobug",
+      "projectName": "Belobug",
+      "at": "2026-11-27T00:35:07Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "Belobug opened pull request #397",
+      "oneLine": "RT: add opt-in AMD RDNA 2+ hardware BVH4 ray-node intersection (VICTORY_HW_BVH=1)",
+      "sources": [
+        {
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/397",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "RT: add opt-in AMD RDNA 2+ hardware BVH4 ray-node intersection (VICTORY_HW_BVH=1)",
+          "at": "2026-11-27T00:35:07Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "belobug/victory-belobug-amd",
+        "name": "belobug",
+        "words": [
+          "belobug"
+        ],
+        "hash": "7749e38a7e252a81",
+        "projectId": "belobug"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:66453a676ac48fe51f0fdd71cee08ff5ca58880cf9aa7ef6da24e2212fbb8342",
+      "reportId": "20261127t003507z-belobug-5d1c1caa-report",
+      "discordAt": "2026-11-27T00:50:51.248Z",
+      "revisions": [],
+      "note": "model: overview has 397, which is not in a source",
+      "publishedAt": "2026-11-27T00:50:20.574Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261127t003500z-anyxboxx-6636e416",
+      "key": "update|anyxboxx|activity|41568",
+      "kind": "update",
+      "projectId": "anyxboxx",
+      "projectName": "AnyXboxX",
+      "at": "2026-11-27T00:35:00Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "AnyXboxX opened pull request #460",
+      "oneLine": "fix(launcher): the resolution option sets VICTORY_OUTPUT on the Vice-Tay base",
+      "sources": [
+        {
+          "url": "https://github.com/LooperSalty/AnyXboxX/pull/460",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "fix(launcher): the resolution option sets VICTORY_OUTPUT on the Vice-Tay base",
+          "at": "2026-11-27T00:35:00Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "loopersalty/anyxboxx",
+        "name": "anyxboxx",
+        "words": [
+          "anyxboxx"
+        ],
+        "hash": "61a80697a8e89acc",
+        "projectId": "anyxboxx"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:30319b075206c1a89c7ee9f1a59ec74fdb548738fc5c615ea4ee442c9e92a2fd",
+      "reportId": "20261127t003500z-anyxboxx-6636e416-report",
+      "discordAt": "2026-11-27T00:50:51.248Z",
+      "revisions": [],
+      "note": "model: overview has 460, which is not in a source; changed has 460, which is not in a source",
+      "publishedAt": "2026-11-27T00:50:20.574Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261127t003456z-tuxbox-e5f2a3e6",
+      "key": "update|tuxbox|activity|41568",
+      "kind": "update",
+      "projectId": "tuxbox",
+      "projectName": "TuxBox",
+      "at": "2026-11-27T00:34:56Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "TuxBox opened pull request #284",
+      "oneLine": "xshader: accept uniform loops around compute swizzles for single-wave",
+      "sources": [
+        {
+          "url": "https://github.com/brcly/TuxBox/pull/284",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "xshader: accept uniform loops around compute swizzles for single-wave",
+          "at": "2026-11-27T00:34:56Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "brcly/tuxbox",
+        "name": "tuxbox",
+        "words": [
+          "tuxbox"
+        ],
+        "hash": "980ac0c7552140c0",
+        "projectId": "tuxbox"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:e44d1091c9e93d5a7d38d8c936fe44c87c1912ca576bf8e3895a2539459e0d33",
+      "reportId": "20261127t003456z-tuxbox-e5f2a3e6-report",
+      "discordAt": "2026-11-27T00:50:51.248Z",
+      "revisions": [],
+      "publishedAt": "2026-11-27T00:50:20.574Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261127t003421z-xbox2windows-d8616ebb",
+      "key": "update|xbox2windows|activity|41568",
+      "kind": "update",
+      "projectId": "xbox2windows",
+      "projectName": "Xbox2Windows",
+      "at": "2026-11-27T00:34:21Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "Xbox2Windows opened pull request #2966",
+      "oneLine": "shader: lower root-pointer global_load_dword in the direct C++ compute path",
+      "sources": [
+        {
+          "url": "https://github.com/R0Y00/Xbox2Windows/pull/2966",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "shader: lower root-pointer global_load_dword in the direct C++ compute path",
+          "at": "2026-11-27T00:34:21Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "r0y00/xbox2windows",
+        "name": "xbox2windows",
+        "words": [
+          "xbox2windows"
+        ],
+        "hash": "9015c18a32290621",
+        "projectId": "xbox2windows"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:aaf258d139156bde4bc8c87b55b47745259c3c4f6d14d5825fac0a7b964fab1f",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T00:50:20.574Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository with an empty excerpt, so the PR's existence and scope are not independently corroborated and the one line rests on a title alone."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T00:50:20.574Z"
+    },
+    {
+      "id": "20261127t003344z-marvis-d81041f6",
+      "key": "reference|marvis|activity|41568",
+      "kind": "reference",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-27T00:33:44Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "New reference to VIctory",
+      "oneLine": "Archive of Leonida, xcl and VIctory (GTA VI on PC projects), saved 2026-11-23",
+      "sources": [
+        {
+          "url": "https://github.com/Guernica4u/GTA6-PC-Port-Archive",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Guernica4u/GTA6-PC-Port-Archive",
+          "at": "2026-11-27T00:33:44Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "3057e5affa09d5bf",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:45e9ce4742979bffdfeb09c0dffaed7f736dd5abb96f89c296f08fddc34f37c2",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T00:50:20.574Z",
+          "by": "desk",
+          "note": "The only source is an empty-excerpt GitHub archive entry that is not independent and does not plainly substantiate the specific saved-date reference line."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T00:50:20.574Z"
+    },
+    {
+      "id": "20261127t003256z-xin-leonida-52261dcb",
+      "key": "update|xin-leonida|activity|41568",
+      "kind": "update",
+      "projectId": "xin-leonida",
+      "projectName": "Xin-Leonida",
+      "at": "2026-11-27T00:32:56Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "Xin-Leonida pushed 4 commits",
+      "oneLine": "scripts: graceful game close to save session cache",
+      "sources": [
+        {
+          "url": "https://github.com/XinYulian/xin-leonida/commit/4362cb9d3a5d56ae724f856519c387a5d8a326c3",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "scripts: graceful game close to save session cache",
+          "at": "2026-11-27T00:32:56Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "xinyulian/xin-leonida",
+        "name": "xin-leonida",
+        "words": [
+          "xin-leonida"
+        ],
+        "hash": "3f2ff21464b31465",
+        "projectId": "xin-leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:b7f5588fd398514eb86aad00776d646bf28dd9addcd53890f875455d4c465bc5",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t003246z-i95-gta6-pc-launcher-4ab7b3b3",
+      "key": "update|i95-gta6-pc-launcher|activity|41568",
+      "kind": "update",
+      "projectId": "i95-gta6-pc-launcher",
+      "projectName": "i95-GTA6-PC-Launcher",
+      "at": "2026-11-27T00:32:46Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "i95-GTA6-PC-Launcher pushed 7 commits",
+      "oneLine": "AnyXboxX 2225a8e: plain warm (Vice-Tay base refuses archives), 16_cores preset; victory-fork's 8.8 fps claim",
+      "sources": [
+        {
+          "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/bb92ca4bdd3c207916f285b8ccc2cdcc6474ffdd",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "AnyXboxX 2225a8e: plain warm (Vice-Tay base refuses archives), 16_cores preset; victory-fork's 8.8 fps claim",
+          "at": "2026-11-27T00:32:46Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "designwithtommy/i95-gta6-pc-launcher",
+        "name": "i95-gta6-pc-launcher",
+        "words": [
+          "i95-gta6-pc-launcher"
+        ],
+        "hash": "a7b8a28a5ecc2cfb",
+        "projectId": "i95-gta6-pc-launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:8d7530c660604a4fb10cc5c5b41ffc8b064109a196792eb04aec62df2981f0b4",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t003128z-avatarmanz-f3ac44cc",
+      "key": "update|avatarmanz|activity|41568",
+      "kind": "update",
+      "projectId": "avatarmanz",
+      "projectName": "AvatarManz",
+      "at": "2026-11-27T00:31:28Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "AvatarManz opened pull request #405",
+      "oneLine": "Shaders: scalars written in lane-divergent branches reach every lane after the join",
+      "sources": [
+        {
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/405",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Shaders: scalars written in lane-divergent branches reach every lane after the join",
+          "at": "2026-11-27T00:31:28Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "avatarmanz/victory-7900xtx",
+        "name": "avatarmanz",
+        "words": [
+          "avatarmanz"
+        ],
+        "hash": "8c2b1a88f8fa0e93",
+        "projectId": "avatarmanz"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:8060286dc600404434d70afa742d092383902f028d03a5c92a6ff04a182c2b5e",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t002846z-whibwhi-own-1729c40b",
+      "key": "update|whibwhi-own|activity|41568",
+      "kind": "update",
+      "projectId": "whibwhi-own",
+      "projectName": "whibwhi-own",
+      "at": "2026-11-27T00:28:46Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "whibwhi-own pushed 6 commits",
+      "oneLine": "FINDINGS: two shader translator changes offered upstream to dxil-spirv (bugfix: undid AI trap)",
+      "sources": [
+        {
+          "url": "https://github.com/ExCorvus/whibwhi-own/commit/53e6e6e2dfcdb5033b419bdc087a5ff30b05411b",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "FINDINGS: two shader translator changes offered upstream to dxil-spirv (bugfix: undid AI trap)",
+          "at": "2026-11-27T00:26:08Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "excorvus/whibwhi-own",
+        "name": "whibwhi-own",
+        "words": [
+          "whibwhi-own"
+        ],
+        "hash": "30f0224eac7bf369",
+        "projectId": "whibwhi-own"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:0529d6469178c150b9144699b27dea7eddaa9d391e46a1897ac965eaba80f822",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t002832z-decant-7fb81c72",
+      "key": "update|decant|activity|41568",
+      "kind": "update",
+      "projectId": "decant",
+      "projectName": "Decant",
+      "at": "2026-11-27T00:28:32Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "Decant pushed 8 commits",
+      "oneLine": "d3d12x: skip raw console shader PSO fallback when direct path is active",
+      "sources": [
+        {
+          "url": "https://github.com/decantlabs/decant/commit/f62a608220e56b4aa5003e7c71c082f10b54f37f",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "d3d12x: skip raw console shader PSO fallback when direct path is active",
+          "at": "2026-11-27T00:24:55Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "decantlabs/decant",
+        "name": "decant",
+        "words": [
+          "decant"
+        ],
+        "hash": "14cf86c61c67f260",
+        "projectId": "decant"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:1ce563ced56f9e9bf47a3e89bd7e1bce748c6b328997eb2d7b404801f9d60e2c",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t002546z-playablegames-peppa-72c00c2c",
+      "key": "update|playablegames-peppa|activity|41568",
+      "kind": "update",
+      "projectId": "playablegames-peppa",
+      "projectName": "playablegames-peppa",
+      "at": "2026-11-27T00:25:46Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "playablegames-peppa opened pull request #19",
+      "oneLine": "README: the allocator's figure corrected to about 2 ms, and the range of runs",
+      "sources": [
+        {
+          "url": "https://github.com/Peppacodes/playablegames-peppa/pull/19",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "README: the allocator's figure corrected to about 2 ms, and the range of runs",
+          "at": "2026-11-27T00:25:46Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "peppacodes/playablegames-peppa",
+        "name": "playablegames-peppa",
+        "words": [
+          "playablegames-peppa"
+        ],
+        "hash": "0d2c405905410651",
+        "projectId": "playablegames-peppa"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:ca1f9c8c2bc419be1217d27b546136cad48123ae025d6df797622022e9e9b629",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t002356z-project-americas-400638a4",
+      "key": "update|project-americas|activity|41568",
+      "kind": "update",
+      "projectId": "project-americas",
+      "projectName": "Project-Americas",
+      "at": "2026-11-27T00:23:56Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "Project-Americas pushed 2 commits",
+      "oneLine": "Batch: shader service idle work on all but two workers, driver pipeline memory test, HANDOFF",
+      "sources": [
+        {
+          "url": "https://github.com/x6j1ZiqfbxA3u12HVk/Project-Americas/commit/db6c6c0326cfee9cf8a25327fae4f51a480e624a",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Batch: shader service idle work on all but two workers, driver pipeline memory test, HANDOFF",
+          "at": "2026-11-27T00:23:56Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "x6j1ziqfbxa3u12hvk/project-americas",
+        "name": "project-americas",
+        "words": [
+          "project-americas"
+        ],
+        "hash": "85b620528c4ce464",
+        "projectId": "project-americas"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:824cd31e3733999b92a1bf1fb2d3b9c5019c8c17977c3cab99ce7f5157819d23",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t002339z-scene-371802af",
+      "key": "reference|-|activity|41568",
+      "kind": "duplicate",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-27T00:23:39Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "A new repository may duplicate unknown",
+      "oneLine": "Automatically maintained tracking site for PC ports of the GTA VI Xbox Build. This repository is managed autonomously by Claude Fable 5.2.",
+      "sources": [
+        {
+          "url": "https://github.com/vuyp/gta6-pc-race",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "vuyp/gta6-pc-race",
+          "at": "2026-11-27T00:23:39Z",
+          "kind": "official"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "eb8d5a33b0b528cf",
+        "projectId": null
+      },
+      "similar": [
+        {
+          "effortId": "unknown",
+          "score": 1
+        },
+        {
+          "effortId": "unknown",
+          "score": 1
+        },
+        {
+          "effortId": "unknown",
+          "score": 1
+        }
+      ],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d983b1d71dce39c4f848cb3e03536fc4218c36b903fe294fafa8ada995f102c8",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "duplicate build reference",
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261126t215331z-kelvaroq-a2257828",
+      "key": "evidence|kelvaroq|menu|41567",
+      "kind": "evidence",
+      "projectId": "kelvaroq",
+      "projectName": "Kelvaroq",
+      "at": "2026-11-26T21:53:31Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "New test evidence on Kelvaroq — menu",
+      "oneLine": "the picker itself renders (footer bar ACCOUNT PICKER (Y) SCREEN NARRATION (OFF) (X) PLAYER (A) ), the GPU presents at a locked 30 fps",
+      "sources": [
+        {
+          "url": "https://github.com/stellarr-studio/kelvaroq/issues/20",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "the picker itself renders (footer bar ACCOUNT PICKER (Y) SCREEN NARRATION (OFF) (X) PLAYER (A) ), the GPU presents at a ",
+          "at": "2026-11-26T21:53:31Z",
+          "kind": "primary",
+          "authorHash": "3509740fce0b",
+          "excerpt": "the picker itself renders (footer bar ACCOUNT PICKER (Y) SCREEN NARRATION (OFF) (X) PLAYER (A) ), the GPU presents at a locked 30 fps"
+        }
+      ],
+      "fingerprint": {
+        "repo": "stellarr-studio/kelvaroq",
+        "name": "kelvaroq",
+        "words": [
+          "kelvaroq"
+        ],
+        "hash": "58819e58dcab9bd3",
+        "projectId": "kelvaroq"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:4c9224eeaa1d8f77bc7c0387acf610f59def7e66ede82af7a205a76ff67c6956",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t213726z-kelvaroq-d772aedf",
+      "key": "evidence|kelvaroq|world|41567",
+      "kind": "evidence",
+      "projectId": "kelvaroq",
+      "projectName": "Kelvaroq",
+      "at": "2026-11-26T21:37:26Z",
+      "detectedAt": "2026-11-27T00:50:20.574Z",
+      "title": "New test evidence on Kelvaroq — world",
+      "oneLine": "idle at the cell window",
+      "sources": [
+        {
+          "url": "https://github.com/stellarr-studio/kelvaroq/issues/19",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "idle at the cell window",
+          "at": "2026-11-26T21:37:26Z",
+          "kind": "primary",
+          "authorHash": "91fb2a9490a1",
+          "excerpt": "idle at the cell window"
+        }
+      ],
+      "fingerprint": {
+        "repo": "stellarr-studio/kelvaroq",
+        "name": "kelvaroq",
+        "words": [
+          "kelvaroq"
+        ],
+        "hash": "49feafc086892a77",
+        "projectId": "kelvaroq"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:2bb6698ca82d2283dba04b3f72a8c66ddb293f9494513b40992b4fdfd1b5e2f3",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
@@ -9733,6 +10512,69 @@
           "outlet": "GitHub",
           "title": "D3D12.X: patch assert-checked vtables in place under Wine (#175)",
           "at": "2026-11-27T00:00:43Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261127t003507z-belobug-5d1c1caa-report",
+      "itemId": "20261127t003507z-belobug-5d1c1caa",
+      "publishedAt": "2026-11-27T00:50:20.574Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "Belobug has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. RT: add opt-in AMD RDNA 2+ hardware BVH4 ray-node intersection (VICTORY_HW_BVH=1).",
+      "evidence": "The entry rests on one stored source, GitHub. RT: add opt-in AMD RDNA 2+ hardware BVH4 ray-node intersection (VICTORY_HW_BVH=1).",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/397",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "RT: add opt-in AMD RDNA 2+ hardware BVH4 ray-node intersection (VICTORY_HW_BVH=1)",
+          "at": "2026-11-27T00:35:07Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261127t003500z-anyxboxx-6636e416-report",
+      "itemId": "20261127t003500z-anyxboxx-6636e416",
+      "publishedAt": "2026-11-27T00:50:20.574Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "AnyXboxX has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. fix(launcher): the resolution option sets VICTORY_OUTPUT on the Vice-Tay base.",
+      "evidence": "The entry rests on one stored source, GitHub. fix(launcher): the resolution option sets VICTORY_OUTPUT on the Vice-Tay base.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/LooperSalty/AnyXboxX/pull/460",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "fix(launcher): the resolution option sets VICTORY_OUTPUT on the Vice-Tay base",
+          "at": "2026-11-27T00:35:00Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261127t003456z-tuxbox-e5f2a3e6-report",
+      "itemId": "20261127t003456z-tuxbox-e5f2a3e6",
+      "publishedAt": "2026-11-27T00:50:20.574Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "TuxBox has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. xshader: accept uniform loops around compute swizzles for single-wave.",
+      "evidence": "The entry rests on one stored source, GitHub. xshader: accept uniform loops around compute swizzles for single-wave.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/brcly/TuxBox/pull/284",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "xshader: accept uniform loops around compute swizzles for single-wave",
+          "at": "2026-11-27T00:34:56Z",
           "kind": "primary"
         }
       ]
