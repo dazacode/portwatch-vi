@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T10:50:20.328Z",
+  "updated": "2026-11-27T11:05:23.711Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T10:31:07.000Z",
-      "lastOkAt": "2026-11-27T10:50:20.328Z",
-      "seen": 29000,
-      "events": 1014,
+      "lastCursor": "2026-11-27T11:01:32.000Z",
+      "lastOkAt": "2026-11-27T11:05:23.711Z",
+      "seen": 29250,
+      "events": 1033,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T09:21:22.000Z",
-      "lastOkAt": "2026-11-27T10:50:20.328Z",
+      "lastOkAt": "2026-11-27T11:05:23.711Z",
       "seen": 38,
       "events": 30,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T10:50:20.328Z",
-      "seen": 7018,
+      "lastOkAt": "2026-11-27T11:05:23.711Z",
+      "seen": 7080,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T10:22:20.141Z",
-      "lastOkAt": "2026-11-27T10:50:20.328Z",
-      "seen": 46400,
-      "events": 35,
+      "lastCursor": "2026-11-27T10:59:24.043Z",
+      "lastOkAt": "2026-11-27T11:05:23.711Z",
+      "seen": 46800,
+      "events": 36,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T10:50:20.328Z",
-      "seen": 13858,
+      "lastOkAt": "2026-11-27T11:05:23.711Z",
+      "seen": 13981,
       "events": 12,
       "errors": 0
     }
@@ -12216,6 +12216,205 @@
         "low confidence"
       ],
       "deskAt": "2026-11-27T10:35:23.804Z"
+    },
+    {
+      "id": "20261127t105846z-dirtemu-d54ee61f",
+      "key": "update|dirtemu|activity|41568",
+      "kind": "update",
+      "projectId": "dirtemu",
+      "projectName": "dirtemu",
+      "at": "2026-11-27T10:58:46Z",
+      "detectedAt": "2026-11-27T11:05:23.711Z",
+      "title": "dirtemu opened pull request #1",
+      "oneLine": "Add Steam Proton compatibility and host-copy memory override",
+      "sources": [
+        {
+          "url": "https://github.com/itkomarov/dirtemu/pull/1",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Add Steam Proton compatibility and host-copy memory override",
+          "at": "2026-11-27T10:58:46Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itkomarov/dirtemu",
+        "name": "dirtemu",
+        "words": [
+          "dirtemu"
+        ],
+        "hash": "0420c287f4708301",
+        "projectId": "dirtemu"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:e3d4ab75f9749877bdeed810b2a50a22170f8eedb2a8c81f7dbb5fb257dd1924",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t105643z-victory-nvidia-hybrid-bf64aa3e",
+      "key": "update|victory-nvidia-hybrid|activity|41568",
+      "kind": "update",
+      "projectId": "victory-nvidia-hybrid",
+      "projectName": "VIctory-NVIDIA-Hybrid",
+      "at": "2026-11-27T10:56:43Z",
+      "detectedAt": "2026-11-27T11:05:23.711Z",
+      "title": "VIctory-NVIDIA-Hybrid opened pull request #66",
+      "oneLine": "VICTORY_WAVE_WHY lines name their shader (port from cool_fox)",
+      "sources": [
+        {
+          "url": "https://github.com/Bebrik229/VIctory-NVIDIA-Hybrid/pull/66",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "VICTORY_WAVE_WHY lines name their shader (port from cool_fox)",
+          "at": "2026-11-27T10:56:43Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "bebrik229/victory-nvidia-hybrid",
+        "name": "victory-nvidia-hybrid",
+        "words": [
+          "victory-nvidia-hybrid"
+        ],
+        "hash": "0105128094c20df0",
+        "projectId": "victory-nvidia-hybrid"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:93b9e076c64421f910b9eb78e1b3236058bd8df28b6689c8fe18bc261295ea16",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t104231z-scarlettx-6f63fb80",
+      "key": "update|scarlettx|activity|41568",
+      "kind": "update",
+      "projectId": "scarlettx",
+      "projectName": "ScarlettX",
+      "at": "2026-11-27T10:42:31Z",
+      "detectedAt": "2026-11-27T11:05:23.711Z",
+      "title": "ScarlettX opened pull request #62",
+      "oneLine": "feat: 100% full parity across all 17 subsystems and Concept Destruction bring-up (Wave 6)",
+      "sources": [
+        {
+          "url": "https://github.com/Freminet/ScarlettX/pull/62",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "feat: 100% full parity across all 17 subsystems and Concept Destruction bring-up (Wave 6)",
+          "at": "2026-11-27T10:42:31Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "freminet/scarlettx",
+        "name": "scarlettx",
+        "words": [
+          "scarlettx"
+        ],
+        "hash": "10048a2174301844",
+        "projectId": "scarlettx"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:499c97a8f1e16ab796f228a26ffc9c20cb7007189272ec821309cb7523403062",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t103031z-scene-672575a4",
+      "key": "takedown|-|https://news.google.com/rss/articles/cbmiiafbvv95cuxndwtazxredxf2elhswngtq1bistvkbm54lvpoded5rmtjaxmxufjcmxd1sflhddrvlwrptenwmtbfd3pcrfy3mdhwv25ss2rmb2y3wnnrotjilvp0n0luntdhmlreqxnlsezhtxdfmtjaohqxugzzs3flmgv1bwy3qmtaeedqwjjr?oc=5|41568",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-27T10:30:31.000Z",
+      "detectedAt": "2026-11-27T11:05:23.711Z",
+      "title": "Admirals in a takedown report",
+      "oneLine": "GTA 6 PC: AI Ports, Takedowns and Take-Two Stock",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdWtaZXREdXF2elhsWngtQ1BiSTVkbm54LVpOdEd5RmtjaXMxUFJCMXd1SFlHdDRVLWRPTENwMTBFd3pCRFY3MDhWV25sS2RMb2Y3WnNrOTJILVp0N0lUNTdHMlREQXNlSEZhTXdfMTJaOHQxUGZzS3FLMGV1bWY3QmtaeEdqWjJr?oc=5",
+          "host": "news.google.com",
+          "outlet": "Admirals",
+          "title": "GTA 6 PC: AI Ports, Takedowns and Take-Two Stock",
+          "at": "2026-11-27T10:30:31.000Z",
+          "kind": "outside",
+          "authorHash": "d08b099422",
+          "excerpt": "GTA 6 PC: AI Ports, Takedowns and Take-Two Stock"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "57e521655350cd00",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:3c988985e10447670349e05593968551b8bcf0b815fcaeb71118613e60fb166b",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
     }
   ],
   "reports": [
