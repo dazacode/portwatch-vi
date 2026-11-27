@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T04:37:06.937Z",
+  "updated": "2026-11-27T04:50:24.929Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T04:31:49.000Z",
-      "lastOkAt": "2026-11-27T04:37:06.937Z",
-      "seen": 22750,
+      "lastOkAt": "2026-11-27T04:50:24.929Z",
+      "seen": 23000,
       "events": 846,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T02:04:54.000Z",
-      "lastOkAt": "2026-11-27T04:37:06.937Z",
+      "lastOkAt": "2026-11-27T04:50:24.929Z",
       "seen": 34,
       "events": 26,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T04:37:06.937Z",
-      "seen": 5468,
+      "lastOkAt": "2026-11-27T04:50:24.929Z",
+      "seen": 5530,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T04:14:40.045Z",
-      "lastOkAt": "2026-11-27T04:37:06.937Z",
-      "seen": 36400,
+      "lastOkAt": "2026-11-27T04:50:24.929Z",
+      "seen": 36800,
       "events": 29,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T04:37:06.937Z",
-      "seen": 10783,
+      "lastOkAt": "2026-11-27T04:50:24.929Z",
+      "seen": 10906,
       "events": 12,
       "errors": 0
     }
@@ -9420,10 +9420,17 @@
       "chain": "sha256:2ffdbe9190b822b1f698b17d119873c875f90fb0e54b1fdd8edc99763687c27e",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T04:50:24.929Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository with an empty excerpt, so the one line merely restates a pull request title without independent or substantive confirmation."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T04:50:24.929Z"
     },
     {
       "id": "20261126t233718z-neptune-dolberth-nvidia-8gb-2524dcfe",
@@ -10873,10 +10880,17 @@
       "chain": "sha256:5fd0c807f7da5fd5548ff8d1fddefd759186fc4c8a71546d1764d568c9733ae0",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T04:50:24.929Z",
+          "by": "desk",
+          "note": "The only source is the pipeline's own scout record restating the same line, so there is no independent or substantive confirmation that deepdev237/victory-mac is a real, on-topic effort."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T04:50:24.929Z"
     },
     {
       "id": "20261127t013409z-scene-01231520",
