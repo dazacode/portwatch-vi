@@ -1,21 +1,15 @@
 {
  "version": 1,
- "updated": "2026-11-27T23:01:52.880Z",
+ "updated": "2026-11-27T23:32:01.103Z",
  "now": {
-  "hash": "feae076b0680c3f0",
-  "at": "2026-11-27T22:02:03.900Z",
+  "hash": "4a88bbababea8a57",
+  "at": "2026-11-27T23:32:01.103Z",
   "by": "Pollinations, gpt-6-luna-classic",
   "points": [
    {
-    "text": "The linked article reports that ZETTROX's repository and account return 404, and omonkey's private build was taken down the same day; no DMCA notice has been published.",
+    "text": "The linked article reports that ZETTROX's repository and account return 404, and omonkey's private build was taken down the same day; no DMCA notice was published.",
     "sources": [
      "article:2026-11-26-zettrox-omonkey-gone"
-    ]
-   },
-   {
-    "text": "The linked article reports that private builds play through Lucia's prologue and into Jason's first mission, though most render badly and vehicles rarely work.",
-    "sources": [
-     "article:2026-11-25-prologue-gone-fishing"
     ]
    },
    {
@@ -25,7 +19,7 @@
     ]
    },
    {
-    "text": "The tracker records that WASDeKeys low-end joined the board, claiming the stage Runnable.",
+    "text": "The tracker records that WASDeKeys low-end joined the board claiming the stage Runnable.",
     "sources": [
      "project:victory-low-end-pc"
     ]
@@ -130,56 +124,80 @@
   ]
  },
  "notes": {
-  "commit:2e12dd8": {
-   "hash": "4d000bc13555ba3e",
-   "text": "Xbox2Windows's commit says startup identifies a corner of a rotated rectangle by its diagonal.",
+  "commit:fad97f4": {
+   "hash": "b38216f41500e06a",
+   "text": "Xbox2Windows' commit says startup should reject unmapped source ranges before checking or copying them.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T23:01:52.880Z"
+   "at": "2026-11-27T23:32:01.103Z"
   },
-  "commit:d442851": {
-   "hash": "5cfd217b70a2a5be",
-   "text": "Leonida Continued's commit says it merges the mandy/main branch into merge/mandy-main.",
+  "commit:fd0dbd9": {
+   "hash": "b8c353171bf3e5ec",
+   "text": "i95-GTA6-PC-Launcher's commit says it updates stars and times.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T23:01:52.880Z"
+   "at": "2026-11-27T23:32:01.103Z"
   },
-  "commit:00131bb": {
-   "hash": "dab1a9da55abba5b",
-   "text": "Leonida Continued's commit says main keeps its own runtime, tools, and tests, while branch variants remain on port/d3d12-nvidia.",
+  "commit:fb5537f": {
+   "hash": "507479f4637eba65",
+   "text": "VILauncher's commit says it merges pull request 66 from SixLauncher about scanning executables.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T23:01:52.880Z"
+   "at": "2026-11-27T23:32:01.103Z"
   },
-  "commit:4bfb5bd": {
-   "hash": "d8e213b0e0efa82d",
-   "text": "AnyXboxX's commit says it merges a change to the launcher's repository picker.",
+  "commit:1d8d945": {
+   "hash": "164f841591002c82",
+   "text": "VILauncher's commit says it merges the fix-exe-portal branch into exe-scan.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T23:01:52.880Z"
+   "at": "2026-11-27T23:32:01.103Z"
   },
-  "commit:1c03cc1": {
-   "hash": "2d5d8438aa327d4c",
-   "text": "AnyXboxX's commit says it lets players select the AnyXboxX folder in the launcher.",
+  "commit:9345c21": {
+   "hash": "e1c64c02c6ba50c4",
+   "text": "Xbox2Windows' commit says it lowers the native pixel raw buffer's atomic add operation.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T23:01:52.880Z"
+   "at": "2026-11-27T23:32:01.103Z"
   },
-  "commit:4b0350e": {
-   "hash": "1fdce2bfb418f9fd",
-   "text": "Xbox2Windows's commit says startup treats a failed buffer copy as a full upload ring, skips drawing, and reports upload ring statistics.",
+  "commit:25a62cc": {
+   "hash": "10139d4b8130624e",
+   "text": "TuxBox's commit says it regenerates the instruction inventory documentation.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T23:01:52.880Z"
+   "at": "2026-11-27T23:32:01.103Z"
   },
-  "commit:7cc940d": {
-   "hash": "910562d03dcc65fb",
-   "text": "VILauncher's commit says it merges the runtimes-v2 pull request.",
+  "commit:aaf38c1": {
+   "hash": "0dfe7c156355d4f1",
+   "text": "whibwhi-own's commit says console formats 118–120 use 16 bits per pixel, matching its own table.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T23:01:52.880Z"
+   "at": "2026-11-27T23:32:01.103Z"
   },
-  "commit:647789e": {
-   "hash": "a33e36bb8d607c93",
-   "text": "GTAVI-Recomp's commit says it merges a guide for an AnyPS5 fixture.",
+  "commit:64d4931": {
+   "hash": "ff33d731c7489de3",
+   "text": "VIctory-NVIDIA's commit lists water lighting, PS4 pads, F1 menu saves, long-session memory, and memory switches.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T23:01:52.880Z"
+   "at": "2026-11-27T23:32:01.103Z"
   }
  },
  "stories": {
+  "2026-11-27-news.google.com-gta-6s-headphone-feature-was-originally-planned-for-gta-vice-city-back-in-2002-former-rock": {
+   "hash": "2af0c54d22a423d2",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": null,
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
+  "2026-11-27-bsky.app-a-take-two-derrubou-no-github-o-leonida-projeto-que-prometia-rodar-gta-vi-no-pc-e-mais-de-": {
+   "hash": "06baca988738005c",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 58,
+   "summary": null,
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
+  "2026-11-27-news.google.com-can-your-pc-run-gta-vi-minimum-requirements-and-release-date-estimates": {
+   "hash": "1422f0fed8f1eb55",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": "The headline asks whether a PC can run GTA VI and mentions minimum requirements and release date estimates.",
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
   "2026-11-27-gamerant.com-rockstar-defends-gta-6s-most-controversial-feature": {
    "hash": "9422531efaa308f2",
    "topic": "Official",
@@ -284,14 +302,6 @@
    "importance": 1,
    "weight": 0,
    "summary": "The headline asks whether GTA 6 is pushing PS5 and Xbox Series consoles beyond their limits.",
-   "by": "Pollinations, gpt-6-luna-classic"
-  },
-  "2026-11-27-news.google.com-can-your-pc-run-gta-vi-minimum-requirements-and-release-date-estimates": {
-   "hash": "1422f0fed8f1eb55",
-   "topic": "Game",
-   "importance": 1,
-   "weight": 0,
-   "summary": "The headline asks whether a PC can run GTA VI and mentions minimum requirements and release date estimates.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-27-bsky.app-cuidado-com-o-port-de-gta-vi-para-pc-muita-gente-no-hype-vai-sair-baixando-qualquer-coisa-": {
@@ -578,12 +588,12 @@
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-27-news.google.com-modders-create-multiplayer-mode-for-grand-theft-auto-6-in-an-unofficial-pc-port-allowing-u": {
-   "hash": "386e30bd099d859c",
+   "hash": "f4a70993ba3d0053",
    "topic": "Port",
    "importance": 4,
    "weight": 56,
    "similar": 2,
-   "summary": "Modders created a two-player multiplayer mode for an unofficial GTA 6 PC port, letting players explore Vice City together.",
+   "summary": "Modders created a two-player mode for an unofficial PC port, letting players explore Vice City together.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-27-news.google.com-rockstar-games-shuts-down-an-unofficial-gta-5-port-for-phones-and-mobile-devices-while-mod": {
@@ -2362,23 +2372,23 @@
    "summary": null,
    "by": "Kilo Gateway, reflection/beam-free"
   },
+  "2026-11-26-rockstarintel.com-gta-vi-features-a-hidden-memorial-for-rockstar-developers-8217-late-family-members": {
+   "hash": "06adc7d05ca9db02",
+   "topic": "Official",
+   "importance": 3,
+   "weight": 30,
+   "similar": 1,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
   "2026-11-26-news.google.com-gta-vi-features-a-hidden-memorial-for-rockstar-developers-late-family-members": {
    "hash": "c759e39676c0cf17",
    "topic": "Game",
    "importance": 1,
    "weight": 0,
-   "similar": 1,
+   "lead": "2026-11-26-rockstarintel.com-gta-vi-features-a-hidden-memorial-for-rockstar-developers-8217-late-family-members",
    "summary": null,
    "by": "Pollinations, gpt-6-luna-classic"
-  },
-  "2026-11-26-rockstarintel.com-gta-vi-features-a-hidden-memorial-for-rockstar-developers-8217-late-family-members": {
-   "hash": "06adc7d05ca9db02",
-   "topic": "Official",
-   "importance": 3,
-   "weight": 14,
-   "lead": "2026-11-26-news.google.com-gta-vi-features-a-hidden-memorial-for-rockstar-developers-late-family-members",
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-26-news.google.com-gta-6-runs-on-pc-at-up-to-44-fps": {
    "hash": "e40e9ed17ddec612",
@@ -3460,31 +3470,43 @@
    "weight": 0,
    "summary": "GTA 6 dev says Rockstar’s new dynamic soundscape used for Vice City and convenience store fridges.",
    "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-26-bsky.app-el-port-no-oficial-de-gta-vi-para-pc-alcanza-los-30-fps-en-una-rtx-5070-ti-viretec-com-el-": {
-   "hash": "d9cf0a80e3140c21",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 26,
-   "summary": null,
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
-  "2026-11-26-news.google.com-is-gta-6-coming-to-pc": {
-   "hash": "b54cc45104577bc1",
-   "topic": "Official",
-   "importance": 2,
-   "weight": 12,
-   "summary": "An outlet asks whether GTA 6 is coming to PC.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
   }
  },
  "projects": {
   "xbox2windows": {
-   "hash": "cba2428156343a3d",
+   "hash": "5fbe9377afe45023",
    "count": 15,
-   "summary": "Xbox2Windows's recent commits and pull requests mention startup memory handling, binary16 conversion, buffer atomics, CPU instruction lifting, and PSO recovery.",
+   "summary": "Xbox2Windows's recent commits and pull requests mention shader buffer operations, startup memory checks, cache revision warnings, and tracking refused buffer memory.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T20:02:01.885Z"
+   "at": "2026-11-27T23:32:01.103Z"
+  },
+  "i95-gta6-pc-launcher": {
+   "hash": "aec9bc8909c6cb69",
+   "count": 15,
+   "summary": "i95-GTA6-PC-Launcher's recent commits mention launcher GUI behavior, preload progress, upstream updates, hardware filters, and runtime display.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T22:31:45.039Z"
+  },
+  "launcher": {
+   "hash": "5bd893758707264b",
+   "count": 15,
+   "summary": "VILauncher's recent commits and pull requests mention ScarlettPort backends, presets, preparing shaders, game-folder discovery, and save backups.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T22:31:45.039Z"
+  },
+  "whibwhi-own": {
+   "hash": "4f62399cdc25d316",
+   "count": 15,
+   "summary": "whibwhi-own's recent commits mention investigating stop and fault reports, Windows GameInput libraries, and documenting findings.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T23:01:52.880Z"
+  },
+  "tuxbox": {
+   "hash": "5b467bed9a3e9f4d",
+   "count": 15,
+   "summary": "TuxBox's recent commits and pull requests mention GPU instruction checks, shader translation fixes, memory access handling, and cache barriers.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T23:32:01.103Z"
   },
   "leonida-continued": {
    "hash": "e951d7ce74d13e97",
@@ -3500,41 +3522,6 @@
    "by": "Pollinations, gpt-6-luna-classic",
    "at": "2026-11-27T22:31:45.039Z"
   },
-  "launcher": {
-   "hash": "5bd893758707264b",
-   "count": 15,
-   "summary": "VILauncher's recent commits and pull requests mention ScarlettPort backends, presets, preparing shaders, game-folder discovery, and save backups.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T22:31:45.039Z"
-  },
-  "americaslauncher": {
-   "hash": "14b5c66bfee94acf",
-   "count": 15,
-   "summary": "AmericasLauncher's recent commits and pull requests mention DLSS flow, runner updates, benchmark options, and launcher interface changes.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T20:31:55.401Z"
-  },
-  "tuxbox": {
-   "hash": "e989fc68c27b1512",
-   "count": 15,
-   "summary": "TuxBox's recent commits and pull requests mention shader lane handling, snapshot scratch-page release, physical memory backing, and a README refresh.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T20:02:01.885Z"
-  },
-  "i95-gta6-pc-launcher": {
-   "hash": "aec9bc8909c6cb69",
-   "count": 15,
-   "summary": "i95-GTA6-PC-Launcher's recent commits mention launcher GUI behavior, preload progress, upstream updates, hardware filters, and runtime display.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T22:31:45.039Z"
-  },
-  "victory-nvidia-hybrid": {
-   "hash": "dc7ebc21a4c3da03",
-   "count": 15,
-   "summary": "VIctory-NVIDIA-Hybrid's recent commits and pull requests mention shader translation, launcher presets, frame-rate settings, release configuration, and GPU and title-shadow changes.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T22:02:03.900Z"
-  },
   "gtavi-recomp": {
    "hash": "658618cbb1511163",
    "count": 15,
@@ -3542,12 +3529,19 @@
    "by": "Pollinations, gpt-6-luna-classic",
    "at": "2026-11-27T23:01:52.880Z"
   },
-  "whibwhi-own": {
-   "hash": "4f62399cdc25d316",
+  "americaslauncher": {
+   "hash": "95332b52ca0687d1",
    "count": 15,
-   "summary": "whibwhi-own's recent commits mention investigating stop and fault reports, Windows GameInput libraries, and documenting findings.",
+   "summary": "AmericasLauncher's recent commits and pull requests mention Nvidia launch controls, runner updates, game folder selection, DLSS settings, and benchmark support.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T23:01:52.880Z"
+   "at": "2026-11-27T23:32:01.103Z"
+  },
+  "victory-nvidia": {
+   "hash": "288561b4fd78ebc0",
+   "count": 15,
+   "summary": "VIctory-NVIDIA's recent commits and pull requests mention launch and crash fixes, memory allocation, graphics features, controller support, and performance options.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T23:32:01.103Z"
   }
  }
 }
