@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T08:50:20.204Z",
+  "updated": "2026-11-27T09:05:25.400Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T08:31:10.000Z",
-      "lastOkAt": "2026-11-27T08:50:20.204Z",
-      "seen": 27000,
-      "events": 969,
+      "lastCursor": "2026-11-27T09:00:44.000Z",
+      "lastOkAt": "2026-11-27T09:05:25.400Z",
+      "seen": 27250,
+      "events": 983,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T06:03:44.000Z",
-      "lastOkAt": "2026-11-27T08:50:20.204Z",
+      "lastOkAt": "2026-11-27T09:05:25.400Z",
       "seen": 37,
       "events": 29,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T08:50:20.204Z",
-      "seen": 6522,
+      "lastOkAt": "2026-11-27T09:05:25.400Z",
+      "seen": 6584,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T08:17:03.000Z",
-      "lastOkAt": "2026-11-27T08:50:20.204Z",
-      "seen": 43200,
-      "events": 31,
+      "lastCursor": "2026-11-27T08:50:42.000Z",
+      "lastOkAt": "2026-11-27T09:05:25.400Z",
+      "seen": 43600,
+      "events": 32,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T08:50:20.204Z",
-      "seen": 12874,
+      "lastOkAt": "2026-11-27T09:05:25.400Z",
+      "seen": 12997,
       "events": 12,
       "errors": 0
     }
@@ -9401,12 +9401,17 @@
           "at": "2026-11-27T00:20:24.386Z",
           "by": "desk",
           "note": "The only stored source is the project’s own repository entry with no excerpt, so it is primary but not independent and too thin to verify the one-line claim."
+        },
+        {
+          "at": "2026-11-27T09:05:25.400Z",
+          "by": "desk",
+          "note": "The project’s own GitHub entry directly matches the one-line claim, and no stored source contradicts it."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T00:20:24.386Z"
+      "deskAt": "2026-11-27T09:05:25.400Z"
     },
     {
       "id": "20261126t235024z-victory-low-end-pc-1967b6da",
@@ -11832,6 +11837,64 @@
         "low confidence"
       ],
       "deskAt": "2026-11-27T07:05:41.825Z"
+    },
+    {
+      "id": "20261127t083000z-leonida-1e95e5ab",
+      "key": "claim|leonida|https://news.google.com/rss/articles/cbmihgfbvv95cuxnodbtdnf3vkwyuxzilu00cdkxmgjxetrtdlj0dzitnvqyv2tzujjon1zjd253m3drdxlhreh4n2l4du5tn0vja2xjaxnbagdlqvfyqwn6y0hhwfj5wfngcxzdm3vkdujib2m3ufdky0m0ams5se5pufjjb0tcwgy5v1dvytv2udibiwfbvv95cuxnvgxhmlyzvmxnb1fjnl9zmuf3zmktqmczq0xbz3jsbjjvberwewfpt2roefe3wnnmbmlrclj2wfhcu2pjzwdtbu1ytkl1zuznenfurkjkvvldzufydxzfz0oytjr1zv9yuzjxq1nks3huyxrrshjfrwvrqtg1beo0wupiu0vsr051mkg4?oc=5|41568",
+      "kind": "claim",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-27T08:30:00.000Z",
+      "detectedAt": "2026-11-27T09:05:25.400Z",
+      "title": "New claim about Leonida",
+      "oneLine": "Grand Theft Auto VI Modded Multiplayer Runs at 25 to 30 FPS on the Unofficial PC Port,…",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNODBtdnF3VkwyUXZILU00cDkxMGJXeTRtdlJ0dzItNVQyV2tzUjJON1ZJd253M3drdXlHREh4N2l4dU5tN0Vja2xjaXNBaGdLQVFYQWN6Y0hhWFJ5WFNGcXZDM3VKdUJib2M3UFdkY0M0ams5SE5pUFJJb0tCWGY5V1dvYTV2UdIBiwFBVV95cUxNVGxHMlYzVmxNb1FjNl9zMUF3ZmktQmczQ0xBZ3JsbjJvbERweWFpT2ROeFE3WnNMbmlrclJ2WFhCU2pjZWdtbU1YTkl1ZUZNenFuRkJKVVlDZUFYdXZfZ0oyTjR1ZV9yUzJxQ1NKS3huYXRrSHJfRWVRQTg1bEo0WUpiU0VSR051Mkg4?oc=5",
+          "host": "news.google.com",
+          "outlet": "Wccftech",
+          "title": "Grand Theft Auto VI Modded Multiplayer Runs at 25 to 30 FPS on the Unofficial PC Port, With Two Jason Duvals Sharing…",
+          "at": "2026-11-27T08:30:00.000Z",
+          "kind": "outside",
+          "authorHash": "978b1bcaed",
+          "excerpt": "Grand Theft Auto VI Modded Multiplayer Runs at 25 to 30 FPS on the Unofficial PC Port, With Two Jason Duvals Sharing the Same Leonida"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "1cc7f077ee5e43f4",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:c7fdf15290c2f3dd86bf5783354bf46c17b2f79eeb61485e1f5e88a51768e6b0",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T09:05:25.400Z",
+          "by": "desk",
+          "note": "A single outside report only repeats the headline performance claim without independent corroboration, so the item is too thin to publish."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-27T09:05:25.400Z"
     }
   ],
   "reports": [
