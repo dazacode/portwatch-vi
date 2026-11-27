@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T11:20:28.338Z",
+  "updated": "2026-11-27T11:35:25.186Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T11:01:32.000Z",
-      "lastOkAt": "2026-11-27T11:20:28.338Z",
-      "seen": 29500,
-      "events": 1033,
+      "lastCursor": "2026-11-27T11:31:22.000Z",
+      "lastOkAt": "2026-11-27T11:35:25.186Z",
+      "seen": 29750,
+      "events": 1052,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T09:21:22.000Z",
-      "lastOkAt": "2026-11-27T11:20:28.338Z",
+      "lastOkAt": "2026-11-27T11:35:25.186Z",
       "seen": 38,
       "events": 30,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-26T23:20:28.338Z",
-      "lastOkAt": "2026-11-27T11:20:28.338Z",
-      "seen": 7142,
+      "lastCursor": "2026-11-26T23:35:25.186Z",
+      "lastOkAt": "2026-11-27T11:35:25.186Z",
+      "seen": 7204,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T10:59:24.043Z",
-      "lastOkAt": "2026-11-27T11:20:28.338Z",
-      "seen": 47200,
+      "lastCursor": "2026-11-27T11:30:07.643Z",
+      "lastOkAt": "2026-11-27T11:35:25.186Z",
+      "seen": 47600,
       "events": 36,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T11:20:28.338Z",
-      "seen": 14104,
+      "lastOkAt": "2026-11-27T11:35:25.186Z",
+      "seen": 14227,
       "events": 12,
       "errors": 0
     }
@@ -12415,6 +12415,120 @@
       "heldReasons": [
         "low confidence"
       ]
+    },
+    {
+      "id": "20261127t111816z-gabegta6-2e2d0275",
+      "key": "update|gabegta6|activity|41568",
+      "kind": "update",
+      "projectId": "gabegta6",
+      "projectName": "GabeGTA6",
+      "at": "2026-11-27T11:18:16Z",
+      "detectedAt": "2026-11-27T11:35:25.186Z",
+      "title": "GabeGTA6 opened pull request #1",
+      "oneLine": "Novidades do Belobug/VIctory-Belobug-AMD (a-publier, 27/11) e -Kbm no play-1060",
+      "sources": [
+        {
+          "url": "https://github.com/GabrieelDuart/GabeGTA6/pull/1",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Novidades do Belobug/VIctory-Belobug-AMD (a-publier, 27/11) e -Kbm no play-1060",
+          "at": "2026-11-27T11:18:16Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "gabrieelduart/gabegta6",
+        "name": "gabegta6",
+        "words": [
+          "gabegta6"
+        ],
+        "hash": "110cc9603e7090ce",
+        "projectId": "gabegta6"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:dcff48e860a130c380d9d7c1b816189e4799c97c52f9d1daed4e072482741272",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T11:35:25.186Z",
+          "by": "desk",
+          "note": "A single cryptic pull-request title from the project's own repository is a thin, self-referential signal that does not plainly establish any GTA VI on PC development."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T11:35:25.186Z"
+    },
+    {
+      "id": "20261127t110641z-tequesta-437e44ca",
+      "key": "update|tequesta|activity|41568",
+      "kind": "update",
+      "projectId": "tequesta",
+      "projectName": "Tequesta",
+      "at": "2026-11-27T11:06:41Z",
+      "detectedAt": "2026-11-27T11:35:25.186Z",
+      "title": "Tequesta pushed 1 commit",
+      "oneLine": "Revise frame rate and add gameplay capture information",
+      "sources": [
+        {
+          "url": "https://github.com/0v3rr/Tequesta/commit/5b04aa0341de9f922f4434d93b3d60747a749392",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Revise frame rate and add gameplay capture information",
+          "at": "2026-11-27T11:06:41Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "0v3rr/tequesta",
+        "name": "tequesta",
+        "words": [
+          "tequesta"
+        ],
+        "hash": "868f6ec349a2a4d1",
+        "projectId": "tequesta"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:7f4d3e814d03a45e8e2112fbbb047440ed0289093229c3a109f1b3e4f5c31480",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T11:35:25.186Z",
+          "by": "desk",
+          "note": "The only support is an empty-excerpt commit title from the project's own repository, which is primary but not independent and too thin to stand behind the one line."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T11:35:25.186Z"
     }
   ],
   "reports": [
