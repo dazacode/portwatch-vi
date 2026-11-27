@@ -1,6 +1,20 @@
 {
-  "lastRun": "2026-11-27T13:40:30.289Z",
+  "lastRun": "2026-11-27T14:42:17.545Z",
   "runs": [
+    {
+      "at": "2026-11-27T14:42:17.545Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [
+        "candidate Androtim/MiniVI",
+        "candidate mrbabayeen-Linux/mandy6"
+      ],
+      "skipped": [
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world”",
+        "held: candidate hello3928/Project-VI: has markup",
+        "finding leonida: project already has 12 findings"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-27T13:40:30.289Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -474,22 +488,6 @@
       "skipped": [
         "held: finding leonida: already said",
         "held: score anyxboxx gta.fps=30: proposed, from “launches on PC: boot, profile screen, first-run settings, legal screens, loading, pause menu. Menus run at 30 fps.”"
-      ],
-      "note": null
-    },
-    {
-      "at": "2026-11-25T17:37:20.964Z",
-      "by": "Pollinations, gpt-oss-20b",
-      "applied": [
-        "finding leonida",
-        "candidate xcl-dev/xcl",
-        "candidate valouddsite/Xboxx",
-        "candidate grzegorz2047/TrinityXSX",
-        "candidate RickyDivjakovski/Revenge",
-        "candidate Wertrex/Americas"
-      ],
-      "skipped": [
-        "held: score anyxboxx gta.loads=1 gta.boots=1 gta.menu=1 gta.world=1 gta.playable=1: proposed, from “The Xbox Series 1.0.2.1 build of GTA VI **launches** on PC: boot, profile screen, first-run settings, legal screens, loa”"
       ],
       "note": null
     }

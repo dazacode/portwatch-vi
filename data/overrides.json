@@ -3755,6 +3755,44 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "Bifurcación de pruebas con cambios locales (catálogo nativo + parches de la máquina)."
+        ],
+        "highlights": [
+          "Leonida is a static recompilation project.",
+          "The Xbox Series CPU is x86-64 like a PC."
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-27",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "mandy6",
+        "summary": "Grand Theft Auto VI (Xbox Series) running natively on Windows, built on your PC from your own copy.",
+        "basedOn": [],
+        "id": "mandy6",
+        "repo": "mrbabayeen-Linux/mandy6",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-27T11:18:29Z",
+          "pushedAt": "2026-11-27T11:41:08Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -3763,6 +3801,11 @@
     "reason": "Owner's call: its code went public on 26 Nov, at 25 fps reported on NVIDIA."
   },
   "ignored": [
+    {
+      "repo": "Androtim/MiniVI",
+      "reason": "The README describes an Xbox Series compatibility layer, not its own effort running GTA VI on PC.",
+      "seenAt": "2026-11-27"
+    },
     {
       "repo": "Tricky1008/13-years-later",
       "reason": "README describes a specific Xbox Series title but does not identify it as GTA VI.",
@@ -4027,7 +4070,9 @@
     "all3n1k/VIctory-RTX3090",
     "Bebrik229/VIctory-NVIDIA-Hybrid",
     "Tricky1008/13-years-later",
-    "itkomarov/dirtemu"
+    "itkomarov/dirtemu",
+    "Androtim/MiniVI",
+    "mrbabayeen-Linux/mandy6"
   ],
   "news": [
     {
