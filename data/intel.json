@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T08:20:20.492Z",
+  "updated": "2026-11-27T08:35:20.530Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T08:00:52.000Z",
-      "lastOkAt": "2026-11-27T08:20:20.492Z",
-      "seen": 26500,
-      "events": 952,
+      "lastCursor": "2026-11-27T08:31:10.000Z",
+      "lastOkAt": "2026-11-27T08:35:20.530Z",
+      "seen": 26750,
+      "events": 969,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T06:03:44.000Z",
-      "lastOkAt": "2026-11-27T08:20:20.492Z",
+      "lastOkAt": "2026-11-27T08:35:20.530Z",
       "seen": 37,
       "events": 29,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T08:20:20.492Z",
-      "seen": 6398,
+      "lastOkAt": "2026-11-27T08:35:20.530Z",
+      "seen": 6460,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T07:58:01.942Z",
-      "lastOkAt": "2026-11-27T08:20:20.492Z",
-      "seen": 42400,
+      "lastCursor": "2026-11-27T08:17:03.000Z",
+      "lastOkAt": "2026-11-27T08:35:20.530Z",
+      "seen": 42800,
       "events": 31,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T08:20:20.492Z",
-      "seen": 12628,
+      "lastOkAt": "2026-11-27T08:35:20.530Z",
+      "seen": 12751,
       "events": 12,
       "errors": 0
     }
@@ -10034,12 +10034,17 @@
           "at": "2026-11-27T01:50:20.266Z",
           "by": "desk",
           "note": "The only source is the project’s own GitHub repository with an empty excerpt, so it is primary but not independent and does not plainly substantiate the one-line claim."
+        },
+        {
+          "at": "2026-11-27T08:35:20.530Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the claim is self-reported and unverified by any independent source."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T01:50:20.266Z"
+      "deskAt": "2026-11-27T08:35:20.530Z"
     },
     {
       "id": "20261127t002832z-decant-7fb81c72",
@@ -10091,12 +10096,17 @@
           "at": "2026-11-27T01:50:20.266Z",
           "by": "desk",
           "note": "The only source is the project's own repository with an empty excerpt, so it is primary but not independent and too thin to confirm the commit line."
+        },
+        {
+          "at": "2026-11-27T08:35:20.530Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository entry with an empty excerpt, so the commit line is self-asserted and not independently corroborated."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T01:50:20.266Z"
+      "deskAt": "2026-11-27T08:35:20.530Z"
     },
     {
       "id": "20261127t002546z-playablegames-peppa-72c00c2c",
