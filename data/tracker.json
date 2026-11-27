@@ -856,10 +856,10 @@
       ],
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "An NVIDIA fork of VIctory, now on readmet3xt-lab's foxhound, with DLSS, frame generation and an in-game settings menu. The owner rates it about as playable as the leaders: 20 fps, no crashes, some stutter, no ray tracing by default.",
+      "summary": "An NVIDIA fork of VIctory on readmet3xt-lab's foxhound, with DLSS, frame generation and an in-game settings menu. PortWatch has verified it: about as playable as the leaders, at 20 fps without frame generation and without crashes.",
       "highlights": [
         "Platform in its README: GeForce RTX 5070 12 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
-        "About 20 fps without crashes (owner's rating); its README measures 26-30 fps in the opening at 1440p with DLSS",
+        "20 fps without frame generation, no crashes, verified by PortWatch. README: 26-30 fps in the opening",
         "DLSS upscaling and frame generation, 2x to 6x on RTX 50 cards, switched from an in-game F1 menu"
       ],
       "blockers": [
@@ -875,7 +875,7 @@
         "world": 1,
         "playable": 1,
         "story": 0.8,
-        "render": 0.7,
+        "render": 0.75,
         "fps": 20,
         "stability": 1
       },
@@ -884,7 +884,7 @@
         "victory-gta6",
         "avatarmanz"
       ],
-      "verification": "self-reported",
+      "verification": "portwatch",
       "stats": {
         "stars": 560,
         "forks": 180,
@@ -8676,7 +8676,7 @@
     {
       "date": "2026-11-27",
       "kind": "new",
-      "text": "VIctory-NVIDIA joins the race at #2 with 89.4%: trustno1-coder's NVIDIA fork of VIctory on foxhound, with DLSS and frame generation, rated about as playable as the leaders at 20 fps without crashes. AvatarManz (81.8%) is now #3."
+      "text": "VIctory-NVIDIA joins the race at #2 with 90%, trustno1-coder's NVIDIA fork of VIctory on foxhound, with DLSS and frame generation. It's rated about as playable as the leaders, at 20 fps without frame generation and without crashes. AvatarManz (81.8%) is now #3."
     }
   ],
   "history": [
