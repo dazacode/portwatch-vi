@@ -16,6 +16,34 @@
   },
   "news": [
     {
+      "id": "2026-11-27-belobug-dmca",
+      "date": "2026-11-27",
+      "publishedAt": "2026-11-27T18:33:11Z",
+      "category": "Takedown",
+      "title": "Exclusive: GitHub removes Belobug's GTA VI build over its Terms of Service",
+      "dek": "The repository and GitHub account behind the best-rated build on our board are gone. PortWatch has confirmed that GitHub removed them for violating its Terms of Service.",
+      "body": [
+        "Belobug's GTA VI build has been taken off GitHub. The Belobug/VIctory-Belobug-AMD repository and the Belobug account behind it both stopped loading on Friday, and PortWatch has confirmed that GitHub removed them for violating its Terms of Service.",
+        "It was the build to beat: a fork of Marvis's VIctory for AMD Radeon cards, very playable at about 22 fps on average with no crashes, and among the furthest into the story on our board. It had over 4,000 stars and 1,200 forks, and at 91.3% it was the top-rated build we track.",
+        "GitHub hasn't said publicly which of its rules the build broke. Unlike DMCA notices, which it posts in a public log, removals under its Terms of Service aren't published. We'll update this article if we learn more.",
+        "Belobug's card on our board is now marked as nuked and no longer ranked, so VIctory-NVIDIA, at 90%, leads the race. The progress it made still counts: our overall number stays at 91.3%. Don't go looking for copies of Belobug's code: forks of a removed repository can go too, and unofficial downloads often carry malware."
+      ],
+      "sources": [
+        {
+          "outlet": "GitHub",
+          "title": "GitHub Terms of Service",
+          "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service"
+        },
+        {
+          "outlet": "PortWatch",
+          "title": "We've seen Belobug's AMD build, and it's way ahead",
+          "url": "https://portwatch-vi.xyz/news/2026-11-25-belobug-way-ahead.html"
+        }
+      ],
+      "image": null,
+      "by": "report"
+    },
+    {
       "id": "2026-11-26-multiplayer-running",
       "date": "2026-11-26",
       "publishedAt": "2026-11-26T22:42:00Z",
@@ -55,7 +83,8 @@
         "It went straight to #1 on our board at 77.4%, more than 13 points clear of ZETTROX's 64.2%, which led until this morning. Its rendering is rated 0.85 on our scale, the highest we've given any build, and its story progress 0.5 (\"First act\"). The next best picture, suri's private build, is at 0.8; ZETTROX's, which draws anything in shadow black, is at 0.3.",
         "It's built for AMD Radeon, while ZETTROX's, the previous leader, is tuned for NVIDIA. Belobug runs it on a Radeon RX 9070 XT 16 GB with a Ryzen 7 9800X3D, 64 GB of RAM and Windows 11. It's a fork of Marvis's VIctory, following its main branch plus upstream pull requests, and its README says no code from hyphennn's victory-fork is in it. Belobug's own fixes include a stand-in for the game's ray-traced indirect light, which left leaves magenta and indoor scenes in coloured blocks, a fix for lines along every triangle on car paint, glass and skin, and a change that cut the GPU time of one heavy scene from 225 to about 80 milliseconds a frame.",
         "It isn't fast. The README puts it at 3 to 5 frames per second, about 3 while driving, and still calls it \"not playable yet\" for that reason. Parts of moving vehicles get left behind or stretched, distant trees aren't drawn, shade is flat, and it needs about 22 GB of RAM and more video memory than a 16 GB card has. It has run on one PC so far; nobody has tried it on NVIDIA or Intel.",
-        "The code is public, as Belobug/VIctory-Belobug-AMD, under VIctory's GPL-3.0 licence, so others with AMD cards can try it. It contains no game files: you need your own copy of the game."
+        "The code is public, as Belobug/VIctory-Belobug-AMD, under VIctory's GPL-3.0 licence, so others with AMD cards can try it. It contains no game files: you need your own copy of the game.",
+        "Update, 2026-11-27: GitHub removed Belobug's repository and account for violating its Terms of Service, which PortWatch has confirmed. Its card on our board is now marked as nuked."
       ],
       "sources": [
         {
@@ -904,8 +933,22 @@
     {
       "id": "belobug",
       "name": "Belobug",
-      "repo": "Belobug/VIctory-Belobug-AMD",
-      "branch": "main",
+      "repo": null,
+      "nuked": {
+        "at": "2026-11-27",
+        "note": "Repository and GitHub account removed by GitHub on Nov 27 for a Terms of Service violation, confirmed by PortWatch. Its progress still counts in our overall number.",
+        "show": true,
+        "keepScore": true
+      },
+      "basedOn": [
+        "marvis"
+      ],
+      "evidence": "Verified by PortWatch",
+      "related": [
+        "Belobug/VIctory-Belobug-AMD"
+      ],
+      "link": "news/2026-11-27-belobug-dmca.html",
+      "byline": "Removed by GitHub · was public, based on VIctory",
       "proof": {
         "label": "Belo Top Dawg",
         "url": "https://www.reddit.com/r/FitGirlRepack/comments/1y67xnd/belo_top_dawg/"
@@ -916,7 +959,7 @@
       ],
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "Belobug's VIctory fork runs on AMD Radeon and is now very playable: about 22 fps on average with no crashes, using about 30 GB of RAM and 12 GB of video memory. Its lit open world plays through missions, with story progress rated 80%, level with CGBJ, and its picture is rated just below DexNom's. Its README hasn't caught up yet: it still reports 5-7 fps.",
+      "summary": "Belobug's VIctory fork for AMD Radeon is very playable: about 22 fps on average with no crashes, and story progress rated 80%. Its code and GitHub account were removed by GitHub on 27 Nov for a Terms of Service violation, which PortWatch has confirmed.",
       "highlights": [
         "Platform: AMD Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
         "Very playable: about 22 fps on average and no crashes, using about 30 GB of RAM and 12 GB of video memory",
@@ -926,8 +969,8 @@
         "Built on VIctory's main and upstream pull requests"
       ],
       "blockers": [
-        "Its README still reports 5-7 fps, calls the build \"not playable yet\" and lists more video memory than a 16 GB card has",
-        "Ray tracing is reported working on AMD; the README says enabling its ray-tracing path still ends in device removal",
+        "Code and GitHub account removed by GitHub on 27 Nov for a Terms of Service violation; nobody outside can test it",
+        "Its last public README reported 5-7 fps and called the build \"not playable yet\"",
         "Tested on one AMD PC only; nothing on NVIDIA or Intel yet"
       ],
       "provenOn": null,
@@ -943,21 +986,10 @@
         "stability": 1
       },
       "verification": "portwatch",
-      "stats": {
-        "stars": 4112,
-        "forks": 1237,
-        "openIssues": 524,
-        "createdAt": "2026-11-25T09:41:37Z",
-        "pushedAt": "2026-11-26T22:30:21Z",
-        "archived": false,
-        "missing": false,
-        "commits7d": 100
-      },
-      "assessedAt": "2026-11-26",
+      "stats": {},
+      "assessedAt": "2026-11-27",
       "assessedBy": "manual",
-      "claims": [],
-      "readmeSha": "82c3bd370e2c12dcc8f0582ea80535348dd6a5a7c5fdeda09de348437f1a9af7",
-      "readmeChangedAt": "2026-11-25"
+      "claims": []
     },
     {
       "id": "dexnom",
@@ -8718,6 +8750,11 @@
       "date": "2026-11-27",
       "kind": "new",
       "text": "Scout spotted Slaktarn700/SlaktarnVI (possible effort, substance 60)."
+    },
+    {
+      "date": "2026-11-27",
+      "kind": "down",
+      "text": "GitHub removed Belobug's repository and account for violating its Terms of Service, which PortWatch has confirmed. Its card is marked as nuked and no longer ranked, so VIctory-NVIDIA (90%) leads the race; Belobug's progress still counts, and our overall number stays at 91.3%."
     }
   ],
   "history": [
