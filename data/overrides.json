@@ -3798,6 +3798,154 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "This repository contains no game files, executables, shaders, or proprietary assets."
+        ],
+        "highlights": [
+          "native 4K",
+          "mid-range AMD RDNA2 hardware with 16 GB system RAM"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-27",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "VIctory-AMD-4K",
+        "summary": "A community GDK compatibility layer and RDNA2 shader recompiler fork focused on native 4K execution on AMD RDNA2 hardware.",
+        "basedOn": [],
+        "id": "victory-amd-4k",
+        "repo": "elaboratecl/VIctory-AMD-4K",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-26T21:55:53Z",
+          "pushedAt": "2026-11-27T15:23:05Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [
+          "The Xbox Series CPU is x86-64 like a PC",
+          "precompiled RDNA2 GPU programs are translated to SPIR-V for Vulkan"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-27",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Pink",
+        "summary": "Leonida Continued Grand Theft Auto VI (Xbox Series) running natively on Windows, built on your PC from your own copy.",
+        "basedOn": [],
+        "id": "pink",
+        "repo": "Kalpajit0406/Pink",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-26T20:30:19Z",
+          "pushedAt": "2026-11-27T16:13:12Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "there is no game content in this repository: you bring your own copy"
+        ],
+        "highlights": [
+          "The game's own x86-64 code runs natively on your processor",
+          "Direct3D 12.X commands and RDNA 2 shaders are translated for the PC"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-27",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "El1xr",
+        "summary": "El1xr runs the Xbox Series version of Grand Theft Auto VI (build 1.0.2.1) on a Windows PC.",
+        "basedOn": [],
+        "id": "el1xr",
+        "repo": "kylepelham/El1xr",
+        "stats": {
+          "stars": 2,
+          "createdAt": "2026-11-27T14:39:35Z",
+          "pushedAt": "2026-11-27T19:11:23Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [
+          "benchmark-tested",
+          "regression-tested Windows runtime"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-27",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "VIctory-Hydra",
+        "summary": "Unified multi-fork Direct3D 12 runtime, shader recompiler and performance branch of VIctory.",
+        "basedOn": [],
+        "id": "victory-hydra",
+        "repo": "ToLIManl/VIctory-Hydra",
+        "stats": {
+          "stars": 23,
+          "createdAt": "2026-11-27T12:19:26Z",
+          "pushedAt": "2026-11-27T15:34:23Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -3806,6 +3954,11 @@
     "reason": "Owner's call: its code went public on 26 Nov, at 25 fps reported on NVIDIA."
   },
   "ignored": [
+    {
+      "repo": "Coolaid003/XSEmu",
+      "reason": "README describes a general Xbox Series compatibility layer, not its own GTA VI effort.",
+      "seenAt": "2026-11-27"
+    },
     {
       "repo": "Androtim/MiniVI",
       "reason": "The README describes an Xbox Series compatibility layer, not its own effort running GTA VI on PC.",
@@ -4077,7 +4230,12 @@
     "Tricky1008/13-years-later",
     "itkomarov/dirtemu",
     "Androtim/MiniVI",
-    "mrbabayeen-Linux/mandy6"
+    "mrbabayeen-Linux/mandy6",
+    "elaboratecl/VIctory-AMD-4K",
+    "Kalpajit0406/Pink",
+    "Coolaid003/XSEmu",
+    "kylepelham/El1xr",
+    "ToLIManl/VIctory-Hydra"
   ],
   "news": [
     {

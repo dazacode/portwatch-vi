@@ -1,6 +1,23 @@
 {
-  "lastRun": "2026-11-27T16:41:15.400Z",
+  "lastRun": "2026-11-27T19:42:43.630Z",
   "runs": [
+    {
+      "at": "2026-11-27T19:42:43.630Z",
+      "by": "Pollinations, gpt-6-luna-classic; Kilo Gateway, particle-ai/particle-1:free",
+      "applied": [
+        "candidate elaboratecl/VIctory-AMD-4K",
+        "candidate Kalpajit0406/Pink",
+        "candidate Coolaid003/XSEmu",
+        "candidate kylepelham/El1xr",
+        "candidate ToLIManl/VIctory-Hydra"
+      ],
+      "skipped": [
+        "held: finding marvis: lure word",
+        "held: candidate hello3928/Project-VI: has markup",
+        "finding leonida: project already has 12 findings"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-27T16:41:15.400Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -474,13 +491,6 @@
       "applied": [],
       "skipped": [],
       "note": "quiet"
-    },
-    {
-      "at": "2026-11-25T20:35:22.675Z",
-      "by": null,
-      "applied": [],
-      "skipped": [],
-      "note": "nothing to ask"
     }
   ]
 }
