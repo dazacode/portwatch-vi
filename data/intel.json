@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T09:05:25.400Z",
+  "updated": "2026-11-27T09:20:24.432Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T09:00:44.000Z",
-      "lastOkAt": "2026-11-27T09:05:25.400Z",
-      "seen": 27250,
+      "lastOkAt": "2026-11-27T09:20:24.432Z",
+      "seen": 27500,
       "events": 983,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T06:03:44.000Z",
-      "lastOkAt": "2026-11-27T09:05:25.400Z",
+      "lastOkAt": "2026-11-27T09:20:24.432Z",
       "seen": 37,
       "events": 29,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T09:05:25.400Z",
-      "seen": 6584,
+      "lastOkAt": "2026-11-27T09:20:24.432Z",
+      "seen": 6646,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T08:50:42.000Z",
-      "lastOkAt": "2026-11-27T09:05:25.400Z",
-      "seen": 43600,
+      "lastOkAt": "2026-11-27T09:20:24.432Z",
+      "seen": 44000,
       "events": 32,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T09:05:25.400Z",
-      "seen": 12997,
+      "lastOkAt": "2026-11-27T09:20:24.432Z",
+      "seen": 13120,
       "events": 12,
       "errors": 0
     }
@@ -10772,12 +10772,17 @@
           "at": "2026-11-27T03:06:35.808Z",
           "by": "desk",
           "note": "The only stored source is TuxBox’s own repository, which is primary but not independent, and the item merely repeats a hedged README claim without corroboration."
+        },
+        {
+          "at": "2026-11-27T09:20:24.432Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository and the item is hedged as a possible README claim, so it is too thin and non-independent to publish."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T03:06:35.808Z"
+      "deskAt": "2026-11-27T09:20:24.432Z"
     },
     {
       "id": "20261127t000000z-neptune-dolberth-nvidia-8gb-68a65ca7",
@@ -10830,12 +10835,17 @@
           "at": "2026-11-27T03:06:35.808Z",
           "by": "desk",
           "note": "The only stored source is the project’s own repository repeating a vague scout note, so the item is thin and not independently supported."
+        },
+        {
+          "at": "2026-11-27T09:20:24.432Z",
+          "by": "desk",
+          "note": "The only source is the project’s own repository and merely repeats scout metadata without independent or substantive confirmation."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T03:06:35.808Z"
+      "deskAt": "2026-11-27T09:20:24.432Z"
     },
     {
       "id": "20261127t000000z-americaslauncher-25587d6e",
