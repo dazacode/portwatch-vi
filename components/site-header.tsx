@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { HeaderShell } from "@/components/header-shell"
 import { HolidayToggle } from "@/components/holiday/toggle"
+import { LanguagePicker } from "@/components/language-picker"
 import { NavLink } from "@/components/nav-link"
 import { ShareButton } from "@/components/share/share-button"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -32,6 +33,7 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="ml-auto flex items-center">
+          <LanguagePicker />
           <ShareButton />
           <HolidayToggle />
           <ThemeToggle />

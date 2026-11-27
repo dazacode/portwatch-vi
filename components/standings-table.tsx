@@ -47,7 +47,7 @@ export function StandingsTable({
                 href={`/projects/${s.id}`}
                 className="font-medium underline-offset-4 hover:underline"
               >
-                {s.name}
+                <span translate="no">{s.name}</span>
               </Link>
               <span className="block text-xs text-muted-foreground sm:hidden">{s.stage}</span>
               <span className="block text-xs text-muted-foreground">{status(s)}</span>

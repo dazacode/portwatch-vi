@@ -267,6 +267,28 @@ html {
   scroll-padding-top: calc(8.5rem + var(--promo-h));
 }
 
+/* Google Translate: our own picker stands in for its bar, and the page stays where it was. */
+body > .skiptranslate,
+iframe.skiptranslate,
+.goog-te-banner-frame,
+#goog-gt-tt,
+.goog-te-balloon-frame,
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q,
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
+
 /* On a phone the home page is swiped: countdown, updates, then the rest of the site. */
 html.feed {
   scroll-padding-top: var(--promo-h);

@@ -140,7 +140,7 @@ export default async function Page({ params }: Props) {
             <dd>
               {item.projectId ? (
                 <Link href={`/projects/${item.projectId}`} className="underline underline-offset-4">
-                  {item.projectName}
+                  <span translate="no">{item.projectName}</span>
                 </Link>
               ) : (
                 item.projectName

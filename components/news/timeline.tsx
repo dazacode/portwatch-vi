@@ -58,10 +58,10 @@ function Row({ e }: { e: Entry }) {
             <span aria-hidden="true">·</span>
             {e.projectId ? (
               <Link href={`/projects/${e.projectId}`} className={link}>
-                {e.projectName}
+                <span translate="no">{e.projectName}</span>
               </Link>
             ) : (
-              <span>{e.projectName}</span>
+              <span translate="no">{e.projectName}</span>
             )}
           </>
         )}

@@ -26,7 +26,7 @@ export function ProjectRow({ project: p, strong = false }: { project: Project; s
           href={`/projects/${p.id}`}
           className={cn("font-medium underline-offset-4 hover:underline", strong && "text-base/5")}
         >
-          {p.name}
+          <span translate="no">{p.name}</span>
         </Link>
         {p.tier === "watchlist" && (
           <span className="ml-2 text-xs text-muted-foreground">Watchlist</span>

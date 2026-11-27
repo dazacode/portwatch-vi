@@ -125,7 +125,7 @@ function Body({ slide, at, onHold }: { slide: Slide; at: string; onHold?: Hold }
               <li key={r.id} data-rise>
                 <div className="flex flex-wrap items-baseline justify-between gap-x-4 text-lg font-bold sm:text-2xl">
                   <span className="min-w-0 flex-1 truncate">
-                    {i + 1}. {r.name}
+                    {i + 1}. <span translate="no">{r.name}</span>
                   </span>
                   <Roll from={0} to={r.rating} suffix="%" />
                   <span className="text-sm font-medium text-white/85 max-sm:basis-full sm:text-lg">

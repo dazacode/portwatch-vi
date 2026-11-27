@@ -66,7 +66,9 @@ export function Stage({
       </div>
       <div className="flex flex-wrap items-center gap-x-6 gap-y-3 px-4 py-3 sm:px-8">
         <div className="min-w-0 flex-1 basis-72">
-          <p className="font-semibold">{stream.name}</p>
+          <p className="font-semibold">
+            <span translate="no">{stream.name}</span>
+          </p>
           <p className="text-sm text-white/75">
             {facts.join(", ")}
             {stream.embed && (

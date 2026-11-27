@@ -22,9 +22,11 @@ export function PromoBanner() {
             New
           </span>
           <span className="min-w-0 truncate">
-            <strong className="font-semibold">{PROMO.name}</strong>
+            <strong translate="no" className="font-semibold">
+              {PROMO.name}:
+            </strong>{" "}
             <span className="opacity-80">
-              : <span className="sm:hidden">{PROMO.short}</span>
+              <span className="sm:hidden">{PROMO.short}</span>
               <span className="max-sm:hidden">{PROMO.pitch}</span>
             </span>
           </span>
