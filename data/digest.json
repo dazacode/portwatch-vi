@@ -1,25 +1,37 @@
 {
  "version": 1,
- "updated": "2026-11-27T02:02:10.641Z",
+ "updated": "2026-11-27T02:31:57.222Z",
  "now": {
-  "hash": "f32951b6041b17d3",
-  "at": "2026-11-27T01:31:41.764Z",
+  "hash": "07cc812a18aab18a",
+  "at": "2026-11-27T02:31:57.222Z",
   "by": "Pollinations, gpt-6-luna-classic",
   "points": [
    {
-    "text": "Tom's Hardware reports that Take-Two removed 3,007 GTA 6 PC-port repositories from GitHub in a DMCA crackdown.",
+    "text": "Tom's Hardware reports that Take-Two removed 3,007 GTA VI PC-port repositories from GitHub in a DMCA crackdown.",
     "sources": [
      "story:2026-11-26-news.google.com-take-two-wipes-out-3-007-gta-6-pc-port-repos-from-github-in-massive-dmca-crackdown-as-ai-t"
     ]
    },
    {
-    "text": "The tracker records Kelvaroq claiming Runnable, up from Groundwork.",
+    "text": "The linked article reports that one repository and build vanished from the board, with no DMCA notice published.",
+    "sources": [
+     "article:2026-11-26-zettrox-omonkey-gone"
+    ]
+   },
+   {
+    "text": "The linked article says private builds reach Jason's first mission, though most render badly and vehicles rarely work.",
+    "sources": [
+     "article:2026-11-25-prologue-gone-fishing"
+    ]
+   },
+   {
+    "text": "The tracker records Kelvaroq claiming the Runnable stage, up from Groundwork.",
     "sources": [
      "project:kelvaroq"
     ]
    },
    {
-    "text": "The tracker records WASDeKeys low-end joining the board with a Runnable claim.",
+    "text": "The tracker records WASDeKeys low-end joining the board and claiming the Runnable stage.",
     "sources": [
      "project:victory-low-end-pc"
     ]
@@ -94,56 +106,64 @@
   ]
  },
  "notes": {
-  "commit:5da1cfc": {
-   "hash": "f797ff6c552397c6",
-   "text": "Native-Victory-macOS's commit says it merges a fix for a shader jump overwriting an address.",
+  "commit:0b249f9": {
+   "hash": "40a20dbdb046074a",
+   "text": "The commit says it merges the main branch into a fix for a Metal test race.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T02:02:10.641Z"
+   "at": "2026-11-27T02:31:57.222Z"
   },
-  "commit:f35bd63": {
-   "hash": "94d9a595ee980ac6",
-   "text": "Native-Victory-macOS's commit says it merges a fix for failed page pool mapping cleanup.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T02:02:10.641Z"
-  },
-  "commit:a6a385f": {
-   "hash": "3c6f323e2e35b6e6",
-   "text": "i95-GTA6-PC-Launcher's commit says the picker remembers each runtime's preset and adds four presets for the top ten runtimes.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T02:02:10.641Z"
-  },
-  "commit:b78c821": {
-   "hash": "3653169052441560",
-   "text": "whibwhi-own's commit says rectangle and quad pipelines were treated as triangle pipelines, and the next stop is the audio device.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T02:02:10.641Z"
-  },
-  "commit:4b09dff": {
-   "hash": "c6077d9935c8e9a4",
-   "text": "whibwhi-own's commit says it updates the attribution document.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T02:02:10.641Z"
-  },
-  "commit:406340e": {
-   "hash": "1fcb35f3615bb38a",
-   "text": "i95-GTA6-PC-Launcher's commit says it removes an outdated in-repository copy so it can fetch a pinned version.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T02:02:10.641Z"
-  },
-  "commit:f48ce02": {
-   "hash": "c11d627b9ef812e7",
+  "commit:decf784": {
+   "hash": "77c2d694dd9e315a",
    "text": null,
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T02:02:10.641Z"
+   "at": "2026-11-27T02:31:57.222Z"
   },
-  "commit:393f450": {
-   "hash": "0c73745cbec36e1f",
-   "text": "Xin-Leonida's documentation says the status is unchanged and UAC remains a blocker.",
+  "commit:1bdd522": {
+   "hash": "bc6e483d49b0e80b",
+   "text": "The commit says it adds three entries from the race tracker and includes a claim of about 11 frames per second.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T02:02:10.641Z"
+   "at": "2026-11-27T02:31:57.222Z"
+  },
+  "commit:6f38b39": {
+   "hash": "fcd5e495bb003aea",
+   "text": "The commit says session 19 documentation covers crash-related global variables.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T02:31:57.222Z"
+  },
+  "commit:e868d78": {
+   "hash": "2b627e4cd64e8461",
+   "text": "The commit says it merges a specified main revision into a fix for a Metal test race.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T02:31:57.222Z"
+  },
+  "commit:78db034": {
+   "hash": "0dda5c52c097a1e7",
+   "text": "The commit says sound-device commands start, stop, and set up the device.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T02:31:57.222Z"
+  },
+  "commit:64f20f0": {
+   "hash": "e5148a259d82faec",
+   "text": "The commit says session 18 documentation analyzes a crash site.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T02:31:57.222Z"
+  },
+  "commit:4ec33d9": {
+   "hash": "8d241b9274073fb7",
+   "text": "The commit says it updates two projects to the latest upstream version, including the readme and a test-only switch.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T02:31:57.222Z"
   }
  },
  "stories": {
+  "2026-11-27-bsky.app-i-wonder-if-gta-6-is-what-will-get-ai-to-be-more-regulated-the-amount-of-progress-on-getti": {
+   "hash": "553e5154259e503d",
+   "topic": "Community",
+   "importance": 1,
+   "weight": 0,
+   "summary": null,
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
   "2026-11-27-bsky.app-claude-generate-me-gta-6-pc-port-make-no-mistakes": {
    "hash": "d40ddd8be59651e7",
    "topic": "Community",
@@ -502,20 +522,20 @@
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
-  "2026-11-26-news.google.com-rockstar-developer-explains-how-players-should-experience-gta-vi": {
-   "hash": "027e15fefad302c0",
-   "topic": "Official",
-   "importance": 3,
-   "weight": 24,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
+  "2026-11-26-rockstarintel.com-rockstar-developer-explains-how-players-should-experience-gta-vi": {
+   "hash": "dc0ad4f1c35ce7ea",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": "Rockstar Intel says a Rockstar developer explained how players should experience GTA VI.",
+   "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-26-bsky.app-grand-theft-auto-6-pc-port-cgbj-is-91-complete-with-playable-framerates-https-www-dsogamin": {
    "hash": "dbd918f6f8a5ac1c",
    "topic": "Port",
    "importance": 3,
    "weight": 16,
-   "lead": "2026-11-26-news.google.com-grand-theft-auto-6-pc-port-cgbj-is-91-complete-with-playable-framerates",
+   "lead": "2026-11-26-dsogaming.com-grand-theft-auto-6-pc-port-cgbj-is-91-complete-with-playable-framerates",
    "summary": "Grand Theft Auto 6 PC Port CGBJ Is 91% Complete With Playable Framerates",
    "by": "Pollinations, gpt-oss-20b"
   },
@@ -881,11 +901,11 @@
    "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
   "2026-11-26-news.google.com-chainsaws-would-have-been-too-much-even-for-gta-6-as-rockstar-explains-why-some-extra-viol": {
-   "hash": "3d377624f0311f84",
+   "hash": "a25b01911a23378e",
    "topic": "Game",
    "importance": 1,
    "weight": 0,
-   "summary": "Rockstar explains why some extra violent weapons, including chainsaws, are missing from GTA 6.",
+   "summary": null,
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-26-techradar.com-i-pitted-my-three-favorite-xbox-controllers-against-each-other-to-decide-which-was-best-fo": {
@@ -1315,6 +1335,14 @@
    "summary": "Mastodon post says Take-Two asked to remove more than 3,000 GitHub repositories working on a GTA 6 PC port.",
    "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
+  "2026-11-26-news.google.com-unauthorized-gta-6-pc-port-shut-down-by-rockstar-games-parent-company": {
+   "hash": "fb3af64f2312b701",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 66,
+   "summary": "Mashable reports Rockstar’s parent company shut down an unauthorized GTA VI PC port.",
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
   "2026-11-26-news.google.com-heres-how-to-play-gta-6-without-a-ps5-or-xbox-or-gift-it-on-the-cheap": {
    "hash": "9ea8719e624f37c8",
    "topic": "Community",
@@ -1448,15 +1476,6 @@
    "lead": "2026-11-26-news.google.com-while-gamers-wait-for-gta-6s-pc-port-modders-have-already-bypassed-its-30-fps-limit-on-jai",
    "summary": null,
    "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
-  "2026-11-26-news.google.com-grand-theft-auto-6-pc-port-cgbj-is-91-complete-with-playable-framerates": {
-   "hash": "bb0c1b1f286eb9b3",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 40,
-   "similar": 1,
-   "summary": "DSOGaming says the CGBJ GTA 6 PC port is 91% complete with playable framerates.",
-   "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-26-news.google.com-take-two-targets-3-007-gta-6-pc-port-repositories-with-github-dmca-takedowns": {
    "hash": "d752c49ac3fa850d",
@@ -2192,6 +2211,15 @@
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
+  "2026-11-26-dsogaming.com-grand-theft-auto-6-pc-port-cgbj-is-91-complete-with-playable-framerates": {
+   "hash": "bb0c1b1f286eb9b3",
+   "topic": "Port",
+   "importance": 5,
+   "weight": 64,
+   "similar": 1,
+   "summary": "DSOGaming reports the CGBJ GTA VI PC port is 91% complete with playable framerates.",
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
   "2026-11-26-bsky.app-project-leonida-port-n-o-oficial-de-gta-6-para-pc-encerra-ap-s-sumi-o-do-servidor-tudogta-": {
    "hash": "d4448ce99eae412c",
    "topic": "Takedown",
@@ -2828,8 +2856,7 @@
    "hash": "255947745588d515",
    "topic": "Takedown",
    "importance": 5,
-   "weight": 48,
-   "lead": "2026-11-25-news.google.com-gta-6-pc-ports-reach-gameplay-despite-take-twos-github-dmca",
+   "weight": 58,
    "summary": "GTA 6 PC ports reach gameplay despite Take-Two's GitHub DMCA",
    "by": "Pollinations, gpt-oss-20b"
   },
@@ -3395,23 +3422,6 @@
    "weight": 2,
    "summary": null,
    "by": "Kilo Gateway, reflection/beam-free"
-  },
-  "2026-11-25-news.google.com-gta-6-pc-ports-reach-gameplay-despite-take-twos-github-dmca": {
-   "hash": "f251f3843e8ef68f",
-   "topic": "Port",
-   "importance": 4,
-   "weight": 52,
-   "similar": 1,
-   "summary": null,
-   "by": "Kilo Gateway, reflection/beam-free"
-  },
-  "2026-11-25-news.google.com-gta-6-hacker-sentenced-to-seven-years-walks-free-the-same-day-after-rockstar-games-leak": {
-   "hash": "92e0c50953a4fc7f",
-   "topic": "Official",
-   "importance": null,
-   "weight": 24,
-   "summary": null,
-   "by": null
   }
  },
  "projects": {
@@ -3451,11 +3461,11 @@
    "at": "2026-11-27T00:36:38.283Z"
   },
   "decant": {
-   "hash": "be52c711796917f8",
+   "hash": "23d3e5d0951d7b50",
    "count": 15,
-   "summary": "Decant recent commits claim shader swizzle support, d3d12x view heap reclamation, and title_mem drain lock decoupling.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-26T23:31:43.868Z"
+   "summary": "Decant's recent commits and pull requests mention shader barriers, D3D12X memory and queue handling, buffers, and a feature map.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T02:31:57.222Z"
   },
   "project-americas": {
    "hash": "61c30d96068b45d8",
@@ -3464,26 +3474,26 @@
    "by": "Kilo Gateway, particle-ai/particle-1:free",
    "at": "2026-11-27T00:02:24.977Z"
   },
-  "palmetto": {
-   "hash": "9e8113c61d2149d3",
+  "native-victory-macos": {
+   "hash": "ff99b98940275ce0",
    "count": 15,
-   "summary": "Palmetto's recent commits mention plane-refresh, plane-composition, memory-wait ports, console-faithful cross-list memory wait, refresh title-written planes, and present-driven frame clock.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-27T00:36:38.283Z"
-  },
-  "victory-low-end-pc": {
-   "hash": "806eee08f9a73522",
-   "count": 15,
-   "summary": "WASDeKeys low-end's recent commits and pull requests mention an 8 GB 720p performance profile, Windows 10 Agility SDK support, and a modified low-spec build.",
+   "summary": "Native-Victory-macOS's recent commits and pull requests mention GPU shader handling, texture views, sampler fixes, and Metal test timing.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T02:02:10.641Z"
+   "at": "2026-11-27T02:31:57.222Z"
   },
-  "neptune-dolberth-nvidia-8gb": {
-   "hash": "89241bf617b58c51",
+  "xin-leonida": {
+   "hash": "488d55311576139b",
    "count": 15,
-   "summary": "neptune-dolberth-nvidia-8gb's recent commits mention work on CPU, GPU, and shader changes, texture streaming, VRAM and upscaling, and window mode controls.",
+   "summary": "Xin-Leonida's recent commits and pull requests mention crash analysis, player input, a UAC blocker, cache notes, and a dependency update.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T02:02:10.641Z"
+   "at": "2026-11-27T02:31:57.222Z"
+  },
+  "playablegames-peppa": {
+   "hash": "058c3c3872bd3afb",
+   "count": 15,
+   "summary": "playablegames-peppa's recent commits and pull requests mention submission-thread work, batching, allocator notes, and reported frame-rate measurements.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T02:31:57.222Z"
   }
  }
 }
