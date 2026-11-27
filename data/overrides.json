@@ -3967,6 +3967,42 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [
+          "The Xbox Series CPU is x86-64 like a PC",
+          "console's precompiled RDNA2 GPU programs are translated to SPIR-V for Vulkan"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-27",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Leonida Continued",
+        "summary": "Grand Theft Auto VI (Xbox Series) running natively on Windows, built on your PC from your own copy.",
+        "basedOn": [],
+        "id": "mandy",
+        "repo": "ProjectLeonida/mandy",
+        "stats": {
+          "stars": 2642,
+          "createdAt": "2026-11-23T23:54:39Z",
+          "pushedAt": "2026-11-27T21:42:07Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -3975,6 +4011,11 @@
     "reason": "Owner's call: its code went public on 26 Nov, at 25 fps reported on NVIDIA."
   },
   "ignored": [
+    {
+      "repo": "jleybourne/triumph-rebuild",
+      "reason": "README describes rebuilding an Xbox Series compatibility layer, but does not identify GTA VI.",
+      "seenAt": "2026-11-27"
+    },
     {
       "repo": "Coolaid003/XSEmu",
       "reason": "README describes a general Xbox Series compatibility layer, not its own GTA VI effort.",
@@ -4256,7 +4297,9 @@
     "Kalpajit0406/Pink",
     "Coolaid003/XSEmu",
     "kylepelham/El1xr",
-    "ToLIManl/VIctory-Hydra"
+    "ToLIManl/VIctory-Hydra",
+    "jleybourne/triumph-rebuild",
+    "ProjectLeonida/mandy"
   ],
   "news": [
     {

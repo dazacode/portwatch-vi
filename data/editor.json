@@ -1,6 +1,19 @@
 {
-  "lastRun": "2026-11-27T22:42:09.776Z",
+  "lastRun": "2026-11-27T23:42:21.336Z",
   "runs": [
+    {
+      "at": "2026-11-27T23:42:21.336Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [
+        "candidate jleybourne/triumph-rebuild",
+        "candidate ProjectLeonida/mandy"
+      ],
+      "skipped": [
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world in Full HD”",
+        "held: candidate hello3928/Project-VI: has markup"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-27T22:42:09.776Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -474,21 +487,6 @@
       ],
       "skipped": [
         "candidate ExCorvus/whibwhi-own: a track needs an effort object"
-      ],
-      "note": null
-    },
-    {
-      "at": "2026-11-25T23:37:18.185Z",
-      "by": "Pollinations, gpt-oss-20b",
-      "applied": [
-        "candidate baummarder/xHoly",
-        "candidate ihaterockstargames/sixth-star",
-        "candidate Ryanabcraft/scarlett-victory-bench",
-        "candidate RandomSkelly/Series0nLinux"
-      ],
-      "skipped": [
-        "held: finding leonida: already said",
-        "held: score anyxboxx gta.fps=14: proposed, from “~14 fps in the world (Series X, RTX 4070 SUPER), measured 2026-11-25”"
       ],
       "note": null
     }
