@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T11:50:20.028Z",
+  "updated": "2026-11-27T12:07:12.433Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T11:31:22.000Z",
-      "lastOkAt": "2026-11-27T11:50:20.028Z",
-      "seen": 30000,
-      "events": 1052,
+      "lastCursor": "2026-11-27T12:01:47.000Z",
+      "lastOkAt": "2026-11-27T12:07:12.433Z",
+      "seen": 30250,
+      "events": 1074,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T09:21:22.000Z",
-      "lastOkAt": "2026-11-27T11:50:20.028Z",
+      "lastOkAt": "2026-11-27T12:07:12.433Z",
       "seen": 38,
       "events": 30,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-26T23:50:20.028Z",
-      "lastOkAt": "2026-11-27T11:50:20.028Z",
-      "seen": 7266,
+      "lastCursor": "2026-11-27T00:07:12.433Z",
+      "lastOkAt": "2026-11-27T12:07:12.433Z",
+      "seen": 7328,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T11:30:07.643Z",
-      "lastOkAt": "2026-11-27T11:50:20.028Z",
-      "seen": 48000,
-      "events": 36,
+      "lastCursor": "2026-11-27T12:00:25.742Z",
+      "lastOkAt": "2026-11-27T12:07:12.433Z",
+      "seen": 48400,
+      "events": 38,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T11:50:20.028Z",
-      "seen": 14350,
+      "lastCursor": "2026-11-27T00:07:12.433Z",
+      "lastOkAt": "2026-11-27T12:07:12.433Z",
+      "seen": 14473,
       "events": 12,
       "errors": 0
     }
@@ -12543,6 +12543,569 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-27T11:35:25.186Z"
+    },
+    {
+      "id": "20261127t120147z-i95-gta6-pc-launcher-15c9c91c",
+      "key": "update|i95-gta6-pc-launcher|activity|41569",
+      "kind": "update",
+      "projectId": "i95-gta6-pc-launcher",
+      "projectName": "i95-GTA6-PC-Launcher",
+      "at": "2026-11-27T12:01:47Z",
+      "detectedAt": "2026-11-27T12:07:12.433Z",
+      "title": "i95-GTA6-PC-Launcher pushed 3 commits",
+      "oneLine": "Launcher audit: bare-flag presets apply, KEY= unsets, leftovers no longer drop toml values, --flag=0 removes a switch, unclosed lists and header comments parse, family save folder",
+      "sources": [
+        {
+          "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/9f4055d3df80d588fc0de43a3b06e3d8114ed9ad",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Launcher audit: bare-flag presets apply, KEY= unsets, leftovers no longer drop toml values, --flag=0 removes a switch, u",
+          "at": "2026-11-27T11:57:36Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "designwithtommy/i95-gta6-pc-launcher",
+        "name": "i95-gta6-pc-launcher",
+        "words": [
+          "i95-gta6-pc-launcher"
+        ],
+        "hash": "b70400aa0d2707d1",
+        "projectId": "i95-gta6-pc-launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:dc1d27b291a02137501a7df120bb56db3d4f505f9568dc57c530371538b90052",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T12:07:12.433Z",
+          "by": "desk",
+          "note": "The only source is the project’s own repository with an empty excerpt, so the detailed one-line changelog is not plainly supported by stored source text and lacks independent corroboration."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T12:07:12.433Z"
+    },
+    {
+      "id": "20261127t120143z-leonida-continued-39a4bb67",
+      "key": "update|leonida-continued|activity|41569",
+      "kind": "update",
+      "projectId": "leonida-continued",
+      "projectName": "Leonida Continued",
+      "at": "2026-11-27T12:01:43Z",
+      "detectedAt": "2026-11-27T12:07:12.433Z",
+      "title": "Leonida Continued opened pull request #2346",
+      "oneLine": "REPLACE-RETRY-LOCK-VIOLATION-AND-SECONDS-VALIDATION",
+      "sources": [
+        {
+          "url": "https://github.com/ubiquitarianism/leonida/pull/2346",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "REPLACE-RETRY-LOCK-VIOLATION-AND-SECONDS-VALIDATION",
+          "at": "2026-11-27T12:01:43Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "ubiquitarianism/leonida",
+        "name": "leonida continued",
+        "words": [
+          "leonida",
+          "continued",
+          "leonida-continued"
+        ],
+        "hash": "8669ce146e545630",
+        "projectId": "leonida-continued"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:08cd2a6ea38429e3d7148b4dd8ae900821a3d537037e049e6235e89e6c62d733",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t120113z-marvis-d042dab6",
+      "key": "update|marvis|activity|41569",
+      "kind": "update",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-27T12:01:13Z",
+      "detectedAt": "2026-11-27T12:07:12.433Z",
+      "title": "VIctory opened pull request #3294",
+      "oneLine": "Shaders/GPU: opt-in AMD hardware BVH ray-node intersection (VICTORY_HW_BVH=1)",
+      "sources": [
+        {
+          "url": "https://github.com/Marvisak/VIctory/pull/3294",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Shaders/GPU: opt-in AMD hardware BVH ray-node intersection (VICTORY_HW_BVH=1)",
+          "at": "2026-11-27T12:01:13Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "1141780380054693",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:5ad81c161b126546977157938c04cf43b8853926acbe1708a52e837851c4e136",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t120112z-xcl-c9f7cac1",
+      "key": "update|xcl|activity|41569",
+      "kind": "update",
+      "projectId": "xcl",
+      "projectName": "XCL",
+      "at": "2026-11-27T12:01:12Z",
+      "detectedAt": "2026-11-27T12:07:12.433Z",
+      "title": "XCL opened pull request #312",
+      "oneLine": "Recompiler: write all bytes of unaligned multi-dword formatted buffer stores",
+      "sources": [
+        {
+          "url": "https://github.com/xcl-dev/xcl/pull/312",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Recompiler: write all bytes of unaligned multi-dword formatted buffer stores",
+          "at": "2026-11-27T12:01:12Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "xcl-dev/xcl",
+        "name": "xcl",
+        "words": [
+          "xcl"
+        ],
+        "hash": "5402c0039d315a44",
+        "projectId": "xcl"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:5b468c6d9a6b076a68db5f37807879627ed9022b290bfb8edee29606c0a693c4",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t120110z-belobug-9f91b6ce",
+      "key": "update|belobug|activity|41569",
+      "kind": "update",
+      "projectId": "belobug",
+      "projectName": "Belobug",
+      "at": "2026-11-27T12:01:10Z",
+      "detectedAt": "2026-11-27T12:07:12.433Z",
+      "title": "Belobug opened pull request #541",
+      "oneLine": "RX 9060 XT: Series S launch, PC FSR at the title's sizes, ambient bound under RT, moving faces, fps log line",
+      "sources": [
+        {
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/541",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "RX 9060 XT: Series S launch, PC FSR at the title's sizes, ambient bound under RT, moving faces, fps log line",
+          "at": "2026-11-27T12:01:10Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "belobug/victory-belobug-amd",
+        "name": "belobug",
+        "words": [
+          "belobug"
+        ],
+        "hash": "7749e38a7e252a81",
+        "projectId": "belobug"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:e96fbdfe1d7fd8cb56f1977463bf92c8448915ed21b68ab861d5da2d6760c46f",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t120044z-victory-gta6-d8436286",
+      "key": "update|victory-gta6|activity|41569",
+      "kind": "update",
+      "projectId": "victory-gta6",
+      "projectName": "hyphennn",
+      "at": "2026-11-27T12:00:44Z",
+      "detectedAt": "2026-11-27T12:07:12.433Z",
+      "title": "hyphennn opened pull request #1066",
+      "oneLine": "GPU: parallelize relay copy-back merges with VICTORY_WIDE_MERGE=1",
+      "sources": [
+        {
+          "url": "https://github.com/fxceless/victory-fork/pull/1066",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "GPU: parallelize relay copy-back merges with VICTORY_WIDE_MERGE=1",
+          "at": "2026-11-27T12:00:44Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "fxceless/victory-fork",
+        "name": "hyphennn",
+        "words": [
+          "hyphennn",
+          "victory-gta6"
+        ],
+        "hash": "570541ba502d02e0",
+        "projectId": "victory-gta6"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:abc1e5c1b99e143ab32f238b65d208de1bd969243718193583d9f17d69ba4e48",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t120038z-native-victory-macos-53f3a8e5",
+      "key": "update|native-victory-macos|activity|41569",
+      "kind": "update",
+      "projectId": "native-victory-macos",
+      "projectName": "Native-Victory-macOS",
+      "at": "2026-11-27T12:00:38Z",
+      "detectedAt": "2026-11-27T12:07:12.433Z",
+      "title": "Native-Victory-macOS opened pull request #323",
+      "oneLine": "shader: VOP3 0x140 and VOP2 0x006 are RDNA2's fused legacy multiply-adds (#321)",
+      "sources": [
+        {
+          "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/323",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "shader: VOP3 0x140 and VOP2 0x006 are RDNA2's fused legacy multiply-adds (#321)",
+          "at": "2026-11-27T12:00:38Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "lakshansivakumar/native-victory-macos",
+        "name": "native-victory-macos",
+        "words": [
+          "native-victory-macos"
+        ],
+        "hash": "8474ec043b755150",
+        "projectId": "native-victory-macos"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:b8eac3c89b81a05dd31361265e914d2656b065ae1575ed229ca14182cf0c4ec0",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t120025z-cgbj-4a9af1f2",
+      "key": "claim|cgbj|https://bsky.app/profile/gamechosis.bsky.social/post/3n3c5b4tyhz2r|41569",
+      "kind": "claim",
+      "projectId": "cgbj",
+      "projectName": "CGBJ",
+      "at": "2026-11-27T12:00:25.742Z",
+      "detectedAt": "2026-11-27T12:07:12.433Z",
+      "title": "New claim about CGBJ",
+      "oneLine": "GTA 6's PC port by CGBJ hit a stable 25 FPS and 91.5% completion 🤯 It lets you play…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/gamechosis.bsky.social/post/3n3c5b4tyhz2r",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "GTA 6's PC port by CGBJ hit a stable 25 FPS and 91.5% completion 🤯 It lets you play ~80% of the story, runs 30 FPS in c",
+          "at": "2026-11-27T12:00:25.742Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "GTA 6's PC port by CGBJ hit a stable 25 FPS and 91.5% completion 🤯 It lets you play ~80% of the story, runs 30 FPS in c"
+        }
+      ],
+      "fingerprint": {
+        "repo": "doubleghosty/cool_fox",
+        "name": "cgbj",
+        "words": [
+          "cgbj"
+        ],
+        "hash": "ff74454aa9428575",
+        "projectId": "cgbj"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:1c4faead678a6719a8dcbec1fd9dc4829e3e7152ed7822b114a130bb607e82e4",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261127t115846z-victory-polaris-70b6b0ff",
+      "key": "update|victory-polaris|activity|41568",
+      "kind": "update",
+      "projectId": "victory-polaris",
+      "projectName": "victory-polaris",
+      "at": "2026-11-27T11:58:46Z",
+      "detectedAt": "2026-11-27T12:07:12.433Z",
+      "title": "victory-polaris opened pull request #5",
+      "oneLine": "vk13shim: Vulkan 1.3 shim and vkd3d SM 6.6 patch for GCN 3",
+      "sources": [
+        {
+          "url": "https://github.com/kalinizer/victory-polaris/pull/5",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "vk13shim: Vulkan 1.3 shim and vkd3d SM 6.6 patch for GCN 3",
+          "at": "2026-11-27T11:57:19Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "kalinizer/victory-polaris",
+        "name": "victory-polaris",
+        "words": [
+          "victory-polaris"
+        ],
+        "hash": "8d0b8230e5790450",
+        "projectId": "victory-polaris"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:ca131b6140727e4bc2261774d1626ee559e22599c27b84c1c8749ab1a5627575",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t115113z-leonida-ddef3e70",
+      "key": "takedown|leonida|https://news.google.com/rss/articles/cbmiygfbvv95cuxpcvrlqwx4cm1mmvnyewxsmxv6qnjidy1ur1zlq1c4ekpuvfq1ltbob05lr2tsuep1zktos2xqdffxahvyu1locvvzmgxvz0zycll4ctngt1y3sjlfclutsnnazkrlqw5ztku0z0l4bthlwefkntaxttrzc2t6ynlsae9ftjrmwentz0d4d21iowyybfq4wxped1lvwfyxckncvupmdhhtqlnnmja4otcwqlviq3q5x0dete9nqu90sellntzrn1zst1jn?oc=5|41568",
+      "kind": "takedown",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-27T11:51:13.000Z",
+      "detectedAt": "2026-11-27T12:07:12.433Z",
+      "title": "Leonida in a takedown report",
+      "oneLine": "Despite Take-Two Takedown, Vibecoding Teen Behind Nuked GTA 6 PC Port Project 'Leonida'…",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcVRlQWx4cm1MMVNYeWxsMXV6QnJIdy1UR1ZlQ1c4ekpUVFQ1LTBOb05LR2tSUEp1ZktOS2xqdFFxaHVYU1lOcVVzMGxvZ0Zycll4cTNGT1Y3SjlFclUtSnNaZkRLQW5ZTkU0Z0l4bThlWEFKNTAxTTRZc2t6YnlsaE9FTjRMWENtZ0d4d21IOWYybFQ4WXpEd1lvWFYxckNCVUpMdHhtQlNnMjA4OTcwQlVIQ3Q5X0dETE9nQU90SElLNTZrN1ZST1Jn?oc=5",
+          "host": "news.google.com",
+          "outlet": "IGN",
+          "title": "Despite Take-Two Takedown, Vibecoding Teen Behind Nuked GTA 6 PC Port Project 'Leonida' Vows to Continue",
+          "at": "2026-11-27T11:51:13.000Z",
+          "kind": "outside",
+          "authorHash": "ddd2184a75",
+          "excerpt": "Despite Take-Two Takedown, Vibecoding Teen Behind Nuked GTA 6 PC Port Project 'Leonida' Vows to Continue"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "e7d116e642562c05",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:622f7414a23fd9db17a24824f84af7836879d5a9e089eabc262e9c69bd7a7691",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261127t114243z-xbox-emulator-db6f4ed7",
+      "key": "update|xbox-emulator|activity|41568",
+      "kind": "update",
+      "projectId": "xbox-emulator",
+      "projectName": "xbox-emulator",
+      "at": "2026-11-27T11:42:43Z",
+      "detectedAt": "2026-11-27T12:07:12.433Z",
+      "title": "xbox-emulator opened pull request #277",
+      "oneLine": "d3d12_xs: R9G9B9E5 UAV textures stored as RGBA16F on hosts without typed UAV for that format (core: creation and views)",
+      "sources": [
+        {
+          "url": "https://github.com/omonkeyz/xbox-emulator/pull/277",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "d3d12_xs: R9G9B9E5 UAV textures stored as RGBA16F on hosts without typed UAV for that format (core: creation and views)",
+          "at": "2026-11-27T11:42:43Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "omonkeyz/xbox-emulator",
+        "name": "xbox-emulator",
+        "words": [
+          "xbox-emulator"
+        ],
+        "hash": "504d6641ea3502e1",
+        "projectId": "xbox-emulator"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:63af94624965c826befe0206e507e048f43b474cf446616acade487c8a8384bb",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
