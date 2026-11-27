@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T18:50:26.284Z",
+  "updated": "2026-11-27T19:06:50.048Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T18:01:03.000Z",
-      "lastOkAt": "2026-11-27T18:50:26.284Z",
-      "seen": 37000,
-      "events": 1290,
+      "lastCursor": "2026-11-27T19:01:09.000Z",
+      "lastOkAt": "2026-11-27T19:06:50.048Z",
+      "seen": 37250,
+      "events": 1314,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T18:50:26.284Z",
+      "lastOkAt": "2026-11-27T19:06:50.048Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T18:50:26.284Z",
-      "seen": 9019,
+      "lastOkAt": "2026-11-27T19:06:50.048Z",
+      "seen": 9082,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T18:00:24.949Z",
-      "lastOkAt": "2026-11-27T18:50:26.284Z",
-      "seen": 59200,
-      "events": 43,
+      "lastCursor": "2026-11-27T19:00:27.345Z",
+      "lastOkAt": "2026-11-27T19:06:50.048Z",
+      "seen": 59600,
+      "events": 44,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T06:50:26.284Z",
-      "lastOkAt": "2026-11-27T18:50:26.284Z",
-      "seen": 17803,
+      "lastCursor": "2026-11-27T07:06:50.048Z",
+      "lastOkAt": "2026-11-27T19:06:50.048Z",
+      "seen": 17927,
       "events": 12,
       "errors": 0
     }
@@ -15129,6 +15129,162 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-27T18:50:26.284Z"
+    },
+    {
+      "id": "20261127t185413z-scene-55ba4243",
+      "key": "takedown|-|https://bsky.app/profile/iplaygta6.com/post/3n3cuf3a2jc2g|41569",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-27T18:54:13.553Z",
+      "detectedAt": "2026-11-27T19:06:50.048Z",
+      "title": "Bluesky in a takedown report",
+      "oneLine": "Take-Two nuked 3,007 GTA 6 GitHub repos — here's what happened and what it means for the…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/iplaygta6.com/post/3n3cuf3a2jc2g",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "Take-Two nuked 3,007 GTA 6 GitHub repos — here's what happened and what it means for the PC port. www.iplaygta6.com/2026",
+          "at": "2026-11-27T18:54:13.553Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "Take-Two nuked 3,007 GTA 6 GitHub repos — here's what happened and what it means for the PC port. www.iplaygta6.com/2026"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "747c3c4b937cd3cd",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:8687de59166fe59eadf82f0975ad29e07fd4c4a241261c975fee902015ff3c4e",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T19:06:50.048Z",
+          "by": "desk",
+          "note": "The only stored source is a single Bluesky post that merely repeats the claim, which is too thin and non-independent to support the takedown line."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-27T19:06:50.048Z"
+    },
+    {
+      "id": "20261127t185358z-victory-rtx2080-f3049b16",
+      "key": "update|victory-rtx2080|activity|41569",
+      "kind": "update",
+      "projectId": "victory-rtx2080",
+      "projectName": "Victory-RTX2080",
+      "at": "2026-11-27T18:53:58Z",
+      "detectedAt": "2026-11-27T19:06:50.048Z",
+      "title": "Victory-RTX2080 opened pull request #3",
+      "oneLine": "Mission 1-4: Optimize buffer pass and descriptor mirroring",
+      "sources": [
+        {
+          "url": "https://github.com/GiovannaSGuerrera/Victory-RTX2080/pull/3",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Mission 1-4: Optimize buffer pass and descriptor mirroring",
+          "at": "2026-11-27T18:53:58Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "giovannasguerrera/victory-rtx2080",
+        "name": "victory-rtx2080",
+        "words": [
+          "victory-rtx2080"
+        ],
+        "hash": "17054c701c400e91",
+        "projectId": "victory-rtx2080"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:388457b78b03c794e2593199f038d605fe83d2d9ab9049535bfe4bb30ef7a366",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t184219z-xvalkyrie-d5bfd4f3",
+      "key": "update|xvalkyrie|activity|41569",
+      "kind": "update",
+      "projectId": "xvalkyrie",
+      "projectName": "XValkyrie",
+      "at": "2026-11-27T18:42:19Z",
+      "detectedAt": "2026-11-27T19:06:50.048Z",
+      "title": "XValkyrie opened pull request #19",
+      "oneLine": "feat(winrt): secure device association over loopback",
+      "sources": [
+        {
+          "url": "https://github.com/sammwyy/xvalkyrie/pull/19",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "feat(winrt): secure device association over loopback",
+          "at": "2026-11-27T18:42:19Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sammwyy/xvalkyrie",
+        "name": "xvalkyrie",
+        "words": [
+          "xvalkyrie"
+        ],
+        "hash": "100c48d845669c64",
+        "projectId": "xvalkyrie"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:7ad29ec0594943066020ce62f4a9312374a5905cac406f8803d128df9cbc44a7",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
