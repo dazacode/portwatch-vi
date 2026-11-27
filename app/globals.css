@@ -243,16 +243,33 @@
 
 /* The opening, the show and the player fill the window; the header waits above it. */
 .stage-height {
-  min-height: 100svh;
+  min-height: calc(100svh - var(--promo-h));
+}
+
+/* The promo strip: its height, and where things pinned to the top start below it. */
+:root {
+  --promo-h: 0px;
+  --top-gap: max(0.75rem, env(safe-area-inset-top));
+}
+
+html:has(#promo):not([data-promo="closed"]):not(.tv) {
+  /* 2.5rem of text and the 2px seam under it. */
+  --promo-h: calc(2.5rem + 2px + env(safe-area-inset-top));
+  --top-gap: calc(var(--promo-h) + 0.75rem);
+}
+
+html[data-promo="closed"] #promo,
+.tv #promo {
+  display: none;
 }
 
 html {
-  scroll-padding-top: 8.5rem;
+  scroll-padding-top: calc(8.5rem + var(--promo-h));
 }
 
 /* On a phone the home page is swiped: countdown, updates, then the rest of the site. */
 html.feed {
-  scroll-padding-top: 0;
+  scroll-padding-top: var(--promo-h);
   scroll-snap-type: y mandatory;
   overscroll-behavior-y: none;
 }

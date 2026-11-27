@@ -27,7 +27,7 @@ export function HeaderShell({ children }: { children: React.ReactNode }) {
   return (
     <header
       className={cn(
-        "top-[max(0.75rem,env(safe-area-inset-top))] z-40 mx-auto w-[calc(100%-1.5rem)] max-w-[79rem] transition-[translate] duration-300 ease-out motion-reduce:transition-none",
+        "top-(--top-gap) z-40 mx-auto w-[calc(100%-1.5rem)] max-w-[79rem] transition-[translate] duration-300 ease-out motion-reduce:transition-none",
         home ? "fixed inset-x-0" : "sticky mt-3",
         home && !scrolled && "-translate-y-[200%] focus-within:translate-y-0"
       )}
