@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T01:05:20.642Z",
+  "updated": "2026-11-27T01:20:21.926Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T01:01:22.000Z",
-      "lastOkAt": "2026-11-27T01:05:20.642Z",
-      "seen": 19250,
+      "lastOkAt": "2026-11-27T01:20:21.926Z",
+      "seen": 19500,
       "events": 727,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T21:53:31.000Z",
-      "lastOkAt": "2026-11-27T01:05:20.642Z",
+      "lastOkAt": "2026-11-27T01:20:21.926Z",
       "seen": 30,
       "events": 22,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T01:05:20.642Z",
-      "seen": 4600,
+      "lastOkAt": "2026-11-27T01:20:21.926Z",
+      "seen": 4662,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T01:00:24.248Z",
-      "lastOkAt": "2026-11-27T01:05:20.642Z",
-      "seen": 30800,
+      "lastOkAt": "2026-11-27T01:20:21.926Z",
+      "seen": 31200,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T13:05:20.642Z",
-      "lastOkAt": "2026-11-27T01:05:20.642Z",
-      "seen": 9061,
+      "lastCursor": "2026-11-26T13:20:21.926Z",
+      "lastOkAt": "2026-11-27T01:20:21.926Z",
+      "seen": 9184,
       "events": 7,
       "errors": 0
     }
@@ -9784,10 +9784,17 @@
       "chain": "sha256:b7f5588fd398514eb86aad00776d646bf28dd9addcd53890f875455d4c465bc5",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T01:20:21.926Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository with an empty excerpt, so the commit line is asserted but not independently corroborated or verifiable from the stored material."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T01:20:21.926Z"
     },
     {
       "id": "20261127t003246z-i95-gta6-pc-launcher-4ab7b3b3",
@@ -10469,10 +10476,17 @@
       "chain": "sha256:ceeb6890c5c4ed658f1dd19af72b2f45ea1a761942e394250f0de402a92ef8fc",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T01:20:21.926Z",
+          "by": "desk",
+          "note": "The project's own repository directly records pull request #129 with that exact title, and no source contradicts it."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T01:20:21.926Z"
     }
   ],
   "reports": [
