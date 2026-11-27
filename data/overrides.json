@@ -3548,6 +3548,11 @@
   },
   "ignored": [
     {
+      "repo": "PiloteCode/PiloteBox",
+      "reason": "README describes an Xbox Series compatibility layer, not its own effort to run GTA VI on PC.",
+      "seenAt": "2026-11-27"
+    },
+    {
       "repo": "HyperExtendedReality/strata",
       "reason": "No GTA VI mention",
       "seenAt": "2026-11-26"
@@ -3788,7 +3793,8 @@
     "HyperExtendedReality/strata",
     "martindevbr/VItoria-Spark",
     "Peppacodes/playablegames-peppa",
-    "kalinizer/victory-polaris"
+    "kalinizer/victory-polaris",
+    "PiloteCode/PiloteBox"
   ],
   "news": [
     {
