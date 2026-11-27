@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T14:20:22.308Z",
+  "updated": "2026-11-27T14:36:38.571Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T14:01:26.000Z",
-      "lastOkAt": "2026-11-27T14:20:22.308Z",
-      "seen": 32500,
-      "events": 1139,
+      "lastCursor": "2026-11-27T14:31:09.000Z",
+      "lastOkAt": "2026-11-27T14:36:38.571Z",
+      "seen": 32750,
+      "events": 1158,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T12:10:29.000Z",
-      "lastOkAt": "2026-11-27T14:20:22.308Z",
+      "lastOkAt": "2026-11-27T14:36:38.571Z",
       "seen": 40,
       "events": 32,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T02:20:22.308Z",
-      "lastOkAt": "2026-11-27T14:20:22.308Z",
-      "seen": 7886,
+      "lastCursor": "2026-11-27T02:36:38.571Z",
+      "lastOkAt": "2026-11-27T14:36:38.571Z",
+      "seen": 7948,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T14:00:15.000Z",
-      "lastOkAt": "2026-11-27T14:20:22.308Z",
-      "seen": 52000,
-      "events": 39,
+      "lastCursor": "2026-11-27T14:26:54.000Z",
+      "lastOkAt": "2026-11-27T14:36:38.571Z",
+      "seen": 52400,
+      "events": 40,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T02:20:22.308Z",
-      "lastOkAt": "2026-11-27T14:20:22.308Z",
-      "seen": 15580,
+      "lastCursor": "2026-11-27T02:36:38.571Z",
+      "lastOkAt": "2026-11-27T14:36:38.571Z",
+      "seen": 15703,
       "events": 12,
       "errors": 0
     }
@@ -14092,6 +14092,173 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-27T14:20:22.308Z"
+    },
+    {
+      "id": "20261127t142738z-vitoriabr-5061c912",
+      "key": "update|vitoriabr|activity|41569",
+      "kind": "update",
+      "projectId": "vitoriabr",
+      "projectName": "Uilian",
+      "at": "2026-11-27T14:27:38Z",
+      "detectedAt": "2026-11-27T14:36:38.571Z",
+      "title": "Uilian opened pull request #99",
+      "oneLine": "shader: lower v_add_f64, v_mul_f64, v_fma_f64, v_min_f64 and v_max_f64",
+      "sources": [
+        {
+          "url": "https://github.com/uiliannn/VItoriaBr/pull/99",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "shader: lower v_add_f64, v_mul_f64, v_fma_f64, v_min_f64 and v_max_f64",
+          "at": "2026-11-27T14:27:38Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "uiliannn/vitoriabr",
+        "name": "uilian",
+        "words": [
+          "uilian",
+          "vitoriabr"
+        ],
+        "hash": "029198c819d10079",
+        "projectId": "vitoriabr"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:2be6671ed1007614334dea6ffb82fb40919dbc1305f29a708f9bc93b8ab2b4a1",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T14:36:38.571Z",
+          "by": "desk",
+          "note": "The project’s GitHub pull request title directly matches the one-line update, and no stored source contradicts it."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T14:36:38.571Z"
+    },
+    {
+      "id": "20261127t140838z-victory-polaris-dae53ba5",
+      "key": "update|victory-polaris|activity|41569",
+      "kind": "update",
+      "projectId": "victory-polaris",
+      "projectName": "victory-polaris",
+      "at": "2026-11-27T14:08:38Z",
+      "detectedAt": "2026-11-27T14:36:38.571Z",
+      "title": "victory-polaris opened pull request #5",
+      "oneLine": "vk13shim: Vulkan 1.3 shim and vkd3d SM 6.6 patch for GCN 3",
+      "sources": [
+        {
+          "url": "https://github.com/kalinizer/victory-polaris/pull/5",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "vk13shim: Vulkan 1.3 shim and vkd3d SM 6.6 patch for GCN 3",
+          "at": "2026-11-27T14:05:05Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "kalinizer/victory-polaris",
+        "name": "victory-polaris",
+        "words": [
+          "victory-polaris"
+        ],
+        "hash": "8d0b8230e5790450",
+        "projectId": "victory-polaris"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:0b6522197adafb248272cfc8f861d3a6ad7c045ff4ef54e168db4b0ce9cc17ad",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T14:36:38.571Z",
+          "by": "desk",
+          "note": "The only source is the project’s own repository entry with no excerpt, so it is primary but not independent and too thin to plainly support the one-line claim."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T14:36:38.571Z"
+    },
+    {
+      "id": "20261127t140040z-leonida-c0a35b06",
+      "key": "claim|leonida|https://news.google.com/rss/articles/cbmiugfbvv95cuxotkdan3nzzkhcyzzkshjeaddwwtizvhowoxlhsfy2mnrjdegyzmdbyu1otxrbb3juyxlwwlrkq3mzdee2bxhpy19dahhsbujywwhjaxdwb25pc0tbstrxa0taummyemvpbzr6ynvonluwqzu5cdjhbjffznfavjf1vfhtmdflcznyclflunrhv2cwcm5qbdh4dgv5y0xqtklfvfp3yuf1cutlvtlfsnpfu2joohjuwev2wgc?oc=5|41569",
+      "kind": "claim",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-27T14:00:40.000Z",
+      "detectedAt": "2026-11-27T14:36:38.571Z",
+      "title": "New claim about Leonida",
+      "oneLine": "GTA VI PC Port Multiplayer: 2 Players Run Leonida at 25 to 30fps on an Unofficial Build",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTkdaN3NZZkhCYzZkSHJEaDdWWTIzVHowOXlHSFY2MnRJdEgyZmdBYU1OTXRBb3JUYXlwWlRkQ3MzdEE2bXhpY19DaHhSbUJYWWhjaXdwb25Pc0tBSTRXa0taUmMyemVPbzR6YnVoNlUwQzU5cDJHbjFfZnFaVjF1VFhtMDFlczNyclFlUnRhV2cwcm5qbDh4dGV5Y0xqTklfVFp3YUF1cUtlVTlFSnpfU2JOOHJuWEV2WGc?oc=5",
+          "host": "news.google.com",
+          "outlet": "stupidDOPE",
+          "title": "GTA VI PC Port Multiplayer: 2 Players Run Leonida at 25 to 30fps on an Unofficial Build",
+          "at": "2026-11-27T14:00:40.000Z",
+          "kind": "outside",
+          "authorHash": "1e9ac10d96",
+          "excerpt": "GTA VI PC Port Multiplayer: 2 Players Run Leonida at 25 to 30fps on an Unofficial Build"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "a5d13c1622d0040d",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": true,
+      "audit": null,
+      "chain": "sha256:503a5b1f5d4b82dacda2f0c6a00add33381339126d4345fe23bef046dbb2a168",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a claim about the executable or a leak",
+        "low confidence"
+      ]
     }
   ],
   "reports": [
