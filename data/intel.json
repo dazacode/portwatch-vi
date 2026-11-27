@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T19:50:18.548Z",
+  "updated": "2026-11-27T20:05:20.765Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T19:31:30.000Z",
-      "lastOkAt": "2026-11-27T19:50:18.548Z",
-      "seen": 38000,
-      "events": 1333,
+      "lastCursor": "2026-11-27T20:01:23.000Z",
+      "lastOkAt": "2026-11-27T20:05:20.765Z",
+      "seen": 38250,
+      "events": 1352,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T19:50:18.548Z",
+      "lastOkAt": "2026-11-27T20:05:20.765Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T19:50:18.548Z",
-      "seen": 9271,
+      "lastOkAt": "2026-11-27T20:05:20.765Z",
+      "seen": 9334,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T19:30:20.551Z",
-      "lastOkAt": "2026-11-27T19:50:18.548Z",
-      "seen": 60800,
+      "lastCursor": "2026-11-27T19:43:57.449Z",
+      "lastOkAt": "2026-11-27T20:05:20.765Z",
+      "seen": 61200,
       "events": 45,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T07:50:18.548Z",
-      "lastOkAt": "2026-11-27T19:50:18.548Z",
-      "seen": 18300,
+      "lastCursor": "2026-11-27T08:05:20.765Z",
+      "lastOkAt": "2026-11-27T20:05:20.765Z",
+      "seen": 18423,
       "events": 12,
       "errors": 0
     }
@@ -12721,12 +12721,17 @@
           "at": "2026-11-27T12:20:22.682Z",
           "by": "desk",
           "note": "The project's GitHub pull request title directly and unambiguously supports the one-line update, with no conflicting source present."
+        },
+        {
+          "at": "2026-11-27T20:05:20.765Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub entry with no excerpt, so it is a thin, non-independent confirmation of the one-line claim."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T12:20:22.682Z"
+      "deskAt": "2026-11-27T20:05:20.765Z"
     },
     {
       "id": "20261127t120112z-xcl-c9f7cac1",
@@ -15422,6 +15427,63 @@
         "low confidence"
       ],
       "deskAt": "2026-11-27T19:35:24.327Z"
+    },
+    {
+      "id": "20261127t200014z-el1xr-ca422885",
+      "key": "update|el1xr|activity|41569",
+      "kind": "update",
+      "projectId": "el1xr",
+      "projectName": "El1xr",
+      "at": "2026-11-27T20:00:14Z",
+      "detectedAt": "2026-11-27T20:05:20.765Z",
+      "title": "El1xr opened pull request #92",
+      "oneLine": "framegen: DLSS Frame Generation through Streamline (VICTORY_FRAME_GEN=dlss)",
+      "sources": [
+        {
+          "url": "https://github.com/kylepelham/El1xr/pull/92",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "framegen: DLSS Frame Generation through Streamline (VICTORY_FRAME_GEN=dlss)",
+          "at": "2026-11-27T20:00:14Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "kylepelham/el1xr",
+        "name": "el1xr",
+        "words": [
+          "el1xr"
+        ],
+        "hash": "848d4084120800c1",
+        "projectId": "el1xr"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:0ef1696c0652c4ccebd40ae7e10974a5a432039409530209641f6b451583937d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T20:05:20.765Z",
+          "by": "desk",
+          "note": "The one line only asserts that the project's own repository opened PR #92 with that title, which the primary GitHub source states verbatim and nothing contradicts."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T20:05:20.765Z"
     }
   ],
   "reports": [
