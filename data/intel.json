@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T14:36:38.571Z",
+  "updated": "2026-11-27T14:50:21.776Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T14:31:09.000Z",
-      "lastOkAt": "2026-11-27T14:36:38.571Z",
-      "seen": 32750,
+      "lastOkAt": "2026-11-27T14:50:21.776Z",
+      "seen": 33000,
       "events": 1158,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T12:10:29.000Z",
-      "lastOkAt": "2026-11-27T14:36:38.571Z",
+      "lastOkAt": "2026-11-27T14:50:21.776Z",
       "seen": 40,
       "events": 32,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T02:36:38.571Z",
-      "lastOkAt": "2026-11-27T14:36:38.571Z",
-      "seen": 7948,
-      "events": 24,
+      "lastCursor": "2026-11-27T14:42:29.289Z",
+      "lastOkAt": "2026-11-27T14:50:21.776Z",
+      "seen": 8011,
+      "events": 25,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T14:26:54.000Z",
-      "lastOkAt": "2026-11-27T14:36:38.571Z",
-      "seen": 52400,
+      "lastOkAt": "2026-11-27T14:50:21.776Z",
+      "seen": 52800,
       "events": 40,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T02:36:38.571Z",
-      "lastOkAt": "2026-11-27T14:36:38.571Z",
-      "seen": 15703,
+      "lastCursor": "2026-11-27T02:50:21.776Z",
+      "lastOkAt": "2026-11-27T14:50:21.776Z",
+      "seen": 15827,
       "events": 12,
       "errors": 0
     }
@@ -13289,10 +13289,17 @@
       "chain": "sha256:f539dc14493097880909f6c17a044bec746485426096df5ac25c910fa8919540",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T14:50:21.776Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository with an empty excerpt, so it is neither independent nor does it plainly substantiate the claim that GTA VI progress is tracked in the README."
+        }
+      ],
       "heldReasons": [
         "low confidence"
-      ]
+      ],
+      "deskAt": "2026-11-27T14:50:21.776Z"
     },
     {
       "id": "20261127t125928z-anyxboxx-1115efaf",
@@ -14259,6 +14266,63 @@
         "a claim about the executable or a leak",
         "low confidence"
       ]
+    },
+    {
+      "id": "20261127t144229z-victory-nvidia-8548ac22",
+      "key": "update|victory-nvidia|playable|41569",
+      "kind": "update",
+      "projectId": "victory-nvidia",
+      "projectName": "VIctory-NVIDIA",
+      "at": "2026-11-27T14:42:29.289Z",
+      "detectedAt": "2026-11-27T14:50:21.776Z",
+      "title": "VIctory-NVIDIA moved to playable",
+      "oneLine": "The project’s record moved from 0% to 89.4%.",
+      "sources": [
+        {
+          "url": "https://github.com/trustno1-coder/VIctory-NVIDIA",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "VIctory-NVIDIA record",
+          "at": "2026-11-27T14:42:29.289Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "trustno1-coder/victory-nvidia",
+        "name": "victory-nvidia",
+        "words": [
+          "victory-nvidia"
+        ],
+        "hash": "cc6ac9b17dd516d1",
+        "projectId": "victory-nvidia"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:44eebe8d7d9609aecc45da3c181c321f01f1b827162aa3de66b66c0191c8604b",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T14:50:21.776Z",
+          "by": "desk",
+          "note": "The only support is the project’s own repository, which is primary but not independent, and its excerpt is empty, so the specific 0% to 89.4% jump is not plainly corroborated."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T14:50:21.776Z"
     }
   ],
   "reports": [
