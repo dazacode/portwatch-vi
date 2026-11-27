@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T22:50:23.179Z",
+  "updated": "2026-11-27T23:05:22.256Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T22:30:51.000Z",
-      "lastOkAt": "2026-11-27T22:50:23.179Z",
-      "seen": 41000,
-      "events": 1433,
+      "lastCursor": "2026-11-27T23:01:26.000Z",
+      "lastOkAt": "2026-11-27T23:05:22.256Z",
+      "seen": 41250,
+      "events": 1452,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T22:50:23.179Z",
+      "lastOkAt": "2026-11-27T23:05:22.256Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T22:50:23.179Z",
-      "seen": 10027,
+      "lastOkAt": "2026-11-27T23:05:22.256Z",
+      "seen": 10090,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T22:30:14.000Z",
-      "lastOkAt": "2026-11-27T22:50:23.179Z",
-      "seen": 65600,
+      "lastOkAt": "2026-11-27T23:05:22.256Z",
+      "seen": 66000,
       "events": 46,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T10:50:23.179Z",
-      "lastOkAt": "2026-11-27T22:50:23.179Z",
-      "seen": 19776,
+      "lastCursor": "2026-11-27T11:05:22.256Z",
+      "lastOkAt": "2026-11-27T23:05:22.256Z",
+      "seen": 19899,
       "events": 12,
       "errors": 0
     }
@@ -15784,6 +15784,63 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-27T22:35:20.704Z"
+    },
+    {
+      "id": "20261127t223826z-gtavi-recomp-a007e7eb",
+      "key": "update|gtavi-recomp|activity|41569",
+      "kind": "update",
+      "projectId": "gtavi-recomp",
+      "projectName": "GTAVI-Recomp",
+      "at": "2026-11-27T22:38:26Z",
+      "detectedAt": "2026-11-27T23:05:22.256Z",
+      "title": "GTAVI-Recomp opened pull request #21",
+      "oneLine": "Use Node 24-compatible GitHub Actions in hosted workflows",
+      "sources": [
+        {
+          "url": "https://github.com/JamesCicada/GTAVI-Recomp/pull/21",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Use Node 24-compatible GitHub Actions in hosted workflows",
+          "at": "2026-11-27T22:38:26Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "jamescicada/gtavi-recomp",
+        "name": "gtavi-recomp",
+        "words": [
+          "gtavi-recomp"
+        ],
+        "hash": "5029518b35200880",
+        "projectId": "gtavi-recomp"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:23d67a7e7816b9d2899b9fce297f05072450602b6d4289752af1cf2fafe8d11e",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T23:05:22.256Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository, which is not independent, and the empty excerpt leaves the CI-workflow change unverifiable and incidental to GTA VI on PC tracking."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T23:05:22.256Z"
     }
   ],
   "reports": [
