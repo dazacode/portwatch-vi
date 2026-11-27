@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T07:05:41.825Z",
+  "updated": "2026-11-27T07:20:25.993Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T07:01:17.000Z",
-      "lastOkAt": "2026-11-27T07:05:41.825Z",
-      "seen": 25250,
+      "lastOkAt": "2026-11-27T07:20:25.993Z",
+      "seen": 25500,
       "events": 914,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T06:03:44.000Z",
-      "lastOkAt": "2026-11-27T07:05:41.825Z",
+      "lastOkAt": "2026-11-27T07:20:25.993Z",
       "seen": 37,
       "events": 29,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T07:05:41.825Z",
-      "seen": 6088,
+      "lastOkAt": "2026-11-27T07:20:25.993Z",
+      "seen": 6150,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T06:46:53.139Z",
-      "lastOkAt": "2026-11-27T07:05:41.825Z",
-      "seen": 40400,
+      "lastOkAt": "2026-11-27T07:20:25.993Z",
+      "seen": 40800,
       "events": 31,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T07:05:41.825Z",
-      "seen": 12013,
+      "lastOkAt": "2026-11-27T07:20:25.993Z",
+      "seen": 12136,
       "events": 12,
       "errors": 0
     }
@@ -10538,12 +10538,17 @@
           "at": "2026-11-27T01:05:20.642Z",
           "by": "desk",
           "note": "The only source is the project's own repository with an empty excerpt, so the specific performance and rendering claims rest on a self-published title rather than independent corroboration."
+        },
+        {
+          "at": "2026-11-27T07:20:25.993Z",
+          "by": "desk",
+          "note": "The only source is the project's own pull request with an empty excerpt, so the specific performance and rendering claims are not independently corroborated and the item is too thin to publish."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T01:05:20.642Z"
+      "deskAt": "2026-11-27T07:20:25.993Z"
     },
     {
       "id": "20261127t004218z-vitoriabr-b03171ee",
@@ -10596,12 +10601,17 @@
           "at": "2026-11-27T01:20:21.926Z",
           "by": "desk",
           "note": "The project's own repository directly records pull request #129 with that exact title, and no source contradicts it."
+        },
+        {
+          "at": "2026-11-27T07:20:25.993Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository with an empty excerpt, so the PR-open claim is primary but not independent and is not plainly corroborated by any stored text."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T01:20:21.926Z"
+      "deskAt": "2026-11-27T07:20:25.993Z"
     },
     {
       "id": "20261127t010628z-leonida-bb317f4b",
