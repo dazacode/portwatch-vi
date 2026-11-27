@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T03:50:22.780Z",
+  "updated": "2026-11-27T04:05:21.555Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T03:35:24.000Z",
-      "lastOkAt": "2026-11-27T03:50:22.780Z",
-      "seen": 22000,
-      "events": 813,
+      "lastCursor": "2026-11-27T04:01:41.000Z",
+      "lastOkAt": "2026-11-27T04:05:21.555Z",
+      "seen": 22250,
+      "events": 830,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T02:04:54.000Z",
-      "lastOkAt": "2026-11-27T03:50:22.780Z",
+      "lastOkAt": "2026-11-27T04:05:21.555Z",
       "seen": 34,
       "events": 26,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T03:50:22.780Z",
-      "seen": 5282,
+      "lastOkAt": "2026-11-27T04:05:21.555Z",
+      "seen": 5344,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T03:10:03.944Z",
-      "lastOkAt": "2026-11-27T03:50:22.780Z",
-      "seen": 35200,
+      "lastCursor": "2026-11-27T04:00:04.544Z",
+      "lastOkAt": "2026-11-27T04:05:21.555Z",
+      "seen": 35600,
       "events": 28,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T03:50:22.780Z",
-      "seen": 10414,
+      "lastOkAt": "2026-11-27T04:05:21.555Z",
+      "seen": 10537,
       "events": 12,
       "errors": 0
     }
@@ -11155,10 +11155,17 @@
       "chain": "sha256:9bc8c8aeda20ea0bd46b8a31b8d5f8152c3541ed95b17227206d421c48da8bbc",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T04:05:21.555Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository — primary but not independent — and its excerpt merely repeats the title with no substantive detail, so the one line is not plainly supported."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T04:05:21.555Z"
     },
     {
       "id": "20261127t010159z-xbox2windows-e305184b",
@@ -11207,10 +11214,17 @@
       "chain": "sha256:8128cf76e3f0c9f0ad3683176150124f95c623de6f7fac6cbe88884804c2ac5c",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T04:05:21.555Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository excerpt, which repeats the claim but is not independent corroboration."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T04:05:21.555Z"
     },
     {
       "id": "20261127t004500z-marvis-6c2e679f",
