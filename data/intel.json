@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T08:06:17.465Z",
+  "updated": "2026-11-27T08:20:20.492Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T08:00:52.000Z",
-      "lastOkAt": "2026-11-27T08:06:17.465Z",
-      "seen": 26250,
+      "lastOkAt": "2026-11-27T08:20:20.492Z",
+      "seen": 26500,
       "events": 952,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T06:03:44.000Z",
-      "lastOkAt": "2026-11-27T08:06:17.465Z",
+      "lastOkAt": "2026-11-27T08:20:20.492Z",
       "seen": 37,
       "events": 29,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T08:06:17.465Z",
-      "seen": 6336,
+      "lastOkAt": "2026-11-27T08:20:20.492Z",
+      "seen": 6398,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T07:58:01.942Z",
-      "lastOkAt": "2026-11-27T08:06:17.465Z",
-      "seen": 42000,
+      "lastOkAt": "2026-11-27T08:20:20.492Z",
+      "seen": 42400,
       "events": 31,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T08:06:17.465Z",
-      "seen": 12505,
+      "lastOkAt": "2026-11-27T08:20:20.492Z",
+      "seen": 12628,
       "events": 12,
       "errors": 0
     }
@@ -9972,12 +9972,17 @@
           "at": "2026-11-27T01:35:21.628Z",
           "by": "desk",
           "note": "The only source is the project’s own GitHub entry with an empty excerpt, so the technical claim is not plainly supported beyond its title and lacks independent corroboration."
+        },
+        {
+          "at": "2026-11-27T08:20:20.492Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub entry with no excerpt, so it is primary but not independent and too thin to verify the claim plainly."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T01:35:21.628Z"
+      "deskAt": "2026-11-27T08:20:20.492Z"
     },
     {
       "id": "20261127t002846z-whibwhi-own-1729c40b",
@@ -11093,12 +11098,17 @@
           "at": "2026-11-27T02:05:21.679Z",
           "by": "desk",
           "note": "The item rests on a single outside XDA report whose excerpt only repeats its headline, so the claim is too thin to publish without independent corroboration."
+        },
+        {
+          "at": "2026-11-27T08:20:20.492Z",
+          "by": "desk",
+          "note": "The item rests on a single outside XDA headline with no corroborating detail or primary source, so the one line is too thin to publish."
         }
       ],
       "heldReasons": [
         "low confidence"
       ],
-      "deskAt": "2026-11-27T02:05:21.679Z"
+      "deskAt": "2026-11-27T08:20:20.492Z"
     },
     {
       "id": "20261127t030425z-vitoria-spark-3d7ea5b4",
