@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T23:20:22.511Z",
+  "updated": "2026-11-27T23:35:21.678Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T23:01:26.000Z",
-      "lastOkAt": "2026-11-27T23:20:22.511Z",
-      "seen": 41500,
-      "events": 1452,
+      "lastCursor": "2026-11-27T23:30:54.000Z",
+      "lastOkAt": "2026-11-27T23:35:21.678Z",
+      "seen": 41750,
+      "events": 1467,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T23:20:22.511Z",
+      "lastOkAt": "2026-11-27T23:35:21.678Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T23:20:22.511Z",
-      "seen": 10153,
+      "lastOkAt": "2026-11-27T23:35:21.678Z",
+      "seen": 10216,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T22:30:14.000Z",
-      "lastOkAt": "2026-11-27T23:20:22.511Z",
-      "seen": 66400,
+      "lastCursor": "2026-11-27T23:04:01.000Z",
+      "lastOkAt": "2026-11-27T23:35:21.678Z",
+      "seen": 66800,
       "events": 46,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T11:20:22.511Z",
-      "lastOkAt": "2026-11-27T23:20:22.511Z",
-      "seen": 20022,
+      "lastCursor": "2026-11-27T11:35:21.678Z",
+      "lastOkAt": "2026-11-27T23:35:21.678Z",
+      "seen": 20145,
       "events": 12,
       "errors": 0
     }
@@ -13397,12 +13397,17 @@
           "at": "2026-11-27T15:50:29.816Z",
           "by": "desk",
           "note": "The item is an internal performance pull request in a project's own repository with an empty excerpt, so it is thin, non-independent, and does not plainly support a GTA VI on PC tracker line."
+        },
+        {
+          "at": "2026-11-27T23:35:21.678Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository entry with an empty excerpt, so it is primary but not independent and too thin to verify the one-line claim."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T15:50:29.816Z"
+      "deskAt": "2026-11-27T23:35:21.678Z"
     },
     {
       "id": "20261127t125814z-avatarmanz-45f1259b",
@@ -15028,12 +15033,17 @@
           "at": "2026-11-27T17:35:20.426Z",
           "by": "desk",
           "note": "The only source is a single Bluesky social post, which the rules treat as weak on its own and which no independent or primary source corroborates."
+        },
+        {
+          "at": "2026-11-27T23:35:21.678Z",
+          "by": "desk",
+          "note": "The only source is a single Bluesky social post, which is a weak source on its own and does not independently substantiate the 3,000-repository takedown figure."
         }
       ],
       "heldReasons": [
         "low confidence"
       ],
-      "deskAt": "2026-11-27T17:35:20.426Z"
+      "deskAt": "2026-11-27T23:35:21.678Z"
     },
     {
       "id": "20261127t180024z-marvis-23134300",
