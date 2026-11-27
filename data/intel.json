@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T17:50:21.067Z",
+  "updated": "2026-11-27T18:05:21.422Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T17:31:07.000Z",
-      "lastOkAt": "2026-11-27T17:50:21.067Z",
-      "seen": 36000,
-      "events": 1273,
+      "lastCursor": "2026-11-27T18:01:03.000Z",
+      "lastOkAt": "2026-11-27T18:05:21.422Z",
+      "seen": 36250,
+      "events": 1290,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T14:50:39.000Z",
-      "lastOkAt": "2026-11-27T17:50:21.067Z",
+      "lastOkAt": "2026-11-27T18:05:21.422Z",
       "seen": 42,
       "events": 34,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T17:50:21.067Z",
-      "seen": 8767,
+      "lastOkAt": "2026-11-27T18:05:21.422Z",
+      "seen": 8830,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T17:17:57.444Z",
-      "lastOkAt": "2026-11-27T17:50:21.067Z",
-      "seen": 57600,
-      "events": 42,
+      "lastCursor": "2026-11-27T18:00:24.949Z",
+      "lastOkAt": "2026-11-27T18:05:21.422Z",
+      "seen": 58000,
+      "events": 43,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T05:50:21.067Z",
-      "lastOkAt": "2026-11-27T17:50:21.067Z",
-      "seen": 17310,
+      "lastCursor": "2026-11-27T06:05:21.422Z",
+      "lastOkAt": "2026-11-27T18:05:21.422Z",
+      "seen": 17433,
       "events": 12,
       "errors": 0
     }
@@ -12935,10 +12935,17 @@
       "chain": "sha256:b8eac3c89b81a05dd31361265e914d2656b065ae1575ed229ca14182cf0c4ec0",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T18:05:21.422Z",
+          "by": "desk",
+          "note": "This is a shader/GPU-ISA pull request in an unrelated macOS project, off-topic for a GTA VI on PC tracker, and the only source is the project's own repository with an empty excerpt."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T18:05:21.422Z"
     },
     {
       "id": "20261127t120025z-cgbj-4a9af1f2",
@@ -14927,6 +14934,109 @@
         "low confidence"
       ],
       "deskAt": "2026-11-27T17:35:20.426Z"
+    },
+    {
+      "id": "20261127t180024z-marvis-23134300",
+      "key": "claim|marvis|https://bsky.app/profile/tweaktown.com/post/3n3cretho7c2y|41569",
+      "kind": "claim",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-27T18:00:24.949Z",
+      "detectedAt": "2026-11-27T18:05:21.422Z",
+      "title": "New claim about VIctory",
+      "oneLine": "A 208.62GB GTA 6 repack has appeared on a Russian torrent site, using the VIctory…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/tweaktown.com/post/3n3cretho7c2y",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "A 208.62GB GTA 6 repack has appeared on a Russian torrent site, using the VIctory compatibility layer to run a leaked Xb",
+          "at": "2026-11-27T18:00:24.949Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "A 208.62GB GTA 6 repack has appeared on a Russian torrent site, using the VIctory compatibility layer to run a leaked Xb"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "e202042f82240f39",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": true,
+      "audit": null,
+      "chain": "sha256:35275580e2c0e646e1130005f27ca83faa9869ef185a147ff3e3598ec17fb962",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a claim about the executable or a leak",
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261127t175549z-anyxboxx-e85d8aae",
+      "key": "reference|anyxboxx|activity|41569",
+      "kind": "reference",
+      "projectId": "anyxboxx",
+      "projectName": "AnyXboxX",
+      "at": "2026-11-27T17:55:49Z",
+      "detectedAt": "2026-11-27T18:05:21.422Z",
+      "title": "New reference to AnyXboxX",
+      "oneLine": "El1xr: GTA VI (Xbox Series 1.0.2.1) running on a Windows PC. 4K, ~25 fps on an RTX 5090. Fork of AnyXboxX, built on VIctory. GPL-3.0.",
+      "sources": [
+        {
+          "url": "https://github.com/kylepelham/El1xr",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "kylepelham/El1xr",
+          "at": "2026-11-27T17:55:49Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "loopersalty/anyxboxx",
+        "name": "anyxboxx",
+        "words": [
+          "anyxboxx"
+        ],
+        "hash": "2cfd6002300a9cda",
+        "projectId": "anyxboxx"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:9649236d4cc8987a3d235216a8110045b0cdcd5a32391ae520a56ca83e83494d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
