@@ -1,6 +1,16 @@
 {
-  "lastRun": "2026-11-27T20:42:06.726Z",
+  "lastRun": "2026-11-27T21:41:27.038Z",
   "runs": [
+    {
+      "at": "2026-11-27T21:41:27.038Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [],
+      "skipped": [
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world in Full HD”",
+        "held: candidate hello3928/Project-VI: has markup"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-27T20:42:06.726Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -484,15 +494,6 @@
         "held: score anyxboxx gta.fps=12: proposed, from “~12 fps in the world (Series X, RTX 4070 SUPER), measured 2026-11-25”",
         "held: candidate baummarder/xHoly: has markup",
         "held: candidate ihaterockstargames/sixth-star: has markup"
-      ],
-      "note": null
-    },
-    {
-      "at": "2026-11-25T21:35:26.972Z",
-      "by": "Pollinations, gpt-oss-20b",
-      "applied": [],
-      "skipped": [
-        "held: finding leonida: describes access to the game"
       ],
       "note": null
     }
