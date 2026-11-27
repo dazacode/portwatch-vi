@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T22:06:51.259Z",
+  "updated": "2026-11-27T22:20:22.548Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T22:01:34.000Z",
-      "lastOkAt": "2026-11-27T22:06:51.259Z",
-      "seen": 40250,
+      "lastOkAt": "2026-11-27T22:20:22.548Z",
+      "seen": 40500,
       "events": 1411,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T22:06:51.259Z",
+      "lastOkAt": "2026-11-27T22:20:22.548Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T22:06:51.259Z",
-      "seen": 9838,
+      "lastOkAt": "2026-11-27T22:20:22.548Z",
+      "seen": 9901,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T21:40:22.545Z",
-      "lastOkAt": "2026-11-27T22:06:51.259Z",
-      "seen": 64400,
+      "lastOkAt": "2026-11-27T22:20:22.548Z",
+      "seen": 64800,
       "events": 46,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T10:06:51.259Z",
-      "lastOkAt": "2026-11-27T22:06:51.259Z",
-      "seen": 19407,
+      "lastCursor": "2026-11-27T10:20:22.548Z",
+      "lastOkAt": "2026-11-27T22:20:22.548Z",
+      "seen": 19530,
       "events": 12,
       "errors": 0
     }
@@ -14344,12 +14344,17 @@
           "at": "2026-11-27T14:36:38.571Z",
           "by": "desk",
           "note": "The only source is the project’s own repository entry with no excerpt, so it is primary but not independent and too thin to plainly support the one-line claim."
+        },
+        {
+          "at": "2026-11-27T22:20:22.548Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the one line rests on a thin, non-independent record that the stored text does not actually show."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T14:36:38.571Z"
+      "deskAt": "2026-11-27T22:20:22.548Z"
     },
     {
       "id": "20261127t140040z-leonida-c0a35b06",
@@ -14705,12 +14710,17 @@
           "at": "2026-11-27T15:50:29.816Z",
           "by": "desk",
           "note": "The only source is the project’s own repository and the excerpt is truncated and vague, so it does not plainly support a publishable one-line claim."
+        },
+        {
+          "at": "2026-11-27T22:20:22.548Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository and the one-line claim is truncated and thin, so it does not plainly support a publishable update."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T15:50:29.816Z"
+      "deskAt": "2026-11-27T22:20:22.548Z"
     },
     {
       "id": "20261127t142337z-belobug-177e0e40",
