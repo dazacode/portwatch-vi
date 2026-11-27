@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T02:20:19.781Z",
+  "updated": "2026-11-27T02:35:21.630Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T02:01:37.000Z",
-      "lastOkAt": "2026-11-27T02:20:19.781Z",
-      "seen": 20500,
-      "events": 761,
+      "lastCursor": "2026-11-27T02:31:11.000Z",
+      "lastOkAt": "2026-11-27T02:35:21.630Z",
+      "seen": 20750,
+      "events": 779,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T21:53:31.000Z",
-      "lastOkAt": "2026-11-27T02:20:19.781Z",
+      "lastOkAt": "2026-11-27T02:35:21.630Z",
       "seen": 30,
       "events": 22,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T02:20:19.781Z",
-      "seen": 4910,
+      "lastOkAt": "2026-11-27T02:35:21.630Z",
+      "seen": 4972,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T01:54:48.341Z",
-      "lastOkAt": "2026-11-27T02:20:19.781Z",
-      "seen": 32800,
+      "lastCursor": "2026-11-27T02:07:07.450Z",
+      "lastOkAt": "2026-11-27T02:35:21.630Z",
+      "seen": 33200,
       "events": 28,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T02:20:19.781Z",
-      "seen": 9676,
+      "lastOkAt": "2026-11-27T02:35:21.630Z",
+      "seen": 9799,
       "events": 12,
       "errors": 0
     }
@@ -10069,10 +10069,17 @@
       "chain": "sha256:ca1f9c8c2bc419be1217d27b546136cad48123ae025d6df797622022e9e9b629",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T02:35:21.630Z",
+          "by": "desk",
+          "note": "The only support is a pull-request title in the project's own repository with no excerpt or independent confirmation, and an opened PR does not establish that the correction was accepted."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T02:35:21.630Z"
     },
     {
       "id": "20261127t002356z-project-americas-400638a4",
@@ -10119,10 +10126,17 @@
       "chain": "sha256:824cd31e3733999b92a1bf1fb2d3b9c5019c8c17977c3cab99ce7f5157819d23",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T02:35:21.630Z",
+          "by": "desk",
+          "note": "The project's own repository commit title directly matches the one-line summary, and no source contradicts it."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T02:35:21.630Z"
     },
     {
       "id": "20261127t002339z-scene-371802af",
