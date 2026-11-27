@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T07:35:26.222Z",
+  "updated": "2026-11-27T07:50:20.780Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T07:30:59.000Z",
-      "lastOkAt": "2026-11-27T07:35:26.222Z",
-      "seen": 25750,
+      "lastOkAt": "2026-11-27T07:50:20.780Z",
+      "seen": 26000,
       "events": 931,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T06:03:44.000Z",
-      "lastOkAt": "2026-11-27T07:35:26.222Z",
+      "lastOkAt": "2026-11-27T07:50:20.780Z",
       "seen": 37,
       "events": 29,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T07:35:26.222Z",
-      "seen": 6212,
+      "lastOkAt": "2026-11-27T07:50:20.780Z",
+      "seen": 6274,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T07:15:16.145Z",
-      "lastOkAt": "2026-11-27T07:35:26.222Z",
-      "seen": 41200,
+      "lastOkAt": "2026-11-27T07:50:20.780Z",
+      "seen": 41600,
       "events": 31,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T07:35:26.222Z",
-      "seen": 12259,
+      "lastOkAt": "2026-11-27T07:50:20.780Z",
+      "seen": 12382,
       "events": 12,
       "errors": 0
     }
@@ -9910,12 +9910,17 @@
           "at": "2026-11-27T01:35:21.628Z",
           "by": "desk",
           "note": "The only stored source is the project’s own GitHub entry with an empty excerpt, so the multi-part commit claim is not plainly supported by the stored material."
+        },
+        {
+          "at": "2026-11-27T07:50:20.780Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, and the one line bundles an unverified \"8.8 fps\" performance claim that a commit message alone does not substantiate."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T01:35:21.628Z"
+      "deskAt": "2026-11-27T07:50:20.780Z"
     },
     {
       "id": "20261127t003128z-avatarmanz-f3ac44cc",
