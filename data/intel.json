@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T22:20:22.548Z",
+  "updated": "2026-11-27T22:35:20.704Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T22:01:34.000Z",
-      "lastOkAt": "2026-11-27T22:20:22.548Z",
-      "seen": 40500,
-      "events": 1411,
+      "lastCursor": "2026-11-27T22:30:51.000Z",
+      "lastOkAt": "2026-11-27T22:35:20.704Z",
+      "seen": 40750,
+      "events": 1433,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T22:20:22.548Z",
+      "lastOkAt": "2026-11-27T22:35:20.704Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T22:20:22.548Z",
-      "seen": 9901,
+      "lastOkAt": "2026-11-27T22:35:20.704Z",
+      "seen": 9964,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T21:40:22.545Z",
-      "lastOkAt": "2026-11-27T22:20:22.548Z",
-      "seen": 64800,
+      "lastCursor": "2026-11-27T22:30:14.000Z",
+      "lastOkAt": "2026-11-27T22:35:20.704Z",
+      "seen": 65200,
       "events": 46,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T10:20:22.548Z",
-      "lastOkAt": "2026-11-27T22:20:22.548Z",
-      "seen": 19530,
+      "lastCursor": "2026-11-27T10:35:20.704Z",
+      "lastOkAt": "2026-11-27T22:35:20.704Z",
+      "seen": 19653,
       "events": 12,
       "errors": 0
     }
@@ -13335,12 +13335,17 @@
           "at": "2026-11-27T14:50:21.776Z",
           "by": "desk",
           "note": "The only stored source is the project's own repository with an empty excerpt, so it is neither independent nor does it plainly substantiate the claim that GTA VI progress is tracked in the README."
+        },
+        {
+          "at": "2026-11-27T22:35:20.704Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the claim that GTA VI progress is tracked in the README is unverified and has no independent corroboration."
         }
       ],
       "heldReasons": [
         "low confidence"
       ],
-      "deskAt": "2026-11-27T14:50:21.776Z"
+      "deskAt": "2026-11-27T22:35:20.704Z"
     },
     {
       "id": "20261127t125928z-anyxboxx-1115efaf",
@@ -15712,6 +15717,63 @@
       "heldReasons": [
         "duplicate build reference"
       ]
+    },
+    {
+      "id": "20261127t221544z-openscarlett-dfcf8029",
+      "key": "update|openscarlett|activity|41569",
+      "kind": "update",
+      "projectId": "openscarlett",
+      "projectName": "OpenScarlett",
+      "at": "2026-11-27T22:15:44Z",
+      "detectedAt": "2026-11-27T22:35:20.704Z",
+      "title": "OpenScarlett opened pull request #66",
+      "oneLine": "fix(gdk,test): align XDisplayTryEnableHdrMode tests with zeroed SDR contract",
+      "sources": [
+        {
+          "url": "https://github.com/californiaAlmonds/OpenScarlett/pull/66",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "fix(gdk,test): align XDisplayTryEnableHdrMode tests with zeroed SDR contract",
+          "at": "2026-11-27T22:15:44Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "californiaalmonds/openscarlett",
+        "name": "openscarlett",
+        "words": [
+          "openscarlett"
+        ],
+        "hash": "9529868320758250",
+        "projectId": "openscarlett"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:e195023de557bb014a6ed87486bd3de003a14f79873e8f86fe53208f6eefe3aa",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T22:35:20.704Z",
+          "by": "desk",
+          "note": "This is a routine pull-request title from the project's own repository with an empty excerpt, so the stored source is too thin to support the line as a standalone update."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T22:35:20.704Z"
     }
   ],
   "reports": [
