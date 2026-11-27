@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T16:20:21.636Z",
+  "updated": "2026-11-27T16:36:59.623Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T16:01:56.000Z",
-      "lastOkAt": "2026-11-27T16:20:21.636Z",
-      "seen": 34500,
-      "events": 1208,
+      "lastCursor": "2026-11-27T16:31:10.000Z",
+      "lastOkAt": "2026-11-27T16:36:59.623Z",
+      "seen": 34750,
+      "events": 1231,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T14:50:39.000Z",
-      "lastOkAt": "2026-11-27T16:20:21.636Z",
+      "lastOkAt": "2026-11-27T16:36:59.623Z",
       "seen": 42,
       "events": 34,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T16:20:21.636Z",
-      "seen": 8389,
+      "lastOkAt": "2026-11-27T16:36:59.623Z",
+      "seen": 8452,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T15:49:23.000Z",
-      "lastOkAt": "2026-11-27T16:20:21.636Z",
-      "seen": 55200,
+      "lastCursor": "2026-11-27T16:23:50.156Z",
+      "lastOkAt": "2026-11-27T16:36:59.623Z",
+      "seen": 55600,
       "events": 41,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T04:20:21.636Z",
-      "lastOkAt": "2026-11-27T16:20:21.636Z",
-      "seen": 16571,
+      "lastCursor": "2026-11-27T04:36:59.623Z",
+      "lastOkAt": "2026-11-27T16:36:59.623Z",
+      "seen": 16695,
       "events": 12,
       "errors": 0
     }
@@ -14649,6 +14649,172 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-27T15:35:34.493Z"
+    },
+    {
+      "id": "20261127t162857z-vitoria-spark-0d3ce4c5",
+      "key": "update|vitoria-spark|activity|41569",
+      "kind": "update",
+      "projectId": "vitoria-spark",
+      "projectName": "VItoria Spark",
+      "at": "2026-11-27T16:28:57Z",
+      "detectedAt": "2026-11-27T16:36:59.623Z",
+      "title": "VItoria Spark opened pull request #7",
+      "oneLine": "Criar a pasta de VICTORY_CAPTURE quando ela não existe",
+      "sources": [
+        {
+          "url": "https://github.com/martindevbr/VItoria-Spark/pull/7",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Criar a pasta de VICTORY_CAPTURE quando ela não existe",
+          "at": "2026-11-27T16:28:57Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "martindevbr/vitoria-spark",
+        "name": "vitoria spark",
+        "words": [
+          "vitoria",
+          "spark",
+          "vitoria-spark"
+        ],
+        "hash": "8264478892d90287",
+        "projectId": "vitoria-spark"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:5cb61aa879a43f991f61ea10da8f2694feac0dca39c7b569715f36b17270041d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T16:36:59.623Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository entry with an empty excerpt, which is a thin, non-independent source for a line that merely restates a pull request title."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T16:36:59.623Z"
+    },
+    {
+      "id": "20261127t162658z-victory-nvidia-hybrid-24d00aa5",
+      "key": "update|victory-nvidia-hybrid|activity|41569",
+      "kind": "update",
+      "projectId": "victory-nvidia-hybrid",
+      "projectName": "VIctory-NVIDIA-Hybrid",
+      "at": "2026-11-27T16:26:58Z",
+      "detectedAt": "2026-11-27T16:36:59.623Z",
+      "title": "VIctory-NVIDIA-Hybrid opened pull request #59",
+      "oneLine": "Run the submitting thread's helpers at its priority (port from VIctory-NVIDIA)",
+      "sources": [
+        {
+          "url": "https://github.com/Bebrik229/VIctory-NVIDIA-Hybrid/pull/59",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Run the submitting thread's helpers at its priority (port from VIctory-NVIDIA)",
+          "at": "2026-11-27T16:20:14Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "bebrik229/victory-nvidia-hybrid",
+        "name": "victory-nvidia-hybrid",
+        "words": [
+          "victory-nvidia-hybrid"
+        ],
+        "hash": "0105128094c20df0",
+        "projectId": "victory-nvidia-hybrid"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:a0e0b5f1c1c31201b5deca8b33242557fe790aeda2f705070e879cecd3de5c45",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T16:36:59.623Z",
+          "by": "desk",
+          "note": "The project’s own GitHub repository directly supports the one-line claim that pull request #59 was opened with that title, and no stored source contradicts it."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T16:36:59.623Z"
+    },
+    {
+      "id": "20261127t162333z-americaslauncher-5c399a13",
+      "key": "update|americaslauncher|activity|41569",
+      "kind": "update",
+      "projectId": "americaslauncher",
+      "projectName": "AmericasLauncher",
+      "at": "2026-11-27T16:23:33Z",
+      "detectedAt": "2026-11-27T16:36:59.623Z",
+      "title": "AmericasLauncher opened pull request #42",
+      "oneLine": "Benchmark button for runners with a built-in benchmark",
+      "sources": [
+        {
+          "url": "https://github.com/isaac-btw/AmericasLauncher/pull/42",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Benchmark button for runners with a built-in benchmark",
+          "at": "2026-11-27T16:23:33Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "isaac-btw/americaslauncher",
+        "name": "americaslauncher",
+        "words": [
+          "americaslauncher"
+        ],
+        "hash": "0c860a9ad8788a11",
+        "projectId": "americaslauncher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d99b21c34d3194995a88c2704f5759f5011bbf673e2f887a72af3863447b71c7",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
