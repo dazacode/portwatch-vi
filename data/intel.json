@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T12:07:12.433Z",
+  "updated": "2026-11-27T12:20:22.682Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T12:01:47.000Z",
-      "lastOkAt": "2026-11-27T12:07:12.433Z",
-      "seen": 30250,
+      "lastOkAt": "2026-11-27T12:20:22.682Z",
+      "seen": 30500,
       "events": 1074,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T09:21:22.000Z",
-      "lastOkAt": "2026-11-27T12:07:12.433Z",
+      "lastOkAt": "2026-11-27T12:20:22.682Z",
       "seen": 38,
       "events": 30,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T00:07:12.433Z",
-      "lastOkAt": "2026-11-27T12:07:12.433Z",
-      "seen": 7328,
+      "lastCursor": "2026-11-27T00:20:22.682Z",
+      "lastOkAt": "2026-11-27T12:20:22.682Z",
+      "seen": 7390,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T12:00:25.742Z",
-      "lastOkAt": "2026-11-27T12:07:12.433Z",
-      "seen": 48400,
+      "lastOkAt": "2026-11-27T12:20:22.682Z",
+      "seen": 48800,
       "events": 38,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T00:07:12.433Z",
-      "lastOkAt": "2026-11-27T12:07:12.433Z",
-      "seen": 14473,
+      "lastCursor": "2026-11-27T00:20:22.682Z",
+      "lastOkAt": "2026-11-27T12:20:22.682Z",
+      "seen": 14596,
       "events": 12,
       "errors": 0
     }
@@ -12648,10 +12648,17 @@
       "chain": "sha256:08cd2a6ea38429e3d7148b4dd8ae900821a3d537037e049e6235e89e6c62d733",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T12:20:22.682Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own GitHub entry with no excerpt, so it is a thin, non-independent record that does not plainly support the one-line item."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T12:20:22.682Z"
     },
     {
       "id": "20261127t120113z-marvis-d042dab6",
@@ -12699,10 +12706,17 @@
       "chain": "sha256:5ad81c161b126546977157938c04cf43b8853926acbe1708a52e837851c4e136",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T12:20:22.682Z",
+          "by": "desk",
+          "note": "The project's GitHub pull request title directly and unambiguously supports the one-line update, with no conflicting source present."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T12:20:22.682Z"
     },
     {
       "id": "20261127t120112z-xcl-c9f7cac1",
