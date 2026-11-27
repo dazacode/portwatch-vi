@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T04:50:24.929Z",
+  "updated": "2026-11-27T05:06:01.918Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T04:31:49.000Z",
-      "lastOkAt": "2026-11-27T04:50:24.929Z",
-      "seen": 23000,
-      "events": 846,
+      "lastCursor": "2026-11-27T05:00:59.000Z",
+      "lastOkAt": "2026-11-27T05:06:01.918Z",
+      "seen": 23250,
+      "events": 861,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T02:04:54.000Z",
-      "lastOkAt": "2026-11-27T04:50:24.929Z",
+      "lastOkAt": "2026-11-27T05:06:01.918Z",
       "seen": 34,
       "events": 26,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T04:50:24.929Z",
-      "seen": 5530,
+      "lastOkAt": "2026-11-27T05:06:01.918Z",
+      "seen": 5592,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T04:14:40.045Z",
-      "lastOkAt": "2026-11-27T04:50:24.929Z",
-      "seen": 36800,
-      "events": 29,
+      "lastCursor": "2026-11-27T04:47:59.000Z",
+      "lastOkAt": "2026-11-27T05:06:01.918Z",
+      "seen": 37200,
+      "events": 30,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T04:50:24.929Z",
-      "seen": 10906,
+      "lastOkAt": "2026-11-27T05:06:01.918Z",
+      "seen": 11029,
       "events": 12,
       "errors": 0
     }
@@ -11357,6 +11357,122 @@
         "low confidence"
       ],
       "deskAt": "2026-11-27T04:37:06.937Z"
+    },
+    {
+      "id": "20261127t045444z-launcher-094fab63",
+      "key": "reference|launcher|activity|41568",
+      "kind": "reference",
+      "projectId": "launcher",
+      "projectName": "VILauncher",
+      "at": "2026-11-27T04:54:44Z",
+      "detectedAt": "2026-11-27T05:06:01.918Z",
+      "title": "New reference to VILauncher",
+      "oneLine": "GTA VI PC port auto launcher: hardware detection, build management, prewarm, leaderboard-based recommendation (WIP)",
+      "sources": [
+        {
+          "url": "https://github.com/DKTTT/gta6-pc-launcher",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "DKTTT/gta6-pc-launcher",
+          "at": "2026-11-27T04:54:44Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sixlauncher/launcher",
+        "name": "vilauncher",
+        "words": [
+          "vilauncher",
+          "launcher"
+        ],
+        "hash": "32db1ca373ae89cb",
+        "projectId": "launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:35103866ff2d89d1efece2ea6a7bf5ed4579b619386ef432dbd8621e977bd285",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T05:06:01.918Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub repository with no excerpt, so the specific feature claims are not plainly supported by the stored material."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T05:06:01.918Z"
+    },
+    {
+      "id": "20261127t043336z-leonida-2a32f1be",
+      "key": "takedown|leonida|https://bsky.app/profile/iplaygta6.com/post/3n3bec3qjpk26|41568",
+      "kind": "takedown",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-27T04:33:36.444Z",
+      "detectedAt": "2026-11-27T05:06:01.918Z",
+      "title": "Leonida in a takedown report",
+      "oneLine": "Take-Two's takedown hit 3,007 PC-port repos — but Project Leonida lives on through…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/iplaygta6.com/post/3n3bec3qjpk26",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "Take-Two's takedown hit 3,007 PC-port repos — but Project Leonida lives on through forks. Why the shutdown did not kill",
+          "at": "2026-11-27T04:33:36.444Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "Take-Two's takedown hit 3,007 PC-port repos — but Project Leonida lives on through forks. Why the shutdown did not kill"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "67c11ce957190410",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:b12eb7f9817d9056f31c2951ebefb72bfbba580ff8a834d8fa8508b429e3d234",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T05:06:01.918Z",
+          "by": "desk",
+          "note": "The only source is a single Bluesky post — a social post alone is weak — and the one-line is truncated mid-sentence, so the stored material does not plainly support a complete, publishable claim."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-27T05:06:01.918Z"
     }
   ],
   "reports": [
