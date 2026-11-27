@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T23:05:22.256Z",
+  "updated": "2026-11-27T23:20:22.511Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T23:01:26.000Z",
-      "lastOkAt": "2026-11-27T23:05:22.256Z",
-      "seen": 41250,
+      "lastOkAt": "2026-11-27T23:20:22.511Z",
+      "seen": 41500,
       "events": 1452,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T23:05:22.256Z",
+      "lastOkAt": "2026-11-27T23:20:22.511Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T23:05:22.256Z",
-      "seen": 10090,
+      "lastOkAt": "2026-11-27T23:20:22.511Z",
+      "seen": 10153,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T22:30:14.000Z",
-      "lastOkAt": "2026-11-27T23:05:22.256Z",
-      "seen": 66000,
+      "lastOkAt": "2026-11-27T23:20:22.511Z",
+      "seen": 66400,
       "events": 46,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T11:05:22.256Z",
-      "lastOkAt": "2026-11-27T23:05:22.256Z",
-      "seen": 19899,
+      "lastCursor": "2026-11-27T11:20:22.511Z",
+      "lastOkAt": "2026-11-27T23:20:22.511Z",
+      "seen": 20022,
       "events": 12,
       "errors": 0
     }
@@ -14967,12 +14967,17 @@
           "at": "2026-11-27T16:50:26.138Z",
           "by": "desk",
           "note": "A single pull request in the project's own repository is a proposed change, not a shipped feature, and the one line restates the PR title as if the benchmark button already exists."
+        },
+        {
+          "at": "2026-11-27T23:20:22.511Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository record with no excerpt, which is a primary but non-independent source and too thin to confirm the feature beyond a pull request title."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T16:50:26.138Z"
+      "deskAt": "2026-11-27T23:20:22.511Z"
     },
     {
       "id": "20261127t171757z-scene-44e30f2e",
