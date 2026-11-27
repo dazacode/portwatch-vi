@@ -846,6 +846,61 @@
       "readmeChangedAt": "2026-11-27"
     },
     {
+      "id": "victory-nvidia",
+      "name": "VIctory-NVIDIA",
+      "repo": "trustno1-coder/VIctory-NVIDIA",
+      "branch": "main",
+      "tier": "tracked",
+      "gpu": [
+        "NVIDIA"
+      ],
+      "approach": "Compatibility layer",
+      "target": "GTA VI only",
+      "summary": "An NVIDIA fork of VIctory, now on readmet3xt-lab's foxhound, with DLSS, frame generation and an in-game settings menu. The owner rates it about as playable as the leaders: 20 fps, no crashes, some stutter, no ray tracing by default.",
+      "highlights": [
+        "Platform in its README: GeForce RTX 5070 12 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
+        "About 20 fps without crashes (owner's rating); its README measures 26-30 fps in the opening at 1440p with DLSS",
+        "DLSS upscaling and frame generation, 2x to 6x on RTX 50 cards, switched from an in-game F1 menu"
+      ],
+      "blockers": [
+        "No ray tracing by default; switching it on gives about 3 fps and a broken picture",
+        "Stutters, worst on a first run while shaders compile; frame generation needs an RTX 40 or later",
+        "Mostly foxhound's code; its release exe is unsigned and can't be checked against the source, so build it yourself"
+      ],
+      "provenOn": null,
+      "gta": {
+        "loads": 1,
+        "boots": 1,
+        "menu": 1,
+        "world": 1,
+        "playable": 1,
+        "story": 0.8,
+        "render": 0.7,
+        "fps": 20,
+        "stability": 1
+      },
+      "basedOn": [
+        "marvis",
+        "victory-gta6",
+        "avatarmanz"
+      ],
+      "verification": "self-reported",
+      "stats": {
+        "stars": 560,
+        "forks": 180,
+        "openIssues": 19,
+        "createdAt": "2026-11-25T23:35:29Z",
+        "pushedAt": "2026-11-27T13:40:39Z",
+        "archived": false,
+        "missing": false,
+        "commits7d": 100,
+        "mentions7d": 0
+      },
+      "assessedAt": "2026-11-27",
+      "assessedBy": "manual",
+      "claims": []
+    },
+    {
       "id": "belobug",
       "name": "Belobug",
       "repo": "Belobug/VIctory-Belobug-AMD",
@@ -8617,6 +8672,11 @@
       "date": "2026-11-27",
       "kind": "new",
       "text": "Scout spotted rpfexplorer/ViceViewerVI (possible effort, substance 43)."
+    },
+    {
+      "date": "2026-11-27",
+      "kind": "new",
+      "text": "VIctory-NVIDIA joins the race at #2 with 89.4%: trustno1-coder's NVIDIA fork of VIctory on foxhound, with DLSS and frame generation, rated about as playable as the leaders at 20 fps without crashes. AvatarManz (81.8%) is now #3."
     }
   ],
   "history": [
