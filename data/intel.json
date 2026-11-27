@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T10:35:23.804Z",
+  "updated": "2026-11-27T10:50:20.328Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T10:31:07.000Z",
-      "lastOkAt": "2026-11-27T10:35:23.804Z",
-      "seen": 28750,
+      "lastOkAt": "2026-11-27T10:50:20.328Z",
+      "seen": 29000,
       "events": 1014,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T09:21:22.000Z",
-      "lastOkAt": "2026-11-27T10:35:23.804Z",
+      "lastOkAt": "2026-11-27T10:50:20.328Z",
       "seen": 38,
       "events": 30,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T10:35:23.804Z",
-      "seen": 6956,
+      "lastOkAt": "2026-11-27T10:50:20.328Z",
+      "seen": 7018,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T10:22:20.141Z",
-      "lastOkAt": "2026-11-27T10:35:23.804Z",
-      "seen": 46000,
+      "lastOkAt": "2026-11-27T10:50:20.328Z",
+      "seen": 46400,
       "events": 35,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T10:35:23.804Z",
-      "seen": 13735,
+      "lastOkAt": "2026-11-27T10:50:20.328Z",
+      "seen": 13858,
       "events": 12,
       "errors": 0
     }
@@ -11330,12 +11330,17 @@
           "at": "2026-11-27T04:05:21.555Z",
           "by": "desk",
           "note": "The only source is the project's own repository — primary but not independent — and its excerpt merely repeats the title with no substantive detail, so the one line is not plainly supported."
+        },
+        {
+          "at": "2026-11-27T10:50:20.328Z",
+          "by": "desk",
+          "note": "The only source is a bare repository fragment reading \"Load into the world\" with no surrounding context, so it does not plainly support the one line as publishable evidence."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T04:05:21.555Z"
+      "deskAt": "2026-11-27T10:50:20.328Z"
     },
     {
       "id": "20261127t010159z-xbox2windows-e305184b",
@@ -11507,12 +11512,17 @@
           "at": "2026-11-27T04:37:06.937Z",
           "by": "desk",
           "note": "A single Bluesky quiz post poses a question rather than asserting a verifiable fact, so it is too thin and non-independent to support the line."
+        },
+        {
+          "at": "2026-11-27T10:50:20.328Z",
+          "by": "desk",
+          "note": "The only source is a single Bluesky quiz teaser that poses a question without asserting any verifiable fact, so there is nothing concrete to publish."
         }
       ],
       "heldReasons": [
         "low confidence"
       ],
-      "deskAt": "2026-11-27T04:37:06.937Z"
+      "deskAt": "2026-11-27T10:50:20.328Z"
     },
     {
       "id": "20261127t045444z-launcher-094fab63",
