@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T03:20:21.418Z",
+  "updated": "2026-11-27T03:39:09.342Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T03:01:52.000Z",
-      "lastOkAt": "2026-11-27T03:20:21.418Z",
-      "seen": 21500,
-      "events": 797,
+      "lastCursor": "2026-11-27T03:35:24.000Z",
+      "lastOkAt": "2026-11-27T03:39:09.342Z",
+      "seen": 21750,
+      "events": 813,
       "errors": 0
     },
     "evidence": {
-      "lastCursor": "2026-11-26T21:53:31.000Z",
-      "lastOkAt": "2026-11-27T03:20:21.418Z",
-      "seen": 30,
-      "events": 22,
+      "lastCursor": "2026-11-27T02:04:54.000Z",
+      "lastOkAt": "2026-11-27T03:39:09.342Z",
+      "seen": 34,
+      "events": 26,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T03:20:21.418Z",
-      "seen": 5158,
+      "lastOkAt": "2026-11-27T03:39:09.342Z",
+      "seen": 5220,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T02:50:06.000Z",
-      "lastOkAt": "2026-11-27T03:20:21.418Z",
-      "seen": 34400,
+      "lastCursor": "2026-11-27T03:10:03.944Z",
+      "lastOkAt": "2026-11-27T03:39:09.342Z",
+      "seen": 34800,
       "events": 28,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T03:20:21.418Z",
-      "seen": 10168,
+      "lastOkAt": "2026-11-27T03:39:09.342Z",
+      "seen": 10291,
       "events": 12,
       "errors": 0
     }
@@ -10989,6 +10989,281 @@
         "low confidence"
       ],
       "deskAt": "2026-11-27T02:05:21.679Z"
+    },
+    {
+      "id": "20261127t030425z-vitoria-spark-3d7ea5b4",
+      "key": "update|vitoria-spark|activity|41568",
+      "kind": "update",
+      "projectId": "vitoria-spark",
+      "projectName": "VItoria Spark",
+      "at": "2026-11-27T03:04:25Z",
+      "detectedAt": "2026-11-27T03:39:09.342Z",
+      "title": "VItoria Spark opened pull request #1",
+      "oneLine": "Linux (Wine/Proton + vkd3d-proton): pipeline fixes, card-profile probe hang, d3dcompiler_47 and the real card maker",
+      "sources": [
+        {
+          "url": "https://github.com/martindevbr/VItoria-Spark/pull/1",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Linux (Wine/Proton + vkd3d-proton): pipeline fixes, card-profile probe hang, d3dcompiler_47 and the real card maker",
+          "at": "2026-11-27T03:04:25Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "martindevbr/vitoria-spark",
+        "name": "vitoria spark",
+        "words": [
+          "vitoria",
+          "spark",
+          "vitoria-spark"
+        ],
+        "hash": "8264478892d90287",
+        "projectId": "vitoria-spark"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d0282ef747df2843ede9ed5dbc924f08adf2977fa7f6c9c82275579048351b0b",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T03:39:09.342Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub entry with no excerpt, so it is primary but not independent and too thin to verify the one-line claim."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T03:39:09.342Z"
+    },
+    {
+      "id": "20261127t020454z-tuxbox-ac049ba3",
+      "key": "evidence|tuxbox|boots|41568",
+      "kind": "evidence",
+      "projectId": "tuxbox",
+      "projectName": "TuxBox",
+      "at": "2026-11-27T02:04:54Z",
+      "detectedAt": "2026-11-27T03:39:09.342Z",
+      "title": "New test evidence on TuxBox — boots",
+      "oneLine": "every run then ends on the story loading screen: VRAM fills, GTT climbs, and the kernel refuses a submit",
+      "sources": [
+        {
+          "url": "https://github.com/brcly/TuxBox/issues/292",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "every run then ends on the story loading screen: VRAM fills, GTT climbs, and the kernel refuses a submit",
+          "at": "2026-11-27T02:04:54Z",
+          "kind": "primary",
+          "authorHash": "244d2e345e80",
+          "excerpt": "every run then ends on the story loading screen: VRAM fills, GTT climbs, and the kernel refuses a submit"
+        }
+      ],
+      "fingerprint": {
+        "repo": "brcly/tuxbox",
+        "name": "tuxbox",
+        "words": [
+          "tuxbox"
+        ],
+        "hash": "e11a00bbe061b4c3",
+        "projectId": "tuxbox"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:383d5ae9bc45b8978b62b82796d00e70f68749603b034f120c8ad022d170d4b9",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T03:39:09.342Z",
+          "by": "desk",
+          "note": "The only stored source is TuxBox’s own repository repeating the same line, so it is primary but not independent and too thin to publish."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T03:39:09.342Z"
+    },
+    {
+      "id": "20261127t014324z-anyxboxx-4fe250d9",
+      "key": "evidence|anyxboxx|world|41568",
+      "kind": "evidence",
+      "projectId": "anyxboxx",
+      "projectName": "AnyXboxX",
+      "at": "2026-11-27T01:43:24Z",
+      "detectedAt": "2026-11-27T03:39:09.342Z",
+      "title": "New test evidence on AnyXboxX — world",
+      "oneLine": "Load into the world",
+      "sources": [
+        {
+          "url": "https://github.com/LooperSalty/AnyXboxX/issues/479",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Load into the world",
+          "at": "2026-11-27T01:43:24Z",
+          "kind": "primary",
+          "authorHash": "f2522ce6bc98",
+          "excerpt": "Load into the world"
+        }
+      ],
+      "fingerprint": {
+        "repo": "loopersalty/anyxboxx",
+        "name": "anyxboxx",
+        "words": [
+          "anyxboxx"
+        ],
+        "hash": "69a016c3651423cd",
+        "projectId": "anyxboxx"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:9bc8c8aeda20ea0bd46b8a31b8d5f8152c3541ed95b17227206d421c48da8bbc",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t010159z-xbox2windows-e305184b",
+      "key": "evidence|xbox2windows|loads|41568",
+      "kind": "evidence",
+      "projectId": "xbox2windows",
+      "projectName": "Xbox2Windows",
+      "at": "2026-11-27T01:01:59Z",
+      "detectedAt": "2026-11-27T03:39:09.342Z",
+      "title": "New test evidence on Xbox2Windows — loads",
+      "oneLine": "In the main executable's startup run ( 870), frame rate falls from about 30 fps to 4–9 fps once the post-confirm load starts.",
+      "sources": [
+        {
+          "url": "https://github.com/R0Y00/Xbox2Windows/issues/2976",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "In the main executable's startup run ( 870), frame rate falls from about 30 fps to 4–9 fps once the post-confirm load st",
+          "at": "2026-11-27T01:01:59Z",
+          "kind": "primary",
+          "authorHash": "b9f1c5d344d3",
+          "excerpt": "In the main executable's startup run ( 870), frame rate falls from about 30 fps to 4–9 fps once the post-confirm load starts."
+        }
+      ],
+      "fingerprint": {
+        "repo": "r0y00/xbox2windows",
+        "name": "xbox2windows",
+        "words": [
+          "xbox2windows"
+        ],
+        "hash": "05be295f38ccd0b3",
+        "projectId": "xbox2windows"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:8128cf76e3f0c9f0ad3683176150124f95c623de6f7fac6cbe88884804c2ac5c",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t004500z-marvis-6c2e679f",
+      "key": "evidence|marvis|world|41568",
+      "kind": "evidence",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-27T00:45:00Z",
+      "detectedAt": "2026-11-27T03:39:09.342Z",
+      "title": "New test evidence on VIctory — world",
+      "oneLine": "main ( 63bcca4 ) plus the unmerged PRs this setup needs to render the world",
+      "sources": [
+        {
+          "url": "https://github.com/Marvisak/VIctory/issues/3425",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "main ( 63bcca4 ) plus the unmerged PRs this setup needs to render the world",
+          "at": "2026-11-27T00:45:00Z",
+          "kind": "primary",
+          "authorHash": "752265967b39",
+          "excerpt": "main ( 63bcca4 ) plus the unmerged PRs this setup needs to render the world"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "4766bc520a67cf8f",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d9b72f466f58c99af31857143ee80838bb19363b7359a04a3b8499d2781d8c29",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
