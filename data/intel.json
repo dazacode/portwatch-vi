@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T11:35:25.186Z",
+  "updated": "2026-11-27T11:50:20.028Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T11:31:22.000Z",
-      "lastOkAt": "2026-11-27T11:35:25.186Z",
-      "seen": 29750,
+      "lastOkAt": "2026-11-27T11:50:20.028Z",
+      "seen": 30000,
       "events": 1052,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T09:21:22.000Z",
-      "lastOkAt": "2026-11-27T11:35:25.186Z",
+      "lastOkAt": "2026-11-27T11:50:20.028Z",
       "seen": 38,
       "events": 30,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-26T23:35:25.186Z",
-      "lastOkAt": "2026-11-27T11:35:25.186Z",
-      "seen": 7204,
+      "lastCursor": "2026-11-26T23:50:20.028Z",
+      "lastOkAt": "2026-11-27T11:50:20.028Z",
+      "seen": 7266,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T11:30:07.643Z",
-      "lastOkAt": "2026-11-27T11:35:25.186Z",
-      "seen": 47600,
+      "lastOkAt": "2026-11-27T11:50:20.028Z",
+      "seen": 48000,
       "events": 36,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T11:35:25.186Z",
-      "seen": 14227,
+      "lastOkAt": "2026-11-27T11:50:20.028Z",
+      "seen": 14350,
       "events": 12,
       "errors": 0
     }
@@ -12262,10 +12262,17 @@
       "chain": "sha256:e3d4ab75f9749877bdeed810b2a50a22170f8eedb2a8c81f7dbb5fb257dd1924",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T11:50:20.028Z",
+          "by": "desk",
+          "note": "The project’s GitHub repository directly supports the one-line claim about pull request #1, and no stored source contradicts it."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T11:50:20.028Z"
     },
     {
       "id": "20261127t105643z-victory-nvidia-hybrid-bf64aa3e",
@@ -12312,10 +12319,17 @@
       "chain": "sha256:93b9e076c64421f910b9eb78e1b3236058bd8df28b6689c8fe18bc261295ea16",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T11:50:20.028Z",
+          "by": "desk",
+          "note": "The only source is the project’s own repository entry with an empty excerpt, so it is primary but not independent and too thin to plainly support the one-line claim."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T11:50:20.028Z"
     },
     {
       "id": "20261127t104231z-scarlettx-6f63fb80",
