@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T22:35:20.704Z",
+  "updated": "2026-11-27T22:50:23.179Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T22:30:51.000Z",
-      "lastOkAt": "2026-11-27T22:35:20.704Z",
-      "seen": 40750,
+      "lastOkAt": "2026-11-27T22:50:23.179Z",
+      "seen": 41000,
       "events": 1433,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T22:35:20.704Z",
+      "lastOkAt": "2026-11-27T22:50:23.179Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T22:35:20.704Z",
-      "seen": 9964,
+      "lastOkAt": "2026-11-27T22:50:23.179Z",
+      "seen": 10027,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T22:30:14.000Z",
-      "lastOkAt": "2026-11-27T22:35:20.704Z",
-      "seen": 65200,
+      "lastOkAt": "2026-11-27T22:50:23.179Z",
+      "seen": 65600,
       "events": 46,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T10:35:20.704Z",
-      "lastOkAt": "2026-11-27T22:35:20.704Z",
-      "seen": 19653,
+      "lastCursor": "2026-11-27T10:50:23.179Z",
+      "lastOkAt": "2026-11-27T22:50:23.179Z",
+      "seen": 19776,
       "events": 12,
       "errors": 0
     }
@@ -14843,12 +14843,17 @@
           "at": "2026-11-27T16:36:59.623Z",
           "by": "desk",
           "note": "The only support is the project's own repository entry with an empty excerpt, which is a thin, non-independent source for a line that merely restates a pull request title."
+        },
+        {
+          "at": "2026-11-27T22:50:23.179Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository entry with an empty excerpt, which is primary but not independent and too thin to stand as a published update."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T16:36:59.623Z"
+      "deskAt": "2026-11-27T22:50:23.179Z"
     },
     {
       "id": "20261127t162658z-victory-nvidia-hybrid-24d00aa5",
@@ -14900,12 +14905,17 @@
           "at": "2026-11-27T16:36:59.623Z",
           "by": "desk",
           "note": "The project’s own GitHub repository directly supports the one-line claim that pull request #59 was opened with that title, and no stored source contradicts it."
+        },
+        {
+          "at": "2026-11-27T22:50:23.179Z",
+          "by": "desk",
+          "note": "The only source is the project’s own repository entry, which is primary but not independent and provides no excerpt or corroboration for the PR update."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T16:36:59.623Z"
+      "deskAt": "2026-11-27T22:50:23.179Z"
     },
     {
       "id": "20261127t162333z-americaslauncher-5c399a13",
