@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-26T23:50:22.367Z",
+  "updated": "2026-11-27T00:06:14.132Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-26T23:30:42.000Z",
-      "lastOkAt": "2026-11-26T23:50:22.367Z",
-      "seen": 18250,
-      "events": 663,
+      "lastCursor": "2026-11-27T00:01:44.000Z",
+      "lastOkAt": "2026-11-27T00:06:14.132Z",
+      "seen": 18500,
+      "events": 687,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T20:47:47.000Z",
-      "lastOkAt": "2026-11-26T23:50:22.367Z",
+      "lastOkAt": "2026-11-27T00:06:14.132Z",
       "seen": 28,
       "events": 20,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-26T23:50:22.367Z",
-      "seen": 4352,
+      "lastOkAt": "2026-11-27T00:06:14.132Z",
+      "seen": 4414,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-26T22:43:22.341Z",
-      "lastOkAt": "2026-11-26T23:50:22.367Z",
-      "seen": 29200,
+      "lastCursor": "2026-11-26T23:53:07.445Z",
+      "lastOkAt": "2026-11-27T00:06:14.132Z",
+      "seen": 29600,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T11:50:22.367Z",
-      "lastOkAt": "2026-11-26T23:50:22.367Z",
-      "seen": 8569,
+      "lastCursor": "2026-11-26T12:06:14.132Z",
+      "lastOkAt": "2026-11-27T00:06:14.132Z",
+      "seen": 8692,
       "events": 7,
       "errors": 0
     }
@@ -9048,6 +9048,418 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-26T23:50:22.367Z"
+    },
+    {
+      "id": "20261127t000144z-leonida-continued-c82d1152",
+      "key": "update|leonida-continued|activity|41568",
+      "kind": "update",
+      "projectId": "leonida-continued",
+      "projectName": "Leonida Continued",
+      "at": "2026-11-27T00:01:44Z",
+      "detectedAt": "2026-11-27T00:06:14.132Z",
+      "title": "Leonida Continued opened pull request #2117",
+      "oneLine": "d3d12: a console heap's V# words are fixed once a pass, not once a slot (RT-CONSOLE-VSHARP-MEMO)",
+      "sources": [
+        {
+          "url": "https://github.com/ubiquitarianism/leonida/pull/2117",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "d3d12: a console heap's V# words are fixed once a pass, not once a slot (RT-CONSOLE-VSHARP-MEMO)",
+          "at": "2026-11-27T00:01:44Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "ubiquitarianism/leonida",
+        "name": "leonida continued",
+        "words": [
+          "leonida",
+          "continued",
+          "leonida-continued"
+        ],
+        "hash": "97e5cc1c64514408",
+        "projectId": "leonida-continued"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:355a90fe9a27e0e447efcc7d10f966e644a0947de7a9765af5fd0511f4e9e540",
+      "reportId": "20261127t000144z-leonida-continued-c82d1152-report",
+      "discordAt": "2026-11-27T00:06:51.232Z",
+      "revisions": [],
+      "note": "model: overview has 2117, which is not in a source; changed has 2117, which is not in a source",
+      "publishedAt": "2026-11-27T00:06:14.132Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261127t000123z-dexnom-7363476b",
+      "key": "update|dexnom|activity|41568",
+      "kind": "update",
+      "projectId": "dexnom",
+      "projectName": "DexNom",
+      "at": "2026-11-27T00:01:23Z",
+      "detectedAt": "2026-11-27T00:06:14.132Z",
+      "title": "DexNom opened pull request #34",
+      "oneLine": "HLE: speak the title's narration in the host's voices",
+      "sources": [
+        {
+          "url": "https://github.com/DexNom/VIctory/pull/34",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "HLE: speak the title's narration in the host's voices",
+          "at": "2026-11-27T00:01:23Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "dexnom/victory",
+        "name": "dexnom",
+        "words": [
+          "dexnom"
+        ],
+        "hash": "8f46482e794407ea",
+        "projectId": "dexnom"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:49daacf4896e088bc00903096e2944a05ca613b9f017c2e4baa14c01a3ad78f8",
+      "reportId": "20261127t000123z-dexnom-7363476b-report",
+      "discordAt": "2026-11-27T00:06:51.232Z",
+      "revisions": [],
+      "note": "model: overview has 34, which is not in a source; changed has 34, which is not in a source",
+      "publishedAt": "2026-11-27T00:06:14.132Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261127t000122z-victory-gta6-c7b7943c",
+      "key": "update|victory-gta6|activity|41568",
+      "kind": "update",
+      "projectId": "victory-gta6",
+      "projectName": "hyphennn",
+      "at": "2026-11-27T00:01:22Z",
+      "detectedAt": "2026-11-27T00:06:14.132Z",
+      "title": "hyphennn opened pull request #500",
+      "oneLine": "Shaders: VICTORY_LDS_EXACT=1 orders LDS in a lane-branch region by the dwords it touches (369cbe906ea72764 on 32-lane GPUs)",
+      "sources": [
+        {
+          "url": "https://github.com/fxceless/victory-fork/pull/500",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Shaders: VICTORY_LDS_EXACT=1 orders LDS in a lane-branch region by the dwords it touches (369cbe906ea72764 on 32-lane GP",
+          "at": "2026-11-27T00:01:22Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "fxceless/victory-fork",
+        "name": "hyphennn",
+        "words": [
+          "hyphennn",
+          "victory-gta6"
+        ],
+        "hash": "570541ba502d02e0",
+        "projectId": "victory-gta6"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:fba1fa3151b910715090f9df45a48d32eecd61254eedd425f27b6baf090eb982",
+      "reportId": "20261127t000122z-victory-gta6-c7b7943c-report",
+      "discordAt": "2026-11-27T00:06:51.232Z",
+      "revisions": [],
+      "publishedAt": "2026-11-27T00:06:14.132Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261127t000100z-native-victory-macos-f0ef0352",
+      "key": "update|native-victory-macos|activity|41568",
+      "kind": "update",
+      "projectId": "native-victory-macos",
+      "projectName": "Native-Victory-macOS",
+      "at": "2026-11-27T00:01:00Z",
+      "detectedAt": "2026-11-27T00:06:14.132Z",
+      "title": "Native-Victory-macOS opened pull request #200",
+      "oneLine": "fix(loader): release mapped address space when NativeImage::map fails",
+      "sources": [
+        {
+          "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/200",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "fix(loader): release mapped address space when NativeImage::map fails",
+          "at": "2026-11-27T00:01:00Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "lakshansivakumar/native-victory-macos",
+        "name": "native-victory-macos",
+        "words": [
+          "native-victory-macos"
+        ],
+        "hash": "1434e84c3955d350",
+        "projectId": "native-victory-macos"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:7d08ce5f3742a9911d29292076eb7a4ad603a671a14f8ce785a16cfe23032ba0",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T00:06:14.132Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository with an empty excerpt, so the PR title is self-reported and unverified by any independent source."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T00:06:14.132Z"
+    },
+    {
+      "id": "20261127t000043z-xcl-5d7b71de",
+      "key": "update|xcl|activity|41568",
+      "kind": "update",
+      "projectId": "xcl",
+      "projectName": "XCL",
+      "at": "2026-11-27T00:00:43Z",
+      "detectedAt": "2026-11-27T00:06:14.132Z",
+      "title": "XCL opened pull request #2477",
+      "oneLine": "D3D12.X: patch assert-checked vtables in place under Wine (#175)",
+      "sources": [
+        {
+          "url": "https://github.com/xcl-dev/xcl/pull/2477",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "D3D12.X: patch assert-checked vtables in place under Wine (#175)",
+          "at": "2026-11-27T00:00:43Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "xcl-dev/xcl",
+        "name": "xcl",
+        "words": [
+          "xcl"
+        ],
+        "hash": "5402c0039d315a44",
+        "projectId": "xcl"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:24172755455ca01bfdf5288a777b2319341f069629bf14d4a6b13023f72a9e73",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t000003z-marvis-5be31b67",
+      "key": "update|marvis|activity|41568",
+      "kind": "update",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-27T00:00:03Z",
+      "detectedAt": "2026-11-27T00:06:14.132Z",
+      "title": "VIctory opened pull request #3247",
+      "oneLine": "GPU: the held-work pump reads each wait's word once, and answers its own blocked question",
+      "sources": [
+        {
+          "url": "https://github.com/Marvisak/VIctory/pull/3247",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "GPU: the held-work pump reads each wait's word once, and answers its own blocked question",
+          "at": "2026-11-27T00:00:03Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "1141780380054693",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:4d97d980fce11dae469cc27ee09d47982a5dc955ee994655361d7925373f5a5d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t235024z-victory-low-end-pc-1967b6da",
+      "key": "update|victory-low-end-pc|activity|41567",
+      "kind": "update",
+      "projectId": "victory-low-end-pc",
+      "projectName": "WASDeKeys low-end",
+      "at": "2026-11-26T23:50:24Z",
+      "detectedAt": "2026-11-27T00:06:14.132Z",
+      "title": "WASDeKeys low-end opened pull request #4",
+      "oneLine": "Fix/windows10 agility sdk",
+      "sources": [
+        {
+          "url": "https://github.com/WASDeKeys/victory-low-end-pc/pull/4",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Fix/windows10 agility sdk",
+          "at": "2026-11-26T23:50:24Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "wasdekeys/victory-low-end-pc",
+        "name": "wasdekeys low-end",
+        "words": [
+          "wasdekeys",
+          "low-end",
+          "victory-low-end-pc"
+        ],
+        "hash": "202d7324fea18f87",
+        "projectId": "victory-low-end-pc"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:2ffdbe9190b822b1f698b17d119873c875f90fb0e54b1fdd8edc99763687c27e",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261126t233718z-neptune-dolberth-nvidia-8gb-2524dcfe",
+      "key": "update|neptune-dolberth-nvidia-8gb|activity|41567",
+      "kind": "update",
+      "projectId": "neptune-dolberth-nvidia-8gb",
+      "projectName": "neptune-dolberth-nvidia-8gb",
+      "at": "2026-11-26T23:37:18Z",
+      "detectedAt": "2026-11-27T00:06:14.132Z",
+      "title": "neptune-dolberth-nvidia-8gb pushed 1 commit",
+      "oneLine": "perf(cpu,gpu,shader): auto-scaling pools, early-depth, window reuse, batch reuse, and lighter pipeline compilation",
+      "sources": [
+        {
+          "url": "https://github.com/Dolberthi/neptune-dolberth-nvidia-8gb/commit/99b231fae9392f50643e27b9a8f01319bc1c11e5",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "perf(cpu,gpu,shader): auto-scaling pools, early-depth, window reuse, batch reuse, and lighter pipeline compilation",
+          "at": "2026-11-26T23:37:18Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "dolberthi/neptune-dolberth-nvidia-8gb",
+        "name": "neptune-dolberth-nvidia-8gb",
+        "words": [
+          "neptune-dolberth-nvidia-8gb"
+        ],
+        "hash": "a980c7164e45dcb2",
+        "projectId": "neptune-dolberth-nvidia-8gb"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:daf73d3502bffe51f1fbf31b8847a4b7ae69eb0f74720e14be34454f10cab272",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
@@ -9224,6 +9636,69 @@
           "kind": "primary",
           "authorHash": "e69cc09b5d68",
           "excerpt": "world shows only its lights."
+        }
+      ]
+    },
+    {
+      "id": "20261127t000144z-leonida-continued-c82d1152-report",
+      "itemId": "20261127t000144z-leonida-continued-c82d1152",
+      "publishedAt": "2026-11-27T00:06:14.132Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "Leonida Continued has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. d3d12: a console heap's V# words are fixed once a pass, not once a slot (RT-CONSOLE-VSHARP-MEMO).",
+      "evidence": "The entry rests on one stored source, GitHub. d3d12: a console heap's V# words are fixed once a pass, not once a slot (RT-CONSOLE-VSHARP-MEMO).",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/ubiquitarianism/leonida/pull/2117",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "d3d12: a console heap's V# words are fixed once a pass, not once a slot (RT-CONSOLE-VSHARP-MEMO)",
+          "at": "2026-11-27T00:01:44Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261127t000123z-dexnom-7363476b-report",
+      "itemId": "20261127t000123z-dexnom-7363476b",
+      "publishedAt": "2026-11-27T00:06:14.132Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "DexNom has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. HLE: speak the title's narration in the host's voices.",
+      "evidence": "The entry rests on one stored source, GitHub. HLE: speak the title's narration in the host's voices.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/DexNom/VIctory/pull/34",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "HLE: speak the title's narration in the host's voices",
+          "at": "2026-11-27T00:01:23Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261127t000122z-victory-gta6-c7b7943c-report",
+      "itemId": "20261127t000122z-victory-gta6-c7b7943c",
+      "publishedAt": "2026-11-27T00:06:14.132Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "hyphennn has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. Shaders: VICTORY_LDS_EXACT=1 orders LDS in a lane-branch region by the dwords it touches (369cbe906ea72764 on 32-lane GPUs).",
+      "evidence": "The entry rests on one stored source, GitHub. Shaders: VICTORY_LDS_EXACT=1 orders LDS in a lane-branch region by the dwords it touches (369cbe906ea72764 on 32-lane GP.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/fxceless/victory-fork/pull/500",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Shaders: VICTORY_LDS_EXACT=1 orders LDS in a lane-branch region by the dwords it touches (369cbe906ea72764 on 32-lane GP",
+          "at": "2026-11-27T00:01:22Z",
+          "kind": "primary"
         }
       ]
     }
