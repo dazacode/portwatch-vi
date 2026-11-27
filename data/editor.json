@@ -1,6 +1,16 @@
 {
-  "lastRun": "2026-11-27T15:41:38.068Z",
+  "lastRun": "2026-11-27T16:41:15.400Z",
   "runs": [
+    {
+      "at": "2026-11-27T16:41:15.400Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [],
+      "skipped": [
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world in Full HD”",
+        "held: candidate hello3928/Project-VI: has markup"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-27T15:41:38.068Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -471,23 +481,6 @@
       "applied": [],
       "skipped": [],
       "note": "nothing to ask"
-    },
-    {
-      "at": "2026-11-25T19:37:54.316Z",
-      "by": "Pollinations, gpt-oss-20b",
-      "applied": [
-        "candidate zsy-miao/victory-perf",
-        "candidate MoonLightDEV3/MoonLight-GTA-Version-",
-        "candidate SixLauncher/launcher",
-        "candidate LowBacon/HybridGt",
-        "candidate felicienradio/cold-project-vi",
-        "candidate gabenddos/proton-scarlett"
-      ],
-      "skipped": [
-        "held: finding leonida: already said",
-        "held: score anyxboxx gta.fps=30: proposed, from “launches on PC: boot, profile screen, first-run settings, legal screens, loading, pause menu. Menus run at 30 fps.”"
-      ],
-      "note": null
     }
   ]
 }
