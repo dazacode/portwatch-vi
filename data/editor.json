@@ -1,6 +1,19 @@
 {
-  "lastRun": "2026-11-27T04:41:22.474Z",
+  "lastRun": "2026-11-27T05:41:20.358Z",
   "runs": [
+    {
+      "at": "2026-11-27T05:41:20.358Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [
+        "candidate bulkynomad/ScarlettEdge",
+        "candidate lameloball2813-ui/cool-fox"
+      ],
+      "skipped": [
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world in Full HD”",
+        "held: candidate progmatios23/scarlett-hle: has markup"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-27T04:41:22.474Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -475,13 +488,6 @@
         "article \"Take-Two DMCA Takes Down Leonida and 3,007 Repos\": invalid: A source is \"Outlet|Title|https://url\", not \"Bluesky|GTA 6 has been out since November 19 on PS5 and Xbox Series X|S, and a PC version is still not announced. GamesBeat repo|https://bsky.app/profile/gamebrief.bsky.social/post/3n34yfigoz626\"."
       ],
       "note": "Added two sourced findings on Leonida's takedown and creator exit, wrote one takedown article, and made no score changes."
-    },
-    {
-      "at": "2026-11-25T11:37:06.509Z",
-      "by": null,
-      "applied": [],
-      "skipped": [],
-      "note": "quiet"
     }
   ]
 }

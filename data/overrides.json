@@ -3543,6 +3543,43 @@
         "findingsSource": "From the repo's README, RESULTS.md and commits, read as text on 26 Nov, and its parent's README."
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "Requires files supplied by the user."
+        ],
+        "highlights": [
+          "Keeps the full VIctory history and licence."
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-27",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Cool Fox",
+        "summary": "Fork of VIctory for running Xbox Series titles on Windows; says GTA VI runs natively from user-supplied files.",
+        "basedOn": [],
+        "id": "cool-fox",
+        "repo": "lameloball2813-ui/cool-fox",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-24T11:48:16Z",
+          "pushedAt": "2026-11-27T03:23:17Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -3551,6 +3588,11 @@
     "reason": "Owner's call: its code went public on 26 Nov, at 25 fps reported on NVIDIA."
   },
   "ignored": [
+    {
+      "repo": "bulkynomad/ScarlettEdge",
+      "reason": "README describes a general Xbox Series emulator, not its own GTA VI effort.",
+      "seenAt": "2026-11-27"
+    },
     {
       "repo": "PiloteCode/PiloteBox",
       "reason": "README describes an Xbox Series compatibility layer, not its own effort to run GTA VI on PC.",
@@ -3798,7 +3840,9 @@
     "martindevbr/VItoria-Spark",
     "Peppacodes/playablegames-peppa",
     "kalinizer/victory-polaris",
-    "PiloteCode/PiloteBox"
+    "PiloteCode/PiloteBox",
+    "bulkynomad/ScarlettEdge",
+    "lameloball2813-ui/cool-fox"
   ],
   "news": [
     {
