@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-27T03:36:39.030Z",
+ "updated": "2026-11-27T04:01:58.154Z",
  "now": {
   "hash": "07cc812a18aab18a",
   "at": "2026-11-27T02:31:57.222Z",
@@ -136,56 +136,73 @@
   ]
  },
  "notes": {
-  "commit:36cf82d": {
-   "hash": "3bae89cf911ff36a",
-   "text": "The commit says the latest run lasted 38 minutes, averaged 10.3 fps, and ended for lack of graphics memory.",
+  "commit:72471c5": {
+   "hash": "79b1daea195b00e8",
+   "text": "The Native-Victory-macOS commit says it merges the main branch into the current work.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T03:36:39.030Z"
+   "at": "2026-11-27T04:01:58.154Z"
   },
-  "commit:ea29093": {
-   "hash": "7dd603f82b0bcfd9",
-   "text": "The commit says the measurement README lists memory.py and undoes an AI trap fix.",
+  "commit:beb10a9": {
+   "hash": "88ffc538a3ba1d6d",
+   "text": "The commit says the README now lists console_libs.py and notes an AI-trap fix was undone.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T03:36:39.030Z"
+   "at": "2026-11-27T04:01:58.154Z"
   },
-  "commit:a35e765": {
-   "hash": "2e029b599c291b20",
-   "text": "The commit says memory.py repeats a map covering startup views, fixed pools, streaming page pool, and page mapper.",
+  "commit:ef23255": {
+   "hash": "f7c44dea2e2c603c",
+   "text": "The commit says console_libs.py repeats the console library call sites documented elsewhere.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T03:36:39.030Z"
+   "at": "2026-11-27T04:01:58.154Z"
   },
-  "commit:615d07b": {
-   "hash": "fd77ad3b06a59cf9",
-   "text": "The commit says there are readback fixes and an optional Agility build, and VI-BR-PORT is updated to upstream head.",
+  "commit:7f70c8d": {
+   "hash": "3b0eff15eae47802",
+   "text": "The Native-Victory-macOS commit says it merges a change for native host lookup and remirroring.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T03:36:39.030Z"
+   "at": "2026-11-27T04:01:58.154Z"
   },
-  "commit:76c001a": {
-   "hash": "0a2b6ff594eb76a2",
-   "text": "The commit says it merges pull request 239 about fixing blend targets.",
+  "commit:8895045": {
+   "hash": "62539f72a9db41c3",
+   "text": "The Xbox2Windows commit says it lowers startup queries for 2D image-array detail levels.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T03:36:39.030Z"
+   "at": "2026-11-27T04:01:58.154Z"
   },
-  "commit:1170693": {
-   "hash": "d21657b72ccb4502",
-   "text": "The commit says it merges pull request 238 about limiting live edges.",
+  "commit:0de7fd5": {
+   "hash": "1455cea1a1592212",
+   "text": "Xin-Leonida's docs commit says session 25 covers validation of a null-table patch.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T03:36:39.030Z"
+   "at": "2026-11-27T04:01:58.154Z"
   },
-  "commit:58eef78": {
-   "hash": "d238dfd691f363d5",
-   "text": "The commit says session 24 documentation reports no change in status.",
+  "commit:b34c3aa": {
+   "hash": "57c079269fcdcba8",
+   "text": "The Five Star Recomp commit says it covers the lighting depth test and known information about device loss.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T03:36:39.030Z"
+   "at": "2026-11-27T04:01:58.154Z"
   },
-  "commit:d23cc1c": {
-   "hash": "5c5a421a139c7377",
-   "text": "The commit says session 23 documentation reports that the PE import table was stripped.",
+  "commit:1845db3": {
+   "hash": "1de61aff5568b8a0",
+   "text": "The launcher commit says it updates Victory-NVIDIA to a new launcher and lists presets with performance details.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T03:36:39.030Z"
+   "at": "2026-11-27T04:01:58.154Z"
   }
  },
  "stories": {
+  "2026-11-27-bsky.app-microsoft-which-owns-a-platform-that-actually-runs-gta-vi-xbox-also-owns-a-community-where": {
+   "hash": "79798b3202cff0b5",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 26,
+   "summary": null,
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
+  "2026-11-27-bsky.app-github-deleted-a-post-about-the-unofficial-gta-6-pc-port-gaining-traction-the-anyps5-proje": {
+   "hash": "65c0ed26f61ccf12",
+   "topic": "Takedown",
+   "importance": 4,
+   "weight": 36,
+   "lead": "2026-11-26-news.google.com-github-post-links-anyps5-project-to-gta-6",
+   "summary": "The headline says GitHub deleted a post about an unofficial GTA 6 PC port gaining traction.",
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
   "2026-11-27-bsky.app-3-days-after-the-exe-leak-and-they-got-gta-6-running-on-pc-at-10-15fps-its-also-been-dumpe": {
    "hash": "815bde532c93198b",
    "topic": "Port",
@@ -393,7 +410,8 @@
    "hash": "e935b723008c473f",
    "topic": "Port",
    "importance": 2,
-   "weight": 22,
+   "weight": 28,
+   "similar": 1,
    "summary": "Wisevoter reports that a GitHub post links the AnyPS5 project to GTA 6.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
@@ -1737,6 +1755,14 @@
    "weight": 26,
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-26-news.google.com-take-two-takes-down-gta-6-pc-port-project-leonida": {
+   "hash": "b08b348461e2d988",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 66,
+   "summary": "The headline says Take-Two took down the GTA 6 PC port project Leonida.",
+   "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-26-bsky.app-many-fans-want-to-know-if-gta-6-will-return-to-los-santos-the-official-trailer-and-recent-": {
    "hash": "a097c8043ce58149",
@@ -3431,86 +3457,20 @@
    "weight": 46,
    "summary": null,
    "by": "Kilo Gateway, reflection/beam-free"
-  },
-  "2026-11-25-bsky.app-apparently-gta-6s-xbox-files-were-leaked-and-people-are-porting-it-to-pc-with-ai-already": {
-   "hash": "b107f34fbea5b1d5",
-   "topic": "Leak",
-   "importance": 3,
-   "weight": 22,
-   "summary": "Bluesky says GTA 6 Xbox files leaked and people are already porting them to PC with AI.",
-   "by": "Kilo Gateway, reflection/beam-free"
-  },
-  "2026-11-25-bsky.app-ex-artista-da-bungie-documenta-o-caos-dos-ports-de-gta-6-para-pc-desenvolvidos-com-ia": {
-   "hash": "d8762d67b887fe76",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 26,
-   "summary": "A former Bungie artist documents chaos in AI-developed GTA 6 PC ports.",
-   "by": "Kilo Gateway, reflection/beam-free"
-  },
-  "2026-11-25-news.google.com-gta-vi-pc-gameplay-reportedly-leaked-performance-stats-suggest-the-game-is-running-on-a-pc": {
-   "hash": "381b82b51887c686",
-   "topic": "Leak",
-   "importance": 3,
-   "weight": 22,
-   "summary": "X reports unverified GTA VI PC gameplay leaked, with performance stats and a near-finished development claim.",
-   "by": "Kilo Gateway, reflection/beam-free"
   }
  },
  "projects": {
-  "whibwhi-own": {
-   "hash": "81e793c20cb07dd4",
-   "count": 15,
-   "summary": "whibwhi-own’s recent commits mention memory-map measurements, repeatable test stopping points, and running measurements during the game test.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T03:36:39.030Z"
-  },
-  "xin-leonida": {
-   "hash": "488d55311576139b",
-   "count": 15,
-   "summary": "Xin-Leonida's recent commits and pull requests mention crash analysis, player input, a UAC blocker, cache notes, and a dependency update.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T02:31:57.222Z"
-  },
-  "tuxbox": {
-   "hash": "2abf4af0069996b8",
-   "count": 15,
-   "summary": "TuxBox's recent commits mention ProjectScarlett preparation, lane pixel input matching, mesh lane spill, shader fixes, live worker wake, and root cbv offsets control.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-27T00:36:38.283Z"
-  },
-  "playablegames-peppa": {
-   "hash": "058c3c3872bd3afb",
-   "count": 15,
-   "summary": "playablegames-peppa's recent commits and pull requests mention submission-thread work, batching, allocator notes, and reported frame-rate measurements.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T02:31:57.222Z"
-  },
-  "five-star-recomp": {
-   "hash": "e29203e02c1f0df5",
-   "count": 15,
-   "summary": "Five Star Recomp's commits and pull requests mention held texture views, frame dumps, Aftermath crash dumps, loader flags, mesh fallback, buffer checks, and sampler tests.",
-   "by": "Kilo Gateway, reflection/beam-free",
-   "at": "2026-11-27T01:02:14.441Z"
-  },
-  "victory-gta6": {
-   "hash": "44d155e50ee644cc",
-   "count": 15,
-   "summary": "hyphennn's recent commits mention raw loads guarding, pending-pipeline test, README status, dispatch waits, spread dispatches, and texture fallback.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-27T00:36:38.283Z"
-  },
-  "i95-gta6-pc-launcher": {
-   "hash": "263caf2e213fc308",
-   "count": 15,
-   "summary": "i95-GTA6-PC-Launcher’s recent commits mention readback fixes, an opt-in Agility build, upstream updates, NVIDIA frame-time testing, and loading-screen art.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T03:36:39.030Z"
-  },
   "native-victory-macos": {
    "hash": "72d4a4125129ed49",
    "count": 15,
    "summary": "Native-Victory-macOS’s recent commits and pull requests mention Metal blending, shader translation limits, and mip and slice ranges for texture-array views.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T03:36:39.030Z"
+  },
+  "whibwhi-own": {
+   "hash": "81e793c20cb07dd4",
+   "count": 15,
+   "summary": "whibwhi-own’s recent commits mention memory-map measurements, repeatable test stopping points, and running measurements during the game test.",
    "by": "Pollinations, gpt-6-luna-classic",
    "at": "2026-11-27T03:36:39.030Z"
   },
@@ -3521,12 +3481,54 @@
    "by": "Pollinations, gpt-6-luna-classic",
    "at": "2026-11-27T03:36:39.030Z"
   },
+  "xin-leonida": {
+   "hash": "488d55311576139b",
+   "count": 15,
+   "summary": "Xin-Leonida's recent commits and pull requests mention crash analysis, player input, a UAC blocker, cache notes, and a dependency update.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T02:31:57.222Z"
+  },
+  "five-star-recomp": {
+   "hash": "e29203e02c1f0df5",
+   "count": 15,
+   "summary": "Five Star Recomp's commits and pull requests mention held texture views, frame dumps, Aftermath crash dumps, loader flags, mesh fallback, buffer checks, and sampler tests.",
+   "by": "Kilo Gateway, reflection/beam-free",
+   "at": "2026-11-27T01:02:14.441Z"
+  },
+  "i95-gta6-pc-launcher": {
+   "hash": "263caf2e213fc308",
+   "count": 15,
+   "summary": "i95-GTA6-PC-Launcher’s recent commits mention readback fixes, an opt-in Agility build, upstream updates, NVIDIA frame-time testing, and loading-screen art.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T03:36:39.030Z"
+  },
+  "victory-gta6": {
+   "hash": "eb3dd3f62e13fd12",
+   "count": 15,
+   "summary": "hyphennn's recent commits and pull requests mention shader translation, GPU texture tile handling, processor-side submission copies, and ray tracing miss handling.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T04:01:58.154Z"
+  },
   "vitoria-spark": {
    "hash": "122204b7de449c97",
    "count": 15,
    "summary": "VItoria Spark’s recent commits and pull requests mention Linux pipeline fixes, a card-profile probe, d3dcompiler_47, and pipeline-list handling.",
    "by": "Pollinations, gpt-6-luna-classic",
    "at": "2026-11-27T03:36:39.030Z"
+  },
+  "tuxbox": {
+   "hash": "0baf7fcd4e990371",
+   "count": 15,
+   "summary": "TuxBox's recent commits and pull requests mention compute resource index maps, shader swizzles and heap offsets, root layouts, and mesh fixes.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T04:01:58.154Z"
+  },
+  "playablegames-peppa": {
+   "hash": "058c3c3872bd3afb",
+   "count": 15,
+   "summary": "playablegames-peppa's recent commits and pull requests mention submission-thread work, batching, allocator notes, and reported frame-rate measurements.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T02:31:57.222Z"
   }
  }
 }
