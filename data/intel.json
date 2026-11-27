@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T21:05:26.362Z",
+  "updated": "2026-11-27T21:20:21.231Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T21:01:02.000Z",
-      "lastOkAt": "2026-11-27T21:05:26.362Z",
-      "seen": 39250,
+      "lastOkAt": "2026-11-27T21:20:21.231Z",
+      "seen": 39500,
       "events": 1390,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T21:05:26.362Z",
+      "lastOkAt": "2026-11-27T21:20:21.231Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T21:05:26.362Z",
-      "seen": 9586,
+      "lastOkAt": "2026-11-27T21:20:21.231Z",
+      "seen": 9649,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T20:58:54.000Z",
-      "lastOkAt": "2026-11-27T21:05:26.362Z",
-      "seen": 62800,
+      "lastOkAt": "2026-11-27T21:20:21.231Z",
+      "seen": 63200,
       "events": 46,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T09:05:26.362Z",
-      "lastOkAt": "2026-11-27T21:05:26.362Z",
-      "seen": 18915,
+      "lastCursor": "2026-11-27T09:20:21.231Z",
+      "lastOkAt": "2026-11-27T21:20:21.231Z",
+      "seen": 19038,
       "events": 12,
       "errors": 0
     }
@@ -14448,12 +14448,17 @@
           "at": "2026-11-27T14:50:21.776Z",
           "by": "desk",
           "note": "The only support is the project’s own repository, which is primary but not independent, and its excerpt is empty, so the specific 0% to 89.4% jump is not plainly corroborated."
+        },
+        {
+          "at": "2026-11-27T21:20:21.231Z",
+          "by": "desk",
+          "note": "The only support is the project’s own repository with an empty excerpt, which is primary but not independent and too thin to plainly verify the 0%→89.4% move."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T14:50:21.776Z"
+      "deskAt": "2026-11-27T21:20:21.231Z"
     },
     {
       "id": "20261127t145227z-victory-nvidia-ee555f46",
@@ -15596,10 +15601,17 @@
       "chain": "sha256:665a3cb30d1dd2f57a72f76c6edc04261211c21b639436138cd5de58ca7fc94c",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T21:20:21.231Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the commit title merely restates the claim without independent corroboration or verifiable detail."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T21:20:21.231Z"
     }
   ],
   "reports": [
