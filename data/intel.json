@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T00:06:14.132Z",
+  "updated": "2026-11-27T00:20:24.386Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T00:01:44.000Z",
-      "lastOkAt": "2026-11-27T00:06:14.132Z",
-      "seen": 18500,
+      "lastOkAt": "2026-11-27T00:20:24.386Z",
+      "seen": 18750,
       "events": 687,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T20:47:47.000Z",
-      "lastOkAt": "2026-11-27T00:06:14.132Z",
+      "lastOkAt": "2026-11-27T00:20:24.386Z",
       "seen": 28,
       "events": 20,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T00:06:14.132Z",
-      "seen": 4414,
+      "lastOkAt": "2026-11-27T00:20:24.386Z",
+      "seen": 4476,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-26T23:53:07.445Z",
-      "lastOkAt": "2026-11-27T00:06:14.132Z",
-      "seen": 29600,
+      "lastOkAt": "2026-11-27T00:20:24.386Z",
+      "seen": 30000,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T12:06:14.132Z",
-      "lastOkAt": "2026-11-27T00:06:14.132Z",
-      "seen": 8692,
+      "lastCursor": "2026-11-26T12:20:24.386Z",
+      "lastOkAt": "2026-11-27T00:20:24.386Z",
+      "seen": 8815,
       "events": 7,
       "errors": 0
     }
@@ -9293,20 +9293,27 @@
         "score": 1,
         "reasons": [
           "the project’s own repository",
-          "a record the pipeline already read"
+          "a record the pipeline already read",
+          "published by the desk after review"
         ],
         "conflict": false
       },
-      "status": "held",
+      "status": "published",
       "sensitive": false,
       "audit": null,
       "chain": "sha256:24172755455ca01bfdf5288a777b2319341f069629bf14d4a6b13023f72a9e73",
-      "reportId": null,
-      "discordAt": null,
-      "revisions": [],
-      "heldReasons": [
-        "a rate cap"
-      ]
+      "reportId": "20261127t000043z-xcl-5d7b71de-report",
+      "discordAt": "2026-11-27T00:20:33.059Z",
+      "revisions": [
+        {
+          "at": "2026-11-27T00:20:24.386Z",
+          "by": "desk",
+          "note": "The project's own GitHub repository directly supports the one-line claim, and no stored source contradicts it."
+        }
+      ],
+      "heldReasons": [],
+      "deskAt": "2026-11-27T00:20:24.386Z",
+      "publishedAt": "2026-11-27T00:20:24.386Z"
     },
     {
       "id": "20261127t000003z-marvis-5be31b67",
@@ -9354,10 +9361,17 @@
       "chain": "sha256:4d97d980fce11dae469cc27ee09d47982a5dc955ee994655361d7925373f5a5d",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T00:20:24.386Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository entry with no excerpt, so it is primary but not independent and too thin to verify the one-line claim."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T00:20:24.386Z"
     },
     {
       "id": "20261126t235024z-victory-low-end-pc-1967b6da",
@@ -9698,6 +9712,27 @@
           "outlet": "GitHub",
           "title": "Shaders: VICTORY_LDS_EXACT=1 orders LDS in a lane-branch region by the dwords it touches (369cbe906ea72764 on 32-lane GP",
           "at": "2026-11-27T00:01:22Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261127t000043z-xcl-5d7b71de-report",
+      "itemId": "20261127t000043z-xcl-5d7b71de",
+      "publishedAt": "2026-11-27T00:20:24.386Z",
+      "by": "desk",
+      "confidence": "moderate",
+      "overview": "XCL has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. D3D12.X: patch assert-checked vtables in place under Wine (#175).",
+      "evidence": "The entry rests on one stored source, GitHub. D3D12.X: patch assert-checked vtables in place under Wine (#175).",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/xcl-dev/xcl/pull/2477",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "D3D12.X: patch assert-checked vtables in place under Wine (#175)",
+          "at": "2026-11-27T00:00:43Z",
           "kind": "primary"
         }
       ]
