@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T00:50:20.574Z",
+  "updated": "2026-11-27T01:05:20.642Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T00:35:55.000Z",
-      "lastOkAt": "2026-11-27T00:50:20.574Z",
-      "seen": 19000,
-      "events": 707,
+      "lastCursor": "2026-11-27T01:01:22.000Z",
+      "lastOkAt": "2026-11-27T01:05:20.642Z",
+      "seen": 19250,
+      "events": 727,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T21:53:31.000Z",
-      "lastOkAt": "2026-11-27T00:50:20.574Z",
+      "lastOkAt": "2026-11-27T01:05:20.642Z",
       "seen": 30,
       "events": 22,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T00:50:20.574Z",
-      "seen": 4538,
+      "lastOkAt": "2026-11-27T01:05:20.642Z",
+      "seen": 4600,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T00:20:27.000Z",
-      "lastOkAt": "2026-11-27T00:50:20.574Z",
-      "seen": 30400,
+      "lastCursor": "2026-11-27T01:00:24.248Z",
+      "lastOkAt": "2026-11-27T01:05:20.642Z",
+      "seen": 30800,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T12:50:20.574Z",
-      "lastOkAt": "2026-11-27T00:50:20.574Z",
-      "seen": 8938,
+      "lastCursor": "2026-11-26T13:05:20.642Z",
+      "lastOkAt": "2026-11-27T01:05:20.642Z",
+      "seen": 9061,
       "events": 7,
       "errors": 0
     }
@@ -10253,6 +10253,226 @@
       "heldReasons": [
         "a rate cap"
       ]
+    },
+    {
+      "id": "20261127t005002z-americaslauncher-fb0956bb",
+      "key": "update|americaslauncher|activity|41568",
+      "kind": "update",
+      "projectId": "americaslauncher",
+      "projectName": "AmericasLauncher",
+      "at": "2026-11-27T00:50:02Z",
+      "detectedAt": "2026-11-27T01:05:20.642Z",
+      "title": "AmericasLauncher opened pull request #42",
+      "oneLine": "Benchmark button for runners with a built-in benchmark",
+      "sources": [
+        {
+          "url": "https://github.com/isaac-btw/AmericasLauncher/pull/42",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Benchmark button for runners with a built-in benchmark",
+          "at": "2026-11-27T00:50:02Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "isaac-btw/americaslauncher",
+        "name": "americaslauncher",
+        "words": [
+          "americaslauncher"
+        ],
+        "hash": "0c860a9ad8788a11",
+        "projectId": "americaslauncher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:9e3428f9dce36a49d80e7af2f28daccffb161917663ac3d95d19ef35b2b620a1",
+      "reportId": "20261127t005002z-americaslauncher-fb0956bb-report",
+      "discordAt": "2026-11-27T01:05:38.452Z",
+      "revisions": [],
+      "note": "model: overview has 42, which is not in a source; changed has 42, which is not in a source",
+      "publishedAt": "2026-11-27T01:05:20.642Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261127t004314z-five-star-recomp-2c619934",
+      "key": "update|five-star-recomp|activity|41568",
+      "kind": "update",
+      "projectId": "five-star-recomp",
+      "projectName": "Five Star Recomp",
+      "at": "2026-11-27T00:43:14Z",
+      "detectedAt": "2026-11-27T01:05:20.642Z",
+      "title": "Five Star Recomp pushed 2 commits",
+      "oneLine": "Merge lane-picture: textures with held views stay, frame-stage dump, Aftermath crash dumps",
+      "sources": [
+        {
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/b42886f8c662510b3a65b1b799c52f92c769479f",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Merge lane-picture: textures with held views stay, frame-stage dump, Aftermath crash dumps",
+          "at": "2026-11-27T00:43:14Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "thatrecompdev/five-star-recomp",
+        "name": "five star recomp",
+        "words": [
+          "five",
+          "star",
+          "recomp",
+          "five-star-recomp"
+        ],
+        "hash": "a468c80d659a5616",
+        "projectId": "five-star-recomp"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:435ac35af275933d85f63869c95d13f304be9486a92d6c03dbdf17d0dfd75d5b",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T01:05:20.642Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub repository with no excerpt, so it is primary but not independent and too thin to plainly support the update line."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T01:05:20.642Z"
+    },
+    {
+      "id": "20261127t004241z-victory-low-end-pc-2b39247b",
+      "key": "update|victory-low-end-pc|activity|41568",
+      "kind": "update",
+      "projectId": "victory-low-end-pc",
+      "projectName": "WASDeKeys low-end",
+      "at": "2026-11-27T00:42:41Z",
+      "detectedAt": "2026-11-27T01:05:20.642Z",
+      "title": "WASDeKeys low-end opened pull request #5",
+      "oneLine": "Windows results: RTX 3050 8 GB + i5-12400F (9.2 fps after warm), posterized sky and a likely cause",
+      "sources": [
+        {
+          "url": "https://github.com/WASDeKeys/victory-low-end-pc/pull/5",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Windows results: RTX 3050 8 GB + i5-12400F (9.2 fps after warm), posterized sky and a likely cause",
+          "at": "2026-11-27T00:42:41Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "wasdekeys/victory-low-end-pc",
+        "name": "wasdekeys low-end",
+        "words": [
+          "wasdekeys",
+          "low-end",
+          "victory-low-end-pc"
+        ],
+        "hash": "202d7324fea18f87",
+        "projectId": "victory-low-end-pc"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d73979a5f63ea5e5d748f6d8b399a5f6fc39caaa70b0c24926fd5e110281eaab",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T01:05:20.642Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the specific performance and rendering claims rest on a self-published title rather than independent corroboration."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T01:05:20.642Z"
+    },
+    {
+      "id": "20261127t004218z-vitoriabr-b03171ee",
+      "key": "update|vitoriabr|activity|41568",
+      "kind": "update",
+      "projectId": "vitoriabr",
+      "projectName": "Uilian",
+      "at": "2026-11-27T00:42:18Z",
+      "detectedAt": "2026-11-27T01:05:20.642Z",
+      "title": "Uilian opened pull request #129",
+      "oneLine": "gpu: keep CreateSamplerX's values in the host's ranges (port of VIctory#474)",
+      "sources": [
+        {
+          "url": "https://github.com/uiliannn/VItoriaBr/pull/129",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "gpu: keep CreateSamplerX's values in the host's ranges (port of VIctory#474)",
+          "at": "2026-11-27T00:42:18Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "uiliannn/vitoriabr",
+        "name": "uilian",
+        "words": [
+          "uilian",
+          "vitoriabr"
+        ],
+        "hash": "029198c819d10079",
+        "projectId": "vitoriabr"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:ceeb6890c5c4ed658f1dd19af72b2f45ea1a761942e394250f0de402a92ef8fc",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
@@ -10575,6 +10795,27 @@
           "outlet": "GitHub",
           "title": "xshader: accept uniform loops around compute swizzles for single-wave",
           "at": "2026-11-27T00:34:56Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261127t005002z-americaslauncher-fb0956bb-report",
+      "itemId": "20261127t005002z-americaslauncher-fb0956bb",
+      "publishedAt": "2026-11-27T01:05:20.642Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "AmericasLauncher has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. Benchmark button for runners with a built-in benchmark.",
+      "evidence": "The entry rests on one stored source, GitHub. Benchmark button for runners with a built-in benchmark.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/isaac-btw/AmericasLauncher/pull/42",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Benchmark button for runners with a built-in benchmark",
+          "at": "2026-11-27T00:50:02Z",
           "kind": "primary"
         }
       ]
