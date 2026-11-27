@@ -1,6 +1,15 @@
 {
-  "lastRun": "2026-11-27T12:41:32.753Z",
+  "lastRun": "2026-11-27T13:40:30.289Z",
   "runs": [
+    {
+      "at": "2026-11-27T13:40:30.289Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [],
+      "skipped": [
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world in Full HD”"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-27T12:41:32.753Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -481,18 +490,6 @@
       ],
       "skipped": [
         "held: score anyxboxx gta.loads=1 gta.boots=1 gta.menu=1 gta.world=1 gta.playable=1: proposed, from “The Xbox Series 1.0.2.1 build of GTA VI **launches** on PC: boot, profile screen, first-run settings, legal screens, loa”"
-      ],
-      "note": null
-    },
-    {
-      "at": "2026-11-25T16:36:24.391Z",
-      "by": "Pollinations, gpt-oss-20b",
-      "applied": [
-        "candidate Itsbatt/victory-unified",
-        "candidate kfedora/GTAVI-Xbox2PC"
-      ],
-      "skipped": [
-        "held: score anyxboxx gta.fps=30: proposed, from “launches on PC: boot, profile screen, first-run settings, legal screens, loading, pause menu. Menus run at 30 fps.”"
       ],
       "note": null
     }
