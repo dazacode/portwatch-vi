@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T01:20:21.926Z",
+  "updated": "2026-11-27T01:35:21.628Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T01:01:22.000Z",
-      "lastOkAt": "2026-11-27T01:20:21.926Z",
-      "seen": 19500,
-      "events": 727,
+      "lastCursor": "2026-11-27T01:30:56.000Z",
+      "lastOkAt": "2026-11-27T01:35:21.628Z",
+      "seen": 19750,
+      "events": 744,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T21:53:31.000Z",
-      "lastOkAt": "2026-11-27T01:20:21.926Z",
+      "lastOkAt": "2026-11-27T01:35:21.628Z",
       "seen": 30,
       "events": 22,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T01:20:21.926Z",
-      "seen": 4662,
+      "lastOkAt": "2026-11-27T01:35:21.628Z",
+      "seen": 4724,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T01:00:24.248Z",
-      "lastOkAt": "2026-11-27T01:20:21.926Z",
-      "seen": 31200,
+      "lastCursor": "2026-11-27T01:15:59.644Z",
+      "lastOkAt": "2026-11-27T01:35:21.628Z",
+      "seen": 31600,
       "events": 26,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-26T13:20:21.926Z",
-      "lastOkAt": "2026-11-27T01:20:21.926Z",
-      "seen": 9184,
+      "lastCursor": "2026-11-26T13:35:21.628Z",
+      "lastOkAt": "2026-11-27T01:35:21.628Z",
+      "seen": 9307,
       "events": 7,
       "errors": 0
     }
@@ -9841,10 +9841,17 @@
       "chain": "sha256:8d7530c660604a4fb10cc5c5b41ffc8b064109a196792eb04aec62df2981f0b4",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T01:35:21.628Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub entry with an empty excerpt, so the multi-part commit claim is not plainly supported by the stored material."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T01:35:21.628Z"
     },
     {
       "id": "20261127t003128z-avatarmanz-f3ac44cc",
@@ -9891,10 +9898,17 @@
       "chain": "sha256:8060286dc600404434d70afa742d092383902f028d03a5c92a6ff04a182c2b5e",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T01:35:21.628Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub entry with an empty excerpt, so the technical claim is not plainly supported beyond its title and lacks independent corroboration."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T01:35:21.628Z"
     },
     {
       "id": "20261127t002846z-whibwhi-own-1729c40b",
@@ -10487,6 +10501,69 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-27T01:20:21.926Z"
+    },
+    {
+      "id": "20261127t010628z-leonida-bb317f4b",
+      "key": "reference|leonida|activity|41568",
+      "kind": "duplicate",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-27T01:06:28Z",
+      "detectedAt": "2026-11-27T01:35:21.628Z",
+      "title": "Leonida may duplicate leonida-continued",
+      "oneLine": "Leonida Recompilation: Build the Ultimate GTA VI Experience",
+      "sources": [
+        {
+          "url": "https://github.com/3bdalra7manm2o-hub/leonida-gta-vi-recompilation",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "3bdalra7manm2o-hub/leonida-gta-vi-recompilation",
+          "at": "2026-11-27T01:06:28Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "97d57db5f617040f",
+        "projectId": "leonida"
+      },
+      "similar": [
+        {
+          "effortId": "leonida-continued",
+          "score": 0.84
+        },
+        {
+          "effortId": "leonida-continued",
+          "score": 0.84
+        },
+        {
+          "effortId": "leonida-continued",
+          "score": 0.84
+        }
+      ],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:62bc2d580507def516c6ad3c4c182785a434e1554315aad3ec07de8ef7374120",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "duplicate build reference"
+      ]
     }
   ],
   "reports": [
