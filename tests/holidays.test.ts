@@ -15,6 +15,9 @@ function run(date: Date, saved: string | null = null, holidays?: readonly Holida
   return dataset
 }
 
+/** The dates as written, switched on, so the date logic is tested whatever is live. */
+const ON = HOLIDAYS.map((h) => ({ ...h, on: true }))
+
 describe("holidays", () => {
   it.each([
     [new Date(2026, 10, 23, 23, 59), null],
@@ -24,15 +27,17 @@ describe("holidays", () => {
     [new Date(2026, 10, 30, 0, 0), null],
     [new Date(2027, 10, 26), null],
   ])("on %s it is %s", (date, id) => {
-    expect(run(date).season ?? null).toBe(id)
-    expect(run(date).holiday ?? null).toBe(id)
+    expect(run(date, null, ON).season ?? null).toBe(id)
+    expect(run(date, null, ON).holiday ?? null).toBe(id)
   })
   it("stays off for someone who turned it off, and can be turned on again", () => {
-    expect(run(new Date(2026, 10, 26), "off")).toEqual({ season: "thanksgiving" })
-    expect(run(new Date(2026, 10, 26), "on").holiday).toBe("thanksgiving")
+    expect(run(new Date(2026, 10, 26), "off", ON)).toEqual({ season: "thanksgiving" })
+    expect(run(new Date(2026, 10, 26), "on", ON).holiday).toBe("thanksgiving")
   })
   it("is off for everybody when it is switched off in the code", () => {
     const off = HOLIDAYS.map((h) => ({ ...h, on: false }))
     expect(run(new Date(2026, 10, 26), null, off)).toEqual({})
+    // Thanksgiving 2026 is switched off.
+    expect(run(new Date(2026, 10, 27))).toEqual({})
   })
 })

@@ -9,7 +9,8 @@ export const HOLIDAYS = [
     greeting: "Happy Thanksgiving",
     from: "2026-11-24",
     to: "2026-11-29",
-    on: true,
+    // Over for 2026.
+    on: false,
   },
 ] as const
 
