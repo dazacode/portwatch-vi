@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T09:50:30.275Z",
+  "updated": "2026-11-27T10:07:33.273Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T09:00:44.000Z",
-      "lastOkAt": "2026-11-27T09:50:30.275Z",
-      "seen": 28000,
-      "events": 983,
+      "lastCursor": "2026-11-27T10:01:30.000Z",
+      "lastOkAt": "2026-11-27T10:07:33.273Z",
+      "seen": 28250,
+      "events": 999,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T09:21:22.000Z",
-      "lastOkAt": "2026-11-27T09:50:30.275Z",
+      "lastOkAt": "2026-11-27T10:07:33.273Z",
       "seen": 38,
       "events": 30,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T09:50:30.275Z",
-      "seen": 6770,
+      "lastOkAt": "2026-11-27T10:07:33.273Z",
+      "seen": 6832,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T08:50:42.000Z",
-      "lastOkAt": "2026-11-27T09:50:30.275Z",
-      "seen": 44800,
-      "events": 32,
+      "lastCursor": "2026-11-27T09:55:43.145Z",
+      "lastOkAt": "2026-11-27T10:07:33.273Z",
+      "seen": 45200,
+      "events": 35,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T09:50:30.275Z",
-      "seen": 13366,
+      "lastOkAt": "2026-11-27T10:07:33.273Z",
+      "seen": 13489,
       "events": 12,
       "errors": 0
     }
@@ -11979,6 +11979,212 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-27T09:35:51.794Z"
+    },
+    {
+      "id": "20261127t094054z-kelvaroq-a2792f12",
+      "key": "update|kelvaroq|activity|41568",
+      "kind": "update",
+      "projectId": "kelvaroq",
+      "projectName": "Kelvaroq",
+      "at": "2026-11-27T09:40:54Z",
+      "detectedAt": "2026-11-27T10:07:33.273Z",
+      "title": "Kelvaroq pushed 2 commits",
+      "oneLine": "README: correct the open-world figures (the 35 ms frames were loading screens); keep the measured 22 ms GPU floor, 30 fps loading screens and bookkeeping results",
+      "sources": [
+        {
+          "url": "https://github.com/stellarr-studio/kelvaroq/commit/92606ea7f5da5bab74e4eee7f3045b060c7020a8",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "README: correct the open-world figures (the 35 ms frames were loading screens); keep the measured 22 ms GPU floor, 30 fp",
+          "at": "2026-11-27T09:40:54Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "stellarr-studio/kelvaroq",
+        "name": "kelvaroq",
+        "words": [
+          "kelvaroq"
+        ],
+        "hash": "a52e9ce80e0870f7",
+        "projectId": "kelvaroq"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:1c9c56b506e7b8d616bde1ab4e156633d9296553c198c6bd88be180e66cfdf1a",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t093214z-scene-695077fe",
+      "key": "takedown|-|https://bsky.app/profile/nbctech.bsky.social/post/3n3buy55lxy2e|41568",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-27T09:32:14.342Z",
+      "detectedAt": "2026-11-27T10:07:33.273Z",
+      "title": "Bluesky in a takedown report",
+      "oneLine": "Take-Two has had thousands of GTA 6 PC recompilation repositories taken down – but the…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/nbctech.bsky.social/post/3n3buy55lxy2e",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "Take-Two has had thousands of GTA 6 PC recompilation repositories taken down – but the impact appears to be limited. htt",
+          "at": "2026-11-27T09:32:14.342Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "Take-Two has had thousands of GTA 6 PC recompilation repositories taken down – but the impact appears to be limited. htt"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "e160ec218084a571",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:e9f800960e61697b507bf859642e6c47b785f5acfeea5ac2714685afa8499fd2",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T10:07:33.273Z",
+          "by": "desk",
+          "note": "The item rests on a single truncated Bluesky post, which is a weak social source that does not plainly support the one line on its own."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-27T10:07:33.273Z"
+    },
+    {
+      "id": "20261127t093100z-scene-a264a77c",
+      "key": "takedown|-|https://news.google.com/rss/articles/cbmiugfbvv95cuxnrm9modrhdehtcvnxqlvfcfpiufvctte1rupvqky3rlixshr6adz5bfblswe2ahjrumv6oerlnwrfmddonwu4edbyatc5b0h6cdnmdvm0efpyzgvynenhalviuew2uzvayvlmlulzodfqvhpsqlpjef9wrw1ux0nhv21goects3zlwnfzukywy09pmwnhzknozjfrzgqyren5dnz0zkgtvs1unc1yd2jscxzzc3zmwgltz3c?oc=5|41568",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-27T09:31:00.000Z",
+      "detectedAt": "2026-11-27T10:07:33.273Z",
+      "title": "Notebookcheck in a takedown report",
+      "oneLine": "GTA 6: Thousands of recomp repositories taken down",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRm9mODRHdEhtcVNxQlVfcFpiUFVCTTE1RUpVQkY3RlIxSHR6aDZ5bFBLSWE2aHJrUmV6OERlNWRFMDdONWU4eDBYaTc5b0h6cDNMdVM0eFpyZGVYNENHalVIUEw2UzVaYVlMLUlZODFqVHpsQlpJeF9WRW1uX0NHV21GOEctS3ZlWnFZUkYwY09PMWNHZkNOZjFRZGQyREN5dnZ0ZkgtVS1uNC1Yd2JScXZzc3ZmWGltZ3c?oc=5",
+          "host": "news.google.com",
+          "outlet": "Notebookcheck",
+          "title": "GTA 6: Thousands of recomp repositories taken down",
+          "at": "2026-11-27T09:31:00.000Z",
+          "kind": "outside",
+          "authorHash": "70940f266b",
+          "excerpt": "GTA 6: Thousands of recomp repositories taken down"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "31220c87ebae0a35",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:c5529420b6883140b15176727dd24c7a7c649e7149fcd8b762a916b71ac97b4f",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261127t091857z-leonida-371c5f63",
+      "key": "takedown|leonida|https://bsky.app/profile/iplaygta6.com/post/3n3buabimys2c|41568",
+      "kind": "takedown",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-27T09:18:57.546Z",
+      "detectedAt": "2026-11-27T10:07:33.273Z",
+      "title": "Leonida in a takedown report",
+      "oneLine": "Take-Two's takedown hit 3,007 PC-port repos — but Project Leonida lives on through…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/iplaygta6.com/post/3n3buabimys2c",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "Take-Two's takedown hit 3,007 PC-port repos — but Project Leonida lives on through forks. Why the shutdown did not kill",
+          "at": "2026-11-27T09:18:57.546Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "Take-Two's takedown hit 3,007 PC-port repos — but Project Leonida lives on through forks. Why the shutdown did not kill"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "67c11ce957190410",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:74be5857da4f62987e6afda8f4b2bbdcaa97a9fb961b3246ebe66e92c1802621",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
     }
   ],
   "reports": [
