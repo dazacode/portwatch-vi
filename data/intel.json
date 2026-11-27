@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T08:35:20.530Z",
+  "updated": "2026-11-27T08:50:20.204Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T08:31:10.000Z",
-      "lastOkAt": "2026-11-27T08:35:20.530Z",
-      "seen": 26750,
+      "lastOkAt": "2026-11-27T08:50:20.204Z",
+      "seen": 27000,
       "events": 969,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T06:03:44.000Z",
-      "lastOkAt": "2026-11-27T08:35:20.530Z",
+      "lastOkAt": "2026-11-27T08:50:20.204Z",
       "seen": 37,
       "events": 29,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T08:35:20.530Z",
-      "seen": 6460,
+      "lastOkAt": "2026-11-27T08:50:20.204Z",
+      "seen": 6522,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T08:17:03.000Z",
-      "lastOkAt": "2026-11-27T08:35:20.530Z",
-      "seen": 42800,
+      "lastOkAt": "2026-11-27T08:50:20.204Z",
+      "seen": 43200,
       "events": 31,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T08:35:20.530Z",
-      "seen": 12751,
+      "lastOkAt": "2026-11-27T08:50:20.204Z",
+      "seen": 12874,
       "events": 12,
       "errors": 0
     }
@@ -10158,12 +10158,17 @@
           "at": "2026-11-27T02:35:21.630Z",
           "by": "desk",
           "note": "The only support is a pull-request title in the project's own repository with no excerpt or independent confirmation, and an opened PR does not establish that the correction was accepted."
+        },
+        {
+          "at": "2026-11-27T08:50:20.204Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the claim about the corrected ~2 ms figure rests on a PR title alone and is not independently corroborated."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T02:35:21.630Z"
+      "deskAt": "2026-11-27T08:50:20.204Z"
     },
     {
       "id": "20261127t002356z-project-americas-400638a4",
@@ -10215,12 +10220,17 @@
           "at": "2026-11-27T02:35:21.630Z",
           "by": "desk",
           "note": "The project's own repository commit title directly matches the one-line summary, and no source contradicts it."
+        },
+        {
+          "at": "2026-11-27T08:50:20.204Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub repository with an empty excerpt, so the commit-batch line is not plainly supported by stored source content and lacks independent corroboration."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T02:35:21.630Z"
+      "deskAt": "2026-11-27T08:50:20.204Z"
     },
     {
       "id": "20261127t002339z-scene-371802af",
