@@ -1,6 +1,6 @@
 "use client"
 
-import { Check, Languages, Search } from "lucide-react"
+import { Check, Languages, LoaderCircle, Search } from "lucide-react"
 import { useEffect, useId, useMemo, useState } from "react"
 import { Button } from "@/components/ui/button"
 import {
@@ -21,6 +21,9 @@ import {
 import { chosenLanguage, resumeTranslation, translateTo } from "@/lib/translate"
 import { cn } from "@/lib/utils"
 
+const BLOCKED =
+  "The page couldn't be translated. A browser extension, ad blocker or network filter may be blocking Google Translate (translate.googleapis.com). Allow it for this site and try again."
+
 type Row = { language: Language; own: string; english: string; key: string }
 
 /** Lower case and without accents, so "espanol" finds "Español". */
@@ -30,7 +33,9 @@ export function LanguagePicker() {
   const [open, setOpen] = useState(false)
   const [current, setCurrent] = useState(SOURCE_LANGUAGE)
   const [query, setQuery] = useState("")
-  const [failed, setFailed] = useState(false)
+  const [failed, setFailed] = useState<string | null>(null)
+  // The language being turned to, until the page has changed.
+  const [pending, setPending] = useState<string | null>(null)
   const [browser, setBrowser] = useState<readonly string[]>([])
   const searchId = useId()
   const countId = useId()
@@ -38,7 +43,10 @@ export function LanguagePicker() {
   useEffect(() => {
     setCurrent(chosenLanguage())
     setBrowser(navigator.languages ?? [navigator.language])
-    resumeTranslation().catch(() => setFailed(true))
+    resumeTranslation().catch(() => {
+      setCurrent(SOURCE_LANGUAGE)
+      setFailed(BLOCKED)
+    })
   }, [])
 
   // Names are only worked out once the list is opened.
@@ -62,13 +70,24 @@ export function LanguagePicker() {
   const currentLanguage = findLanguage(current)
   const currentName = currentLanguage ? languageName(currentLanguage, SOURCE_LANGUAGE) : "English"
 
-  const choose = (code: string) => {
-    setOpen(false)
-    setQuery("")
-    if (code === current) return
-    setCurrent(code)
-    setFailed(false)
-    translateTo(code).catch(() => setFailed(true))
+  const choose = async (code: string) => {
+    if (pending) return
+    if (code === current) {
+      setOpen(false)
+      return
+    }
+    setFailed(null)
+    setPending(code)
+    try {
+      await translateTo(code)
+      setCurrent(code)
+      setQuery("")
+      setOpen(false)
+    } catch {
+      setFailed(BLOCKED)
+    } finally {
+      setPending(null)
+    }
   }
 
   const list = (items: Row[], label: string) => (
@@ -80,6 +99,7 @@ export function LanguagePicker() {
             <button
               type="button"
               aria-current={selected ? "true" : undefined}
+              aria-busy={pending === language.code || undefined}
               onClick={() => choose(language.code)}
               className={cn(
                 "flex min-h-11 w-full items-center gap-3 rounded-2xl px-3 py-1.5 text-left outline-none hover:bg-foreground/5 focus-visible:ring-2 focus-visible:ring-ring",
@@ -95,7 +115,14 @@ export function LanguagePicker() {
                   <span className="block text-xs font-normal text-muted-foreground">{english}</span>
                 )}
               </span>
-              {selected && <Check aria-hidden="true" className="size-4 shrink-0 text-primary" />}
+              {pending === language.code ? (
+                <LoaderCircle
+                  aria-hidden="true"
+                  className="size-4 shrink-0 animate-spin motion-reduce:animate-none"
+                />
+              ) : (
+                selected && <Check aria-hidden="true" className="size-4 shrink-0 text-primary" />
+              )}
             </button>
           </li>
         )
@@ -153,13 +180,15 @@ export function LanguagePicker() {
               {needle ? `${shown.length} ${shown.length === 1 ? "language" : "languages"}` : ""}
             </p>
           </div>
+          <p role="status" className={cn("mx-5 mb-3 text-muted-foreground", !pending && "sr-only")}>
+            {pending ? "Translating…" : ""}
+          </p>
           {failed && (
             <p
               role="alert"
               className="mx-5 mb-3 rounded-2xl bg-destructive/10 px-4 py-3 text-destructive"
             >
-              Google Translate couldn't be reached. Check your connection or ad blocker, then try
-              again.
+              {failed}
             </p>
           )}
           {/* The names are already in their own languages: translating them would scramble them. */}
