@@ -1,6 +1,17 @@
 {
-  "lastRun": "2026-11-27T11:40:42.029Z",
+  "lastRun": "2026-11-27T12:41:32.753Z",
   "runs": [
+    {
+      "at": "2026-11-27T12:41:32.753Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [],
+      "skipped": [
+        "held: finding leonida: a claim not in the source",
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world in Full HD”",
+        "finding cgbj: project already has 12 findings"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-27T11:40:42.029Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -482,15 +493,6 @@
       ],
       "skipped": [
         "held: score anyxboxx gta.fps=30: proposed, from “launches on PC: boot, profile screen, first-run settings, legal screens, loading, pause menu. Menus run at 30 fps.”"
-      ],
-      "note": null
-    },
-    {
-      "at": "2026-11-25T15:35:29.244Z",
-      "by": "Pollinations, gpt-oss-20b",
-      "applied": [],
-      "skipped": [
-        "held: finding leonida: already said"
       ],
       "note": null
     }
