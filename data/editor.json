@@ -1,6 +1,23 @@
 {
-  "lastRun": "2026-11-27T07:42:07.362Z",
+  "lastRun": "2026-11-27T10:42:28.698Z",
   "runs": [
+    {
+      "at": "2026-11-27T10:42:28.698Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [
+        "candidate 0v3rr/Tequesta",
+        "candidate all3n1k/VIctory-RTX3090",
+        "candidate Bebrik229/VIctory-NVIDIA-Hybrid",
+        "candidate Tricky1008/13-years-later",
+        "candidate itkomarov/dirtemu"
+      ],
+      "skipped": [
+        "held: finding leonida: a claim not in the source",
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world in Full HD”",
+        "finding leonida: project already has 12 findings"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-27T09:42:13.511Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -479,15 +496,6 @@
         "candidate DexNom/VIctory"
       ],
       "skipped": [],
-      "note": null
-    },
-    {
-      "at": "2026-11-25T13:36:26.029Z",
-      "by": "Pollinations, gpt-oss-20b",
-      "applied": [],
-      "skipped": [
-        "held: finding leonida: already said"
-      ],
       "note": null
     }
   ]

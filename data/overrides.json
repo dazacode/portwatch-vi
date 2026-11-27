@@ -3590,6 +3590,151 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [
+          "Tested on Windows 11 with an NVIDIA RTX A4500"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-27",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Tequesta",
+        "summary": "Custom Rust-based HLE compatibility layer and D3D12.X translation runtime built to run GTA VI natively on Windows.",
+        "basedOn": [],
+        "id": "tequesta",
+        "repo": "0v3rr/Tequesta",
+        "stats": {
+          "stars": 3,
+          "createdAt": "2026-11-26T23:47:22Z",
+          "pushedAt": "2026-11-27T07:28:20Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [
+          "Tuned for an RTX 3090"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-27",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "VIctory-RTX3090",
+        "summary": "Experimental compatibility layer and shader translation runtime for running Xbox Series x64 executables natively on Windows D3D12.",
+        "basedOn": [],
+        "id": "victory-rtx3090",
+        "repo": "all3n1k/VIctory-RTX3090",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-26T16:44:48Z",
+          "pushedAt": "2026-11-27T08:18:41Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [
+          "Full working shaders",
+          "Full-color rendering verified via GPU backbuffer capture",
+          "Native D3D12 Barriers"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-27",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "VIctory-NVIDIA-Hybrid",
+        "summary": "NVIDIA RTX 12 GB Hybrid Edition, a standalone project built on VIctory.",
+        "basedOn": [],
+        "id": "victory-nvidia-hybrid",
+        "repo": "Bebrik229/VIctory-NVIDIA-Hybrid",
+        "stats": {
+          "stars": 4,
+          "createdAt": "2026-11-26T22:44:28Z",
+          "pushedAt": "2026-11-27T10:15:31Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "Not a playable release yet"
+        ],
+        "highlights": [
+          "SM 6.5 shader translation",
+          "Compute-based mesh fallback"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-27",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "dirtemu",
+        "summary": "Experimental AMD RX 570 / Polaris compatibility fork of ztrx for running the Xbox Series build of GTA VI on Windows PCs.",
+        "basedOn": [],
+        "id": "dirtemu",
+        "repo": "itkomarov/dirtemu",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-25T14:25:01Z",
+          "pushedAt": "2026-11-27T09:48:42Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -3598,6 +3743,11 @@
     "reason": "Owner's call: its code went public on 26 Nov, at 25 fps reported on NVIDIA."
   },
   "ignored": [
+    {
+      "repo": "Tricky1008/13-years-later",
+      "reason": "README describes a specific Xbox Series title but does not identify it as GTA VI.",
+      "seenAt": "2026-11-27"
+    },
     {
       "repo": "bulkynomad/ScarlettEdge",
       "reason": "README describes a general Xbox Series emulator, not its own GTA VI effort.",
@@ -3852,7 +4002,12 @@
     "kalinizer/victory-polaris",
     "PiloteCode/PiloteBox",
     "bulkynomad/ScarlettEdge",
-    "lameloball2813-ui/cool-fox"
+    "lameloball2813-ui/cool-fox",
+    "0v3rr/Tequesta",
+    "all3n1k/VIctory-RTX3090",
+    "Bebrik229/VIctory-NVIDIA-Hybrid",
+    "Tricky1008/13-years-later",
+    "itkomarov/dirtemu"
   ],
   "news": [
     {
