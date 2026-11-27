@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-27T03:25:42.476Z",
+  "lastRun": "2026-11-27T06:25:48.907Z",
   "read": [
     "https://github.com/avatarmanz/VIctory-7900XTX/issues/76@2026-11-26T02:28:56Z",
     "https://github.com/avatarmanz/VIctory-7900XTX/issues/75@2026-11-26T02:09:56Z",
@@ -169,9 +169,59 @@
     "https://github.com/xcl-dev/xcl/issues/2946@2026-11-27T03:24:58Z",
     "https://github.com/brcly/TuxBox/issues/292@2026-11-27T02:32:06Z",
     "https://github.com/R0Y00/Xbox2Windows/issues/2976@2026-11-27T01:02:20Z",
-    "https://github.com/LooperSalty/AnyXboxX/issues/449@2026-11-27T00:11:17Z"
+    "https://github.com/LooperSalty/AnyXboxX/issues/449@2026-11-27T00:11:17Z",
+    "https://github.com/stellarr-studio/kelvaroq/issues/18@2026-11-27T00:47:41Z",
+    "https://github.com/Belobug/VIctory-Belobug-AMD/issues/483@2026-11-27T06:03:44Z",
+    "https://github.com/avatarmanz/VIctory-7900XTX/issues/422@2026-11-27T02:26:33Z",
+    "https://github.com/fxceless/victory-fork/issues/1420@2026-11-27T04:07:12Z",
+    "https://github.com/Marvisak/VIctory/issues/3425@2026-11-27T04:53:57Z",
+    "https://github.com/xcl-dev/xcl/issues/2942@2026-11-27T03:24:36Z",
+    "https://github.com/brcly/TuxBox/issues/289@2026-11-27T02:41:11Z",
+    "https://github.com/R0Y00/Xbox2Windows/issues/3019@2026-11-27T05:37:07Z",
+    "https://github.com/LooperSalty/AnyXboxX/issues/428@2026-11-26T20:19:49Z",
+    "https://github.com/Dolberthi/neptune-dolberth-nvidia-8gb/issues/3@2026-11-27T04:29:23Z",
+    "https://github.com/stellarr-studio/kelvaroq/issues/17@2026-11-27T00:41:49Z",
+    "https://github.com/avatarmanz/VIctory-7900XTX/issues/411@2026-11-27T01:14:29Z",
+    "https://github.com/fxceless/victory-fork/issues/1383@2026-11-26T21:28:11Z",
+    "https://github.com/Marvisak/VIctory/issues/3417@2026-11-27T05:11:40Z"
   ],
   "items": [
+    {
+      "effortId": "belobug",
+      "kind": "free",
+      "stage": "boots",
+      "outcome": "reached",
+      "quote": "On 4eb6cfd the title boots, the first-boot screens and saves work",
+      "commit": "4eb6cfd",
+      "gpu": "GTX 1650",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/483",
+      "at": "2026-11-27T06:03:44Z",
+      "by": "b94c4dcb5bac"
+    },
+    {
+      "effortId": "belobug",
+      "kind": "rule",
+      "stage": "playable",
+      "quote": "able to play with -LowVram at 1080p",
+      "outcome": "reached",
+      "commit": "4eb6cfd",
+      "gpu": "RTX 3050",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/467",
+      "at": "2026-11-27T03:46:20Z",
+      "by": "9d59174cd1a7"
+    },
+    {
+      "effortId": "avatarmanz",
+      "kind": "free",
+      "stage": "boots",
+      "outcome": "reached",
+      "quote": "On this PC, letting those opens go through the file cache cut launch to the title-screen logo from 34-37 s to 21-23 s.",
+      "commit": "014d52d",
+      "gpu": "RTX 2070 SUPER",
+      "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/422",
+      "at": "2026-11-27T02:26:33Z",
+      "by": "8dcfea02d994"
+    },
     {
       "effortId": "tuxbox",
       "kind": "free",
@@ -197,6 +247,30 @@
       "by": "f2522ce6bc98"
     },
     {
+      "effortId": "victory-gta6",
+      "kind": "free",
+      "stage": "world",
+      "outcome": "reached",
+      "quote": "52ac4ec: plays fine, prologue and open world, long sessions.",
+      "commit": "52ac4ec",
+      "gpu": "RTX 5080",
+      "url": "https://github.com/fxceless/victory-fork/issues/1420",
+      "at": "2026-11-27T01:36:41Z",
+      "by": "eef9a7308f71"
+    },
+    {
+      "effortId": "tuxbox",
+      "kind": "free",
+      "stage": "menu",
+      "outcome": "reached",
+      "quote": "With 258 merged on top (XMem backings as MEM PRIVATE ), the same menu runs at 30–60 fps",
+      "commit": "12e4b06",
+      "gpu": "RX 9070 XT",
+      "url": "https://github.com/brcly/TuxBox/issues/289",
+      "at": "2026-11-27T01:09:20Z",
+      "by": "e70249ffa8cc"
+    },
+    {
       "effortId": "xbox2windows",
       "kind": "free",
       "stage": "loads",
@@ -213,7 +287,7 @@
       "kind": "free",
       "stage": "world",
       "outcome": "reached",
-      "quote": "main ( 63bcca4 ) plus the unmerged PRs this setup needs to render the world",
+      "quote": "GTA VI's opening prison yard, a warm shader cache, diag build.",
       "commit": "63bcca4",
       "gpu": "RTX 5090",
       "url": "https://github.com/Marvisak/VIctory/issues/3425",
@@ -243,6 +317,18 @@
       "url": "https://github.com/stellarr-studio/kelvaroq/issues/19",
       "at": "2026-11-26T21:37:26Z",
       "by": "91fb2a9490a1"
+    },
+    {
+      "effortId": "kelvaroq",
+      "kind": "free",
+      "stage": "loads",
+      "outcome": "reached",
+      "quote": "With the change below, the engine runs on Windows 10.",
+      "commit": "1270c42",
+      "gpu": "RTX 4070 Ti",
+      "url": "https://github.com/stellarr-studio/kelvaroq/issues/18",
+      "at": "2026-11-26T21:00:56Z",
+      "by": "9f5f46c239c8"
     },
     {
       "effortId": "belobug",
@@ -285,7 +371,7 @@
       "kind": "free",
       "stage": "world",
       "outcome": "reached",
-      "quote": "world reached at 101 s, 11.0 fps avg",
+      "quote": "the game reaches the world, runs, and passes 5 stable minutes",
       "commit": "ee8b92e",
       "gpu": "RTX 3080 Ti",
       "url": "https://github.com/LooperSalty/AnyXboxX/issues/428",
