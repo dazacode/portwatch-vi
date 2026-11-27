@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T07:00:18.284Z",
+  "updated": "2026-11-27T07:30:14.366Z",
   "projects": {
     "victory-gta6": {
       "openPrs": 20,
@@ -144,6 +144,127 @@
         {
           "projectId": "victory-gta6",
           "repo": "fxceless/victory-fork",
+          "number": 1442,
+          "title": "GPU: keep unrelated pipeline library loads from blocking each other",
+          "state": "open",
+          "draft": false,
+          "author": "Filip722",
+          "at": "2026-11-27T07:28:33Z",
+          "url": "https://github.com/fxceless/victory-fork/pull/1442"
+        },
+        {
+          "projectId": "victory-gta6",
+          "repo": "fxceless/victory-fork",
+          "number": 1440,
+          "title": "Shaders: fix workspace clippy lints in wave64_after_loop and valu_tests",
+          "state": "open",
+          "draft": false,
+          "author": "n-romanovich",
+          "at": "2026-11-27T07:28:10Z",
+          "url": "https://github.com/fxceless/victory-fork/pull/1440"
+        },
+        {
+          "projectId": "victory-gta6",
+          "repo": "fxceless/victory-fork",
+          "number": 1435,
+          "title": "Allow the compute detile readback test on the runtime GPU",
+          "state": "open",
+          "draft": false,
+          "author": "UwUCammie",
+          "at": "2026-11-27T07:22:20Z",
+          "url": "https://github.com/fxceless/victory-fork/pull/1435"
+        },
+        {
+          "projectId": "victory-gta6",
+          "repo": "fxceless/victory-fork",
+          "number": 1126,
+          "title": "perf(shader): add DXIL pure LICM, canonical ptr-path LDS forwarding, and barrier dedup",
+          "state": "open",
+          "draft": false,
+          "author": "Vladimir-Human",
+          "at": "2026-11-27T07:16:26Z",
+          "url": "https://github.com/fxceless/victory-fork/pull/1126"
+        },
+        {
+          "projectId": "victory-gta6",
+          "repo": "fxceless/victory-fork",
+          "number": 1178,
+          "title": "gpu: opt-in lazy GPU write-back (VEH), O(dirty) CopiedPages, AVX2 shadow & AdapterKey PSO",
+          "state": "open",
+          "draft": false,
+          "author": "Vladimir-Human",
+          "at": "2026-11-27T07:16:25Z",
+          "url": "https://github.com/fxceless/victory-fork/pull/1178"
+        },
+        {
+          "projectId": "victory-gta6",
+          "repo": "fxceless/victory-fork",
+          "number": 1280,
+          "title": "victory-gpu: size-tiered card-buffer headroom and fence-safe LRU demotion (#1163)",
+          "state": "open",
+          "draft": false,
+          "author": "Vladimir-Human",
+          "at": "2026-11-27T07:16:01Z",
+          "url": "https://github.com/fxceless/victory-fork/pull/1280"
+        },
+        {
+          "projectId": "victory-gta6",
+          "repo": "fxceless/victory-fork",
+          "number": 1286,
+          "title": "perf(victory-gpu): reduce host System RAM footprint via VM decommit and cold pool/DXIL trimming",
+          "state": "open",
+          "draft": false,
+          "author": "Vladimir-Human",
+          "at": "2026-11-27T07:15:59Z",
+          "url": "https://github.com/fxceless/victory-fork/pull/1286"
+        },
+        {
+          "projectId": "victory-gta6",
+          "repo": "fxceless/victory-fork",
+          "number": 1289,
+          "title": "gpu: fence-safe LRU texture eviction and budget-aware mip clamping",
+          "state": "open",
+          "draft": false,
+          "author": "Vladimir-Human",
+          "at": "2026-11-27T07:15:58Z",
+          "url": "https://github.com/fxceless/victory-fork/pull/1289"
+        },
+        {
+          "projectId": "victory-gta6",
+          "repo": "fxceless/victory-fork",
+          "number": 20,
+          "title": "GPU: compile our run-time HLSL with DXC when the system compiler refuses it (Wine/Proton)",
+          "state": "open",
+          "draft": false,
+          "author": "ErRusso",
+          "at": "2026-11-27T07:14:39Z",
+          "url": "https://github.com/fxceless/victory-fork/pull/20"
+        },
+        {
+          "projectId": "victory-gta6",
+          "repo": "fxceless/victory-fork",
+          "number": 1302,
+          "title": "feat: deterministic traversal benchmark & closed-loop optimization harness",
+          "state": "open",
+          "draft": false,
+          "author": "Vladimir-Human",
+          "at": "2026-11-27T07:11:45Z",
+          "url": "https://github.com/fxceless/victory-fork/pull/1302"
+        },
+        {
+          "projectId": "victory-gta6",
+          "repo": "fxceless/victory-fork",
+          "number": 1140,
+          "title": "shader: static Wave32 LDS alias & lane-private analysis for native Wave32 compute",
+          "state": "open",
+          "draft": false,
+          "author": "Vladimir-Human",
+          "at": "2026-11-27T07:10:33Z",
+          "url": "https://github.com/fxceless/victory-fork/pull/1140"
+        },
+        {
+          "projectId": "victory-gta6",
+          "repo": "fxceless/victory-fork",
           "number": 1293,
           "title": "victory-gpu: coalesce and parallelize descriptor::sync_heaps",
           "state": "open",
@@ -173,17 +294,6 @@
           "author": "pwu2775-dev",
           "at": "2026-11-27T06:51:50Z",
           "url": "https://github.com/fxceless/victory-fork/pull/1441"
-        },
-        {
-          "projectId": "victory-gta6",
-          "repo": "fxceless/victory-fork",
-          "number": 1440,
-          "title": "Shaders: fix workspace clippy lints in wave64_after_loop and valu_tests",
-          "state": "open",
-          "draft": false,
-          "author": "n-romanovich",
-          "at": "2026-11-27T06:41:30Z",
-          "url": "https://github.com/fxceless/victory-fork/pull/1440"
         },
         {
           "projectId": "victory-gta6",
@@ -243,17 +353,6 @@
         {
           "projectId": "victory-gta6",
           "repo": "fxceless/victory-fork",
-          "number": 1435,
-          "title": "Allow the compute detile readback test on the runtime GPU",
-          "state": "open",
-          "draft": false,
-          "author": "UwUCammie",
-          "at": "2026-11-27T05:02:39Z",
-          "url": "https://github.com/fxceless/victory-fork/pull/1435"
-        },
-        {
-          "projectId": "victory-gta6",
-          "repo": "fxceless/victory-fork",
           "number": 1434,
           "title": "Frame pacing record behind VICTORY_PACING (#1347)",
           "state": "open",
@@ -261,105 +360,6 @@
           "author": "Danty-Cod",
           "at": "2026-11-27T04:54:06Z",
           "url": "https://github.com/fxceless/victory-fork/pull/1434"
-        },
-        {
-          "projectId": "victory-gta6",
-          "repo": "fxceless/victory-fork",
-          "number": 1433,
-          "title": "Rect tests: skip validation on a validator older than DXC 1.8 (#1337)",
-          "state": "open",
-          "draft": false,
-          "author": "Danty-Cod",
-          "at": "2026-11-27T04:43:48Z",
-          "url": "https://github.com/fxceless/victory-fork/pull/1433"
-        },
-        {
-          "projectId": "victory-gta6",
-          "repo": "fxceless/victory-fork",
-          "number": 1377,
-          "title": "GPU: retain depth-plane SRV descriptors for command-list lifetime",
-          "state": "open",
-          "draft": false,
-          "author": "spk-c",
-          "at": "2026-11-27T04:36:57Z",
-          "url": "https://github.com/fxceless/victory-fork/pull/1377"
-        },
-        {
-          "projectId": "victory-gta6",
-          "repo": "fxceless/victory-fork",
-          "number": 333,
-          "title": "Shaders: one sampler's words used for both Sample and SampleCmp get two static slots",
-          "state": "open",
-          "draft": false,
-          "author": "RenzoWit35",
-          "at": "2026-11-27T04:31:05Z",
-          "url": "https://github.com/fxceless/victory-fork/pull/333"
-        },
-        {
-          "projectId": "victory-gta6",
-          "repo": "fxceless/victory-fork",
-          "number": 1425,
-          "title": "GPU: preserve texture retry deadlines after card memory holds",
-          "state": "open",
-          "draft": false,
-          "author": "ByFxbian",
-          "at": "2026-11-27T04:20:56Z",
-          "url": "https://github.com/fxceless/victory-fork/pull/1425"
-        },
-        {
-          "projectId": "victory-gta6",
-          "repo": "fxceless/victory-fork",
-          "number": 1424,
-          "title": "processor side: the copies a submission makes, and the pages it looks at, on more than one thread",
-          "state": "closed",
-          "draft": false,
-          "author": "naixue2233",
-          "at": "2026-11-27T04:18:11Z",
-          "url": "https://github.com/fxceless/victory-fork/pull/1424"
-        },
-        {
-          "projectId": "victory-gta6",
-          "repo": "fxceless/victory-fork",
-          "number": 1432,
-          "title": "diagnostics: analyse frame logs by draw count",
-          "state": "open",
-          "draft": false,
-          "author": "gingerninja85",
-          "at": "2026-11-27T04:12:21Z",
-          "url": "https://github.com/fxceless/victory-fork/pull/1432"
-        },
-        {
-          "projectId": "victory-gta6",
-          "repo": "fxceless/victory-fork",
-          "number": 1431,
-          "title": "GPU: merge dirty upload ranges in place",
-          "state": "open",
-          "draft": false,
-          "author": "gingerninja85",
-          "at": "2026-11-27T04:12:20Z",
-          "url": "https://github.com/fxceless/victory-fork/pull/1431"
-        },
-        {
-          "projectId": "victory-gta6",
-          "repo": "fxceless/victory-fork",
-          "number": 1430,
-          "title": "GPU tests: verify four queued copies stay distinct behind a fence",
-          "state": "open",
-          "draft": false,
-          "author": "gingerninja85",
-          "at": "2026-11-27T04:12:18Z",
-          "url": "https://github.com/fxceless/victory-fork/pull/1430"
-        },
-        {
-          "projectId": "victory-gta6",
-          "repo": "fxceless/victory-fork",
-          "number": 1429,
-          "title": "GPU: batch retirement of same-heap descriptor spans",
-          "state": "open",
-          "draft": false,
-          "author": "gingerninja85",
-          "at": "2026-11-27T04:12:16Z",
-          "url": "https://github.com/fxceless/victory-fork/pull/1429"
         }
       ]
     },
@@ -506,24 +506,145 @@
         {
           "projectId": "marvis",
           "repo": "Marvisak/VIctory",
-          "number": 2721,
-          "title": "GPU: a slow-frame report that says what bound the frame and why (guard split out to #2911)",
+          "number": 3478,
+          "title": "gpu: a texture placement reaps the pending ranges only when no heap has room",
           "state": "open",
           "draft": false,
-          "author": "0xkn0wh3r3",
-          "at": "2026-11-27T06:58:11Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/2721"
+          "author": "borosf",
+          "at": "2026-11-27T07:30:31Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/3478"
         },
         {
           "projectId": "marvis",
           "repo": "Marvisak/VIctory",
-          "number": 3342,
-          "title": "Shaders: preserve a broadcast FP16 wave reduction across EXEC restore",
+          "number": 1262,
+          "title": "Shaders: double-precision add, mul, fma, min, max, compares and conversions (stacked on #416)",
           "state": "open",
           "draft": false,
-          "author": "draggygaggy-maker",
-          "at": "2026-11-27T06:57:36Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/3342"
+          "author": "MamaLeVrai",
+          "at": "2026-11-27T07:27:33Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/1262"
+        },
+        {
+          "projectId": "marvis",
+          "repo": "Marvisak/VIctory",
+          "number": 3380,
+          "title": "Shader dxbc: use checked arithmetic for bounds slicing",
+          "state": "open",
+          "draft": false,
+          "author": "Arkenoz",
+          "at": "2026-11-27T07:26:55Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/3380"
+        },
+        {
+          "projectId": "marvis",
+          "repo": "Marvisak/VIctory",
+          "number": 3403,
+          "title": "Shaders: lower partial-channel and dmask=0 image_store",
+          "state": "open",
+          "draft": false,
+          "author": "Texbirds",
+          "at": "2026-11-27T07:22:47Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/3403"
+        },
+        {
+          "projectId": "marvis",
+          "repo": "Marvisak/VIctory",
+          "number": 2112,
+          "title": "GPU: title memory in place instead of copied, opt-in (VICTORY_IN_PLACE=1; stacked on #2088, towards #880)",
+          "state": "open",
+          "draft": true,
+          "author": "desplmfao",
+          "at": "2026-11-27T07:21:30Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/2112"
+        },
+        {
+          "projectId": "marvis",
+          "repo": "Marvisak/VIctory",
+          "number": 2494,
+          "title": "GPU/HLE: import committed physical-page sections in place for title memory (#1905)",
+          "state": "open",
+          "draft": false,
+          "author": "nathanbzrr",
+          "at": "2026-11-27T07:21:29Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/2494"
+        },
+        {
+          "projectId": "marvis",
+          "repo": "Marvisak/VIctory",
+          "number": 3377,
+          "title": "Shaders: lower partial-channel typed and indexed sub-dword buffer stores",
+          "state": "open",
+          "draft": false,
+          "author": "Texbirds",
+          "at": "2026-11-27T07:19:29Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/3377"
+        },
+        {
+          "projectId": "marvis",
+          "repo": "Marvisak/VIctory",
+          "number": 2672,
+          "title": "loader: keep mapped DLLs inside the title directory",
+          "state": "open",
+          "draft": false,
+          "author": "Rickeal-Boss",
+          "at": "2026-11-27T07:19:19Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/2672"
+        },
+        {
+          "projectId": "marvis",
+          "repo": "Marvisak/VIctory",
+          "number": 2914,
+          "title": "GPU: marked pages go back to title memory on several threads (#2826)",
+          "state": "open",
+          "draft": false,
+          "author": "kotekompotek",
+          "at": "2026-11-27T07:18:54Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/2914"
+        },
+        {
+          "projectId": "marvis",
+          "repo": "Marvisak/VIctory",
+          "number": 3280,
+          "title": "Fix #2412: reject out-of-range export addresses in parse_exports",
+          "state": "open",
+          "draft": false,
+          "author": "tharun-37",
+          "at": "2026-11-27T07:17:20Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/3280"
+        },
+        {
+          "projectId": "marvis",
+          "repo": "Marvisak/VIctory",
+          "number": 1602,
+          "title": "Shader tests: f32/int conversions saturate, take NaN as 0, round to even",
+          "state": "open",
+          "draft": false,
+          "author": "vladbondarenko97",
+          "at": "2026-11-27T07:17:14Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/1602"
+        },
+        {
+          "projectId": "marvis",
+          "repo": "Marvisak/VIctory",
+          "number": 3362,
+          "title": "fix(shader): reject modified v_add_co_ci_u32 in address carry tracing",
+          "state": "open",
+          "draft": false,
+          "author": "reeledMarek",
+          "at": "2026-11-27T07:17:04Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/3362"
+        },
+        {
+          "projectId": "marvis",
+          "repo": "Marvisak/VIctory",
+          "number": 3378,
+          "title": "GPU: the dropped passes a presented image reads go first in the pipeline queue",
+          "state": "open",
+          "draft": false,
+          "author": "neonbyte1",
+          "at": "2026-11-27T07:16:09Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/3378"
         },
         {
           "projectId": "marvis",
@@ -533,19 +654,8 @@
           "state": "open",
           "draft": false,
           "author": "Lyrnc",
-          "at": "2026-11-27T06:57:11Z",
+          "at": "2026-11-27T07:15:21Z",
           "url": "https://github.com/Marvisak/VIctory/pull/3402"
-        },
-        {
-          "projectId": "marvis",
-          "repo": "Marvisak/VIctory",
-          "number": 3421,
-          "title": "shader: omit WaveSize(64) for wave-invariant ds_swizzle and 32-lane DPP ops",
-          "state": "open",
-          "draft": false,
-          "author": "danielibabet",
-          "at": "2026-11-27T06:56:49Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/3421"
         },
         {
           "projectId": "marvis",
@@ -555,173 +665,63 @@
           "state": "open",
           "draft": false,
           "author": "Lyrnc",
-          "at": "2026-11-27T06:56:49Z",
+          "at": "2026-11-27T07:15:21Z",
           "url": "https://github.com/Marvisak/VIctory/pull/3401"
         },
         {
           "projectId": "marvis",
           "repo": "Marvisak/VIctory",
-          "number": 2791,
-          "title": "Shaders: lower binary64 square root with 32-bit operations",
+          "number": 3479,
+          "title": "Shaders: probe v_cvt_f32_i32 at its rounding midpoints",
           "state": "open",
           "draft": false,
-          "author": "andrewpozdnakov7-jpg",
-          "at": "2026-11-27T06:56:49Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/2791"
+          "author": "noobezlol",
+          "at": "2026-11-27T07:15:20Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/3479"
         },
         {
           "projectId": "marvis",
           "repo": "Marvisak/VIctory",
-          "number": 1178,
-          "title": "Diagnostics: trace a DirectStorage request from submission to decoder outcome",
-          "state": "open",
+          "number": 3428,
+          "title": "fix(victory-shader): lowers() needs second argument",
+          "state": "closed",
           "draft": false,
-          "author": "Razdva122",
-          "at": "2026-11-27T06:55:29Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/1178"
+          "author": "ConstCorrectness",
+          "at": "2026-11-27T07:10:56Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/3428"
         },
         {
           "projectId": "marvis",
           "repo": "Marvisak/VIctory",
-          "number": 3473,
-          "title": "GPU: add opt-in VICTORY_BURY_LAG for delayed resource retirement",
-          "state": "open",
+          "number": 3184,
+          "title": "GPU: list calls can translate on worker threads (VICTORY_DEFER_LISTS, opt-in)",
+          "state": "closed",
           "draft": false,
-          "author": "pushkarreddyy",
-          "at": "2026-11-27T06:54:05Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/3473"
+          "author": "AurumCarlos",
+          "at": "2026-11-27T07:09:10Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/3184"
         },
         {
           "projectId": "marvis",
           "repo": "Marvisak/VIctory",
-          "number": 3292,
-          "title": "GPU: catch driver shader compiler crashes in pipeline workers and skip bad keys",
+          "number": 3357,
+          "title": "Shaders: reuse decoded instructions across range rebuilds",
           "state": "open",
           "draft": false,
-          "author": "pushkarreddyy",
-          "at": "2026-11-27T06:54:00Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/3292"
+          "author": "borosf",
+          "at": "2026-11-27T07:07:28Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/3357"
         },
         {
           "projectId": "marvis",
           "repo": "Marvisak/VIctory",
-          "number": 3243,
-          "title": "Loader: skip DIR64 relocation addresses that overflow u32",
-          "state": "open",
-          "draft": false,
-          "author": "andrewpozdnakov7-jpg",
-          "at": "2026-11-27T06:53:58Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/3243"
-        },
-        {
-          "projectId": "marvis",
-          "repo": "Marvisak/VIctory",
-          "number": 3298,
-          "title": "Shaders: allow redundant masked v_mov_b32 writes after per-lane descriptor joins (fixes #750)",
-          "state": "open",
-          "draft": false,
-          "author": "pushkarreddyy",
-          "at": "2026-11-27T06:53:56Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/3298"
-        },
-        {
-          "projectId": "marvis",
-          "repo": "Marvisak/VIctory",
-          "number": 3296,
-          "title": "GPU: schedule slow-compiling early pipelines in their own bounded queue",
-          "state": "open",
-          "draft": false,
-          "author": "pushkarreddyy",
-          "at": "2026-11-27T06:53:52Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/3296"
-        },
-        {
-          "projectId": "marvis",
-          "repo": "Marvisak/VIctory",
-          "number": 3303,
-          "title": "GPU: pin internal GPU helper threads to fastest CPU core class",
-          "state": "open",
-          "draft": false,
-          "author": "pushkarreddyy",
-          "at": "2026-11-27T06:53:50Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/3303"
-        },
-        {
-          "projectId": "marvis",
-          "repo": "Marvisak/VIctory",
-          "number": 3312,
-          "title": "GPU: back shadow buffers, page tables, and dirty bitmaps in VRAM on discrete GPUs",
-          "state": "open",
-          "draft": false,
-          "author": "danielibabet",
-          "at": "2026-11-27T06:52:21Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/3312"
-        },
-        {
-          "projectId": "marvis",
-          "repo": "Marvisak/VIctory",
-          "number": 3383,
-          "title": "Audio/XMA: box voices, skip inactive slots in pump, and reuse per-frame scratch",
-          "state": "open",
-          "draft": false,
-          "author": "Desamodeth",
-          "at": "2026-11-27T06:51:28Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/3383"
-        },
-        {
-          "projectId": "marvis",
-          "repo": "Marvisak/VIctory",
-          "number": 2971,
-          "title": "GPU: store HostHeap kept/made sparsely and allocate strides/marks lazily",
-          "state": "open",
-          "draft": false,
-          "author": "0xKaji",
-          "at": "2026-11-27T06:51:12Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/2971"
-        },
-        {
-          "projectId": "marvis",
-          "repo": "Marvisak/VIctory",
-          "number": 3456,
-          "title": "GPU: store HostHeap::kept sparsely by slot index to save unpopulated slot RAM and speed up evict",
-          "state": "open",
-          "draft": false,
-          "author": "Luislariosss",
-          "at": "2026-11-27T06:51:11Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/3456"
-        },
-        {
-          "projectId": "marvis",
-          "repo": "Marvisak/VIctory",
-          "number": 3475,
-          "title": "GPU: name the title slots a capped host heap could not hold",
-          "state": "open",
-          "draft": false,
-          "author": "tharun-37",
-          "at": "2026-11-27T06:49:37Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/3475"
-        },
-        {
-          "projectId": "marvis",
-          "repo": "Marvisak/VIctory",
-          "number": 3476,
-          "title": "GPU: clamp view-heap indices below what the host device takes (#3330)",
-          "state": "open",
-          "draft": false,
-          "author": "Koaio",
-          "at": "2026-11-27T06:48:30Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/3476"
-        },
-        {
-          "projectId": "marvis",
-          "repo": "Marvisak/VIctory",
-          "number": 2879,
-          "title": "Formats: render-target XOR layouts (SW_64KB_R_X) have addresses on both consoles",
+          "number": 2118,
+          "title": "GPU: the BVH builder runs whole or not at all",
           "state": "open",
           "draft": false,
           "author": "0xkn0wh3r3",
-          "at": "2026-11-27T06:44:49Z",
-          "url": "https://github.com/Marvisak/VIctory/pull/2879"
+          "at": "2026-11-27T07:07:01Z",
+          "url": "https://github.com/Marvisak/VIctory/pull/2118"
         }
       ]
     },
@@ -1230,211 +1230,35 @@
         {
           "projectId": "xcl",
           "repo": "xcl-dev/xcl",
-          "number": 2721,
-          "title": "Scripts: preserve trailing backslashes in native smoke paths",
-          "state": "closed",
-          "draft": true,
-          "author": "luckyteagirl",
-          "at": "2026-11-27T06:59:33Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2721"
+          "number": 2982,
+          "title": "VFS: DeleteFileW refuses read-only files instead of hiding them (#2945)",
+          "state": "open",
+          "draft": false,
+          "author": "Koaio",
+          "at": "2026-11-27T07:29:57Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2982"
         },
         {
           "projectId": "xcl",
           "repo": "xcl-dev/xcl",
-          "number": 2969,
-          "title": "Scripts: stop record writer fallback scans at a return",
-          "state": "closed",
-          "draft": true,
-          "author": "luckyteagirl",
-          "at": "2026-11-27T06:59:06Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2969"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 2980,
-          "title": "Scripts: repeat smoke runs with separate artifacts",
+          "number": 2614,
+          "title": "D3D12.X: preserve replaced driver blobs after stale rejection",
           "state": "open",
           "draft": true,
           "author": "luckyteagirl",
-          "at": "2026-11-27T06:58:39Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2980"
+          "at": "2026-11-27T07:29:34Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2614"
         },
         {
           "projectId": "xcl",
           "repo": "xcl-dev/xcl",
-          "number": 2940,
-          "title": "Shaders: a stale-blob probe the driver takes is not created a second time",
-          "state": "open",
-          "draft": true,
-          "author": "KOLESNiii",
-          "at": "2026-11-27T06:58:26Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2940"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 2975,
-          "title": "D3D12.X: empty shader slots keep a two-pass mesh pipeline's cache key",
-          "state": "open",
-          "draft": false,
-          "author": "treybertram06",
-          "at": "2026-11-27T06:56:39Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2975"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 2307,
-          "title": "kernelx: XCL_PAGE_ALIAS=1 shows a physical page at every address it is mapped at",
-          "state": "open",
-          "draft": false,
-          "author": "adiologydev",
-          "at": "2026-11-27T06:56:35Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2307"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 2294,
-          "title": "kernelx: catch CPU writes to the views of physical pages, page by page",
-          "state": "open",
-          "draft": false,
-          "author": "adiologydev",
-          "at": "2026-11-27T06:56:32Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2294"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 2293,
-          "title": "kernelx: physical pages as section slices that can be mapped at many addresses",
-          "state": "open",
-          "draft": false,
-          "author": "adiologydev",
-          "at": "2026-11-27T06:56:29Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2293"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 2183,
-          "title": "Recompiler: preserve zero sign in HLSL f16 multiplies",
-          "state": "open",
-          "draft": false,
-          "author": "luckyteagirl",
-          "at": "2026-11-27T06:56:16Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2183"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 1946,
-          "title": "Direct DXIL: lower i64 min/max as compare/select",
-          "state": "open",
-          "draft": false,
-          "author": "luckyteagirl",
-          "at": "2026-11-27T06:56:00Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/1946"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 2221,
-          "title": "Recompiler: saturate packed unsigned dot8 without i64",
-          "state": "open",
-          "draft": false,
-          "author": "luckyteagirl",
-          "at": "2026-11-27T06:55:55Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2221"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 2797,
-          "title": "getting xcl to support net shares",
-          "state": "open",
-          "draft": false,
-          "author": "Wolf1098",
-          "at": "2026-11-27T06:54:52Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2797"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 2872,
-          "title": "Recompiler: the pixel prelude's quad ballot has no loop for DXC to unroll",
-          "state": "open",
-          "draft": false,
-          "author": "Royalflamejlh",
-          "at": "2026-11-27T06:54:23Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2872"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 2861,
-          "title": "D3D12.X: PC CreateCommandList gives the driver the pipeline behind a stand-in",
-          "state": "open",
-          "draft": true,
-          "author": "oni-swr",
-          "at": "2026-11-27T06:53:09Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2861"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 2843,
-          "title": "D3D12.X: title fence sync entries own their ID3D12Fence (#2840)",
-          "state": "open",
-          "draft": true,
-          "author": "oni-swr",
-          "at": "2026-11-27T06:53:08Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2843"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 2891,
-          "title": "D3D12.X: tighten write-watch merge gap to 4 MiB and add opt-in cold-chunk tiering",
+          "number": 2985,
+          "title": "D3D12.X: pool small fallback placements in placed heaps and deduplicate xg::Texture",
           "state": "open",
           "draft": false,
           "author": "Saksukella",
-          "at": "2026-11-27T06:51:13Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2891"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 1144,
-          "title": "Recompiler: v_div_fmas_f32 scales by VCC and v_div_fixup_f32 handles NaN/zero/sign",
-          "state": "open",
-          "draft": false,
-          "author": "b3IKK",
-          "at": "2026-11-27T06:50:36Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/1144"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 2057,
-          "title": "D3D12.X: integration branch that reaches the in-world HUD on NVIDIA (reference, not for merge)",
-          "state": "open",
-          "draft": true,
-          "author": "theaustinayers",
-          "at": "2026-11-27T06:49:21Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2057"
-        },
-        {
-          "projectId": "xcl",
-          "repo": "xcl-dev/xcl",
-          "number": 2938,
-          "title": "D3D12.X: ~43x FPS over main on Series X (0.58 -> 25.3 fps, ~7x over #2844): XCL_UMA_DRIVER=mixed keeps part of the coherent window in VRAM",
-          "state": "open",
-          "draft": true,
-          "author": "Kalmarv",
-          "at": "2026-11-27T06:47:14Z",
-          "url": "https://github.com/xcl-dev/xcl/pull/2938"
+          "at": "2026-11-27T07:28:42Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2985"
         },
         {
           "projectId": "xcl",
@@ -1444,8 +1268,184 @@
           "state": "open",
           "draft": false,
           "author": "Prime1997",
-          "at": "2026-11-27T06:42:21Z",
+          "at": "2026-11-27T07:26:21Z",
           "url": "https://github.com/xcl-dev/xcl/pull/2977"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2956,
+          "title": "D3D12.X: make shadowed textures active again when a draw samples them",
+          "state": "open",
+          "draft": true,
+          "author": "BBareth",
+          "at": "2026-11-27T07:25:51Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2956"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2385,
+          "title": "D3D12.X: sampled textures go without their top mips while video memory fills up",
+          "state": "open",
+          "draft": false,
+          "author": "NWProgramming00",
+          "at": "2026-11-27T07:23:24Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2385"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2861,
+          "title": "D3D12.X: PC CreateCommandList gives the driver the pipeline behind a stand-in",
+          "state": "open",
+          "draft": true,
+          "author": "oni-swr",
+          "at": "2026-11-27T07:21:12Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2861"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2975,
+          "title": "D3D12.X: empty shader slots keep a two-pass mesh pipeline's cache key",
+          "state": "open",
+          "draft": false,
+          "author": "treybertram06",
+          "at": "2026-11-27T07:20:40Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2975"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2635,
+          "title": "D3D12.X: batch used-pipelines.txt writes off the bind lock",
+          "state": "open",
+          "draft": false,
+          "author": "Decodere",
+          "at": "2026-11-27T07:19:09Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2635"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2224,
+          "title": "D3D12.X: abort failed device batches and restore pending in title_textures::upload_all",
+          "state": "open",
+          "draft": false,
+          "author": "Decodere",
+          "at": "2026-11-27T07:19:07Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2224"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2984,
+          "title": "README: document scripted gamepad presses",
+          "state": "open",
+          "draft": true,
+          "author": "luckyteagirl",
+          "at": "2026-11-27T07:17:11Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2984"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2981,
+          "title": "D3D12.X: flush pending tile mappings before submit and fix VRAM unmap/retire races",
+          "state": "open",
+          "draft": false,
+          "author": "Saksukella",
+          "at": "2026-11-27T07:16:30Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2981"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2694,
+          "title": "VFS: route MAXIMUM_ALLOWED opens through the overlay",
+          "state": "open",
+          "draft": false,
+          "author": "luckyteagirl",
+          "at": "2026-11-27T07:15:08Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2694"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2983,
+          "title": "xcl run: skip startup shader preparation when no pipeline device exists (#2958)",
+          "state": "open",
+          "draft": false,
+          "author": "retrope13",
+          "at": "2026-11-27T07:12:51Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2983"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2980,
+          "title": "Scripts: repeat smoke runs with separate artifacts",
+          "state": "open",
+          "draft": true,
+          "author": "luckyteagirl",
+          "at": "2026-11-27T07:12:28Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2980"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2938,
+          "title": "D3D12.X: ~43x FPS over main on Series X (0.58 -> 25.3 fps, ~7x over #2844): XCL_UMA_DRIVER=mixed keeps part of the coherent window in VRAM",
+          "state": "open",
+          "draft": true,
+          "author": "Kalmarv",
+          "at": "2026-11-27T07:12:08Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2938"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2572,
+          "title": "Nvidia dev",
+          "state": "open",
+          "draft": false,
+          "author": "bmjask",
+          "at": "2026-11-27T07:10:09Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2572"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2815,
+          "title": "D3D12.X: reclaim two-pass buffers on submit fence completion",
+          "state": "open",
+          "draft": false,
+          "author": "coolpersonnn",
+          "at": "2026-11-27T07:07:46Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2815"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2816,
+          "title": "D3D12.X: size two-pass indirect buffers from GPU feedback and finer buckets",
+          "state": "open",
+          "draft": false,
+          "author": "coolpersonnn",
+          "at": "2026-11-27T07:07:45Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2816"
+        },
+        {
+          "projectId": "xcl",
+          "repo": "xcl-dev/xcl",
+          "number": 2978,
+          "title": "Tests: bind both descriptor heaps before the arena root signature",
+          "state": "open",
+          "draft": true,
+          "author": "luckyteagirl",
+          "at": "2026-11-27T07:04:29Z",
+          "url": "https://github.com/xcl-dev/xcl/pull/2978"
         }
       ]
     },
@@ -1954,6 +1954,17 @@
         {
           "projectId": "tuxbox",
           "repo": "brcly/TuxBox",
+          "number": 303,
+          "title": "d3d12: narrow a direct-indexed program's texture writes to what it can store through",
+          "state": "open",
+          "draft": false,
+          "author": "NickStallman",
+          "at": "2026-11-27T07:13:21Z",
+          "url": "https://github.com/brcly/TuxBox/pull/303"
+        },
+        {
+          "projectId": "tuxbox",
+          "repo": "brcly/TuxBox",
           "number": 302,
           "title": "ProjectScarlett: lower the irradiance shadow ray walks to native ray queries",
           "state": "open",
@@ -2159,17 +2170,6 @@
           "author": "JohnVonWells",
           "at": "2026-11-27T01:15:43Z",
           "url": "https://github.com/brcly/TuxBox/pull/285"
-        },
-        {
-          "projectId": "tuxbox",
-          "repo": "brcly/TuxBox",
-          "number": 290,
-          "title": "d3d12: publish texture writes to plain data pages with a store",
-          "state": "open",
-          "draft": false,
-          "author": "NickStallman",
-          "at": "2026-11-27T01:11:21Z",
-          "url": "https://github.com/brcly/TuxBox/pull/290"
         }
       ]
     },
@@ -2661,6 +2661,15 @@
         {
           "projectId": "xbox2windows",
           "repo": "R0Y00/Xbox2Windows",
+          "sha": "f17a08f",
+          "message": "startup: retain present signature copies on device removal (#3024)",
+          "author": "Chad Hyatt",
+          "at": "2026-11-27T07:22:11Z",
+          "url": "https://github.com/R0Y00/Xbox2Windows/commit/f17a08fd2dc9b0cce05da51361902bbccce7eb59"
+        },
+        {
+          "projectId": "xbox2windows",
+          "repo": "R0Y00/Xbox2Windows",
           "sha": "c09145a",
           "message": "startup: lower s_bitset0_b64 and s_bitset1_b64 in gfx2hlsl (#2897)",
           "author": "rdx",
@@ -2783,18 +2792,75 @@
           "author": "Chad Hyatt",
           "at": "2026-11-27T05:02:09Z",
           "url": "https://github.com/R0Y00/Xbox2Windows/commit/923c0ac9a70344b9955433731d38a636a21aaa81"
+        }
+      ],
+      "pulls": [
+        {
+          "projectId": "xbox2windows",
+          "repo": "R0Y00/Xbox2Windows",
+          "number": 2912,
+          "title": "test: native DXIL read of a GPU-selected descriptor heap slot (probe)",
+          "state": "closed",
+          "draft": true,
+          "author": "tedin7",
+          "at": "2026-11-27T07:27:26Z",
+          "url": "https://github.com/R0Y00/Xbox2Windows/pull/2912"
         },
         {
           "projectId": "xbox2windows",
           "repo": "R0Y00/Xbox2Windows",
-          "sha": "57f9e07",
-          "message": "runtime: retain presented readbacks until fence completion (#2968)",
-          "author": "Chad Hyatt",
-          "at": "2026-11-27T04:46:13Z",
-          "url": "https://github.com/R0Y00/Xbox2Windows/commit/57f9e07f2c6122b2da7a35863d3e4b13d8c7c79c"
-        }
-      ],
-      "pulls": [
+          "number": 3025,
+          "title": "native: read the byte-address rewrite of a GPU-selected heap descriptor",
+          "state": "open",
+          "draft": false,
+          "author": "JB2WIN",
+          "at": "2026-11-27T07:24:24Z",
+          "url": "https://github.com/R0Y00/Xbox2Windows/pull/3025"
+        },
+        {
+          "projectId": "xbox2windows",
+          "repo": "R0Y00/Xbox2Windows",
+          "number": 3024,
+          "title": "startup: retain present signature copies on device removal",
+          "state": "merged",
+          "draft": false,
+          "author": "chadhyatt",
+          "at": "2026-11-27T07:23:50Z",
+          "url": "https://github.com/R0Y00/Xbox2Windows/pull/3024"
+        },
+        {
+          "projectId": "xbox2windows",
+          "repo": "R0Y00/Xbox2Windows",
+          "number": 2894,
+          "title": "shader: harden input validation and bridge conflict guards in spirv_sampler_views with unit suite",
+          "state": "open",
+          "draft": false,
+          "author": "Ammmae0x",
+          "at": "2026-11-27T07:21:37Z",
+          "url": "https://github.com/R0Y00/Xbox2Windows/pull/2894"
+        },
+        {
+          "projectId": "xbox2windows",
+          "repo": "R0Y00/Xbox2Windows",
+          "number": 2911,
+          "title": "xmem: make page runs cheaper under Wine",
+          "state": "open",
+          "draft": false,
+          "author": "JohnConnorNPC",
+          "at": "2026-11-27T07:14:06Z",
+          "url": "https://github.com/R0Y00/Xbox2Windows/pull/2911"
+        },
+        {
+          "projectId": "xbox2windows",
+          "repo": "R0Y00/Xbox2Windows",
+          "number": 2920,
+          "title": "startup: gate the BVH builder compute stages all or none",
+          "state": "open",
+          "draft": false,
+          "author": "lambirou",
+          "at": "2026-11-27T07:03:06Z",
+          "url": "https://github.com/R0Y00/Xbox2Windows/pull/2920"
+        },
         {
           "projectId": "xbox2windows",
           "repo": "R0Y00/Xbox2Windows",
@@ -2838,17 +2904,6 @@
           "author": "Not-Saii",
           "at": "2026-11-27T06:47:26Z",
           "url": "https://github.com/R0Y00/Xbox2Windows/pull/2892"
-        },
-        {
-          "projectId": "xbox2windows",
-          "repo": "R0Y00/Xbox2Windows",
-          "number": 2911,
-          "title": "xmem: make page runs cheaper under Wine",
-          "state": "open",
-          "draft": false,
-          "author": "JohnConnorNPC",
-          "at": "2026-11-27T06:38:45Z",
-          "url": "https://github.com/R0Y00/Xbox2Windows/pull/2911"
         },
         {
           "projectId": "xbox2windows",
@@ -2959,61 +3014,6 @@
           "author": "stan495",
           "at": "2026-11-27T05:45:31Z",
           "url": "https://github.com/R0Y00/Xbox2Windows/pull/3014"
-        },
-        {
-          "projectId": "xbox2windows",
-          "repo": "R0Y00/Xbox2Windows",
-          "number": 2925,
-          "title": "startup: back off the retry for an absent shader cache manifest",
-          "state": "merged",
-          "draft": false,
-          "author": "JB2WIN",
-          "at": "2026-11-27T05:44:12Z",
-          "url": "https://github.com/R0Y00/Xbox2Windows/pull/2925"
-        },
-        {
-          "projectId": "xbox2windows",
-          "repo": "R0Y00/Xbox2Windows",
-          "number": 2910,
-          "title": "startup: refuse compute buffer loads through a modified descriptor (#2901)",
-          "state": "open",
-          "draft": false,
-          "author": "Holastor",
-          "at": "2026-11-27T05:43:23Z",
-          "url": "https://github.com/R0Y00/Xbox2Windows/pull/2910"
-        },
-        {
-          "projectId": "xbox2windows",
-          "repo": "R0Y00/Xbox2Windows",
-          "number": 2930,
-          "title": "startup: accept SGPR, hex and inline 0 sources in packed f16 add, mul and fma",
-          "state": "open",
-          "draft": true,
-          "author": "Leyukaka",
-          "at": "2026-11-27T05:42:53Z",
-          "url": "https://github.com/R0Y00/Xbox2Windows/pull/2930"
-        },
-        {
-          "projectId": "xbox2windows",
-          "repo": "R0Y00/Xbox2Windows",
-          "number": 2993,
-          "title": "runtime: bind table buffers, 2D texture inputs and texture outputs on the in-process compute route",
-          "state": "open",
-          "draft": false,
-          "author": "Leyukaka",
-          "at": "2026-11-27T05:42:41Z",
-          "url": "https://github.com/R0Y00/Xbox2Windows/pull/2993"
-        },
-        {
-          "projectId": "xbox2windows",
-          "repo": "R0Y00/Xbox2Windows",
-          "number": 2924,
-          "title": "docs: plan slot 57 mesh DXIL translation",
-          "state": "merged",
-          "draft": false,
-          "author": "lambirou",
-          "at": "2026-11-27T05:41:02Z",
-          "url": "https://github.com/R0Y00/Xbox2Windows/pull/2924"
         }
       ]
     },
@@ -5745,6 +5745,42 @@
         {
           "projectId": "five-star-recomp",
           "repo": "ThatRecompDev/five-star-recomp",
+          "sha": "9ec6f20",
+          "message": "Status: the device loss was the driver's shader table; lighting shades on a branch",
+          "author": "ThatRecompDev",
+          "at": "2026-11-27T07:09:32Z",
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/9ec6f2014290a4e866f187bd5c3bca575a66b677"
+        },
+        {
+          "projectId": "five-star-recomp",
+          "repo": "ThatRecompDev/five-star-recomp",
+          "sha": "57411f8",
+          "message": "Docs: loader rows for the device-removal options",
+          "author": "ThatRecompDev",
+          "at": "2026-11-27T07:07:48Z",
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/57411f8fbcdd5576728cb331d220a41490759e5f"
+        },
+        {
+          "projectId": "five-star-recomp",
+          "repo": "ThatRecompDev/five-star-recomp",
+          "sha": "6d54666",
+          "message": "Loader: --no-gpu-timeout makes the game's queues without the GPU timeout",
+          "author": "ThatRecompDev",
+          "at": "2026-11-27T07:07:30Z",
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/6d5466666c75ff9348a33be6eaec76a639e69a97"
+        },
+        {
+          "projectId": "five-star-recomp",
+          "repo": "ThatRecompDev/five-star-recomp",
+          "sha": "b21ca33",
+          "message": "Loader: the driver's background shader work off; pipelines can be given up",
+          "author": "ThatRecompDev",
+          "at": "2026-11-27T06:47:48Z",
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/b21ca331789bfe82590604092dee092768e1a491"
+        },
+        {
+          "projectId": "five-star-recomp",
+          "repo": "ThatRecompDev/five-star-recomp",
           "sha": "1dd28a5",
           "message": "Status: no byte order mark",
           "author": "ThatRecompDev",
@@ -5763,11 +5799,56 @@
         {
           "projectId": "five-star-recomp",
           "repo": "ThatRecompDev/five-star-recomp",
+          "sha": "32a63d3",
+          "message": "Loader: --d3dkmt-watch logs the NVIDIA driver's shader tables as they grow",
+          "author": "ThatRecompDev",
+          "at": "2026-11-27T05:31:29Z",
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/32a63d34810348aba4f39811b5a8058f4cdf413d"
+        },
+        {
+          "projectId": "five-star-recomp",
+          "repo": "ThatRecompDev/five-star-recomp",
+          "sha": "44f08a2",
+          "message": "Loader: --d3dkmt-watch keeps the returned calls below a MarkDeviceAsError",
+          "author": "ThatRecompDev",
+          "at": "2026-11-27T05:12:16Z",
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/44f08a2ba49819025209afbc6a412743e30b3d8b"
+        },
+        {
+          "projectId": "five-star-recomp",
+          "repo": "ThatRecompDev/five-star-recomp",
           "sha": "df2a7ad",
           "message": "Status: the driver gives the device up inside ExecuteCommandLists",
           "author": "ThatRecompDev",
           "at": "2026-11-27T04:40:11Z",
           "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/df2a7adcec34785bc155641cae56ebc912d783c9"
+        },
+        {
+          "projectId": "five-star-recomp",
+          "repo": "ThatRecompDev/five-star-recomp",
+          "sha": "6c4b580",
+          "message": "Loader: --d3dkmt-watch prints each frame's non-volatile registers",
+          "author": "ThatRecompDev",
+          "at": "2026-11-27T04:39:30Z",
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/6c4b580b5fc5338f915daae17e3801d250a23fae"
+        },
+        {
+          "projectId": "five-star-recomp",
+          "repo": "ThatRecompDev/five-star-recomp",
+          "sha": "3efcd0f",
+          "message": "Loader: --d3dkmt-watch names managed frames and the submission a device was given up in",
+          "author": "ThatRecompDev",
+          "at": "2026-11-27T04:37:25Z",
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/3efcd0f70bd4a12692a30d6dc8b2633c481657e8"
+        },
+        {
+          "projectId": "five-star-recomp",
+          "repo": "ThatRecompDev/five-star-recomp",
+          "sha": "5383f65",
+          "message": "Loader: --d3dkmt-watch logs failing graphics kernel calls and device states",
+          "author": "ThatRecompDev",
+          "at": "2026-11-27T04:00:04Z",
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/5383f65e28041c92bf3c4bbc374c1861d88dd86d"
         },
         {
           "projectId": "five-star-recomp",
@@ -5795,87 +5876,6 @@
           "author": "ThatRecompDev",
           "at": "2026-11-27T00:43:14Z",
           "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/b42886f8c662510b3a65b1b799c52f92c769479f"
-        },
-        {
-          "projectId": "five-star-recomp",
-          "repo": "ThatRecompDev/five-star-recomp",
-          "sha": "69b85d9",
-          "message": "Merge lane-albedo: textures with held views stay, frame-stage dump, Aftermath crash dumps",
-          "author": "ThatRecompDev",
-          "at": "2026-11-27T00:43:14Z",
-          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/69b85d9b3b8d1ec650597da57cd56c5c57bf4d95"
-        },
-        {
-          "projectId": "five-star-recomp",
-          "repo": "ThatRecompDev/five-star-recomp",
-          "sha": "44011f0",
-          "message": "Loader: --dump-frame-min-width; test that depth-twin steps copy bit-exact",
-          "author": "ThatRecompDev",
-          "at": "2026-11-27T00:34:34Z",
-          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/44011f074f0b980b25858f86107e517a5aabbb70"
-        },
-        {
-          "projectId": "five-star-recomp",
-          "repo": "ThatRecompDev/five-star-recomp",
-          "sha": "b2fe2ca",
-          "message": "Merge branch 'lane-picture' into lane-albedo",
-          "author": "ThatRecompDev",
-          "at": "2026-11-27T00:26:25Z",
-          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/b2fe2ca3f910029b81d8364275cee08c39fb6cc0"
-        },
-        {
-          "projectId": "five-star-recomp",
-          "repo": "ThatRecompDev/five-star-recomp",
-          "sha": "40f12d4",
-          "message": "A texture whose views are held is not retired by one that starts elsewhere",
-          "author": "ThatRecompDev",
-          "at": "2026-11-27T00:26:01Z",
-          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/40f12d46ac9c6c567c12040dab7be67a5a0c809c"
-        },
-        {
-          "projectId": "five-star-recomp",
-          "repo": "ThatRecompDev/five-star-recomp",
-          "sha": "55f6761",
-          "message": "Loader: --dump-frame logs a depth's commonest values and dumps stencil planes",
-          "author": "ThatRecompDev",
-          "at": "2026-11-27T00:15:45Z",
-          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/55f6761cdbea8f670a32ad8f4b3042fb46122bf7"
-        },
-        {
-          "projectId": "five-star-recomp",
-          "repo": "ThatRecompDev/five-star-recomp",
-          "sha": "b09890b",
-          "message": "Merge branch 'lane-picture' into lane-albedo",
-          "author": "ThatRecompDev",
-          "at": "2026-11-27T00:01:47Z",
-          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/b09890b716d0f0468ea4c90eea60b86706eec1e8"
-        },
-        {
-          "projectId": "five-star-recomp",
-          "repo": "ThatRecompDev/five-star-recomp",
-          "sha": "1ba1b17",
-          "message": "Merge branch 'lane-aftermath' into lane-albedo",
-          "author": "ThatRecompDev",
-          "at": "2026-11-27T00:01:47Z",
-          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/1ba1b17d8803d20b71c6f0f4b123e83ecb63c8cf"
-        },
-        {
-          "projectId": "five-star-recomp",
-          "repo": "ThatRecompDev/five-star-recomp",
-          "sha": "e9cbf7c",
-          "message": "Loader: --aftermath-selftest provokes a GPU page fault and checks the dump",
-          "author": "ThatRecompDev",
-          "at": "2026-11-27T00:01:24Z",
-          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/e9cbf7c37ba675bea6944335f6545113a7f10932"
-        },
-        {
-          "projectId": "five-star-recomp",
-          "repo": "ThatRecompDev/five-star-recomp",
-          "sha": "04aa50e",
-          "message": "A texture another is placed inside keeps its small levels",
-          "author": "ThatRecompDev",
-          "at": "2026-11-27T00:00:26Z",
-          "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/04aa50eb804394e348800d8ef23f87b4aa810181"
         }
       ],
       "pulls": [
@@ -9013,13 +9013,189 @@
         {
           "projectId": "belobug",
           "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 495,
+          "title": "Audio: XMA decoding keeps up while frames are slow (MMCSS thread, the mixer never waits for a decode)",
+          "state": "closed",
+          "draft": false,
+          "author": "0xkn0wh3r3",
+          "at": "2026-11-27T07:29:57Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/495"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 492,
+          "title": "Nvidia/rtx 5060 compat",
+          "state": "open",
+          "draft": false,
+          "author": "valouddsite",
+          "at": "2026-11-27T07:29:16Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/492"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 268,
+          "title": "victory system: say what this machine is, and what stands in the way (#104)",
+          "state": "open",
+          "draft": false,
+          "author": "redlight-06",
+          "at": "2026-11-27T07:26:15Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/268"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 231,
+          "title": "GPU: refresh an uploaded texture view from its current GPU writer",
+          "state": "open",
+          "draft": false,
+          "author": "pokces",
+          "at": "2026-11-27T07:25:52Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/231"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 451,
+          "title": "GPU: pool and recycle shadow::exact() buffers with GPU quarantine (#346)",
+          "state": "open",
+          "draft": false,
+          "author": "BE29ZZ",
+          "at": "2026-11-27T07:23:51Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/451"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 493,
+          "title": "Improve shader warm-up and descriptor recording",
+          "state": "open",
+          "draft": true,
+          "author": "aarushvan",
+          "at": "2026-11-27T07:23:40Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/493"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 481,
+          "title": "PC optimization: add DLSS, low-VRAM/RAM scaling, borderless/tearing s…",
+          "state": "closed",
+          "draft": false,
+          "author": "akshai000777",
+          "at": "2026-11-27T07:10:58Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/481"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 496,
+          "title": "Recover pipeline workers from Rust panics on a-publier",
+          "state": "open",
+          "draft": false,
+          "author": "ammaster10s",
+          "at": "2026-11-27T07:06:33Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/496"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 199,
+          "title": "gpu: replace O(N) bindless_plan scans with O(dirty) incremental tracking",
+          "state": "open",
+          "draft": false,
+          "author": "Vladimir-Human",
+          "at": "2026-11-27T07:06:23Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/199"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 195,
+          "title": "perf(formats): add AVX2/SSE2 256B micro-tile texture detiler and DetilePool",
+          "state": "open",
+          "draft": false,
+          "author": "Vladimir-Human",
+          "at": "2026-11-27T07:06:22Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/195"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
           "number": 491,
           "title": "GPU: a debug overlay, Alt+Z, drawn into the presented frame (port of victory-leafy#14)",
           "state": "open",
           "draft": false,
           "author": "0xkn0wh3r3",
-          "at": "2026-11-27T07:01:17Z",
+          "at": "2026-11-27T07:04:37Z",
           "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/491"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 464,
+          "title": "Intel lowmem tuning",
+          "state": "open",
+          "draft": false,
+          "author": "michael04flynn-sketch",
+          "at": "2026-11-27T07:03:13Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/464"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 476,
+          "title": "Diagnostics: copies up and back by the title's memory protection (VICTORY_WC_STATS=1)",
+          "state": "open",
+          "draft": false,
+          "author": "icecreammule277-dot",
+          "at": "2026-11-27T07:01:48Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/476"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 477,
+          "title": "VICTORY_WC_NO_BACK=1: shaders' writes into write-combined title memory stay on the card (with a read census)",
+          "state": "open",
+          "draft": false,
+          "author": "icecreammule277-dot",
+          "at": "2026-11-27T07:01:46Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/477"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 478,
+          "title": "GPU: the write guard makes only view memory read-only (a kernel-sent SIGSEGV under Wine)",
+          "state": "open",
+          "draft": false,
+          "author": "cmt8",
+          "at": "2026-11-27T07:01:44Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/478"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 479,
+          "title": "Translate geometry shaders and streamline shader cache keys",
+          "state": "open",
+          "draft": false,
+          "author": "agonisingbasher",
+          "at": "2026-11-27T07:01:42Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/479"
+        },
+        {
+          "projectId": "belobug",
+          "repo": "Belobug/VIctory-Belobug-AMD",
+          "number": 480,
+          "title": "perf(gpu,loader): adaptive RAM/VRAM memory pools and faster submit preparation",
+          "state": "open",
+          "draft": false,
+          "author": "bla1r1",
+          "at": "2026-11-27T07:01:40Z",
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/480"
         },
         {
           "projectId": "belobug",
@@ -9053,182 +9229,6 @@
           "author": "ammaster10s",
           "at": "2026-11-27T06:51:57Z",
           "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/485"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 471,
-          "title": "Summary",
-          "state": "open",
-          "draft": false,
-          "author": "agonisingbasher",
-          "at": "2026-11-27T06:51:27Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/471"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 456,
-          "title": "warm: create the pipelines folder on a fresh cache",
-          "state": "open",
-          "draft": false,
-          "author": "Jackster",
-          "at": "2026-11-27T06:51:05Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/456"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 423,
-          "title": "Shaders: reject DXBC part offsets into container metadata",
-          "state": "open",
-          "draft": false,
-          "author": "VlREX",
-          "at": "2026-11-27T06:50:43Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/423"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 451,
-          "title": "GPU: pool and recycle shadow::exact() buffers with GPU quarantine (#346)",
-          "state": "open",
-          "draft": false,
-          "author": "BE29ZZ",
-          "at": "2026-11-27T06:50:20Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/451"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 454,
-          "title": "fix(gpu): close upload-ahead races and defer new pool flips",
-          "state": "open",
-          "draft": false,
-          "author": "matheusfrta",
-          "at": "2026-11-27T06:49:57Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/454"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 424,
-          "title": "GPU: track direct buffer states in HostList and restore COPY_DEST to COMMON in place_copy (#350)",
-          "state": "open",
-          "draft": false,
-          "author": "BE29ZZ",
-          "at": "2026-11-27T06:49:35Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/424"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 363,
-          "title": "Shader tests: run the 32-lane host form on AMD cards; ds_bpermute reads within its half",
-          "state": "open",
-          "draft": false,
-          "author": "TinkerBell-90",
-          "at": "2026-11-27T06:49:12Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/363"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 449,
-          "title": "Fix black world rendering by legalizing host barrier states",
-          "state": "open",
-          "draft": false,
-          "author": "jorgechavezxyz",
-          "at": "2026-11-27T06:48:49Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/449"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 428,
-          "title": "Relay: the copy-queue fetch never runs beside writes to the copies it reads (RDNA 2 resets, #376)",
-          "state": "open",
-          "draft": false,
-          "author": "MamaLeVrai",
-          "at": "2026-11-27T06:48:27Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/428"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 486,
-          "title": "Show the resolved FidelityFX path in victory config",
-          "state": "open",
-          "draft": false,
-          "author": "ammaster10s",
-          "at": "2026-11-27T06:27:21Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/486"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 484,
-          "title": "Reject translation-only flags during shader cache warm-up",
-          "state": "open",
-          "draft": false,
-          "author": "ammaster10s",
-          "at": "2026-11-27T06:27:20Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/484"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 335,
-          "title": "victory-gpu: Lazy host list reset allocator retirement and bounded/t…",
-          "state": "open",
-          "draft": false,
-          "author": "g-a-l-a-x-i-a",
-          "at": "2026-11-27T06:27:19Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/335"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 356,
-          "title": "Stop the shader warm-up file walk when its time budget expires",
-          "state": "open",
-          "draft": false,
-          "author": "ANDREANIADS",
-          "at": "2026-11-27T06:26:53Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/356"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 339,
-          "title": "A buffer's size can be asked through a handle of its own (VICTORY_SIZE_OWN_HANDLE=1): AMD's compiler makes the pipelines it crashed on",
-          "state": "open",
-          "draft": false,
-          "author": "thejacte",
-          "at": "2026-11-27T06:26:31Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/339"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 247,
-          "title": "Under Wine, a placeholder is known by the plain query: questions about holes fall from 9,800 to 14 a frame",
-          "state": "open",
-          "draft": false,
-          "author": "nil0ft",
-          "at": "2026-11-27T06:26:09Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/247"
-        },
-        {
-          "projectId": "belobug",
-          "repo": "Belobug/VIctory-Belobug-AMD",
-          "number": 343,
-          "title": "The stack walk checks memory before it reads it, so VICTORY_PROFILE no longer crashes the game (VICTORY_UNWIND_CHECKS=0 for the old walk)",
-          "state": "open",
-          "draft": false,
-          "author": "thejacte",
-          "at": "2026-11-27T06:25:44Z",
-          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/343"
         }
       ]
     },
@@ -11380,13 +11380,68 @@
         {
           "projectId": "avatarmanz",
           "repo": "avatarmanz/VIctory-7900XTX",
+          "number": 436,
+          "title": "GPU: fills of upload memory behind a copy take its bytes (VICTORY_FILL_FORWARD=1, off by default; from Grimkaaah)",
+          "state": "open",
+          "draft": false,
+          "author": "LeonardoS11",
+          "at": "2026-11-27T07:27:45Z",
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/436"
+        },
+        {
+          "projectId": "avatarmanz",
+          "repo": "avatarmanz/VIctory-7900XTX",
           "number": 437,
           "title": "Trees and palms no longer drop out: raw twins of buffer views not on 16 bytes begin at the view's own dword (VICTORY_TWIN_EXACT, on)",
           "state": "open",
           "draft": false,
           "author": "LloydNicholson",
-          "at": "2026-11-27T07:00:30Z",
+          "at": "2026-11-27T07:19:54Z",
           "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/437"
+        },
+        {
+          "projectId": "avatarmanz",
+          "repo": "avatarmanz/VIctory-7900XTX",
+          "number": 439,
+          "title": "[perf] Cargo.toml",
+          "state": "open",
+          "draft": false,
+          "author": "hkiceflow",
+          "at": "2026-11-27T07:19:41Z",
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/439"
+        },
+        {
+          "projectId": "avatarmanz",
+          "repo": "avatarmanz/VIctory-7900XTX",
+          "number": 438,
+          "title": "Renderer port 1 ordering: a run of in-place indirect executions with only state between them clamped in one pass (VICTORY_PORT_CONSTANTS_ORDER_BATCH=1, off by default)",
+          "state": "open",
+          "draft": false,
+          "author": "HAL9000RELOADED",
+          "at": "2026-11-27T07:17:34Z",
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/438"
+        },
+        {
+          "projectId": "avatarmanz",
+          "repo": "avatarmanz/VIctory-7900XTX",
+          "number": 180,
+          "title": "victory-gpu: size-tiered card-buffer headroom and fence-safe LRU demotion",
+          "state": "open",
+          "draft": false,
+          "author": "Vladimir-Human",
+          "at": "2026-11-27T07:17:20Z",
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/180"
+        },
+        {
+          "projectId": "avatarmanz",
+          "repo": "avatarmanz/VIctory-7900XTX",
+          "number": 212,
+          "title": "victory-gpu: add fence-safe texture LRU eviction and budget-aware mip clamping",
+          "state": "open",
+          "draft": false,
+          "author": "Vladimir-Human",
+          "at": "2026-11-27T07:17:19Z",
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/212"
         },
         {
           "projectId": "avatarmanz",
@@ -11420,17 +11475,6 @@
           "author": "Jrjy3",
           "at": "2026-11-27T06:45:11Z",
           "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/434"
-        },
-        {
-          "projectId": "avatarmanz",
-          "repo": "avatarmanz/VIctory-7900XTX",
-          "number": 436,
-          "title": "GPU: fills of upload memory behind a copy take its bytes (VICTORY_FILL_FORWARD=1, off by default; from Grimkaaah)",
-          "state": "open",
-          "draft": false,
-          "author": "LeonardoS11",
-          "at": "2026-11-27T06:32:56Z",
-          "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/436"
         },
         {
           "projectId": "avatarmanz",
@@ -11552,50 +11596,6 @@
           "author": "agonisingbasher",
           "at": "2026-11-27T04:10:07Z",
           "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/322"
-        },
-        {
-          "projectId": "avatarmanz",
-          "repo": "avatarmanz/VIctory-7900XTX",
-          "number": 429,
-          "title": "Diagnostics (off by default): critical path per frame and the card's busy time in the fps line",
-          "state": "open",
-          "draft": false,
-          "author": "LeonardoS11",
-          "at": "2026-11-27T04:00:09Z",
-          "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/429"
-        },
-        {
-          "projectId": "avatarmanz",
-          "repo": "avatarmanz/VIctory-7900XTX",
-          "number": 428,
-          "title": "Resolution: say a site the loader's hooks already patched is as asked, not 'not patched'",
-          "state": "open",
-          "draft": false,
-          "author": "LeonardoS11",
-          "at": "2026-11-27T04:00:06Z",
-          "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/428"
-        },
-        {
-          "projectId": "avatarmanz",
-          "repo": "avatarmanz/VIctory-7900XTX",
-          "number": 427,
-          "title": "Frame pacing: GetFrameStatisticsX reports when a frame was flipped (opening video in order)",
-          "state": "open",
-          "draft": false,
-          "author": "LeonardoS11",
-          "at": "2026-11-27T04:00:03Z",
-          "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/427"
-        },
-        {
-          "projectId": "avatarmanz",
-          "repo": "avatarmanz/VIctory-7900XTX",
-          "number": 426,
-          "title": "Windows 10: load the D3D12 Agility SDK runtime beside the executable, system runtime otherwise",
-          "state": "open",
-          "draft": false,
-          "author": "LeonardoS11",
-          "at": "2026-11-27T04:00:00Z",
-          "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/426"
         }
       ]
     },
@@ -12712,6 +12712,17 @@
         {
           "projectId": "leonida-continued",
           "repo": "ubiquitarianism/leonida",
+          "number": 2435,
+          "title": "rdna2spirv: --mesh-serial-waves, an emulated mesh program's waves one after the other (SHADER-W64-MESH-SERIAL-WAVES)",
+          "state": "open",
+          "draft": false,
+          "author": "quartz-heron-58",
+          "at": "2026-11-27T07:12:05Z",
+          "url": "https://github.com/ubiquitarianism/leonida/pull/2435"
+        },
+        {
+          "projectId": "leonida-continued",
+          "repo": "ubiquitarianism/leonida",
           "number": 2437,
           "title": "d3d12: graphics pipelines get a stable identity, logged as id= on the pipeline-compile and pipeline-use lines (RT-GRAPHICS-PREBUILD-STUDY)",
           "state": "open",
@@ -12807,17 +12818,6 @@
           "author": "kawaii-shakal",
           "at": "2026-11-27T06:49:11Z",
           "url": "https://github.com/ubiquitarianism/leonida/pull/2436"
-        },
-        {
-          "projectId": "leonida-continued",
-          "repo": "ubiquitarianism/leonida",
-          "number": 2435,
-          "title": "rdna2spirv: --mesh-serial-waves, an emulated mesh program's waves one after the other (SHADER-W64-MESH-SERIAL-WAVES)",
-          "state": "open",
-          "draft": false,
-          "author": "quartz-heron-58",
-          "at": "2026-11-27T06:47:39Z",
-          "url": "https://github.com/ubiquitarianism/leonida/pull/2435"
         },
         {
           "projectId": "leonida-continued",
@@ -14069,12 +14069,67 @@
         {
           "projectId": "native-victory-macos",
           "repo": "LakshanSivakumar/Native-Victory-macOS",
+          "number": 271,
+          "title": "shader: refuse loop-carried lane masks changed across divergent loop exits",
+          "state": "open",
+          "draft": false,
+          "author": "gagarinyury",
+          "at": "2026-11-27T07:30:59Z",
+          "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/271"
+        },
+        {
+          "projectId": "native-victory-macos",
+          "repo": "LakshanSivakumar/Native-Victory-macOS",
+          "number": 250,
+          "title": "fix(shader): trace heap address shifted offsets, carries, phis, and SALU waterfall reads",
+          "state": "open",
+          "draft": false,
+          "author": "Sheffy007",
+          "at": "2026-11-27T07:20:20Z",
+          "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/250"
+        },
+        {
+          "projectId": "native-victory-macos",
+          "repo": "LakshanSivakumar/Native-Victory-macOS",
+          "number": 270,
+          "title": "run-summary: prewarm and audio lines, refusal frames, and the times o…",
+          "state": "open",
+          "draft": false,
+          "author": "AnastasisKon",
+          "at": "2026-11-27T07:09:02Z",
+          "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/270"
+        },
+        {
+          "projectId": "native-victory-macos",
+          "repo": "LakshanSivakumar/Native-Victory-macOS",
+          "number": 269,
+          "title": "shader: pin the pixel input-address bit table in io.rs",
+          "state": "open",
+          "draft": false,
+          "author": "AnastasisKon",
+          "at": "2026-11-27T07:08:56Z",
+          "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/269"
+        },
+        {
+          "projectId": "native-victory-macos",
+          "repo": "LakshanSivakumar/Native-Victory-macOS",
+          "number": 268,
+          "title": "docs: the runtime switches the code has and the diagnostics list does…",
+          "state": "open",
+          "draft": false,
+          "author": "AnastasisKon",
+          "at": "2026-11-27T07:08:29Z",
+          "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/268"
+        },
+        {
+          "projectId": "native-victory-macos",
+          "repo": "LakshanSivakumar/Native-Victory-macOS",
           "number": 267,
           "title": "native: heap buffer views not linear in one pool read the title's own mapping instead of the null view (#258)",
           "state": "open",
           "draft": false,
           "author": "Olima34",
-          "at": "2026-11-27T06:52:08Z",
+          "at": "2026-11-27T07:03:45Z",
           "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/267"
         },
         {
@@ -14131,17 +14186,6 @@
           "author": "Sheffy007",
           "at": "2026-11-27T06:48:31Z",
           "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/251"
-        },
-        {
-          "projectId": "native-victory-macos",
-          "repo": "LakshanSivakumar/Native-Victory-macOS",
-          "number": 250,
-          "title": "fix(shader): trace heap address shifted offsets, carries, phis, and SALU waterfall reads",
-          "state": "open",
-          "draft": false,
-          "author": "Sheffy007",
-          "at": "2026-11-27T06:47:42Z",
-          "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/250"
         },
         {
           "projectId": "native-victory-macos",
@@ -14241,50 +14285,6 @@
           "author": "Repla09",
           "at": "2026-11-27T04:56:44Z",
           "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/249"
-        },
-        {
-          "projectId": "native-victory-macos",
-          "repo": "LakshanSivakumar/Native-Victory-macOS",
-          "number": 248,
-          "title": "files: match FindFirstFile patterns with the DOS rules, so *.* lists every file",
-          "state": "merged",
-          "draft": false,
-          "author": "Repla09",
-          "at": "2026-11-27T04:56:39Z",
-          "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/248"
-        },
-        {
-          "projectId": "native-victory-macos",
-          "repo": "LakshanSivakumar/Native-Victory-macOS",
-          "number": 245,
-          "title": "shader: a gather's level is whole where only the lanes that gather wrote it (half of the black G-buffer, #182)",
-          "state": "merged",
-          "draft": false,
-          "author": "Olima34",
-          "at": "2026-11-27T04:26:33Z",
-          "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/245"
-        },
-        {
-          "projectId": "native-victory-macos",
-          "repo": "LakshanSivakumar/Native-Victory-macOS",
-          "number": 244,
-          "title": "fix(metal): bind default MTLDepthStencilState instead of nil in encode_render",
-          "state": "merged",
-          "draft": false,
-          "author": "Sheffy007",
-          "at": "2026-11-27T04:26:26Z",
-          "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/244"
-        },
-        {
-          "projectId": "native-victory-macos",
-          "repo": "LakshanSivakumar/Native-Victory-macOS",
-          "number": 243,
-          "title": "fix(metal,gpu): guard compute/mesh pipeline compiles, flush archive, and budget thread_pipe",
-          "state": "merged",
-          "draft": false,
-          "author": "Sheffy007",
-          "at": "2026-11-27T04:26:20Z",
-          "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/243"
         }
       ]
     },
@@ -15582,6 +15582,33 @@
         {
           "projectId": "i95-gta6-pc-launcher",
           "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
+          "sha": "7631387",
+          "message": "Update: Vice-Tay to upstream head",
+          "author": "DesignWithTommy",
+          "at": "2026-11-27T07:21:41Z",
+          "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/7631387be9fcfbdd33fb38342db52a8126978e43"
+        },
+        {
+          "projectId": "i95-gta6-pc-launcher",
+          "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
+          "sha": "a92e499",
+          "message": "Update: Five Star, Vice-Tay, VIniVIdiVIci to upstream heads; stars and times",
+          "author": "DesignWithTommy",
+          "at": "2026-11-27T07:17:06Z",
+          "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/a92e4997b5acf4cfb55d9b1a2b7ba331239fed0b"
+        },
+        {
+          "projectId": "i95-gta6-pc-launcher",
+          "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
+          "sha": "485c5bf",
+          "message": "Update: NVIDIA, ScarlettPort, Vice-Tay and others to upstream heads; stars and times",
+          "author": "DesignWithTommy",
+          "at": "2026-11-27T07:02:17Z",
+          "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/485c5bf2cc06e29553e97a2434311bbb378a5361"
+        },
+        {
+          "projectId": "i95-gta6-pc-launcher",
+          "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
           "sha": "5756e0b",
           "message": "Update: Vice-Tay to upstream head; Vilocity numbers; stars and times",
           "author": "DesignWithTommy",
@@ -15686,33 +15713,6 @@
           "author": "DesignWithTommy",
           "at": "2026-11-27T06:11:50Z",
           "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/932669057e7e454b879964507bb52457336f6206"
-        },
-        {
-          "projectId": "i95-gta6-pc-launcher",
-          "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
-          "sha": "6d0f5ef",
-          "message": "fps panel: drop (R) and (TM) from the CPU name (no glyphs for them)",
-          "author": "DesignWithTommy",
-          "at": "2026-11-27T06:06:21Z",
-          "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/6d0f5efe206514440eb6678a25ccc635bb9ed658"
-        },
-        {
-          "projectId": "i95-gta6-pc-launcher",
-          "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
-          "sha": "0dbb1c9",
-          "message": "Loading card: your picture fills the whole card, with the status line and the road drawn over it",
-          "author": "DesignWithTommy",
-          "at": "2026-11-27T06:05:12Z",
-          "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/0dbb1c942be1ae6b0f1186ba3e8afc82581c288f"
-        },
-        {
-          "projectId": "i95-gta6-pc-launcher",
-          "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
-          "sha": "267dcac",
-          "message": "Update: cool_fox (ports 6 and 7 on by default), Vilocity (1440p, 8gb and thread presets from play-gta6.ps1), Vice-Tay to upstream head; victory-fork's new numbers",
-          "author": "DesignWithTommy",
-          "at": "2026-11-27T06:02:10Z",
-          "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/267dcac1243392dadea51351016b32c1bbe0fdce"
         }
       ],
       "pulls": []
@@ -16182,7 +16182,7 @@
           "state": "open",
           "draft": true,
           "author": "Peppacodes",
-          "at": "2026-11-27T06:48:53Z",
+          "at": "2026-11-27T07:15:08Z",
           "url": "https://github.com/Peppacodes/playablegames-peppa/pull/24"
         },
         {
@@ -16878,6 +16878,929 @@
   },
   "feed": [
     {
+      "projectId": "native-victory-macos",
+      "repo": "LakshanSivakumar/Native-Victory-macOS",
+      "number": 271,
+      "title": "shader: refuse loop-carried lane masks changed across divergent loop exits",
+      "state": "open",
+      "draft": false,
+      "author": "gagarinyury",
+      "at": "2026-11-27T07:30:59Z",
+      "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/271"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 3478,
+      "title": "gpu: a texture placement reaps the pending ranges only when no heap has room",
+      "state": "open",
+      "draft": false,
+      "author": "borosf",
+      "at": "2026-11-27T07:30:31Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/3478"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2982,
+      "title": "VFS: DeleteFileW refuses read-only files instead of hiding them (#2945)",
+      "state": "open",
+      "draft": false,
+      "author": "Koaio",
+      "at": "2026-11-27T07:29:57Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2982"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 495,
+      "title": "Audio: XMA decoding keeps up while frames are slow (MMCSS thread, the mixer never waits for a decode)",
+      "state": "closed",
+      "draft": false,
+      "author": "0xkn0wh3r3",
+      "at": "2026-11-27T07:29:57Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/495"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2614,
+      "title": "D3D12.X: preserve replaced driver blobs after stale rejection",
+      "state": "open",
+      "draft": true,
+      "author": "luckyteagirl",
+      "at": "2026-11-27T07:29:34Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2614"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 492,
+      "title": "Nvidia/rtx 5060 compat",
+      "state": "open",
+      "draft": false,
+      "author": "valouddsite",
+      "at": "2026-11-27T07:29:16Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/492"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2985,
+      "title": "D3D12.X: pool small fallback placements in placed heaps and deduplicate xg::Texture",
+      "state": "open",
+      "draft": false,
+      "author": "Saksukella",
+      "at": "2026-11-27T07:28:42Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2985"
+    },
+    {
+      "projectId": "victory-gta6",
+      "repo": "fxceless/victory-fork",
+      "number": 1442,
+      "title": "GPU: keep unrelated pipeline library loads from blocking each other",
+      "state": "open",
+      "draft": false,
+      "author": "Filip722",
+      "at": "2026-11-27T07:28:33Z",
+      "url": "https://github.com/fxceless/victory-fork/pull/1442"
+    },
+    {
+      "projectId": "victory-gta6",
+      "repo": "fxceless/victory-fork",
+      "number": 1440,
+      "title": "Shaders: fix workspace clippy lints in wave64_after_loop and valu_tests",
+      "state": "open",
+      "draft": false,
+      "author": "n-romanovich",
+      "at": "2026-11-27T07:28:10Z",
+      "url": "https://github.com/fxceless/victory-fork/pull/1440"
+    },
+    {
+      "projectId": "avatarmanz",
+      "repo": "avatarmanz/VIctory-7900XTX",
+      "number": 436,
+      "title": "GPU: fills of upload memory behind a copy take its bytes (VICTORY_FILL_FORWARD=1, off by default; from Grimkaaah)",
+      "state": "open",
+      "draft": false,
+      "author": "LeonardoS11",
+      "at": "2026-11-27T07:27:45Z",
+      "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/436"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 1262,
+      "title": "Shaders: double-precision add, mul, fma, min, max, compares and conversions (stacked on #416)",
+      "state": "open",
+      "draft": false,
+      "author": "MamaLeVrai",
+      "at": "2026-11-27T07:27:33Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/1262"
+    },
+    {
+      "projectId": "xbox2windows",
+      "repo": "R0Y00/Xbox2Windows",
+      "number": 2912,
+      "title": "test: native DXIL read of a GPU-selected descriptor heap slot (probe)",
+      "state": "closed",
+      "draft": true,
+      "author": "tedin7",
+      "at": "2026-11-27T07:27:26Z",
+      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2912"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 3380,
+      "title": "Shader dxbc: use checked arithmetic for bounds slicing",
+      "state": "open",
+      "draft": false,
+      "author": "Arkenoz",
+      "at": "2026-11-27T07:26:55Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/3380"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2977,
+      "title": "D3D12.X: the driver heap's grooming reserves stretches a smaller window fits in",
+      "state": "open",
+      "draft": false,
+      "author": "Prime1997",
+      "at": "2026-11-27T07:26:21Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2977"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 268,
+      "title": "victory system: say what this machine is, and what stands in the way (#104)",
+      "state": "open",
+      "draft": false,
+      "author": "redlight-06",
+      "at": "2026-11-27T07:26:15Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/268"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 231,
+      "title": "GPU: refresh an uploaded texture view from its current GPU writer",
+      "state": "open",
+      "draft": false,
+      "author": "pokces",
+      "at": "2026-11-27T07:25:52Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/231"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2956,
+      "title": "D3D12.X: make shadowed textures active again when a draw samples them",
+      "state": "open",
+      "draft": true,
+      "author": "BBareth",
+      "at": "2026-11-27T07:25:51Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2956"
+    },
+    {
+      "projectId": "xbox2windows",
+      "repo": "R0Y00/Xbox2Windows",
+      "number": 3025,
+      "title": "native: read the byte-address rewrite of a GPU-selected heap descriptor",
+      "state": "open",
+      "draft": false,
+      "author": "JB2WIN",
+      "at": "2026-11-27T07:24:24Z",
+      "url": "https://github.com/R0Y00/Xbox2Windows/pull/3025"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 451,
+      "title": "GPU: pool and recycle shadow::exact() buffers with GPU quarantine (#346)",
+      "state": "open",
+      "draft": false,
+      "author": "BE29ZZ",
+      "at": "2026-11-27T07:23:51Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/451"
+    },
+    {
+      "projectId": "xbox2windows",
+      "repo": "R0Y00/Xbox2Windows",
+      "number": 3024,
+      "title": "startup: retain present signature copies on device removal",
+      "state": "merged",
+      "draft": false,
+      "author": "chadhyatt",
+      "at": "2026-11-27T07:23:50Z",
+      "url": "https://github.com/R0Y00/Xbox2Windows/pull/3024"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 493,
+      "title": "Improve shader warm-up and descriptor recording",
+      "state": "open",
+      "draft": true,
+      "author": "aarushvan",
+      "at": "2026-11-27T07:23:40Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/493"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2385,
+      "title": "D3D12.X: sampled textures go without their top mips while video memory fills up",
+      "state": "open",
+      "draft": false,
+      "author": "NWProgramming00",
+      "at": "2026-11-27T07:23:24Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2385"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 3403,
+      "title": "Shaders: lower partial-channel and dmask=0 image_store",
+      "state": "open",
+      "draft": false,
+      "author": "Texbirds",
+      "at": "2026-11-27T07:22:47Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/3403"
+    },
+    {
+      "projectId": "victory-gta6",
+      "repo": "fxceless/victory-fork",
+      "number": 1435,
+      "title": "Allow the compute detile readback test on the runtime GPU",
+      "state": "open",
+      "draft": false,
+      "author": "UwUCammie",
+      "at": "2026-11-27T07:22:20Z",
+      "url": "https://github.com/fxceless/victory-fork/pull/1435"
+    },
+    {
+      "projectId": "xbox2windows",
+      "repo": "R0Y00/Xbox2Windows",
+      "sha": "f17a08f",
+      "message": "startup: retain present signature copies on device removal (#3024)",
+      "author": "Chad Hyatt",
+      "at": "2026-11-27T07:22:11Z",
+      "url": "https://github.com/R0Y00/Xbox2Windows/commit/f17a08fd2dc9b0cce05da51361902bbccce7eb59"
+    },
+    {
+      "projectId": "i95-gta6-pc-launcher",
+      "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
+      "sha": "7631387",
+      "message": "Update: Vice-Tay to upstream head",
+      "author": "DesignWithTommy",
+      "at": "2026-11-27T07:21:41Z",
+      "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/7631387be9fcfbdd33fb38342db52a8126978e43"
+    },
+    {
+      "projectId": "xbox2windows",
+      "repo": "R0Y00/Xbox2Windows",
+      "number": 2894,
+      "title": "shader: harden input validation and bridge conflict guards in spirv_sampler_views with unit suite",
+      "state": "open",
+      "draft": false,
+      "author": "Ammmae0x",
+      "at": "2026-11-27T07:21:37Z",
+      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2894"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 2112,
+      "title": "GPU: title memory in place instead of copied, opt-in (VICTORY_IN_PLACE=1; stacked on #2088, towards #880)",
+      "state": "open",
+      "draft": true,
+      "author": "desplmfao",
+      "at": "2026-11-27T07:21:30Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/2112"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 2494,
+      "title": "GPU/HLE: import committed physical-page sections in place for title memory (#1905)",
+      "state": "open",
+      "draft": false,
+      "author": "nathanbzrr",
+      "at": "2026-11-27T07:21:29Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/2494"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2861,
+      "title": "D3D12.X: PC CreateCommandList gives the driver the pipeline behind a stand-in",
+      "state": "open",
+      "draft": true,
+      "author": "oni-swr",
+      "at": "2026-11-27T07:21:12Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2861"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2975,
+      "title": "D3D12.X: empty shader slots keep a two-pass mesh pipeline's cache key",
+      "state": "open",
+      "draft": false,
+      "author": "treybertram06",
+      "at": "2026-11-27T07:20:40Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2975"
+    },
+    {
+      "projectId": "native-victory-macos",
+      "repo": "LakshanSivakumar/Native-Victory-macOS",
+      "number": 250,
+      "title": "fix(shader): trace heap address shifted offsets, carries, phis, and SALU waterfall reads",
+      "state": "open",
+      "draft": false,
+      "author": "Sheffy007",
+      "at": "2026-11-27T07:20:20Z",
+      "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/250"
+    },
+    {
+      "projectId": "avatarmanz",
+      "repo": "avatarmanz/VIctory-7900XTX",
+      "number": 437,
+      "title": "Trees and palms no longer drop out: raw twins of buffer views not on 16 bytes begin at the view's own dword (VICTORY_TWIN_EXACT, on)",
+      "state": "open",
+      "draft": false,
+      "author": "LloydNicholson",
+      "at": "2026-11-27T07:19:54Z",
+      "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/437"
+    },
+    {
+      "projectId": "avatarmanz",
+      "repo": "avatarmanz/VIctory-7900XTX",
+      "number": 439,
+      "title": "[perf] Cargo.toml",
+      "state": "open",
+      "draft": false,
+      "author": "hkiceflow",
+      "at": "2026-11-27T07:19:41Z",
+      "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/439"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 3377,
+      "title": "Shaders: lower partial-channel typed and indexed sub-dword buffer stores",
+      "state": "open",
+      "draft": false,
+      "author": "Texbirds",
+      "at": "2026-11-27T07:19:29Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/3377"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 2672,
+      "title": "loader: keep mapped DLLs inside the title directory",
+      "state": "open",
+      "draft": false,
+      "author": "Rickeal-Boss",
+      "at": "2026-11-27T07:19:19Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/2672"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2635,
+      "title": "D3D12.X: batch used-pipelines.txt writes off the bind lock",
+      "state": "open",
+      "draft": false,
+      "author": "Decodere",
+      "at": "2026-11-27T07:19:09Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2635"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2224,
+      "title": "D3D12.X: abort failed device batches and restore pending in title_textures::upload_all",
+      "state": "open",
+      "draft": false,
+      "author": "Decodere",
+      "at": "2026-11-27T07:19:07Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2224"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 2914,
+      "title": "GPU: marked pages go back to title memory on several threads (#2826)",
+      "state": "open",
+      "draft": false,
+      "author": "kotekompotek",
+      "at": "2026-11-27T07:18:54Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/2914"
+    },
+    {
+      "projectId": "avatarmanz",
+      "repo": "avatarmanz/VIctory-7900XTX",
+      "number": 438,
+      "title": "Renderer port 1 ordering: a run of in-place indirect executions with only state between them clamped in one pass (VICTORY_PORT_CONSTANTS_ORDER_BATCH=1, off by default)",
+      "state": "open",
+      "draft": false,
+      "author": "HAL9000RELOADED",
+      "at": "2026-11-27T07:17:34Z",
+      "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/438"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 3280,
+      "title": "Fix #2412: reject out-of-range export addresses in parse_exports",
+      "state": "open",
+      "draft": false,
+      "author": "tharun-37",
+      "at": "2026-11-27T07:17:20Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/3280"
+    },
+    {
+      "projectId": "avatarmanz",
+      "repo": "avatarmanz/VIctory-7900XTX",
+      "number": 180,
+      "title": "victory-gpu: size-tiered card-buffer headroom and fence-safe LRU demotion",
+      "state": "open",
+      "draft": false,
+      "author": "Vladimir-Human",
+      "at": "2026-11-27T07:17:20Z",
+      "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/180"
+    },
+    {
+      "projectId": "avatarmanz",
+      "repo": "avatarmanz/VIctory-7900XTX",
+      "number": 212,
+      "title": "victory-gpu: add fence-safe texture LRU eviction and budget-aware mip clamping",
+      "state": "open",
+      "draft": false,
+      "author": "Vladimir-Human",
+      "at": "2026-11-27T07:17:19Z",
+      "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/212"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 1602,
+      "title": "Shader tests: f32/int conversions saturate, take NaN as 0, round to even",
+      "state": "open",
+      "draft": false,
+      "author": "vladbondarenko97",
+      "at": "2026-11-27T07:17:14Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/1602"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2984,
+      "title": "README: document scripted gamepad presses",
+      "state": "open",
+      "draft": true,
+      "author": "luckyteagirl",
+      "at": "2026-11-27T07:17:11Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2984"
+    },
+    {
+      "projectId": "i95-gta6-pc-launcher",
+      "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
+      "sha": "a92e499",
+      "message": "Update: Five Star, Vice-Tay, VIniVIdiVIci to upstream heads; stars and times",
+      "author": "DesignWithTommy",
+      "at": "2026-11-27T07:17:06Z",
+      "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/a92e4997b5acf4cfb55d9b1a2b7ba331239fed0b"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 3362,
+      "title": "fix(shader): reject modified v_add_co_ci_u32 in address carry tracing",
+      "state": "open",
+      "draft": false,
+      "author": "reeledMarek",
+      "at": "2026-11-27T07:17:04Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/3362"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2981,
+      "title": "D3D12.X: flush pending tile mappings before submit and fix VRAM unmap/retire races",
+      "state": "open",
+      "draft": false,
+      "author": "Saksukella",
+      "at": "2026-11-27T07:16:30Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2981"
+    },
+    {
+      "projectId": "victory-gta6",
+      "repo": "fxceless/victory-fork",
+      "number": 1126,
+      "title": "perf(shader): add DXIL pure LICM, canonical ptr-path LDS forwarding, and barrier dedup",
+      "state": "open",
+      "draft": false,
+      "author": "Vladimir-Human",
+      "at": "2026-11-27T07:16:26Z",
+      "url": "https://github.com/fxceless/victory-fork/pull/1126"
+    },
+    {
+      "projectId": "victory-gta6",
+      "repo": "fxceless/victory-fork",
+      "number": 1178,
+      "title": "gpu: opt-in lazy GPU write-back (VEH), O(dirty) CopiedPages, AVX2 shadow & AdapterKey PSO",
+      "state": "open",
+      "draft": false,
+      "author": "Vladimir-Human",
+      "at": "2026-11-27T07:16:25Z",
+      "url": "https://github.com/fxceless/victory-fork/pull/1178"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 3378,
+      "title": "GPU: the dropped passes a presented image reads go first in the pipeline queue",
+      "state": "open",
+      "draft": false,
+      "author": "neonbyte1",
+      "at": "2026-11-27T07:16:09Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/3378"
+    },
+    {
+      "projectId": "victory-gta6",
+      "repo": "fxceless/victory-fork",
+      "number": 1280,
+      "title": "victory-gpu: size-tiered card-buffer headroom and fence-safe LRU demotion (#1163)",
+      "state": "open",
+      "draft": false,
+      "author": "Vladimir-Human",
+      "at": "2026-11-27T07:16:01Z",
+      "url": "https://github.com/fxceless/victory-fork/pull/1280"
+    },
+    {
+      "projectId": "victory-gta6",
+      "repo": "fxceless/victory-fork",
+      "number": 1286,
+      "title": "perf(victory-gpu): reduce host System RAM footprint via VM decommit and cold pool/DXIL trimming",
+      "state": "open",
+      "draft": false,
+      "author": "Vladimir-Human",
+      "at": "2026-11-27T07:15:59Z",
+      "url": "https://github.com/fxceless/victory-fork/pull/1286"
+    },
+    {
+      "projectId": "victory-gta6",
+      "repo": "fxceless/victory-fork",
+      "number": 1289,
+      "title": "gpu: fence-safe LRU texture eviction and budget-aware mip clamping",
+      "state": "open",
+      "draft": false,
+      "author": "Vladimir-Human",
+      "at": "2026-11-27T07:15:58Z",
+      "url": "https://github.com/fxceless/victory-fork/pull/1289"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 3402,
+      "title": "Shaders: one lane of a whole-wave section's value, read after the section",
+      "state": "open",
+      "draft": false,
+      "author": "Lyrnc",
+      "at": "2026-11-27T07:15:21Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/3402"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 3401,
+      "title": "Shaders: the SCC of a lane-mask operation, read as data, is whether the mask is not zero",
+      "state": "open",
+      "draft": false,
+      "author": "Lyrnc",
+      "at": "2026-11-27T07:15:21Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/3401"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 3479,
+      "title": "Shaders: probe v_cvt_f32_i32 at its rounding midpoints",
+      "state": "open",
+      "draft": false,
+      "author": "noobezlol",
+      "at": "2026-11-27T07:15:20Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/3479"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2694,
+      "title": "VFS: route MAXIMUM_ALLOWED opens through the overlay",
+      "state": "open",
+      "draft": false,
+      "author": "luckyteagirl",
+      "at": "2026-11-27T07:15:08Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2694"
+    },
+    {
+      "projectId": "playablegames-peppa",
+      "repo": "Peppacodes/playablegames-peppa",
+      "number": 24,
+      "title": "The owner's floor and dark inside: a reflection cap and a stronger light stand-in (off by default), and a crash fix",
+      "state": "open",
+      "draft": true,
+      "author": "Peppacodes",
+      "at": "2026-11-27T07:15:08Z",
+      "url": "https://github.com/Peppacodes/playablegames-peppa/pull/24"
+    },
+    {
+      "projectId": "victory-gta6",
+      "repo": "fxceless/victory-fork",
+      "number": 20,
+      "title": "GPU: compile our run-time HLSL with DXC when the system compiler refuses it (Wine/Proton)",
+      "state": "open",
+      "draft": false,
+      "author": "ErRusso",
+      "at": "2026-11-27T07:14:39Z",
+      "url": "https://github.com/fxceless/victory-fork/pull/20"
+    },
+    {
+      "projectId": "xbox2windows",
+      "repo": "R0Y00/Xbox2Windows",
+      "number": 2911,
+      "title": "xmem: make page runs cheaper under Wine",
+      "state": "open",
+      "draft": false,
+      "author": "JohnConnorNPC",
+      "at": "2026-11-27T07:14:06Z",
+      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2911"
+    },
+    {
+      "projectId": "tuxbox",
+      "repo": "brcly/TuxBox",
+      "number": 303,
+      "title": "d3d12: narrow a direct-indexed program's texture writes to what it can store through",
+      "state": "open",
+      "draft": false,
+      "author": "NickStallman",
+      "at": "2026-11-27T07:13:21Z",
+      "url": "https://github.com/brcly/TuxBox/pull/303"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2983,
+      "title": "xcl run: skip startup shader preparation when no pipeline device exists (#2958)",
+      "state": "open",
+      "draft": false,
+      "author": "retrope13",
+      "at": "2026-11-27T07:12:51Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2983"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2980,
+      "title": "Scripts: repeat smoke runs with separate artifacts",
+      "state": "open",
+      "draft": true,
+      "author": "luckyteagirl",
+      "at": "2026-11-27T07:12:28Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2980"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2938,
+      "title": "D3D12.X: ~43x FPS over main on Series X (0.58 -> 25.3 fps, ~7x over #2844): XCL_UMA_DRIVER=mixed keeps part of the coherent window in VRAM",
+      "state": "open",
+      "draft": true,
+      "author": "Kalmarv",
+      "at": "2026-11-27T07:12:08Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2938"
+    },
+    {
+      "projectId": "leonida-continued",
+      "repo": "ubiquitarianism/leonida",
+      "number": 2435,
+      "title": "rdna2spirv: --mesh-serial-waves, an emulated mesh program's waves one after the other (SHADER-W64-MESH-SERIAL-WAVES)",
+      "state": "open",
+      "draft": false,
+      "author": "quartz-heron-58",
+      "at": "2026-11-27T07:12:05Z",
+      "url": "https://github.com/ubiquitarianism/leonida/pull/2435"
+    },
+    {
+      "projectId": "victory-gta6",
+      "repo": "fxceless/victory-fork",
+      "number": 1302,
+      "title": "feat: deterministic traversal benchmark & closed-loop optimization harness",
+      "state": "open",
+      "draft": false,
+      "author": "Vladimir-Human",
+      "at": "2026-11-27T07:11:45Z",
+      "url": "https://github.com/fxceless/victory-fork/pull/1302"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 481,
+      "title": "PC optimization: add DLSS, low-VRAM/RAM scaling, borderless/tearing s…",
+      "state": "closed",
+      "draft": false,
+      "author": "akshai000777",
+      "at": "2026-11-27T07:10:58Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/481"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 3428,
+      "title": "fix(victory-shader): lowers() needs second argument",
+      "state": "closed",
+      "draft": false,
+      "author": "ConstCorrectness",
+      "at": "2026-11-27T07:10:56Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/3428"
+    },
+    {
+      "projectId": "victory-gta6",
+      "repo": "fxceless/victory-fork",
+      "number": 1140,
+      "title": "shader: static Wave32 LDS alias & lane-private analysis for native Wave32 compute",
+      "state": "open",
+      "draft": false,
+      "author": "Vladimir-Human",
+      "at": "2026-11-27T07:10:33Z",
+      "url": "https://github.com/fxceless/victory-fork/pull/1140"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2572,
+      "title": "Nvidia dev",
+      "state": "open",
+      "draft": false,
+      "author": "bmjask",
+      "at": "2026-11-27T07:10:09Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2572"
+    },
+    {
+      "projectId": "five-star-recomp",
+      "repo": "ThatRecompDev/five-star-recomp",
+      "sha": "9ec6f20",
+      "message": "Status: the device loss was the driver's shader table; lighting shades on a branch",
+      "author": "ThatRecompDev",
+      "at": "2026-11-27T07:09:32Z",
+      "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/9ec6f2014290a4e866f187bd5c3bca575a66b677"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 3184,
+      "title": "GPU: list calls can translate on worker threads (VICTORY_DEFER_LISTS, opt-in)",
+      "state": "closed",
+      "draft": false,
+      "author": "AurumCarlos",
+      "at": "2026-11-27T07:09:10Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/3184"
+    },
+    {
+      "projectId": "native-victory-macos",
+      "repo": "LakshanSivakumar/Native-Victory-macOS",
+      "number": 270,
+      "title": "run-summary: prewarm and audio lines, refusal frames, and the times o…",
+      "state": "open",
+      "draft": false,
+      "author": "AnastasisKon",
+      "at": "2026-11-27T07:09:02Z",
+      "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/270"
+    },
+    {
+      "projectId": "native-victory-macos",
+      "repo": "LakshanSivakumar/Native-Victory-macOS",
+      "number": 269,
+      "title": "shader: pin the pixel input-address bit table in io.rs",
+      "state": "open",
+      "draft": false,
+      "author": "AnastasisKon",
+      "at": "2026-11-27T07:08:56Z",
+      "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/269"
+    },
+    {
+      "projectId": "native-victory-macos",
+      "repo": "LakshanSivakumar/Native-Victory-macOS",
+      "number": 268,
+      "title": "docs: the runtime switches the code has and the diagnostics list does…",
+      "state": "open",
+      "draft": false,
+      "author": "AnastasisKon",
+      "at": "2026-11-27T07:08:29Z",
+      "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/268"
+    },
+    {
+      "projectId": "five-star-recomp",
+      "repo": "ThatRecompDev/five-star-recomp",
+      "sha": "57411f8",
+      "message": "Docs: loader rows for the device-removal options",
+      "author": "ThatRecompDev",
+      "at": "2026-11-27T07:07:48Z",
+      "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/57411f8fbcdd5576728cb331d220a41490759e5f"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2815,
+      "title": "D3D12.X: reclaim two-pass buffers on submit fence completion",
+      "state": "open",
+      "draft": false,
+      "author": "coolpersonnn",
+      "at": "2026-11-27T07:07:46Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2815"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2816,
+      "title": "D3D12.X: size two-pass indirect buffers from GPU feedback and finer buckets",
+      "state": "open",
+      "draft": false,
+      "author": "coolpersonnn",
+      "at": "2026-11-27T07:07:45Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2816"
+    },
+    {
+      "projectId": "five-star-recomp",
+      "repo": "ThatRecompDev/five-star-recomp",
+      "sha": "6d54666",
+      "message": "Loader: --no-gpu-timeout makes the game's queues without the GPU timeout",
+      "author": "ThatRecompDev",
+      "at": "2026-11-27T07:07:30Z",
+      "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/6d5466666c75ff9348a33be6eaec76a639e69a97"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 3357,
+      "title": "Shaders: reuse decoded instructions across range rebuilds",
+      "state": "open",
+      "draft": false,
+      "author": "borosf",
+      "at": "2026-11-27T07:07:28Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/3357"
+    },
+    {
+      "projectId": "marvis",
+      "repo": "Marvisak/VIctory",
+      "number": 2118,
+      "title": "GPU: the BVH builder runs whole or not at all",
+      "state": "open",
+      "draft": false,
+      "author": "0xkn0wh3r3",
+      "at": "2026-11-27T07:07:01Z",
+      "url": "https://github.com/Marvisak/VIctory/pull/2118"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 496,
+      "title": "Recover pipeline workers from Rust panics on a-publier",
+      "state": "open",
+      "draft": false,
+      "author": "ammaster10s",
+      "at": "2026-11-27T07:06:33Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/496"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 199,
+      "title": "gpu: replace O(N) bindless_plan scans with O(dirty) incremental tracking",
+      "state": "open",
+      "draft": false,
+      "author": "Vladimir-Human",
+      "at": "2026-11-27T07:06:23Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/199"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 195,
+      "title": "perf(formats): add AVX2/SSE2 256B micro-tile texture detiler and DetilePool",
+      "state": "open",
+      "draft": false,
+      "author": "Vladimir-Human",
+      "at": "2026-11-27T07:06:22Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/195"
+    },
+    {
       "projectId": "belobug",
       "repo": "Belobug/VIctory-Belobug-AMD",
       "number": 491,
@@ -16885,8 +17808,116 @@
       "state": "open",
       "draft": false,
       "author": "0xkn0wh3r3",
-      "at": "2026-11-27T07:01:17Z",
+      "at": "2026-11-27T07:04:37Z",
       "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/491"
+    },
+    {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2978,
+      "title": "Tests: bind both descriptor heaps before the arena root signature",
+      "state": "open",
+      "draft": true,
+      "author": "luckyteagirl",
+      "at": "2026-11-27T07:04:29Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2978"
+    },
+    {
+      "projectId": "native-victory-macos",
+      "repo": "LakshanSivakumar/Native-Victory-macOS",
+      "number": 267,
+      "title": "native: heap buffer views not linear in one pool read the title's own mapping instead of the null view (#258)",
+      "state": "open",
+      "draft": false,
+      "author": "Olima34",
+      "at": "2026-11-27T07:03:45Z",
+      "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/267"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 464,
+      "title": "Intel lowmem tuning",
+      "state": "open",
+      "draft": false,
+      "author": "michael04flynn-sketch",
+      "at": "2026-11-27T07:03:13Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/464"
+    },
+    {
+      "projectId": "xbox2windows",
+      "repo": "R0Y00/Xbox2Windows",
+      "number": 2920,
+      "title": "startup: gate the BVH builder compute stages all or none",
+      "state": "open",
+      "draft": false,
+      "author": "lambirou",
+      "at": "2026-11-27T07:03:06Z",
+      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2920"
+    },
+    {
+      "projectId": "i95-gta6-pc-launcher",
+      "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
+      "sha": "485c5bf",
+      "message": "Update: NVIDIA, ScarlettPort, Vice-Tay and others to upstream heads; stars and times",
+      "author": "DesignWithTommy",
+      "at": "2026-11-27T07:02:17Z",
+      "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/485c5bf2cc06e29553e97a2434311bbb378a5361"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 476,
+      "title": "Diagnostics: copies up and back by the title's memory protection (VICTORY_WC_STATS=1)",
+      "state": "open",
+      "draft": false,
+      "author": "icecreammule277-dot",
+      "at": "2026-11-27T07:01:48Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/476"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 477,
+      "title": "VICTORY_WC_NO_BACK=1: shaders' writes into write-combined title memory stay on the card (with a read census)",
+      "state": "open",
+      "draft": false,
+      "author": "icecreammule277-dot",
+      "at": "2026-11-27T07:01:46Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/477"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 478,
+      "title": "GPU: the write guard makes only view memory read-only (a kernel-sent SIGSEGV under Wine)",
+      "state": "open",
+      "draft": false,
+      "author": "cmt8",
+      "at": "2026-11-27T07:01:44Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/478"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 479,
+      "title": "Translate geometry shaders and streamline shader cache keys",
+      "state": "open",
+      "draft": false,
+      "author": "agonisingbasher",
+      "at": "2026-11-27T07:01:42Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/479"
+    },
+    {
+      "projectId": "belobug",
+      "repo": "Belobug/VIctory-Belobug-AMD",
+      "number": 480,
+      "title": "perf(gpu,loader): adaptive RAM/VRAM memory pools and faster submit preparation",
+      "state": "open",
+      "draft": false,
+      "author": "bla1r1",
+      "at": "2026-11-27T07:01:40Z",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/480"
     },
     {
       "projectId": "victory-gta6",
@@ -16898,17 +17929,6 @@
       "author": "Vladimir-Human",
       "at": "2026-11-27T07:00:37Z",
       "url": "https://github.com/fxceless/victory-fork/pull/1293"
-    },
-    {
-      "projectId": "avatarmanz",
-      "repo": "avatarmanz/VIctory-7900XTX",
-      "number": 437,
-      "title": "Trees and palms no longer drop out: raw twins of buffer views not on 16 bytes begin at the view's own dword (VICTORY_TWIN_EXACT, on)",
-      "state": "open",
-      "draft": false,
-      "author": "LloydNicholson",
-      "at": "2026-11-27T07:00:30Z",
-      "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/437"
     },
     {
       "projectId": "leonida-continued",
@@ -16933,17 +17953,6 @@
       "url": "https://github.com/xcl-dev/xcl/pull/2721"
     },
     {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2969,
-      "title": "Scripts: stop record writer fallback scans at a return",
-      "state": "closed",
-      "draft": true,
-      "author": "luckyteagirl",
-      "at": "2026-11-27T06:59:06Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2969"
-    },
-    {
       "projectId": "xbox2windows",
       "repo": "R0Y00/Xbox2Windows",
       "number": 2899,
@@ -16955,6 +17964,17 @@
       "url": "https://github.com/R0Y00/Xbox2Windows/pull/2899"
     },
     {
+      "projectId": "xcl",
+      "repo": "xcl-dev/xcl",
+      "number": 2969,
+      "title": "Scripts: stop record writer fallback scans at a return",
+      "state": "closed",
+      "draft": true,
+      "author": "luckyteagirl",
+      "at": "2026-11-27T06:59:06Z",
+      "url": "https://github.com/xcl-dev/xcl/pull/2969"
+    },
+    {
       "projectId": "avatarmanz",
       "repo": "avatarmanz/VIctory-7900XTX",
       "number": 166,
@@ -16964,17 +17984,6 @@
       "author": "Beqren",
       "at": "2026-11-27T06:59:04Z",
       "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/166"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2980,
-      "title": "Scripts: repeat smoke runs with separate artifacts",
-      "state": "open",
-      "draft": true,
-      "author": "luckyteagirl",
-      "at": "2026-11-27T06:58:39Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2980"
     },
     {
       "projectId": "xcl",
@@ -17021,28 +18030,6 @@
       "url": "https://github.com/Marvisak/VIctory/pull/3342"
     },
     {
-      "projectId": "belobug",
-      "repo": "Belobug/VIctory-Belobug-AMD",
-      "number": 481,
-      "title": "PC optimization: add DLSS, low-VRAM/RAM scaling, borderless/tearing s…",
-      "state": "open",
-      "draft": false,
-      "author": "akshai000777",
-      "at": "2026-11-27T06:57:16Z",
-      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/481"
-    },
-    {
-      "projectId": "marvis",
-      "repo": "Marvisak/VIctory",
-      "number": 3402,
-      "title": "Shaders: one lane of a whole-wave section's value, read after the section",
-      "state": "open",
-      "draft": false,
-      "author": "Lyrnc",
-      "at": "2026-11-27T06:57:11Z",
-      "url": "https://github.com/Marvisak/VIctory/pull/3402"
-    },
-    {
       "projectId": "marvis",
       "repo": "Marvisak/VIctory",
       "number": 3421,
@@ -17052,17 +18039,6 @@
       "author": "danielibabet",
       "at": "2026-11-27T06:56:49Z",
       "url": "https://github.com/Marvisak/VIctory/pull/3421"
-    },
-    {
-      "projectId": "marvis",
-      "repo": "Marvisak/VIctory",
-      "number": 3401,
-      "title": "Shaders: the SCC of a lane-mask operation, read as data, is whether the mask is not zero",
-      "state": "open",
-      "draft": false,
-      "author": "Lyrnc",
-      "at": "2026-11-27T06:56:49Z",
-      "url": "https://github.com/Marvisak/VIctory/pull/3401"
     },
     {
       "projectId": "marvis",
@@ -17085,17 +18061,6 @@
       "author": "stojbde",
       "at": "2026-11-27T06:56:43Z",
       "url": "https://github.com/fxceless/victory-fork/pull/100"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2975,
-      "title": "D3D12.X: empty shader slots keep a two-pass mesh pipeline's cache key",
-      "state": "open",
-      "draft": false,
-      "author": "treybertram06",
-      "at": "2026-11-27T06:56:39Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2975"
     },
     {
       "projectId": "xcl",
@@ -17318,17 +18283,6 @@
     {
       "projectId": "xcl",
       "repo": "xcl-dev/xcl",
-      "number": 2861,
-      "title": "D3D12.X: PC CreateCommandList gives the driver the pipeline behind a stand-in",
-      "state": "open",
-      "draft": true,
-      "author": "oni-swr",
-      "at": "2026-11-27T06:53:09Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2861"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
       "number": 2843,
       "title": "D3D12.X: title fence sync entries own their ID3D12Fence (#2840)",
       "state": "open",
@@ -17378,17 +18332,6 @@
       "author": "robot00f",
       "at": "2026-11-27T06:52:11Z",
       "url": "https://github.com/ubiquitarianism/leonida/pull/2119"
-    },
-    {
-      "projectId": "native-victory-macos",
-      "repo": "LakshanSivakumar/Native-Victory-macOS",
-      "number": 267,
-      "title": "native: heap buffer views not linear in one pool read the title's own mapping instead of the null view (#258)",
-      "state": "open",
-      "draft": false,
-      "author": "Olima34",
-      "at": "2026-11-27T06:52:08Z",
-      "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/267"
     },
     {
       "projectId": "belobug",
@@ -17523,17 +18466,6 @@
       "url": "https://github.com/xcl-dev/xcl/pull/1144"
     },
     {
-      "projectId": "belobug",
-      "repo": "Belobug/VIctory-Belobug-AMD",
-      "number": 451,
-      "title": "GPU: pool and recycle shadow::exact() buffers with GPU quarantine (#346)",
-      "state": "open",
-      "draft": false,
-      "author": "BE29ZZ",
-      "at": "2026-11-27T06:50:20Z",
-      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/451"
-    },
-    {
       "projectId": "xbox2windows",
       "repo": "R0Y00/Xbox2Windows",
       "number": 2897,
@@ -17653,17 +18585,6 @@
       "url": "https://github.com/R0Y00/Xbox2Windows/pull/3022"
     },
     {
-      "projectId": "playablegames-peppa",
-      "repo": "Peppacodes/playablegames-peppa",
-      "number": 24,
-      "title": "The owner's floor and dark inside: a reflection cap and a stronger light stand-in (off by default), and a crash fix",
-      "state": "open",
-      "draft": true,
-      "author": "Peppacodes",
-      "at": "2026-11-27T06:48:53Z",
-      "url": "https://github.com/Peppacodes/playablegames-peppa/pull/24"
-    },
-    {
       "projectId": "belobug",
       "repo": "Belobug/VIctory-Belobug-AMD",
       "number": 449,
@@ -17752,26 +18673,13 @@
       "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/428"
     },
     {
-      "projectId": "native-victory-macos",
-      "repo": "LakshanSivakumar/Native-Victory-macOS",
-      "number": 250,
-      "title": "fix(shader): trace heap address shifted offsets, carries, phis, and SALU waterfall reads",
-      "state": "open",
-      "draft": false,
-      "author": "Sheffy007",
-      "at": "2026-11-27T06:47:42Z",
-      "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/250"
-    },
-    {
-      "projectId": "leonida-continued",
-      "repo": "ubiquitarianism/leonida",
-      "number": 2435,
-      "title": "rdna2spirv: --mesh-serial-waves, an emulated mesh program's waves one after the other (SHADER-W64-MESH-SERIAL-WAVES)",
-      "state": "open",
-      "draft": false,
-      "author": "quartz-heron-58",
-      "at": "2026-11-27T06:47:39Z",
-      "url": "https://github.com/ubiquitarianism/leonida/pull/2435"
+      "projectId": "five-star-recomp",
+      "repo": "ThatRecompDev/five-star-recomp",
+      "sha": "b21ca33",
+      "message": "Loader: the driver's background shader work off; pipelines can be given up",
+      "author": "ThatRecompDev",
+      "at": "2026-11-27T06:47:48Z",
+      "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/b21ca331789bfe82590604092dee092768e1a491"
     },
     {
       "projectId": "xbox2windows",
@@ -17801,17 +18709,6 @@
       "author": "DesignWithTommy",
       "at": "2026-11-27T06:47:19Z",
       "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/5756e0bfad96b606b4f5fe270c25ae97958634c5"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2938,
-      "title": "D3D12.X: ~43x FPS over main on Series X (0.58 -> 25.3 fps, ~7x over #2844): XCL_UMA_DRIVER=mixed keeps part of the coherent window in VRAM",
-      "state": "open",
-      "draft": true,
-      "author": "Kalmarv",
-      "at": "2026-11-27T06:47:14Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2938"
     },
     {
       "projectId": "native-victory-macos",
@@ -17847,17 +18744,6 @@
       "url": "https://github.com/Marvisak/VIctory/pull/2879"
     },
     {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2977,
-      "title": "D3D12.X: the driver heap's grooming reserves stretches a smaller window fits in",
-      "state": "open",
-      "draft": false,
-      "author": "Prime1997",
-      "at": "2026-11-27T06:42:21Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2977"
-    },
-    {
       "projectId": "native-victory-macos",
       "repo": "LakshanSivakumar/Native-Victory-macOS",
       "number": 264,
@@ -17880,17 +18766,6 @@
       "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/263"
     },
     {
-      "projectId": "victory-gta6",
-      "repo": "fxceless/victory-fork",
-      "number": 1440,
-      "title": "Shaders: fix workspace clippy lints in wave64_after_loop and valu_tests",
-      "state": "open",
-      "draft": false,
-      "author": "n-romanovich",
-      "at": "2026-11-27T06:41:30Z",
-      "url": "https://github.com/fxceless/victory-fork/pull/1440"
-    },
-    {
       "projectId": "xcl",
       "repo": "xcl-dev/xcl",
       "sha": "83b0081",
@@ -17898,17 +18773,6 @@
       "author": "Prime1997",
       "at": "2026-11-27T06:41:22Z",
       "url": "https://github.com/xcl-dev/xcl/commit/83b008188efbf954b846667f48d75e3fa9310a01"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2911,
-      "title": "xmem: make page runs cheaper under Wine",
-      "state": "open",
-      "draft": false,
-      "author": "JohnConnorNPC",
-      "at": "2026-11-27T06:38:45Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2911"
     },
     {
       "projectId": "i95-gta6-pc-launcher",
@@ -17938,17 +18802,6 @@
       "author": "Anzymanz",
       "at": "2026-11-27T06:33:24Z",
       "url": "https://github.com/LooperSalty/AnyXboxX/pull/481"
-    },
-    {
-      "projectId": "avatarmanz",
-      "repo": "avatarmanz/VIctory-7900XTX",
-      "number": 436,
-      "title": "GPU: fills of upload memory behind a copy take its bytes (VICTORY_FILL_FORWARD=1, off by default; from Grimkaaah)",
-      "state": "open",
-      "draft": false,
-      "author": "LeonardoS11",
-      "at": "2026-11-27T06:32:56Z",
-      "url": "https://github.com/avatarmanz/VIctory-7900XTX/pull/436"
     },
     {
       "projectId": "i95-gta6-pc-launcher",
@@ -18073,6 +18926,15 @@
       "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/356"
     },
     {
+      "projectId": "i95-gta6-pc-launcher",
+      "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
+      "sha": "3ce4c70",
+      "message": "Loader: 960x540 (16:9, the picture's shape), status line and road along its bottom",
+      "author": "DesignWithTommy",
+      "at": "2026-11-27T06:26:31Z",
+      "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/3ce4c70a759fef3900a08b9c2fe985a08012ca3d"
+    },
+    {
       "projectId": "belobug",
       "repo": "Belobug/VIctory-Belobug-AMD",
       "number": 339,
@@ -18082,15 +18944,6 @@
       "author": "thejacte",
       "at": "2026-11-27T06:26:31Z",
       "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/339"
-    },
-    {
-      "projectId": "i95-gta6-pc-launcher",
-      "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
-      "sha": "3ce4c70",
-      "message": "Loader: 960x540 (16:9, the picture's shape), status line and road along its bottom",
-      "author": "DesignWithTommy",
-      "at": "2026-11-27T06:26:31Z",
-      "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/3ce4c70a759fef3900a08b9c2fe985a08012ca3d"
     },
     {
       "projectId": "belobug",
@@ -18597,28 +19450,6 @@
       "url": "https://github.com/xcl-dev/xcl/pull/2027"
     },
     {
-      "projectId": "belobug",
-      "repo": "Belobug/VIctory-Belobug-AMD",
-      "number": 231,
-      "title": "GPU: refresh an uploaded texture view from its current GPU writer",
-      "state": "open",
-      "draft": false,
-      "author": "pokces",
-      "at": "2026-11-27T05:55:11Z",
-      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/231"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2385,
-      "title": "D3D12.X: sampled textures go without their top mips while video memory fills up",
-      "state": "open",
-      "draft": false,
-      "author": "NWProgramming00",
-      "at": "2026-11-27T05:54:39Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2385"
-    },
-    {
       "projectId": "xcl",
       "repo": "xcl-dev/xcl",
       "number": 2974,
@@ -18628,17 +19459,6 @@
       "author": "luckyteagirl",
       "at": "2026-11-27T05:54:03Z",
       "url": "https://github.com/xcl-dev/xcl/pull/2974"
-    },
-    {
-      "projectId": "belobug",
-      "repo": "Belobug/VIctory-Belobug-AMD",
-      "number": 480,
-      "title": "perf(gpu,loader): adaptive RAM/VRAM memory pools and faster submit preparation",
-      "state": "open",
-      "draft": false,
-      "author": "bla1r1",
-      "at": "2026-11-27T05:53:54Z",
-      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/480"
     },
     {
       "projectId": "leonida-continued",
@@ -18738,834 +19558,56 @@
       "author": "mgunes1311-lab",
       "at": "2026-11-27T05:50:42Z",
       "url": "https://github.com/Marvisak/VIctory/pull/1975"
-    },
-    {
-      "projectId": "marvis",
-      "repo": "Marvisak/VIctory",
-      "number": 1732,
-      "title": "GPU: f32_to_half keeps NaN and rounds normals to nearest even (#843)",
-      "state": "open",
-      "draft": false,
-      "author": "moe-miau",
-      "at": "2026-11-27T05:50:42Z",
-      "url": "https://github.com/Marvisak/VIctory/pull/1732"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2864,
-      "title": "DirectStorage: keep unpacked file requests on disk (XCL_DSTORAGE_CACHE)",
-      "state": "open",
-      "draft": false,
-      "author": "ozimchuk",
-      "at": "2026-11-27T05:50:41Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2864"
-    },
-    {
-      "projectId": "leonida-continued",
-      "repo": "ubiquitarianism/leonida",
-      "number": 2421,
-      "title": "tests: handle inline external URLs and CommonMark fences in doc validators",
-      "state": "open",
-      "draft": false,
-      "author": "Andretuta",
-      "at": "2026-11-27T05:49:16Z",
-      "url": "https://github.com/ubiquitarianism/leonida/pull/2421"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2898,
-      "title": "D3D12.X: pack sparse pool tile reuse into the fullest heap",
-      "state": "open",
-      "draft": false,
-      "author": "itsSio",
-      "at": "2026-11-27T05:49:07Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2898"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2972,
-      "title": "README: explain adapter selection on multi-GPU systems",
-      "state": "open",
-      "draft": true,
-      "author": "luckyteagirl",
-      "at": "2026-11-27T05:48:52Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2972"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2900,
-      "title": "fix(shader): prove scalar runs before compute EXEC restores",
-      "state": "open",
-      "draft": false,
-      "author": "brainbudt",
-      "at": "2026-11-27T05:48:51Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2900"
-    },
-    {
-      "projectId": "leonida-continued",
-      "repo": "ubiquitarianism/leonida",
-      "number": 2420,
-      "title": "tools/address_guard: match runtime 48-bit wraparound spans and header last_module field",
-      "state": "open",
-      "draft": false,
-      "author": "Andretuta",
-      "at": "2026-11-27T05:48:06Z",
-      "url": "https://github.com/ubiquitarianism/leonida/pull/2420"
-    },
-    {
-      "projectId": "dexnom",
-      "repo": "DexNom/VIctory",
-      "number": 101,
-      "title": "Lower the operations 0x218 programs use that were refused",
-      "state": "open",
-      "draft": false,
-      "author": "Castyan",
-      "at": "2026-11-27T05:47:41Z",
-      "url": "https://github.com/DexNom/VIctory/pull/101"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2921,
-      "title": "tests: model the console BVH node set",
-      "state": "merged",
-      "draft": false,
-      "author": "lambirou",
-      "at": "2026-11-27T05:47:23Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2921"
-    },
-    {
-      "projectId": "leonida-continued",
-      "repo": "ubiquitarianism/leonida",
-      "number": 2419,
-      "title": "rdna2spirv: preserve f16 denormals, NaN payloads, and bit-exact clamp in conversions (SHADER-CVT-F16-DENORM-AND-MODS)",
-      "state": "open",
-      "draft": false,
-      "author": "Andretuta",
-      "at": "2026-11-27T05:47:12Z",
-      "url": "https://github.com/ubiquitarianism/leonida/pull/2419"
-    },
-    {
-      "projectId": "dexnom",
-      "repo": "DexNom/VIctory",
-      "number": 128,
-      "title": "Preserve untouched bytes in boxed texture readbacks",
-      "state": "open",
-      "draft": false,
-      "author": "andrewDoing",
-      "at": "2026-11-27T05:46:48Z",
-      "url": "https://github.com/DexNom/VIctory/pull/128"
-    },
-    {
-      "projectId": "i95-gta6-pc-launcher",
-      "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
-      "sha": "f274f4c",
-      "message": "Update: Vilocity, Five Star Recomp, ScarlettPort, Vice-Tay to upstream head; stars and times",
-      "author": "DesignWithTommy",
-      "at": "2026-11-27T05:46:33Z",
-      "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/f274f4cb9590f8a9dd5f776bd63d9f06bd81f56b"
-    },
-    {
-      "projectId": "belobug",
-      "repo": "Belobug/VIctory-Belobug-AMD",
-      "number": 479,
-      "title": "Translate geometry shaders and streamline shader cache keys",
-      "state": "open",
-      "draft": false,
-      "author": "agonisingbasher",
-      "at": "2026-11-27T05:46:29Z",
-      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/479"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 3014,
-      "title": "compile_dxil: add --rekey mode matching shader_cache_rekey.py",
-      "state": "open",
-      "draft": false,
-      "author": "stan495",
-      "at": "2026-11-27T05:45:31Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/3014"
-    },
-    {
-      "projectId": "belobug",
-      "repo": "Belobug/VIctory-Belobug-AMD",
-      "number": 464,
-      "title": "Intel lowmem tuning",
-      "state": "open",
-      "draft": false,
-      "author": "michael04flynn-sketch",
-      "at": "2026-11-27T05:45:03Z",
-      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/464"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2925,
-      "title": "startup: back off the retry for an absent shader cache manifest",
-      "state": "merged",
-      "draft": false,
-      "author": "JB2WIN",
-      "at": "2026-11-27T05:44:12Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2925"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "sha": "6aa5944",
-      "message": "startup: back off missing shader manifest retries (#2925)",
-      "author": "JB2WIN",
-      "at": "2026-11-27T05:44:11Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/commit/6aa594408cf4cfeb052fc41d24701246c8da66ad"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2910,
-      "title": "startup: refuse compute buffer loads through a modified descriptor (#2901)",
-      "state": "open",
-      "draft": false,
-      "author": "Holastor",
-      "at": "2026-11-27T05:43:23Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2910"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2930,
-      "title": "startup: accept SGPR, hex and inline 0 sources in packed f16 add, mul and fma",
-      "state": "open",
-      "draft": true,
-      "author": "Leyukaka",
-      "at": "2026-11-27T05:42:53Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2930"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2993,
-      "title": "runtime: bind table buffers, 2D texture inputs and texture outputs on the in-process compute route",
-      "state": "open",
-      "draft": false,
-      "author": "Leyukaka",
-      "at": "2026-11-27T05:42:41Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2993"
-    },
-    {
-      "projectId": "five-star-recomp",
-      "repo": "ThatRecompDev/five-star-recomp",
-      "sha": "1dd28a5",
-      "message": "Status: no byte order mark",
-      "author": "ThatRecompDev",
-      "at": "2026-11-27T05:42:27Z",
-      "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/1dd28a5e4c74b6f71d76b6931afd6c3a9099448a"
-    },
-    {
-      "projectId": "five-star-recomp",
-      "repo": "ThatRecompDev/five-star-recomp",
-      "sha": "e05cbf9",
-      "message": "Status: the driver's shader table fills up before the device loss",
-      "author": "ThatRecompDev",
-      "at": "2026-11-27T05:42:19Z",
-      "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/e05cbf988444eabfe950cfd4b5ec1bc19780fb40"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "sha": "8617577",
-      "message": "xcl run: XCL_PREPARE=0 starts the title without the shader preparation",
-      "author": "Prime",
-      "at": "2026-11-27T05:41:30Z",
-      "url": "https://github.com/xcl-dev/xcl/commit/8617577b67c3b2c67542ff3d47d6e631967c16c6"
-    },
-    {
-      "projectId": "native-victory-macos",
-      "repo": "LakshanSivakumar/Native-Victory-macOS",
-      "number": 101,
-      "title": "dstorage: persistent block cache for game files on slow mounts (VICTORY_READ_CACHE)",
-      "state": "open",
-      "draft": false,
-      "author": "daidalos4",
-      "at": "2026-11-27T05:41:15Z",
-      "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/101"
-    },
-    {
-      "projectId": "native-victory-macos",
-      "repo": "LakshanSivakumar/Native-Victory-macOS",
-      "number": 49,
-      "title": "shader: support scaled byte vertex fetches",
-      "state": "open",
-      "draft": false,
-      "author": "shabouwcaw",
-      "at": "2026-11-27T05:41:14Z",
-      "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/49"
-    },
-    {
-      "projectId": "native-victory-macos",
-      "repo": "LakshanSivakumar/Native-Victory-macOS",
-      "number": 253,
-      "title": "shader: exchange between host waves in a block that holds the title's barrier (the other 3 G-buffer culling shaders, #182)",
-      "state": "open",
-      "draft": false,
-      "author": "Olima34",
-      "at": "2026-11-27T05:41:13Z",
-      "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/253"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "sha": "2944b05",
-      "message": "tests: model the console BVH node set (#2921)",
-      "author": "Roland Edi",
-      "at": "2026-11-27T05:41:10Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/commit/2944b0502b62bddc121fb485402c427e51271ced"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2924,
-      "title": "docs: plan slot 57 mesh DXIL translation",
-      "state": "merged",
-      "draft": false,
-      "author": "lambirou",
-      "at": "2026-11-27T05:41:02Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2924"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "sha": "17f27f8",
-      "message": "docs: plan slot 57 mesh DXIL translation (#2924)",
-      "author": "Roland Edi",
-      "at": "2026-11-27T05:41:01Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/commit/17f27f85e3eaab11e3c308c426306690a4027f7d"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2981,
-      "title": "runtime: compile a supported graphics pair on first use in the stand-in",
-      "state": "open",
-      "draft": false,
-      "author": "R0Y00",
-      "at": "2026-11-27T05:40:48Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2981"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2923,
-      "title": "docs: plan EXEC removal and structurization",
-      "state": "merged",
-      "draft": false,
-      "author": "lambirou",
-      "at": "2026-11-27T05:40:47Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2923"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "sha": "cbae12f",
-      "message": "docs: plan EXEC removal and structurization (#2923)",
-      "author": "Roland Edi",
-      "at": "2026-11-27T05:40:46Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/commit/cbae12fd7942a6df55f7a8bd31a19efaacb6aca1"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 3011,
-      "title": "shader: lower signed and clamped 32-bit add/sub in the direct compute path",
-      "state": "open",
-      "draft": false,
-      "author": "legacy-code-archaeologist",
-      "at": "2026-11-27T05:38:35Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/3011"
-    },
-    {
-      "projectId": "belobug",
-      "repo": "Belobug/VIctory-Belobug-AMD",
-      "number": 469,
-      "title": "[WIP / Draft] Parallel DXR 1.1 acceleration structures (Stage 1) behind VICTORY_DXR_RAYQUERY=1",
-      "state": "open",
-      "draft": true,
-      "author": "Fran-co-F",
-      "at": "2026-11-27T05:38:27Z",
-      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/469"
-    },
-    {
-      "projectId": "belobug",
-      "repo": "Belobug/VIctory-Belobug-AMD",
-      "number": 470,
-      "title": "Files: read-only opens go through the host file cache, and a failed texture detile is retried",
-      "state": "open",
-      "draft": false,
-      "author": "remembering7896",
-      "at": "2026-11-27T05:38:17Z",
-      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/470"
-    },
-    {
-      "projectId": "belobug",
-      "repo": "Belobug/VIctory-Belobug-AMD",
-      "number": 475,
-      "title": "Fuzz the parsers inside cargo test; a damaged shader operand no longer panics",
-      "state": "open",
-      "draft": false,
-      "author": "booomxd",
-      "at": "2026-11-27T05:38:15Z",
-      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/475"
-    },
-    {
-      "projectId": "marvis",
-      "repo": "Marvisak/VIctory",
-      "number": 2703,
-      "title": "GPU: a root constant's dword 4 is a value, not a view offset (#2699)",
-      "state": "open",
-      "draft": false,
-      "author": "Calvix2k",
-      "at": "2026-11-27T05:37:48Z",
-      "url": "https://github.com/Marvisak/VIctory/pull/2703"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 3016,
-      "title": "shader: lower v_perm_b32 and v_lerp_u8 in the direct C++ compute path",
-      "state": "open",
-      "draft": false,
-      "author": "archielcqp-a11y",
-      "at": "2026-11-27T05:37:34Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/3016"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 3018,
-      "title": "shader: lower the non-packed 16-bit integer VOP3 ops in the direct C++ compute path",
-      "state": "open",
-      "draft": false,
-      "author": "archielcqp-a11y",
-      "at": "2026-11-27T05:37:20Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/3018"
-    },
-    {
-      "projectId": "marvis",
-      "repo": "Marvisak/VIctory",
-      "number": 1437,
-      "title": "Shaders: preserve the unwritten high half of packed D16 image loads",
-      "state": "open",
-      "draft": false,
-      "author": "EatCodeSleep2",
-      "at": "2026-11-27T05:37:19Z",
-      "url": "https://github.com/Marvisak/VIctory/pull/1437"
-    },
-    {
-      "projectId": "marvis",
-      "repo": "Marvisak/VIctory",
-      "number": 1385,
-      "title": "Shaders: narrow mesh output bounds from GS_ALLOC_REQ M0 analysis (#201)",
-      "state": "open",
-      "draft": false,
-      "author": "Ctrl-Alt-Haze",
-      "at": "2026-11-27T05:37:18Z",
-      "url": "https://github.com/Marvisak/VIctory/pull/1385"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2960,
-      "title": "startup: lower cube image sampling in gfx2hlsl",
-      "state": "open",
-      "draft": true,
-      "author": "legacy-code-archaeologist",
-      "at": "2026-11-27T05:36:27Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2960"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2961,
-      "title": "startup: bind compute outputs named by a buffer UAV view token",
-      "state": "open",
-      "draft": false,
-      "author": "Miffedrandir",
-      "at": "2026-11-27T05:36:13Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2961"
-    },
-    {
-      "projectId": "leonida-continued",
-      "repo": "ubiquitarianism/leonida",
-      "number": 2416,
-      "title": "rdna2spirv: quad_perm DPP in a pixel shader reads its quad through quad operations (SHADER-PS-DPP-QUAD-OPS)",
-      "state": "open",
-      "draft": false,
-      "author": "ninjahawk",
-      "at": "2026-11-27T05:35:58Z",
-      "url": "https://github.com/ubiquitarianism/leonida/pull/2416"
-    },
-    {
-      "projectId": "belobug",
-      "repo": "Belobug/VIctory-Belobug-AMD",
-      "number": 478,
-      "title": "GPU: the write guard makes only view memory read-only (a kernel-sent SIGSEGV under Wine)",
-      "state": "open",
-      "draft": false,
-      "author": "cmt8",
-      "at": "2026-11-27T05:34:39Z",
-      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/478"
-    },
-    {
-      "projectId": "belobug",
-      "repo": "Belobug/VIctory-Belobug-AMD",
-      "number": 367,
-      "title": "Restore native PS5 DualSense HID fallback in victory-hle",
-      "state": "closed",
-      "draft": false,
-      "author": "nouveeeeec",
-      "at": "2026-11-27T05:33:58Z",
-      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/367"
-    },
-    {
-      "projectId": "i95-gta6-pc-launcher",
-      "repo": "DesignWithTommy/i95-GTA6-PC-Launcher",
-      "sha": "9a2c27c",
-      "message": "Refresh every runtime's reported numbers from the trackers (19 abouts and README rows); cool_fox, ScarlettPort, Vice-Tay, VIctory-NVIDIA, victory-fork to upstream head",
-      "author": "DesignWithTommy",
-      "at": "2026-11-27T05:33:14Z",
-      "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/9a2c27c5e0c059c2bd77ef07776fcf17f9bda36a"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 3007,
-      "title": "shader: lower unfused f32 multiply-adds in the direct compute path",
-      "state": "open",
-      "draft": false,
-      "author": "legacy-code-archaeologist",
-      "at": "2026-11-27T05:33:04Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/3007"
-    },
-    {
-      "projectId": "xin-leonida",
-      "repo": "XinYulian/xin-leonida",
-      "sha": "cf03ae3",
-      "message": "runtime: opt-in shader dispatch skip and raw-mouse disable diagnostics",
-      "author": "XIN",
-      "at": "2026-11-27T05:32:09Z",
-      "url": "https://github.com/XinYulian/xin-leonida/commit/cf03ae39131ed172f7d0e33be305c97106f183d5"
-    },
-    {
-      "projectId": "marvis",
-      "repo": "Marvisak/VIctory",
-      "number": 3111,
-      "title": "Formats/BCPack: restrict BC7 channel rotation to modes 4 and 5",
-      "state": "open",
-      "draft": false,
-      "author": "RVZO6",
-      "at": "2026-11-27T05:32:04Z",
-      "url": "https://github.com/Marvisak/VIctory/pull/3111"
-    },
-    {
-      "projectId": "marvis",
-      "repo": "Marvisak/VIctory",
-      "number": 3466,
-      "title": "GPU: echo requested format and report required count in DXGI GetDisplayModeList",
-      "state": "open",
-      "draft": false,
-      "author": "alexandruiulian201-bot",
-      "at": "2026-11-27T05:31:50Z",
-      "url": "https://github.com/Marvisak/VIctory/pull/3466"
-    },
-    {
-      "projectId": "marvis",
-      "repo": "Marvisak/VIctory",
-      "number": 2657,
-      "title": "Shaders: scope DXIL bitcode liveness to reachable blocks and live phi edges",
-      "state": "open",
-      "draft": false,
-      "author": "Moon0755",
-      "at": "2026-11-27T05:31:47Z",
-      "url": "https://github.com/Marvisak/VIctory/pull/2657"
-    },
-    {
-      "projectId": "marvis",
-      "repo": "Marvisak/VIctory",
-      "number": 3192,
-      "title": "Shaders: v_fmac_f16 in VOP3 applies abs and neg to its accumulator",
-      "state": "open",
-      "draft": false,
-      "author": "Moon0755",
-      "at": "2026-11-27T05:31:36Z",
-      "url": "https://github.com/Marvisak/VIctory/pull/3192"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2963,
-      "title": "Tests: identify benchmark result environments",
-      "state": "open",
-      "draft": true,
-      "author": "bmjask",
-      "at": "2026-11-27T05:31:00Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2963"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2965,
-      "title": "D3D12.X: correlate submissions with GPU completion",
-      "state": "open",
-      "draft": true,
-      "author": "bmjask",
-      "at": "2026-11-27T05:30:41Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2965"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2964,
-      "title": "Shaders: fail closed on wave64 rendezvous timeout",
-      "state": "open",
-      "draft": true,
-      "author": "bmjask",
-      "at": "2026-11-27T05:30:39Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2964"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2962,
-      "title": "D3D12.X: bound unlocked sparse planning retries",
-      "state": "open",
-      "draft": true,
-      "author": "bmjask",
-      "at": "2026-11-27T05:30:37Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2962"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2961,
-      "title": "D3D12.X: own sparse planning observations",
-      "state": "open",
-      "draft": true,
-      "author": "bmjask",
-      "at": "2026-11-27T05:30:34Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2961"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2960,
-      "title": "D3D12.X: read wait cells without faulting",
-      "state": "open",
-      "draft": true,
-      "author": "bmjask",
-      "at": "2026-11-27T05:30:32Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2960"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2959,
-      "title": "Tests: compare benchmark regression thresholds",
-      "state": "open",
-      "draft": true,
-      "author": "bmjask",
-      "at": "2026-11-27T05:30:30Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2959"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2919,
-      "title": "startup: persist and reuse translated PSO recipes",
-      "state": "open",
-      "draft": false,
-      "author": "lambirou",
-      "at": "2026-11-27T05:30:29Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2919"
-    },
-    {
-      "projectId": "belobug",
-      "repo": "Belobug/VIctory-Belobug-AMD",
-      "number": 359,
-      "title": "Keep HUD staging and display buffers alive until the GPU finishes",
-      "state": "open",
-      "draft": false,
-      "author": "ANDREANIADS",
-      "at": "2026-11-27T05:30:22Z",
-      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/359"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2920,
-      "title": "startup: gate the BVH builder compute stages all or none",
-      "state": "open",
-      "draft": false,
-      "author": "lambirou",
-      "at": "2026-11-27T05:30:13Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2920"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2922,
-      "title": "startup: lower the FP32 box case of image_bvh_intersect_ray",
-      "state": "open",
-      "draft": false,
-      "author": "lambirou",
-      "at": "2026-11-27T05:29:43Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2922"
-    },
-    {
-      "projectId": "leonida-continued",
-      "repo": "ubiquitarianism/leonida",
-      "number": 2432,
-      "title": "xgameruntime: LEONIDA_TRACE_XGAMESAVE logs every XGameSave call",
-      "state": "open",
-      "draft": false,
-      "author": "OreoFR",
-      "at": "2026-11-27T05:28:20Z",
-      "url": "https://github.com/ubiquitarianism/leonida/pull/2432"
-    },
-    {
-      "projectId": "victory-gta6",
-      "repo": "fxceless/victory-fork",
-      "sha": "9a9091d",
-      "message": "Ray tracing runs: the structure builder no longer stalls the title; rays see the structures",
-      "author": "fxceless",
-      "at": "2026-11-27T05:28:07Z",
-      "url": "https://github.com/fxceless/victory-fork/commit/9a9091d180f044726463d3db819808086daeebae"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2926,
-      "title": "startup: read linear (0x100) textures in slot 70",
-      "state": "open",
-      "draft": false,
-      "author": "pigalot",
-      "at": "2026-11-27T05:28:03Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2926"
-    },
-    {
-      "projectId": "dexnom",
-      "repo": "DexNom/VIctory",
-      "number": 132,
-      "title": "Avoid clearing a fully overwritten GPU directory",
-      "state": "open",
-      "draft": false,
-      "author": "andrewDoing",
-      "at": "2026-11-27T05:28:02Z",
-      "url": "https://github.com/DexNom/VIctory/pull/132"
-    },
-    {
-      "projectId": "belobug",
-      "repo": "Belobug/VIctory-Belobug-AMD",
-      "number": 406,
-      "title": "Diagnostics: count texture staging buffers detiled while an upload from them is in the air",
-      "state": "open",
-      "draft": false,
-      "author": "Esteban-V",
-      "at": "2026-11-27T05:28:00Z",
-      "url": "https://github.com/Belobug/VIctory-Belobug-AMD/pull/406"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2957,
-      "title": "XGameRuntime: separate XUser COM lookup ID namespaces",
-      "state": "open",
-      "draft": false,
-      "author": "kotekompotek",
-      "at": "2026-11-27T05:27:30Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2957"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2929,
-      "title": "startup: read one-dimensional linear (0x100) textures in slot 70",
-      "state": "open",
-      "draft": false,
-      "author": "pigalot",
-      "at": "2026-11-27T05:27:26Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2929"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2953,
-      "title": "startup: bind compute root SRV buffers (srv <i> buf root <param>) at Dispatch",
-      "state": "merged",
-      "draft": false,
-      "author": "consolelogkyo",
-      "at": "2026-11-27T05:26:46Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2953"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "sha": "215934b",
-      "message": "startup: bind root SRV buffers at compute Dispatch (#2953)",
-      "author": "Matheus Sergio",
-      "at": "2026-11-27T05:26:45Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/commit/215934bdf3b1d578d2104e5ebc870aa9acbd330b"
-    },
-    {
-      "projectId": "xcl",
-      "repo": "xcl-dev/xcl",
-      "number": 2684,
-      "title": "Resolve relative game path in smoke runs",
-      "state": "open",
-      "draft": false,
-      "author": "luckyteagirl",
-      "at": "2026-11-27T05:26:35Z",
-      "url": "https://github.com/xcl-dev/xcl/pull/2684"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "number": 2873,
-      "title": "startup: lower v_lerp_u8 in gfx2hlsl",
-      "state": "merged",
-      "draft": false,
-      "author": "R0D4X",
-      "at": "2026-11-27T05:26:31Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2873"
-    },
-    {
-      "projectId": "xbox2windows",
-      "repo": "R0Y00/Xbox2Windows",
-      "sha": "bb347ad",
-      "message": "startup: lower packed byte interpolation in gfx2hlsl (#2873)",
-      "author": "rdx",
-      "at": "2026-11-27T05:26:30Z",
-      "url": "https://github.com/R0Y00/Xbox2Windows/commit/bb347ad769c485bf0ff0d6d828934c44da3ae7cd"
     }
   ],
   "discovered": [
     {
+      "repo": "Guernica4u/GTA6-PC-Port-Archive",
+      "description": "Archive of Leonida, xcl and VIctory (GTA VI on PC projects), saved 2026-11-23",
+      "stars": 32,
+      "pushedAt": "2026-11-27T07:29:21Z",
+      "language": "Python",
+      "url": "https://github.com/Guernica4u/GTA6-PC-Port-Archive"
+    },
+    {
       "repo": "vuyp/gta6-pc-race",
       "description": "Automatically maintained tracking site for PC ports of the GTA VI Xbox Build. This repository is managed autonomously by Claude Fable 5.2.",
-      "stars": 348,
-      "pushedAt": "2026-11-27T06:55:50Z",
+      "stars": 352,
+      "pushedAt": "2026-11-27T07:22:29Z",
       "language": "HTML",
       "url": "https://github.com/vuyp/gta6-pc-race"
     },
     {
-      "repo": "Guernica4u/GTA6-PC-Port-Archive",
-      "description": "Archive of Leonida, xcl and VIctory (GTA VI on PC projects), saved 2026-11-23",
-      "stars": 32,
-      "pushedAt": "2026-11-27T06:55:02Z",
+      "repo": "halfwave50/VIctory-macOS-halfwave50",
+      "description": "VIctory for Apple Silicon Macs: runs the Xbox Series build of GTA VI (GTA 6) with Wine + D3DMetal. World, sunlight, shadows and saves work; 2–5 fps on an M4 Pro, tested on M2–M5. Source only, bring yo",
+      "stars": 3,
+      "pushedAt": "2026-11-27T07:21:33Z",
+      "language": "Rust",
+      "url": "https://github.com/halfwave50/VIctory-macOS-halfwave50"
+    },
+    {
+      "repo": "IAmNotSiob/leonida-ce",
+      "description": "Leonida CE: community edition of Leonida, GTA VI (Xbox Series) static recompilation, built on your PC from your own copy. GPLv3.",
+      "stars": 27,
+      "pushedAt": "2026-11-27T07:10:29Z",
       "language": "Python",
-      "url": "https://github.com/Guernica4u/GTA6-PC-Port-Archive"
+      "url": "https://github.com/IAmNotSiob/leonida-ce"
+    },
+    {
+      "repo": "3bdalra7manm2o-hub/leonida-gta-vi-recompilation",
+      "description": "Leonida Recompilation: Build the Ultimate GTA VI Experience",
+      "stars": 1,
+      "pushedAt": "2026-11-27T07:09:08Z",
+      "language": "HTML",
+      "url": "https://github.com/3bdalra7manm2o-hub/leonida-gta-vi-recompilation"
+    },
+    {
+      "repo": "DKTTT/gta6-pc-launcher",
+      "description": "GTA VI PC port auto launcher: hardware detection, build management, prewarm, leaderboard-based recommendation (WIP)",
+      "stars": 2,
+      "pushedAt": "2026-11-27T07:04:22Z",
+      "language": "PowerShell",
+      "url": "https://github.com/DKTTT/gta6-pc-launcher"
     },
     {
       "repo": "Click2x/BananaTheftAuto",
@@ -19578,7 +19620,7 @@
     {
       "repo": "ProjectLeonidaL/leonida",
       "description": "Continuation of Project Leonida, aiming to bring GTA VI from Xbox to PC through static recompilation.",
-      "stars": 520,
+      "stars": 521,
       "pushedAt": "2026-11-27T06:44:54Z",
       "language": "Rust",
       "url": "https://github.com/ProjectLeonidaL/leonida"
@@ -19592,22 +19634,6 @@
       "url": "https://github.com/dev-drozd/GTA6SubVoice"
     },
     {
-      "repo": "IAmNotSiob/leonida-ce",
-      "description": "Leonida CE: community edition of Leonida, GTA VI (Xbox Series) static recompilation, built on your PC from your own copy. GPLv3.",
-      "stars": 27,
-      "pushedAt": "2026-11-27T06:29:39Z",
-      "language": "Python",
-      "url": "https://github.com/IAmNotSiob/leonida-ce"
-    },
-    {
-      "repo": "halfwave50/VIctory-macOS-halfwave50",
-      "description": "VIctory for Apple Silicon Macs: runs the Xbox Series build of GTA VI (GTA 6) with Wine + D3DMetal. World, sunlight, shadows and saves work; 2–5 fps on an M4 Pro, tested on M2–M5. Source only, bring yo",
-      "stars": 3,
-      "pushedAt": "2026-11-27T06:21:53Z",
-      "language": "Rust",
-      "url": "https://github.com/halfwave50/VIctory-macOS-halfwave50"
-    },
-    {
       "repo": "voidopcode/vilocity",
       "description": "Xbox Series X|S games running natively on Windows. GTA VI progress tracked in the README.",
       "stars": 6,
@@ -19616,25 +19642,9 @@
       "url": "https://github.com/voidopcode/vilocity"
     },
     {
-      "repo": "DKTTT/gta6-pc-launcher",
-      "description": "GTA VI PC port auto launcher: hardware detection, build management, prewarm, leaderboard-based recommendation (WIP)",
-      "stars": 2,
-      "pushedAt": "2026-11-27T05:15:11Z",
-      "language": "PowerShell",
-      "url": "https://github.com/DKTTT/gta6-pc-launcher"
-    },
-    {
-      "repo": "3bdalra7manm2o-hub/leonida-gta-vi-recompilation",
-      "description": "Leonida Recompilation: Build the Ultimate GTA VI Experience",
-      "stars": 1,
-      "pushedAt": "2026-11-27T05:02:23Z",
-      "language": "HTML",
-      "url": "https://github.com/3bdalra7manm2o-hub/leonida-gta-vi-recompilation"
-    },
-    {
       "repo": "NotHGM/save-garage",
       "description": "Edit your GTA VI story save on PS5: money, ammo, stats, 100% completion and every value in the save, in 13 languages. No jailbreak.",
-      "stars": 10,
+      "stars": 11,
       "pushedAt": "2026-11-27T03:31:46Z",
       "language": "Python",
       "url": "https://github.com/NotHGM/save-garage"
@@ -19690,7 +19700,7 @@
     {
       "repo": "Ahmet-Dedeler/awesome-gta6-reverse-engineering",
       "description": "Curated list of open-source GTA VI (GTA 6) reverse engineering tools, RAGE 9 / RPF9 archive explorers, TTPF texture & ADAT/AWC audio decoders, format docs, and Xbox Series / PS5 translation layers.",
-      "stars": 804,
+      "stars": 805,
       "pushedAt": "2026-11-26T22:26:05Z",
       "language": "HTML",
       "url": "https://github.com/Ahmet-Dedeler/awesome-gta6-reverse-engineering"
