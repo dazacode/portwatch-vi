@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T12:20:22.682Z",
+  "updated": "2026-11-27T12:35:25.395Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T12:01:47.000Z",
-      "lastOkAt": "2026-11-27T12:20:22.682Z",
-      "seen": 30500,
+      "lastOkAt": "2026-11-27T12:35:25.395Z",
+      "seen": 30750,
       "events": 1074,
       "errors": 0
     },
     "evidence": {
-      "lastCursor": "2026-11-27T09:21:22.000Z",
-      "lastOkAt": "2026-11-27T12:20:22.682Z",
-      "seen": 38,
-      "events": 30,
+      "lastCursor": "2026-11-27T12:10:29.000Z",
+      "lastOkAt": "2026-11-27T12:35:25.395Z",
+      "seen": 40,
+      "events": 32,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T00:20:22.682Z",
-      "lastOkAt": "2026-11-27T12:20:22.682Z",
-      "seen": 7390,
+      "lastCursor": "2026-11-27T00:35:25.395Z",
+      "lastOkAt": "2026-11-27T12:35:25.395Z",
+      "seen": 7452,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T12:00:25.742Z",
-      "lastOkAt": "2026-11-27T12:20:22.682Z",
-      "seen": 48800,
+      "lastOkAt": "2026-11-27T12:35:25.395Z",
+      "seen": 49200,
       "events": 38,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T00:20:22.682Z",
-      "lastOkAt": "2026-11-27T12:20:22.682Z",
-      "seen": 14596,
+      "lastCursor": "2026-11-27T00:35:25.395Z",
+      "lastOkAt": "2026-11-27T12:35:25.395Z",
+      "seen": 14719,
       "events": 12,
       "errors": 0
     }
@@ -13114,6 +13114,118 @@
       "sensitive": false,
       "audit": null,
       "chain": "sha256:63af94624965c826befe0206e507e048f43b474cf446616acade487c8a8384bb",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t121029z-avatarmanz-0743c1fe",
+      "key": "evidence|avatarmanz|menu|41569",
+      "kind": "evidence",
+      "projectId": "avatarmanz",
+      "projectName": "AvatarManz",
+      "at": "2026-11-27T12:10:29Z",
+      "detectedAt": "2026-11-27T12:35:25.395Z",
+      "title": "New test evidence on AvatarManz — menu",
+      "oneLine": "Menus are fine: language select → legal notice → main menu, 30 fps ,",
+      "sources": [
+        {
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/458",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Menus are fine: language select → legal notice → main menu, 30 fps ,",
+          "at": "2026-11-27T12:10:29Z",
+          "kind": "primary",
+          "authorHash": "ae213b67ca51",
+          "excerpt": "Menus are fine: language select → legal notice → main menu, 30 fps ,"
+        }
+      ],
+      "fingerprint": {
+        "repo": "avatarmanz/victory-7900xtx",
+        "name": "avatarmanz",
+        "words": [
+          "avatarmanz"
+        ],
+        "hash": "8d4bb6b0d8a207d8",
+        "projectId": "avatarmanz"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:7459a6d4631e83062c544385477335292e0539755e3c0039c235a7d7bedad869",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T12:35:25.395Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository repeating the same one-line claim, so it is primary but not independent and too thin to publish."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T12:35:25.395Z"
+    },
+    {
+      "id": "20261127t110952z-victory-gta6-d1401f75",
+      "key": "evidence|victory-gta6|world|41568",
+      "kind": "evidence",
+      "projectId": "victory-gta6",
+      "projectName": "hyphennn",
+      "at": "2026-11-27T11:09:52Z",
+      "detectedAt": "2026-11-27T12:35:25.395Z",
+      "title": "New test evidence on hyphennn — world",
+      "oneLine": "In every \"right\" row the cell has dark hair, an evenly dark wall and the print on the shirt",
+      "sources": [
+        {
+          "url": "https://github.com/fxceless/victory-fork/issues/1459",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "In every \"right\" row the cell has dark hair, an evenly dark wall and the print on the shirt",
+          "at": "2026-11-27T11:09:52Z",
+          "kind": "primary",
+          "authorHash": "c4bdc99ac40a",
+          "excerpt": "In every \"right\" row the cell has dark hair, an evenly dark wall and the print on the shirt"
+        }
+      ],
+      "fingerprint": {
+        "repo": "fxceless/victory-fork",
+        "name": "hyphennn",
+        "words": [
+          "hyphennn",
+          "victory-gta6"
+        ],
+        "hash": "070420aaa06d8665",
+        "projectId": "victory-gta6"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:6b364dba695a2803fa17fcc9e67aa222d9027548809ec23cd34edd1acd4f193b",
       "reportId": null,
       "discordAt": null,
       "revisions": [],
