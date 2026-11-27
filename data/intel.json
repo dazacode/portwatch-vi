@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T18:05:21.422Z",
+  "updated": "2026-11-27T18:20:21.046Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T18:01:03.000Z",
-      "lastOkAt": "2026-11-27T18:05:21.422Z",
-      "seen": 36250,
+      "lastOkAt": "2026-11-27T18:20:21.046Z",
+      "seen": 36500,
       "events": 1290,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T14:50:39.000Z",
-      "lastOkAt": "2026-11-27T18:05:21.422Z",
+      "lastOkAt": "2026-11-27T18:20:21.046Z",
       "seen": 42,
       "events": 34,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T18:05:21.422Z",
-      "seen": 8830,
+      "lastOkAt": "2026-11-27T18:20:21.046Z",
+      "seen": 8893,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T18:00:24.949Z",
-      "lastOkAt": "2026-11-27T18:05:21.422Z",
-      "seen": 58000,
+      "lastOkAt": "2026-11-27T18:20:21.046Z",
+      "seen": 58400,
       "events": 43,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T06:05:21.422Z",
-      "lastOkAt": "2026-11-27T18:05:21.422Z",
-      "seen": 17433,
+      "lastCursor": "2026-11-27T06:20:21.046Z",
+      "lastOkAt": "2026-11-27T18:20:21.046Z",
+      "seen": 17556,
       "events": 12,
       "errors": 0
     }
@@ -12594,12 +12594,17 @@
           "at": "2026-11-27T12:07:12.433Z",
           "by": "desk",
           "note": "The only source is the project’s own repository with an empty excerpt, so the detailed one-line changelog is not plainly supported by stored source text and lacks independent corroboration."
+        },
+        {
+          "at": "2026-11-27T18:20:21.046Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub repository with an empty excerpt and a truncated title, so it does not plainly support every claim in the one-line summary and is not independent."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T12:07:12.433Z"
+      "deskAt": "2026-11-27T18:20:21.046Z"
     },
     {
       "id": "20261127t120143z-leonida-continued-39a4bb67",
@@ -15033,10 +15038,17 @@
       "chain": "sha256:9649236d4cc8987a3d235216a8110045b0cdcd5a32391ae520a56ca83e83494d",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T18:20:21.046Z",
+          "by": "desk",
+          "note": "The only stored source is a single project repository with an empty excerpt, so the specific 4K/~25 fps performance claim and the fork lineage are not plainly supported by the stored material."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T18:20:21.046Z"
     }
   ],
   "reports": [
