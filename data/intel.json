@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T19:20:25.702Z",
+  "updated": "2026-11-27T19:35:24.327Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T19:01:09.000Z",
-      "lastOkAt": "2026-11-27T19:20:25.702Z",
-      "seen": 37500,
-      "events": 1314,
+      "lastCursor": "2026-11-27T19:31:30.000Z",
+      "lastOkAt": "2026-11-27T19:35:24.327Z",
+      "seen": 37750,
+      "events": 1333,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T19:20:25.702Z",
+      "lastOkAt": "2026-11-27T19:35:24.327Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T19:20:25.702Z",
-      "seen": 9145,
+      "lastOkAt": "2026-11-27T19:35:24.327Z",
+      "seen": 9208,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T19:00:27.345Z",
-      "lastOkAt": "2026-11-27T19:20:25.702Z",
-      "seen": 60000,
-      "events": 44,
+      "lastCursor": "2026-11-27T19:30:20.551Z",
+      "lastOkAt": "2026-11-27T19:35:24.327Z",
+      "seen": 60400,
+      "events": 45,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T07:20:25.702Z",
-      "lastOkAt": "2026-11-27T19:20:25.702Z",
-      "seen": 18052,
+      "lastCursor": "2026-11-27T07:35:24.327Z",
+      "lastOkAt": "2026-11-27T19:35:24.327Z",
+      "seen": 18177,
       "events": 12,
       "errors": 0
     }
@@ -15299,6 +15299,119 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-27T19:20:25.702Z"
+    },
+    {
+      "id": "20261127t191754z-whibwhi-own-3033061d",
+      "key": "update|whibwhi-own|activity|41569",
+      "kind": "update",
+      "projectId": "whibwhi-own",
+      "projectName": "whibwhi-own",
+      "at": "2026-11-27T19:17:54Z",
+      "detectedAt": "2026-11-27T19:35:24.327Z",
+      "title": "whibwhi-own pushed 5 commits",
+      "oneLine": "graphics library: counts per pipeline request whether its shaders hold the ray test, with a fingerprint per shader (bugfix: undid AI trap)",
+      "sources": [
+        {
+          "url": "https://github.com/ExCorvus/whibwhi-own/commit/b2ff166bc9e5f5586150851550e21d206b3a2040",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "graphics library: counts per pipeline request whether its shaders hold the ray test, with a fingerprint per shader (bugf",
+          "at": "2026-11-27T19:17:54Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "excorvus/whibwhi-own",
+        "name": "whibwhi-own",
+        "words": [
+          "whibwhi-own"
+        ],
+        "hash": "601a6d436837fd41",
+        "projectId": "whibwhi-own"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:ca13bdf5020dfa9ce6b0563135631ffd6b3ae778943c045aad3d1dcbcb32c59d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T19:35:24.327Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub entry with an empty excerpt, so it is a thin, non-independent record that does not plainly substantiate the full one-line claim."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T19:35:24.327Z"
+    },
+    {
+      "id": "20261127t191035z-scene-cfe7c5f4",
+      "key": "takedown|-|https://news.google.com/rss/articles/cbminwfbvv95cuxqmlvpqndavevgv1rpa2c0nljjr3jsy1q0yzn4bm9jzghyt3p3mtdoc2phd2j1r1vhqmv0r1nxdtqzlti0nfpucfpwefjpdvljcv9lewtzlugtntl4zun5ovbtqzeyu05acvmzwv9zdwzhdkjozws0bhc0sgpkruhmv3zoovjdzlh1ci1wzehybtrfmnfisullvy1rbs1ta1e?oc=5|41569",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-27T19:10:35.000Z",
+      "detectedAt": "2026-11-27T19:35:24.327Z",
+      "title": "Gadget Review in a takedown report",
+      "oneLine": "A 15-Year-Old’s AI-Assisted GTA 6 PC Port Survived a Take-Two Takedown",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5",
+          "host": "news.google.com",
+          "outlet": "Gadget Review",
+          "title": "A 15-Year-Old’s AI-Assisted GTA 6 PC Port Survived a Take-Two Takedown",
+          "at": "2026-11-27T19:10:35.000Z",
+          "kind": "outside",
+          "authorHash": "1887439906",
+          "excerpt": "A 15-Year-Old’s AI-Assisted GTA 6 PC Port Survived a Take-Two Takedown"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "d1ad16820750088c",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:5c659d3ea31d589df5318d937b85f5f33245c9e77e23748a98f64a89e9ce8158",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T19:35:24.327Z",
+          "by": "desk",
+          "note": "The item rests on a single outside source whose excerpt only repeats the headline, so the takedown claim is too thin to publish."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-27T19:35:24.327Z"
     }
   ],
   "reports": [
