@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T16:36:59.623Z",
+  "updated": "2026-11-27T16:50:26.138Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T16:31:10.000Z",
-      "lastOkAt": "2026-11-27T16:36:59.623Z",
-      "seen": 34750,
+      "lastOkAt": "2026-11-27T16:50:26.138Z",
+      "seen": 35000,
       "events": 1231,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T14:50:39.000Z",
-      "lastOkAt": "2026-11-27T16:36:59.623Z",
+      "lastOkAt": "2026-11-27T16:50:26.138Z",
       "seen": 42,
       "events": 34,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T16:36:59.623Z",
-      "seen": 8452,
+      "lastOkAt": "2026-11-27T16:50:26.138Z",
+      "seen": 8515,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T16:23:50.156Z",
-      "lastOkAt": "2026-11-27T16:36:59.623Z",
-      "seen": 55600,
+      "lastOkAt": "2026-11-27T16:50:26.138Z",
+      "seen": 56000,
       "events": 41,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T04:36:59.623Z",
-      "lastOkAt": "2026-11-27T16:36:59.623Z",
-      "seen": 16695,
+      "lastCursor": "2026-11-27T04:50:26.138Z",
+      "lastOkAt": "2026-11-27T16:50:26.138Z",
+      "seen": 16818,
       "events": 12,
       "errors": 0
     }
@@ -13695,10 +13695,17 @@
       "chain": "sha256:848f969006c51720b25ffef3a0a4d911fdf61bafb9dde6b40c058ebea331f573",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T16:50:26.138Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub entry with an empty excerpt, so it is primary but not independent and too thin to plainly verify the PR claim."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T16:50:26.138Z"
     },
     {
       "id": "20261127t122138z-ccs03-de45b85f",
@@ -14811,10 +14818,17 @@
       "chain": "sha256:d99b21c34d3194995a88c2704f5759f5011bbf673e2f887a72af3863447b71c7",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T16:50:26.138Z",
+          "by": "desk",
+          "note": "A single pull request in the project's own repository is a proposed change, not a shipped feature, and the one line restates the PR title as if the benchmark button already exists."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T16:50:26.138Z"
     }
   ],
   "reports": [
