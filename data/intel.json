@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T05:50:23.414Z",
+  "updated": "2026-11-27T06:05:38.309Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T05:31:16.000Z",
-      "lastOkAt": "2026-11-27T05:50:23.414Z",
-      "seen": 24000,
-      "events": 878,
+      "lastCursor": "2026-11-27T06:01:25.000Z",
+      "lastOkAt": "2026-11-27T06:05:38.309Z",
+      "seen": 24250,
+      "events": 893,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T02:04:54.000Z",
-      "lastOkAt": "2026-11-27T05:50:23.414Z",
+      "lastOkAt": "2026-11-27T06:05:38.309Z",
       "seen": 34,
       "events": 26,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T05:50:23.414Z",
-      "seen": 5778,
+      "lastOkAt": "2026-11-27T06:05:38.309Z",
+      "seen": 5840,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T04:47:59.000Z",
-      "lastOkAt": "2026-11-27T05:50:23.414Z",
-      "seen": 38400,
+      "lastCursor": "2026-11-27T06:00:32.044Z",
+      "lastOkAt": "2026-11-27T06:05:38.309Z",
+      "seen": 38800,
       "events": 30,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T05:50:23.414Z",
-      "seen": 11398,
+      "lastOkAt": "2026-11-27T06:05:38.309Z",
+      "seen": 11521,
       "events": 12,
       "errors": 0
     }
@@ -8574,12 +8574,17 @@
           "at": "2026-11-26T21:50:21.067Z",
           "by": "desk",
           "note": "The only stored source is XValkyrie’s own repository, which is primary but not independent, and the excerpt is empty, so the commit-summary line is not plainly supported by independent corroboration."
+        },
+        {
+          "at": "2026-11-27T06:05:38.309Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub entry with an empty excerpt, so it does not plainly support the specific shader-journal claim in the one-line summary."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-26T21:50:21.067Z"
+      "deskAt": "2026-11-27T06:05:38.309Z"
     },
     {
       "id": "20261126t210444z-vitoria-spark-e9244fb3",
@@ -8869,12 +8874,17 @@
           "at": "2026-11-26T23:50:22.367Z",
           "by": "desk",
           "note": "The project’s own GitHub repository directly supports the commit/merge line, and no stored source contradicts it."
+        },
+        {
+          "at": "2026-11-27T06:05:38.309Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub commit title with no excerpt or independent corroboration, so it is too thin to publish as a verified update."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-26T23:50:22.367Z"
+      "deskAt": "2026-11-27T06:05:38.309Z"
     },
     {
       "id": "20261126t231014z-victory-low-end-pc-41ce46ec",
