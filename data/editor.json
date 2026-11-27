@@ -1,6 +1,15 @@
 {
-  "lastRun": "2026-11-27T02:40:28.481Z",
+  "lastRun": "2026-11-27T03:40:32.121Z",
   "runs": [
+    {
+      "at": "2026-11-27T03:40:32.121Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [],
+      "skipped": [
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world in Full HD”"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-27T02:40:28.481Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -469,17 +478,6 @@
       "applied": [],
       "skipped": [],
       "note": "quiet"
-    },
-    {
-      "at": "2026-11-25T11:23:32.205Z",
-      "by": "Pollinations, gpt-oss-20b",
-      "applied": [
-        "candidate Archivist-Atlas/gta-vi-astral",
-        "candidate daeken/XSXEmu",
-        "candidate ethan00013/keylime"
-      ],
-      "skipped": [],
-      "note": "Reviewed candidates, tracked gta-vi-astral, ignored others"
     }
   ]
 }
