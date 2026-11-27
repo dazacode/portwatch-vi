@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T17:35:20.426Z",
+  "updated": "2026-11-27T17:50:21.067Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T17:31:07.000Z",
-      "lastOkAt": "2026-11-27T17:35:20.426Z",
-      "seen": 35750,
+      "lastOkAt": "2026-11-27T17:50:21.067Z",
+      "seen": 36000,
       "events": 1273,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T14:50:39.000Z",
-      "lastOkAt": "2026-11-27T17:35:20.426Z",
+      "lastOkAt": "2026-11-27T17:50:21.067Z",
       "seen": 42,
       "events": 34,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T17:35:20.426Z",
-      "seen": 8704,
+      "lastOkAt": "2026-11-27T17:50:21.067Z",
+      "seen": 8767,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T17:17:57.444Z",
-      "lastOkAt": "2026-11-27T17:35:20.426Z",
-      "seen": 57200,
+      "lastOkAt": "2026-11-27T17:50:21.067Z",
+      "seen": 57600,
       "events": 42,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T05:35:20.426Z",
-      "lastOkAt": "2026-11-27T17:35:20.426Z",
-      "seen": 17187,
+      "lastCursor": "2026-11-27T05:50:21.067Z",
+      "lastOkAt": "2026-11-27T17:50:21.067Z",
+      "seen": 17310,
       "events": 12,
       "errors": 0
     }
@@ -12986,10 +12986,17 @@
       "chain": "sha256:1c4faead678a6719a8dcbec1fd9dc4829e3e7152ed7822b114a130bb607e82e4",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T17:50:21.067Z",
+          "by": "desk",
+          "note": "The only source is a single social post, which is weak and lacks independent corroboration for the specific performance and completion claims."
+        }
+      ],
       "heldReasons": [
         "low confidence"
-      ]
+      ],
+      "deskAt": "2026-11-27T17:50:21.067Z"
     },
     {
       "id": "20261127t115846z-victory-polaris-70b6b0ff",
