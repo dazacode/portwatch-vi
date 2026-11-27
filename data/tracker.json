@@ -1160,8 +1160,24 @@
       "id": "avatarmanz",
       "name": "AvatarManz",
       "avatar": "assets/img/efforts/avatarmanz.jpg",
-      "repo": "avatarmanz/VIctory-7900XTX",
-      "branch": "main",
+      "repo": null,
+      "nuked": {
+        "at": "2026-11-27",
+        "note": "Repository and GitHub account went offline on Nov 27; it isn't known whether GitHub removed them or the owner took them down. Its progress still counts in our overall number.",
+        "show": true,
+        "keepScore": true
+      },
+      "basedOn": [
+        "victory-gta6",
+        "dexnom",
+        "marvis",
+        "belobug"
+      ],
+      "evidence": "Verified by PortWatch",
+      "related": [
+        "avatarmanz/VIctory-7900XTX"
+      ],
+      "byline": "Offline · was public, based on VIctory",
       "proof": {
         "label": "Video on Reddit",
         "url": "https://www.reddit.com/r/FitGirlRepack/comments/1y5k8xu/actually_playable/"
@@ -1172,17 +1188,17 @@
       ],
       "approach": "Compatibility layer",
       "target": "GTA VI only",
-      "summary": "AvatarManz's fork of VIctory, tuned for speed on an AMD Radeon RX 7900 XTX. It brings victory-fork's, DexNom's and Belobug's work together on VIctory and adds its own speed-ups: the game's draw calls translated on eight threads of its own, frames prepared on a separate thread, and textures uploaded on their own queue. PortWatch has verified it: GTA VI runs at about 16 fps on average in game, with sound, as far into the story as the leading builds. Its README measures 13-22 fps indoors and on the first boat mission, and a 41-minute session without a crash.",
+      "summary": "AvatarManz's VIctory fork for the AMD Radeon RX 7900 XTX, verified by PortWatch at about 16 fps on average, with sound. Its code and GitHub account went offline on 27 Nov; it isn't known whether GitHub removed them or its owner did.",
       "highlights": [
         "Platform: AMD Radeon RX 7900 XTX, Intel Core i9-12900K, 64 GB RAM, Windows 11",
         "About 16 fps on average in game, verified by PortWatch. Its README: 13-20 fps indoors in the prologue, 19-22 on the first boat mission, 30 in menus",
         "41 minutes in one session without a crash (its README); sound works",
-        "Brings victory-fork, DexNom and Belobug together on VIctory, history and credits kept; builds from source, no prebuilt downloads; GPL-3.0-or-later"
+        "Brought victory-fork, DexNom and Belobug together on VIctory, history and credits kept; GPL-3.0-or-later"
       ],
       "blockers": [
+        "Code and GitHub account offline since 27 Nov; unknown whether GitHub removed them or its owner did",
         "Busy street chases drop to 6-10 fps, with single frames far longer; outdoors on foot runs at about 11-17 fps (its README)",
-        "Trees, plants and far buildings flicker outdoors in places, dim rooms are too dark without ray tracing, and new textures appear late",
-        "Uses 40-46 GB of memory (64 GB of RAM recommended); tested on one PC only, not yet reproduced by others"
+        "Used 40-46 GB of memory (64 GB of RAM recommended); tested on one PC only, not reproduced by others"
       ],
       "provenOn": null,
       "gta": {
@@ -1197,22 +1213,10 @@
         "stability": 0.9
       },
       "verification": "portwatch",
-      "stats": {
-        "stars": 1924,
-        "forks": 622,
-        "openIssues": 377,
-        "createdAt": "2026-11-25T22:18:14Z",
-        "pushedAt": "2026-11-27T01:11:22Z",
-        "archived": false,
-        "missing": false,
-        "commits7d": 100,
-        "mentions7d": 1
-      },
-      "assessedAt": "2026-11-25",
+      "stats": {},
+      "assessedAt": "2026-11-27",
       "assessedBy": "manual",
-      "claims": [],
-      "readmeSha": "b7185a56244510d25f795c2a441e2ee8770a9f135440d05735cff9fa6058072b",
-      "readmeChangedAt": "2026-11-27"
+      "claims": []
     },
     {
       "id": "notnozy",
@@ -8755,6 +8759,11 @@
       "date": "2026-11-27",
       "kind": "down",
       "text": "GitHub removed Belobug's repository and account for violating its Terms of Service, which PortWatch has confirmed. Its card is marked as nuked and no longer ranked, so VIctory-NVIDIA (90%) leads the race; Belobug's progress still counts, and our overall number stays at 91.3%."
+    },
+    {
+      "date": "2026-11-27",
+      "kind": "down",
+      "text": "AvatarManz's repository and GitHub account have gone offline too; it isn't known whether GitHub removed them or its owner took them down. Its card is marked as nuked and no longer ranked, but its progress (81.8%) still counts. DexNom (77.4%) is now #2 in the race behind VIctory-NVIDIA."
     }
   ],
   "history": [
