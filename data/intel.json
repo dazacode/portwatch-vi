@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T21:50:20.649Z",
+  "updated": "2026-11-27T22:06:51.259Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T21:01:02.000Z",
-      "lastOkAt": "2026-11-27T21:50:20.649Z",
-      "seen": 40000,
-      "events": 1390,
+      "lastCursor": "2026-11-27T22:01:34.000Z",
+      "lastOkAt": "2026-11-27T22:06:51.259Z",
+      "seen": 40250,
+      "events": 1411,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T21:50:20.649Z",
+      "lastOkAt": "2026-11-27T22:06:51.259Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T21:50:20.649Z",
-      "seen": 9775,
+      "lastOkAt": "2026-11-27T22:06:51.259Z",
+      "seen": 9838,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T20:58:54.000Z",
-      "lastOkAt": "2026-11-27T21:50:20.649Z",
-      "seen": 64000,
+      "lastCursor": "2026-11-27T21:40:22.545Z",
+      "lastOkAt": "2026-11-27T22:06:51.259Z",
+      "seen": 64400,
       "events": 46,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T09:50:20.649Z",
-      "lastOkAt": "2026-11-27T21:50:20.649Z",
-      "seen": 19284,
+      "lastCursor": "2026-11-27T10:06:51.259Z",
+      "lastOkAt": "2026-11-27T22:06:51.259Z",
+      "seen": 19407,
       "events": 12,
       "errors": 0
     }
@@ -14764,12 +14764,17 @@
           "at": "2026-11-27T15:35:34.493Z",
           "by": "desk",
           "note": "A single self-reported capture from the project's own repository is primary but not independent, and one frame alone is too thin to publish as standalone evidence."
+        },
+        {
+          "at": "2026-11-27T22:06:51.259Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository entry for a single capture, which is primary but not independent and too thin to stand as published evidence."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T15:35:34.493Z"
+      "deskAt": "2026-11-27T22:06:51.259Z"
     },
     {
       "id": "20261127t162857z-vitoria-spark-0d3ce4c5",
@@ -15632,6 +15637,71 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-27T21:20:21.231Z"
+    },
+    {
+      "id": "20261127t214650z-leonida-continued-5244b01f",
+      "key": "reference|leonida-continued|activity|41569",
+      "kind": "duplicate",
+      "projectId": "leonida-continued",
+      "projectName": "Leonida Continued",
+      "at": "2026-11-27T21:46:50Z",
+      "detectedAt": "2026-11-27T22:06:51.259Z",
+      "title": "Leonida Continued may duplicate leonida",
+      "oneLine": "VIctory-NVIDIA fork: GTA VI Xbox Series S/X dump on Windows with DLSS, FSR3 framegen and tuned profiles. Credits/inspiration: @ProjectLeonida/mandy (Leonida Continued) and @dkdknight.",
+      "sources": [
+        {
+          "url": "https://github.com/Take-Tree-Organization/GTA.6.Recomp.hybrid2391v1",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Take-Tree-Organization/GTA.6.Recomp.hybrid2391v1",
+          "at": "2026-11-27T21:46:50Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "ubiquitarianism/leonida",
+        "name": "leonida continued",
+        "words": [
+          "leonida",
+          "continued",
+          "leonida-continued"
+        ],
+        "hash": "bd0c5a6bf7d11690",
+        "projectId": "leonida-continued"
+      },
+      "similar": [
+        {
+          "effortId": "leonida",
+          "score": 0.84
+        },
+        {
+          "effortId": "leonida",
+          "score": 0.82
+        },
+        {
+          "effortId": "leonida",
+          "score": 0.82
+        }
+      ],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:dd94cdfa75742de8b5d217bfda2a5d19c70ebbaa3ed97024913dca2f6b740931",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "duplicate build reference"
+      ]
     }
   ],
   "reports": [
