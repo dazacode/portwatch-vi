@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next"
 import { Schibsted_Grotesk, Yellowtail } from "next/font/google"
 import { BoardNotice } from "@/components/board/notice"
+import { PromoBanner } from "@/components/promo-banner"
 import { ShareSheet } from "@/components/share/share-sheet"
 import { ShareToast } from "@/components/share/share-toast"
 import { SiteFooter } from "@/components/site-footer"
@@ -8,6 +9,7 @@ import { SiteHeader } from "@/components/site-header"
 import { Splash } from "@/components/splash"
 import { ThemeProvider } from "@/components/theme-provider"
 import { holidayScript } from "@/lib/holidays"
+import { promoScript } from "@/lib/promo"
 import { GOOGLE_TAG, SITE } from "@/lib/site"
 import { cn } from "@/lib/utils"
 import "./globals.css"
@@ -43,6 +45,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         )}
         {/* biome-ignore lint/security/noDangerouslySetInnerHtml: our own constants, before the first paint */}
         <script dangerouslySetInnerHTML={{ __html: holidayScript() }} />
+        {/* biome-ignore lint/security/noDangerouslySetInnerHtml: our own constants, before the first paint */}
+        <script dangerouslySetInnerHTML={{ __html: promoScript() }} />
         <Splash />
         <ThemeProvider>
           <a
@@ -51,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           >
             Skip to content
           </a>
+          <PromoBanner />
           <SiteHeader />
           <main id="main" className="flex-1">
             {children}

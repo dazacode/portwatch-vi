@@ -94,7 +94,7 @@ export function Feed({
               aria-label={slideTitle(slide)}
               aria-posinset={i + 1}
               aria-setsize={list.length}
-              className="feed-page flex min-h-svh items-end gap-3 bg-linear-to-t from-black/85 via-black/45 to-black/10 pt-16 pr-3 pb-[max(1.75rem,env(safe-area-inset-bottom))] pl-4 short:pt-4"
+              className="feed-page flex min-h-[calc(100svh-var(--promo-h))] items-end gap-3 bg-linear-to-t from-black/85 via-black/45 to-black/10 pt-16 pr-3 pb-[max(1.75rem,env(safe-area-inset-bottom))] pl-4 short:pt-4"
             >
               <div className="min-w-0 flex-1">
                 {Math.abs(page - (i + 1)) <= 1 && <SlideBody slide={slide} at={broadcast.at} />}
@@ -147,7 +147,7 @@ export function Feed({
         })}
       </div>
       {waiting && (
-        <div className="fixed inset-x-0 top-[max(1rem,env(safe-area-inset-top))] z-30 flex justify-center">
+        <div className="fixed inset-x-0 top-[calc(var(--top-gap)+0.25rem)] z-30 flex justify-center">
           <Button
             size="lg"
             onClick={() => {

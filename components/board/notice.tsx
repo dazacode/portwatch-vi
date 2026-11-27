@@ -51,9 +51,7 @@ export function BoardNotice() {
       data-showing={first ? "" : undefined}
       className={cn(
         "pointer-events-none fixed inset-x-3 z-30 flex justify-center lg:inset-x-auto lg:right-6 lg:bottom-6",
-        home
-          ? "top-[max(0.75rem,env(safe-area-inset-top))] lg:top-auto"
-          : "bottom-[max(0.75rem,env(safe-area-inset-bottom))]"
+        home ? "top-(--top-gap) lg:top-auto" : "bottom-[max(0.75rem,env(safe-area-inset-bottom))]"
       )}
     >
       {first && (

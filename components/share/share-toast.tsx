@@ -58,7 +58,7 @@ export function ShareToast() {
       className={cn(
         "pointer-events-none fixed inset-x-3 z-30 flex justify-center lg:inset-x-auto lg:left-6",
         home
-          ? "top-[max(0.75rem,env(safe-area-inset-top))] lg:top-6"
+          ? "top-(--top-gap) lg:top-[calc(var(--promo-h)+1.5rem)]"
           : "bottom-[max(0.75rem,env(safe-area-inset-bottom))] lg:bottom-6"
       )}
     >
