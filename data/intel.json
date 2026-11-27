@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T21:35:25.803Z",
+  "updated": "2026-11-27T21:50:20.649Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T21:01:02.000Z",
-      "lastOkAt": "2026-11-27T21:35:25.803Z",
-      "seen": 39750,
+      "lastOkAt": "2026-11-27T21:50:20.649Z",
+      "seen": 40000,
       "events": 1390,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T21:35:25.803Z",
+      "lastOkAt": "2026-11-27T21:50:20.649Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T21:35:25.803Z",
-      "seen": 9712,
+      "lastOkAt": "2026-11-27T21:50:20.649Z",
+      "seen": 9775,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T20:58:54.000Z",
-      "lastOkAt": "2026-11-27T21:35:25.803Z",
-      "seen": 63600,
+      "lastOkAt": "2026-11-27T21:50:20.649Z",
+      "seen": 64000,
       "events": 46,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T09:35:25.803Z",
-      "lastOkAt": "2026-11-27T21:35:25.803Z",
-      "seen": 19161,
+      "lastCursor": "2026-11-27T09:50:20.649Z",
+      "lastOkAt": "2026-11-27T21:50:20.649Z",
+      "seen": 19284,
       "events": 12,
       "errors": 0
     }
@@ -14282,12 +14282,17 @@
           "at": "2026-11-27T14:36:38.571Z",
           "by": "desk",
           "note": "The project’s GitHub pull request title directly matches the one-line update, and no stored source contradicts it."
+        },
+        {
+          "at": "2026-11-27T21:50:20.649Z",
+          "by": "desk",
+          "note": "The one line restates the pull request title verbatim from the project's own repository, which is the authoritative record of that PR existing, and no source contradicts it."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T14:36:38.571Z"
+      "deskAt": "2026-11-27T21:50:20.649Z"
     },
     {
       "id": "20261127t140838z-victory-polaris-dae53ba5",
@@ -14635,12 +14640,17 @@
           "at": "2026-11-27T15:20:29.576Z",
           "by": "desk",
           "note": "The only source is the project’s own GitHub repository with no excerpt, so the feature claims are not independently supported and the source is too thin to publish."
+        },
+        {
+          "at": "2026-11-27T21:50:20.649Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository with an empty excerpt, so the feature list in the one line is unverified by any independent or readable source."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T15:20:29.576Z"
+      "deskAt": "2026-11-27T21:50:20.649Z"
     },
     {
       "id": "20261127t145039z-marvis-b8ad36e8",
