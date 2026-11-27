@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T05:35:23.463Z",
+  "updated": "2026-11-27T05:50:23.414Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T05:31:16.000Z",
-      "lastOkAt": "2026-11-27T05:35:23.463Z",
-      "seen": 23750,
+      "lastOkAt": "2026-11-27T05:50:23.414Z",
+      "seen": 24000,
       "events": 878,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T02:04:54.000Z",
-      "lastOkAt": "2026-11-27T05:35:23.463Z",
+      "lastOkAt": "2026-11-27T05:50:23.414Z",
       "seen": 34,
       "events": 26,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T05:35:23.463Z",
-      "seen": 5716,
+      "lastOkAt": "2026-11-27T05:50:23.414Z",
+      "seen": 5778,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T04:47:59.000Z",
-      "lastOkAt": "2026-11-27T05:35:23.463Z",
-      "seen": 38000,
+      "lastOkAt": "2026-11-27T05:50:23.414Z",
+      "seen": 38400,
       "events": 30,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T05:35:23.463Z",
-      "seen": 11275,
+      "lastOkAt": "2026-11-27T05:50:23.414Z",
+      "seen": 11398,
       "events": 12,
       "errors": 0
     }
@@ -8990,12 +8990,17 @@
           "at": "2026-11-26T23:35:29.561Z",
           "by": "desk",
           "note": "The commit message in the project’s own GitHub repository directly matches the one-line description, with no conflicting sources."
+        },
+        {
+          "at": "2026-11-27T05:50:23.414Z",
+          "by": "desk",
+          "note": "The commit message in the project’s own GitHub repository directly matches the one-line description, with no conflicting sources."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-26T23:35:29.561Z"
+      "deskAt": "2026-11-27T05:50:23.414Z"
     },
     {
       "id": "20261126t231549z-playablegames-peppa-f772755a",
@@ -9047,12 +9052,17 @@
           "at": "2026-11-26T23:50:22.367Z",
           "by": "desk",
           "note": "The only source is the project's own repository, which is primary but not independent, and its excerpt is empty, so the 21.7 fps figure rests on a PR title alone with no corroborating detail."
+        },
+        {
+          "at": "2026-11-27T05:50:23.414Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository entry with an empty excerpt, which is a primary but non-independent source and too thin to confirm the 21.7 fps claim."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-26T23:50:22.367Z"
+      "deskAt": "2026-11-27T05:50:23.414Z"
     },
     {
       "id": "20261127t000144z-leonida-continued-c82d1152",
