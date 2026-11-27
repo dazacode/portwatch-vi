@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T06:35:38.442Z",
+  "updated": "2026-11-27T06:50:21.529Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T06:01:25.000Z",
-      "lastOkAt": "2026-11-27T06:35:38.442Z",
-      "seen": 24750,
+      "lastOkAt": "2026-11-27T06:50:21.529Z",
+      "seen": 25000,
       "events": 893,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T06:03:44.000Z",
-      "lastOkAt": "2026-11-27T06:35:38.442Z",
+      "lastOkAt": "2026-11-27T06:50:21.529Z",
       "seen": 37,
       "events": 29,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T06:35:38.442Z",
-      "seen": 5964,
+      "lastOkAt": "2026-11-27T06:50:21.529Z",
+      "seen": 6026,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T06:00:32.044Z",
-      "lastOkAt": "2026-11-27T06:35:38.442Z",
-      "seen": 39600,
+      "lastOkAt": "2026-11-27T06:50:21.529Z",
+      "seen": 40000,
       "events": 30,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T06:35:38.442Z",
-      "seen": 11767,
+      "lastOkAt": "2026-11-27T06:50:21.529Z",
+      "seen": 11890,
       "events": 12,
       "errors": 0
     }
@@ -9723,12 +9723,17 @@
           "at": "2026-11-27T00:50:20.574Z",
           "by": "desk",
           "note": "The only stored source is the project's own repository with an empty excerpt, so the PR's existence and scope are not independently corroborated and the one line rests on a title alone."
+        },
+        {
+          "at": "2026-11-27T06:50:21.529Z",
+          "by": "desk",
+          "note": "A single self-published repository record with an empty excerpt is thin and not independent, and a granular shader-compiler pull request is only tangentially on-topic for a GTA VI on PC tracker."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T00:50:20.574Z"
+      "deskAt": "2026-11-27T06:50:21.529Z"
     },
     {
       "id": "20261127t003344z-marvis-d81041f6",
@@ -11695,10 +11700,17 @@
       "chain": "sha256:6f4395453ef4eb03f39fef3d3be348f95e3b65b1fadf313292d2b32f4b628960",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T06:50:21.529Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository, which is primary but not independent, and a single self-reported benchmark on one machine is too thin to publish as a standalone claim."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T06:50:21.529Z"
     }
   ],
   "reports": [
