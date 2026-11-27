@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-27T00:25:46.609Z",
+  "lastRun": "2026-11-27T03:25:42.476Z",
   "read": [
     "https://github.com/avatarmanz/VIctory-7900XTX/issues/76@2026-11-26T02:28:56Z",
     "https://github.com/avatarmanz/VIctory-7900XTX/issues/75@2026-11-26T02:09:56Z",
@@ -160,15 +160,72 @@
     "https://github.com/ThatRecompDev/five-star-recomp/issues/65@2026-11-26T21:38:10Z",
     "https://github.com/ka1qux/BRVIctory-ka1qux/issues/7@2026-11-26T23:40:55Z",
     "https://github.com/ubiquitarianism/leonida/issues/1702@2026-11-26T12:40:28Z",
-    "https://github.com/stellarr-studio/kelvaroq/issues/19@2026-11-26T21:37:26Z"
+    "https://github.com/stellarr-studio/kelvaroq/issues/19@2026-11-26T21:37:26Z",
+    "https://github.com/stellarr-studio/kelvaroq/issues/20@2026-11-27T01:55:54Z",
+    "https://github.com/Belobug/VIctory-Belobug-AMD/issues/457@2026-11-27T03:19:49Z",
+    "https://github.com/avatarmanz/VIctory-7900XTX/issues/424@2026-11-27T03:19:21Z",
+    "https://github.com/fxceless/victory-fork/issues/1423@2026-11-27T02:14:40Z",
+    "https://github.com/Marvisak/VIctory/issues/3425@2026-11-27T01:15:33Z",
+    "https://github.com/xcl-dev/xcl/issues/2946@2026-11-27T03:24:58Z",
+    "https://github.com/brcly/TuxBox/issues/292@2026-11-27T02:32:06Z",
+    "https://github.com/R0Y00/Xbox2Windows/issues/2976@2026-11-27T01:02:20Z",
+    "https://github.com/LooperSalty/AnyXboxX/issues/449@2026-11-27T00:11:17Z"
   ],
   "items": [
+    {
+      "effortId": "tuxbox",
+      "kind": "free",
+      "stage": "boots",
+      "outcome": "reached",
+      "quote": "every run then ends on the story loading screen: VRAM fills, GTT climbs, and the kernel refuses a submit",
+      "commit": "d50a51c",
+      "gpu": "RX 6700 XT",
+      "url": "https://github.com/brcly/TuxBox/issues/292",
+      "at": "2026-11-27T02:04:54Z",
+      "by": "244d2e345e80"
+    },
+    {
+      "effortId": "anyxboxx",
+      "kind": "rule",
+      "stage": "world",
+      "quote": "Load into the world",
+      "outcome": "reached",
+      "commit": "4340aac",
+      "gpu": "RTX 4080 SUPER",
+      "url": "https://github.com/LooperSalty/AnyXboxX/issues/479",
+      "at": "2026-11-27T01:43:24Z",
+      "by": "f2522ce6bc98"
+    },
+    {
+      "effortId": "xbox2windows",
+      "kind": "free",
+      "stage": "loads",
+      "outcome": "reached",
+      "quote": "In the main executable's startup run ( 870), frame rate falls from about 30 fps to 4–9 fps once the post-confirm load starts.",
+      "commit": "6ee878d",
+      "gpu": "RTX 3080 Ti",
+      "url": "https://github.com/R0Y00/Xbox2Windows/issues/2976",
+      "at": "2026-11-27T01:01:59Z",
+      "by": "b9f1c5d344d3"
+    },
+    {
+      "effortId": "marvis",
+      "kind": "free",
+      "stage": "world",
+      "outcome": "reached",
+      "quote": "main ( 63bcca4 ) plus the unmerged PRs this setup needs to render the world",
+      "commit": "63bcca4",
+      "gpu": "RTX 5090",
+      "url": "https://github.com/Marvisak/VIctory/issues/3425",
+      "at": "2026-11-27T00:45:00Z",
+      "by": "752265967b39"
+    },
     {
       "effortId": "kelvaroq",
       "kind": "free",
       "stage": "menu",
       "outcome": "reached",
-      "quote": "the picker itself renders (footer bar ACCOUNT PICKER (Y) SCREEN NARRATION (OFF) (X) PLAYER (A) ), the GPU presents at a locked 30 fps",
+      "quote": "the picker itself renders (footer bar ACCOUNT PICKER (Y) SCREEN NARRATION (OFF) (X) PLAYER (A) )",
       "commit": "e062a82",
       "gpu": "RTX 4070 SUPER",
       "url": "https://github.com/stellarr-studio/kelvaroq/issues/20",
