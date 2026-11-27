@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T20:05:20.765Z",
+  "updated": "2026-11-27T20:20:23.013Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T20:01:23.000Z",
-      "lastOkAt": "2026-11-27T20:05:20.765Z",
-      "seen": 38250,
+      "lastOkAt": "2026-11-27T20:20:23.013Z",
+      "seen": 38500,
       "events": 1352,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T20:05:20.765Z",
+      "lastOkAt": "2026-11-27T20:20:23.013Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T20:05:20.765Z",
-      "seen": 9334,
+      "lastOkAt": "2026-11-27T20:20:23.013Z",
+      "seen": 9397,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T19:43:57.449Z",
-      "lastOkAt": "2026-11-27T20:05:20.765Z",
-      "seen": 61200,
+      "lastOkAt": "2026-11-27T20:20:23.013Z",
+      "seen": 61600,
       "events": 45,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T08:05:20.765Z",
-      "lastOkAt": "2026-11-27T20:05:20.765Z",
-      "seen": 18423,
+      "lastCursor": "2026-11-27T08:20:23.013Z",
+      "lastOkAt": "2026-11-27T20:20:23.013Z",
+      "seen": 18546,
       "events": 12,
       "errors": 0
     }
@@ -14214,12 +14214,17 @@
           "at": "2026-11-27T14:20:22.308Z",
           "by": "desk",
           "note": "The only stored source is the project’s own GitHub repository with an empty excerpt, so it is primary but not independent and too thin to verify the claimed results."
+        },
+        {
+          "at": "2026-11-27T20:20:23.013Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository entry with an empty excerpt, so the one line rests on a title alone and is not independently corroborated."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T14:20:22.308Z"
+      "deskAt": "2026-11-27T20:20:23.013Z"
     },
     {
       "id": "20261127t142738z-vitoriabr-5061c912",
