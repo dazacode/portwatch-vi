@@ -1,31 +1,25 @@
 {
  "version": 1,
- "updated": "2026-11-27T01:02:14.441Z",
+ "updated": "2026-11-27T01:31:41.764Z",
  "now": {
-  "hash": "678a4b59a1e5dfd8",
-  "at": "2026-11-27T00:02:24.977Z",
-  "by": "Pollinations, gpt-oss-20b",
+  "hash": "f32951b6041b17d3",
+  "at": "2026-11-27T01:31:41.764Z",
+  "by": "Pollinations, gpt-6-luna-classic",
   "points": [
    {
-    "text": "The linked article reports that ZETTROX's repo and omonkey's build vanished from the board, with ZETTROX's GitHub now 404 and omonkey's build taken down the same day.",
+    "text": "Tom's Hardware reports that Take-Two removed 3,007 GTA 6 PC-port repositories from GitHub in a DMCA crackdown.",
     "sources": [
-     "article:2026-11-26-zettrox-omonkey-gone"
+     "story:2026-11-26-news.google.com-take-two-wipes-out-3-007-gta-6-pc-port-repos-from-github-in-massive-dmca-crackdown-as-ai-t"
     ]
    },
    {
-    "text": "The linked article reports that GTA VI builds now clear Lucia's prologue and reach Jason's first mission, with private builds playing through the opening into \"Gone Fishing\" but still rendering badly and vehicles rarely working.",
+    "text": "The tracker records Kelvaroq claiming Runnable, up from Groundwork.",
     "sources": [
-     "article:2026-11-25-prologue-gone-fishing"
+     "project:kelvaroq"
     ]
    },
    {
-    "text": "The tracker records that NotNozy now claims the stage \"Runnable\", up from \"Runnable\".",
-    "sources": [
-     "project:notnozy"
-    ]
-   },
-   {
-    "text": "The tracker records that WASDeKeys low-end joined the board, claiming the stage \"Runnable\".",
+    "text": "The tracker records WASDeKeys low-end joining the board with a Runnable claim.",
     "sources": [
      "project:victory-low-end-pc"
     ]
@@ -99,8 +93,73 @@
    }
   ]
  },
- "notes": {},
+ "notes": {
+  "commit:8e76877": {
+   "hash": "3407cddacaf042fe",
+   "text": "Xin-Leonida's commit says it documents an internal input script and cache growth for session 13.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T01:31:41.764Z"
+  },
+  "commit:a8aca92": {
+   "hash": "d95c19455ed4b0ee",
+   "text": "Native-Victory-macOS's commit says it merges the main branch into fix/descriptor-changed.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T01:31:41.764Z"
+  },
+  "commit:774540f": {
+   "hash": "4c2c520ccc87184c",
+   "text": "Native-Victory-macOS's commit says it merges a pull request about a wave64 regression test.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T01:31:41.764Z"
+  },
+  "commit:970658e": {
+   "hash": "b0ba010aa8f70fa5",
+   "text": "i95-GTA6-PC-Launcher’s commit says it updates ScarlettPort and mentions victory-fork’s 9.7 fps claim.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T01:31:41.764Z"
+  },
+  "commit:1947c06": {
+   "hash": "f6873b2a13d50199",
+   "text": "whibwhi-own's commit says it records findings about program root signatures in pipelines, first run, and driver stop.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T01:31:41.764Z"
+  },
+  "commit:4556b89": {
+   "hash": "a7718a9e800537d7",
+   "text": "i95-GTA6-PC-Launcher’s commit says it updates six projects to their upstream versions.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T01:31:41.764Z"
+  },
+  "commit:b62053f": {
+   "hash": "5af2ac069cdb8d7c",
+   "text": "AnyXboxX's commit says it merges a pull request focused on NVIDIA documentation.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T01:31:41.764Z"
+  },
+  "commit:12c47fa": {
+   "hash": "13d9acb04e70209c",
+   "text": "AnyXboxX's commit says it merges the main branch into docs/readme-nvidia-focus.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-27T01:31:41.764Z"
+  }
+ },
  "stories": {
+  "2026-11-27-bsky.app-gta-6-pc-port-creepypasta-when": {
+   "hash": "2d3a305f6bf3093a",
+   "topic": "Community",
+   "importance": 1,
+   "weight": 0,
+   "summary": null,
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
+  "2026-11-27-news.google.com-tennis-was-planned-for-gta-6-and-cut-two-rockstar-north-developers-told-pc-games-while-cra": {
+   "hash": "c7d870d9ebe1cc91",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": "Two Rockstar North developers told PC Games that tennis was planned but cut, while several other activities were considered and rejected.",
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
   "2026-11-27-bsky.app-hey-if-you-play-any-fucking-ai-generated-port-or-recomp-or-anything-you-are-a-bad-person-t": {
    "hash": "d9dbc98c29ac8d15",
    "topic": "Port",
@@ -180,6 +239,14 @@
    "weight": 26,
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-26-news.google.com-github-post-links-anyps5-project-to-gta-6": {
+   "hash": "e935b723008c473f",
+   "topic": "Port",
+   "importance": 2,
+   "weight": 22,
+   "summary": "Wisevoter reports that a GitHub post links the AnyPS5 project to GTA 6.",
+   "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-26-bsky.app-running-a-git-server-on-tor-is-very-easy-if-youre-running-ai-to-port-gta-vi": {
    "hash": "0f7fd2b45e15aacc",
@@ -390,7 +457,7 @@
    "topic": "Port",
    "importance": 3,
    "weight": 16,
-   "lead": "2026-11-26-dsogaming.com-grand-theft-auto-6-pc-port-cgbj-is-91-complete-with-playable-framerates",
+   "lead": "2026-11-26-news.google.com-grand-theft-auto-6-pc-port-cgbj-is-91-complete-with-playable-framerates",
    "summary": "Grand Theft Auto 6 PC Port CGBJ Is 91% Complete With Playable Framerates",
    "by": "Pollinations, gpt-oss-20b"
   },
@@ -746,12 +813,12 @@
    "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
   "2026-11-26-news.google.com-chainsaws-would-have-been-too-much-even-for-gta-6-as-rockstar-explains-why-some-extra-viol": {
-   "hash": "a25b01911a23378e",
+   "hash": "3d377624f0311f84",
    "topic": "Game",
    "importance": 1,
    "weight": 0,
-   "summary": "Rockstar explains why some extra violent weapons are missing from GTA 6.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
+   "summary": "Rockstar explains why some extra violent weapons, including chainsaws, are missing from GTA 6.",
+   "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-26-techradar.com-i-pitted-my-three-favorite-xbox-controllers-against-each-other-to-decide-which-was-best-fo": {
    "hash": "5588de3a690334ef",
@@ -1330,6 +1397,15 @@
    "lead": "2026-11-26-news.google.com-while-gamers-wait-for-gta-6s-pc-port-modders-have-already-bypassed-its-30-fps-limit-on-jai",
    "summary": null,
    "by": "Kilo Gateway, particle-ai/particle-1:free"
+  },
+  "2026-11-26-news.google.com-grand-theft-auto-6-pc-port-cgbj-is-91-complete-with-playable-framerates": {
+   "hash": "bb0c1b1f286eb9b3",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 40,
+   "similar": 1,
+   "summary": "DSOGaming says the CGBJ GTA 6 PC port is 91% complete with playable framerates.",
+   "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-26-news.google.com-take-two-targets-3-007-gta-6-pc-port-repositories-with-github-dmca-takedowns": {
    "hash": "d752c49ac3fa850d",
@@ -2070,15 +2146,6 @@
    "topic": "Community",
    "importance": 1,
    "weight": 0,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-26-dsogaming.com-grand-theft-auto-6-pc-port-cgbj-is-91-complete-with-playable-framerates": {
-   "hash": "bb0c1b1f286eb9b3",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 40,
-   "similar": 1,
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
@@ -3341,30 +3408,6 @@
    "weight": 22,
    "summary": null,
    "by": null
-  },
-  "2026-11-25-bsky.app-techradar-tech-unofficial-gta-6-pc-ports-are-speeding-ahead-with-chapter-1-now-playable-ht": {
-   "hash": "50745c6bfb57295e",
-   "topic": "Port",
-   "importance": 4,
-   "weight": 38,
-   "summary": "Unofficial GTA 6 PC ports are speeding ahead, with Chapter 1 now playable.",
-   "by": "Kilo Gateway, reflection/beam-free"
-  },
-  "2026-11-25-msn.com-ex-rockstar-water-artist-compares-gta-6s-rivers-to-red-dead-2s": {
-   "hash": "a751a27d225980d3",
-   "topic": "Game",
-   "importance": 1,
-   "weight": 0,
-   "summary": null,
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
-  "2026-11-25-gamesradar.com-unofficial-gta-6-pc-race-is-the-most-ridiculous-dumpster-fire-ever-says-former-destiny-2-d": {
-   "hash": "6325d948639ba4c2",
-   "topic": "Community",
-   "importance": 1,
-   "weight": 0,
-   "summary": "Unofficial GTA 6 PC race called most ridiculous dumpster fire.",
-   "by": "Pollinations, gpt-oss-20b"
   }
  },
  "projects": {
@@ -3389,17 +3432,17 @@
    "by": "Kilo Gateway, particle-ai/particle-1:free",
    "at": "2026-11-27T00:02:24.977Z"
   },
-  "decant": {
-   "hash": "be52c711796917f8",
-   "count": 15,
-   "summary": "Decant recent commits claim shader swizzle support, d3d12x view heap reclamation, and title_mem drain lock decoupling.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-26T23:31:43.868Z"
-  },
   "anyxboxx": {
    "hash": "1cd043952e0f45fa",
    "count": 15,
    "summary": "AnyXboxX's recent commits mention README progress, mouse camera, window name icon, overlay threads, and threads by cores.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-27T00:36:38.283Z"
+  },
+  "tuxbox": {
+   "hash": "2abf4af0069996b8",
+   "count": 15,
+   "summary": "TuxBox's recent commits mention ProjectScarlett preparation, lane pixel input matching, mesh lane spill, shader fixes, live worker wake, and root cbv offsets control.",
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-27T00:36:38.283Z"
   },
@@ -3410,12 +3453,19 @@
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-27T00:36:38.283Z"
   },
-  "tuxbox": {
-   "hash": "2abf4af0069996b8",
+  "decant": {
+   "hash": "be52c711796917f8",
    "count": 15,
-   "summary": "TuxBox's recent commits mention ProjectScarlett preparation, lane pixel input matching, mesh lane spill, shader fixes, live worker wake, and root cbv offsets control.",
+   "summary": "Decant recent commits claim shader swizzle support, d3d12x view heap reclamation, and title_mem drain lock decoupling.",
    "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-27T00:36:38.283Z"
+   "at": "2026-11-26T23:31:43.868Z"
+  },
+  "five-star-recomp": {
+   "hash": "e29203e02c1f0df5",
+   "count": 15,
+   "summary": "Five Star Recomp's commits and pull requests mention held texture views, frame dumps, Aftermath crash dumps, loader flags, mesh fallback, buffer checks, and sampler tests.",
+   "by": "Kilo Gateway, reflection/beam-free",
+   "at": "2026-11-27T01:02:14.441Z"
   },
   "project-americas": {
    "hash": "61c30d96068b45d8",
@@ -3430,13 +3480,6 @@
    "summary": "Palmetto's recent commits mention plane-refresh, plane-composition, memory-wait ports, console-faithful cross-list memory wait, refresh title-written planes, and present-driven frame clock.",
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-27T00:36:38.283Z"
-  },
-  "five-star-recomp": {
-   "hash": "e29203e02c1f0df5",
-   "count": 15,
-   "summary": "Five Star Recomp's commits and pull requests mention held texture views, frame dumps, Aftermath crash dumps, loader flags, mesh fallback, buffer checks, and sampler tests.",
-   "by": "Kilo Gateway, reflection/beam-free",
-   "at": "2026-11-27T01:02:14.441Z"
   }
  }
 }
