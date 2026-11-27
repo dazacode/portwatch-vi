@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T15:05:21.925Z",
+  "updated": "2026-11-27T15:20:29.576Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T15:01:25.000Z",
-      "lastOkAt": "2026-11-27T15:05:21.925Z",
-      "seen": 33250,
+      "lastOkAt": "2026-11-27T15:20:29.576Z",
+      "seen": 33500,
       "events": 1180,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T12:10:29.000Z",
-      "lastOkAt": "2026-11-27T15:05:21.925Z",
+      "lastOkAt": "2026-11-27T15:20:29.576Z",
       "seen": 40,
       "events": 32,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T14:42:29.289Z",
-      "lastOkAt": "2026-11-27T15:05:21.925Z",
-      "seen": 8074,
-      "events": 25,
+      "lastCursor": "2026-11-27T15:10:16.601Z",
+      "lastOkAt": "2026-11-27T15:20:29.576Z",
+      "seen": 8137,
+      "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T14:59:21.741Z",
-      "lastOkAt": "2026-11-27T15:05:21.925Z",
-      "seen": 53200,
+      "lastOkAt": "2026-11-27T15:20:29.576Z",
+      "seen": 53600,
       "events": 40,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T03:05:21.925Z",
-      "lastOkAt": "2026-11-27T15:05:21.925Z",
-      "seen": 15951,
+      "lastCursor": "2026-11-27T03:20:29.576Z",
+      "lastOkAt": "2026-11-27T15:20:29.576Z",
+      "seen": 16075,
       "events": 12,
       "errors": 0
     }
@@ -14369,10 +14369,17 @@
       "chain": "sha256:1125d8daf34c6fe180dbb70f0a0bae137d15ac4c3584ff45de78aa567bfc0167",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T15:20:29.576Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the PR title alone is a thin, non-independent basis for stating the feature claim as fact."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T15:20:29.576Z"
     },
     {
       "id": "20261127t144000z-scripthook-vi-4840649d",
@@ -14477,10 +14484,17 @@
       "chain": "sha256:da96d3348d5e104fedeb1cf85c5afe906fd94f82648b3b4a67ed6e18ac16d94b",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T15:20:29.576Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub repository with no excerpt, so the feature claims are not independently supported and the source is too thin to publish."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T15:20:29.576Z"
     }
   ],
   "reports": [
