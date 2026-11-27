@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T09:20:24.432Z",
+  "updated": "2026-11-27T09:35:51.794Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T09:00:44.000Z",
-      "lastOkAt": "2026-11-27T09:20:24.432Z",
-      "seen": 27500,
+      "lastOkAt": "2026-11-27T09:35:51.794Z",
+      "seen": 27750,
       "events": 983,
       "errors": 0
     },
     "evidence": {
-      "lastCursor": "2026-11-27T06:03:44.000Z",
-      "lastOkAt": "2026-11-27T09:20:24.432Z",
-      "seen": 37,
-      "events": 29,
+      "lastCursor": "2026-11-27T09:21:22.000Z",
+      "lastOkAt": "2026-11-27T09:35:51.794Z",
+      "seen": 38,
+      "events": 30,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T09:20:24.432Z",
-      "seen": 6646,
+      "lastOkAt": "2026-11-27T09:35:51.794Z",
+      "seen": 6708,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T08:50:42.000Z",
-      "lastOkAt": "2026-11-27T09:20:24.432Z",
-      "seen": 44000,
+      "lastOkAt": "2026-11-27T09:35:51.794Z",
+      "seen": 44400,
       "events": 32,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T09:20:24.432Z",
-      "seen": 13120,
+      "lastOkAt": "2026-11-27T09:35:51.794Z",
+      "seen": 13243,
       "events": 12,
       "errors": 0
     }
@@ -10898,12 +10898,17 @@
           "at": "2026-11-27T03:20:21.418Z",
           "by": "desk",
           "note": "The only stored source is the project’s own record repeating the same scout line, so it is thin and not independent enough to publish."
+        },
+        {
+          "at": "2026-11-27T09:35:51.794Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository record, which is primary but not independent, and the line merely restates a pipeline sighting rather than a verifiable change."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T03:20:21.418Z"
+      "deskAt": "2026-11-27T09:35:51.794Z"
     },
     {
       "id": "20261127t000000z-vitoria-spark-3226a874",
@@ -11905,6 +11910,65 @@
         "low confidence"
       ],
       "deskAt": "2026-11-27T09:05:25.400Z"
+    },
+    {
+      "id": "20261127t092122z-avatarmanz-9e06d93b",
+      "key": "evidence|avatarmanz|world|41568",
+      "kind": "evidence",
+      "projectId": "avatarmanz",
+      "projectName": "AvatarManz",
+      "at": "2026-11-27T09:21:22Z",
+      "detectedAt": "2026-11-27T09:35:51.794Z",
+      "title": "New test evidence on AvatarManz — world",
+      "oneLine": "in or shortly after the first world scene",
+      "sources": [
+        {
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/445",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "in or shortly after the first world scene",
+          "at": "2026-11-27T09:21:22Z",
+          "kind": "primary",
+          "authorHash": "732dfe07ba55",
+          "excerpt": "in or shortly after the first world scene"
+        }
+      ],
+      "fingerprint": {
+        "repo": "avatarmanz/victory-7900xtx",
+        "name": "avatarmanz",
+        "words": [
+          "avatarmanz"
+        ],
+        "hash": "c979ffa17cfa2d9d",
+        "projectId": "avatarmanz"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:9b16df40e29b16a28285b90a3f46fdf8695bb22aed27ea33f705cb219ceb0920",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T09:35:51.794Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository, which is primary but not independent, and its excerpt is a bare fragment that does not plainly establish the claim."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T09:35:51.794Z"
     }
   ],
   "reports": [
