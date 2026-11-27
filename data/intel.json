@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T14:50:21.776Z",
+  "updated": "2026-11-27T15:05:21.925Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T14:31:09.000Z",
-      "lastOkAt": "2026-11-27T14:50:21.776Z",
-      "seen": 33000,
-      "events": 1158,
+      "lastCursor": "2026-11-27T15:01:25.000Z",
+      "lastOkAt": "2026-11-27T15:05:21.925Z",
+      "seen": 33250,
+      "events": 1180,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T12:10:29.000Z",
-      "lastOkAt": "2026-11-27T14:50:21.776Z",
+      "lastOkAt": "2026-11-27T15:05:21.925Z",
       "seen": 40,
       "events": 32,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T14:42:29.289Z",
-      "lastOkAt": "2026-11-27T14:50:21.776Z",
-      "seen": 8011,
+      "lastOkAt": "2026-11-27T15:05:21.925Z",
+      "seen": 8074,
       "events": 25,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T14:26:54.000Z",
-      "lastOkAt": "2026-11-27T14:50:21.776Z",
-      "seen": 52800,
+      "lastCursor": "2026-11-27T14:59:21.741Z",
+      "lastOkAt": "2026-11-27T15:05:21.925Z",
+      "seen": 53200,
       "events": 40,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T02:50:21.776Z",
-      "lastOkAt": "2026-11-27T14:50:21.776Z",
-      "seen": 15827,
+      "lastCursor": "2026-11-27T03:05:21.925Z",
+      "lastOkAt": "2026-11-27T15:05:21.925Z",
+      "seen": 15951,
       "events": 12,
       "errors": 0
     }
@@ -14323,6 +14323,164 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-27T14:50:21.776Z"
+    },
+    {
+      "id": "20261127t145227z-victory-nvidia-ee555f46",
+      "key": "update|victory-nvidia|activity|41569",
+      "kind": "update",
+      "projectId": "victory-nvidia",
+      "projectName": "VIctory-NVIDIA",
+      "at": "2026-11-27T14:52:27Z",
+      "detectedAt": "2026-11-27T15:05:21.925Z",
+      "title": "VIctory-NVIDIA opened pull request #51",
+      "oneLine": "FSR Framegen for 30-series cards",
+      "sources": [
+        {
+          "url": "https://github.com/trustno1-coder/VIctory-NVIDIA/pull/51",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "FSR Framegen for 30-series cards",
+          "at": "2026-11-27T14:52:27Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "trustno1-coder/victory-nvidia",
+        "name": "victory-nvidia",
+        "words": [
+          "victory-nvidia"
+        ],
+        "hash": "842141b130100641",
+        "projectId": "victory-nvidia"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:1125d8daf34c6fe180dbb70f0a0bae137d15ac4c3584ff45de78aa567bfc0167",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t144000z-scripthook-vi-4840649d",
+      "key": "update|scripthook-vi|activity|41569",
+      "kind": "update",
+      "projectId": "scripthook-vi",
+      "projectName": "scripthook-vi",
+      "at": "2026-11-27T14:40:00Z",
+      "detectedAt": "2026-11-27T15:05:21.925Z",
+      "title": "scripthook-vi opened pull request #5",
+      "oneLine": "Experimental vehicle spawn, and vehicle model names",
+      "sources": [
+        {
+          "url": "https://github.com/modpapi/scripthook-vi/pull/5",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Experimental vehicle spawn, and vehicle model names",
+          "at": "2026-11-27T14:40:00Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "modpapi/scripthook-vi",
+        "name": "scripthook-vi",
+        "words": [
+          "scripthook-vi"
+        ],
+        "hash": "9025996149518097",
+        "projectId": "scripthook-vi"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:4ac85ef1bd532be232745cd860cdf3273ee5f029d81a83ec3acbcde5035beab7",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T15:05:21.925Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the item rests on a single non-independent primary source and a routine pull-request event rather than confirmed news."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T15:05:21.925Z"
+    },
+    {
+      "id": "20261127t143544z-launcher-6337e652",
+      "key": "reference|launcher|activity|41569",
+      "kind": "reference",
+      "projectId": "launcher",
+      "projectName": "VILauncher",
+      "at": "2026-11-27T14:35:44Z",
+      "detectedAt": "2026-11-27T15:05:21.925Z",
+      "title": "New reference to VILauncher",
+      "oneLine": "GTA VI PC port auto launcher: hardware detection, build management, prewarm, leaderboard-based recommendation (WIP)",
+      "sources": [
+        {
+          "url": "https://github.com/DKTTT/gta6-pc-launcher",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "DKTTT/gta6-pc-launcher",
+          "at": "2026-11-27T14:35:44Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sixlauncher/launcher",
+        "name": "vilauncher",
+        "words": [
+          "vilauncher",
+          "launcher"
+        ],
+        "hash": "32db1ca373ae89cb",
+        "projectId": "launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:da96d3348d5e104fedeb1cf85c5afe906fd94f82648b3b4a67ed6e18ac16d94b",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
