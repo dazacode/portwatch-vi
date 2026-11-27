@@ -1,6 +1,18 @@
 {
-  "lastRun": "2026-11-27T06:41:20.074Z",
+  "lastRun": "2026-11-27T07:42:07.362Z",
   "runs": [
+    {
+      "at": "2026-11-27T07:42:07.362Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [
+        "finding leonida"
+      ],
+      "skipped": [
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world”",
+        "held: candidate progmatios23/scarlett-hle: has markup"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-27T06:41:20.074Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -474,17 +486,6 @@
       "applied": [],
       "skipped": [],
       "note": "No plan: no provider answered"
-    },
-    {
-      "at": "2026-11-25T11:40:30.380Z",
-      "by": "Kilo Gateway, particle-ai/particle-1:free",
-      "applied": [
-        "finding leonida"
-      ],
-      "skipped": [
-        "article \"Take-Two's DMCA Erases Leonida and 3,007 GitHub Re\": invalid: id is lowercase letters, digits and hyphens."
-      ],
-      "note": "Logged the Discord takedown finding for Leonida and wrote one takedown article; no score changes, candidates or pick."
     }
   ]
 }
