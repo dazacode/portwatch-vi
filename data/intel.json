@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T20:20:23.013Z",
+  "updated": "2026-11-27T20:35:22.243Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T20:01:23.000Z",
-      "lastOkAt": "2026-11-27T20:20:23.013Z",
-      "seen": 38500,
-      "events": 1352,
+      "lastCursor": "2026-11-27T20:31:00.000Z",
+      "lastOkAt": "2026-11-27T20:35:22.243Z",
+      "seen": 38750,
+      "events": 1371,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T20:20:23.013Z",
+      "lastOkAt": "2026-11-27T20:35:22.243Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T20:20:23.013Z",
-      "seen": 9397,
+      "lastOkAt": "2026-11-27T20:35:22.243Z",
+      "seen": 9460,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T19:43:57.449Z",
-      "lastOkAt": "2026-11-27T20:20:23.013Z",
-      "seen": 61600,
-      "events": 45,
+      "lastCursor": "2026-11-27T20:28:14.447Z",
+      "lastOkAt": "2026-11-27T20:35:22.243Z",
+      "seen": 62000,
+      "events": 46,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T08:20:23.013Z",
-      "lastOkAt": "2026-11-27T20:20:23.013Z",
-      "seen": 18546,
+      "lastCursor": "2026-11-27T08:35:22.243Z",
+      "lastOkAt": "2026-11-27T20:35:22.243Z",
+      "seen": 18669,
       "events": 12,
       "errors": 0
     }
@@ -14155,12 +14155,17 @@
           "at": "2026-11-27T14:05:25.715Z",
           "by": "desk",
           "note": "The only source is the project's own repository with an empty excerpt, so the specific measured figures (6.3 fps median, 8.0 GB) are not plainly supported and the line is truncated mid-claim."
+        },
+        {
+          "at": "2026-11-27T20:35:22.243Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub entry with an empty excerpt, so the specific launcher features and measured 6.3 fps/8.0 GB figures are not plainly supported by the stored text."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T14:05:25.715Z"
+      "deskAt": "2026-11-27T20:35:22.243Z"
     },
     {
       "id": "20261127t140126z-victory-low-end-pc-05a6be20",
@@ -15489,6 +15494,62 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-27T20:05:20.765Z"
+    },
+    {
+      "id": "20261127t195523z-scene-e0b319db",
+      "key": "takedown|-|https://news.google.com/rss/articles/cbmilafbvv95cuxqzenjzgflwlh4q3flts0zbvjialvlee93cdz3elfvuvzfznhzyw55v0vkes1uewzoegviujj6adlnzldjvlb1n3lxdmm2mupzbjdsdwk3u0tjatlfqxl4rmr2mdjjqm1nb0y2agzna2vrtdnnb1y0q3nxcdvbnhhzodvkcznuc0vfzwrqlwtrslldtvi1?oc=5|41569",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-27T19:55:23.000Z",
+      "detectedAt": "2026-11-27T20:35:22.243Z",
+      "title": "NeoTeo in a takedown report",
+      "oneLine": "GTA 6 Port Takedown: 3,007 GitHub Repositories",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZENjZGFlWlh4Q3FLTS0zbVJialVleE93cDZ3elFVUVZfZnhZYW55V0VkeS1ueWZOeGVIUjJ6aDlNZldJVlB1N3lxdmM2MUpzbjdSdWk3U0tJaTlFQXl4RmR2MDJjQm1Nb0Y2aGZna2VrTDNnb1Y0Q3NxcDVBNHhZODVkczNuc0VfZWRqLWtrSllDTVI1?oc=5",
+          "host": "news.google.com",
+          "outlet": "NeoTeo",
+          "title": "GTA 6 Port Takedown: 3,007 GitHub Repositories",
+          "at": "2026-11-27T19:55:23.000Z",
+          "kind": "outside",
+          "authorHash": "292ca06cea",
+          "excerpt": "GTA 6 Port Takedown: 3,007 GitHub Repositories"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "b8810c861063088f",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:c953fa1335e8188fa3e3dbdd81d538d955bd2793029b53c5566ce2f34da6e054",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T20:35:22.243Z",
+          "by": "desk",
+          "note": "The item rests on a single outside source whose excerpt only repeats the headline, so it is too thin to substantiate the takedown claim."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-27T20:35:22.243Z"
     }
   ],
   "reports": [
