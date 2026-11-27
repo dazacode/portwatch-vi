@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-27T00:36:38.283Z",
+ "updated": "2026-11-27T01:02:14.441Z",
  "now": {
   "hash": "678a4b59a1e5dfd8",
   "at": "2026-11-27T00:02:24.977Z",
@@ -99,45 +99,40 @@
    }
   ]
  },
- "notes": {
-  "commit:0eea573": {
-   "hash": "aedd28ce854f2468",
-   "text": "AnyXboxX says it merges pull request #467 from LooperSalty/docs/readme-progress-27.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-27T00:36:38.283Z"
-  },
-  "commit:60fe8c3": {
-   "hash": "d637e751363fa015",
-   "text": "Native-Victory-macOS says it merges pull request #205 from brainbudt/fix/hle-overlapped-readfile-eof.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-27T00:36:38.283Z"
-  },
-  "commit:4362cb9": {
-   "hash": "e70e69978801c6e8",
-   "text": null,
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-27T00:36:38.283Z"
-  },
-  "commit:bb92ca4": {
-   "hash": "6f8e2aa348671423",
-   "text": "i95-GTA6-PC-Launcher says AnyXboxX 2225a8e is plain warm, 16_cores preset; victory-fork claims 8.8 fps.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-27T00:36:38.283Z"
-  },
-  "commit:5c0c346": {
-   "hash": "b7cdbde5bde7d195",
-   "text": "Native-Victory-macOS says it merges remote-tracking branch 'native/main' into res205.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-27T00:36:38.283Z"
-  },
-  "commit:ab644f0": {
-   "hash": "1f7d0345f364d6a4",
-   "text": null,
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-27T00:36:38.283Z"
-  }
- },
+ "notes": {},
  "stories": {
+  "2026-11-27-bsky.app-hey-if-you-play-any-fucking-ai-generated-port-or-recomp-or-anything-you-are-a-bad-person-t": {
+   "hash": "d9dbc98c29ac8d15",
+   "topic": "Port",
+   "importance": null,
+   "weight": 26,
+   "summary": null,
+   "by": null
+  },
+  "2026-11-27-bsky.app-no-pc-gta-6-modders-said-hold-my-beer-the-game-linked-team-covered-how-a-leaked-xbox-build": {
+   "hash": "5bd08977f512722e",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 26,
+   "summary": "Modders claim a leaked Xbox build was recompiled for PC.",
+   "by": "Pollinations, openai/gpt-oss-20b"
+  },
+  "2026-11-27-news.google.com-gta-6-pc-ports-via-ai-vibe-coding-spark-legal-crackdown": {
+   "hash": "351ca1ddcfeea17f",
+   "topic": "Legal",
+   "importance": 5,
+   "weight": 64,
+   "summary": null,
+   "by": "Pollinations, openai/gpt-oss-20b"
+  },
+  "2026-11-27-bsky.app-a-fan-made-gta-6-port-runs-on-windows-at-about-19-to-23-fps-dropping-near-10-fps-in-town-w": {
+   "hash": "1c63d2ba68819612",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 26,
+   "summary": null,
+   "by": "Pollinations, openai/gpt-oss-20b"
+  },
   "2026-11-27-news.google.com-cyberleek-publishes-209-gb-of-the-xbox-build-of-gta-6-without-the-executable": {
    "hash": "975bec288d599236",
    "topic": "Leak",
@@ -1934,8 +1929,7 @@
    "hash": "5f82d8e6e14f6c62",
    "topic": "Port",
    "importance": 4,
-   "weight": 52,
-   "similar": 1,
+   "weight": 46,
    "summary": null,
    "by": "Kilo Gateway, particle-ai/particle-1:free"
   },
@@ -3371,39 +3365,6 @@
    "weight": 0,
    "summary": "Unofficial GTA 6 PC race called most ridiculous dumpster fire.",
    "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-25-news.google.com-i-stay-horrified-and-impressed-by-how-stupidly-fast-this-is-advancing-unofficial-pc-ports-": {
-   "hash": "d0be28b846521d17",
-   "topic": "Port",
-   "importance": 5,
-   "weight": 58,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-25-techradar.com-unofficial-gta-6-pc-ports-are-speeding-ahead-with-chapter-1-now-playable": {
-   "hash": "823faee05b108f46",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 24,
-   "lead": "2026-11-26-news.google.com-gta-6-on-pc-unofficial-port-gets-better-fps-chapter-1-reportedly-playable",
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-25-bsky.app-ai-assisted-reverse-engineering-of-leaked-xbox-files-has-reportedly-brought-an-unofficial-": {
-   "hash": "22caed47a063731f",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 26,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-25-news.google.com-illegal-gta-6-pc-port-now-has-3d-models-rendering-shadows-and-physics-making-incredibly-fa": {
-   "hash": "3db1c262cf362d54",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 34,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
   }
  },
  "projects": {
@@ -3435,24 +3396,17 @@
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-26T23:31:43.868Z"
   },
-  "project-americas": {
-   "hash": "61c30d96068b45d8",
-   "count": 15,
-   "summary": "Project-Americas's commits mention pipeline libraries between runs, GPU windows over watched memory, upload budgets, texture drops, runaway guards and DRED reports naming a stopped dispatch.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free",
-   "at": "2026-11-27T00:02:24.977Z"
-  },
-  "victory-low-end-pc": {
-   "hash": "c1b62f6c3c042d5a",
-   "count": 15,
-   "summary": "WASDeKeys low-end's commits and pull requests mention Windows 10 Agility SDK loading, an 8 GB 720p performance profile, a modified build and RX 9070 XT results.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free",
-   "at": "2026-11-27T00:02:24.977Z"
-  },
   "anyxboxx": {
    "hash": "1cd043952e0f45fa",
    "count": 15,
    "summary": "AnyXboxX's recent commits mention README progress, mouse camera, window name icon, overlay threads, and threads by cores.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-27T00:36:38.283Z"
+  },
+  "victory-gta6": {
+   "hash": "44d155e50ee644cc",
+   "count": 15,
+   "summary": "hyphennn's recent commits mention raw loads guarding, pending-pipeline test, README status, dispatch waits, spread dispatches, and texture fallback.",
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-27T00:36:38.283Z"
   },
@@ -3463,6 +3417,13 @@
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-27T00:36:38.283Z"
   },
+  "project-americas": {
+   "hash": "61c30d96068b45d8",
+   "count": 15,
+   "summary": "Project-Americas's commits mention pipeline libraries between runs, GPU windows over watched memory, upload budgets, texture drops, runaway guards and DRED reports naming a stopped dispatch.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-27T00:02:24.977Z"
+  },
   "palmetto": {
    "hash": "9e8113c61d2149d3",
    "count": 15,
@@ -3470,12 +3431,12 @@
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-27T00:36:38.283Z"
   },
-  "victory-gta6": {
-   "hash": "44d155e50ee644cc",
+  "five-star-recomp": {
+   "hash": "e29203e02c1f0df5",
    "count": 15,
-   "summary": "hyphennn's recent commits mention raw loads guarding, pending-pipeline test, README status, dispatch waits, spread dispatches, and texture fallback.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-27T00:36:38.283Z"
+   "summary": "Five Star Recomp's commits and pull requests mention held texture views, frame dumps, Aftermath crash dumps, loader flags, mesh fallback, buffer checks, and sampler tests.",
+   "by": "Kilo Gateway, reflection/beam-free",
+   "at": "2026-11-27T01:02:14.441Z"
   }
  }
 }
