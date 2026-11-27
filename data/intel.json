@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T19:06:50.048Z",
+  "updated": "2026-11-27T19:20:25.702Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T19:01:09.000Z",
-      "lastOkAt": "2026-11-27T19:06:50.048Z",
-      "seen": 37250,
+      "lastOkAt": "2026-11-27T19:20:25.702Z",
+      "seen": 37500,
       "events": 1314,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T19:06:50.048Z",
+      "lastOkAt": "2026-11-27T19:20:25.702Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T19:06:50.048Z",
-      "seen": 9082,
+      "lastOkAt": "2026-11-27T19:20:25.702Z",
+      "seen": 9145,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T19:00:27.345Z",
-      "lastOkAt": "2026-11-27T19:06:50.048Z",
-      "seen": 59600,
+      "lastOkAt": "2026-11-27T19:20:25.702Z",
+      "seen": 60000,
       "events": 44,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T07:06:50.048Z",
-      "lastOkAt": "2026-11-27T19:06:50.048Z",
-      "seen": 17927,
+      "lastCursor": "2026-11-27T07:20:25.702Z",
+      "lastOkAt": "2026-11-27T19:20:25.702Z",
+      "seen": 18052,
       "events": 12,
       "errors": 0
     }
@@ -15231,10 +15231,17 @@
       "chain": "sha256:388457b78b03c794e2593199f038d605fe83d2d9ab9049535bfe4bb30ef7a366",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T19:20:25.702Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository, which is primary but not independent, and the stored excerpt is empty, so the PR title cannot be verified beyond the pipeline's own record."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T19:20:25.702Z"
     },
     {
       "id": "20261127t184219z-xvalkyrie-d5bfd4f3",
@@ -15281,10 +15288,17 @@
       "chain": "sha256:7ad29ec0594943066020ce62f4a9312374a5905cac406f8803d128df9cbc44a7",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T19:20:25.702Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository, which is primary but not independent, and the item is a routine PR-opening with no excerpt or corroborating source."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T19:20:25.702Z"
     }
   ],
   "reports": [
