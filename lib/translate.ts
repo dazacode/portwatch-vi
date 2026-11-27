@@ -111,15 +111,59 @@ async function widgetSelect(): Promise<HTMLSelectElement | null> {
   return null
 }
 
+/** Google wraps the text it has translated in these. */
+const hasTranslatedText = () =>
+  /\btranslated-(ltr|rtl)\b/.test(document.documentElement.className) &&
+  !!document.querySelector("font[style*='vertical-align']")
+
+async function waitForTranslation(ms = 12_000) {
+  for (let waited = 0; waited < ms; waited += 200) {
+    if (hasTranslatedText()) return true
+    await new Promise((r) => setTimeout(r, 200))
+  }
+  return false
+}
+
+/** Leaves the page in English, so a failed attempt doesn't stick. */
+function forget() {
+  writeCookie("", 0)
+  markDocument(SOURCE_LANGUAGE)
+}
+
+export class TranslationError extends Error {}
+
+async function apply(code: string) {
+  try {
+    await loadWidget()
+  } catch {
+    throw new TranslationError("Google Translate couldn't be loaded.")
+  }
+  const select = await widgetSelect()
+  if (!select) throw new TranslationError("Google Translate didn't start.")
+  if (select.value !== code) {
+    select.value = code
+    select.dispatchEvent(new Event("change"))
+  }
+  if (!(await waitForTranslation())) {
+    throw new TranslationError("Google Translate didn't send a translation back.")
+  }
+  // Only once it has worked, so the page never claims a language it isn't in.
+  markDocument(code)
+}
+
 /** Picks up a language chosen on an earlier visit. */
 export async function resumeTranslation() {
   const code = chosenLanguage()
   if (code === SOURCE_LANGUAGE) return
-  markDocument(code)
-  await loadWidget()
+  try {
+    await apply(code)
+  } catch (error) {
+    forget()
+    throw error
+  }
 }
 
-/** Translates the page into `code`, or back to the original English. */
+/** Translates the page into `code`, or back to the original English. Throws when it can't. */
 export async function translateTo(code: string) {
   if (code === SOURCE_LANGUAGE) {
     writeCookie("", 0)
@@ -127,14 +171,13 @@ export async function translateTo(code: string) {
     location.reload()
     return
   }
+  const before = chosenLanguage()
   writeCookie(`/${SOURCE_LANGUAGE}/${code}`, 60 * 60 * 24 * 365)
-  markDocument(code)
-  const fresh = !loading
-  await loadWidget()
-  // A widget that has only just started reads the cookie itself.
-  if (fresh) return
-  const select = await widgetSelect()
-  if (!select) return location.reload()
-  select.value = code
-  select.dispatchEvent(new Event("change"))
+  try {
+    await apply(code)
+  } catch (error) {
+    if (before === SOURCE_LANGUAGE) forget()
+    else writeCookie(`/${SOURCE_LANGUAGE}/${before}`, 60 * 60 * 24 * 365)
+    throw error
+  }
 }
