@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T10:07:33.273Z",
+  "updated": "2026-11-27T10:20:21.879Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T10:01:30.000Z",
-      "lastOkAt": "2026-11-27T10:07:33.273Z",
-      "seen": 28250,
+      "lastOkAt": "2026-11-27T10:20:21.879Z",
+      "seen": 28500,
       "events": 999,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T09:21:22.000Z",
-      "lastOkAt": "2026-11-27T10:07:33.273Z",
+      "lastOkAt": "2026-11-27T10:20:21.879Z",
       "seen": 38,
       "events": 30,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T10:07:33.273Z",
-      "seen": 6832,
+      "lastOkAt": "2026-11-27T10:20:21.879Z",
+      "seen": 6894,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T09:55:43.145Z",
-      "lastOkAt": "2026-11-27T10:07:33.273Z",
-      "seen": 45200,
+      "lastOkAt": "2026-11-27T10:20:21.879Z",
+      "seen": 45600,
       "events": 35,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T10:07:33.273Z",
-      "seen": 13489,
+      "lastOkAt": "2026-11-27T10:20:21.879Z",
+      "seen": 13612,
       "events": 12,
       "errors": 0
     }
@@ -12025,10 +12025,17 @@
       "chain": "sha256:1c9c56b506e7b8d616bde1ab4e156633d9296553c198c6bd88be180e66cfdf1a",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T10:20:21.879Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub entry with an empty excerpt, so the detailed README correction is not plainly supported by the stored material and is not independent."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T10:20:21.879Z"
     },
     {
       "id": "20261127t093214z-scene-695077fe",
@@ -12130,10 +12137,17 @@
       "chain": "sha256:c5529420b6883140b15176727dd24c7a7c649e7149fcd8b762a916b71ac97b4f",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T10:20:21.879Z",
+          "by": "desk",
+          "note": "A single outside source with only a headline-level excerpt is too thin to plainly support the takedown claim."
+        }
+      ],
       "heldReasons": [
         "low confidence"
-      ]
+      ],
+      "deskAt": "2026-11-27T10:20:21.879Z"
     },
     {
       "id": "20261127t091857z-leonida-371c5f63",
