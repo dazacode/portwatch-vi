@@ -1,33 +1,33 @@
 {
  "version": 1,
- "updated": "2026-11-26T23:31:43.868Z",
+ "updated": "2026-11-27T00:02:24.977Z",
  "now": {
-  "hash": "2233e54c868b737e",
-  "at": "2026-11-26T23:01:58.349Z",
+  "hash": "678a4b59a1e5dfd8",
+  "at": "2026-11-27T00:02:24.977Z",
   "by": "Pollinations, gpt-oss-20b",
   "points": [
    {
-    "text": "The tracker records that CGBJ now claims the stage \"Playable\".",
+    "text": "The linked article reports that ZETTROX's repo and omonkey's build vanished from the board, with ZETTROX's GitHub now 404 and omonkey's build taken down the same day.",
     "sources": [
-     "project:cgbj"
+     "article:2026-11-26-zettrox-omonkey-gone"
     ]
    },
    {
-    "text": "The linked article reports that GTA VI builds clear Lucia's prologue and reach Jason's first mission.",
+    "text": "The linked article reports that GTA VI builds now clear Lucia's prologue and reach Jason's first mission, with private builds playing through the opening into \"Gone Fishing\" but still rendering badly and vehicles rarely working.",
     "sources": [
      "article:2026-11-25-prologue-gone-fishing"
     ]
    },
    {
-    "text": "Tom's Hardware reports that Take-Two wipes out 3,007 GTA 6 PC port repos from GitHub in a massive DMCA crackdown.",
+    "text": "The tracker records that NotNozy now claims the stage \"Runnable\", up from \"Runnable\".",
     "sources": [
-     "story:2026-11-26-news.google.com-take-two-wipes-out-3-007-gta-6-pc-port-repos-from-github-in-massive-dmca-crackdown-as-ai-t"
+     "project:notnozy"
     ]
    },
    {
-    "text": "GameGPU reports that Rockstar removed CGBJ's 25 FPS GTA 6 PC port from GitHub in minutes.",
+    "text": "The tracker records that WASDeKeys low-end joined the board, claiming the stage \"Runnable\".",
     "sources": [
-     "story:2026-11-26-news.google.com-rockstar-removed-cgbjs-25-fps-gta-6-pc-port-from-github-in-minutes"
+     "project:victory-low-end-pc"
     ]
    }
   ]
@@ -65,6 +65,38 @@
  },
  "notes": {},
  "stories": {
+  "2026-11-26-bsky.app-github-celebra-projeto-de-port-do-gta-6-para-pc-e-apaga-publica-o-em-seguida": {
+   "hash": "871e9af1b4101c7a",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 26,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-26-bsky.app-bluesky-group-call-cough-cough-gta-6-is-working-on-pc-cough-cough-gta-6-is-now-playable-on": {
+   "hash": "c851408a3fc48a2f",
+   "topic": "Community",
+   "importance": 1,
+   "weight": 0,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-26-news.google.com-gta-6-fan-ports-climb-to-20-fps-on-pc-still-rough-around-the-edges": {
+   "hash": "69dd28f7fff817b7",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
+  "2026-11-26-bsky.app-the-gta-vi-port-is-not-even-fully-working-and-they-are-already-making-online-mods-for-it-t": {
+   "hash": "7048a0f7e6e15f49",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 26,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
   "2026-11-26-bsky.app-running-a-git-server-on-tor-is-very-easy-if-youre-running-ai-to-port-gta-vi": {
    "hash": "0f7fd2b45e15aacc",
    "topic": "Port",
@@ -73,12 +105,12 @@
    "summary": "Running a git server on Tor is easy when using AI to port GTA VI.",
    "by": "Pollinations, gpt-oss-20b"
   },
-  "2026-11-26-pcgamer.com-microsofts-github-posts-message-celebrating-efforts-to-port-playstation-5-version-of-grand": {
+  "2026-11-26-news.google.com-microsofts-github-posts-message-celebrating-efforts-to-port-playstation-5-version-of-grand": {
    "hash": "164296017d2d8455",
    "topic": "Port",
    "importance": 3,
    "weight": 34,
-   "summary": "Microsoft GitHub post praised GTA VI PC port efforts, then was deleted.",
+   "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-26-bsky.app-gta-6-di-pc-belum-cuma-ps5-dan-xbox-series-x-s-rockstar-belum-mengumumkan-versi-pc-maupun-": {
@@ -157,10 +189,10 @@
   "2026-11-26-mastodon.cl-gta-6-est-llenando-los-talleres-de-xbox-series-x-y-s-que-se-sobrecalientan-se-apagan-y-dej": {
    "hash": "acd699b43539308e",
    "topic": "Community",
-   "importance": null,
-   "weight": 2,
+   "importance": 1,
+   "weight": 0,
    "summary": null,
-   "by": null
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-26-bsky.app-after-removing-gta-6-pc-ports-github-celebrates-app-popular-in-ps5-piracy-groups-https-www": {
    "hash": "2140a3f82e02b110",
@@ -452,11 +484,11 @@
   },
   "2026-11-26-bsky.app-digital-foundry-tested-the-xbox-quick-resume-glitch-that-unlocks-gta-6s-frame-rate-series-": {
    "hash": "d8f72618d2022159",
-   "topic": "Community",
-   "importance": null,
-   "weight": 2,
+   "topic": "Port",
+   "importance": 3,
+   "weight": 26,
    "summary": null,
-   "by": null
+   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-26-news.google.com-while-gamers-wait-for-gta-6s-pc-port-modders-have-already-bypassed-its-30-fps-limit-on-jai": {
    "hash": "1bf5c03e5ce58618",
@@ -3299,61 +3331,15 @@
    "weight": 40,
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-25-news.google.com-report-gta-6-graphical-settings-for-consoles-leak-out-revealing-platform-differences": {
-   "hash": "cd38f53180678008",
-   "topic": "Leak",
-   "importance": 3,
-   "weight": 30,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-25-bsky.app-discord-banni-github-ferm-leonida-le-projet-de-portage-de-gta-6-sur-pc-men-gr-ce-lia-a-t-t": {
-   "hash": "1a0b66f13ea05fc1",
-   "topic": "Takedown",
-   "importance": 4,
-   "weight": 46,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-25-bsky.app-gta-6-recomp-leonida-banned-from-github-while-lead-dev-was-in-school-https-github-com-itsn": {
-   "hash": "d53ee1ca2291ee15",
-   "topic": "Takedown",
-   "importance": 5,
-   "weight": 58,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-25-news.google.com-any-official-gta-6-pc-ports-ability-to-deliver-a-proper-first-person-mode-would-be-its-big": {
-   "hash": "880f5ba78878850f",
-   "topic": "Official",
-   "importance": 4,
-   "weight": 36,
-   "summary": "Official GTA 6 PC port's first person mode would be biggest ace.",
-   "by": "Pollinations, gpt-oss-20b"
   }
  },
  "projects": {
-  "whibwhi-own": {
-   "hash": "9cfa70652e883f51",
-   "count": 15,
-   "summary": "whibwhi-own's recent commits mention console Direct3D 12 calls answered, memory descriptor heaps, buffer views, and mapping executable descriptor writes.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-26T21:01:56.171Z"
-  },
   "native-victory-macos": {
-   "hash": "f35456de986b6744",
+   "hash": "3be0f98de67a4c73",
    "count": 15,
-   "summary": "Native-Victory-macOS's recent commits mention heap indexing, DispatchX thread counts, shaders indexing descriptor heap, first world frame with mesh pipelines, and ExecuteIndirect mesh signature.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-26T21:01:56.171Z"
-  },
-  "bcpack-gpu-hlsl": {
-   "hash": "d9479eadb926eca3",
-   "count": 15,
-   "summary": "bcpack-gpu-hlsl recent commits add Pursuit Stress mode, bump sdk submodule versions, add Open-World DX12 Bottleneck Suite, and update demo features.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-26T23:01:58.349Z"
+   "summary": "Native-Victory-macOS's recent pull requests mention native loader, DirectStorage, xmem_posix, xg, kernel and audio HLE fixes, plus macOS semaphore and seconds parsing.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-27T00:02:24.977Z"
   },
   "i95-gta6-pc-launcher": {
    "hash": "48cb3a094b3973af",
@@ -3362,6 +3348,20 @@
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-26T23:31:43.868Z"
   },
+  "whibwhi-own": {
+   "hash": "08f2310e49125230",
+   "count": 15,
+   "summary": "whibwhi-own's commits mention builder shaders through the translator and a driver failure tied to lane count, with findings about the AMD Vulkan driver.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-27T00:02:24.977Z"
+  },
+  "bcpack-gpu-hlsl": {
+   "hash": "d9479eadb926eca3",
+   "count": 15,
+   "summary": "bcpack-gpu-hlsl recent commits add Pursuit Stress mode, bump sdk submodule versions, add Open-World DX12 Bottleneck Suite, and update demo features.",
+   "by": "Pollinations, gpt-oss-20b",
+   "at": "2026-11-26T23:01:58.349Z"
+  },
   "decant": {
    "hash": "be52c711796917f8",
    "count": 15,
@@ -3369,12 +3369,26 @@
    "by": "Pollinations, gpt-oss-20b",
    "at": "2026-11-26T23:31:43.868Z"
   },
-  "tuxbox": {
-   "hash": "3cded32997656a5f",
+  "victory-low-end-pc": {
+   "hash": "c1b62f6c3c042d5a",
    "count": 15,
-   "summary": "TuxBox recent commits merge shader fixes, performance worker wake, and launcher cache checks, and enhance README with Windows compatibility.",
-   "by": "Pollinations, gpt-oss-20b",
-   "at": "2026-11-26T23:31:43.868Z"
+   "summary": "WASDeKeys low-end's commits and pull requests mention Windows 10 Agility SDK loading, an 8 GB 720p performance profile, a modified build and RX 9070 XT results.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-27T00:02:24.977Z"
+  },
+  "project-americas": {
+   "hash": "61c30d96068b45d8",
+   "count": 15,
+   "summary": "Project-Americas's commits mention pipeline libraries between runs, GPU windows over watched memory, upload budgets, texture drops, runaway guards and DRED reports naming a stopped dispatch.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-27T00:02:24.977Z"
+  },
+  "five-star-recomp": {
+   "hash": "80f03c4934d6bcb4",
+   "count": 15,
+   "summary": "Five Star Recomp's commits mention lane replay of a compute dispatch, video planes, buffer retirement, texture level views, mesh fallback and buffer range checks.",
+   "by": "Kilo Gateway, particle-ai/particle-1:free",
+   "at": "2026-11-27T00:02:24.977Z"
   }
  }
 }
