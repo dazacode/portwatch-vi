@@ -63,7 +63,7 @@ export function Challenge({
       >
         <NativeSelectOption value="">Choose a project</NativeSelectOption>
         {projects.map((p) => (
-          <NativeSelectOption key={p.id} value={p.id}>
+          <NativeSelectOption key={p.id} value={p.id} translate="no">
             {p.name}
           </NativeSelectOption>
         ))}

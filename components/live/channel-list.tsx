@@ -48,7 +48,9 @@ function StreamRow({
         )}
       >
         <span aria-hidden className="size-2 self-center rounded-full bg-live" />
-        <span className="truncate text-sm font-medium">{stream.name}</span>
+        <span className="truncate text-sm font-medium">
+          <span translate="no">{stream.name}</span>
+        </span>
         <span className="text-xs text-muted-foreground">
           {stream.viewers === null
             ? PLATFORM_LABEL[stream.platform]

@@ -29,10 +29,10 @@ export function IntelCard({ item, now }: { item: IntelItem; now: string }) {
                 href={`/projects/${item.projectId}`}
                 className="underline-offset-4 hover:underline"
               >
-                {item.projectName}
+                <span translate="no">{item.projectName}</span>
               </Link>
             ) : (
-              <span>{item.projectName}</span>
+              <span translate="no">{item.projectName}</span>
             )}
           </>
         )}

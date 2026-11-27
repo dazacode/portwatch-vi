@@ -70,7 +70,7 @@ export function DigestSummary({
                 <li key={p.id} className="max-w-prose">
                   {p.text}{" "}
                   <Link href={`/projects/${p.id}`} className={`text-muted-foreground ${link}`}>
-                    {p.name}
+                    <span translate="no">{p.name}</span>
                   </Link>
                 </li>
               ))}

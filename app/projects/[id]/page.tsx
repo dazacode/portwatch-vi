@@ -68,7 +68,9 @@ export default async function Page({ params }: Props) {
         parent={{ name: "Standings", path: "/standings" }}
         page={{ name: s.name, path: `/projects/${s.id}` }}
       />
-      <h1 className="mt-2 text-3xl font-bold">{s.name}</h1>
+      <h1 className="mt-2 text-3xl font-bold">
+        <span translate="no">{s.name}</span>
+      </h1>
       <GpuTags gpus={s.gpus} className="mt-2" />
       <p className="mt-2 max-w-prose text-muted-foreground">{s.summary}</p>
       <dl className="mt-6 flex flex-wrap gap-x-12 gap-y-4">
