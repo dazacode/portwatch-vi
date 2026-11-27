@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T09:35:51.794Z",
+  "updated": "2026-11-27T09:50:30.275Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T09:00:44.000Z",
-      "lastOkAt": "2026-11-27T09:35:51.794Z",
-      "seen": 27750,
+      "lastOkAt": "2026-11-27T09:50:30.275Z",
+      "seen": 28000,
       "events": 983,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T09:21:22.000Z",
-      "lastOkAt": "2026-11-27T09:35:51.794Z",
+      "lastOkAt": "2026-11-27T09:50:30.275Z",
       "seen": 38,
       "events": 30,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T09:35:51.794Z",
-      "seen": 6708,
+      "lastOkAt": "2026-11-27T09:50:30.275Z",
+      "seen": 6770,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T08:50:42.000Z",
-      "lastOkAt": "2026-11-27T09:35:51.794Z",
-      "seen": 44400,
+      "lastOkAt": "2026-11-27T09:50:30.275Z",
+      "seen": 44800,
       "events": 32,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T09:35:51.794Z",
-      "seen": 13243,
+      "lastOkAt": "2026-11-27T09:50:30.275Z",
+      "seen": 13366,
       "events": 12,
       "errors": 0
     }
@@ -11202,12 +11202,17 @@
           "at": "2026-11-27T03:39:09.342Z",
           "by": "desk",
           "note": "The only stored source is the project’s own GitHub entry with no excerpt, so it is primary but not independent and too thin to verify the one-line claim."
+        },
+        {
+          "at": "2026-11-27T09:50:30.275Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository with an empty excerpt, so the detailed one-line claim is not independently corroborated and the source is too thin to publish."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T03:39:09.342Z"
+      "deskAt": "2026-11-27T09:50:30.275Z"
     },
     {
       "id": "20261127t020454z-tuxbox-ac049ba3",
@@ -11261,12 +11266,17 @@
           "at": "2026-11-27T03:39:09.342Z",
           "by": "desk",
           "note": "The only stored source is TuxBox’s own repository repeating the same line, so it is primary but not independent and too thin to publish."
+        },
+        {
+          "at": "2026-11-27T09:50:30.275Z",
+          "by": "desk",
+          "note": "The project’s own GitHub repository directly states the same test outcome as the one line, and no stored source contradicts it."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T03:39:09.342Z"
+      "deskAt": "2026-11-27T09:50:30.275Z"
     },
     {
       "id": "20261127t014324z-anyxboxx-4fe250d9",
