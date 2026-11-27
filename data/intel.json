@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T05:06:01.918Z",
+  "updated": "2026-11-27T05:20:25.825Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T05:00:59.000Z",
-      "lastOkAt": "2026-11-27T05:06:01.918Z",
-      "seen": 23250,
+      "lastOkAt": "2026-11-27T05:20:25.825Z",
+      "seen": 23500,
       "events": 861,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T02:04:54.000Z",
-      "lastOkAt": "2026-11-27T05:06:01.918Z",
+      "lastOkAt": "2026-11-27T05:20:25.825Z",
       "seen": 34,
       "events": 26,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T05:06:01.918Z",
-      "seen": 5592,
+      "lastOkAt": "2026-11-27T05:20:25.825Z",
+      "seen": 5654,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T04:47:59.000Z",
-      "lastOkAt": "2026-11-27T05:06:01.918Z",
-      "seen": 37200,
+      "lastOkAt": "2026-11-27T05:20:25.825Z",
+      "seen": 37600,
       "events": 30,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T05:06:01.918Z",
-      "seen": 11029,
+      "lastOkAt": "2026-11-27T05:20:25.825Z",
+      "seen": 11152,
       "events": 12,
       "errors": 0
     }
@@ -8928,12 +8928,17 @@
           "at": "2026-11-26T23:20:22.756Z",
           "by": "desk",
           "note": "The project’s own repository directly documents the record change from 0% to 62.9%, with no conflicting sources."
+        },
+        {
+          "at": "2026-11-27T05:20:25.825Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository with an empty excerpt, so it is primary but not independent and does not plainly evidence the specific 0% to 62.9% move."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-26T23:20:22.756Z"
+      "deskAt": "2026-11-27T05:20:25.825Z"
     },
     {
       "id": "20261126t232417z-decant-6cc6fb63",
@@ -9477,10 +9482,17 @@
       "chain": "sha256:daf73d3502bffe51f1fbf31b8847a4b7ae69eb0f74720e14be34454f10cab272",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T05:20:25.825Z",
+          "by": "desk",
+          "note": "The only source is the project's own commit message with no excerpt, which is a primary but non-independent and thin basis for the claim, so it does not plainly support publishing."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T05:20:25.825Z"
     },
     {
       "id": "20261127t003507z-belobug-5d1c1caa",
