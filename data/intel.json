@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T20:50:20.951Z",
+  "updated": "2026-11-27T21:05:26.362Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T20:31:00.000Z",
-      "lastOkAt": "2026-11-27T20:50:20.951Z",
-      "seen": 39000,
-      "events": 1371,
+      "lastCursor": "2026-11-27T21:01:02.000Z",
+      "lastOkAt": "2026-11-27T21:05:26.362Z",
+      "seen": 39250,
+      "events": 1390,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T20:50:20.951Z",
+      "lastOkAt": "2026-11-27T21:05:26.362Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T20:50:20.951Z",
-      "seen": 9523,
+      "lastOkAt": "2026-11-27T21:05:26.362Z",
+      "seen": 9586,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T20:28:14.447Z",
-      "lastOkAt": "2026-11-27T20:50:20.951Z",
-      "seen": 62400,
+      "lastCursor": "2026-11-27T20:58:54.000Z",
+      "lastOkAt": "2026-11-27T21:05:26.362Z",
+      "seen": 62800,
       "events": 46,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T08:50:20.951Z",
-      "lastOkAt": "2026-11-27T20:50:20.951Z",
-      "seen": 18792,
+      "lastCursor": "2026-11-27T09:05:26.362Z",
+      "lastOkAt": "2026-11-27T21:05:26.362Z",
+      "seen": 18915,
       "events": 12,
       "errors": 0
     }
@@ -15550,6 +15550,56 @@
         "low confidence"
       ],
       "deskAt": "2026-11-27T20:35:22.243Z"
+    },
+    {
+      "id": "20261127t205920z-victory-hydra-a0accc86",
+      "key": "update|victory-hydra|activity|41569",
+      "kind": "update",
+      "projectId": "victory-hydra",
+      "projectName": "VIctory-Hydra",
+      "at": "2026-11-27T20:59:20Z",
+      "detectedAt": "2026-11-27T21:05:26.362Z",
+      "title": "VIctory-Hydra pushed 1 commit",
+      "oneLine": "Stage 10 Wave 5-6: Release FPS fixes, VIctory-NVIDIA GI/specular reflections, and live F1 settings",
+      "sources": [
+        {
+          "url": "https://github.com/ToLIManl/VIctory-Hydra/commit/4e0b4cd08adb262566f0274d6703ac49d2e22fee",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Stage 10 Wave 5-6: Release FPS fixes, VIctory-NVIDIA GI/specular reflections, and live F1 settings",
+          "at": "2026-11-27T20:59:20Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "tolimanl/victory-hydra",
+        "name": "victory-hydra",
+        "words": [
+          "victory-hydra"
+        ],
+        "hash": "84b2c9dc5cf602cf",
+        "projectId": "victory-hydra"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:665a3cb30d1dd2f57a72f76c6edc04261211c21b639436138cd5de58ca7fc94c",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
