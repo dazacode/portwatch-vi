@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T02:50:22.618Z",
+  "updated": "2026-11-27T03:06:35.808Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T02:31:11.000Z",
-      "lastOkAt": "2026-11-27T02:50:22.618Z",
-      "seen": 21000,
-      "events": 779,
+      "lastCursor": "2026-11-27T03:01:52.000Z",
+      "lastOkAt": "2026-11-27T03:06:35.808Z",
+      "seen": 21250,
+      "events": 797,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-26T21:53:31.000Z",
-      "lastOkAt": "2026-11-27T02:50:22.618Z",
+      "lastOkAt": "2026-11-27T03:06:35.808Z",
       "seen": 30,
       "events": 22,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T02:50:22.618Z",
-      "seen": 5034,
+      "lastOkAt": "2026-11-27T03:06:35.808Z",
+      "seen": 5096,
       "events": 24,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T02:07:07.450Z",
-      "lastOkAt": "2026-11-27T02:50:22.618Z",
-      "seen": 33600,
+      "lastCursor": "2026-11-27T02:50:06.000Z",
+      "lastOkAt": "2026-11-27T03:06:35.808Z",
+      "seen": 34000,
       "events": 28,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T02:50:22.618Z",
-      "seen": 9922,
+      "lastOkAt": "2026-11-27T03:06:35.808Z",
+      "seen": 10045,
       "events": 12,
       "errors": 0
     }
@@ -10639,10 +10639,17 @@
       "chain": "sha256:0e9ac2ea507272133d69e63ca413be8289e2344da13f90b7aef2e092dce19450",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T03:06:35.808Z",
+          "by": "desk",
+          "note": "The only stored source is TuxBox’s own repository, which is primary but not independent, and the item merely repeats a hedged README claim without corroboration."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T03:06:35.808Z"
     },
     {
       "id": "20261127t000000z-neptune-dolberth-nvidia-8gb-68a65ca7",
@@ -10690,10 +10697,17 @@
       "chain": "sha256:4b9dc5c684136bb4cf9e575f855335aed336572ae19cad89b9002af05b8e7e5f",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T03:06:35.808Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository repeating a vague scout note, so the item is thin and not independently supported."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T03:06:35.808Z"
     },
     {
       "id": "20261127t000000z-americaslauncher-25587d6e",
