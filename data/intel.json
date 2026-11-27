@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T06:20:22.694Z",
+  "updated": "2026-11-27T06:35:38.442Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T06:01:25.000Z",
-      "lastOkAt": "2026-11-27T06:20:22.694Z",
-      "seen": 24500,
+      "lastOkAt": "2026-11-27T06:35:38.442Z",
+      "seen": 24750,
       "events": 893,
       "errors": 0
     },
     "evidence": {
-      "lastCursor": "2026-11-27T02:04:54.000Z",
-      "lastOkAt": "2026-11-27T06:20:22.694Z",
-      "seen": 34,
-      "events": 26,
+      "lastCursor": "2026-11-27T06:03:44.000Z",
+      "lastOkAt": "2026-11-27T06:35:38.442Z",
+      "seen": 37,
+      "events": 29,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-26T23:10:14.868Z",
-      "lastOkAt": "2026-11-27T06:20:22.694Z",
-      "seen": 5902,
+      "lastOkAt": "2026-11-27T06:35:38.442Z",
+      "seen": 5964,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T06:00:32.044Z",
-      "lastOkAt": "2026-11-27T06:20:22.694Z",
-      "seen": 39200,
+      "lastOkAt": "2026-11-27T06:35:38.442Z",
+      "seen": 39600,
       "events": 30,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-27T00:00:00.000Z",
-      "lastOkAt": "2026-11-27T06:20:22.694Z",
-      "seen": 11644,
+      "lastOkAt": "2026-11-27T06:35:38.442Z",
+      "seen": 11767,
       "events": 12,
       "errors": 0
     }
@@ -11529,6 +11529,176 @@
         "low confidence"
       ],
       "deskAt": "2026-11-27T05:06:01.918Z"
+    },
+    {
+      "id": "20261127t060344z-belobug-3aa81cfe",
+      "key": "evidence|belobug|boots|41568",
+      "kind": "evidence",
+      "projectId": "belobug",
+      "projectName": "Belobug",
+      "at": "2026-11-27T06:03:44Z",
+      "detectedAt": "2026-11-27T06:35:38.442Z",
+      "title": "New test evidence on Belobug — boots",
+      "oneLine": "On 4eb6cfd the title boots, the first-boot screens and saves work",
+      "sources": [
+        {
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/483",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "On 4eb6cfd the title boots, the first-boot screens and saves work",
+          "at": "2026-11-27T06:03:44Z",
+          "kind": "primary",
+          "authorHash": "b94c4dcb5bac",
+          "excerpt": "On 4eb6cfd the title boots, the first-boot screens and saves work"
+        }
+      ],
+      "fingerprint": {
+        "repo": "belobug/victory-belobug-amd",
+        "name": "belobug",
+        "words": [
+          "belobug"
+        ],
+        "hash": "c448ff0a0e16a82d",
+        "projectId": "belobug"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:031a9c15ccd79b053db609140398de556b01d90da1a43ae1b3ac1fc33a6ef5f9",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T06:35:38.442Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository, which is primary but not independent, so the boot/save claim is not corroborated."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T06:35:38.442Z"
+    },
+    {
+      "id": "20261127t034620z-belobug-9aa9bb33",
+      "key": "evidence|belobug|playable|41568",
+      "kind": "evidence",
+      "projectId": "belobug",
+      "projectName": "Belobug",
+      "at": "2026-11-27T03:46:20Z",
+      "detectedAt": "2026-11-27T06:35:38.442Z",
+      "title": "New test evidence on Belobug — playable",
+      "oneLine": "able to play with -LowVram at 1080p",
+      "sources": [
+        {
+          "url": "https://github.com/Belobug/VIctory-Belobug-AMD/issues/467",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "able to play with -LowVram at 1080p",
+          "at": "2026-11-27T03:46:20Z",
+          "kind": "primary",
+          "authorHash": "9d59174cd1a7",
+          "excerpt": "able to play with -LowVram at 1080p"
+        }
+      ],
+      "fingerprint": {
+        "repo": "belobug/victory-belobug-amd",
+        "name": "belobug",
+        "words": [
+          "belobug"
+        ],
+        "hash": "ed61ea8152382411",
+        "projectId": "belobug"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:5dcda11596b48df0c6a2c0df6204e6458ef8b637a975a2b0c9784cf45330e448",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-27T06:35:38.442Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository repeating the same one-line claim, so it is primary but not independent and too thin to publish."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-27T06:35:38.442Z"
+    },
+    {
+      "id": "20261127t022633z-avatarmanz-2a078dd4",
+      "key": "evidence|avatarmanz|boots|41568",
+      "kind": "evidence",
+      "projectId": "avatarmanz",
+      "projectName": "AvatarManz",
+      "at": "2026-11-27T02:26:33Z",
+      "detectedAt": "2026-11-27T06:35:38.442Z",
+      "title": "New test evidence on AvatarManz — boots",
+      "oneLine": "On this PC, letting those opens go through the file cache cut launch to the title-screen logo from 34-37 s to 21-23 s.",
+      "sources": [
+        {
+          "url": "https://github.com/avatarmanz/VIctory-7900XTX/issues/422",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "On this PC, letting those opens go through the file cache cut launch to the title-screen logo from 34-37 s to 21-23 s.",
+          "at": "2026-11-27T02:26:33Z",
+          "kind": "primary",
+          "authorHash": "8dcfea02d994",
+          "excerpt": "On this PC, letting those opens go through the file cache cut launch to the title-screen logo from 34-37 s to 21-23 s."
+        }
+      ],
+      "fingerprint": {
+        "repo": "avatarmanz/victory-7900xtx",
+        "name": "avatarmanz",
+        "words": [
+          "avatarmanz"
+        ],
+        "hash": "090d8c98a02a24bb",
+        "projectId": "avatarmanz"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:6f4395453ef4eb03f39fef3d3be348f95e3b65b1fadf313292d2b32f4b628960",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
