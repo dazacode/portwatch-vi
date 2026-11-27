@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T14:05:25.715Z",
+  "updated": "2026-11-27T14:20:22.308Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-27T14:01:26.000Z",
-      "lastOkAt": "2026-11-27T14:05:25.715Z",
-      "seen": 32250,
+      "lastOkAt": "2026-11-27T14:20:22.308Z",
+      "seen": 32500,
       "events": 1139,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T12:10:29.000Z",
-      "lastOkAt": "2026-11-27T14:05:25.715Z",
+      "lastOkAt": "2026-11-27T14:20:22.308Z",
       "seen": 40,
       "events": 32,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T02:05:25.715Z",
-      "lastOkAt": "2026-11-27T14:05:25.715Z",
-      "seen": 7824,
+      "lastCursor": "2026-11-27T02:20:22.308Z",
+      "lastOkAt": "2026-11-27T14:20:22.308Z",
+      "seen": 7886,
       "events": 24,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T14:00:15.000Z",
-      "lastOkAt": "2026-11-27T14:05:25.715Z",
-      "seen": 51600,
+      "lastOkAt": "2026-11-27T14:20:22.308Z",
+      "seen": 52000,
       "events": 39,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T02:05:25.715Z",
-      "lastOkAt": "2026-11-27T14:05:25.715Z",
-      "seen": 15457,
+      "lastCursor": "2026-11-27T02:20:22.308Z",
+      "lastOkAt": "2026-11-27T14:20:22.308Z",
+      "seen": 15580,
       "events": 12,
       "errors": 0
     }
@@ -14081,10 +14081,17 @@
       "chain": "sha256:0e9115599e55f42c72297e76ab5b57d4ea27cd74fda84ac87b4fb89b1b3781b0",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-27T14:20:22.308Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub repository with an empty excerpt, so it is primary but not independent and too thin to verify the claimed results."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-27T14:20:22.308Z"
     }
   ],
   "reports": [
