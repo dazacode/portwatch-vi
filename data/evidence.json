@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-28T00:25:47.045Z",
+  "lastRun": "2026-11-28T03:25:50.435Z",
   "read": [
     "https://github.com/avatarmanz/VIctory-7900XTX/issues/76@2026-11-26T02:28:56Z",
     "https://github.com/avatarmanz/VIctory-7900XTX/issues/75@2026-11-26T02:09:56Z",
@@ -269,9 +269,34 @@
     "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/525@2026-11-28T00:23:11Z",
     "https://github.com/fxceless/victory-fork/issues/1379@2026-11-27T15:14:05Z",
     "https://github.com/Marvisak/VIctory/issues/3570@2026-11-27T21:21:24Z",
-    "https://github.com/xcl-dev/xcl/issues/3070@2026-11-28T00:03:39Z"
+    "https://github.com/xcl-dev/xcl/issues/3070@2026-11-28T00:03:39Z",
+    "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/663@2026-11-28T03:19:05Z",
+    "https://github.com/fxceless/victory-fork/issues/1375@2026-11-26T19:42:26Z",
+    "https://github.com/Marvisak/VIctory/issues/3567@2026-11-27T23:32:12Z",
+    "https://github.com/xcl-dev/xcl/issues/3084@2026-11-28T03:21:16Z",
+    "https://github.com/brcly/TuxBox/issues/289@2026-11-27T20:27:34Z",
+    "https://github.com/R0Y00/Xbox2Windows/issues/3184@2026-11-27T22:06:17Z",
+    "https://github.com/LooperSalty/AnyXboxX/issues/572@2026-11-28T00:34:08Z",
+    "https://github.com/luizwidmer/palmetto/issues/4@2026-11-28T00:53:10Z",
+    "https://github.com/ProjectLeonida/mandy/issues/2539@2026-11-28T02:10:59Z",
+    "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/657@2026-11-28T02:56:41Z",
+    "https://github.com/fxceless/victory-fork/issues/1368@2026-11-26T19:14:59Z",
+    "https://github.com/Marvisak/VIctory/issues/3562@2026-11-27T19:41:42Z",
+    "https://github.com/xcl-dev/xcl/issues/3069@2026-11-28T02:53:46Z"
   ],
   "items": [
+    {
+      "effortId": "xcl",
+      "kind": "free",
+      "stage": "world",
+      "outcome": "reached",
+      "quote": "3 of 3 crashes at this address across 2 machines, past world load, with no device removal.",
+      "commit": "eae0150",
+      "gpu": "RTX 3090",
+      "url": "https://github.com/xcl-dev/xcl/issues/3084",
+      "at": "2026-11-28T02:20:43Z",
+      "by": "2a63f170e0b3"
+    },
     {
       "effortId": "anyxboxx",
       "kind": "free",
@@ -547,6 +572,18 @@
       "url": "https://github.com/xcl-dev/xcl/issues/2874",
       "at": "2026-11-26T20:21:00Z",
       "by": "9f8e09f0c707"
+    },
+    {
+      "effortId": "victory-gta6",
+      "kind": "free",
+      "stage": "world",
+      "outcome": "reached",
+      "quote": "Scene: the opening prison cell, standing, 4,000-5,000 draws a frame.",
+      "commit": "46bf535",
+      "gpu": "RX 7900 XTX",
+      "url": "https://github.com/fxceless/victory-fork/issues/1375",
+      "at": "2026-11-26T19:27:59Z",
+      "by": "5ed42310459c"
     },
     {
       "effortId": "victory-gta6",
