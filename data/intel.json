@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T07:05:53.691Z",
+  "updated": "2026-11-28T07:20:22.538Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T07:01:08.000Z",
-      "lastOkAt": "2026-11-28T07:05:53.691Z",
-      "seen": 49000,
+      "lastOkAt": "2026-11-28T07:20:22.538Z",
+      "seen": 49250,
       "events": 1708,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T03:46:19.000Z",
-      "lastOkAt": "2026-11-28T07:05:53.691Z",
+      "lastOkAt": "2026-11-28T07:20:22.538Z",
       "seen": 47,
       "events": 38,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T19:05:53.691Z",
-      "lastOkAt": "2026-11-28T07:05:53.691Z",
-      "seen": 12043,
+      "lastCursor": "2026-11-27T19:20:22.538Z",
+      "lastOkAt": "2026-11-28T07:20:22.538Z",
+      "seen": 12106,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T06:49:29.241Z",
-      "lastOkAt": "2026-11-28T07:05:53.691Z",
-      "seen": 78400,
+      "lastOkAt": "2026-11-28T07:20:22.538Z",
+      "seen": 78800,
       "events": 51,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T07:05:53.691Z",
-      "seen": 23712,
+      "lastOkAt": "2026-11-28T07:20:22.538Z",
+      "seen": 23835,
       "events": 14,
       "errors": 0
     }
@@ -16777,12 +16777,17 @@
           "at": "2026-11-28T00:50:26.423Z",
           "by": "desk",
           "note": "The only stored source is the project’s own GitHub item with an empty excerpt, so it is a thin primary record that does not independently verify the PR number or the full one-line claim."
+        },
+        {
+          "at": "2026-11-28T07:20:22.538Z",
+          "by": "desk",
+          "note": "The one line only restates the pull request title, which the project's own repository directly records, and no stored source contradicts it."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-28T00:50:26.423Z"
+      "deskAt": "2026-11-28T07:20:22.538Z"
     },
     {
       "id": "20261128t002436z-leonida-c21a9de1",
