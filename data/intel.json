@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T14:05:26.133Z",
+  "updated": "2026-11-28T14:20:20.118Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T14:01:09.000Z",
-      "lastOkAt": "2026-11-28T14:05:26.133Z",
-      "seen": 56000,
+      "lastOkAt": "2026-11-28T14:20:20.118Z",
+      "seen": 56250,
       "events": 1921,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T10:48:06.000Z",
-      "lastOkAt": "2026-11-28T14:05:26.133Z",
+      "lastOkAt": "2026-11-28T14:20:20.118Z",
       "seen": 50,
       "events": 41,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-28T11:10:15.665Z",
-      "lastOkAt": "2026-11-28T14:05:26.133Z",
-      "seen": 14091,
+      "lastOkAt": "2026-11-28T14:20:20.118Z",
+      "seen": 14177,
       "events": 49,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T13:56:10.142Z",
-      "lastOkAt": "2026-11-28T14:05:26.133Z",
-      "seen": 89600,
+      "lastOkAt": "2026-11-28T14:20:20.118Z",
+      "seen": 90000,
       "events": 57,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-28T02:05:26.133Z",
-      "lastOkAt": "2026-11-28T14:05:26.133Z",
-      "seen": 27482,
+      "lastCursor": "2026-11-28T02:20:20.118Z",
+      "lastOkAt": "2026-11-28T14:20:20.118Z",
+      "seen": 27628,
       "events": 14,
       "errors": 0
     }
@@ -21517,10 +21517,17 @@
       "chain": "sha256:364ca33616901af2b7f204c30841033c42e707eaa5d5a70adba565660fb767be",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T14:20:20.118Z",
+          "by": "desk",
+          "note": "The only support is a single truncated Mastodon post, and a social post alone is too weak to publish a claim about GitHub removing Belobug's code and account."
+        }
+      ],
       "heldReasons": [
         "low confidence"
-      ]
+      ],
+      "deskAt": "2026-11-28T14:20:20.118Z"
     },
     {
       "id": "20261128t133442z-victory-hydra-e830b58e",
