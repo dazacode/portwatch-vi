@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T11:05:54.645Z",
+  "updated": "2026-11-28T11:20:20.997Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T11:01:20.000Z",
-      "lastOkAt": "2026-11-28T11:05:54.645Z",
-      "seen": 53000,
+      "lastOkAt": "2026-11-28T11:20:20.997Z",
+      "seen": 53250,
       "events": 1831,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T08:34:09.000Z",
-      "lastOkAt": "2026-11-28T11:05:54.645Z",
+      "lastOkAt": "2026-11-28T11:20:20.997Z",
       "seen": 48,
       "events": 39,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-28T10:40:15.351Z",
-      "lastOkAt": "2026-11-28T11:05:54.645Z",
-      "seen": 13059,
-      "events": 30,
+      "lastCursor": "2026-11-28T11:10:15.665Z",
+      "lastOkAt": "2026-11-28T11:20:20.997Z",
+      "seen": 13145,
+      "events": 49,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T10:41:20.148Z",
-      "lastOkAt": "2026-11-28T11:05:54.645Z",
-      "seen": 84800,
+      "lastOkAt": "2026-11-28T11:20:20.997Z",
+      "seen": 85200,
       "events": 53,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T11:05:54.645Z",
-      "seen": 25730,
+      "lastOkAt": "2026-11-28T11:20:20.997Z",
+      "seen": 25876,
       "events": 14,
       "errors": 0
     }
@@ -18742,6 +18742,977 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-28T11:05:54.645Z"
+    },
+    {
+      "id": "20261128t111015z-vice-tay-f5fdec61",
+      "key": "update|vice-tay|playable|41570",
+      "kind": "update",
+      "projectId": "vice-tay",
+      "projectName": "Vice-Tay",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "Vice-Tay moved to playable",
+      "oneLine": "The project’s record moved from 0% to 75.6%.",
+      "sources": [
+        {
+          "url": "https://github.com/TaynanGT/Vice-Tay",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "Vice-Tay record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "taynangt/vice-tay",
+        "name": "vice-tay",
+        "words": [
+          "vice-tay"
+        ],
+        "hash": "ed6eb9a585729090",
+        "projectId": "vice-tay"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:fc4db41e4da4361e63f02257004940a08101cb833b5d70fa3a6804b1202a6722",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T11:20:20.997Z",
+          "by": "desk",
+          "note": "The only support is the project’s own repository, which is primary but not independent, and its excerpt is empty, so the 0%→75.6% jump is not plainly corroborated."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T11:20:20.997Z"
+    },
+    {
+      "id": "20261128t111015z-victory-neo-632f4044",
+      "key": "update|victory-neo|playable|41570",
+      "kind": "update",
+      "projectId": "victory-neo",
+      "projectName": "VIctory-Neo",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "VIctory-Neo moved to playable",
+      "oneLine": "The project’s record moved from 0% to 66.3%.",
+      "sources": [
+        {
+          "url": "https://github.com/KyleS98/VIctory-Neo",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "VIctory-Neo record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "kyles98/victory-neo",
+        "name": "victory-neo",
+        "words": [
+          "victory-neo"
+        ],
+        "hash": "fe18f7b1fde3b9d4",
+        "projectId": "victory-neo"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:1fc03c39f097c131d7e994f957a23ddd0f46779d0cc0f7b8df3c4916cc25c83b",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T11:20:20.997Z",
+          "by": "desk",
+          "note": "The only support is the project’s own repository with an empty excerpt, so the specific 0% to 66.3% move is not plainly verifiable from the stored sources and lacks any independent corroboration."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T11:20:20.997Z"
+    },
+    {
+      "id": "20261128t111015z-victory-lap-7f9862dc",
+      "key": "update|victory-lap|playable|41570",
+      "kind": "update",
+      "projectId": "victory-lap",
+      "projectName": "VIctory-lap",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "VIctory-lap moved to playable",
+      "oneLine": "The project’s record moved from 0% to 66%.",
+      "sources": [
+        {
+          "url": "https://github.com/ReZOnGithub/VIctory-lap",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "VIctory-lap record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "rezongithub/victory-lap",
+        "name": "victory-lap",
+        "words": [
+          "victory-lap"
+        ],
+        "hash": "ad4ba5a78de19f40",
+        "projectId": "victory-lap"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:6c532f7902bf73d941f1471f26e0550e30c25c580a83aa2e1e5cc0136ded3970",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-slaktarnvi-3904f3da",
+      "key": "update|slaktarnvi|playable|41570",
+      "kind": "update",
+      "projectId": "slaktarnvi",
+      "projectName": "SlaktarnVI",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "SlaktarnVI moved to playable",
+      "oneLine": "The project’s record moved from 0% to 70.1%.",
+      "sources": [
+        {
+          "url": "https://github.com/Slaktarn700/SlaktarnVI",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "SlaktarnVI record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "slaktarn700/slaktarnvi",
+        "name": "slaktarnvi",
+        "words": [
+          "slaktarnvi"
+        ],
+        "hash": "7f6b9c2b85e6f11c",
+        "projectId": "slaktarnvi"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:7b6f3bb1524ffcc7df58bbf2f8a4796a899d115b7d374b1bb54b6acb395d2320",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-victory-linux-lumice-d64d8088",
+      "key": "update|victory-linux-lumice|playable|41570",
+      "kind": "update",
+      "projectId": "victory-linux-lumice",
+      "projectName": "victory-linux (Lumice)",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "victory-linux (Lumice) moved to playable",
+      "oneLine": "The project’s record moved from 0% to 68%.",
+      "sources": [
+        {
+          "url": "https://github.com/Lumice/victory-linux",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "victory-linux (Lumice) record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "lumice/victory-linux",
+        "name": "victory-linux lumice",
+        "words": [
+          "victory-linux",
+          "lumice",
+          "victory-linux-lumice"
+        ],
+        "hash": "61992631ac411094",
+        "projectId": "victory-linux-lumice"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:1caed3e609b4e3c099aec7afc819e6f0d47ae0c4c492115b333087b1a1003320",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-juevi-4208ef89",
+      "key": "update|juevi|menu|41570",
+      "kind": "update",
+      "projectId": "juevi",
+      "projectName": "JueVI",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "JueVI moved to menu",
+      "oneLine": "The project’s record moved from 0% to 30%.",
+      "sources": [
+        {
+          "url": "https://github.com/JuePort/JueVI",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "JueVI record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "jueport/juevi",
+        "name": "juevi",
+        "words": [
+          "juevi"
+        ],
+        "hash": "b99d8721dfa9b2f1",
+        "projectId": "juevi"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:da0f31cb3ec43c836d550d60f2dc4fb18f4ba582062ddb88b2e36084584f6d01",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-azc-low-end-b2f29dfb",
+      "key": "update|azc-low-end|playable|41570",
+      "kind": "update",
+      "projectId": "azc-low-end",
+      "projectName": "Azc Low End",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "Azc Low End moved to playable",
+      "oneLine": "The project’s record moved from 0% to 69.9%.",
+      "sources": [
+        {
+          "url": "https://github.com/Leandroazc/Azc-Low-End",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "Azc Low End record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "leandroazc/azc-low-end",
+        "name": "azc low end",
+        "words": [
+          "azc",
+          "low",
+          "end",
+          "azc-low-end"
+        ],
+        "hash": "3f18919195813cf2",
+        "projectId": "azc-low-end"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:074ff9867676391f2d41fbae0c427629097eeb5ac1252981f3b1fdc48cfb53d8",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-victory-lite-didgori-c113afe6",
+      "key": "update|victory-lite-didgori|playable|41570",
+      "kind": "update",
+      "projectId": "victory-lite-didgori",
+      "projectName": "VIctory-Lite (didgori)",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "VIctory-Lite (didgori) moved to playable",
+      "oneLine": "The project’s record moved from 0% to 65.4%.",
+      "sources": [
+        {
+          "url": "https://github.com/didgori-1121/VIctory-Lite",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "VIctory-Lite (didgori) record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "didgori-1121/victory-lite",
+        "name": "victory-lite didgori",
+        "words": [
+          "victory-lite",
+          "didgori",
+          "victory-lite-didgori"
+        ],
+        "hash": "6deb9ca96dea93f9",
+        "projectId": "victory-lite-didgori"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:cceea8e74145e38cf4e9878ac25ee6f0a74e95f4ed91a80df914f9e80be5f46b",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-victory-4gb-c521676b",
+      "key": "update|victory-4gb|playable|41570",
+      "kind": "update",
+      "projectId": "victory-4gb",
+      "projectName": "victory-4gb",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "victory-4gb moved to playable",
+      "oneLine": "The project’s record moved from 0% to 68.2%.",
+      "sources": [
+        {
+          "url": "https://github.com/Dathinel/victory-4gb",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "victory-4gb record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "dathinel/victory-4gb",
+        "name": "victory-4gb",
+        "words": [
+          "victory-4gb"
+        ],
+        "hash": "ff6a9d058cd591b7",
+        "projectId": "victory-4gb"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:bcb1572084e77cb9d4f3a81bc6a46a0a259958711161e2f47bb698a2c32c21f6",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-victory-rtx3060-01769cac",
+      "key": "update|victory-rtx3060|world|41570",
+      "kind": "update",
+      "projectId": "victory-rtx3060",
+      "projectName": "victory-rtx3060",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "victory-rtx3060 moved to world",
+      "oneLine": "The project’s record moved from 0% to 45%.",
+      "sources": [
+        {
+          "url": "https://github.com/Maykzera/victory-rtx3060",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "victory-rtx3060 record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "maykzera/victory-rtx3060",
+        "name": "victory-rtx3060",
+        "words": [
+          "victory-rtx3060"
+        ],
+        "hash": "785fc5f176d5f145",
+        "projectId": "victory-rtx3060"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:db9c2e60368e76a0e9fa4942bbd860ad576b64aba16eeb53e1148ec8e5552789",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-zhenek-34567d2e",
+      "key": "update|zhenek|world|41570",
+      "kind": "update",
+      "projectId": "zhenek",
+      "projectName": "zhenek",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "zhenek moved to world",
+      "oneLine": "The project’s record moved from 0% to 45%.",
+      "sources": [
+        {
+          "url": "https://github.com/d1reevo/zhenek",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "zhenek record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "d1reevo/zhenek",
+        "name": "zhenek",
+        "words": [
+          "zhenek"
+        ],
+        "hash": "6867add9e44dff54",
+        "projectId": "zhenek"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:fbf53a13916ca9f8b4c079631ac952729092f2d668f09ae13b816d72896e4d68",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-mavis-9070xt-2505b6b3",
+      "key": "update|mavis-9070xt|playable|41570",
+      "kind": "update",
+      "projectId": "mavis-9070xt",
+      "projectName": "mavis-9070xt",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "mavis-9070xt moved to playable",
+      "oneLine": "The project’s record moved from 0% to 70.6%.",
+      "sources": [
+        {
+          "url": "https://github.com/mavis140/mavis-9070xt",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "mavis-9070xt record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "mavis140/mavis-9070xt",
+        "name": "mavis-9070xt",
+        "words": [
+          "mavis-9070xt"
+        ],
+        "hash": "fd6b24b184c7ff95",
+        "projectId": "mavis-9070xt"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:efae2f1ce20e532391220df3caf8beab8c8e7c58c75280189fb784c95aabfb8e",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-frutiger2-dd7da712",
+      "key": "update|frutiger2|world|41570",
+      "kind": "update",
+      "projectId": "frutiger2",
+      "projectName": "Frutiger2",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "Frutiger2 moved to world",
+      "oneLine": "The project’s record moved from 0% to 40%.",
+      "sources": [
+        {
+          "url": "https://github.com/thaqifT/Frutiger2",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "Frutiger2 record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "thaqift/frutiger2",
+        "name": "frutiger2",
+        "words": [
+          "frutiger2"
+        ],
+        "hash": "59e93daaf3edfb04",
+        "projectId": "frutiger2"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d26aa2bfe87cac31cbf4787df9901d39e7561d7733a32bac80358ae73b9290ed",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-victory-bygone-fef5dd03",
+      "key": "update|victory-bygone|boots|41570",
+      "kind": "update",
+      "projectId": "victory-bygone",
+      "projectName": "victory-bygone",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "victory-bygone moved to boots",
+      "oneLine": "The project’s record moved from 0% to 25%.",
+      "sources": [
+        {
+          "url": "https://github.com/Xbygone/victory-bygone",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "victory-bygone record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "xbygone/victory-bygone",
+        "name": "victory-bygone",
+        "words": [
+          "victory-bygone"
+        ],
+        "hash": "427cde12abfcdaf0",
+        "projectId": "victory-bygone"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:99993bb28253862838741fafb0cf0760bf0ff0db5cdb0c808e02e38686426f2d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-hyper30x-69b4ca44",
+      "key": "update|hyper30x|world|41570",
+      "kind": "update",
+      "projectId": "hyper30x",
+      "projectName": "Hyper30X",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "Hyper30X moved to world",
+      "oneLine": "The project’s record moved from 0% to 45%.",
+      "sources": [
+        {
+          "url": "https://github.com/andresgonzalezvaldivia-ui/Hyper30X",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "Hyper30X record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "andresgonzalezvaldivia-ui/hyper30x",
+        "name": "hyper30x",
+        "words": [
+          "hyper30x"
+        ],
+        "hash": "6b7d9dd1a7d5f614",
+        "projectId": "hyper30x"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:053a3dee02fd659195ec33eb1d835f2728b95291bed8802f77465540d74bd11e",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-victory-blueyes-db3804d2",
+      "key": "update|victory-blueyes|playable|41570",
+      "kind": "update",
+      "projectId": "victory-blueyes",
+      "projectName": "Victory-Blueyes",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "Victory-Blueyes moved to playable",
+      "oneLine": "The project’s record moved from 0% to 61.8%.",
+      "sources": [
+        {
+          "url": "https://github.com/Vaximous/Victory-Blueyes",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "Victory-Blueyes record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "vaximous/victory-blueyes",
+        "name": "victory-blueyes",
+        "words": [
+          "victory-blueyes"
+        ],
+        "hash": "ed699129c4cc08d4",
+        "projectId": "victory-blueyes"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d38350b825381ee7260b5118d1f9b1fc084ad003e3b5b0175acb80a75a91492f",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-nvictory-877f6234",
+      "key": "update|nvictory|playable|41570",
+      "kind": "update",
+      "projectId": "nvictory",
+      "projectName": "NVIctory",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "NVIctory moved to playable",
+      "oneLine": "The project’s record moved from 0% to 58.3%.",
+      "sources": [
+        {
+          "url": "https://github.com/n-romanovich/NVIctory",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "NVIctory record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "n-romanovich/nvictory",
+        "name": "nvictory",
+        "words": [
+          "nvictory"
+        ],
+        "hash": "4f7f94b3c591b9d3",
+        "projectId": "nvictory"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:6f9246e39cb1f009949570492b8e848116e5aac72532c646d4ef3a285f12398a",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-trident-11cd1259",
+      "key": "update|trident|world|41570",
+      "kind": "update",
+      "projectId": "trident",
+      "projectName": "TRIDENT",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "TRIDENT moved to world",
+      "oneLine": "The project’s record moved from 0% to 45%.",
+      "sources": [
+        {
+          "url": "https://github.com/ECHOZwei/TRIDENT",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "TRIDENT record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "echozwei/trident",
+        "name": "trident",
+        "words": [
+          "trident"
+        ],
+        "hash": "6b2bad9337d4e7aa",
+        "projectId": "trident"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:4f68653ebd48b9b67538c7696b7adcebb2c74b700ddd686cd3eeefa43272466b",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t111015z-yuk1-nvdia-gta6-01b9c1c0",
+      "key": "update|yuk1-nvdia-gta6|world|41570",
+      "kind": "update",
+      "projectId": "yuk1-nvdia-gta6",
+      "projectName": "Yuk1-nvdia-gta6",
+      "at": "2026-11-28T11:10:15.665Z",
+      "detectedAt": "2026-11-28T11:20:20.997Z",
+      "title": "Yuk1-nvdia-gta6 moved to world",
+      "oneLine": "The project’s record moved from 0% to 45%.",
+      "sources": [
+        {
+          "url": "https://github.com/naixue2233/Yuk1-nvdia-gta6",
+          "host": "github.com",
+          "outlet": "Project repository",
+          "title": "Yuk1-nvdia-gta6 record",
+          "at": "2026-11-28T11:10:15.665Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "naixue2233/yuk1-nvdia-gta6",
+        "name": "yuk1-nvdia-gta6",
+        "words": [
+          "yuk1-nvdia-gta6"
+        ],
+        "hash": "707b65db51ddefde",
+        "projectId": "yuk1-nvdia-gta6"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:a98e4eddb86408004179743188a8506103377f787df5b38ea01fac5b413c02e7",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
