@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-28T05:01:58.167Z",
+ "updated": "2026-11-28T05:31:50.821Z",
  "now": {
   "hash": "db5d28bf4ddd58cd",
   "at": "2026-11-28T04:31:48.967Z",
@@ -125,56 +125,64 @@
   ]
  },
  "notes": {
-  "commit:e9e026c": {
-   "hash": "befd90c86b562d25",
-   "text": "Five Star Recomp's commit says indirect batching is on by default.",
+  "commit:6dfca64": {
+   "hash": "37767e9e1ce181c2",
+   "text": "Leonida Continued's commit says it merges a documentation update about distinguishing two runtimes.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T05:01:58.167Z"
+   "at": "2026-11-28T05:31:50.821Z"
   },
-  "commit:2cda5c4": {
-   "hash": "429200f363a67347",
-   "text": null,
+  "commit:6c6952e": {
+   "hash": "009ef0e6e5704125",
+   "text": "victory-polaris's commit says it updates status information on gameplay, frame rates, and counter observations.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T05:01:58.167Z"
+   "at": "2026-11-28T05:31:50.821Z"
   },
-  "commit:6b55f79": {
-   "hash": "0dde53f2f2f6fbab",
-   "text": "Five Star Recomp's commit says indirect batching is on by default with indirect gathering, claiming 25% less GPU use per frame in a matched scene.",
+  "commit:d649e47": {
+   "hash": "f58b1cab0eaca705",
+   "text": "Xbox2Windows's commit says it lowers v_fract_f16 in direct compute and pixel DXIL.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T05:01:58.167Z"
+   "at": "2026-11-28T05:31:50.821Z"
   },
-  "commit:8ca5080": {
-   "hash": "80ac21a4b0799f3d",
-   "text": "i95-GTA6-PC-Launcher’s commit says it flags vendor runtimes missing from the README table.",
+  "commit:08f7b95": {
+   "hash": "73e37e3bd0a0f5f2",
+   "text": "i95-GTA6-PC-Launcher's commit says it is version 0.4.6.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T05:01:58.167Z"
+   "at": "2026-11-28T05:31:50.821Z"
   },
-  "commit:62fedfd": {
-   "hash": "72d104685cdb2dcb",
-   "text": "VIctory-Hydra’s commit says it strengthens benchmark locking, adds performance captures, and sets cautious default settings.",
+  "commit:e28ac4a": {
+   "hash": "389c82296f751420",
+   "text": "Xbox2Windows's commit says it adds support for neg_lo, neg_hi, and clamp on v_pk_min/max_f16.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T05:01:58.167Z"
+   "at": "2026-11-28T05:31:50.821Z"
   },
-  "commit:f48971f": {
-   "hash": "e36a22e3f2805c9a",
-   "text": "VIctory-Hydra’s commit says it adds runtime ports, WavePairs, batched comparisons, and GPU timing spans.",
+  "commit:ecabb41": {
+   "hash": "9ef9ec36afffae89",
+   "text": "Leonida Continued's commit says it clarifies the README's status for playable D3D12 and Vulkan runtimes and the launcher flow.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T05:01:58.167Z"
+   "at": "2026-11-28T05:31:50.821Z"
   },
-  "commit:fd7ce57": {
-   "hash": "d4c8640f1e265690",
-   "text": "Xbox2Windows’s commit says it adds a startup debugger option to check specified sites.",
+  "commit:9cb86f0": {
+   "hash": "d5a2acc31b848bce",
+   "text": "El1xr's commit says the launcher keeps SEND_THREAD, CARD_RECORD_SEND, and COPIED_SHARED.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T05:01:58.167Z"
+   "at": "2026-11-28T05:31:50.821Z"
   },
-  "commit:b1619e0": {
-   "hash": "eada0257e07fe860",
-   "text": "Leonida Continued’s commit says it merges a change to fix a patch race.",
+  "pull:ProjectLeonida/mandy#2562": {
+   "hash": "9ef9ec36afffae89",
+   "text": "Leonida Continued's pull request says it clarifies the README's status for playable D3D12 and Vulkan runtimes and the launcher flow.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T05:01:58.167Z"
+   "at": "2026-11-28T05:31:50.821Z"
   }
  },
  "stories": {
+  "2026-11-28-bsky.app-um-port-pirata-de-gta-6-no-pc-j-tem-chat-de-voz-por-proximidade-e-a-take-two-respondeu-end": {
+   "hash": "69793efac6874c57",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 26,
+   "summary": "A Bluesky post says a pirated GTA 6 PC port has proximity voice chat and Take-Two responded with tougher legal action.",
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
   "2026-11-28-bsky.app-spent-the-day-watching-a-fan-made-gta-6-pc-port-run-multiplayer-with-proximity-voice-chat-": {
    "hash": "78dc929e89c401c7",
    "topic": "Port",
@@ -1668,12 +1676,12 @@
    "summary": null,
    "by": "Pollinations, gpt-6-luna-classic"
   },
-  "2026-11-27-rockstarintel.com-working-gta-vi-online-multiplayer-mod-even-includes-proximity-chat": {
-   "hash": "5809ef8d545ff42e",
+  "2026-11-27-news.google.com-working-gta-vi-online-multiplayer-mod-even-includes-proximity-chat": {
+   "hash": "3967cdd95085981f",
    "topic": "Port",
    "importance": 3,
    "weight": 34,
-   "summary": null,
+   "summary": "RockstarINTEL reports a working GTA VI online multiplayer mod with proximity chat.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-27-news.google.com-gta-6-pc-port-gets-working-multiplayer-but-the-4k-120-fps-ai-claims-are-fake": {
@@ -1834,6 +1842,14 @@
    "importance": 3,
    "weight": 34,
    "summary": "Wccftech reports modded multiplayer on the unofficial PC port runs at 25 to 30 FPS.",
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
+  "2026-11-27-msn.com-can-your-pc-run-gta-vi-the-minimum-ram-gpu-and-cpu-requirements-to-expect": {
+   "hash": "4140e5acf6650b7e",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": "ZDNET asks what minimum RAM, GPU, and CPU requirements to expect for running GTA VI on PC.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-27-bsky.app-on-pc-gta-6-is-now-running-at-more-than-30-fps-in-some-scenes-for-the-community-the-port-i": {
@@ -2668,23 +2684,23 @@
    "summary": null,
    "by": "Kilo Gateway, reflection/beam-free"
   },
+  "2026-11-26-rockstarintel.com-gta-vi-features-a-hidden-memorial-for-rockstar-developers-8217-late-family-members": {
+   "hash": "06adc7d05ca9db02",
+   "topic": "Official",
+   "importance": 3,
+   "weight": 30,
+   "similar": 1,
+   "summary": null,
+   "by": "Pollinations, gpt-oss-20b"
+  },
   "2026-11-26-news.google.com-gta-vi-features-a-hidden-memorial-for-rockstar-developers-late-family-members": {
    "hash": "c759e39676c0cf17",
    "topic": "Game",
    "importance": 1,
    "weight": 0,
-   "similar": 1,
+   "lead": "2026-11-26-rockstarintel.com-gta-vi-features-a-hidden-memorial-for-rockstar-developers-8217-late-family-members",
    "summary": null,
    "by": "Pollinations, gpt-6-luna-classic"
-  },
-  "2026-11-26-rockstarintel.com-gta-vi-features-a-hidden-memorial-for-rockstar-developers-8217-late-family-members": {
-   "hash": "06adc7d05ca9db02",
-   "topic": "Official",
-   "importance": 3,
-   "weight": 14,
-   "lead": "2026-11-26-news.google.com-gta-vi-features-a-hidden-memorial-for-rockstar-developers-late-family-members",
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
   },
   "2026-11-26-news.google.com-gta-6-runs-on-pc-at-up-to-44-fps": {
    "hash": "e40e9ed17ddec612",
@@ -2756,8 +2772,8 @@
    "hash": "576862fc426edaed",
    "topic": "Port",
    "importance": 3,
-   "weight": 40,
-   "similar": 1,
+   "weight": 44,
+   "similar": 2,
    "summary": null,
    "by": "Kilo Gateway, reflection/beam-free"
   },
@@ -2913,6 +2929,15 @@
    "importance": 1,
    "weight": 0,
    "summary": "Rock Paper Shotgun explains how to use Photo Mode and take selfies.",
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
+  "2026-11-26-news.google.com-gta-6-gets-its-first-unofficial-pc-mod-menu-and-launcher": {
+   "hash": "412b25bb3ee963d3",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 24,
+   "lead": "2026-11-26-news.google.com-gta-6-pc-port-projects-advance-as-unofficial-mod-menu-and-launcher-emerge",
+   "summary": null,
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-26-bsky.app-you-know-whats-really-funny-rockstar-isnt-doing-a-pc-port-of-gta-6-til-later-so-people-can": {
@@ -3432,46 +3457,15 @@
    "lead": "2026-11-26-bsky.app-gta-6-est-pr-ximo-de-rodar-no-pc-de-forma-ilegal-apontam-grupos-com-port-de-ia-www-estadao",
    "summary": null,
    "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
-  "2026-11-26-news.google.com-rockstar-tells-vgc-why-gta-6s-chainsaws-are-strictly-look-dont-touch": {
-   "hash": "51da0c680e5d4964",
-   "topic": "Game",
-   "importance": 1,
-   "weight": 0,
-   "summary": "Digg reports Rockstar told VGC that GTA 6 chainsaws are for looks, not use.",
-   "by": "Pollinations, gpt-6-luna-classic"
-  },
-  "2026-11-26-news.google.com-heres-how-to-build-a-shelby-cobra-in-gta-vi": {
-   "hash": "d6cf73675efed6a7",
-   "topic": "Game",
-   "importance": 1,
-   "weight": 0,
-   "summary": "A guide explains how to build a Shelby Cobra in GTA VI.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
-  "2026-11-26-gamesradar.com-gta-6-pc-project-not-dead-lead-clarifies-after-quitting-over-rockstars-apparent-discord-ta": {
-   "hash": "e44fcbf81d0b6492",
-   "topic": "Takedown",
-   "importance": 4,
-   "weight": 54,
-   "summary": "A lead says the GTA 6 PC project is not dead after quitting over an apparent Rockstar Discord takedown.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
   }
  },
  "projects": {
-  "five-star-recomp": {
-   "hash": "c1b1940b18d791d6",
+  "victory-polaris": {
+   "hash": "b77e99674c9b7650",
    "count": 15,
-   "summary": "Five Star Recomp's recent commits and pull requests mention character bodies, lighting and shadows, shader replay, memory budgets, and mesh shader changes.",
+   "summary": "victory-polaris's recent commits and pull requests mention GPU memory limits, mesh draws, shader fixes, Vulkan compatibility, and UI resolution.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T02:02:01.438Z"
-  },
-  "i95-gta6-pc-launcher": {
-   "hash": "46080bdafb09a2b2",
-   "count": 15,
-   "summary": "i95-GTA6-PC-Launcher's recent commits mention updating runtime lists and tracking project stars and times.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T04:02:01.163Z"
+   "at": "2026-11-28T04:31:48.967Z"
   },
   "xbox2windows": {
    "hash": "bb9f25cc374fc5a5",
@@ -3480,19 +3474,26 @@
    "by": "Pollinations, gpt-6-luna-classic",
    "at": "2026-11-28T03:36:34.165Z"
   },
-  "leonida-continued": {
-   "hash": "f82cb22932a8bcc9",
+  "i95-gta6-pc-launcher": {
+   "hash": "46080bdafb09a2b2",
    "count": 15,
-   "summary": "Leonida Continued's recent commits and pull requests mention D3D12 runtime measurements, worker queue handling, memory probes, and documentation and test paths.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T02:02:01.438Z"
-  },
-  "mandy": {
-   "hash": "9e6ab056434194c1",
-   "count": 15,
-   "summary": "Leonida Continued's recent commits and pull requests mention runtime compatibility, loader forwarding, GPU pipeline stubs, shim compilation, and README updates.",
+   "summary": "i95-GTA6-PC-Launcher's recent commits mention updating runtime lists and tracking project stars and times.",
    "by": "Pollinations, gpt-6-luna-classic",
    "at": "2026-11-28T04:02:01.163Z"
+  },
+  "five-star-recomp": {
+   "hash": "4194e904c61a4029",
+   "count": 15,
+   "summary": "Five Star Recomp's recent commits and pull requests mention indirect batching, mesh shader changes, buffer capacities, and shader fixes.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-28T05:31:50.821Z"
+  },
+  "victory-hydra": {
+   "hash": "8a6e7e0770c8daa8",
+   "count": 15,
+   "summary": "VIctory-Hydra's recent commits mention GPU and shader ports, DLSS and FSR features, detiling, reflections, F1 settings, and benchmark changes.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-28T05:01:58.167Z"
   },
   "tuxbox": {
    "hash": "d15f5cee8281bd52",
@@ -3500,13 +3501,6 @@
    "summary": "TuxBox's recent commits and pull requests mention GPU checks for recorded shader instructions, D3D12 descriptor handling, dispatch splitting, and translator roadmap updates.",
    "by": "Pollinations, gpt-6-luna-classic",
    "at": "2026-11-28T03:01:59.287Z"
-  },
-  "victory-polaris": {
-   "hash": "b77e99674c9b7650",
-   "count": 15,
-   "summary": "victory-polaris's recent commits and pull requests mention GPU memory limits, mesh draws, shader fixes, Vulkan compatibility, and UI resolution.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T04:31:48.967Z"
   },
   "native-victory-macos": {
    "hash": "275235088a963156",
@@ -3516,18 +3510,25 @@
    "at": "2026-11-28T04:02:01.163Z"
   },
   "victory-gta6": {
-   "hash": "e8d110b6d0375e33",
+   "hash": "a33149e78a8d2394",
    "count": 15,
-   "summary": "hyphennn's recent commits and pull requests mention shader bounds, GPU pipeline loading, texture memory budgets, and water lighting.",
+   "summary": "hyphennn's recent commits and pull requests mention ray tracing, pipeline samplers, GPU alias copies, texture checks, and development plans.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T02:02:01.438Z"
+   "at": "2026-11-28T05:31:50.821Z"
   },
-  "victory-hydra": {
-   "hash": "8a6e7e0770c8daa8",
+  "el1xr": {
+   "hash": "87defcd4487059c4",
    "count": 15,
-   "summary": "VIctory-Hydra's recent commits mention GPU and shader ports, DLSS and FSR features, detiling, reflections, F1 settings, and benchmark changes.",
+   "summary": "El1xr's recent commits and pull requests mention launcher state, read-back buffers, memory limits, pipeline translation, and test changes.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T05:01:58.167Z"
+   "at": "2026-11-28T05:31:50.821Z"
+  },
+  "launcher": {
+   "hash": "e07755650b30296d",
+   "count": 15,
+   "summary": "VILauncher's recent commits and pull requests mention game window settings, shader build output, D3D12 overrides, and a game console.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-28T05:31:50.821Z"
   }
  }
 }
