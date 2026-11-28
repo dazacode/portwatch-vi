@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T08:35:20.119Z",
+  "updated": "2026-11-28T08:50:22.227Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T08:30:06.000Z",
-      "lastOkAt": "2026-11-28T08:35:20.119Z",
-      "seen": 50500,
+      "lastOkAt": "2026-11-28T08:50:22.227Z",
+      "seen": 50750,
       "events": 1756,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T03:46:19.000Z",
-      "lastOkAt": "2026-11-28T08:35:20.119Z",
+      "lastOkAt": "2026-11-28T08:50:22.227Z",
       "seen": 47,
       "events": 38,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T20:35:20.119Z",
-      "lastOkAt": "2026-11-28T08:35:20.119Z",
-      "seen": 12421,
+      "lastCursor": "2026-11-27T20:50:22.227Z",
+      "lastOkAt": "2026-11-28T08:50:22.227Z",
+      "seen": 12484,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T08:11:40.000Z",
-      "lastOkAt": "2026-11-28T08:35:20.119Z",
-      "seen": 80800,
+      "lastOkAt": "2026-11-28T08:50:22.227Z",
+      "seen": 81200,
       "events": 53,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T08:35:20.119Z",
-      "seen": 24450,
+      "lastOkAt": "2026-11-28T08:50:22.227Z",
+      "seen": 24573,
       "events": 14,
       "errors": 0
     }
@@ -17658,12 +17658,17 @@
           "at": "2026-11-28T02:35:41.053Z",
           "by": "desk",
           "note": "The only source is a single, truncated Bluesky post, and a social post alone is too weak to support the specific claim about 3,000 DMCA takedowns."
+        },
+        {
+          "at": "2026-11-28T08:50:22.227Z",
+          "by": "desk",
+          "note": "The only source is a single Bluesky social post with a truncated excerpt, which is too weak and incomplete to plainly support the takedown claim."
         }
       ],
       "heldReasons": [
         "low confidence"
       ],
-      "deskAt": "2026-11-28T02:35:41.053Z"
+      "deskAt": "2026-11-28T08:50:22.227Z"
     },
     {
       "id": "20261128t033359z-i95-gta6-pc-launcher-9ca2ff5c",
@@ -18279,10 +18284,17 @@
       "chain": "sha256:fbac4bc84b22ba14632ea6c46afaafdeff812b892c0c765e60b057c28b581645",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T08:50:22.227Z",
+          "by": "desk",
+          "note": "The only source is the project’s own repository with an empty excerpt, so it does not plainly substantiate the specific hotkey and item details in the one-line update."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T08:50:22.227Z"
     },
     {
       "id": "20261128t081140z-scene-7dfa69d8",
