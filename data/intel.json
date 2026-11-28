@@ -1,40 +1,40 @@
 {
-  "updated": "2026-11-28T01:35:22.978Z",
+  "updated": "2026-11-28T01:50:22.673Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T01:31:12.000Z",
-      "lastOkAt": "2026-11-28T01:35:22.978Z",
-      "seen": 43750,
+      "lastOkAt": "2026-11-28T01:50:22.673Z",
+      "seen": 44000,
       "events": 1546,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T22:31:30.000Z",
-      "lastOkAt": "2026-11-28T01:35:22.978Z",
+      "lastOkAt": "2026-11-28T01:50:22.673Z",
       "seen": 45,
       "events": 36,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-28T01:35:22.978Z",
-      "seen": 10720,
+      "lastOkAt": "2026-11-28T01:50:22.673Z",
+      "seen": 10783,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T01:24:37.970Z",
-      "lastOkAt": "2026-11-28T01:35:22.978Z",
-      "seen": 70000,
+      "lastOkAt": "2026-11-28T01:50:22.673Z",
+      "seen": 70400,
       "events": 47,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T13:35:22.978Z",
-      "lastOkAt": "2026-11-28T01:35:22.978Z",
-      "seen": 21129,
-      "events": 12,
+      "lastCursor": "2026-11-28T00:00:00.000Z",
+      "lastOkAt": "2026-11-28T01:50:22.673Z",
+      "seen": 21252,
+      "events": 14,
       "errors": 0
     }
   },
@@ -17014,10 +17014,17 @@
       "chain": "sha256:d2b857cff04dd9825fb81f9634172cf7184047fa9f73401c17ce8bfa8f974dc8",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T01:50:22.673Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub repository with an empty excerpt, so the stored material does not plainly support the specific 0.3.0 feature claims."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T01:50:22.673Z"
     },
     {
       "id": "20261127t223130z-anyxboxx-bfb5d074",
@@ -17229,6 +17236,115 @@
       "note": "model: overview has 68, which is not in a source",
       "publishedAt": "2026-11-28T01:05:21.607Z",
       "heldReasons": []
+    },
+    {
+      "id": "20261128t000000z-victory-nvidia-lowstutter-431b0bb8",
+      "key": "reference|victory-nvidia-lowstutter|tracker|41570",
+      "kind": "reference",
+      "projectId": "victory-nvidia-lowstutter",
+      "projectName": "VIctory-NVIDIA-LowStutter",
+      "at": "2026-11-28T00:00:00.000Z",
+      "detectedAt": "2026-11-28T01:50:22.673Z",
+      "title": "VIctory-NVIDIA-LowStutter changed on the board",
+      "oneLine": "Scout spotted tiadiff/VIctory-NVIDIA-LowStutter (possible effort, substance 95).",
+      "sources": [
+        {
+          "url": "https://github.com/tiadiff/VIctory-NVIDIA-LowStutter",
+          "host": "github.com",
+          "outlet": "Project record",
+          "title": "Scout spotted tiadiff/VIctory-NVIDIA-LowStutter (possible effort, substance 95).",
+          "at": "2026-11-28T00:00:00.000Z",
+          "kind": "primary",
+          "excerpt": "Scout spotted tiadiff/VIctory-NVIDIA-LowStutter (possible effort, substance 95)."
+        }
+      ],
+      "fingerprint": {
+        "repo": "tiadiff/victory-nvidia-lowstutter",
+        "name": "victory-nvidia-lowstutter",
+        "words": [
+          "victory-nvidia-lowstutter"
+        ],
+        "hash": "14a4e23a5e78b4d7",
+        "projectId": "victory-nvidia-lowstutter"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:9ef7d5ba671524958f965ab387ced29132b3b2a050ed2fc4ef5277f2d50549e8",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T01:50:22.673Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository record, which merely repeats the scout’s unverified “possible effort” note and provides no independent support for the one-line claim."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T01:50:22.673Z"
+    },
+    {
+      "id": "20261128t000000z-bcpack-gpu-hlsl-c573563e",
+      "key": "reference|bcpack-gpu-hlsl|tracker|41570",
+      "kind": "reference",
+      "projectId": "bcpack-gpu-hlsl",
+      "projectName": "bcpack-gpu-hlsl",
+      "at": "2026-11-28T00:00:00.000Z",
+      "detectedAt": "2026-11-28T01:50:22.673Z",
+      "title": "bcpack-gpu-hlsl changed on the board",
+      "oneLine": "Scout spotted POMXARK/bcpack-gpu-hlsl (possible effort, substance 83).",
+      "sources": [
+        {
+          "url": "https://github.com/POMXARK/bcpack-gpu-hlsl",
+          "host": "github.com",
+          "outlet": "Project record",
+          "title": "Scout spotted POMXARK/bcpack-gpu-hlsl (possible effort, substance 83).",
+          "at": "2026-11-28T00:00:00.000Z",
+          "kind": "primary",
+          "excerpt": "Scout spotted POMXARK/bcpack-gpu-hlsl (possible effort, substance 83)."
+        }
+      ],
+      "fingerprint": {
+        "repo": "pomxark/bcpack-gpu-hlsl",
+        "name": "bcpack-gpu-hlsl",
+        "words": [
+          "bcpack-gpu-hlsl"
+        ],
+        "hash": "82d9309a263c3e43",
+        "projectId": "bcpack-gpu-hlsl"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:5359337fe8d47be3ef1d89b770135cbb0a4d6a86229c90d25d5b98a6c2f93124",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
