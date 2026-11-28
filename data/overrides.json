@@ -1705,36 +1705,39 @@
     {
       "effort": {
         "id": "zortos",
-        "name": "Zortos",
-        "repo": null,
+        "name": "XSEmu",
+        "repo": "zortos293/XSEmu",
         "basedOn": [
-          "xcl"
+          "xcl",
+          "cgbj"
         ],
-        "evidence": "Live stream on Rumble",
-        "byline": "Streamed live · private code, built on XCL",
+        "evidence": "Public code; testers' reports in its GitHub issues",
+        "byline": "Built on XCL · public as zortos293/XSEmu",
         "tier": "tracked",
         "approach": "Compatibility layer",
         "target": "GTA VI only",
-        "summary": "Zortos's own XCL-based build. On stream it draws GTA VI's logo and loading art, then the run ends: no menu, world or gameplay seen. The stream's banner says it crashes on game boot. No public code found.",
+        "summary": "XSEmu, Zortos's runner for Xbox Series games on XCL, is now public as zortos293/XSEmu, with a launcher that can also run other builds. Its own latest run reached GTA VI's world at 1.3 fps, with no picture published. Testers reach the title screen at 3-6 fps, and most runs then crash. Self-reported.",
         "highlights": [
-          "On stream: the Rockstar logo, then loading art, mostly at about 30 fps"
+          "Outside testers reach GTA VI's title screen at 3-6 fps, and its setup screen (issues 30 and 18)",
+          "Its play-134b run reached the world: 1.3 fps median, no lost device (commit ad95d45)",
+          "Public under GPL-3.0; the launcher also hosts VIctory-based runners such as cool_fox"
         ],
         "blockers": [
-          "The one run seen on stream ended on the loading screen; the banner reads “Crashing On game boot GPU”",
-          "World rendering is claimed only in notes on screen, with no footage of it",
-          "No public code found, so nobody outside can test it"
+          "Most testers' runs crash: lost devices on NVIDIA and AMD, memory growing past 100 GB",
+          "No picture of the world from XSEmu's own core yet; testers' runs end before gameplay",
+          "Windows Defender flags the prebuilt launcher (issue 14); the author tested on one RTX 3080"
         ],
         "provenOn": null,
         "gta": {
           "loads": 1,
           "boots": 1,
-          "menu": 0,
-          "world": 0,
+          "menu": 1,
+          "world": 0.5,
           "playable": 0,
           "story": 0,
           "render": 0,
           "fps": 0,
-          "stability": "unknown"
+          "stability": "often"
         },
         "verification": "self-reported",
         "findings": [
@@ -1753,19 +1756,62 @@
           {
             "text": "The post announcing the stream shows XCL’s window at 8,896 of 8,898 shaders built, black, at 0.0 fps.",
             "url": "https://x.com/Zortosdev/status/2125530101756362825"
+          },
+          {
+            "text": "RTX 4060 Laptop, i9-13900H, 16 GB RAM, on release 0.1.0-pre.1 with XSEmu's own runner: GTA VI boots and reaches the title screen at 3-6 fps. The bundled Kelvaroq runner stays on a black screen.",
+            "url": "https://github.com/zortos293/XSEmu/issues/30"
+          },
+          {
+            "text": "Another RTX 4060 Laptop, built from main: about 60,000 shaders compile, the game reaches its language and navigation setup screen, then the device is removed. Same on the Series X and Series S profiles.",
+            "url": "https://github.com/zortos293/XSEmu/issues/18"
+          },
+          {
+            "text": "The author's play-134b run: 1.3 fps median, 66 depth-writing draws in each frame in the world, no device removal, 79 compute pipelines failed. No picture of it is published.",
+            "url": "https://github.com/zortos293/XSEmu/commit/ad95d45"
+          },
+          {
+            "text": "An RTX 5070 with 32 GB RAM: once the world starts loading, about 45 seconds in, committed memory grows about 0.3 GB a second until the run fails, three runs of three. The game's own shader-build screen stalls at 58%.",
+            "url": "https://github.com/zortos293/XSEmu/issues/28"
+          },
+          {
+            "text": "On AMD, an RX 7800 XT and an RX 9070 lose the device when the driver rejects compute pipelines, the first after 38 frames.",
+            "url": "https://github.com/zortos293/XSEmu/issues/20"
+          },
+          {
+            "text": "A player's screenshot shows XSEmu's launcher running GTA VI on the cool_fox runner, a VIctory-based build it can host: the opening credits and art at 9 fps. In game, only sound and subtitles worked; the picture was black. This is cool_fox's result, not XSEmu's core.",
+            "url": "https://x.com/goGiohPlayer87/status/2126347382606680564"
+          },
+          {
+            "text": "Zortos says XSEmu's official release is at 21:00 UTC+1 on 28 Nov, after QA, and that the latest NVIDIA forks are being added to it.",
+            "url": "https://x.com/Zortosdev/status/2126443456687968652"
           }
         ],
-        "findingsSource": "From the linked stream and post, on 25 November. Frames were sampled about a minute apart after the first four minutes, so short moments could be missed.",
-        "stats": {},
-        "assessedAt": "2026-11-25",
+        "findingsSource": "From the repo, its issues and releases, read as text, and the linked posts, on 28 November. The earlier stream findings are from 25 November.",
+        "stats": {
+          "stars": 952,
+          "forks": 64,
+          "openIssues": 18,
+          "createdAt": "2026-11-23T12:57:17Z",
+          "pushedAt": "2026-11-28T06:33:29Z",
+          "archived": false,
+          "missing": false,
+          "commits7d": 50
+        },
+        "assessedAt": "2026-11-28",
         "assessedBy": "claude",
-        "claims": []
+        "claims": [],
+        "branch": "main"
       },
       "changes": [
         {
           "date": "2026-11-25",
           "kind": "new",
           "text": "Zortos joins as a private build at 20% (“First frame”): an XCL-based build that draws the Rockstar logo and loading art on stream before the run ends. No menu or world seen; no public code found."
+        },
+        {
+          "date": "2026-11-28",
+          "kind": "up",
+          "text": "Zortos's build is public as XSEmu: testers reach the title screen, and its own run reached the world"
         }
       ]
     },
@@ -4093,6 +4139,247 @@
           "missing": false,
           "commits7d": 100
         }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "vix0e0e/VIctory-LITE",
+        "related": [],
+        "basedOn": [
+          "marvis",
+          "cgbj",
+          "avatarmanz",
+          "victory-gta6",
+          "belobug",
+          "razda4a-xen"
+        ],
+        "highlights": [
+          "Platform: GTX 1650 4 GB, Ryzen 5 5500, 16 GB RAM, Windows 11",
+          "3D scene at 960x540 under 1080p menus; textures capped at 512 to fit 4 GB of video memory",
+          "Outside tester: 7.8-8.9 fps on an RTX 2070 SUPER with 16 GB RAM, about 12-16 minutes of play"
+        ],
+        "blockers": [
+          "On 16 GB RAM, runs end in memory errors and a lost device after 12-16 minutes (issue 4)",
+          "Crashes reported on 8 GB RAM and an RX 6600; no prebuilt release, so it must be built",
+          "Half-resolution 3D; a tester's boat shot shows the water washed out white"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0.1,
+          "render": 0.5,
+          "fps": 8,
+          "stability": "often"
+        },
+        "stats": {
+          "stars": 97,
+          "forks": 12,
+          "openIssues": 4,
+          "createdAt": "2026-11-27T22:52:49Z",
+          "pushedAt": "2026-11-28T06:50:04Z",
+          "archived": false,
+          "missing": false,
+          "commits7d": 11
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "VIctory LITE",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "vix0e0e's VIctory fork for 4 GB graphics cards and 16 GB of RAM, built on cool_fox with work from AvatarManz, Belobug and RAZDA4A XEN. It draws the 3D scene at half resolution with smaller textures. Its own run is 5.3-6 fps on a GTX 1650; an outside tester measured 7.8-8.9 on an RTX 2070 SUPER before memory ran out. Self-reported.",
+        "id": "victory-lite",
+        "findings": [
+          {
+            "text": "Announced on X on 28 Nov as a VIctory fork for 4 GB cards and 16 GB of RAM, with native 1080p menus and faster scene streaming.",
+            "url": "https://x.com/itsawful911/status/2126600162034528430"
+          },
+          {
+            "text": "The author's tested v4 build: 5.3-6 fps, with 184.8 ms of GPU time a frame, on a GTX 1650 4 GB.",
+            "url": "https://github.com/vix0e0e/VIctory-LITE/commit/99099e9"
+          },
+          {
+            "text": "An RTX 2070 SUPER with 16 GB RAM and a 33 GB page file played at 7.8-8.9 fps, 128-185 ms a frame. Both runs ended in out-of-memory errors and a lost device, after 15 min 43 s and 12 min 46 s.",
+            "url": "https://github.com/vix0e0e/VIctory-LITE/issues/4"
+          },
+          {
+            "text": "A GTX 1650 with 8 GB RAM crashed when the subtitles began, and an RX 6600 was refused as lacking mesh shaders, then crashed.",
+            "url": "https://github.com/vix0e0e/VIctory-LITE/issues/2"
+          },
+          {
+            "text": "A reply to the announcement shows Jason's boat ride, following the plane, at 11.6 fps on the overlay, 86 ms a frame, using 5.0 of 5.1 GB of video memory. The water is washed out white. The card isn't named.",
+            "url": "https://x.com/DobleJ504/status/2126615827621581030"
+          }
+        ],
+        "findingsSource": "From DobleJ504's reply of 28 Nov."
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "crossducking/RAZDA4A-XEN",
+        "related": [],
+        "basedOn": [
+          "marvis"
+        ],
+        "highlights": [
+          "Platform: Radeon RX 9060 XT 16 GB, Ryzen 5 5600 (measured) or Ryzen 7 7800X3D (README), 16 GB RAM",
+          "16.2 fps native on average over 180-second runs (earlier README); frame generation doubles the shown rate",
+          "Trees, foliage and props draw since Wave 11; 8 GB Safe Mode measured 12.7 fps native on an RX 7600"
+        ],
+        "blockers": [
+          "The README's ~31 fps native has no published measurement; testers' screenshots show 5.7-7.9 fps native",
+          "Ray tracing is off; a tester's shot shows a garbled texture and banding across the ground",
+          "AMD only. main ships an unsigned prebuilt exe that Defender flags; the source is on dev; issues are off"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0.1,
+          "render": 0.5,
+          "fps": 16,
+          "stability": "unknown"
+        },
+        "stats": {
+          "stars": 264,
+          "forks": 29,
+          "openIssues": 5,
+          "createdAt": "2026-11-27T16:56:37Z",
+          "pushedAt": "2026-11-28T10:09:58Z",
+          "archived": false,
+          "missing": false,
+          "commits7d": 24
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "RAZDA4A XEN",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "crossducking's VIctory fork for AMD Radeon (RDNA 2 to 4), aimed at PCs with 16 GB of RAM, with FSR frame generation. Its README claims about 31 fps native on an RX 9060 XT. Its earlier measured table showed about 16, and two outside testers' screenshots show 5.7-7.9 native. Self-reported.",
+        "id": "razda4a-xen",
+        "findings": [
+          {
+            "text": "crossducking's post of 28 Nov: three community pull requests merged into dev, an 8 GB profile fitted to the live VRAM budget, AMD fixes from other forks and 17 VIctory commits. Built and tested, not yet played; not on main.",
+            "url": "https://x.com/crossducking/status/2126602217272582145"
+          },
+          {
+            "text": "A tester's screenshot (RX 9060 XT, Ryzen 9 7950X, 16 GB RAM): Jason's boat ride towards the bridge, with lit water, trees and sky. The title bar reads 7.9 fps native, 16 shown with frame generation, 126 ms a frame.",
+            "url": "https://x.com/SBut67/status/2126606495416570301"
+          },
+          {
+            "text": "Another tester (RX 7800 XT, Core i5-13400F, 16 GB RAM): Lucia on foot at sunset with a coffee-shop objective, 5.7 fps native (11 shown). Her bag's texture comes out garbled and the ground shows coloured bands.",
+            "url": "https://x.com/zurax404/status/2126621507623473238"
+          },
+          {
+            "text": "The README before the 28 Nov rewrite: 16.2 fps native on average, 18.2 median, over 180-second runs on a Ryzen 5 5600 and RX 9060 XT 16 GB with 16 GB RAM; 29-31 fps with frame generation. An RX 7600 8 GB in Safe Mode: 12.7 native.",
+            "url": "https://github.com/crossducking/RAZDA4A-XEN/blob/fd806e1/README.md"
+          },
+          {
+            "text": "The rewrite (pull request 4) kept ~31 native and 62-63 with frame generation on a Ryzen 7 7800X3D as given, and dropped the 5600 table as Wave 7 figures. No measurement behind ~31 is published.",
+            "url": "https://github.com/crossducking/RAZDA4A-XEN/pull/4"
+          },
+          {
+            "text": "The testers' title bars match the format this fork's frame-generation code writes. The Rust source on dev runs to about 221,000 lines; its history doesn't share commits with VIctory's, though the README credits it.",
+            "url": "https://github.com/crossducking/RAZDA4A-XEN/blob/4672385/crates/victory-gpu/src/host.rs#L11211"
+          }
+        ],
+        "findingsSource": "dev at 4672385, read as text."
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "Keel62155/VIctoryUnified",
+        "related": [],
+        "basedOn": [
+          "marvis",
+          "cgbj",
+          "avatarmanz",
+          "victory-gta6"
+        ],
+        "highlights": [
+          "Platform: RTX 4060 8 GB, Core i7-14700F, 32 GB RAM, Windows 11",
+          "A recording on an RTX 5060 Ti shows the prison opening lit close to the console",
+          "Measured 24-25 fps standing in the cell at half resolution, 19 on a walking route"
+        ],
+        "blockers": [
+          "Only the prison opening shown; up to 14 fps in the recording, about 3 while shaders compile",
+          "Its figures come from earlier builds; v2.0 is untested in game, and its CI fails",
+          "A tester's RTX 4070 laptop shows only a black screen with subtitles"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.75,
+          "fps": 19,
+          "stability": "unknown"
+        },
+        "stats": {
+          "stars": 150,
+          "forks": 23,
+          "openIssues": 0,
+          "createdAt": "2026-11-26T21:11:26Z",
+          "pushedAt": "2026-11-28T00:29:15Z",
+          "archived": false,
+          "missing": false,
+          "commits7d": 4
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "VIctoryUnified",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "Keel62155's VIctory fork for NVIDIA cards, built on cool_fox with pieces of about a dozen other forks, a launcher and optional DLSS. A recording on an RTX 5060 Ti shows Lucia's prison opening close to the console at up to 14 fps; its own notes measure 19-25 fps on an RTX 4060. Self-reported. Not Itsbatt's victory-unified.",
+        "id": "victoryunified-keel",
+        "findings": [
+          {
+            "text": "daxterdxedits's 48-second recording on an RTX 5060 Ti 16 GB with 64 GB RAM: Lucia's prison opening with sunlight through the windows, detailed hair and faces, inmates, and an interact prompt as the player moves. Its overlay reads 14 fps at best, 2.6-3.6 while shaders compile.",
+            "url": "https://x.com/daxterdxedits/status/2126530159490806262"
+          },
+          {
+            "text": "Its PROGRESS.md, on a Core i7-14700F, RTX 4060 8 GB and 32 GB RAM: 24-25 fps steady standing in the prison cell at half resolution through FSR; at full quality, 19.3 fps median on a 420-second walking route, with 1% lows of 4.7.",
+            "url": "https://github.com/Keel62155/VIctoryUnified/blob/74f4035/PROGRESS.md"
+          },
+          {
+            "text": "The same file says those figures come from earlier builds: the v2.0 source has had no new check of gameplay or the picture, and leaves out an XCL-derived decoder from the author's working tree.",
+            "url": "https://github.com/Keel62155/VIctoryUnified/blob/74f4035/PROGRESS.md#v20-source-release"
+          },
+          {
+            "text": "One author and four commits: the code arrived in a single commit on 26 Nov, based on cool_fox. THIRD_PARTY.md credits about a dozen forks it took parts from, among them AvatarManz's, kelvaroq, Neptune and VIctory-NVIDIA. GitHub's CI check failed on the last three commits.",
+            "url": "https://github.com/Keel62155/VIctoryUnified/blob/74f4035/THIRD_PARTY.md"
+          },
+          {
+            "text": "A reply to lis1091fu's post about it: on an RTX 4070 8 GB laptop with a Ryzen 7 7840HS, only a black screen with subtitles shows.",
+            "url": "https://x.com/likehimmell/status/2126595927511322807"
+          },
+          {
+            "text": "ICernis17595's post lists v2.0's features: experimental DLSS frame generation, DLSS upscaling, ray tracing, Smooth Motion and a launcher. Its picture is the repo page, not the game, so it shows no result.",
+            "url": "https://x.com/ICernis17595/status/2126602281827389778"
+          }
+        ],
+        "findingsSource": "From ICernis17595's post of 28 Nov."
       },
       "changes": []
     }
