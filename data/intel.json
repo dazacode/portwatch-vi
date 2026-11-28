@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T02:05:20.202Z",
+  "updated": "2026-11-28T02:20:23.012Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T02:01:31.000Z",
-      "lastOkAt": "2026-11-28T02:05:20.202Z",
-      "seen": 44250,
+      "lastOkAt": "2026-11-28T02:20:23.012Z",
+      "seen": 44500,
       "events": 1567,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T22:31:30.000Z",
-      "lastOkAt": "2026-11-28T02:05:20.202Z",
+      "lastOkAt": "2026-11-28T02:20:23.012Z",
       "seen": 45,
       "events": 36,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-28T02:05:20.202Z",
-      "seen": 10846,
+      "lastOkAt": "2026-11-28T02:20:23.012Z",
+      "seen": 10909,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T01:48:41.000Z",
-      "lastOkAt": "2026-11-28T02:05:20.202Z",
-      "seen": 70800,
+      "lastOkAt": "2026-11-28T02:20:23.012Z",
+      "seen": 71200,
       "events": 48,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T02:05:20.202Z",
-      "seen": 21375,
+      "lastOkAt": "2026-11-28T02:20:23.012Z",
+      "seen": 21498,
       "events": 14,
       "errors": 0
     }
@@ -17341,10 +17341,17 @@
       "chain": "sha256:5359337fe8d47be3ef1d89b770135cbb0a4d6a86229c90d25d5b98a6c2f93124",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T02:20:23.012Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository record repeating the same scout line, so it is not independent and does not plainly support publication."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T02:20:23.012Z"
     },
     {
       "id": "20261128t014841z-scene-29deae1d",
@@ -17448,10 +17455,17 @@
       "chain": "sha256:1b839d9d20a45ee4882331e75218b28eb2ec64b3c9d879b2d4512123b279b73a",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T02:20:23.012Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository with no excerpt, so it is a thin, non-independent basis for the specific claims about DLSS 5, resolution, frame rates, and PS5 ownership."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T02:20:23.012Z"
     }
   ],
   "reports": [
