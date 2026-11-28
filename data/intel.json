@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T10:20:24.746Z",
+  "updated": "2026-11-28T10:35:24.847Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T10:02:15.000Z",
-      "lastOkAt": "2026-11-28T10:20:24.746Z",
-      "seen": 52250,
-      "events": 1804,
+      "lastCursor": "2026-11-28T10:30:54.000Z",
+      "lastOkAt": "2026-11-28T10:35:24.847Z",
+      "seen": 52500,
+      "events": 1817,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T08:34:09.000Z",
-      "lastOkAt": "2026-11-28T10:20:24.746Z",
+      "lastOkAt": "2026-11-28T10:35:24.847Z",
       "seen": 48,
       "events": 39,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T22:20:24.746Z",
-      "lastOkAt": "2026-11-28T10:20:24.746Z",
-      "seen": 12862,
+      "lastCursor": "2026-11-27T22:35:24.847Z",
+      "lastOkAt": "2026-11-28T10:35:24.847Z",
+      "seen": 12925,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T09:55:19.449Z",
-      "lastOkAt": "2026-11-28T10:20:24.746Z",
-      "seen": 83600,
+      "lastCursor": "2026-11-28T10:05:49.341Z",
+      "lastOkAt": "2026-11-28T10:35:24.847Z",
+      "seen": 84000,
       "events": 53,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T10:20:24.746Z",
-      "seen": 25311,
+      "lastOkAt": "2026-11-28T10:35:24.847Z",
+      "seen": 25438,
       "events": 14,
       "errors": 0
     }
@@ -16330,12 +16330,17 @@
           "at": "2026-11-28T00:20:20.604Z",
           "by": "desk",
           "note": "The only source is the project's own repository with an empty excerpt and a truncated title, so the commit line is not independently corroborated and the pipeline record alone is too thin to publish."
+        },
+        {
+          "at": "2026-11-28T10:35:24.847Z",
+          "by": "desk",
+          "note": "The project’s own GitHub repository directly supports the commit update and message, with no conflicting source present."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-28T00:20:20.604Z"
+      "deskAt": "2026-11-28T10:35:24.847Z"
     },
     {
       "id": "20261128t003516z-xcl-7744ef54",
@@ -17218,12 +17223,17 @@
           "at": "2026-11-28T02:35:41.053Z",
           "by": "desk",
           "note": "The only stored source is the project's own repository, which is primary but not independent, so a single self-reported test result cannot be corroborated before publishing."
+        },
+        {
+          "at": "2026-11-28T10:35:24.847Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository, which is primary but not independent, so the claim is not corroborated by any separate source."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-28T02:35:41.053Z"
+      "deskAt": "2026-11-28T10:35:24.847Z"
     },
     {
       "id": "20261128t010031z-vitoriabr-4e971aeb",
