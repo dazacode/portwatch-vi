@@ -2058,9 +2058,13 @@
           {
             "text": "Launcher project reportedly adds first unofficial PC mod menu for GTA 6",
             "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLS14N1FnSFE5Sm1La1U0UGJNdzc4NHBLb2c2V09nZ2VTcTZkQ084enFLQXRWTFVZU3phcmVLSjYwOG5qdTk1b1E1UTJwRXFKN2k4OFR6NjFPZjFoZlpFLVJUWEVMS3R5Nm5OLTBfVnF0aTh5SWtWT1A1M1BHaWRraThnRVVVaS1GNHdoM1puTi12azZVWkdEeXVTSzN4Q1lVWGlEaXVYWjM?oc=5"
+          },
+          {
+            "text": "GamingPromax reports ScarlettPort is available with its own launcher.",
+            "url": "https://bsky.app/profile/gamingpromax.bsky.social/post/3n3dslqwgw226"
           }
         ],
-        "findingsSource": "TweakTown, 2026-11-26"
+        "findingsSource": "Bluesky, 2026-11-28"
       },
       "changes": []
     },
@@ -4103,6 +4107,11 @@
   },
   "ignored": [
     {
+      "repo": "monte-alt/vesper",
+      "reason": "README describes a general Xbox Series compatibility and renderer-porting layer, not its own GTA VI effort.",
+      "seenAt": "2026-11-28"
+    },
+    {
       "repo": "MacosPorters/betterxen",
       "reason": "README says commercial Xbox game execution is not yet supported.",
       "seenAt": "2026-11-28"
@@ -4398,7 +4407,8 @@
     "ProjectLeonida/mandy",
     "MacosPorters/betterxen",
     "tiadiff/VIctory-NVIDIA-LowStutter",
-    "afredas/Slys"
+    "afredas/Slys",
+    "monte-alt/vesper"
   ],
   "news": [
     {
