@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T03:05:22.454Z",
+  "updated": "2026-11-28T03:38:45.982Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T03:01:32.000Z",
-      "lastOkAt": "2026-11-28T03:05:22.454Z",
-      "seen": 45250,
-      "events": 1597,
+      "lastCursor": "2026-11-28T03:35:36.000Z",
+      "lastOkAt": "2026-11-28T03:38:45.982Z",
+      "seen": 45500,
+      "events": 1615,
       "errors": 0
     },
     "evidence": {
-      "lastCursor": "2026-11-27T22:31:30.000Z",
-      "lastOkAt": "2026-11-28T03:05:22.454Z",
-      "seen": 45,
-      "events": 36,
+      "lastCursor": "2026-11-28T02:20:43.000Z",
+      "lastOkAt": "2026-11-28T03:38:45.982Z",
+      "seen": 46,
+      "events": 37,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-28T03:05:22.454Z",
-      "seen": 11098,
+      "lastCursor": "2026-11-27T15:38:45.982Z",
+      "lastOkAt": "2026-11-28T03:38:45.982Z",
+      "seen": 11161,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T02:54:38.240Z",
-      "lastOkAt": "2026-11-28T03:05:22.454Z",
-      "seen": 72400,
+      "lastCursor": "2026-11-28T03:28:34.000Z",
+      "lastOkAt": "2026-11-28T03:38:45.982Z",
+      "seen": 72800,
       "events": 49,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T03:05:22.454Z",
-      "seen": 21867,
+      "lastOkAt": "2026-11-28T03:38:45.982Z",
+      "seen": 21990,
       "events": 14,
       "errors": 0
     }
@@ -17549,6 +17549,122 @@
         "low confidence"
       ],
       "deskAt": "2026-11-28T02:35:41.053Z"
+    },
+    {
+      "id": "20261128t033359z-i95-gta6-pc-launcher-9ca2ff5c",
+      "key": "update|i95-gta6-pc-launcher|activity|41570",
+      "kind": "update",
+      "projectId": "i95-gta6-pc-launcher",
+      "projectName": "i95-GTA6-PC-Launcher",
+      "at": "2026-11-28T03:33:59Z",
+      "detectedAt": "2026-11-28T03:38:45.982Z",
+      "title": "i95-GTA6-PC-Launcher pushed 6 commits",
+      "oneLine": "Runtimes: GTA6-BootTest, Five Star Recomp and PercyScarlett removed (short of the game world on the tracker), with the README's early-projects list; ranks redone (53); README resto",
+      "sources": [
+        {
+          "url": "https://github.com/DesignWithTommy/i95-GTA6-PC-Launcher/commit/907cdf436fa6b140f50f0a065cabff8ede6a0c5b",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Runtimes: GTA6-BootTest, Five Star Recomp and PercyScarlett removed (short of the game world on the tracker), with the R",
+          "at": "2026-11-28T03:25:39Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "designwithtommy/i95-gta6-pc-launcher",
+        "name": "i95-gta6-pc-launcher",
+        "words": [
+          "i95-gta6-pc-launcher"
+        ],
+        "hash": "e3f35ddd1865e7e2",
+        "projectId": "i95-gta6-pc-launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:ae0629bdf0c3bed47d3ace90f85d1a885e21e9b73560603b5c48be13f45a67fb",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T03:38:45.982Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub repository, and the stored excerpt is empty, so the commit summary is not plainly supported by the stored source text."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T03:38:45.982Z"
+    },
+    {
+      "id": "20261128t022043z-xcl-1bde0379",
+      "key": "evidence|xcl|world|41570",
+      "kind": "evidence",
+      "projectId": "xcl",
+      "projectName": "XCL",
+      "at": "2026-11-28T02:20:43Z",
+      "detectedAt": "2026-11-28T03:38:45.982Z",
+      "title": "New test evidence on XCL — world",
+      "oneLine": "3 of 3 crashes at this address across 2 machines, past world load, with no device removal.",
+      "sources": [
+        {
+          "url": "https://github.com/xcl-dev/xcl/issues/3084",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "3 of 3 crashes at this address across 2 machines, past world load, with no device removal.",
+          "at": "2026-11-28T02:20:43Z",
+          "kind": "primary",
+          "authorHash": "2a63f170e0b3",
+          "excerpt": "3 of 3 crashes at this address across 2 machines, past world load, with no device removal."
+        }
+      ],
+      "fingerprint": {
+        "repo": "xcl-dev/xcl",
+        "name": "xcl",
+        "words": [
+          "xcl"
+        ],
+        "hash": "64cedb268421fa0d",
+        "projectId": "xcl"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:4bff2c64462c98cdd3bbf2fd8fe66d1b74d9982a86dc20fa3d296b4e718922df",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T03:38:45.982Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository repeating the claim, so it is primary but not independent and too thin to publish."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T03:38:45.982Z"
     }
   ],
   "reports": [
