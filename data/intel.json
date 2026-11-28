@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T09:50:24.107Z",
+  "updated": "2026-11-28T10:06:38.706Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T09:34:36.000Z",
-      "lastOkAt": "2026-11-28T09:50:24.107Z",
-      "seen": 51750,
-      "events": 1786,
+      "lastCursor": "2026-11-28T10:02:15.000Z",
+      "lastOkAt": "2026-11-28T10:06:38.706Z",
+      "seen": 52000,
+      "events": 1804,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T08:34:09.000Z",
-      "lastOkAt": "2026-11-28T09:50:24.107Z",
+      "lastOkAt": "2026-11-28T10:06:38.706Z",
       "seen": 48,
       "events": 39,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T21:50:24.107Z",
-      "lastOkAt": "2026-11-28T09:50:24.107Z",
-      "seen": 12736,
+      "lastCursor": "2026-11-27T22:06:38.706Z",
+      "lastOkAt": "2026-11-28T10:06:38.706Z",
+      "seen": 12799,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T09:26:36.000Z",
-      "lastOkAt": "2026-11-28T09:50:24.107Z",
-      "seen": 82800,
+      "lastCursor": "2026-11-28T09:55:19.449Z",
+      "lastOkAt": "2026-11-28T10:06:38.706Z",
+      "seen": 83200,
       "events": 53,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T09:50:24.107Z",
-      "seen": 25065,
+      "lastOkAt": "2026-11-28T10:06:38.706Z",
+      "seen": 25188,
       "events": 14,
       "errors": 0
     }
@@ -18386,6 +18386,56 @@
         "low confidence"
       ],
       "deskAt": "2026-11-28T08:35:20.119Z"
+    },
+    {
+      "id": "20261128t093802z-victory-amd-4k-9f96214e",
+      "key": "update|victory-amd-4k|activity|41570",
+      "kind": "update",
+      "projectId": "victory-amd-4k",
+      "projectName": "VIctory-AMD-4K",
+      "at": "2026-11-28T09:38:02Z",
+      "detectedAt": "2026-11-28T10:06:38.706Z",
+      "title": "VIctory-AMD-4K pushed 1 commit",
+      "oneLine": "perf(shader): Stage 5C loop-abort trampoline fold, select-ladder collapse, dynamic raw-load coalescing (Round 62)",
+      "sources": [
+        {
+          "url": "https://github.com/elaboratecl/VIctory-AMD-4K/commit/b83908b1336dabc65a5582f11284cc44f51d396f",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "perf(shader): Stage 5C loop-abort trampoline fold, select-ladder collapse, dynamic raw-load coalescing (Round 62)",
+          "at": "2026-11-28T09:38:02Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "elaboratecl/victory-amd-4k",
+        "name": "victory-amd-4k",
+        "words": [
+          "victory-amd-4k"
+        ],
+        "hash": "937f4d13584e14f3",
+        "projectId": "victory-amd-4k"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:e8878aadcd2cae699b5dea4ac854fafa9632420c8239bebed6710e5071f11cc2",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
