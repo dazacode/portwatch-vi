@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T10:06:38.706Z",
+  "updated": "2026-11-28T10:20:24.746Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T10:02:15.000Z",
-      "lastOkAt": "2026-11-28T10:06:38.706Z",
-      "seen": 52000,
+      "lastOkAt": "2026-11-28T10:20:24.746Z",
+      "seen": 52250,
       "events": 1804,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T08:34:09.000Z",
-      "lastOkAt": "2026-11-28T10:06:38.706Z",
+      "lastOkAt": "2026-11-28T10:20:24.746Z",
       "seen": 48,
       "events": 39,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T22:06:38.706Z",
-      "lastOkAt": "2026-11-28T10:06:38.706Z",
-      "seen": 12799,
+      "lastCursor": "2026-11-27T22:20:24.746Z",
+      "lastOkAt": "2026-11-28T10:20:24.746Z",
+      "seen": 12862,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T09:55:19.449Z",
-      "lastOkAt": "2026-11-28T10:06:38.706Z",
-      "seen": 83200,
+      "lastOkAt": "2026-11-28T10:20:24.746Z",
+      "seen": 83600,
       "events": 53,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T10:06:38.706Z",
-      "seen": 25188,
+      "lastOkAt": "2026-11-28T10:20:24.746Z",
+      "seen": 25311,
       "events": 14,
       "errors": 0
     }
@@ -17503,12 +17503,17 @@
           "at": "2026-11-28T02:20:23.012Z",
           "by": "desk",
           "note": "The only stored source is the project’s own repository record repeating the same scout line, so it is not independent and does not plainly support publication."
+        },
+        {
+          "at": "2026-11-28T10:20:24.746Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository record, which is primary but not independent and merely repeats the scout’s thin “possible effort” note."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-28T02:20:23.012Z"
+      "deskAt": "2026-11-28T10:20:24.746Z"
     },
     {
       "id": "20261128t014841z-scene-29deae1d",
@@ -18432,10 +18437,17 @@
       "chain": "sha256:e8878aadcd2cae699b5dea4ac854fafa9632420c8239bebed6710e5071f11cc2",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T10:20:24.746Z",
+          "by": "desk",
+          "note": "The only support is the project's own commit record, which is primary but not independent and offers no corroboration that the change is real or relevant to GTA VI on PC."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T10:20:24.746Z"
     }
   ],
   "reports": [
