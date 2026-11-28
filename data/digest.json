@@ -1,68 +1,66 @@
 {
  "version": 1,
- "updated": "2026-11-28T12:02:12.720Z",
+ "updated": "2026-11-28T13:02:14.941Z",
  "now": {
-  "hash": "68a42fabd35f3185",
-  "at": "2026-11-28T11:31:52.194Z",
+  "hash": "5507cf27db67510f",
+  "at": "2026-11-28T13:02:14.941Z",
   "by": "Pollinations, gpt-6-luna-classic",
   "points": [
    {
-    "text": "Daily Voice Of Asia reports that a Rockstar takedown wiped 3,007 GitHub repositories for an unofficial GTA 6 PC port.",
-    "sources": [
-     "story:2026-11-28-news.google.com-rockstar-takedown-wipes-3-007-github-repos-of-unofficial-gta-6-pc-port"
-    ]
-   },
-   {
-    "text": "The linked article reports that ZETTROX's repository and account now return 404, while omonkey's private build was taken down the same day; no DMCA notice was published.",
+    "text": "The linked article reports that ZETTROX's repository and account return 404 and omonkey's private build was taken down the same day; no DMCA notice has been published.",
     "sources": [
      "article:2026-11-26-zettrox-omonkey-gone"
     ]
    },
    {
-    "text": "Make Tech Easier reports that TeK's private fork of the CGBJ GTA 6 PC build runs multiplayer with proximity voice chat at 25 to 30fps.",
+    "text": "Daily Voice Of Asia reports that Rockstar takedowns wiped 3,007 GitHub repositories for an unofficial GTA 6 PC port.",
+    "sources": [
+     "story:2026-11-28-news.google.com-rockstar-takedown-wipes-3-007-github-repos-of-unofficial-gta-6-pc-port"
+    ]
+   },
+   {
+    "text": "The tracker records that Victory-Blueyes joined the board, claiming the stage Runnable.",
+    "sources": [
+     "project:victory-blueyes"
+    ]
+   },
+   {
+    "text": "Make Tech Easier reports that TeK says its private fork now runs multiplayer with proximity voice chat at 25 to 30fps.",
     "sources": [
      "story:2026-11-28-news.google.com-tek-says-its-private-fork-of-the-cgbj-gta-6-pc-build-now-runs-multiplayer-with-proximity-v"
     ]
    },
    {
-    "text": "The tracker records that Victory-Blueyes and NVIctory joined the board, each claiming the Runnable stage.",
+    "text": "Bitdefender says GTA VI PC port hype is a gift to ClickFix attackers.",
     "sources": [
-     "project:victory-blueyes",
-     "project:nvictory"
-    ]
-   },
-   {
-    "text": "The tracker records that TRIDENT and Yuk1-nvdia-gta6 joined the board, each claiming the In the world stage.",
-    "sources": [
-     "project:trident",
-     "project:yuk1-nvdia-gta6"
+     "story:2026-11-26-news.google.com-gta-vi-pc-port-hype-is-a-gift-to-clickfix-attackers"
     ]
    }
   ]
  },
  "breakdowns": {
-  "hash": "f25b4de76311f268",
-  "at": "2026-11-28T11:02:09.881Z",
+  "hash": "ec54deeb11761b2e",
+  "at": "2026-11-28T13:02:14.941Z",
   "by": "Pollinations, gpt-6-luna-classic",
   "items": [
    {
     "topic": "Takedown",
-    "headline": "GTA VI build takedowns",
+    "headline": "GTA VI project takedowns",
     "sentences": [
      {
-      "text": "The linked article says ZETTROX's GitHub repository and account returned 404, and omonkey's private build was taken down the same day.",
+      "text": "The linked article says ZETTROX’s GitHub repository and account returned 404, and claims its build disappeared from GitHub.",
       "sources": [
        "article:2026-11-26-zettrox-omonkey-gone"
       ]
      },
      {
-      "text": "The linked article says no DMCA notice had been published and reports that VGTimes said omonkey received a letter from Rockstar.",
+      "text": "The linked article says omonkey’s private build was taken down the same day, and reports that omonkey said Rockstar sent a letter.",
       "sources": [
        "article:2026-11-26-zettrox-omonkey-gone"
       ]
      },
      {
-      "text": "Daily Voice Of Asia reports a Rockstar takedown wiped 3,007 GitHub repositories for an unofficial GTA 6 PC port.",
+      "text": "Daily Voice Of Asia reports that Rockstar’s takedown wiped 3,007 GitHub repositories for an unofficial GTA 6 PC port.",
       "sources": [
        "story:2026-11-28-news.google.com-rockstar-takedown-wipes-3-007-github-repos-of-unofficial-gta-6-pc-port"
       ]
@@ -74,7 +72,7 @@
     "headline": "Fakes and scams to avoid",
     "sentences": [
      {
-      "text": "Neowin reports that fake GTA VI PC ports on GitHub are infecting victims with ClickFix malware.",
+      "text": "Neowin reports that fake GTA VI PC ports are infecting victims with ClickFix malware on GitHub.",
       "sources": [
        "story:2026-11-27-neowin.net-fake-gta-vi-for-pc-ports-are-infecting-victims-with-clickfix-malware-on-github"
       ]
@@ -89,25 +87,25 @@
    },
    {
     "topic": "Port",
-    "headline": "Unofficial GTA 6 PC ports",
+    "headline": "GTA 6 PC ports",
     "sentences": [
      {
-      "text": "YAHOO! reports that GTA 6 multiplayer is reportedly running on PC as unofficial ports near completion.",
+      "text": "Make Tech Easier says TeK's private fork runs multiplayer with proximity voice chat at 25 to 30fps.",
       "sources": [
-       "story:2026-11-27-tech.yahoo.com-gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion"
+       "story:2026-11-28-news.google.com-tek-says-its-private-fork-of-the-cgbj-gta-6-pc-build-now-runs-multiplayer-with-proximity-v"
       ]
      },
      {
-      "text": "Make Tech Easier says TeK claims its private fork runs multiplayer with proximity voice chat at 25 to 30fps.",
+      "text": "Yahoo Tech says GTA 6 multiplayer is reportedly running on PC as unofficial ports near completion.",
       "sources": [
-       "story:2026-11-28-news.google.com-tek-says-its-private-fork-of-the-cgbj-gta-6-pc-build-now-runs-multiplayer-with-proximity-v"
+       "story:2026-11-27-news.google.com-gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion"
       ]
      }
     ]
    },
    {
     "topic": "Leak",
-    "headline": "GTA 6 leaks and PC attempts",
+    "headline": "GTA 6 leaks",
     "sentences": [
      {
       "text": "Notebookcheck says an Xbox GDK leak could boost GTA 6 PC ports by unlocking console development secrets.",
@@ -116,13 +114,13 @@
       ]
      },
      {
-      "text": "Foro3D reports that Cyberleek published 209 GB of the Xbox build without the executable.",
+      "text": "Foro3D says Cyberleek published 209 GB of the Xbox build without the executable.",
       "sources": [
        "story:2026-11-27-news.google.com-cyberleek-publishes-209-gb-of-the-xbox-build-of-gta-6-without-the-executable"
       ]
      },
      {
-      "text": "TechJuice reports that Rockstar addressed GTA 6 leaks as developer frustration mounted.",
+      "text": "TechJuice says Rockstar addressed GTA 6 leaks as developer frustration mounted.",
       "sources": [
        "story:2026-11-27-news.google.com-rockstar-addresses-gta-6-leaks-as-developer-frustration-mounts"
       ]
@@ -132,56 +130,82 @@
   ]
  },
  "notes": {
-  "commit:24b0dcb": {
-   "hash": "d02740880fe4b6e7",
-   "text": "TuxBox's commit says the shader chooses pixel inputs based on what the program reads if declarations fail.",
+  "commit:7db4e58": {
+   "hash": "ffdd25d349a8e349",
+   "text": "Palmetto's commit says the app-state producer reaches a helper that queues work, then waits when the boot-media ring is full.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T12:02:12.720Z"
+   "at": "2026-11-28T13:02:14.941Z"
   },
-  "commit:10f54d8": {
-   "hash": "e023de304c7ce5fc",
-   "text": "TuxBox's commit says a mesh program can add to a value it multiplied into VCC.",
+  "commit:76bd8ab": {
+   "hash": "a70902a6bd8fd145",
+   "text": "Project VI's commit says a kept-open recording delays cleanup only for lists it uses.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T12:02:12.720Z"
+   "at": "2026-11-28T13:02:14.941Z"
   },
-  "commit:d48a957": {
-   "hash": "6e0e9998c3192c8a",
-   "text": "Leonida Continued's commit says it merges a pull request about reproducing an FMA issue on Nvidia.",
+  "commit:e6e26ec": {
+   "hash": "95a2e31e4fa5bf32",
+   "text": "whibwhi-own's commit says a test checks the rectangle geometry shader output using the system's disassembler.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T12:02:12.720Z"
+   "at": "2026-11-28T13:02:14.941Z"
   },
-  "commit:4c45a09": {
-   "hash": "ef45411db9bc3b76",
-   "text": "Leonida Continued's commit says it merges a pull request about interpolation and control flow.",
+  "commit:4bd8930": {
+   "hash": "eca35f419f26ac7e",
+   "text": "whibwhi-own's commit says the rectangle geometry shader adds a fourth corner.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T12:02:12.720Z"
+   "at": "2026-11-28T13:02:14.941Z"
   },
-  "commit:052abe6": {
-   "hash": "2f012662b8db0923",
-   "text": "Xbox2Windows's commit says it adds a dedicated translator for 32-bit and 64-bit ADCX and ADOX instructions.",
+  "commit:5978e0b": {
+   "hash": "db7dae9a4bca79f7",
+   "text": "Project VI's commit says it merges a note about the remap-gap fault handler and the README status.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T12:02:12.720Z"
+   "at": "2026-11-28T13:02:14.941Z"
   },
-  "commit:2d53b69": {
-   "hash": "b1711bff62cb38ea",
-   "text": "i95-GTA6-PC-Launcher's commit says it updates m1lk, upstream heads, stars, and times.",
+  "commit:8b16f09": {
+   "hash": "91ef36d6a9dee47b",
+   "text": "Palmetto's commit says it fixes the app-state callback argument order; the real producer is reached, but item dispatch is still missing.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T12:02:12.720Z"
+   "at": "2026-11-28T13:02:14.941Z"
   },
-  "commit:18f5708": {
-   "hash": "91ca884f418344d8",
-   "text": "whibwhi-own's commit says it changes how a Direct3D library handles presentations, frame waits, and submissions using the process clock.",
+  "commit:3a73d19": {
+   "hash": "b17a4041cbd9998b",
+   "text": "i95-GTA6-PC-Launcher's commit says Hydra was updated to upstream heads, stars, and times.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T12:02:12.720Z"
+   "at": "2026-11-28T13:02:14.941Z"
   },
-  "commit:e24da6e": {
-   "hash": "76c9f4ffaff84ce8",
-   "text": "whibwhi-own's finding says an outside view showed a steady 30-frame rhythm, with every frame empty.",
+  "commit:1543604": {
+   "hash": "2a7a49dea96c2dbf",
+   "text": "i95-GTA6-PC-Launcher's commit says it removes three unreachable upstream repositories and redoes the rankings.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T12:02:12.720Z"
+   "at": "2026-11-28T13:02:14.941Z"
   }
  },
  "stories": {
+  "2026-11-28-news.google.com-rockstar-takedown-wipes-3-007-github-repos-of-unofficial-gta-6-pc-port": {
+   "hash": "509d558cbe68d328",
+   "topic": "Takedown",
+   "importance": 5,
+   "weight": 78,
+   "similar": 3,
+   "summary": "A Rockstar takedown removed 3,007 GitHub repositories for an unofficial GTA 6 PC port.",
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
+  "2026-11-28-news.google.com-gta-vi-unofficial-pc-port-goes-ultrawide-reaches-180-fps-with-frame-generation": {
+   "hash": "0fb265e91c28420b",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
+  "2026-11-28-bsky.app-want-more-full-story-https-gamerminimap-com-en-gta-6-news-gta-6-guide-chapter-2-port-gellh": {
+   "hash": "d7e46cf852d7b3f2",
+   "topic": "Community",
+   "importance": 1,
+   "weight": 0,
+   "similar": 1,
+   "summary": null,
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
   "2026-11-28-news.google.com-gta-6-for-pc-delivered-7-fps-on-a-laptop-with-a-ryzen-5-8645hs-and-rtx-4060": {
    "hash": "4cf5f72256856eb9",
    "topic": "Port",
@@ -262,6 +286,14 @@
    "summary": "The poster says the Xbox GDK leak means PC porters no longer have to work blindly.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
+  "2026-11-28-news.google.com-can-your-pc-run-gta-vi-minimum-requirements-and-release-date-estimates": {
+   "hash": "1422f0fed8f1eb55",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": "ZDNET discusses PC requirements and release date estimates for GTA VI.",
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
   "2026-11-28-news.google.com-gta-6-on-pc-update-what-we-know-about-when-it-releases": {
    "hash": "6d0fecf98d0d36b7",
    "topic": "Official",
@@ -286,29 +318,12 @@
    "summary": "A Bluesky post says 60 FPS videos are fake and current multiplayer runs at 25 to 30 FPS.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
-  "2026-11-28-news.google.com-can-your-pc-run-gta-vi-minimum-requirements-and-release-date-estimates": {
-   "hash": "1422f0fed8f1eb55",
-   "topic": "Game",
-   "importance": 1,
-   "weight": 0,
-   "summary": "ZDNET discusses PC requirements and release date estimates for GTA VI.",
-   "by": "Pollinations, gpt-6-luna-classic"
-  },
   "2026-11-28-bsky.app-coders-are-leveraging-leaked-files-and-ai-tools-in-an-attempt-to-build-an-unofficial-gta-6": {
    "hash": "1b41baf1c68cc6e8",
    "topic": "Port",
    "importance": 4,
    "weight": 38,
    "summary": null,
-   "by": "Pollinations, gpt-6-luna-classic"
-  },
-  "2026-11-28-news.google.com-rockstar-takedown-wipes-3-007-github-repos-of-unofficial-gta-6-pc-port": {
-   "hash": "509d558cbe68d328",
-   "topic": "Takedown",
-   "importance": 5,
-   "weight": 78,
-   "similar": 3,
-   "summary": "A Rockstar takedown removed 3,007 GitHub repositories for an unofficial GTA 6 PC port.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-28-news.google.com-gamers-use-ai-and-leaked-files-to-build-unofficial-gta-6-clones": {
@@ -394,6 +409,14 @@
    "summary": "GitHub deleted a post linking GTA 6 to an AnyPS5 emulator push.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
+  "2026-11-28-news.google.com-gta-6-gets-multiplayer-on-pc-before-rockstar-ships-a-pc-version": {
+   "hash": "549ff70c9e9525e2",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
   "2026-11-28-bsky.app-um-port-pirata-de-gta-6-no-pc-j-tem-chat-de-voz-por-proximidade-e-a-take-two-respondeu-end": {
    "hash": "69793efac6874c57",
    "topic": "Port",
@@ -458,6 +481,14 @@
    "importance": 1,
    "weight": 6,
    "summary": null,
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
+  "2026-11-28-techjuice.pk-unofficial-gta-6-pc-port-gets-its-own-launcher-but-can-it-run-the-full-game": {
+   "hash": "2a396f2c1c2e07a3",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": "The unofficial GTA 6 PC port has a launcher, but whether it runs the full game is questioned.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-28-bsky.app-unofficial-gta-6-pc-port-scarlettport-is-now-available-with-its-own-launcher-gamingpromax-": {
@@ -777,8 +808,8 @@
    "hash": "429604543a4cc1ba",
    "topic": "Port",
    "importance": 3,
-   "weight": 32,
-   "similar": 1,
+   "weight": 16,
+   "lead": "2026-11-27-news.google.com-the-unofficial-gta-vi-pc-port-already-has-a-multiplayer-mod",
    "summary": "A post claims unofficial GTA 6 PC ports with multiplayer and console 60 FPS mods are available.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
@@ -943,8 +974,8 @@
    "hash": "317ea0cbc6377817",
    "topic": "Port",
    "importance": 4,
-   "weight": 44,
-   "similar": 1,
+   "weight": 28,
+   "lead": "2026-11-27-news.google.com-the-unofficial-gta-vi-pc-port-already-has-a-multiplayer-mod",
    "summary": "An unofficial GTA 6 PC port reportedly has a multiplayer mod that runs smoothly.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
@@ -1037,7 +1068,7 @@
    "topic": "Port",
    "importance": 4,
    "weight": 28,
-   "lead": "2026-11-27-tech.yahoo.com-gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion",
+   "lead": "2026-11-27-news.google.com-gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion",
    "summary": "A post claims modded multiplayer is running at 30 FPS in an unofficial GTA 6 PC port.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
@@ -1272,14 +1303,6 @@
    "importance": 5,
    "weight": 58,
    "summary": "A Mastodon post claims Rockstar shut down an unauthorized GTA 6 PC port.",
-   "by": "Pollinations, gpt-6-luna-classic"
-  },
-  "2026-11-27-cryptopolitan.com-gta-6-gets-multiplayer-on-pc-before-rockstar-ships-a-pc-version": {
-   "hash": "549ff70c9e9525e2",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 34,
-   "summary": "The headline says GTA 6 gets multiplayer on PC before Rockstar releases a PC version.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-27-news.google.com-gta-6-pc-port-gets-a-major-multiplayer-upgrade-before-rockstars-official-pc-release": {
@@ -1755,7 +1778,7 @@
    "topic": "Port",
    "importance": 3,
    "weight": 16,
-   "lead": "2026-11-27-tech.yahoo.com-gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion",
+   "lead": "2026-11-27-news.google.com-gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion",
    "summary": "GTA 6 multiplayer is reportedly running on PC as unofficial ports near completion.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
@@ -1772,8 +1795,17 @@
    "topic": "Port",
    "importance": 5,
    "weight": 40,
-   "lead": "2026-11-27-tech.yahoo.com-gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion",
+   "lead": "2026-11-27-news.google.com-gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion",
    "summary": "A Bluesky post says GTA VI multiplayer is reportedly running on PC as unofficial ports near completion.",
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
+  "2026-11-27-news.google.com-gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion": {
+   "hash": "47617c8b45e41abe",
+   "topic": "Port",
+   "importance": 4,
+   "weight": 60,
+   "similar": 4,
+   "summary": null,
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-27-news.google.com-despite-take-two-takedown-vibecoding-teen-behind-nuked-gta-6-pc-port-project-leonida-vows-": {
@@ -1909,15 +1941,6 @@
    "summary": null,
    "by": "Pollinations, gpt-6-luna-classic"
   },
-  "2026-11-27-quokk.au-the-unofficial-gta-vi-pc-port-already-has-a-multiplayer-mod": {
-   "hash": "ffc4e5afc10b07af",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 16,
-   "lead": "2026-11-27-bsky.app-unofficial-gta-6-pc-ports-with-multiplayer-and-console-60fps-mods-are-already-here-the-com",
-   "summary": null,
-   "by": "Pollinations, gpt-6-luna-classic"
-  },
   "2026-11-27-bsky.app-gta-6-fan-ports-climb-to-20-fps-on-pc-still-rough-around-the-edges-the-race-to-get-gta-6-w": {
    "hash": "edabd8e287e251d4",
    "topic": "Port",
@@ -1980,8 +2003,7 @@
    "hash": "715a0220fa895149",
    "topic": "Port",
    "importance": 4,
-   "weight": 52,
-   "similar": 1,
+   "weight": 46,
    "summary": null,
    "by": "Pollinations, gpt-6-luna-classic"
   },
@@ -2023,7 +2045,7 @@
    "topic": "Port",
    "importance": 4,
    "weight": 36,
-   "lead": "2026-11-27-news.google.com-unofficial-gta-6-pc-build-shows-multiplayer-features-developer-reports-25-30-fps",
+   "lead": "2026-11-27-news.google.com-gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion",
    "summary": null,
    "by": "Pollinations, gpt-6-luna-classic"
   },
@@ -2049,6 +2071,15 @@
    "importance": 1,
    "weight": 0,
    "summary": "Benzinga lists Black Friday discounts for GTA 6, GTA 5 and GTA Trilogy across several platforms.",
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
+  "2026-11-27-news.google.com-the-unofficial-gta-vi-pc-port-already-has-a-multiplayer-mod": {
+   "hash": "d5f966ccce23e775",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 46,
+   "similar": 3,
+   "summary": null,
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-27-mastodon.cl-gta-6-tiene-su-primer-port-para-pc-disponible-para-descargar-https-www-tarreo-com-pc-gta-6": {
@@ -2151,6 +2182,15 @@
    "summary": "ZDNET asks what minimum RAM, GPU, and CPU requirements to expect for running GTA VI on PC.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
+  "2026-11-27-news.google.com-first-unofficial-gta-6-pc-port-available-for-download": {
+   "hash": "84aa04e3eafd5ff5",
+   "topic": "Official",
+   "importance": null,
+   "weight": 14,
+   "lead": "2026-11-27-news.google.com-first-unofficial-gta-vi-port-available-for-download-on-pc",
+   "summary": null,
+   "by": null
+  },
   "2026-11-27-bsky.app-on-pc-gta-6-is-now-running-at-more-than-30-fps-in-some-scenes-for-the-community-the-port-i": {
    "hash": "ffdd41733b7bccba",
    "topic": "Port",
@@ -2225,20 +2265,20 @@
    "summary": "Tbreak says a former developer thinks Rockstar might bring GTA 6 to PC sooner than expected.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
-  "2026-11-27-mastodon.social-la-inteligencia-artificial-encarece-ps5-xbox-y-switch-2-sony-pone-fecha-al-fin-de-los-nuev": {
-   "hash": "0359a3095adaf299",
-   "topic": "Game",
-   "importance": 1,
-   "weight": 0,
-   "summary": "A headline says AI is making PS5, Xbox, and Switch 2 more expensive, Sony set an end date for new disc games, and GTA VI.",
-   "by": "Pollinations, gpt-6-luna-classic"
-  },
   "2026-11-27-news.google.com-rockstar-developers-detail-the-gta-vi-features-that-got-cut": {
    "hash": "6120628c66862450",
    "topic": "Game",
    "importance": 1,
    "weight": 0,
    "summary": "Hypebeast reports Rockstar developers detailed features cut from GTA VI.",
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
+  "2026-11-27-mastodon.social-la-inteligencia-artificial-encarece-ps5-xbox-y-switch-2-sony-pone-fecha-al-fin-de-los-nuev": {
+   "hash": "0359a3095adaf299",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": "A headline says AI is making PS5, Xbox, and Switch 2 more expensive, Sony set an end date for new disc games, and GTA VI.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-27-news.google.com-github-praised-developers-running-gta-6-on-pc-the-post-had-to-be-deleted": {
@@ -2444,15 +2484,6 @@
    "topic": "Port",
    "importance": 3,
    "weight": 26,
-   "summary": null,
-   "by": "Pollinations, gpt-6-luna-classic"
-  },
-  "2026-11-27-tech.yahoo.com-gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion": {
-   "hash": "a16adcb53055d5a5",
-   "topic": "Port",
-   "importance": 5,
-   "weight": 70,
-   "similar": 3,
    "summary": null,
    "by": "Pollinations, gpt-6-luna-classic"
   },
@@ -2667,15 +2698,6 @@
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
-  "2026-11-27-dsogaming.com-first-unofficial-gta-6-pc-port-available-for-download": {
-   "hash": "84aa04e3eafd5ff5",
-   "topic": "Official",
-   "importance": null,
-   "weight": 14,
-   "lead": "2026-11-27-news.google.com-first-unofficial-gta-vi-port-available-for-download-on-pc",
-   "summary": null,
-   "by": null
-  },
   "2026-11-27-heise.de-gta-6-unofficial-pc-port-makes-major-progress": {
    "hash": "018c50bc18bed940",
    "topic": "Port",
@@ -2774,7 +2796,7 @@
    "topic": "Port",
    "importance": 4,
    "weight": 28,
-   "lead": "2026-11-27-news.google.com-someone-already-made-a-multiplayer-mod-for-an-unofficial-gta-6-pc-port-and-it-seems-to-run",
+   "lead": "2026-11-27-news.google.com-the-unofficial-gta-vi-pc-port-already-has-a-multiplayer-mod",
    "summary": "An unofficial GTA 6 PC port reportedly has a multiplayer mod.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
@@ -2947,6 +2969,7 @@
    "topic": "Community",
    "importance": 1,
    "weight": 0,
+   "lead": "2026-11-28-bsky.app-want-more-full-story-https-gamerminimap-com-en-gta-6-news-gta-6-guide-chapter-2-port-gellh",
    "summary": null,
    "by": "Pollinations, gpt-oss-20b"
   },
@@ -3431,33 +3454,23 @@
    "weight": 0,
    "summary": null,
    "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
-  "2026-11-26-bsky.app-gta-6-running-at-60-fps-on-pc-already-damn": {
-   "hash": "3b687f3bf54e07e6",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 26,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
-  },
-  "2026-11-26-bsky.app-the-unofficial-gta-6-pc-port-jumped-from-1-5-fps-to-20-30-fps-in-a-week-and-it-is-now-91-p": {
-   "hash": "971c5f17fd6923da",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 26,
-   "summary": "A post claims the unofficial port went from 1-5 FPS to 20-30 FPS and is 91% playable.",
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
-  "2026-11-26-bsky.app-it-looks-like-the-modding-hacking-community-has-used-ai-to-get-gta-6-running-at-30fps-on-p": {
-   "hash": "a6f3cbee95e89ed4",
-   "topic": "Security",
-   "importance": 4,
-   "weight": 42,
-   "summary": null,
-   "by": "Pollinations, gpt-oss-20b"
   }
  },
  "projects": {
+  "whibwhi-own": {
+   "hash": "131a711b264f647c",
+   "count": 15,
+   "summary": "whibwhi-own's recent commits mention shader root-signature ranges, open-ended tables, and sampler translation.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-28T11:31:52.194Z"
+  },
+  "i95-gta6-pc-launcher": {
+   "hash": "81859dd8900a8051",
+   "count": 15,
+   "summary": "i95-GTA6-PC-Launcher’s recent commits mention updating several upstream heads, stars, and times.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-28T10:31:42.980Z"
+  },
   "tuxbox": {
    "hash": "c8dc1c47a938e1ec",
    "count": 15,
@@ -3479,54 +3492,40 @@
    "by": "Pollinations, gpt-6-luna-classic",
    "at": "2026-11-28T11:31:52.194Z"
   },
-  "xbox2windows": {
-   "hash": "1680745d4c83c4d5",
+  "project-vi": {
+   "hash": "27c95c3e19c27eff",
    "count": 15,
-   "summary": "Xbox2Windows's recent commits and pull requests mention compute and shader translation, GDK export coverage, CPU instruction lifting, and texture bindings.",
+   "summary": "Project VI's recent commits mention GPU pool tracking, recording reclamation, written buffer views, and GPU status reporting.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T11:31:52.194Z"
+   "at": "2026-11-28T13:02:14.941Z"
   },
-  "i95-gta6-pc-launcher": {
-   "hash": "81859dd8900a8051",
+  "victory-hydra": {
+   "hash": "74a343026a51ee9b",
    "count": 15,
-   "summary": "i95-GTA6-PC-Launcher’s recent commits mention updating several upstream heads, stars, and times.",
+   "summary": "VIctory-Hydra's recent commits mention GPU runtime and shader work, profiling, ambient GI, VRS, BVH, and benchmark updates.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T10:31:42.980Z"
+   "at": "2026-11-28T13:02:14.941Z"
   },
-  "whibwhi-own": {
-   "hash": "131a711b264f647c",
+  "victory-linux-lumice": {
+   "hash": "34e0bf8173696ca5",
    "count": 15,
-   "summary": "whibwhi-own's recent commits mention shader root-signature ranges, open-ended tables, and sampler translation.",
+   "summary": "victory-linux (Lumice)'s recent commits mention shader tests and fixes, parallel-run testing, build documentation, and lint updates.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T11:31:52.194Z"
+   "at": "2026-11-28T13:02:14.941Z"
   },
-  "palmetto": {
-   "hash": "727bac3f323c1127",
+  "five-star-recomp": {
+   "hash": "fb9a59f152f16c95",
    "count": 15,
-   "summary": "Palmetto's recent commits and pull requests mention loader and renderer fixes, peer and TLS contracts, GPU testing, frame-frontier work, and crash-report dumps.",
+   "summary": "Five Star Recomp's recent commits and pull requests mention shader fixes, mesh launches and fallbacks, enhanced barriers, and table analysis.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T10:02:50.412Z"
+   "at": "2026-11-28T13:02:14.941Z"
   },
-  "victory-lite-didgori": {
-   "hash": "e77a14c68ef59fe8",
+  "americaslauncher": {
+   "hash": "49f6ec5600313ecb",
    "count": 15,
-   "summary": "VIctory-Lite (didgori)'s recent commits mention window memory, eviction and scaling, shared-memory pressure, and Series S picture settings.",
+   "summary": "AmericasLauncher’s recent commits and pull requests mention DLSS settings, runner updates, benchmark features, and launcher update checks.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T12:02:12.720Z"
-  },
-  "victory-lap": {
-   "hash": "f912be9061950eb0",
-   "count": 15,
-   "summary": "VIctory-lap's recent commits mention dynamic descriptor slots, buffer lookups, heap buffer allocation, and measurements across default runs.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T12:02:12.720Z"
-  },
-  "hybridgt": {
-   "hash": "b4a1bcfb85a066ba",
-   "count": 15,
-   "summary": "HybridGt's recent commits mention a launcher redesign, documentation, shader validator fixes, and runtime changes.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T12:02:12.720Z"
+   "at": "2026-11-28T13:02:14.941Z"
   }
  }
 }
