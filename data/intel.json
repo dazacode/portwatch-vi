@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T01:05:21.607Z",
+  "updated": "2026-11-28T01:20:26.201Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T01:00:39.000Z",
-      "lastOkAt": "2026-11-28T01:05:21.607Z",
-      "seen": 43250,
+      "lastOkAt": "2026-11-28T01:20:26.201Z",
+      "seen": 43500,
       "events": 1528,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T22:31:30.000Z",
-      "lastOkAt": "2026-11-28T01:05:21.607Z",
+      "lastOkAt": "2026-11-28T01:20:26.201Z",
       "seen": 45,
       "events": 36,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-28T01:05:21.607Z",
-      "seen": 10594,
+      "lastOkAt": "2026-11-28T01:20:26.201Z",
+      "seen": 10657,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T01:00:16.541Z",
-      "lastOkAt": "2026-11-28T01:05:21.607Z",
-      "seen": 69200,
+      "lastOkAt": "2026-11-28T01:20:26.201Z",
+      "seen": 69600,
       "events": 47,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T13:05:21.607Z",
-      "lastOkAt": "2026-11-28T01:05:21.607Z",
-      "seen": 20883,
+      "lastCursor": "2026-11-27T13:20:26.201Z",
+      "lastOkAt": "2026-11-28T01:20:26.201Z",
+      "seen": 21006,
       "events": 12,
       "errors": 0
     }
@@ -16782,10 +16782,17 @@
       "chain": "sha256:7ccb2e58dce2e3afeb4cc3757d680e48cf3e3b392e51627d2f1cd9a50be4ebbf",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T01:20:26.201Z",
+          "by": "desk",
+          "note": "The one line restates the pull request title verbatim and the project's own repository is the authoritative record of that PR being opened, with no conflicting source."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T01:20:26.201Z"
     },
     {
       "id": "20261128t001052z-five-star-recomp-fdb7e9d4",
@@ -16835,10 +16842,17 @@
       "chain": "sha256:d528b7b8c906483ca2fb0d7d9e426adf6abc08e895c90fbe4122d315cd0ccf6f",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T01:20:26.201Z",
+          "by": "desk",
+          "note": "The item rests on a single non-independent source with an empty excerpt, so the one line is only the pull request title restated and is too thin to publish."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T01:20:26.201Z"
     },
     {
       "id": "20261128t000642z-dexnom-f3be8a18",
