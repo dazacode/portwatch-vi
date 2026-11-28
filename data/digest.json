@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-28T02:31:42.149Z",
+ "updated": "2026-11-28T03:01:59.287Z",
  "now": {
   "hash": "036961a0c913be2f",
   "at": "2026-11-28T02:02:01.438Z",
@@ -130,56 +130,72 @@
   ]
  },
  "notes": {
-  "commit:fdb6faa": {
-   "hash": "142cfff062b8f4c0",
-   "text": "Xbox2Windows's commit says it stores prefix-mask images at their exact width during direct compute.",
+  "commit:a0b45d4": {
+   "hash": "e6f01d20426dffeb",
+   "text": "Xbox2Windows's commit says startup now compares resolved staging paths.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T02:31:42.149Z"
+   "at": "2026-11-28T03:01:59.287Z"
   },
-  "commit:02f71cc": {
-   "hash": "8c856f537a2944c6",
-   "text": "Leonida Continued's commit says it removes the CA line from the README.",
+  "commit:593eaef": {
+   "hash": "f21e262af51f174c",
+   "text": "whibwhi-own's commit says it compares code sent to slots 57 and 67 with code in translated containers.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T02:31:42.149Z"
+   "at": "2026-11-28T03:01:59.287Z"
   },
-  "commit:100b9f7": {
-   "hash": "54c48941a412a5bc",
-   "text": "whibwhi-own's commit says it changes Windows game testing and reverses an AI trap bug fix.",
+  "commit:cfe9862": {
+   "hash": "3e99e24caf8f5d0c",
+   "text": "whibwhi-own's commit says its findings show slots 57 and 67 do not contain the same code as slot 86's containers.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T02:31:42.149Z"
+   "at": "2026-11-28T03:01:59.287Z"
   },
-  "commit:72a8a00": {
-   "hash": "c5ffb5c7c3485c8c",
-   "text": "whibwhi-own's commit says it adds a helper to pass copies of weave pipelines to Windows Direct3D 12.",
+  "commit:44da838": {
+   "hash": "70d23af0c1ba1ae5",
+   "text": "Five Star Recomp's commit says capture-dispatch counts come from a present, while sun bands come from the cascade path.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T02:31:42.149Z"
+   "at": "2026-11-28T03:01:59.287Z"
   },
-  "commit:8cecfb8": {
-   "hash": "839ad51266a7eee4",
-   "text": "i95-GTA6-PC-Launcher's commit says a launcher setting runs a different runtime commit than its upstream version.",
+  "commit:c827d8b": {
+   "hash": "c600ea27b6230f63",
+   "text": "Xbox2Windows's commit says the runtime compiles a supported graphics pair on the first draw.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T02:31:42.149Z"
+   "at": "2026-11-28T03:01:59.287Z"
   },
-  "commit:24eb18b": {
-   "hash": "83cce9c71f78a78b",
-   "text": "Xbox2Windows's commit says it preserves debugger error output and the exit status at startup.",
+  "commit:87a14c6": {
+   "hash": "225e09cff9dd0184",
+   "text": "i95-GTA6-PC-Launcher's commit says vendor/cta was removed, then locally linked again, and ignored.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T02:31:42.149Z"
+   "at": "2026-11-28T03:01:59.287Z"
   },
-  "commit:30f6633": {
-   "hash": "9b3735a44a9e823b",
-   "text": "El1xr's commit says the launcher retains SKIP_WC_BACK and accepts -FrameGen for DLSS frame generation.",
+  "commit:3420533": {
+   "hash": "b8c353171bf3e5ec",
+   "text": "i95-GTA6-PC-Launcher's commit says it updates stars and times.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T02:31:42.149Z"
+   "at": "2026-11-28T03:01:59.287Z"
   },
-  "commit:cdd8c5c": {
-   "hash": "f2f1245fb43b197f",
-   "text": "El1xr's commit says it merges the exp/train branch into exp/next.",
+  "commit:df4f27c": {
+   "hash": "20508695bdefdf93",
+   "text": "TuxBox's commit says every recorded shader instruction use is run by a GPU check.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T02:31:42.149Z"
+   "at": "2026-11-28T03:01:59.287Z"
   }
  },
  "stories": {
+  "2026-11-28-bsky.app-the-verge-s-zd-r-lan-bir-xbox-derlemesini-windowsa-uyarlamay-ama-layan-leonida-adl-hayran-": {
+   "hash": "68e5c415ade7cb6e",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 26,
+   "summary": null,
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
+  "2026-11-28-news.google.com-rockstar-chief-prays-gta-6-twist-stays-secret-0-plans": {
+   "hash": "3e707b0db0e4b7f2",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": null,
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
   "2026-11-28-bsky.app-an-unofficial-gta-6-pc-port-has-reportedly-reached-24-fps-in-gameplay-while-using-10-gb-of": {
    "hash": "2cd59fb05dde3e0e",
    "topic": "Port",
@@ -296,6 +312,14 @@
    "summary": "GTA 6 PC ports are reportedly using AI amid legal challenges.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
+  "2026-11-28-news.google.com-can-your-pc-run-gta-vi-minimum-requirements-and-release-date-estimates": {
+   "hash": "1422f0fed8f1eb55",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": "ZDNET discusses PC requirements and release date estimates for GTA VI.",
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
   "2026-11-28-mastodon.social-um-vazamento-de-arquivos-do-gta-6-mostrou-as-configura-es-gr-ficas-usadas-em-cada-console-": {
    "hash": "118242c3c60d74b1",
    "topic": "Leak",
@@ -327,14 +351,6 @@
    "importance": 3,
    "weight": 30,
    "summary": "A warning says to beware of a fake GTA 6 PC version and a dangerous command.",
-   "by": "Pollinations, gpt-6-luna-classic"
-  },
-  "2026-11-27-news.google.com-can-your-pc-run-gta-vi-minimum-requirements-and-release-date-estimates": {
-   "hash": "1422f0fed8f1eb55",
-   "topic": "Game",
-   "importance": 1,
-   "weight": 0,
-   "summary": "The headline asks whether a PC can run GTA VI and mentions minimum requirements and release date estimates.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-27-news.google.com-gta-6s-headphone-feature-was-originally-planned-for-gta-vice-city-back-in-2002-former-rock": {
@@ -808,14 +824,6 @@
    "importance": 3,
    "weight": 42,
    "summary": "OpenCritic says the CGBJ GTA 6 PC project went public and disappeared minutes later.",
-   "by": "Pollinations, gpt-6-luna-classic"
-  },
-  "2026-11-27-gamesradar.com-ex-rockstar-dev-says-gta-6-looks-almost-flawless-but-loses-to-red-dead-redemption-2-in-a-f": {
-   "hash": "8982c976ef1c9ff5",
-   "topic": "Game",
-   "importance": 1,
-   "weight": 0,
-   "summary": "A former Rockstar developer says GTA 6 looks almost flawless but falls short of Red Dead Redemption 2 in a few areas.",
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-27-bsky.app-the-15-year-old-vibecoder-behind-a-gta-6-pc-port-project-take-two-recently-shut-down-has-v": {
@@ -1545,12 +1553,12 @@
    "summary": null,
    "by": "Pollinations, gpt-6-luna-classic"
   },
-  "2026-11-27-news.google.com-working-gta-vi-online-multiplayer-mod-even-includes-proximity-chat": {
-   "hash": "3967cdd95085981f",
+  "2026-11-27-rockstarintel.com-working-gta-vi-online-multiplayer-mod-even-includes-proximity-chat": {
+   "hash": "5809ef8d545ff42e",
    "topic": "Port",
-   "importance": 4,
-   "weight": 46,
-   "summary": "RockstarINTEL reports a working GTA VI online multiplayer mod with proximity chat.",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
    "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-27-news.google.com-gta-6-pc-port-gets-working-multiplayer-but-the-4k-120-fps-ai-claims-are-fake": {
@@ -1704,6 +1712,14 @@
    "similar": 2,
    "summary": null,
    "by": null
+  },
+  "2026-11-27-tech.yahoo.com-ex-rockstar-dev-says-gta-6-looks-almost-flawless-but-loses-to-red-dead-redemption-2-in-a-f": {
+   "hash": "8b40adc7f4177f12",
+   "topic": "Game",
+   "importance": 1,
+   "weight": 0,
+   "summary": "A former Rockstar developer says GTA 6 looks almost flawless but falls short of Red Dead Redemption 2 in some areas.",
+   "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-27-news.google.com-grand-theft-auto-vi-modded-multiplayer-runs-at-25-to-30-fps-on-the-unofficial-pc-port-with": {
    "hash": "37381e6889a8f4ea",
@@ -1971,6 +1987,14 @@
   },
   "2026-11-27-news.google.com-gta-6-recompilation-runs-on-windows-at-around-20-fps-in-new-clip": {
    "hash": "b4b6c95e8dd0d157",
+   "topic": "Port",
+   "importance": 3,
+   "weight": 34,
+   "summary": null,
+   "by": "Pollinations, gpt-6-luna-classic"
+  },
+  "2026-11-27-news.google.com-gta-6-pc-race-intensifies-as-30-community-projects-compete-one-reaches-91-3-completion": {
+   "hash": "01a8b92ecdd8f7c6",
    "topic": "Port",
    "importance": 3,
    "weight": 34,
@@ -2486,14 +2510,6 @@
    "similar": 1,
    "summary": null,
    "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
-  "2026-11-26-pcquest.com-gta-6-pc-race-intensifies-as-30-community-projects-compete-one-reaches-91-3-completion": {
-   "hash": "01a8b92ecdd8f7c6",
-   "topic": "Port",
-   "importance": 3,
-   "weight": 34,
-   "summary": "PCQuest reports 30 community projects are competing, with one reaching 91.3% completion.",
-   "by": "Pollinations, gpt-6-luna-classic"
   },
   "2026-11-26-bsky.app-take-two-derruba-mais-de-3-mil-ports-de-gta-6-para-pc-no-github-canaltech-com-br-games-tak": {
    "hash": "da0c622b72c9e822",
@@ -3446,25 +3462,37 @@
    "weight": 26,
    "summary": null,
    "by": null
-  },
-  "2026-11-26-news.google.com-gta-vi-console-graphics-settings-leaked-showing-a-lot-of-room-for-improvement-on-pc": {
-   "hash": "6d9596f2ea360ad6",
-   "topic": "Leak",
-   "importance": 3,
-   "weight": 30,
-   "summary": null,
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
-  },
-  "2026-11-26-bsky.app-watching-these-people-port-gta-vi-to-pc": {
-   "hash": "f4780bfb603a4f17",
-   "topic": "Community",
-   "importance": 1,
-   "weight": 0,
-   "summary": null,
-   "by": "Kilo Gateway, particle-ai/particle-1:free"
   }
  },
  "projects": {
+  "whibwhi-own": {
+   "hash": "c7c15058816bfed6",
+   "count": 15,
+   "summary": "whibwhi-own’s recent commits mention storing and loading shaders, boot-tool progress reports, and guidance on distinguishing committed work from PC activity.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-28T00:36:14.463Z"
+  },
+  "five-star-recomp": {
+   "hash": "c1b1940b18d791d6",
+   "count": 15,
+   "summary": "Five Star Recomp's recent commits and pull requests mention character bodies, lighting and shadows, shader replay, memory budgets, and mesh shader changes.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-28T02:02:01.438Z"
+  },
+  "i95-gta6-pc-launcher": {
+   "hash": "e3bb2484d4a56649",
+   "count": 15,
+   "summary": "i95-GTA6-PC-Launcher's recent commits mention runtime updates and syncing projects to upstream heads.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-28T01:01:54.811Z"
+  },
+  "tuxbox": {
+   "hash": "d15f5cee8281bd52",
+   "count": 15,
+   "summary": "TuxBox's recent commits and pull requests mention GPU checks for recorded shader instructions, D3D12 descriptor handling, dispatch splitting, and translator roadmap updates.",
+   "by": "Pollinations, gpt-6-luna-classic",
+   "at": "2026-11-28T03:01:59.287Z"
+  },
   "leonida-continued": {
    "hash": "f82cb22932a8bcc9",
    "count": 15,
@@ -3478,20 +3506,6 @@
    "summary": "Leonida Continued's recent commits and pull requests mention D3D12 runtime measurements, memory probes, and documentation and test paths.",
    "by": "Pollinations, gpt-6-luna-classic",
    "at": "2026-11-28T02:02:01.438Z"
-  },
-  "whibwhi-own": {
-   "hash": "c7c15058816bfed6",
-   "count": 15,
-   "summary": "whibwhi-own’s recent commits mention storing and loading shaders, boot-tool progress reports, and guidance on distinguishing committed work from PC activity.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T00:36:14.463Z"
-  },
-  "i95-gta6-pc-launcher": {
-   "hash": "e3bb2484d4a56649",
-   "count": 15,
-   "summary": "i95-GTA6-PC-Launcher's recent commits mention runtime updates and syncing projects to upstream heads.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T01:01:54.811Z"
   },
   "el1xr": {
    "hash": "c474ce6fa804e064",
@@ -3507,20 +3521,6 @@
    "by": "Pollinations, gpt-6-luna-classic",
    "at": "2026-11-28T00:36:14.463Z"
   },
-  "tuxbox": {
-   "hash": "5b467bed9a3e9f4d",
-   "count": 15,
-   "summary": "TuxBox's recent commits and pull requests mention GPU instruction checks, shader translation fixes, memory access handling, and cache barriers.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-27T23:32:01.103Z"
-  },
-  "five-star-recomp": {
-   "hash": "c1b1940b18d791d6",
-   "count": 15,
-   "summary": "Five Star Recomp's recent commits and pull requests mention character bodies, lighting and shadows, shader replay, memory budgets, and mesh shader changes.",
-   "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T02:02:01.438Z"
-  },
   "victory-gta6": {
    "hash": "e8d110b6d0375e33",
    "count": 15,
@@ -3528,12 +3528,12 @@
    "by": "Pollinations, gpt-6-luna-classic",
    "at": "2026-11-28T02:02:01.438Z"
   },
-  "americaslauncher": {
-   "hash": "d50798d397cd164b",
+  "victory-nvidia": {
+   "hash": "f8129339fd7f5155",
    "count": 15,
-   "summary": "AmericasLauncher's recent commits and pull requests mention runner updates, launcher checks, game folder hints, Nvidia updates, benchmarks, and README changes.",
+   "summary": "VIctory-NVIDIA's recent commits and pull requests mention frame generation, D3D12 startup diagnostics, save sharing, DLSS fixes, dispatch splitting, and texture pool locking.",
    "by": "Pollinations, gpt-6-luna-classic",
-   "at": "2026-11-28T02:31:42.149Z"
+   "at": "2026-11-28T03:01:59.287Z"
   }
  }
 }
