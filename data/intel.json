@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T14:20:20.118Z",
+  "updated": "2026-11-28T14:35:23.950Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T14:01:09.000Z",
-      "lastOkAt": "2026-11-28T14:20:20.118Z",
-      "seen": 56250,
-      "events": 1921,
+      "lastCursor": "2026-11-28T14:31:47.000Z",
+      "lastOkAt": "2026-11-28T14:35:23.950Z",
+      "seen": 56500,
+      "events": 1935,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T10:48:06.000Z",
-      "lastOkAt": "2026-11-28T14:20:20.118Z",
+      "lastOkAt": "2026-11-28T14:35:23.950Z",
       "seen": 50,
       "events": 41,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-28T11:10:15.665Z",
-      "lastOkAt": "2026-11-28T14:20:20.118Z",
-      "seen": 14177,
+      "lastOkAt": "2026-11-28T14:35:23.950Z",
+      "seen": 14263,
       "events": 49,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T13:56:10.142Z",
-      "lastOkAt": "2026-11-28T14:20:20.118Z",
-      "seen": 90000,
+      "lastCursor": "2026-11-28T14:25:22.331Z",
+      "lastOkAt": "2026-11-28T14:35:23.950Z",
+      "seen": 90400,
       "events": 57,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-28T02:20:20.118Z",
-      "lastOkAt": "2026-11-28T14:20:20.118Z",
-      "seen": 27628,
+      "lastCursor": "2026-11-28T02:35:23.950Z",
+      "lastOkAt": "2026-11-28T14:35:23.950Z",
+      "seen": 27774,
       "events": 14,
       "errors": 0
     }
@@ -21466,10 +21466,17 @@
       "chain": "sha256:eb1c30c9253c1f7deb3541fd65cb3275f1b24cf666f1a1051155dd0f8fc2b735",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T14:35:23.950Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the commit-message claim is self-reported, non-independent and too thin to publish as a standalone update."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T14:35:23.950Z"
     },
     {
       "id": "20261128t133706z-belobug-c354bf70",
@@ -21574,10 +21581,17 @@
       "chain": "sha256:6168722a73812c55123914f3b3f0a94ccba9e7e82654081781471accf4d3d2c0",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T14:35:23.950Z",
+          "by": "desk",
+          "note": "The only source is the project's own commit message with an empty excerpt, so the specific FPS and latency figures are self-reported and unverifiable rather than plainly supported."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T14:35:23.950Z"
     }
   ],
   "reports": [
