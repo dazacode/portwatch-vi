@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T06:50:26.426Z",
+  "updated": "2026-11-28T07:05:53.691Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T06:01:24.000Z",
-      "lastOkAt": "2026-11-28T06:50:26.426Z",
-      "seen": 48750,
-      "events": 1694,
+      "lastCursor": "2026-11-28T07:01:08.000Z",
+      "lastOkAt": "2026-11-28T07:05:53.691Z",
+      "seen": 49000,
+      "events": 1708,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T03:46:19.000Z",
-      "lastOkAt": "2026-11-28T06:50:26.426Z",
+      "lastOkAt": "2026-11-28T07:05:53.691Z",
       "seen": 47,
       "events": 38,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T18:50:26.426Z",
-      "lastOkAt": "2026-11-28T06:50:26.426Z",
-      "seen": 11980,
+      "lastCursor": "2026-11-27T19:05:53.691Z",
+      "lastOkAt": "2026-11-28T07:05:53.691Z",
+      "seen": 12043,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T05:58:08.000Z",
-      "lastOkAt": "2026-11-28T06:50:26.426Z",
-      "seen": 78000,
+      "lastCursor": "2026-11-28T06:49:29.241Z",
+      "lastOkAt": "2026-11-28T07:05:53.691Z",
+      "seen": 78400,
       "events": 51,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T06:50:26.426Z",
-      "seen": 23589,
+      "lastOkAt": "2026-11-28T07:05:53.691Z",
+      "seen": 23712,
       "events": 14,
       "errors": 0
     }
@@ -16662,12 +16662,17 @@
           "at": "2026-11-28T00:50:26.423Z",
           "by": "desk",
           "note": "The only source is an empty-excerpt GitHub archive repository, which is primary but not independent and does not plainly verify the one-line claim."
+        },
+        {
+          "at": "2026-11-28T07:05:53.691Z",
+          "by": "desk",
+          "note": "The only source is an empty-excerpt GitHub archive entry that is not independent and does not plainly verify the specific archived projects or date."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-28T00:50:26.423Z"
+      "deskAt": "2026-11-28T07:05:53.691Z"
     },
     {
       "id": "20261128t003146z-scene-4c691fe5",
@@ -17287,12 +17292,17 @@
           "at": "2026-11-28T01:05:21.607Z",
           "by": "desk",
           "note": "The item rests on a single Bluesky post that merely repeats the claim, with no independent or primary source corroborating the Leonida takedown details."
+        },
+        {
+          "at": "2026-11-28T07:05:53.691Z",
+          "by": "desk",
+          "note": "The only stored source is a single Bluesky post repeating the claim, with no primary DMCA notice or repository evidence to substantiate the takedown."
         }
       ],
       "heldReasons": [
         "low confidence"
       ],
-      "deskAt": "2026-11-28T01:05:21.607Z"
+      "deskAt": "2026-11-28T07:05:53.691Z"
     },
     {
       "id": "20261128t003927z-americaslauncher-a221dfd0",
