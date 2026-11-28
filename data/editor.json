@@ -1,6 +1,16 @@
 {
-  "lastRun": "2026-11-27T23:42:21.336Z",
+  "lastRun": "2026-11-28T00:41:26.770Z",
   "runs": [
+    {
+      "at": "2026-11-28T00:41:26.769Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [],
+      "skipped": [
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world”",
+        "held: candidate hello3928/Project-VI: has markup"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-27T23:42:21.336Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -470,23 +480,6 @@
         "held: candidate x6j1ZiqfbxA3u12HVk/Project-Americas: has markup",
         "held: candidate lucas-TagDev/VKarameloVI: a claim not in the source",
         "held: candidate deepdev237/victory-mac: a number not in the source"
-      ],
-      "note": null
-    },
-    {
-      "at": "2026-11-26T05:37:51.708Z",
-      "by": "Pollinations, gpt-oss-20b",
-      "applied": [
-        "finding leonida",
-        "finding leonida",
-        "candidate JozefDeTremmerie/CCS03",
-        "candidate RKouchoo/rdna4rage",
-        "candidate zsy-miao/rebox",
-        "candidate zsy-miao/ScarlettVI",
-        "candidate DesignWithTommy/i95"
-      ],
-      "skipped": [
-        "candidate ExCorvus/whibwhi-own: a track needs an effort object"
       ],
       "note": null
     }
