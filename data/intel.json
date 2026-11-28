@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T13:20:22.560Z",
+  "updated": "2026-11-28T13:35:21.569Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T13:01:28.000Z",
-      "lastOkAt": "2026-11-28T13:20:22.560Z",
-      "seen": 55250,
-      "events": 1886,
+      "lastCursor": "2026-11-28T13:30:48.000Z",
+      "lastOkAt": "2026-11-28T13:35:21.569Z",
+      "seen": 55500,
+      "events": 1905,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T10:48:06.000Z",
-      "lastOkAt": "2026-11-28T13:20:22.560Z",
+      "lastOkAt": "2026-11-28T13:35:21.569Z",
       "seen": 50,
       "events": 41,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-28T11:10:15.665Z",
-      "lastOkAt": "2026-11-28T13:20:22.560Z",
-      "seen": 13833,
+      "lastOkAt": "2026-11-28T13:35:21.569Z",
+      "seen": 13919,
       "events": 49,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T12:51:44.000Z",
-      "lastOkAt": "2026-11-28T13:20:22.560Z",
-      "seen": 88400,
-      "events": 54,
+      "lastCursor": "2026-11-28T13:27:41.348Z",
+      "lastOkAt": "2026-11-28T13:35:21.569Z",
+      "seen": 88800,
+      "events": 55,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-28T01:20:22.560Z",
-      "lastOkAt": "2026-11-28T13:20:22.560Z",
-      "seen": 27044,
+      "lastCursor": "2026-11-28T01:35:21.569Z",
+      "lastOkAt": "2026-11-28T13:35:21.569Z",
+      "seen": 27190,
       "events": 14,
       "errors": 0
     }
@@ -21204,6 +21204,164 @@
       "revisions": [],
       "heldReasons": [
         "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t132316z-viper-83adaf26",
+      "key": "update|viper|activity|41571",
+      "kind": "update",
+      "projectId": "viper",
+      "projectName": "viper",
+      "at": "2026-11-28T13:23:16Z",
+      "detectedAt": "2026-11-28T13:35:21.569Z",
+      "title": "viper opened pull request #4",
+      "oneLine": "fix(trainer): validate configured models/weapons, settle spawns, fix toggles & human-readable UI",
+      "sources": [
+        {
+          "url": "https://github.com/viper-community/viper/pull/4",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "fix(trainer): validate configured models/weapons, settle spawns, fix toggles & human-readable UI",
+          "at": "2026-11-28T13:23:16Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "viper-community/viper",
+        "name": "viper",
+        "words": [
+          "viper"
+        ],
+        "hash": "991113207a401058",
+        "projectId": "viper"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:118418565c717ea00c3c2d53385b2cf08929fb5a1a7563f739c42c77be9dda98",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T13:35:21.569Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub item with no excerpt, so it is primary but not independent and does not plainly verify the “opened pull request #4” claim.} }</final>{"
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T13:35:21.569Z"
+    },
+    {
+      "id": "20261128t131533z-dexnom-d026effa",
+      "key": "update|dexnom|activity|41571",
+      "kind": "update",
+      "projectId": "dexnom",
+      "projectName": "DexNom",
+      "at": "2026-11-28T13:15:33Z",
+      "detectedAt": "2026-11-28T13:35:21.569Z",
+      "title": "DexNom opened pull request #153",
+      "oneLine": "Write InitHeaders' stores into title memory from a record of them (0.5 → 2.2 fps on RX 7900 XTX)",
+      "sources": [
+        {
+          "url": "https://github.com/DexNom/VIctory/pull/153",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Write InitHeaders' stores into title memory from a record of them (0.5 → 2.2 fps on RX 7900 XTX)",
+          "at": "2026-11-28T13:15:33Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "dexnom/victory",
+        "name": "dexnom",
+        "words": [
+          "dexnom"
+        ],
+        "hash": "8f46482e794407ea",
+        "projectId": "dexnom"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:0bfccc2f78f45e65cdb2a93e69d317b5c6aad23cb713370721e1712d5452d3f4",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t130334z-leonida-92ce9ea8",
+      "key": "takedown|leonida|https://news.google.com/rss/articles/cbmilwfbvv95cuxoqlfjltlrsvlhcxvqvmpzmzfqr1bcexbrrfpcohzbdwy2zw1nshvatmjyngtuutf4awxar1qzsnzvturdddffz252dw96suw0wwvlzf9olv95yzfltdaxyu9jry0wsfrpu3juedflb1pab1leujrbujrdlvhqtdixsm9kwe9ud093vl9emkliaf9smtdyzvu0?oc=5|41571",
+      "kind": "takedown",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-28T13:03:34.000Z",
+      "detectedAt": "2026-11-28T13:35:21.569Z",
+      "title": "Leonida in a takedown report",
+      "oneLine": "Project Leonida Teen Vows to Continue After 3,007-Repo DMCA",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOQlFjLTlRSVlhcXVQVmpzMzFQR1BCeXBrRFpCOHZBdWY2ZW1NSHVaTmJyNGtuUTF4aWxaR1QzSnZVTURDdDFfZ252dW96SUw0WWVlZF9oLV95YzFLTDAxYU9jRy0wSFRPU3JueDFlb1pab1lEUjRBUjRDLVhQTDIxSm9kWE9Ud093Vl9EMklIaF9SMTdYZVU0?oc=5",
+          "host": "news.google.com",
+          "outlet": "shattered.io",
+          "title": "Project Leonida Teen Vows to Continue After 3,007-Repo DMCA",
+          "at": "2026-11-28T13:03:34.000Z",
+          "kind": "outside",
+          "authorHash": "944c7e68a9",
+          "excerpt": "Project Leonida Teen Vows to Continue After 3,007-Repo DMCA"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "87d50034ec3f142c",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:016d15a17d9f460970fc7d4e5bf03879b9f99ae86f07d55b30ebe62e8d0e3f24",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
       ]
     }
   ],
