@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T05:20:25.595Z",
+  "updated": "2026-11-28T05:35:24.311Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T05:01:10.000Z",
-      "lastOkAt": "2026-11-28T05:20:25.595Z",
-      "seen": 47250,
-      "events": 1665,
+      "lastCursor": "2026-11-28T05:31:07.000Z",
+      "lastOkAt": "2026-11-28T05:35:24.311Z",
+      "seen": 47500,
+      "events": 1679,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T02:20:43.000Z",
-      "lastOkAt": "2026-11-28T05:20:25.595Z",
+      "lastOkAt": "2026-11-28T05:35:24.311Z",
       "seen": 46,
       "events": 37,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T17:20:25.595Z",
-      "lastOkAt": "2026-11-28T05:20:25.595Z",
-      "seen": 11602,
+      "lastCursor": "2026-11-27T17:35:24.311Z",
+      "lastOkAt": "2026-11-28T05:35:24.311Z",
+      "seen": 11665,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T04:57:44.851Z",
-      "lastOkAt": "2026-11-28T05:20:25.595Z",
-      "seen": 75600,
+      "lastCursor": "2026-11-28T05:10:28.540Z",
+      "lastOkAt": "2026-11-28T05:35:24.311Z",
+      "seen": 76000,
       "events": 51,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T05:20:25.595Z",
-      "seen": 22851,
+      "lastOkAt": "2026-11-28T05:35:24.311Z",
+      "seen": 22974,
       "events": 14,
       "errors": 0
     }
@@ -15915,12 +15915,17 @@
           "at": "2026-11-27T23:05:22.256Z",
           "by": "desk",
           "note": "The only support is the project's own repository, which is not independent, and the empty excerpt leaves the CI-workflow change unverifiable and incidental to GTA VI on PC tracking."
+        },
+        {
+          "at": "2026-11-28T05:35:24.311Z",
+          "by": "desk",
+          "note": "This is a single self-published repository record about CI workflow housekeeping, which is off-topic for tracking GTA VI on PC and has no independent corroboration."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T23:05:22.256Z"
+      "deskAt": "2026-11-28T05:35:24.311Z"
     },
     {
       "id": "20261128t000124z-tuxbox-7b1ab135",
@@ -17871,6 +17876,63 @@
         "low confidence"
       ],
       "deskAt": "2026-11-28T05:05:21.733Z"
+    },
+    {
+      "id": "20261128t052721z-victory-polaris-20fe8de1",
+      "key": "update|victory-polaris|activity|41570",
+      "kind": "update",
+      "projectId": "victory-polaris",
+      "projectName": "victory-polaris",
+      "at": "2026-11-28T05:27:21Z",
+      "detectedAt": "2026-11-28T05:35:24.311Z",
+      "title": "victory-polaris pushed 2 commits",
+      "oneLine": "Docs: update status with latest gameplay, fps and counter observations",
+      "sources": [
+        {
+          "url": "https://github.com/kalinizer/victory-polaris/commit/6c6952edbf379a2ea2774ae7ce71899607efb6e6",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Docs: update status with latest gameplay, fps and counter observations",
+          "at": "2026-11-28T05:27:21Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "kalinizer/victory-polaris",
+        "name": "victory-polaris",
+        "words": [
+          "victory-polaris"
+        ],
+        "hash": "cf37837a4d59c440",
+        "projectId": "victory-polaris"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:0769449a08163089847743d6a6b74ac28ab442ef6773aa33c125203b79d3261b",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T05:35:24.311Z",
+          "by": "desk",
+          "note": "The only support is the project's own commit message with no excerpt content, which is a thin, non-independent source that merely restates itself."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T05:35:24.311Z"
     }
   ],
   "reports": [
