@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T06:20:19.253Z",
+  "updated": "2026-11-28T06:35:21.764Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T06:01:24.000Z",
-      "lastOkAt": "2026-11-28T06:20:19.253Z",
-      "seen": 48250,
+      "lastOkAt": "2026-11-28T06:35:21.764Z",
+      "seen": 48500,
       "events": 1694,
       "errors": 0
     },
     "evidence": {
-      "lastCursor": "2026-11-28T02:20:43.000Z",
-      "lastOkAt": "2026-11-28T06:20:19.253Z",
-      "seen": 46,
-      "events": 37,
+      "lastCursor": "2026-11-28T03:46:19.000Z",
+      "lastOkAt": "2026-11-28T06:35:21.764Z",
+      "seen": 47,
+      "events": 38,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T18:20:19.253Z",
-      "lastOkAt": "2026-11-28T06:20:19.253Z",
-      "seen": 11854,
+      "lastCursor": "2026-11-27T18:35:21.764Z",
+      "lastOkAt": "2026-11-28T06:35:21.764Z",
+      "seen": 11917,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T05:58:08.000Z",
-      "lastOkAt": "2026-11-28T06:20:19.253Z",
-      "seen": 77200,
+      "lastOkAt": "2026-11-28T06:35:21.764Z",
+      "seen": 77600,
       "events": 51,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T06:20:19.253Z",
-      "seen": 23343,
+      "lastOkAt": "2026-11-28T06:35:21.764Z",
+      "seen": 23466,
       "events": 14,
       "errors": 0
     }
@@ -16268,12 +16268,17 @@
           "at": "2026-11-28T00:20:20.604Z",
           "by": "desk",
           "note": "The only stored source is the project’s own repository with no excerpt, so it is primary but not independent and does not plainly substantiate the full one-line claim."
+        },
+        {
+          "at": "2026-11-28T06:35:21.764Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub repository with no excerpt, so it is primary but not independent and does not plainly substantiate every claim in the one-line item."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-28T00:20:20.604Z"
+      "deskAt": "2026-11-28T06:35:21.764Z"
     },
     {
       "id": "20261127t233312z-victory-amd-4k-4973ba52",
@@ -17958,6 +17963,65 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-28T05:35:24.311Z"
+    },
+    {
+      "id": "20261128t034619z-victory-nvidia-dc7c4694",
+      "key": "evidence|victory-nvidia|world|41570",
+      "kind": "evidence",
+      "projectId": "victory-nvidia",
+      "projectName": "VIctory-NVIDIA",
+      "at": "2026-11-28T03:46:19Z",
+      "detectedAt": "2026-11-28T06:35:21.764Z",
+      "title": "New test evidence on VIctory-NVIDIA — world",
+      "oneLine": "gets into the world",
+      "sources": [
+        {
+          "url": "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/699",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "gets into the world",
+          "at": "2026-11-28T03:46:19Z",
+          "kind": "primary",
+          "authorHash": "c7a6177902e6",
+          "excerpt": "gets into the world"
+        }
+      ],
+      "fingerprint": {
+        "repo": "trustno1-coder/victory-nvidia",
+        "name": "victory-nvidia",
+        "words": [
+          "victory-nvidia"
+        ],
+        "hash": "cc29736028960609",
+        "projectId": "victory-nvidia"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:a48a2cb803459feff67ba831e81f6810e3060dcd5b66a8a0d1fc9b505176bf2d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T06:35:21.764Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository and its excerpt is the same bare fragment as the claim, so nothing independent or substantive supports the line."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T06:35:21.764Z"
     }
   ],
   "reports": [
