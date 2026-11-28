@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T08:50:22.227Z",
+  "updated": "2026-11-28T09:06:53.326Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T08:30:06.000Z",
-      "lastOkAt": "2026-11-28T08:50:22.227Z",
-      "seen": 50750,
-      "events": 1756,
+      "lastCursor": "2026-11-28T09:01:02.000Z",
+      "lastOkAt": "2026-11-28T09:06:53.326Z",
+      "seen": 51000,
+      "events": 1772,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T03:46:19.000Z",
-      "lastOkAt": "2026-11-28T08:50:22.227Z",
+      "lastOkAt": "2026-11-28T09:06:53.326Z",
       "seen": 47,
       "events": 38,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T20:50:22.227Z",
-      "lastOkAt": "2026-11-28T08:50:22.227Z",
-      "seen": 12484,
+      "lastCursor": "2026-11-27T21:06:53.326Z",
+      "lastOkAt": "2026-11-28T09:06:53.326Z",
+      "seen": 12547,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T08:11:40.000Z",
-      "lastOkAt": "2026-11-28T08:50:22.227Z",
-      "seen": 81200,
+      "lastOkAt": "2026-11-28T09:06:53.326Z",
+      "seen": 81600,
       "events": 53,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T08:50:22.227Z",
-      "seen": 24573,
+      "lastOkAt": "2026-11-28T09:06:53.326Z",
+      "seen": 24696,
       "events": 14,
       "errors": 0
     }
@@ -17029,12 +17029,17 @@
           "at": "2026-11-28T01:35:22.978Z",
           "by": "desk",
           "note": "The only source is the project's own repository with an empty excerpt, and the one line merely repeats an opaque pull-request title (\"Coolfox 16gb\") that conveys no verifiable information."
+        },
+        {
+          "at": "2026-11-28T09:06:53.326Z",
+          "by": "desk",
+          "note": "The only support is a bare pull-request title with an empty excerpt from the project's own repository, which is primary but not independent and conveys no substantive update."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-28T01:35:22.978Z"
+      "deskAt": "2026-11-28T09:06:53.326Z"
     },
     {
       "id": "20261128t000506z-launcher-39431497",
