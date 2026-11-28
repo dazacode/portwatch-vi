@@ -1,6 +1,17 @@
 {
-  "lastRun": "2026-11-28T08:41:22.136Z",
+  "lastRun": "2026-11-28T09:41:29.538Z",
   "runs": [
+    {
+      "at": "2026-11-28T09:41:29.538Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [],
+      "skipped": [
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world in Full HD”",
+        "held: candidate Amdavea/belobug-repost: describes access to the game",
+        "held: candidate RipcuBAN/victory-fork: describes access to the game"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-28T08:41:22.136Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -459,17 +470,6 @@
         "finding leonida"
       ],
       "skipped": [
-        "held: candidate GabrieelDuart/GabeGTA6: a name not in the source (GPUs)",
-        "held: candidate zortos293/XSEmu: has markup"
-      ],
-      "note": null
-    },
-    {
-      "at": "2026-11-26T14:42:31.065Z",
-      "by": "Pollinations, gpt-oss-20b",
-      "applied": [],
-      "skipped": [
-        "held: finding leonida: already said",
         "held: candidate GabrieelDuart/GabeGTA6: a name not in the source (GPUs)",
         "held: candidate zortos293/XSEmu: has markup"
       ],
