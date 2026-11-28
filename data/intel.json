@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T01:50:22.673Z",
+  "updated": "2026-11-28T02:05:20.202Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T01:31:12.000Z",
-      "lastOkAt": "2026-11-28T01:50:22.673Z",
-      "seen": 44000,
-      "events": 1546,
+      "lastCursor": "2026-11-28T02:01:31.000Z",
+      "lastOkAt": "2026-11-28T02:05:20.202Z",
+      "seen": 44250,
+      "events": 1567,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T22:31:30.000Z",
-      "lastOkAt": "2026-11-28T01:50:22.673Z",
+      "lastOkAt": "2026-11-28T02:05:20.202Z",
       "seen": 45,
       "events": 36,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-28T01:50:22.673Z",
-      "seen": 10783,
+      "lastOkAt": "2026-11-28T02:05:20.202Z",
+      "seen": 10846,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T01:24:37.970Z",
-      "lastOkAt": "2026-11-28T01:50:22.673Z",
-      "seen": 70400,
-      "events": 47,
+      "lastCursor": "2026-11-28T01:48:41.000Z",
+      "lastOkAt": "2026-11-28T02:05:20.202Z",
+      "seen": 70800,
+      "events": 48,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T01:50:22.673Z",
-      "seen": 21252,
+      "lastOkAt": "2026-11-28T02:05:20.202Z",
+      "seen": 21375,
       "events": 14,
       "errors": 0
     }
@@ -17339,6 +17339,113 @@
       "sensitive": false,
       "audit": null,
       "chain": "sha256:5359337fe8d47be3ef1d89b770135cbb0a4d6a86229c90d25d5b98a6c2f93124",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t014841z-scene-29deae1d",
+      "key": "takedown|-|https://news.google.com/rss/articles/cbminwfbvv95cuxnazfkrwv0c3aweffmzkvomg9or29tukjqnjnjtty3cwdyoudox1pjvvvpvzztam8yowpnbtg3rhfiq0jhwvdilv9xvmxqbjnadjjqqlktmjexy0yyshj6sgvfwdjbb0nattbfq1rccth5mgluwkk5muh6n1ljznfvwtqxdjhmyuvfrtfwr0nzn0tgtnnzbgnjdtlobk15zee?oc=5|41570",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-28T01:48:41.000Z",
+      "detectedAt": "2026-11-28T02:05:20.202Z",
+      "title": "NeoTeo in a takedown report",
+      "oneLine": "Take-Two GTA 6 takedown: GitHub’s 3,007 repos",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNazFKRWV0c3AweFFmZkVOMG9oR29TUkJqNjNjTTY3cWdYOUdOX1pjVVVpVzZTam8yOWpNbTg3RHFIQ0JHWVdILV9xVmxqbjNadjJQQlktMjExY0YySHJ6SGVfWDJBb0NaTTBfQ1RCcTh5MGluWkk5MUh6N1ljZnFvWTQxdjhmYUVFRTFwR0NzN0tGTnNzbGNJdTlobk15ZEE?oc=5",
+          "host": "news.google.com",
+          "outlet": "NeoTeo",
+          "title": "Take-Two GTA 6 takedown: GitHub’s 3,007 repos",
+          "at": "2026-11-28T01:48:41.000Z",
+          "kind": "outside",
+          "authorHash": "292ca06cea",
+          "excerpt": "Take-Two GTA 6 takedown: GitHub’s 3,007 repos"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "6405391723709c5c",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:9b089f9ecd9fdeab84ff3a815989f11cb98ae854fac53e48dd13bd587403be97",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T02:05:20.202Z",
+          "by": "desk",
+          "note": "A single outside source whose excerpt only restates its own headline gives no independent support for the 3,007-repo figure, so the line is thin rather than plainly supported."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-28T02:05:20.202Z"
+    },
+    {
+      "id": "20261128t013401z-launcher-04b0dab1",
+      "key": "reference|launcher|activity|41570",
+      "kind": "reference",
+      "projectId": "launcher",
+      "projectName": "VILauncher",
+      "at": "2026-11-28T01:34:01Z",
+      "detectedAt": "2026-11-28T02:05:20.202Z",
+      "title": "New reference to VILauncher",
+      "oneLine": "One button launcher that plays the GTA 6 you own on PS5 on your Windows PC at 1440p with DLSS 5 and 60, 90 or 120 fps. Not a crack, not a PC port, no game files.",
+      "sources": [
+        {
+          "url": "https://github.com/voidharbor/gta6-unlocked",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "voidharbor/gta6-unlocked",
+          "at": "2026-11-28T01:34:01Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sixlauncher/launcher",
+        "name": "vilauncher",
+        "words": [
+          "vilauncher",
+          "launcher"
+        ],
+        "hash": "3a8857b99ff8ae08",
+        "projectId": "launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:1b839d9d20a45ee4882331e75218b28eb2ec64b3c9d879b2d4512123b279b73a",
       "reportId": null,
       "discordAt": null,
       "revisions": [],
