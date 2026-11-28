@@ -1,6 +1,18 @@
 {
-  "lastRun": "2026-11-28T05:41:25.265Z",
+  "lastRun": "2026-11-28T06:41:33.016Z",
   "runs": [
+    {
+      "at": "2026-11-28T06:41:33.016Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [],
+      "skipped": [
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world in Full HD”",
+        "held: candidate hello3928/Project-VI: has markup",
+        "held: candidate Amdavea/belobug-repost: describes access to the game",
+        "held: candidate RipcuBAN/victory-fork: describes access to the game"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-28T05:41:25.264Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -460,21 +472,6 @@
       "applied": [],
       "skipped": [
         "held: finding cgbj: already said"
-      ],
-      "note": null
-    },
-    {
-      "at": "2026-11-26T11:42:31.287Z",
-      "by": "Pollinations, gpt-oss-20b",
-      "applied": [
-        "candidate Puneetkewlani/consoleX",
-        "candidate ExCorvus/gta-pipeline-reconstruction",
-        "candidate lukinhasnojento/gta6-port-knowledge",
-        "candidate Zarexdevs/GMAC"
-      ],
-      "skipped": [
-        "held: finding leonida: already said",
-        "finding cgbj: project already has 12 findings"
       ],
       "note": null
     }
