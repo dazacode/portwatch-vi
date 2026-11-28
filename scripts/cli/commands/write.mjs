@@ -425,7 +425,12 @@ export const candidate = {
         out.line(`${repo} is already in our ignored list.`);
         return { repo, noop: true };
       }
-      if (!state.effective.candidates.some((c) => c.repo === repo)) throw notFound(`No candidate "${repo}".`);
+      if (!state.effective.candidates.some((c) => c.repo === repo)) {
+        // A repo the harvester listed but the scout never queued (a lure, say) can be ignored on purpose.
+        if (!flags.force) throw notFound(`No candidate "${repo}". Add --force to ignore a repo that is not a candidate.`);
+        if (!/^[\w.-]+\/[\w.-]+$/.test(repo)) throw invalid('An ignored repo is written owner/name.');
+        out.warn(`${repo} is not a candidate; ignoring it anyway (--force).`);
+      }
       overrides.ignored.unshift({ repo, reason, seenAt: today() });
       overrides.decided.push(repo);
       out.line(`ignored ${repo}: ${reason}`);

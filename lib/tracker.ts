@@ -201,8 +201,32 @@ export const getEvidence = async () =>
 export const getChannels = () => loadData("channels.json", localChannels as Channel[])
 export const getNews = async () =>
   hideInNews(await loadData("news.json", localNews as unknown as NewsFile))
-export const getActivity = async () =>
-  hideInActivity(await loadData("activity.json", localActivity as unknown as Activity))
+/** Repos we or upstream ignored or flagged (copies, lures): never listed as "Found on GitHub". */
+export function rejectedRepos(records: object): Set<string> {
+  const r = records as {
+    ignored?: { repo?: string }[]
+    flagged?: { members?: (string | { repo?: string })[] }[]
+  }
+  const repos = [
+    ...(r.ignored ?? []).map((i) => i.repo),
+    ...(r.flagged ?? []).flatMap((f) =>
+      (f.members ?? []).map((m) => (typeof m === "string" ? m : m.repo))
+    ),
+  ]
+  return new Set(repos.filter((x): x is string => Boolean(x)).map((x) => x.toLowerCase()))
+}
+
+export const getActivity = async () => {
+  const [activity, records] = await Promise.all([
+    loadData("activity.json", localActivity as unknown as Activity),
+    getRecords(),
+  ])
+  const rejected = rejectedRepos(records)
+  return hideInActivity({
+    ...activity,
+    discovered: (activity.discovered ?? []).filter((r) => !rejected.has(r.repo.toLowerCase())),
+  })
+}
 
 export { LADDER }
 

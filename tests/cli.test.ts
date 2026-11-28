@@ -552,6 +552,27 @@ describe("pw pick and candidates", () => {
       false
     )
   })
+
+  it("ignores a repo that is not a candidate only with --force", async () => {
+    expect((await call(["candidate", "ignore", "lure/repo", "--reason", "A lure."])).code).toBe(2)
+    expect((await readOverrides()).ignored ?? []).toEqual([])
+    expect(
+      (await call(["candidate", "ignore", "not a repo", "--reason", "x", "--force"])).code
+    ).toBe(2)
+    const result = await call([
+      "candidate",
+      "ignore",
+      "lure/repo",
+      "--reason",
+      "A lure.",
+      "--force",
+    ])
+    expect(result.code).toBe(0)
+    expect((await readOverrides()).ignored[0]).toMatchObject({
+      repo: "lure/repo",
+      reason: "A lure.",
+    })
+  })
 })
 
 describe("global flags", () => {

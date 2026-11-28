@@ -233,7 +233,9 @@ the hash chain, and the next run refuses to write.
 ./pw candidate track owner/repo --file effort.json
 ```
 
-`ignore` also removes it from the visible inbox by recording it in `decided`. `track` promotes it:
+`ignore` also removes it from the visible inbox by recording it in `decided`. A repo the scout never queued
+(a lure the harvester listed, say) needs `--force`. Every ignored or flagged repo is left out of the
+site's "Found on GitHub" list. `track` promotes it:
 the file holds an effort object (`id`, `name`, `summary`, `blockers`, `gta`, …) and the candidate's
 stats are copied in. It also accepts an ignored repo, with a warning; set its `stats` afterwards. See `./pw fields` and `show` an existing project for the shape.
 

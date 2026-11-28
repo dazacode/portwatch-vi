@@ -4372,6 +4372,1438 @@
           "text": "VIctoryUnified joins the race at 65.7% (“Runnable”): Keel62155's NVIDIA fork on cool_fox. A recording shows the prison opening close to the console at up to 14 fps; its notes measure 19-25."
         }
       ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "TaynanGT/Vice-Tay",
+        "related": [],
+        "basedOn": [
+          "cgbj",
+          "avatarmanz",
+          "victory-gta6",
+          "marvis"
+        ],
+        "highlights": [
+          "Platform: RTX 4090 24 GB, Ryzen 9 9950X3D, 48 GB DDR5, Windows 11 Pro",
+          "Outside tester reached the first Dodo flight with Jason and Lucia",
+          "Outside sessions of 58 minutes and 1h47m reported without device loss"
+        ],
+        "blockers": [
+          "CPU-bound: submission preparation takes about 34 ms of a 47 ms frame",
+          "Banding, flat-colour surfaces, blocky clouds, rectangular water shading artifacts",
+          "RDNA2 world-load resets and very high RAM use, about 24-27 GB"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0.25,
+          "render": 0.5,
+          "fps": 21,
+          "stability": "rarely"
+        },
+        "stats": {
+          "stars": 391,
+          "forks": 141,
+          "openIssues": 144,
+          "createdAt": "2026-11-26T08:32:46Z",
+          "pushedAt": "2026-11-27T22:56:28Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Vice-Tay",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "Popular NVIDIA-tuned VIctory fork. The owner played from the prison into the boat mission at a 21 fps median over 30 minutes on an RTX 4090. Outside testers reached early story missions, including the first Dodo flight, in sessions of up to 1 h 47 min.",
+        "findings": [
+          {
+            "text": "Owner's 30-minute hand-played Series S run, from the prison through the boat section, logged a 21.1 fps median and a 17.0 fps 1% low on the RTX 4090. A 1080p GPU read-through A/B test went from 22.60 to 26.38 rendered fps (frame-gen output 52.78 is reported separately).",
+            "url": "https://github.com/TaynanGT/Vice-Tay/blob/fe7c6e52198f2070805ffafc4e55a7163291bad0/docs/measurements.md"
+          },
+          {
+            "text": "A 4K experimental local build, not yet merged (PR #329), averaged 26.72 rendered fps against 16.12 for the reference build over a roughly 39-second boat route, using DLSS Quality and 2x FSR frame generation.",
+            "url": "https://github.com/TaynanGT/Vice-Tay/blob/fe7c6e52198f2070805ffafc4e55a7163291bad0/README.md"
+          },
+          {
+            "text": "Outside tester on an RTX 5060 Ti 16 GB and Ryzen 9 7900X played through the early story missions to the first Dodo flight. They report phone-call and in-flight dialogue missing, and posted a screenshot of rectangular water shading faults.",
+            "url": "https://github.com/TaynanGT/Vice-Tay/issues/270"
+          },
+          {
+            "text": "Outside tester on an RTX 4080 SUPER and i7-14700KF logged seven Series S runs, the longest 58 minutes, with no crash or device removal. Median frame times were 56-87 ms, which works out to roughly 11-18 fps.",
+            "url": "https://github.com/TaynanGT/Vice-Tay/issues/65"
+          },
+          {
+            "text": "Outside tester on an RTX 5070 and Ryzen 7 7800X3D measured 19.6 fps hands-off and 17.5 fps while driving the boat in the prologue's \"Gone Fishing\" section.",
+            "url": "https://github.com/TaynanGT/Vice-Tay/issues/153"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "vice-tay"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "Vice-Tay joins the race: the most-played NVIDIA fork, tested by outsiders into the early story. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "KyleS98/VIctory-Neo",
+        "related": [],
+        "basedOn": [
+          "victory-nvidia",
+          "victory-gta6",
+          "marvis"
+        ],
+        "highlights": [
+          "Platform: RTX 3090 Ti 24 GB, Ryzen 9 9950X3D, 64 GB, Windows 11",
+          "37 fps median in the prologue cell without frame generation, at correct game speed",
+          "About 40 runs of 4-5 minutes without a crash or lost device"
+        ],
+        "blockers": [
+          "No ray tracing: blurry reflections, smeared haze through windows",
+          "Dark wall patch in about 1 of 8 runs; specks and blotches in the first house",
+          "Not hand-played and no long sessions; 36-42 GB RAM use"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.5,
+          "fps": 37,
+          "stability": "unknown"
+        },
+        "stats": {
+          "stars": 0,
+          "forks": 0,
+          "openIssues": 0,
+          "createdAt": "2026-11-25T00:02:48Z",
+          "pushedAt": "2026-11-28T09:52:42Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "VIctory-Neo",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "NVIDIA-tree build with measured threading and shader-loop fixes. It reports 37 rendered fps in the prologue cell on an RTX 3090 Ti, and a shared post-prologue save that plays in the first house. Hands-off short runs only. Self-reported.",
+        "findings": [
+          {
+            "text": "The 37 fps figure is the layer's own frame counter (F3): the median of 5-second readings in hands-off runs of the prologue cell (4,300-4,700 draws), Series S at 1080p, readings 36-38. With DLSS Quality and FSR 3 frame generation it renders 35 and shows 72.",
+            "url": "https://github.com/KyleS98/VIctory-Neo/blob/59a41b733c460bcb5ba934f6b7fbd6318af4cd8f/README.md"
+          },
+          {
+            "text": "The repo description's 31 fps is the 27 November build. The 28 November threading changes raised the same cell from 30.7 to 37.1 fps. Rendered frames are now capped at 60, with the title's step set to 60 so the world no longer runs fast above 30.",
+            "url": "https://github.com/KyleS98/VIctory-Neo/commit/38b768c71eabd92a83f7c58b9ac4db7a198dfab2"
+          },
+          {
+            "text": "On the earlier build, DLSS frame generation through MFG Unlocker at 2x/3x/4x/6x showed 48/72/92/132 fps, but the real rate was only 22-24 fps. The README compares fxceless main at 17-19 fps in the same cell.",
+            "url": "https://github.com/KyleS98/VIctory-Neo/blob/59a41b733c460bcb5ba934f6b7fbd6318af4cd8f/README.md"
+          },
+          {
+            "text": "Keyboard and mouse input added (mouse acts as the right stick, keyboard maps to pad buttons). It was checked only by a script in one scene, where the mouse turned the camera and W walked.",
+            "url": "https://github.com/KyleS98/VIctory-Neo/commit/8afdf42af4877ca7289129162b55f3ce83e4cc9d"
+          },
+          {
+            "text": "Keeping the title's own upscaler on Series S when DLSS is not set up raised the cell from 28.5 to 30.9 fps and cut title memory copied per frame from 88 to 38 MB.",
+            "url": "https://github.com/KyleS98/VIctory-Neo/commit/ba0b1dc5d80785312d766ac58eaf74c9dff77d3f"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "victory-neo"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "VIctory-Neo joins the race: an NVIDIA build measuring 37 fps in the prison cell on an RTX 3090 Ti. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "ReZOnGithub/VIctory-lap",
+        "related": [],
+        "basedOn": [
+          "belobug",
+          "victory-gta6",
+          "marvis"
+        ],
+        "highlights": [
+          "Platform: RTX 5070, Ryzen 7 3700X, 32 GB, Windows 10",
+          "Played through the prison opening into the first boat mission",
+          "Title's own ray tracing runs at 19.4 fps at the boat"
+        ],
+        "blockers": [
+          "CPU-bound on 8 cores: about 470 ms of CPU time spread across threads each frame",
+          "Bottom-edge block strip, flicker, late textures, dark rooms without RT",
+          "Only 4-minute scripted runs; untested beyond the boat mission"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0.1,
+          "render": 0.5,
+          "fps": 24,
+          "stability": "unknown"
+        },
+        "stats": {
+          "stars": 0,
+          "forks": 0,
+          "openIssues": 0,
+          "createdAt": "2026-11-26T17:19:23Z",
+          "pushedAt": "2026-11-28T10:08:56Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "VIctory-lap",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "NVIDIA and Windows 10 fork of Belobug's tree. It reports play from the prison opening into the first boat mission, averaging 24 rendered fps at the boat on an RTX 5070 with a Ryzen 7 3700X, up from 2.5 fps at the start. Self-reported.",
+        "findings": [
+          {
+            "text": "The status table reports two default release-build runs at the boat in open water (about 3,500 draws) averaging 23.8 and 24.1 fps, from the layer's own meter over 4-minute runs. Cutscenes ran at 24-28 fps.",
+            "url": "https://github.com/ReZOnGithub/VIctory-lap/commit/77004827ef71668ca4bb6917d2b5b05a9549ffb9"
+          },
+          {
+            "text": "DLSS frame generation at 2x shows 43-44 fps from 21.5-22 rendered. The title's ray tracing (VICTORY_BVH_BUILDER=1) averaged 19.4 fps with water reflections and shadows present.",
+            "url": "https://github.com/ReZOnGithub/VIctory-lap/blob/3104623d4a13b81740408c985b738e89ee933f8f/README.md"
+          },
+          {
+            "text": "The README states the title was played from the start through the prison opening and its cutscenes into the first boat mission, with on-foot play and boat driving working. The prison opening was earlier measured at about 9 fps.",
+            "url": "https://github.com/ReZOnGithub/VIctory-lap/blob/3104623d4a13b81740408c985b738e89ee933f8f/README.md"
+          },
+          {
+            "text": "On this PC, Belobug's AMD-tuned tree crashed at boot on Windows 10 and then ran at 2.5 fps. Step-by-step changes raised the boat scene to 21.5-22.3 fps and then 24.",
+            "url": "https://github.com/ReZOnGithub/VIctory-lap/commit/892abfc8a874d645325496fba22a32aec2517bc0"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "victory-lap"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "VIctory-lap joins the race: NVIDIA and Windows 10 work on Belobug's tree, 24 fps at the first boat mission. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "Slaktarn700/SlaktarnVI",
+        "related": [],
+        "basedOn": [
+          "marvis"
+        ],
+        "highlights": [
+          "Platform: RX 9070 XT, Ryzen 7 9800X3D, 32 GB, CachyOS",
+          "README: 19-25 real fps in gameplay at 1440p with FSR 4 Quality; frame generation frames not counted",
+          "Outside reports on Windows (i5-14600KF) and on Linux (Ryzen 5800X, Ryzen 9950X) all reach the world"
+        ],
+        "blockers": [
+          "Windows build loses the device after about 8 minutes; the fix exists only as a patch in an issue",
+          "Black 3D world when the wrong d3dcompiler_47 is used; the FSR upscalers also blank 3D on a 7900 XT",
+          "Its first commit matches FiveNine/victory-proton in 269 of 291 files; origin unclear"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.5,
+          "fps": 25,
+          "stability": "sometimes"
+        },
+        "stats": {
+          "stars": 181,
+          "forks": 53,
+          "openIssues": 8,
+          "createdAt": "2026-11-27T14:29:30Z",
+          "pushedAt": "2026-11-27T16:02:02Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "SlaktarnVI",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "A VIctory-based runtime for Linux under Proton, tuned for the RX 9070 XT. The owner reports 19-25 real fps in gameplay. Outside testers reached the prison cell on Linux and Windows, and one measured 25 fps in the world on Windows before a device-removal crash at about 8 minutes.",
+        "findings": [
+          {
+            "text": "The README table, measured on the S70 preset (1440p, FSR 4 Quality, frame generation on but not counted), gives 15-19 fps in the opening cutscene, about 19-25 fps in gameplay, and dips to 3-8 fps for a few seconds at scene cuts. Tested on one machine only: RX 9070 XT, Ryzen 7 9800X3D, 32 GB, CachyOS.",
+            "url": "https://github.com/Slaktarn700/SlaktarnVI/blob/e5b0dc814f8d27757a9def285cb37232945df45b/README.md"
+          },
+          {
+            "text": "Outside tester JulienReppert (Windows 11, RX 9070 XT, i5-14600KF, 32 GB) reached the world at 25 fps on commit e5b0dc8. The device was removed at about 597 s. With his own unmerged alignment patch in descriptor/host.rs, the game ran past 600 s at 38 fps on default settings.",
+            "url": "https://github.com/Slaktarn700/SlaktarnVI/issues/5#issuecomment-7226744246"
+          },
+          {
+            "text": "Outside tester Molier (Ryzen 7 5800X, 32 GB, RX 9070 XT, CachyOS) measured the prison cell with frame generation off: 10.1 fps on system Mesa, rising to 14.4 fps with Mesa main and transparent huge pages. The release build showed only a teal rectangle or crashed with an access violation; the diag build drew the world every time.",
+            "url": "https://github.com/Slaktarn700/SlaktarnVI/issues/4"
+          },
+          {
+            "text": "Outside tester becauseimgray (Ryzen 9 9950X, 64 GB, RX 9070 XT, Arch) first saw a black 3D world with only the HUD, in the prison cell at 9-11 fps. The cause was an old d3dcompiler_47 (6.3.9600). After swapping it, draws per frame went from 72 to 3,400+ and he says cutscenes and gameplay render correctly. No screenshot of the fixed state.",
+            "url": "https://github.com/Slaktarn700/SlaktarnVI/issues/9#issuecomment-7235098437"
+          },
+          {
+            "text": "The first commit, a 291-file import, matches FiveNine/victory-proton at 949b4625 in 269 files. Only the launcher, valhalla.sh and the wineserver patch are unique to this repo.",
+            "url": "https://github.com/FiveNine/victory-proton/commit/949b4625b2bfd28972679483ff597f01cd0803c8"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "slaktarnvi"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "SlaktarnVI joins the race: a VIctory runtime for Linux under Proton on an RX 9070 XT. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "Lumice/victory-linux",
+        "related": [],
+        "basedOn": [
+          "soldsawn-8gb",
+          "victory-gta6",
+          "marvis"
+        ],
+        "highlights": [
+          "Platform: RTX 5070 12 GB, CPU not stated, RAM not stated, Linux (GE-Proton 11-14)",
+          "11.25 fps standing and 11.17 walking at 1280x720 internal; 0 crashes in a 600 s run",
+          "Every branch is logged with fps, crashes and VRAM; next9 candidate measured 11.56 fps"
+        ],
+        "blockers": [
+          "Only about 11-12 fps at 720p internal on an RTX 5070",
+          "Rare crash at the first 3D frame of the prologue, around 70 s",
+          "Full render scale on Series S runs out of the game's memory pool"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.5,
+          "fps": 11.25,
+          "stability": "rarely"
+        },
+        "stats": {
+          "stars": 1,
+          "forks": 0,
+          "openIssues": 0,
+          "createdAt": "2026-11-28T00:43:51Z",
+          "pushedAt": "2026-11-28T04:01:49Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "victory-linux (Lumice)",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "A Linux/NVIDIA patch stack on a VIctory-family fork. The owner reports walking from Lucia's cell to the Social Room at about 11 fps (720p internal) on an RTX 5070, with no crashes in 600-second runs. Self-reported.",
+        "findings": [
+          {
+            "text": "The README's current-state table, for main (runtime code 13c1bac4, Series S, 1280x720 internal), reports 11.25 fps standing and 11.17 walking, with 1% lows of 8.20 and 6.25. It had 0 crashes in a 600 s run, reached the Social Room from the cell at about 580 s, and peaked at 8,624 MiB of VRAM on an RTX 5070.",
+            "url": "https://github.com/Lumice/victory-linux/blob/dabd8c0ad476d08396dff30557bb3dbd641deb21/README.md"
+          },
+          {
+            "text": "BRANCHES.md gives the next9 candidate 11.48-11.56 fps with 0 crashes in 3 runs. The VRAM-window branch measured 12.93 / 12.22 fps. The ambient2 merge removed silhouette blocks, glowing eyes and floor glare. Still open: a dark Social Room floor and a flickering veil in the yard.",
+            "url": "https://github.com/Lumice/victory-linux/blob/dabd8c0ad476d08396dff30557bb3dbd641deb21/BRANCHES.md"
+          },
+          {
+            "text": "A patched GE-Proton wineserver (RB-tree views) raised walking fps from 8.25 to 11.96 in one test and removed frames longer than 250 ms.",
+            "url": "https://github.com/Lumice/victory-linux/blob/dabd8c0ad476d08396dff30557bb3dbd641deb21/README.md"
+          },
+          {
+            "text": "Commit a6c6cbe6 stops partial textures from being re-uploaded over and over (whole retained bytes, a residency signature and a backoff). It is part of the code merged into next8, now main.",
+            "url": "https://github.com/Lumice/victory-linux/commit/13c1bac466194955e9f22d7fd84d2928745d1279"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "victory-linux-lumice"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "victory-linux (Lumice) joins the race: a Linux and NVIDIA patch stack at about 11 fps on an RTX 5070. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "repo": "JuePort/JueVI",
+        "related": [],
+        "basedOn": [
+          "leonida"
+        ],
+        "highlights": [
+          "Platform: RX 5500M (RDNA1), CPU not stated, RAM not stated, Linux under Wine",
+          "Menu reached in 35-46 s with deferred pipeline creation, down from about 149 s",
+          "52,279 DirectStorage requests completed with zero errors during a live loading run"
+        ],
+        "blockers": [
+          "Stuck on the loading screen for over 30 minutes; world entry not reached",
+          "RX 5500M lacks mesh shaders, so mesh PSOs are not implemented; 275 compute PSOs fail",
+          "Intro audio breaks up"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "stats": {
+          "stars": 2,
+          "forks": 0,
+          "openIssues": 1,
+          "createdAt": "2026-11-28T00:30:34Z",
+          "pushedAt": "2026-11-28T00:47:47Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "JueVI",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "A Leonida fork aimed at AMD RDNA1 GPUs on Linux. On an RX 5500M under Wine the owner reaches the menu, intro cinematic and illustrated loading screen. The menu now comes up in 35-46 s, but loading never ends and the world is not reached. Self-reported.",
+        "findings": [
+          {
+            "text": "The README says that with a saved profile on an RX 5500M under Wine, three runs accepted the A button in 35-46 s, against about 149 s before. One manual run sat on the loading screen for over 30 minutes.",
+            "url": "https://github.com/JuePort/JueVI/blob/7db07fdca803c2b25bc11478fbf6df708d6c5b60/README.md"
+          },
+          {
+            "text": "ESTADO.md (in Spanish) records a live run that showed colour loading artwork and completed 52,279 DirectStorage requests with no errors before a 430 s limit. Still missing: mesh-shader PSOs on RDNA1 and 275 untranslated compute PSOs in slot 67.",
+            "url": "https://github.com/JuePort/JueVI/blob/7db07fdca803c2b25bc11478fbf6df708d6c5b60/ESTADO.md"
+          },
+          {
+            "text": "The owner's commit 117b501b adds 3,704 lines: a BCPack decoder path and texture refresh from XMem physical pages for the Vulkan backend.",
+            "url": "https://github.com/JuePort/JueVI/commit/117b501b68576d797e50e7983359efb4df0ee6e3"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "juevi"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "JueVI joins the race: a Leonida fork for RDNA1 cards on Linux that reaches the menu. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "Leandroazc/Azc-Low-End",
+        "related": [],
+        "basedOn": [
+          "victory-nvidia",
+          "marvis"
+        ],
+        "highlights": [
+          "Platform: RTX 2060 SUPER 8 GB, Ryzen 5 5600, 16 GB RAM, Windows 11",
+          "Own FSR 3 frame generation for cards before the RTX 40",
+          "No device losses or crashes in its last eight sessions"
+        ],
+        "blockers": [
+          "Tested only in the opening prison cell sequence",
+          "The game commits about 20 GB, so 16 GB PCs live on the page file",
+          "No ray tracing; an estimate stands in for indirect light"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.5,
+          "fps": 17,
+          "stability": "rarely"
+        },
+        "stats": {
+          "stars": 0,
+          "forks": 1,
+          "openIssues": 0,
+          "createdAt": "2026-11-27T11:30:16Z",
+          "pushedAt": "2026-11-28T08:07:45Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Azc Low End",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "VIctory-NVIDIA fork tuned for a budget RTX 2060 SUPER with 16 GB RAM. It renders the prison opening at 16-18 fps, and its own FSR 3 frame generation shows about 30. Eight 5-12 minute sessions ran without a crash. Self-reported.",
+        "findings": [
+          {
+            "text": "The README (27 Nov) gives 16-18 fps rendered (56-62 ms a frame) and 28-32 shown with FSR 3 frame generation, Series S, DLSS Performance from 540p. That is in the prison opening, in 300-720 s sessions with no crashes in the last eight.",
+            "url": "https://github.com/Leandroazc/Azc-Low-End/blob/49069dfc024f8cb0eabc68928d2fdd7664fe140c/README.md"
+          },
+          {
+            "text": "The FSR 3 frame generation commit adds a 624-line fsrfg.rs plus a script that fetches AMD's DLLs at run time. This is real owner code, not a rename.",
+            "url": "https://github.com/Leandroazc/Azc-Low-End/commit/b3a9e2ce4ab143fcd2da00400e2935388d8d89ea"
+          },
+          {
+            "text": "The README's step table on the same PC goes from 2-5 fps (a 7900 XTX fork with NVIDIA fixes) to 8 (Vice-Tay base) to 16-18 (VIctory-NVIDIA with DLSS). The card is about 95% busy, which it names as the limit.",
+            "url": "https://github.com/Leandroazc/Azc-Low-End/blob/49069dfc024f8cb0eabc68928d2fdd7664fe140c/README.md"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "azc-low-end"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "Azc Low End joins the race: VIctory-NVIDIA tuned for an RTX 2060 SUPER and 16 GB of RAM, 16-18 fps rendered. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "didgori-1121/VIctory-Lite",
+        "related": [],
+        "basedOn": [
+          "victory-nvidia",
+          "marvis"
+        ],
+        "highlights": [
+          "Platform: RTX 2060 Mobile 6 GB, i7-10750H, 16 GB RAM, Windows 11",
+          "Prison scene 10-12 fps; upstream settings gave about 3 fps with black walls",
+          "20-minute prologue run without a crash, memory steady near 18 GB"
+        ],
+        "blockers": [
+          "Open world only 2-4 fps on this laptop",
+          "Shared GPU memory runs out in the open world; crash after 12-13 minutes",
+          "Only one laptop tested"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.5,
+          "fps": 11,
+          "stability": "sometimes"
+        },
+        "stats": {
+          "stars": 0,
+          "forks": 0,
+          "openIssues": 0,
+          "createdAt": "2026-11-28T06:27:41Z",
+          "pushedAt": "2026-11-28T07:53:30Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "VIctory-Lite (didgori)",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "VIctory-NVIDIA fork for 16 GB RAM laptops with 6 GB cards. On an RTX 2060 Mobile it plays the prison scene at 10-12 fps and ran 20 minutes without a crash there. In the open world it runs at 2-4 fps and crashed after 12-13 minutes. Self-reported.",
+        "findings": [
+          {
+            "text": "The 28 Nov status table: main menu, opening cutscenes, the first playable scene (prison) and the open world reached. The prison runs at 10-12 fps (85-105 ms) at 720p with DLSS Quality; the open world at 2-4 fps.",
+            "url": "https://github.com/didgori-1121/VIctory-Lite/blob/6c3a72a9fe9706000932d137f1f9058a52f90c1a/README.md"
+          },
+          {
+            "text": "Stability claim: 20 minutes without a crash in a scripted prologue run, 9-11 fps throughout. A crash after 12-13 minutes in the open world when shared GPU memory (7.4 GB budget) ran full.",
+            "url": "https://github.com/didgori-1121/VIctory-Lite/blob/6c3a72a9fe9706000932d137f1f9058a52f90c1a/README.md"
+          },
+          {
+            "text": "Its own window-eviction commit frees idle copies of title memory above 85% of the shared budget. A forced test at 60% for 8 minutes gave no crash and no frame-rate change.",
+            "url": "https://github.com/didgori-1121/VIctory-Lite/commit/cfeba40c43abd78d614b0ec8a4500a37317fc25f"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "victory-lite-didgori"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "VIctory-Lite (didgori) joins the race: a VIctory-NVIDIA fork for 6 GB laptop cards, 10-12 fps in the prison scene. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "Dathinel/victory-4gb",
+        "related": [],
+        "basedOn": [
+          "cgbj",
+          "victory-gta6",
+          "marvis"
+        ],
+        "highlights": [
+          "Platform: RTX 3050 Laptop 4 GB, Ryzen 7 7435HS, 24 GB RAM, Windows 11",
+          "40-minute session through the first mission to the boat mission, no crash",
+          "Skipping passes that only serve ray tracing raised free play from about 4.5 to 6.5-7 fps"
+        ],
+        "blockers": [
+          "CPU side of a frame (65 ms preparing) now limits speed",
+          "Black skin, white captures and late textures vary between identical runs",
+          "No traced indirect light; interiors and night are dark"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0.1,
+          "render": 0.5,
+          "fps": 6.5,
+          "stability": "rarely"
+        },
+        "stats": {
+          "stars": 5,
+          "forks": 0,
+          "openIssues": 25,
+          "createdAt": "2026-11-26T15:15:21Z",
+          "pushedAt": "2026-11-28T05:07:27Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "victory-4gb",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "cool_fox and fxceless lines tuned for a 4 GB RTX 3050 Laptop. One 40-minute controller session went from the first scene to the open-world boat mission without a crash. Open-world free play runs at 6.5-7 fps, with dark interiors and black skin in some runs. Self-reported.",
+        "findings": [
+          {
+            "text": "The 27 Nov README: one 40-minute session with an Xbox controller, from the first scene through the first mission and its chase to the boat mission, with no crash or device loss (median 4.0 fps then). Free play is now 6.5-7 fps (5.9-7.3 over three runs, about 150 ms a frame).",
+            "url": "https://github.com/Dathinel/victory-4gb/blob/803ebfa9758eb578ee01f0ad72b565a4b2e7991b/README.md"
+          },
+          {
+            "text": "Open PR #37 drives the boat forward in the open world over 9-minute runs. Skipping three more light-probe passes moves the median from 6.3-6.4 to 7.5-7.7 fps. It is not merged.",
+            "url": "https://github.com/Dathinel/victory-4gb/pull/37"
+          },
+          {
+            "text": "Issue #28 profiles the boat at full throttle at 6.2 fps (about 160 ms). About 57 ms a frame is spent waiting on the card before four small fills of 208-480 bytes.",
+            "url": "https://github.com/Dathinel/victory-4gb/issues/28"
+          },
+          {
+            "text": "Picture problems are tracked openly: black skin traced to missing host texture copies (issue #3), and water that comes out as waves, a flat mirror or white between identical runs (issue #21).",
+            "url": "https://github.com/Dathinel/victory-4gb/issues/3"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "victory-4gb"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "victory-4gb joins the race: cool_fox tuned for a 4 GB RTX 3050 Laptop, played 40 minutes to the boat mission. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "Maykzera/victory-rtx3060",
+        "related": [],
+        "basedOn": [
+          "victory-nvidia"
+        ],
+        "highlights": [
+          "Platform: RTX 3060 12 GB, Ryzen 5 5600X, 32 GB RAM, Windows 11",
+          "Open-world round averages 13.6-15.2 fps, 1% low 8-9",
+          "Constants heap read in place: 17.2 fps over a 10-second window, 14.7 over 3 minutes"
+        ],
+        "blockers": [
+          "One submit thread holds about 60 ms of each frame",
+          "Flat untextured objects at the start of each scene",
+          "Series S at render scale 1.0 halts at start"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 0.5,
+          "story": 0,
+          "render": 0,
+          "fps": 15,
+          "stability": "unknown"
+        },
+        "stats": {
+          "stars": 1,
+          "forks": 1,
+          "openIssues": 0,
+          "createdAt": "2026-11-26T18:06:41Z",
+          "pushedAt": "2026-11-27T19:23:06Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "victory-rtx3060",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "VIctory-NVIDIA fork tuned on an RTX 3060 with a Ryzen 5 5600X. The open world, loaded from a save, holds 14-17 fps, with 6-minute round averages of 13.6-15.2. Its docs log 24 bench rounds of performance work. Self-reported.",
+        "findings": [
+          {
+            "text": "docs/rtx3060.md gives 14-17 fps in the open world after warm-up, Series S at half scale: 13.6-15.0 averages per 6-minute round, 1% low 8-9 fps. Measured with the character standing still in a loaded save.",
+            "url": "https://github.com/Maykzera/victory-rtx3060/blob/44fed2c78cc851d9bcf218ba48d705b5defc4d97/docs/rtx3060.md"
+          },
+          {
+            "text": "Rounds 21-24 read the game's 174 MB constants heap in place. That gave 17.2 fps over the last 10 seconds (median frame 56.5 ms) and 14.7 averaged over 3 minutes, with the card now about 93% busy.",
+            "url": "https://github.com/Maykzera/victory-rtx3060/commit/4bc84c81980272adcce044c8924424d9fa9ce8a0"
+          },
+          {
+            "text": "The commit that set 16 joined submissions as the default records round-2 results of 14-17 fps in the open world.",
+            "url": "https://github.com/Maykzera/victory-rtx3060/commit/958c0b3a189d9f9aa55603ca9814804bfd3ebd8b"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "victory-rtx3060"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "victory-rtx3060 joins the race: VIctory-NVIDIA tuned on an RTX 3060, 14-17 fps in the open world. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "repo": "d1reevo/zhenek",
+        "related": [],
+        "basedOn": [
+          "victory-nvidia"
+        ],
+        "highlights": [
+          "Platform: RTX 5060 8 GB, Ryzen 7 5700X, 32 GB RAM, Windows 11",
+          "Base 12.3-13.9 fps, 14.7-18.0 in cutscenes",
+          "VRAM growth capped at 84% to avoid paging on 8 GB cards"
+        ],
+        "blockers": [
+          "Headline fps is 4x frame generation, not rendered frames",
+          "Launcher source GTA6-RTX5060-Ideal.cs is referenced but missing from the repo",
+          "No session lengths or outside tests"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 0.5,
+          "story": 0,
+          "render": 0,
+          "fps": 13,
+          "stability": "unknown"
+        },
+        "stats": {
+          "stars": 0,
+          "forks": 0,
+          "openIssues": 0,
+          "createdAt": "2026-11-25T10:13:03Z",
+          "pushedAt": "2026-11-27T23:24:27Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "zhenek",
+        "branch": "rtx5060-8gb-clean",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "VIctory-NVIDIA fork for 8 GB RTX cards, tested on an RTX 5060 with a Ryzen 7 5700X. It claims 12.3-13.9 fps base in the open world on Series S at 720p with DLSS Quality. The headline 50+ is 4x frame generation. Self-reported.",
+        "findings": [
+          {
+            "text": "The README table claims 12.3-13.9 base fps (14.7-18.0 in cutscenes) on Series S at 720p with DLSS Quality, and about 50-55 with DLSS FG 4x. Series X 1440p gives 6.4-9.1 base.",
+            "url": "https://github.com/d1reevo/zhenek/blob/c64ac2b45528db1ca9e514719ee1bb7f8a5df6df/README.md"
+          },
+          {
+            "text": "It says opening police-station cutscenes, the prison interrogation, a seaplane scene and open-world boat scenes were checked in PNG frame captures with no black faces. No capture is published.",
+            "url": "https://github.com/d1reevo/zhenek/blob/c64ac2b45528db1ca9e514719ee1bb7f8a5df6df/README.md"
+          },
+          {
+            "text": "The main performance commit adds 5,737 lines, mostly ports from TaynanGT/Vice-Tay, plus its own VRAM pool cap in pool.rs and resource.rs.",
+            "url": "https://github.com/d1reevo/zhenek/commit/8ae8fdb6ede02bd8c05ed40806dd19b5ca49bc5a"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "zhenek"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "zhenek joins the race: a VIctory-NVIDIA fork for 8 GB RTX cards; its headline is 4x frame generation. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "mavis140/mavis-9070xt",
+        "related": [],
+        "basedOn": [
+          "avatarmanz"
+        ],
+        "highlights": [
+          "Platform: RX 9070 XT 16 GB, Ryzen 7 9800X3D, 32 GB DDR5, Windows 11",
+          "18.9 fps median over 27 minutes in the open world at 1440p, ray tracing off",
+          "AMD compiler crash ended: 0 pipelines refused, where 38 were refused per frame before"
+        ],
+        "blockers": [
+          "Character and vehicle meshes sometimes drawn as large polygon sheets with black or white patches",
+          "Frame time spikes: 8% of reports over 75 ms, mostly CopyPageMappings",
+          "Sunlit ground and walls far too bright; late or flickering textures near the VRAM budget"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.5,
+          "fps": 18.9,
+          "stability": "rarely"
+        },
+        "stats": {
+          "stars": 5,
+          "forks": 0,
+          "openIssues": 0,
+          "createdAt": "2026-11-26T08:10:11Z",
+          "pushedAt": "2026-11-26T19:29:36Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "mavis-9070xt",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "AvatarManz-based fork tuned for a 16 GB RDNA 4 card and 32 GB of RAM. It fixes the driver's shader compiler crash and a memory leak. The open world plays with pad or mouse at about 19 fps median over a 27-minute session. Self-reported.",
+        "findings": [
+          {
+            "text": "README table (run 38): a 27-minute open-world session had an 18.9 fps median, with 26 of 319 five-second reports over 75 ms per frame. Light scenes ran about 24 fps, dense streets about 14 fps, on the Series X profile at 1440p.",
+            "url": "https://github.com/mavis140/mavis-9070xt/blob/3904d230c8d398f21c55c910d11869d3746c5c2b/README.md"
+          },
+          {
+            "text": "The owner added a guard around pipeline creation. A pipeline that crashes the AMD driver's compiler is logged to crashed.txt and refused afterwards, so the run no longer exits after about three minutes.",
+            "url": "https://github.com/mavis140/mavis-9070xt/commit/57a65be87fd4b111c7ea41fe7e8bcbcc834f2eb4"
+          },
+          {
+            "text": "A larger 2^23 descriptor heap stops dense streets from dropping up to 3,384 of 37,000 descriptor tables per frame. Zeroing filler words in placed views stopped about 200 MB per minute of memory growth after 27 minutes.",
+            "url": "https://github.com/mavis140/mavis-9070xt/commit/c8bd322c9660d0b7d32c6848b5af646c38ee1341"
+          },
+          {
+            "text": "Private memory is 27-29 GB and level over the last 15 minutes, with 10.7 GB used on the card. The mesh corruption comes from VICTORY_THIN; the -Safe mode avoids it at 13 fps instead of 17-19.",
+            "url": "https://github.com/mavis140/mavis-9070xt/blob/3904d230c8d398f21c55c910d11869d3746c5c2b/README.md"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "mavis-9070xt"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "mavis-9070xt joins the race: AvatarManz's fork tuned for an RX 9070 XT, 18.9 fps over a 27-minute session. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "thaqifT/Frutiger2",
+        "related": [],
+        "basedOn": [
+          "belobug"
+        ],
+        "highlights": [
+          "Platform: RX 6800 16 GB, Ryzen 7 5800X, 32 GB, Windows 11",
+          "Device resets traced to the relay send-ahead; 300 s runs with no device removal",
+          "Page-mapping work cut CopyPageMappings from 64 ms to 1.2 ms per frame"
+        ],
+        "blockers": [
+          "World frame rate only 4-10 fps, 198 ms mean frame in the release build",
+          "CPU and GPU work run one after the other per frame; no overlap yet",
+          "Runs are scripted button presses; no player control described"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 5,
+          "stability": "unknown"
+        },
+        "stats": {
+          "stars": 0,
+          "forks": 1,
+          "openIssues": 0,
+          "createdAt": "2026-11-27T17:57:08Z",
+          "pushedAt": "2026-11-28T05:55:40Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Frutiger2",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "RDNA2-focused VIctory branch built on Belobug's AMD fork. It boots to the world in about 67 seconds on an RX 6800. It found that the relay send-ahead caused device resets and stays up for 5-minute scripted runs. The world runs at only 4-10 fps. Self-reported.",
+        "findings": [
+          {
+            "text": "Every earlier run died at 48, 77 or 125 s from a driver-side device reset. With the relay send-ahead off (VICTORY_RELAY=0, VICTORY_RELAY_COPY=0) runs reached the 300 s time limit with no device removal.",
+            "url": "https://github.com/thaqifT/Frutiger2/blob/9dc28626a0f87263659609aaaf023321173126bc/README.md"
+          },
+          {
+            "text": "In the world the mean frame is 198 ms in the release build (about 5 fps) at 900-6,500 draws per frame. Boot to world takes about 67 s and peak working set is about 21 GB.",
+            "url": "https://github.com/thaqifT/Frutiger2/blob/9dc28626a0f87263659609aaaf023321173126bc/FRUTIGER2.md"
+          },
+          {
+            "text": "The single code commit on top of the Belobug import changes 19 files. It cuts CopyPageMappings from 64.07 to 1.17 ms and XMemMapPhysicalPages from 50.24 to 3.88 ms per the README.",
+            "url": "https://github.com/thaqifT/Frutiger2/commit/964d014f394a60eb4439e8ec4c5ad9ff432d7dca"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "frutiger2"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "Frutiger2 joins the race: Belobug's AMD fork tuned for RDNA2, reaching the world at about 5 fps on an RX 6800. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "repo": "Xbygone/victory-bygone",
+        "related": [],
+        "basedOn": [
+          "victory-gta6"
+        ],
+        "highlights": [
+          "Platform: RX 9060 XT 16 GB, Ryzen 5 7500X3D, 16 GB DDR5, Windows 11",
+          "Claims descriptor sync cut from 5.57 to 1.94 ms per frame",
+          "Claims first-scene pipeline stall cut from 6.9 s to 0.2 s"
+        ],
+        "blockers": [
+          "No statement of reaching menus, world or player control",
+          "Benchmark table gives no scene, session length or method",
+          "'100% stable' claim comes with no crash or session evidence"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 0.5,
+          "world": 0.5,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 19.6,
+          "stability": "unknown"
+        },
+        "stats": {
+          "stars": 2,
+          "forks": 1,
+          "openIssues": 0,
+          "createdAt": "2026-11-27T18:04:09Z",
+          "pushedAt": "2026-11-27T22:05:15Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "victory-bygone",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "RDNA4 and 16 GB-RAM performance fork of the VIctory line. It adds lock batching, a two-pass relay, ported FSR 3 frame generation and a texture cache. A benchmark table claims 19.6 fps median with ray tracing on an RX 9060 XT, but gives no scene, session or world description. Self-reported.",
+        "findings": [
+          {
+            "text": "The README benchmark claims 19.61 fps median and 24.88 fps peak with full ray tracing at native 1080p on an RX 9060 XT with 16 GB RAM, up from 13.7-14.4 fps. It names no scene and gives no session details.",
+            "url": "https://github.com/Xbygone/victory-bygone/blob/31f81162fe8ac3cbca56a31b7202c396e51e4a73/README.md"
+          },
+          {
+            "text": "v11 adds 2x FSR 3 frame generation (fsr_fg.rs, adapted from trustno1-coder/VIctory-NVIDIA 29d8dbf7), +1,066 lines. The fps table predates it (v9.1), so those numbers are not frame-generated.",
+            "url": "https://github.com/Xbygone/victory-bygone/commit/973bf5c7bd04da10b72cd01a2aba8f644bfda932"
+          },
+          {
+            "text": "History starts with a single squashed import of 197,332 lines across 261 files, so upstream authorship and the owner's initial changes can't be separated.",
+            "url": "https://github.com/Xbygone/victory-bygone/commit/cea7f1aed808521d03e62a12bca02fd2a873e264"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "victory-bygone"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "victory-bygone joins the race: an RDNA4 performance fork whose results name no scene. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "andresgonzalezvaldivia-ui/Hyper30X",
+        "related": [],
+        "basedOn": [
+          "belobug"
+        ],
+        "highlights": [
+          "Platform: RX 6950 XT 16 GB, Ryzen 9 5950X, 32 GB DDR4-2133, Windows 11",
+          "15.2 fps mean over an 11-minute prologue stretch, Series X profile at 1080p",
+          "Low-memory mode fixed a GPU reset (0x887A0005) at the start of play on 32 GB"
+        ],
+        "blockers": [
+          "CPU-bound: about 50-75 ms of CPU work per frame",
+          "Series S profile crashes above 1920x1080",
+          "Ships unsigned prebuilt exes; its setup tool changes the page file and reboots into the BIOS"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 0.5,
+          "story": 0,
+          "render": 0,
+          "fps": 15.2,
+          "stability": "rarely"
+        },
+        "stats": {
+          "stars": 0,
+          "forks": 0,
+          "openIssues": 0,
+          "createdAt": "2026-11-28T01:14:55Z",
+          "pushedAt": "2026-11-28T01:16:58Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Hyper30X",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "Spanish-language rebrand of Belobug's AMD fork with a launcher and PC setup tool. A low-memory mode fixed a GPU reset at the start of play on 32 GB. Logged runs through the prologue reach about 15 fps on an RX 6950 XT. Self-reported.",
+        "findings": [
+          {
+            "text": "In v0.9.0, using a quarter of logical threads for view and land work raised the prologue mean from 12.7 to 15.2 fps (Series X, 1080p, ultra). Heaviest frames went from 12.2 to 14.2 fps, with no frame over 250 ms.",
+            "url": "https://github.com/andresgonzalezvaldivia-ui/Hyper30X/commit/0754cf5197ffae01a5317eed924b73ca289e9c77"
+          },
+          {
+            "text": "v0.8.0 moved title buffers of 64 KiB and up to card memory. The median frame went from 85 to 74 ms and the mean from 10.8 to 12.7 fps over the prologue stretch.",
+            "url": "https://github.com/andresgonzalezvaldivia-ui/Hyper30X/commit/f1a1f6df5670a2603683a07bd272c6f7f53721ba"
+          },
+          {
+            "text": "With the base settings on 32 GB the GPU reset (0x887A0005) seconds into play, 260-530 s after launch. The low-memory mode got through 3-4 minute runs, and later notes say an ultra run lasted 6 minutes without closing.",
+            "url": "https://github.com/andresgonzalezvaldivia-ui/Hyper30X/commit/2b93ba930eb80746fa9a15b67306fa4b59eeda49"
+          },
+          {
+            "text": "The README's headline 22 fps figure was measured by the base author on an i9-12900K with an RX 7900 XTX, not by this owner. The owner's own numbers are in docs/rendimiento.md.",
+            "url": "https://github.com/andresgonzalezvaldivia-ui/Hyper30X/blob/8021349a41340bc37849aec501d53eaf3c57f711/README.md"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "hyper30x"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "Hyper30X joins the race: a rebrand of Belobug's AMD fork with a launcher, about 15 fps on an RX 6950 XT. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "Vaximous/Victory-Blueyes",
+        "related": [],
+        "basedOn": [
+          "cgbj",
+          "victory-nvidia"
+        ],
+        "highlights": [
+          "Platform: RTX 4070 Ti 12 GB, Ryzen 9 7900X, 64 GB, Windows 11 Pro",
+          "Open-world walk: 70.0 to 60.4 ms per frame (14.3 to 16.6 fps), frames 1000-3000",
+          "Tiled texture residency saves about 5 GB of VRAM; raw 1:1 mouse camera"
+        ],
+        "blockers": [
+          "Shadows and some glass drawn in solid tile-sized blocks",
+          "Texture slots flash grey; around 100 ms hitches on pipeline compiles",
+          "CPU and GPU work run one after the other; interiors drop to 10 fps"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.5,
+          "fps": 16.6,
+          "stability": "unknown"
+        },
+        "stats": {
+          "stars": 0,
+          "forks": 0,
+          "openIssues": 0,
+          "createdAt": "2026-11-27T06:04:24Z",
+          "pushedAt": "2026-11-27T07:27:46Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Victory-Blueyes",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "NVIDIA-focused cool_fox derivative with its own wait, depth-test and threading optimizations and raw mouse input. A scripted open-world walk from a save averages 16.6 fps on an RTX 4070 Ti, Series S profile. Shadows come out blocky. Self-reported.",
+        "findings": [
+          {
+            "text": "Scripted open-world walk from a fixed save, mean over world frames 1000-3000: 70.0 ms at start, 60.4 ms (16.6 fps, p99 135 ms) in bench9. Averaged over all frames after the first minute it is 64.2 ms; light scenes on foot run 17-19 fps.",
+            "url": "https://github.com/Vaximous/Victory-Blueyes/blob/d6fe07e535ee79f0b0d7647543bd1bba00ff4d58/README.md"
+          },
+          {
+            "text": "bench9 frame breakdown: about 45-51 ms of CPU preparation (15-25 ms of it copying 100-220 MB to the card), about 42 ms GPU and 16-18 ms copying back.",
+            "url": "https://github.com/Vaximous/Victory-Blueyes/blob/d6fe07e535ee79f0b0d7647543bd1bba00ff4d58/README.md"
+          },
+          {
+            "text": "The owner added a depth test before pixel shading where it is provably safe, part of the bench9 gain alongside copies split across threads and pipeline wait-once.",
+            "url": "https://github.com/Vaximous/Victory-Blueyes/commit/6cf847af3d7197c5b667eee4ea3a9b0656559f92"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "victory-blueyes"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "Victory-Blueyes joins the race: a cool_fox derivative for NVIDIA, 16.6 fps on an open-world walk on an RTX 4070 Ti. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "n-romanovich/NVIctory",
+        "related": [],
+        "basedOn": [
+          "victory-gta6",
+          "marvis"
+        ],
+        "highlights": [
+          "Platform: RTX 5060 Ti 16 GB, Core i5-11600KF, 32 GB DDR4, Windows 11",
+          "Measured 6.13 fps at 1080p output and 5.72 fps at native 4K, warm cache, no DLSS or FG",
+          "Claims zero black shadow bars on RTX through an LDS ticket thread-index fix"
+        ],
+        "blockers": [
+          "About 6 fps, limited by the CPU's host-memory sync on a 6-core CPU",
+          "No in-game screenshot or recording to check the 'near-native' picture claim",
+          "No outside testers or issues yet"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 1,
+          "story": 0,
+          "render": 0.5,
+          "fps": 6.1,
+          "stability": "unknown"
+        },
+        "stats": {
+          "stars": 1,
+          "forks": 0,
+          "openIssues": 0,
+          "createdAt": "2026-11-28T01:12:17Z",
+          "pushedAt": "2026-11-28T01:32:48Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "NVIctory",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "Fork tuned for NVIDIA RTX. It fixes Wave32 shadow-tile gaps and heap limits. The owner times the boot to player control in the prison prologue at 2:39 and measures about 6 fps on an RTX 5060 Ti. The only image shows the launcher. Self-reported.",
+        "findings": [
+          {
+            "text": "The README benchmark table, measured on the prologue save with a warm cache, gives 5.5 fps at native 4K. A 30-60 s automated run gives 6.13 fps (163 ms mean) at 1080p output and 5.72 fps at 4K, about 4,950 draws a frame.",
+            "url": "https://github.com/n-romanovich/NVIctory/blob/2e45c9929b3f4ceeeb7cd9c5a000e3d7ee7e0e56/README.md"
+          },
+          {
+            "text": "From process launch to character control takes 2:38.88 by the owner's timing, against 3:05.71 for fxceless/victory-fork and 2:46.58 for VIctory-NVIDIA on the same PC.",
+            "url": "https://github.com/n-romanovich/NVIctory/blob/2e45c9929b3f4ceeeb7cd9c5a000e3d7ee7e0e56/README.md"
+          },
+          {
+            "text": "Sample of the owner's code: an on-screen telemetry overlay commit rewrites fpsbox.rs (+90/-121). Other commits are tiny host.rs edits of 3-20 lines.",
+            "url": "https://github.com/n-romanovich/NVIctory/commit/632decd919e58b76fdf79dbb80f1ea82ea4e2fc5"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "nvictory"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "NVIctory joins the race: an NVIDIA RTX fork at about 6 fps on an RTX 5060 Ti. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "ECHOZwei/TRIDENT",
+        "related": [],
+        "basedOn": [
+          "marvis"
+        ],
+        "highlights": [
+          "Platform: RTX 4080 SUPER 16 GB, Ryzen 7 7800X3D, 32 GB DDR5, Windows 11",
+          "Median 18.8 fps at 4K Series X profile; 24-25 fps in medium scenes, 19-21 heavy",
+          "Fixed a GPU hang on the first world frame and exploding character vertices"
+        ],
+        "blockers": [
+          "No statement of how far into the game it gets, and no screenshots",
+          "Still spills 4 GB to shared memory and commits 27 GB of RAM at 4K",
+          "Commits are by an unlinked author; no outside reports"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 0.5,
+          "story": 0,
+          "render": 0,
+          "fps": 18.8,
+          "stability": "unknown"
+        },
+        "stats": {
+          "stars": 6,
+          "forks": 2,
+          "openIssues": 0,
+          "createdAt": "2026-11-26T19:51:24Z",
+          "pushedAt": "2026-11-28T03:02:18Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "TRIDENT",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "Speed-focused Neptune fork that piles on ported and new runtime work. It reports a median 18.8 fps at native 4K on an RTX 4080 SUPER, up from 12.6, but never says plainly what part of the game it reaches. Self-reported.",
+        "findings": [
+          {
+            "text": "The README table (native 4K, Series X profile) gives a median 18.8 fps (53 ms) against a 12.6 fps baseline, 24-25 fps at 4-6K draws and 19-21 fps at 11K draws. GPU busy rose from 28% to 46%.",
+            "url": "https://github.com/ECHOZwei/TRIDENT/blob/79f74d18dd074745a37acd5536ae14d7f103cf77/README.md"
+          },
+          {
+            "text": "v9.3.1 turned unstable descriptor sync and barrier coalescing off by default to stop a 0x887A0006 GPU hang on the first world frame, which shows the world is being reached.",
+            "url": "https://github.com/ECHOZwei/TRIDENT/commit/9e2c31b910b06dbc0a6f519983316d6a69267055"
+          },
+          {
+            "text": "v9.2.2 rolled the shader passes back to the v8.4 compiler after exploding character vertices and missing geometry.",
+            "url": "https://github.com/ECHOZwei/TRIDENT/commit/3c843bde406bad70c9c9e922002c1269ce2866c3"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "trident"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "TRIDENT joins the race: a Neptune fork reporting 18.8 fps at 4K on an RTX 4080 SUPER. Self-reported."
+        }
+      ]
+    },
+    {
+      "effort": {
+        "tier": "tracked",
+        "verification": "self-reported",
+        "repo": "naixue2233/Yuk1-nvdia-gta6",
+        "related": [],
+        "basedOn": [
+          "cgbj",
+          "avatarmanz"
+        ],
+        "highlights": [
+          "Platform: RTX 3080 10 GB, 16C/24T CPU, RAM not stated, Windows 10 19045",
+          "Light scenes 20-22 fps, heavy 12-17 fps at 1080p; CPU-side copies are the limit",
+          "Per-program wave64 form choice fixes black or patchy open water and flicker"
+        ],
+        "blockers": [
+          "CPU writes to write-combined memory cap out near 4.1 GB/s; the author's arithmetic puts the ceiling at about 21 fps",
+          "Screenshots were committed and then removed; no story progress stated",
+          "Ships a Microsoft D3D12Core.dll in the source tree"
+        ],
+        "gta": {
+          "loads": 1,
+          "boots": 1,
+          "menu": 1,
+          "world": 1,
+          "playable": 0.5,
+          "story": 0,
+          "render": 0,
+          "fps": 20,
+          "stability": "unknown"
+        },
+        "stats": {
+          "stars": 4,
+          "forks": 1,
+          "openIssues": 0,
+          "createdAt": "2026-11-27T18:41:13Z",
+          "pushedAt": "2026-11-28T03:25:10Z",
+          "archived": false,
+          "missing": false
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Yuk1-nvdia-gta6",
+        "branch": "main",
+        "approach": "Compatibility layer",
+        "target": "GTA VI only",
+        "summary": "Scarlett-3070 fork that makes the layer start on stock Windows 10 by bundling the D3D12 Agility runtime, and fixes black and flickering open water. It measures 20-22 fps in light scenes and 12-17 in heavy ones on an RTX 3080. Self-reported.",
+        "findings": [
+          {
+            "text": "README-YUK1 measures 20-22 fps (45-51 ms) in light scenes and 12-17 fps (58-83 ms) in heavy ones on an RTX 3080 at 1080p, Windows 10. 62-70 MB a frame of CPU copies take 16-20 ms.",
+            "url": "https://github.com/naixue2233/Yuk1-nvdia-gta6/blob/7132c31edcd75bb15603f97b9bb15cba710992ba/README-YUK1.md"
+          },
+          {
+            "text": "Answering refreshes from the journal by default cut the frame from 79.6 to 69.9 ms in the same scene, with the 'asks' going from 29.1 to 15.6 ms.",
+            "url": "https://github.com/naixue2233/Yuk1-nvdia-gta6/commit/3c87407c563dc4d70b79a89746806577034e5f59"
+          },
+          {
+            "text": "Limiting the partial-mask reduction to the two water shaders stopped the world flickering: mean difference between frames fell from 3.99 to 1.35 per channel. This commit added four window captures (f1, f2, g1, g2.png), which the next commit removed.",
+            "url": "https://github.com/naixue2233/Yuk1-nvdia-gta6/commit/1440fcfee082f230804e4928d61c963dd6775f47"
+          },
+          {
+            "text": "An outside contributor, Barbital11111, sent a merged PR isolating the wave32 half-wave exchange slots. It was reverted once and then reapplied.",
+            "url": "https://github.com/naixue2233/Yuk1-nvdia-gta6/pull/1"
+          }
+        ],
+        "findingsSource": "From the repo's README, commits and issues, read as text on 28 November. Nothing was run.",
+        "id": "yuk1-nvdia-gta6"
+      },
+      "changes": [
+        {
+          "date": "2026-11-28",
+          "kind": "new",
+          "text": "Yuk1-nvdia-gta6 joins the race: a scarlett-3070 fork that starts on stock Windows 10, 20-22 fps in light scenes on an RTX 3080. Self-reported."
+        }
+      ]
     }
   ],
   "pick": {
@@ -4380,6 +5812,36 @@
     "reason": "Owner's call: its code went public on 26 Nov, at 25 fps reported on NVIDIA."
   },
   "ignored": [
+    {
+      "repo": "Proudnoob4/victory-perf",
+      "reason": "Copy of vitutu1's victory-perf work: none of its 271 commits are by the account owner.",
+      "seenAt": "2026-11-28"
+    },
+    {
+      "repo": "randomkidmakesthis/foxvic-scarlett",
+      "reason": "Merge of readmet3xt-lab/foxhound and Op-lite/victory-scarlett with only a compile fix of its own; no results.",
+      "seenAt": "2026-11-28"
+    },
+    {
+      "repo": "GreyNadeOfficial/TitanLeo",
+      "reason": "Stale mirror of ProjectLeonida/mandy (tracked as Leonida Continued): identical README, no commits of its own.",
+      "seenAt": "2026-11-28"
+    },
+    {
+      "repo": "Snatukins/victory-render-lab",
+      "reason": "Re-import of TaynanGT/Vice-Tay's history under new SHAs with a small AI-written RTX 4060 profile; reports about 1 fps.",
+      "seenAt": "2026-11-28"
+    },
+    {
+      "repo": "kotone-catto/VIctory-Intel-Arc",
+      "reason": "Copy of MRSEEO/VIctory-Intel-Arc: the same single commit by MRSEEO, re-uploaded under another account.",
+      "seenAt": "2026-11-28"
+    },
+    {
+      "repo": "aashiqkhan9568-ctrl/project-leonida-gta-vi-port",
+      "reason": "Malware lure: a 'PowerShell install button' leads to a GitHub Pages site holding a large obfuscated script; fake '48K downloads' and 'Verified' badges on a one-repo account. No code of its own.",
+      "seenAt": "2026-11-28"
+    },
     {
       "repo": "monte-alt/vesper",
       "reason": "README describes a general Xbox Series compatibility and renderer-porting layer, not its own GTA VI effort.",
@@ -4683,7 +6145,13 @@
     "tiadiff/VIctory-NVIDIA-LowStutter",
     "afredas/Slys",
     "monte-alt/vesper",
-    "hello3928/Project-VI"
+    "hello3928/Project-VI",
+    "aashiqkhan9568-ctrl/project-leonida-gta-vi-port",
+    "kotone-catto/VIctory-Intel-Arc",
+    "Snatukins/victory-render-lab",
+    "GreyNadeOfficial/TitanLeo",
+    "randomkidmakesthis/foxvic-scarlett",
+    "Proudnoob4/victory-perf"
   ],
   "news": [
     {
