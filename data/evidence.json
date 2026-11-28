@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-28T06:25:48.556Z",
+  "lastRun": "2026-11-28T09:25:49.066Z",
   "read": [
     "https://github.com/avatarmanz/VIctory-7900XTX/issues/76@2026-11-26T02:28:56Z",
     "https://github.com/avatarmanz/VIctory-7900XTX/issues/75@2026-11-26T02:09:56Z",
@@ -292,9 +292,31 @@
     "https://github.com/LooperSalty/AnyXboxX/issues/513@2026-11-27T21:14:11Z",
     "https://github.com/ThatRecompDev/five-star-recomp/issues/64@2026-11-28T06:06:48Z",
     "https://github.com/ProjectLeonida/mandy/issues/1915@2026-11-25T18:12:19Z",
-    "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/775@2026-11-28T06:21:42Z"
+    "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/775@2026-11-28T06:21:42Z",
+    "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/886@2026-11-28T08:34:17Z",
+    "https://github.com/fxceless/victory-fork/issues/1351@2026-11-26T17:34:41Z",
+    "https://github.com/Marvisak/VIctory/issues/3696@2026-11-28T08:36:18Z",
+    "https://github.com/xcl-dev/xcl/issues/3114@2026-11-28T09:12:16Z",
+    "https://github.com/brcly/TuxBox/issues/382@2026-11-28T08:16:34Z",
+    "https://github.com/R0Y00/Xbox2Windows/issues/3312@2026-11-28T08:35:53Z",
+    "https://github.com/LooperSalty/AnyXboxX/issues/508@2026-11-27T14:56:53Z",
+    "https://github.com/ThatRecompDev/five-star-recomp/issues/64@2026-11-28T08:52:25Z",
+    "https://github.com/ProjectLeonida/mandy/issues/1702@2026-11-26T12:40:28Z",
+    "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/867@2026-11-28T08:59:44Z"
   ],
   "items": [
+    {
+      "effortId": "victory-nvidia",
+      "kind": "free",
+      "stage": "world",
+      "outcome": "reached",
+      "quote": "With the interval as a switch and VICTORY AB flipping it between 8 and 64 every 15 s in one run (78 phases of 15 s in the world, over two runs):",
+      "commit": "63b902f",
+      "gpu": "RTX 5060 Ti",
+      "url": "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/886",
+      "at": "2026-11-28T08:34:09Z",
+      "by": "e6a4e2b4d4e7"
+    },
     {
       "effortId": "victory-nvidia",
       "kind": "rule",
@@ -1158,6 +1180,18 @@
       "url": "https://github.com/fxceless/victory-fork/issues/825",
       "at": "2026-11-25T09:19:54Z",
       "by": "51223e0dcff1"
+    },
+    {
+      "effortId": "mandy",
+      "kind": "free",
+      "stage": "loads",
+      "outcome": "reached",
+      "quote": "Each run from 1537 onwards dies with commit and RAM exhausted.",
+      "commit": "c7e82e2",
+      "gpu": "RTX 5070 Ti",
+      "url": "https://github.com/ProjectLeonida/mandy/issues/1702",
+      "at": "2026-11-25T08:46:14Z",
+      "by": "4047193def1c"
     },
     {
       "effortId": "victory-gta6",
