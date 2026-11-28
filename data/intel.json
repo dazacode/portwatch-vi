@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T11:20:20.997Z",
+  "updated": "2026-11-28T11:35:22.293Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T11:01:20.000Z",
-      "lastOkAt": "2026-11-28T11:20:20.997Z",
-      "seen": 53250,
-      "events": 1831,
+      "lastCursor": "2026-11-28T11:30:53.000Z",
+      "lastOkAt": "2026-11-28T11:35:22.293Z",
+      "seen": 53500,
+      "events": 1845,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T08:34:09.000Z",
-      "lastOkAt": "2026-11-28T11:20:20.997Z",
+      "lastOkAt": "2026-11-28T11:35:22.293Z",
       "seen": 48,
       "events": 39,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-28T11:10:15.665Z",
-      "lastOkAt": "2026-11-28T11:20:20.997Z",
-      "seen": 13145,
+      "lastOkAt": "2026-11-28T11:35:22.293Z",
+      "seen": 13231,
       "events": 49,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T10:41:20.148Z",
-      "lastOkAt": "2026-11-28T11:20:20.997Z",
-      "seen": 85200,
+      "lastCursor": "2026-11-28T11:28:11.842Z",
+      "lastOkAt": "2026-11-28T11:35:22.293Z",
+      "seen": 85600,
       "events": 53,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T11:20:20.997Z",
-      "seen": 25876,
+      "lastOkAt": "2026-11-28T11:35:22.293Z",
+      "seen": 26022,
       "events": 14,
       "errors": 0
     }
@@ -18902,10 +18902,17 @@
       "chain": "sha256:6c532f7902bf73d941f1471f26e0550e30c25c580a83aa2e1e5cc0136ded3970",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T11:35:22.293Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository, which is primary but not independent, and its excerpt is empty, so nothing stored plainly substantiates the specific 0%-to-66% move."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T11:35:22.293Z"
     },
     {
       "id": "20261128t111015z-slaktarnvi-3904f3da",
@@ -19713,6 +19720,63 @@
       "heldReasons": [
         "a rate cap"
       ]
+    },
+    {
+      "id": "20261128t113040z-victory-4gb-f02e55ed",
+      "key": "update|victory-4gb|activity|41570",
+      "kind": "update",
+      "projectId": "victory-4gb",
+      "projectName": "victory-4gb",
+      "at": "2026-11-28T11:30:40Z",
+      "detectedAt": "2026-11-28T11:35:22.293Z",
+      "title": "victory-4gb opened pull request #35",
+      "oneLine": "Evict idle table-backed textures under pressure (VICTORY_SLOT_EVICT, off by default)",
+      "sources": [
+        {
+          "url": "https://github.com/Dathinel/victory-4gb/pull/35",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Evict idle table-backed textures under pressure (VICTORY_SLOT_EVICT, off by default)",
+          "at": "2026-11-28T11:30:40Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "dathinel/victory-4gb",
+        "name": "victory-4gb",
+        "words": [
+          "victory-4gb"
+        ],
+        "hash": "550090802855427f",
+        "projectId": "victory-4gb"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:2c06c0e02cb113d655859813210b952116da00e79bc84fd7b08abdb529a67a24",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T11:35:22.293Z",
+          "by": "desk",
+          "note": "The one line restates the pull request's own title from the project's repository, which plainly supports it and no source contradicts it."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T11:35:22.293Z"
     }
   ],
   "reports": [
