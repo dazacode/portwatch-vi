@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T10:50:22.989Z",
+  "updated": "2026-11-28T11:05:54.645Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T10:30:54.000Z",
-      "lastOkAt": "2026-11-28T10:50:22.989Z",
-      "seen": 52750,
-      "events": 1817,
+      "lastCursor": "2026-11-28T11:01:20.000Z",
+      "lastOkAt": "2026-11-28T11:05:54.645Z",
+      "seen": 53000,
+      "events": 1831,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T08:34:09.000Z",
-      "lastOkAt": "2026-11-28T10:50:22.989Z",
+      "lastOkAt": "2026-11-28T11:05:54.645Z",
       "seen": 48,
       "events": 39,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-28T10:40:15.351Z",
-      "lastOkAt": "2026-11-28T10:50:22.989Z",
-      "seen": 12992,
+      "lastOkAt": "2026-11-28T11:05:54.645Z",
+      "seen": 13059,
       "events": 30,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T10:05:49.341Z",
-      "lastOkAt": "2026-11-28T10:50:22.989Z",
-      "seen": 84400,
+      "lastCursor": "2026-11-28T10:41:20.148Z",
+      "lastOkAt": "2026-11-28T11:05:54.645Z",
+      "seen": 84800,
       "events": 53,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T10:50:22.989Z",
-      "seen": 25584,
+      "lastOkAt": "2026-11-28T11:05:54.645Z",
+      "seen": 25730,
       "events": 14,
       "errors": 0
     }
@@ -18623,10 +18623,17 @@
       "chain": "sha256:90fbc5e539b0c0a5a9f1f67be1cc8b47bcfeb6b93cdb01eea5546fcda2822beb",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T11:05:54.645Z",
+          "by": "desk",
+          "note": "The only source is the project’s own repository, which is primary but not independent, and its excerpt is empty, so the 0% to 63.3% move is not plainly supported by stored material."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T11:05:54.645Z"
     },
     {
       "id": "20261128t104015z-victoryunified-keel-bf16654c",
@@ -18678,6 +18685,63 @@
       "heldReasons": [
         "a rate cap"
       ]
+    },
+    {
+      "id": "20261128t105709z-palmetto-f41dacb9",
+      "key": "update|palmetto|activity|41570",
+      "kind": "update",
+      "projectId": "palmetto",
+      "projectName": "Palmetto",
+      "at": "2026-11-28T10:57:09Z",
+      "detectedAt": "2026-11-28T11:05:54.645Z",
+      "title": "Palmetto pushed 4 commits",
+      "oneLine": "docs: round-22 menu push - session-3 completion, SSE4a, gated presenter arms and the remaining content wall",
+      "sources": [
+        {
+          "url": "https://github.com/luizwidmer/palmetto/commit/58adb5b1768340195e4bfed02c3628662472b415",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "docs: round-22 menu push - session-3 completion, SSE4a, gated presenter arms and the remaining content wall",
+          "at": "2026-11-28T10:35:57Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "luizwidmer/palmetto",
+        "name": "palmetto",
+        "words": [
+          "palmetto"
+        ],
+        "hash": "cb1cc86038d0aa09",
+        "projectId": "palmetto"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:453e9693d34828ab13e01cc50cd0a62d34739e8e579cc4d87762d8a64af52987",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T11:05:54.645Z",
+          "by": "desk",
+          "note": "The only source is the project’s own repository, which is primary but not independent, and the empty excerpt leaves the claimed four-commit push insufficiently supported."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T11:05:54.645Z"
     }
   ],
   "reports": [
