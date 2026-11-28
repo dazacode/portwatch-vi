@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T14:35:23.950Z",
+  "updated": "2026-11-28T14:50:23.123Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T14:31:47.000Z",
-      "lastOkAt": "2026-11-28T14:35:23.950Z",
-      "seen": 56500,
+      "lastOkAt": "2026-11-28T14:50:23.123Z",
+      "seen": 56750,
       "events": 1935,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T10:48:06.000Z",
-      "lastOkAt": "2026-11-28T14:35:23.950Z",
+      "lastOkAt": "2026-11-28T14:50:23.123Z",
       "seen": 50,
       "events": 41,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-28T11:10:15.665Z",
-      "lastOkAt": "2026-11-28T14:35:23.950Z",
-      "seen": 14263,
+      "lastOkAt": "2026-11-28T14:50:23.123Z",
+      "seen": 14349,
       "events": 49,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T14:25:22.331Z",
-      "lastOkAt": "2026-11-28T14:35:23.950Z",
-      "seen": 90400,
+      "lastOkAt": "2026-11-28T14:50:23.123Z",
+      "seen": 90800,
       "events": 57,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-28T02:35:23.950Z",
-      "lastOkAt": "2026-11-28T14:35:23.950Z",
-      "seen": 27774,
+      "lastCursor": "2026-11-28T02:50:23.123Z",
+      "lastOkAt": "2026-11-28T14:50:23.123Z",
+      "seen": 27920,
       "events": 14,
       "errors": 0
     }
@@ -21308,10 +21308,17 @@
       "chain": "sha256:0bfccc2f78f45e65cdb2a93e69d317b5c6aad23cb713370721e1712d5452d3f4",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T14:50:23.123Z",
+          "by": "desk",
+          "note": "The project’s GitHub source directly matches the item’s one-line claim about pull request #153 and its stated performance change, with no conflicting source."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T14:50:23.123Z"
     },
     {
       "id": "20261128t130334z-leonida-92ce9ea8",
@@ -21359,10 +21366,17 @@
       "chain": "sha256:016d15a17d9f460970fc7d4e5bf03879b9f99ae86f07d55b30ebe62e8d0e3f24",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T14:50:23.123Z",
+          "by": "desk",
+          "note": "The item rests on a single outside source whose excerpt merely repeats the headline, so the takedown claim is too thin to publish."
+        }
+      ],
       "heldReasons": [
         "low confidence"
-      ]
+      ],
+      "deskAt": "2026-11-28T14:50:23.123Z"
     },
     {
       "id": "20261128t135958z-tequesta-2813fdbf",
