@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T03:38:45.982Z",
+  "updated": "2026-11-28T03:50:24.471Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T03:35:36.000Z",
-      "lastOkAt": "2026-11-28T03:38:45.982Z",
-      "seen": 45500,
+      "lastOkAt": "2026-11-28T03:50:24.471Z",
+      "seen": 45750,
       "events": 1615,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T02:20:43.000Z",
-      "lastOkAt": "2026-11-28T03:38:45.982Z",
+      "lastOkAt": "2026-11-28T03:50:24.471Z",
       "seen": 46,
       "events": 37,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T15:38:45.982Z",
-      "lastOkAt": "2026-11-28T03:38:45.982Z",
-      "seen": 11161,
+      "lastCursor": "2026-11-27T15:50:24.471Z",
+      "lastOkAt": "2026-11-28T03:50:24.471Z",
+      "seen": 11224,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T03:28:34.000Z",
-      "lastOkAt": "2026-11-28T03:38:45.982Z",
-      "seen": 72800,
+      "lastOkAt": "2026-11-28T03:50:24.471Z",
+      "seen": 73200,
       "events": 49,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T03:38:45.982Z",
-      "seen": 21990,
+      "lastOkAt": "2026-11-28T03:50:24.471Z",
+      "seen": 22113,
       "events": 14,
       "errors": 0
     }
@@ -15284,12 +15284,17 @@
           "at": "2026-11-27T19:06:50.048Z",
           "by": "desk",
           "note": "The only stored source is a single Bluesky post that merely repeats the claim, which is too thin and non-independent to support the takedown line."
+        },
+        {
+          "at": "2026-11-28T03:50:24.471Z",
+          "by": "desk",
+          "note": "The only source is a single Bluesky post, which the rules treat as weak, and nothing independently corroborates the specific 3,007-repo figure."
         }
       ],
       "heldReasons": [
         "low confidence"
       ],
-      "deskAt": "2026-11-27T19:06:50.048Z"
+      "deskAt": "2026-11-28T03:50:24.471Z"
     },
     {
       "id": "20261127t185358z-victory-rtx2080-f3049b16",
@@ -15701,12 +15706,17 @@
           "at": "2026-11-27T21:20:21.231Z",
           "by": "desk",
           "note": "The only source is the project's own repository with an empty excerpt, so the commit title merely restates the claim without independent corroboration or verifiable detail."
+        },
+        {
+          "at": "2026-11-28T03:50:24.471Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository entry with an empty excerpt, so the commit's claims are self-reported and unverified by any independent or corroborating source."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T21:20:21.231Z"
+      "deskAt": "2026-11-28T03:50:24.471Z"
     },
     {
       "id": "20261127t214650z-leonida-continued-5244b01f",
