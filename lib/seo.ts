@@ -94,6 +94,12 @@ export const PAGES = {
       "Pick your graphics card and processor to see which console version of GTA VI your PC matches: Xbox Series S, PS5 and Series X, or PS5 Pro. From benchmarks, not TFLOPS.",
     path: "/can-i-run-it",
   },
+  launcher: {
+    title: "VILauncher by VIPortLive: install, update and play community GTA VI projects",
+    description:
+      "The free, open-source launcher from VIPortLive. Pick a project from our board, and VILauncher installs the tools, builds it, keeps it updated and starts it with your own game files. Windows, macOS and Linux.",
+    path: "/projects/launcher",
+  },
   top20: {
     title: "GTA VI on PC: the top 20 builds",
     description:
