@@ -1,6 +1,17 @@
 {
-  "lastRun": "2026-11-28T11:41:16.957Z",
+  "lastRun": "2026-11-28T12:41:29.448Z",
   "runs": [
+    {
+      "at": "2026-11-28T12:41:29.448Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [],
+      "skipped": [
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world in Full HD”",
+        "held: candidate Amdavea/belobug-repost: describes access to the game",
+        "held: candidate RipcuBAN/victory-fork: describes access to the game"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-28T11:41:16.957Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -456,20 +467,6 @@
       "skipped": [
         "held: score anyxboxx gta.fps=16: proposed, from “About 16–17 fps in the world”"
       ],
-      "note": null
-    },
-    {
-      "at": "2026-11-26T17:41:43.484Z",
-      "by": "Pollinations, gpt-oss-20b",
-      "applied": [
-        "candidate GabrieelDuart/GabeGTA6",
-        "candidate bolado-dev/mandy-port",
-        "candidate 1R0nim/iR0-fork",
-        "candidate zortos293/XSEmu",
-        "candidate DesignWithTommy/i95-GTA6-PC-Launcher",
-        "candidate lepotane/VIctory-leonida"
-      ],
-      "skipped": [],
       "note": null
     }
   ]
