@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-27T23:50:19.922Z",
+  "updated": "2026-11-28T00:06:08.328Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-27T23:30:54.000Z",
-      "lastOkAt": "2026-11-27T23:50:19.922Z",
-      "seen": 42000,
-      "events": 1467,
+      "lastCursor": "2026-11-28T00:01:24.000Z",
+      "lastOkAt": "2026-11-28T00:06:08.328Z",
+      "seen": 42250,
+      "events": 1491,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-27T23:50:19.922Z",
+      "lastOkAt": "2026-11-28T00:06:08.328Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-27T23:50:19.922Z",
-      "seen": 10279,
+      "lastOkAt": "2026-11-28T00:06:08.328Z",
+      "seen": 10342,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T23:04:01.000Z",
-      "lastOkAt": "2026-11-27T23:50:19.922Z",
-      "seen": 67200,
+      "lastCursor": "2026-11-27T23:57:05.053Z",
+      "lastOkAt": "2026-11-28T00:06:08.328Z",
+      "seen": 67600,
       "events": 46,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T11:50:19.922Z",
-      "lastOkAt": "2026-11-27T23:50:19.922Z",
-      "seen": 20268,
+      "lastCursor": "2026-11-27T12:06:08.328Z",
+      "lastOkAt": "2026-11-28T00:06:08.328Z",
+      "seen": 20391,
       "events": 12,
       "errors": 0
     }
@@ -15866,6 +15866,372 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-27T23:05:22.256Z"
+    },
+    {
+      "id": "20261128t000124z-tuxbox-7b1ab135",
+      "key": "update|tuxbox|activity|41570",
+      "kind": "update",
+      "projectId": "tuxbox",
+      "projectName": "TuxBox",
+      "at": "2026-11-28T00:01:24Z",
+      "detectedAt": "2026-11-28T00:06:08.328Z",
+      "title": "TuxBox opened pull request #344",
+      "oneLine": "d3d12: append the descriptor slots a raster root leaves out",
+      "sources": [
+        {
+          "url": "https://github.com/brcly/TuxBox/pull/344",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "d3d12: append the descriptor slots a raster root leaves out",
+          "at": "2026-11-28T00:01:24Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "brcly/tuxbox",
+        "name": "tuxbox",
+        "words": [
+          "tuxbox"
+        ],
+        "hash": "980ac0c7552140c0",
+        "projectId": "tuxbox"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:2667bcbfc5e8d2936bca169d64c9699381d46dc1f1815787c940aae03688622c",
+      "reportId": "20261128t000124z-tuxbox-7b1ab135-report",
+      "discordAt": "2026-11-28T00:06:32.684Z",
+      "revisions": [],
+      "note": "model: overview has 344, which is not in a source",
+      "publishedAt": "2026-11-28T00:06:08.328Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261128t000112z-whibwhi-own-afe0d734",
+      "key": "update|whibwhi-own|activity|41570",
+      "kind": "update",
+      "projectId": "whibwhi-own",
+      "projectName": "whibwhi-own",
+      "at": "2026-11-28T00:01:12Z",
+      "detectedAt": "2026-11-28T00:06:08.328Z",
+      "title": "whibwhi-own pushed 5 commits",
+      "oneLine": "boot tool: each progress report at its own moment, read from the stamp, looked at every 50 ms (bugfix: undid AI trap)",
+      "sources": [
+        {
+          "url": "https://github.com/ExCorvus/whibwhi-own/commit/96a0a14ee0522fb84b8729310f9c252ec548bb5c",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "boot tool: each progress report at its own moment, read from the stamp, looked at every 50 ms (bugfix: undid AI trap)",
+          "at": "2026-11-28T00:01:12Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "excorvus/whibwhi-own",
+        "name": "whibwhi-own",
+        "words": [
+          "whibwhi-own"
+        ],
+        "hash": "74146c313071bdc3",
+        "projectId": "whibwhi-own"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:f47310f254a6e4744323ff5f4217b134516d84ad0930959cb38ed187bcaa122e",
+      "reportId": "20261128t000112z-whibwhi-own-afe0d734-report",
+      "discordAt": "2026-11-28T00:06:32.684Z",
+      "revisions": [],
+      "publishedAt": "2026-11-28T00:06:08.328Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261128t000035z-anyxboxx-82217b02",
+      "key": "update|anyxboxx|activity|41570",
+      "kind": "update",
+      "projectId": "anyxboxx",
+      "projectName": "AnyXboxX",
+      "at": "2026-11-28T00:00:35Z",
+      "detectedAt": "2026-11-28T00:06:08.328Z",
+      "title": "AnyXboxX opened pull request #550",
+      "oneLine": "perf: the texture pool keeps only the empty blocks that fit under the 85 % line (8 GB: -512 MB at the peak, no 640 MB churn)",
+      "sources": [
+        {
+          "url": "https://github.com/LooperSalty/AnyXboxX/pull/550",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "perf: the texture pool keeps only the empty blocks that fit under the 85 % line (8 GB: -512 MB at the peak, no 640 MB ch",
+          "at": "2026-11-28T00:00:35Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "loopersalty/anyxboxx",
+        "name": "anyxboxx",
+        "words": [
+          "anyxboxx"
+        ],
+        "hash": "2da14ac27c2039cc",
+        "projectId": "anyxboxx"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:8051ab1e70dac0b6cddf60ee539ea5d38f3b0d73c76e3752085ad13cc62b25f7",
+      "reportId": "20261128t000035z-anyxboxx-82217b02-report",
+      "discordAt": "2026-11-28T00:06:32.684Z",
+      "revisions": [],
+      "publishedAt": "2026-11-28T00:06:08.328Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261128t000027z-leonida-continued-3c6cf680",
+      "key": "update|leonida-continued|activity|41570",
+      "kind": "update",
+      "projectId": "leonida-continued",
+      "projectName": "Leonida Continued",
+      "at": "2026-11-28T00:00:27Z",
+      "detectedAt": "2026-11-28T00:06:08.328Z",
+      "title": "Leonida Continued opened pull request #2512",
+      "oneLine": "make_game assets: reuse local BCPack history on resume (ASSETS-BCPACK-STRICT-HISTORY)",
+      "sources": [
+        {
+          "url": "https://github.com/ProjectLeonida/mandy/pull/2512",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "make_game assets: reuse local BCPack history on resume (ASSETS-BCPACK-STRICT-HISTORY)",
+          "at": "2026-11-28T00:00:27Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "ubiquitarianism/leonida",
+        "name": "leonida continued",
+        "words": [
+          "leonida",
+          "continued",
+          "leonida-continued"
+        ],
+        "hash": "97e5cc1c64514408",
+        "projectId": "leonida-continued"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:7fdc3302040ac2e7db0fdb96c9b66e681562c36a06bdbff621c0df3f7d4c37a5",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T00:06:08.328Z",
+          "by": "desk",
+          "note": "The project’s own GitHub repository directly lists the pull request with the same title, plainly supporting the one-line update and with no conflicting source."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T00:06:08.328Z"
+    },
+    {
+      "id": "20261128t000027z-mandy-a48a0db7",
+      "key": "update|mandy|activity|41570",
+      "kind": "update",
+      "projectId": "mandy",
+      "projectName": "Leonida Continued",
+      "at": "2026-11-28T00:00:27Z",
+      "detectedAt": "2026-11-28T00:06:08.328Z",
+      "title": "Leonida Continued opened pull request #2512",
+      "oneLine": "make_game assets: reuse local BCPack history on resume (ASSETS-BCPACK-STRICT-HISTORY)",
+      "sources": [
+        {
+          "url": "https://github.com/ProjectLeonida/mandy/pull/2512",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "make_game assets: reuse local BCPack history on resume (ASSETS-BCPACK-STRICT-HISTORY)",
+          "at": "2026-11-28T00:00:27Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "projectleonida/mandy",
+        "name": "leonida continued",
+        "words": [
+          "leonida",
+          "continued",
+          "mandy"
+        ],
+        "hash": "a734a84941110b14",
+        "projectId": "mandy"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:a74bfb536a9b225d6ce660a98455741990c21c4ff5f7966b5fe399e245fda300",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T00:06:08.328Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository, which is primary but not independent, and the empty excerpt leaves the PR claim too thin to publish."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T00:06:08.328Z"
+    },
+    {
+      "id": "20261127t234615z-victory-nvidia-cd518f6a",
+      "key": "reference|victory-nvidia|activity|41569",
+      "kind": "reference",
+      "projectId": "victory-nvidia",
+      "projectName": "VIctory-NVIDIA",
+      "at": "2026-11-27T23:46:15Z",
+      "detectedAt": "2026-11-28T00:06:08.328Z",
+      "title": "New reference to VIctory-NVIDIA",
+      "oneLine": "VIctory-NVIDIA fork: GTA VI Xbox Series dump on Windows with DLSS, SM86 framegen, integrated debugger, GPU telemetry and read-only diagnostics DLL",
+      "sources": [
+        {
+          "url": "https://github.com/Take-Tree-Organization/GTA.6.Recomp.hybrid2391v2",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Take-Tree-Organization/GTA.6.Recomp.hybrid2391v2",
+          "at": "2026-11-27T23:46:15Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "trustno1-coder/victory-nvidia",
+        "name": "victory-nvidia",
+        "words": [
+          "victory-nvidia"
+        ],
+        "hash": "9c0c784094829250",
+        "projectId": "victory-nvidia"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:3679ebf80a597c06a9e25befc3b0f2f3c2a6734ebc9cb2b66d3fd37eee252c14",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t233312z-victory-amd-4k-4973ba52",
+      "key": "update|victory-amd-4k|activity|41569",
+      "kind": "update",
+      "projectId": "victory-amd-4k",
+      "projectName": "VIctory-AMD-4K",
+      "at": "2026-11-27T23:33:12Z",
+      "detectedAt": "2026-11-28T00:06:08.328Z",
+      "title": "VIctory-AMD-4K pushed 1 commit",
+      "oneLine": "perf(gpu,shader): Stage 4B+5A residency/RAM/night-floor, wide/coalesced loads, FAST_MATH=31, foliage barrier fix (Round 60)",
+      "sources": [
+        {
+          "url": "https://github.com/elaboratecl/VIctory-AMD-4K/commit/44547983e20215af6794c759d704876c6f53e924",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "perf(gpu,shader): Stage 4B+5A residency/RAM/night-floor, wide/coalesced loads, FAST_MATH=31, foliage barrier fix (Round ",
+          "at": "2026-11-27T23:33:12Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "elaboratecl/victory-amd-4k",
+        "name": "victory-amd-4k",
+        "words": [
+          "victory-amd-4k"
+        ],
+        "hash": "f22f1149424070f2",
+        "projectId": "victory-amd-4k"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:03c7127f18447c33e6a54dfb1bdaa8b706488ab5fe4beb043760b3ce6b673c66",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
@@ -16209,6 +16575,69 @@
           "outlet": "GitHub",
           "title": "Benchmark button for runners with a built-in benchmark",
           "at": "2026-11-27T00:50:02Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261128t000124z-tuxbox-7b1ab135-report",
+      "itemId": "20261128t000124z-tuxbox-7b1ab135",
+      "publishedAt": "2026-11-28T00:06:08.328Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "TuxBox has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. d3d12: append the descriptor slots a raster root leaves out.",
+      "evidence": "The entry rests on one stored source, GitHub. d3d12: append the descriptor slots a raster root leaves out.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/brcly/TuxBox/pull/344",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "d3d12: append the descriptor slots a raster root leaves out",
+          "at": "2026-11-28T00:01:24Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261128t000112z-whibwhi-own-afe0d734-report",
+      "itemId": "20261128t000112z-whibwhi-own-afe0d734",
+      "publishedAt": "2026-11-28T00:06:08.328Z",
+      "by": "free",
+      "confidence": "moderate",
+      "overview": "This is an update entry for the whibwhi-own project, described as a push of five commits. The stated subject is a boot tool change that gives each progress report its own moment, reads it from the stamp, and checks every 50 ms. It is labeled a bugfix that undid an AI trap.",
+      "changed": "The record moved by adding a five-commit push to whibwhi-own. The visible change concerns progress reporting timing in the boot tool, with the stamp as the read source and a 50 ms check interval. The entry also marks the change as a bugfix that reversed an AI trap.",
+      "evidence": "The confidence bucket is moderate, with the reasons that this is the project’s own repository and a record the pipeline already read. The only source is a GitHub primary item carrying the same boot tool title. Its excerpt is empty, so the support rests on the entry metadata and source title rather than quoted source text.",
+      "unknown": "It is not established what the five commits change in code, what the AI trap refers to, or whether the 50 ms progress timing works as described. Authenticity and release meaning are not established. The empty source excerpt also leaves the details unverified beyond the record and title.",
+      "sources": [
+        {
+          "url": "https://github.com/ExCorvus/whibwhi-own/commit/96a0a14ee0522fb84b8729310f9c252ec548bb5c",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "boot tool: each progress report at its own moment, read from the stamp, looked at every 50 ms (bugfix: undid AI trap)",
+          "at": "2026-11-28T00:01:12Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261128t000035z-anyxboxx-82217b02-report",
+      "itemId": "20261128t000035z-anyxboxx-82217b02",
+      "publishedAt": "2026-11-28T00:06:08.328Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "AnyXboxX has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. perf: the texture pool keeps only the empty blocks that fit under the 85 % line (8 GB: -512 MB at the peak, no 640 MB churn).",
+      "evidence": "The entry rests on one stored source, GitHub. perf: the texture pool keeps only the empty blocks that fit under the 85 % line (8 GB: -512 MB at the peak, no 640 MB ch.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/LooperSalty/AnyXboxX/pull/550",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "perf: the texture pool keeps only the empty blocks that fit under the 85 % line (8 GB: -512 MB at the peak, no 640 MB ch",
+          "at": "2026-11-28T00:00:35Z",
           "kind": "primary"
         }
       ]
