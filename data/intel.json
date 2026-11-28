@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T00:06:08.328Z",
+  "updated": "2026-11-28T00:20:20.604Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T00:01:24.000Z",
-      "lastOkAt": "2026-11-28T00:06:08.328Z",
-      "seen": 42250,
+      "lastOkAt": "2026-11-28T00:20:20.604Z",
+      "seen": 42500,
       "events": 1491,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-28T00:06:08.328Z",
+      "lastOkAt": "2026-11-28T00:20:20.604Z",
       "seen": 44,
       "events": 35,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-28T00:06:08.328Z",
-      "seen": 10342,
+      "lastOkAt": "2026-11-28T00:20:20.604Z",
+      "seen": 10405,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-27T23:57:05.053Z",
-      "lastOkAt": "2026-11-28T00:06:08.328Z",
-      "seen": 67600,
+      "lastOkAt": "2026-11-28T00:20:20.604Z",
+      "seen": 68000,
       "events": 46,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T12:06:08.328Z",
-      "lastOkAt": "2026-11-28T00:06:08.328Z",
-      "seen": 20391,
+      "lastCursor": "2026-11-27T12:20:20.604Z",
+      "lastOkAt": "2026-11-28T00:20:20.604Z",
+      "seen": 20514,
       "events": 12,
       "errors": 0
     }
@@ -16178,10 +16178,17 @@
       "chain": "sha256:3679ebf80a597c06a9e25befc3b0f2f3c2a6734ebc9cb2b66d3fd37eee252c14",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T00:20:20.604Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository with no excerpt, so it is primary but not independent and does not plainly substantiate the full one-line claim."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T00:20:20.604Z"
     },
     {
       "id": "20261127t233312z-victory-amd-4k-4973ba52",
@@ -16228,10 +16235,17 @@
       "chain": "sha256:03c7127f18447c33e6a54dfb1bdaa8b706488ab5fe4beb043760b3ce6b673c66",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T00:20:20.604Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt and a truncated title, so the commit line is not independently corroborated and the pipeline record alone is too thin to publish."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T00:20:20.604Z"
     }
   ],
   "reports": [
