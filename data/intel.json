@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T07:20:22.538Z",
+  "updated": "2026-11-28T07:35:21.788Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T07:01:08.000Z",
-      "lastOkAt": "2026-11-28T07:20:22.538Z",
-      "seen": 49250,
-      "events": 1708,
+      "lastCursor": "2026-11-28T07:30:14.000Z",
+      "lastOkAt": "2026-11-28T07:35:21.788Z",
+      "seen": 49500,
+      "events": 1724,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T03:46:19.000Z",
-      "lastOkAt": "2026-11-28T07:20:22.538Z",
+      "lastOkAt": "2026-11-28T07:35:21.788Z",
       "seen": 47,
       "events": 38,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T19:20:22.538Z",
-      "lastOkAt": "2026-11-28T07:20:22.538Z",
-      "seen": 12106,
+      "lastCursor": "2026-11-27T19:35:21.788Z",
+      "lastOkAt": "2026-11-28T07:35:21.788Z",
+      "seen": 12169,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T06:49:29.241Z",
-      "lastOkAt": "2026-11-28T07:20:22.538Z",
-      "seen": 78800,
-      "events": 51,
+      "lastCursor": "2026-11-28T07:17:55.771Z",
+      "lastOkAt": "2026-11-28T07:35:21.788Z",
+      "seen": 79200,
+      "events": 52,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T07:20:22.538Z",
-      "seen": 23835,
+      "lastOkAt": "2026-11-28T07:35:21.788Z",
+      "seen": 23958,
       "events": 14,
       "errors": 0
     }
@@ -16839,12 +16839,17 @@
           "at": "2026-11-28T01:05:21.607Z",
           "by": "desk",
           "note": "The only support is the project's own repository with no excerpt, so the claim that Banana Theft Auto is a guided Windows menu built on Leonida is unverified and not independent."
+        },
+        {
+          "at": "2026-11-28T07:35:21.788Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository with an empty excerpt, so nothing independent or even quoted confirms that Banana Theft Auto is built on Leonida."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-28T01:05:21.607Z"
+      "deskAt": "2026-11-28T07:35:21.788Z"
     },
     {
       "id": "20261128t002200z-victory-gta6-09d42069",
@@ -18047,6 +18052,113 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-28T06:35:21.764Z"
+    },
+    {
+      "id": "20261128t070515z-scene-adeb1fb0",
+      "key": "takedown|-|https://bsky.app/profile/madrobotblog.bsky.social/post/3n3e5aawpyw2y|41570",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-28T07:05:15.945Z",
+      "detectedAt": "2026-11-28T07:35:21.788Z",
+      "title": "Bluesky in a takedown report",
+      "oneLine": "GTA 6 on PC: the AI-built ports, the leaked files and Take-Two’s takedowns, explained…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/madrobotblog.bsky.social/post/3n3e5aawpyw2y",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "GTA 6 on PC: the AI-built ports, the leaked files and Take-Two’s takedowns, explained #GTA6 #ClaudeCode #AI",
+          "at": "2026-11-28T07:05:15.945Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "GTA 6 on PC: the AI-built ports, the leaked files and Take-Two’s takedowns, explained #GTA6 #ClaudeCode #AI"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "47096366083284cc",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": true,
+      "audit": null,
+      "chain": "sha256:51e554c9b2a3157371b1b2bd8609691446659bc47bc51d868ae1d0ff6ec86e2d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261128t070352z-victory-gta6-302ce7f3",
+      "key": "reference|victory-gta6|activity|41570",
+      "kind": "reference",
+      "projectId": "victory-gta6",
+      "projectName": "hyphennn",
+      "at": "2026-11-28T07:03:52Z",
+      "detectedAt": "2026-11-28T07:35:21.788Z",
+      "title": "New reference to hyphennn",
+      "oneLine": "GTA 6 (Xbox Series) PC compatibility fork of VIctory: source only, no game files.",
+      "sources": [
+        {
+          "url": "https://github.com/claude-GTA6/VIctory-GTA6",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "claude-GTA6/VIctory-GTA6",
+          "at": "2026-11-28T07:03:52Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "fxceless/victory-fork",
+        "name": "hyphennn",
+        "words": [
+          "hyphennn",
+          "victory-gta6"
+        ],
+        "hash": "0d415aa8926904c8",
+        "projectId": "victory-gta6"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:f79e802b5e49d2cc3c300d74c3147ebe81bbe3708f4b11fa338b2f83cbd0fd31",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T07:35:21.788Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the one-line claim about a PC compatibility fork cannot be verified and is not independently supported."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T07:35:21.788Z"
     }
   ],
   "reports": [
