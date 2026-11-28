@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T09:06:53.326Z",
+  "updated": "2026-11-28T09:20:22.340Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T09:01:02.000Z",
-      "lastOkAt": "2026-11-28T09:06:53.326Z",
-      "seen": 51000,
+      "lastOkAt": "2026-11-28T09:20:22.340Z",
+      "seen": 51250,
       "events": 1772,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T03:46:19.000Z",
-      "lastOkAt": "2026-11-28T09:06:53.326Z",
+      "lastOkAt": "2026-11-28T09:20:22.340Z",
       "seen": 47,
       "events": 38,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T21:06:53.326Z",
-      "lastOkAt": "2026-11-28T09:06:53.326Z",
-      "seen": 12547,
+      "lastCursor": "2026-11-27T21:20:22.340Z",
+      "lastOkAt": "2026-11-28T09:20:22.340Z",
+      "seen": 12610,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T08:11:40.000Z",
-      "lastOkAt": "2026-11-28T09:06:53.326Z",
-      "seen": 81600,
+      "lastOkAt": "2026-11-28T09:20:22.340Z",
+      "seen": 82000,
       "events": 53,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T09:06:53.326Z",
-      "seen": 24696,
+      "lastOkAt": "2026-11-28T09:20:22.340Z",
+      "seen": 24819,
       "events": 14,
       "errors": 0
     }
@@ -17092,12 +17092,17 @@
           "at": "2026-11-28T01:35:22.978Z",
           "by": "desk",
           "note": "The only support is the project's own repository entry with an empty excerpt, which is primary but not independent and provides no stored text confirming the claim."
+        },
+        {
+          "at": "2026-11-28T09:20:22.340Z",
+          "by": "desk",
+          "note": "The only support is a pull-request title in the project's own repository with no excerpt or merged content, so the claimed behavior is unverified and not independently corroborated."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-28T01:35:22.978Z"
+      "deskAt": "2026-11-28T09:20:22.340Z"
     },
     {
       "id": "20261128t000353z-hybridgt-63b24087",
@@ -17607,12 +17612,17 @@
           "at": "2026-11-28T02:20:23.012Z",
           "by": "desk",
           "note": "The only stored source is the project’s own repository with no excerpt, so it is a thin, non-independent basis for the specific claims about DLSS 5, resolution, frame rates, and PS5 ownership."
+        },
+        {
+          "at": "2026-11-28T09:20:22.340Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub repository with no excerpt, so it is not independent and does not plainly substantiate the specific performance and DLSS 5 claims."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-28T02:20:23.012Z"
+      "deskAt": "2026-11-28T09:20:22.340Z"
     },
     {
       "id": "20261128t020539z-scene-22a4ee08",
