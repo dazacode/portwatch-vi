@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-28T09:25:49.066Z",
+  "lastRun": "2026-11-28T12:25:57.458Z",
   "read": [
     "https://github.com/avatarmanz/VIctory-7900XTX/issues/76@2026-11-26T02:28:56Z",
     "https://github.com/avatarmanz/VIctory-7900XTX/issues/75@2026-11-26T02:09:56Z",
@@ -302,9 +302,45 @@
     "https://github.com/LooperSalty/AnyXboxX/issues/508@2026-11-27T14:56:53Z",
     "https://github.com/ThatRecompDev/five-star-recomp/issues/64@2026-11-28T08:52:25Z",
     "https://github.com/ProjectLeonida/mandy/issues/1702@2026-11-26T12:40:28Z",
-    "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/867@2026-11-28T08:59:44Z"
+    "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/867@2026-11-28T08:59:44Z",
+    "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/1058@2026-11-28T12:24:45Z",
+    "https://github.com/fxceless/victory-fork/issues/1368@2026-11-28T11:55:57Z",
+    "https://github.com/Marvisak/VIctory/issues/3711@2026-11-28T10:29:40Z",
+    "https://github.com/xcl-dev/xcl/issues/3117@2026-11-28T10:48:06Z",
+    "https://github.com/brcly/TuxBox/issues/215@2026-11-27T05:25:11Z",
+    "https://github.com/R0Y00/Xbox2Windows/issues/3280@2026-11-28T05:09:39Z",
+    "https://github.com/LooperSalty/AnyXboxX/issues/449@2026-11-27T15:42:37Z",
+    "https://github.com/ThatRecompDev/five-star-recomp/issues/64@2026-11-28T12:18:58Z",
+    "https://github.com/luizwidmer/palmetto/issues/4@2026-11-28T12:08:37Z",
+    "https://github.com/zortos293/XSEmu/issues/47@2026-11-28T09:54:37Z",
+    "https://github.com/ProjectLeonida/mandy/issues/1602@2026-11-25T20:26:10Z",
+    "https://github.com/TaynanGT/Vice-Tay/issues/386@2026-11-27T23:23:31Z"
   ],
   "items": [
+    {
+      "effortId": "xcl",
+      "kind": "free",
+      "stage": "world",
+      "outcome": "reached",
+      "quote": "This tree is black in the world without 2229",
+      "commit": "5506ab1",
+      "gpu": "RTX 3090",
+      "url": "https://github.com/xcl-dev/xcl/issues/3117",
+      "at": "2026-11-28T10:48:06Z",
+      "by": "607e09bc888f"
+    },
+    {
+      "effortId": "marvis",
+      "kind": "free",
+      "stage": "world",
+      "outcome": "reached",
+      "quote": "When the world stream starts: hundreds of draws per frame; post-world frame times 932–3953 ms; many compute/mesh pipelines have no host pipeline.",
+      "commit": "219878a",
+      "gpu": "GTX 1660 Ti",
+      "url": "https://github.com/Marvisak/VIctory/issues/3711",
+      "at": "2026-11-28T10:29:40Z",
+      "by": "a55825249710"
+    },
     {
       "effortId": "victory-nvidia",
       "kind": "free",
@@ -486,6 +522,18 @@
       "by": "9d59174cd1a7"
     },
     {
+      "effortId": "vice-tay",
+      "kind": "rule",
+      "stage": "world",
+      "quote": "Load into the prologue",
+      "outcome": "reached",
+      "commit": "2dd3479",
+      "gpu": "RTX 5060",
+      "url": "https://github.com/TaynanGT/Vice-Tay/issues/119",
+      "at": "2026-11-27T02:41:26Z",
+      "by": "af7a26b2adb2"
+    },
+    {
       "effortId": "avatarmanz",
       "kind": "free",
       "stage": "boots",
@@ -568,6 +616,18 @@
       "url": "https://github.com/Marvisak/VIctory/issues/3425",
       "at": "2026-11-27T00:45:00Z",
       "by": "752265967b39"
+    },
+    {
+      "effortId": "vice-tay",
+      "kind": "rule",
+      "stage": "world",
+      "quote": "11 fps in the world",
+      "outcome": "reached",
+      "commit": "a252348",
+      "gpu": "RX 6900 XT",
+      "url": "https://github.com/TaynanGT/Vice-Tay/issues/93",
+      "at": "2026-11-27T00:25:13Z",
+      "by": "6ad16b987b82"
     },
     {
       "effortId": "kelvaroq",
@@ -1264,6 +1324,18 @@
       "url": "https://github.com/ubiquitarianism/leonida/issues/1602",
       "at": "2026-11-25T05:37:32Z",
       "by": "cde8b788711a"
+    },
+    {
+      "effortId": "mandy",
+      "kind": "free",
+      "stage": "boots",
+      "outcome": "reached",
+      "quote": "t=9.24 s — package splash present (first present)",
+      "commit": "1cfc29a",
+      "gpu": "RTX 5060 Ti",
+      "url": "https://github.com/ProjectLeonida/mandy/issues/1602",
+      "at": "2026-11-25T05:37:32Z",
+      "by": "e2f397f10aeb"
     },
     {
       "effortId": "five-star-recomp",
