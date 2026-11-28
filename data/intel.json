@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T11:50:20.804Z",
+  "updated": "2026-11-28T12:05:21.281Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T11:30:53.000Z",
-      "lastOkAt": "2026-11-28T11:50:20.804Z",
-      "seen": 53750,
-      "events": 1845,
+      "lastCursor": "2026-11-28T12:01:19.000Z",
+      "lastOkAt": "2026-11-28T12:05:21.281Z",
+      "seen": 54000,
+      "events": 1862,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T08:34:09.000Z",
-      "lastOkAt": "2026-11-28T11:50:20.804Z",
+      "lastOkAt": "2026-11-28T12:05:21.281Z",
       "seen": 48,
       "events": 39,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-28T11:10:15.665Z",
-      "lastOkAt": "2026-11-28T11:50:20.804Z",
-      "seen": 13317,
+      "lastOkAt": "2026-11-28T12:05:21.281Z",
+      "seen": 13403,
       "events": 49,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T11:28:11.842Z",
-      "lastOkAt": "2026-11-28T11:50:20.804Z",
-      "seen": 86000,
+      "lastCursor": "2026-11-28T11:45:07.000Z",
+      "lastOkAt": "2026-11-28T12:05:21.281Z",
+      "seen": 86400,
       "events": 53,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T11:50:20.804Z",
-      "seen": 26168,
+      "lastCursor": "2026-11-28T00:05:21.281Z",
+      "lastOkAt": "2026-11-28T12:05:21.281Z",
+      "seen": 26314,
       "events": 14,
       "errors": 0
     }
@@ -19791,6 +19791,327 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-28T11:35:22.293Z"
+    },
+    {
+      "id": "20261128t120119z-leonida-continued-9caa9b6c",
+      "key": "update|leonida-continued|activity|41571",
+      "kind": "update",
+      "projectId": "leonida-continued",
+      "projectName": "Leonida Continued",
+      "at": "2026-11-28T12:01:19Z",
+      "detectedAt": "2026-11-28T12:05:21.281Z",
+      "title": "Leonida Continued opened pull request #1372",
+      "oneLine": "make_game: a saved translated index that names a shader not carved here is translated again (BUILD-SHADER-RESUME-IDENTITY)",
+      "sources": [
+        {
+          "url": "https://github.com/ProjectLeonida/mandy/pull/1372",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "make_game: a saved translated index that names a shader not carved here is translated again (BUILD-SHADER-RESUME-IDENTIT",
+          "at": "2026-11-28T12:01:19Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "ubiquitarianism/leonida",
+        "name": "leonida continued",
+        "words": [
+          "leonida",
+          "continued",
+          "leonida-continued"
+        ],
+        "hash": "c7f9c8306dd4946c",
+        "projectId": "leonida-continued"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:e3bf0a630676345d936a9a83f1cb18a3a04b8bd0adf85b225773ac3b6f0d0bb7",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T12:05:21.281Z",
+          "by": "desk",
+          "note": "The only source is the project’s own GitHub entry with an empty excerpt, so it is primary but not independent and does not plainly corroborate the specific one-line claim."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T12:05:21.281Z"
+    },
+    {
+      "id": "20261128t120119z-mandy-b6166f0e",
+      "key": "update|mandy|activity|41571",
+      "kind": "update",
+      "projectId": "mandy",
+      "projectName": "Leonida Continued",
+      "at": "2026-11-28T12:01:19Z",
+      "detectedAt": "2026-11-28T12:05:21.281Z",
+      "title": "Leonida Continued opened pull request #1372",
+      "oneLine": "make_game: a saved translated index that names a shader not carved here is translated again (BUILD-SHADER-RESUME-IDENTITY)",
+      "sources": [
+        {
+          "url": "https://github.com/ProjectLeonida/mandy/pull/1372",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "make_game: a saved translated index that names a shader not carved here is translated again (BUILD-SHADER-RESUME-IDENTIT",
+          "at": "2026-11-28T12:01:19Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "projectleonida/mandy",
+        "name": "leonida continued",
+        "words": [
+          "leonida",
+          "continued",
+          "mandy"
+        ],
+        "hash": "c7fde8396f14006c",
+        "projectId": "mandy"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:2b172867969ca2a8e388e8837b19017ccfbb1396074f143e6a1723a826423d62",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T12:05:21.281Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub repository, which is primary but not independent, and its empty excerpt does not plainly verify the full one-line claim."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T12:05:21.281Z"
+    },
+    {
+      "id": "20261128t120102z-marvis-8ad04ec7",
+      "key": "update|marvis|activity|41571",
+      "kind": "update",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-28T12:01:02Z",
+      "detectedAt": "2026-11-28T12:05:21.281Z",
+      "title": "VIctory opened pull request #3657",
+      "oneLine": "HLE: account for intermediate and page-target buffers in DirectStorage staging cap",
+      "sources": [
+        {
+          "url": "https://github.com/Marvisak/VIctory/pull/3657",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "HLE: account for intermediate and page-target buffers in DirectStorage staging cap",
+          "at": "2026-11-28T12:01:02Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "1141780380054693",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:429f6514adce6edccde17ec0d6e547041a3ae554ae58c292caa346c2171179d8",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t120045z-victory-nvidia-4634cc85",
+      "key": "update|victory-nvidia|activity|41571",
+      "kind": "update",
+      "projectId": "victory-nvidia",
+      "projectName": "VIctory-NVIDIA",
+      "at": "2026-11-28T12:00:45Z",
+      "detectedAt": "2026-11-28T12:05:21.281Z",
+      "title": "VIctory-NVIDIA opened pull request #257",
+      "oneLine": "fix(gpu): failed swap-chain creation and resize are retried once a second",
+      "sources": [
+        {
+          "url": "https://github.com/trustno1-coder/VIctory-NVIDIA/pull/257",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "fix(gpu): failed swap-chain creation and resize are retried once a second",
+          "at": "2026-11-28T12:00:45Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "trustno1-coder/victory-nvidia",
+        "name": "victory-nvidia",
+        "words": [
+          "victory-nvidia"
+        ],
+        "hash": "842141b130100641",
+        "projectId": "victory-nvidia"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:07a8de7e712e393ab8fa4d9ca203358ce91f8cc6f95211823c6b384ea6c4bdcf",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t114923z-vice-tay-57da9263",
+      "key": "update|vice-tay|activity|41570",
+      "kind": "update",
+      "projectId": "vice-tay",
+      "projectName": "Vice-Tay",
+      "at": "2026-11-28T11:49:23Z",
+      "detectedAt": "2026-11-28T12:05:21.281Z",
+      "title": "Vice-Tay opened pull request #395",
+      "oneLine": "Make static samplers in one order so NVIDIA can reuse stored pipelines",
+      "sources": [
+        {
+          "url": "https://github.com/TaynanGT/Vice-Tay/pull/395",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Make static samplers in one order so NVIDIA can reuse stored pipelines",
+          "at": "2026-11-28T11:49:23Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "taynangt/vice-tay",
+        "name": "vice-tay",
+        "words": [
+          "vice-tay"
+        ],
+        "hash": "0405c0e90c72c080",
+        "projectId": "vice-tay"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:f78d004a5ee923f80c03035a2ddaf059b47268984d0835d861f87d248fe235d7",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t114147z-victory-lite-didgori-89141849",
+      "key": "update|victory-lite-didgori|activity|41570",
+      "kind": "update",
+      "projectId": "victory-lite-didgori",
+      "projectName": "VIctory-Lite (didgori)",
+      "at": "2026-11-28T11:41:47Z",
+      "detectedAt": "2026-11-28T12:05:21.281Z",
+      "title": "VIctory-Lite (didgori) pushed 1 commit",
+      "oneLine": "Window grid 64 KB: 26 minutes of open world without a crash",
+      "sources": [
+        {
+          "url": "https://github.com/didgori-1121/VIctory-Lite/commit/a79155442faef0ffeaf6ed3cce0b2c9a355a8ee1",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Window grid 64 KB: 26 minutes of open world without a crash",
+          "at": "2026-11-28T11:41:47Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "didgori-1121/victory-lite",
+        "name": "victory-lite didgori",
+        "words": [
+          "victory-lite",
+          "didgori",
+          "victory-lite-didgori"
+        ],
+        "hash": "05f3a88a62ea8253",
+        "projectId": "victory-lite-didgori"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:e6ba638d7213a723c4effe86b1a2452f02a8bb5182b903fdb92415f03c9ce673",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
