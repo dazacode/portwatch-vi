@@ -4050,6 +4050,46 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "Not playable yet",
+          "the world runs at about 1 to 5 frames per second"
+        ],
+        "highlights": [
+          "The game boots",
+          "runs its menus at 30 fps",
+          "loads the world and reaches the prologue with the graphics fully drawn"
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Project VI",
+        "summary": "Rewritten for speed and stability: NVIDIA GPUs, frame rate and memory first.",
+        "basedOn": [],
+        "id": "project-vi",
+        "repo": "hello3928/Project-VI",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-27T12:28:18Z",
+          "pushedAt": "2026-11-27T13:29:21Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -4360,7 +4400,8 @@
     "MacosPorters/betterxen",
     "tiadiff/VIctory-NVIDIA-LowStutter",
     "afredas/Slys",
-    "monte-alt/vesper"
+    "monte-alt/vesper",
+    "hello3928/Project-VI"
   ],
   "news": [
     {
