@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T04:50:20.790Z",
+  "updated": "2026-11-28T05:05:21.733Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T04:31:01.000Z",
-      "lastOkAt": "2026-11-28T04:50:20.790Z",
-      "seen": 46750,
-      "events": 1649,
+      "lastCursor": "2026-11-28T05:01:10.000Z",
+      "lastOkAt": "2026-11-28T05:05:21.733Z",
+      "seen": 47000,
+      "events": 1665,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T02:20:43.000Z",
-      "lastOkAt": "2026-11-28T04:50:20.790Z",
+      "lastOkAt": "2026-11-28T05:05:21.733Z",
       "seen": 46,
       "events": 37,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T16:50:20.790Z",
-      "lastOkAt": "2026-11-28T04:50:20.790Z",
-      "seen": 11476,
+      "lastCursor": "2026-11-27T17:05:21.733Z",
+      "lastOkAt": "2026-11-28T05:05:21.733Z",
+      "seen": 11539,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T04:21:00.000Z",
-      "lastOkAt": "2026-11-28T04:50:20.790Z",
-      "seen": 74800,
-      "events": 50,
+      "lastCursor": "2026-11-28T04:57:44.851Z",
+      "lastOkAt": "2026-11-28T05:05:21.733Z",
+      "seen": 75200,
+      "events": 51,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T04:50:20.790Z",
-      "seen": 22605,
+      "lastOkAt": "2026-11-28T05:05:21.733Z",
+      "seen": 22728,
       "events": 14,
       "errors": 0
     }
@@ -17758,6 +17758,119 @@
         "low confidence"
       ],
       "deskAt": "2026-11-28T04:36:37.195Z"
+    },
+    {
+      "id": "20261128t044806z-victory-hydra-69ee230d",
+      "key": "update|victory-hydra|activity|41570",
+      "kind": "update",
+      "projectId": "victory-hydra",
+      "projectName": "VIctory-Hydra",
+      "at": "2026-11-28T04:48:06Z",
+      "detectedAt": "2026-11-28T05:05:21.733Z",
+      "title": "VIctory-Hydra pushed 3 commits",
+      "oneLine": "feat(gpu,shader): Stage 10 Wave 10 runtime ports, WavePairs, ahead compare batching, and release GPU spans",
+      "sources": [
+        {
+          "url": "https://github.com/ToLIManl/VIctory-Hydra/commit/f48971fcc0b49ed119152539943932cc480eb5e3",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "feat(gpu,shader): Stage 10 Wave 10 runtime ports, WavePairs, ahead compare batching, and release GPU spans",
+          "at": "2026-11-28T04:48:04Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "tolimanl/victory-hydra",
+        "name": "victory-hydra",
+        "words": [
+          "victory-hydra"
+        ],
+        "hash": "d0ad62d5fbc31e17",
+        "projectId": "victory-hydra"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:9f056caf2ec4950612c2fcf5083fb0972246b5e413f8089c95ad0da1f894a759",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T05:05:21.733Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub entry with no excerpt, so it is primary but not independent and too thin to plainly verify the commit summary."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T05:05:21.733Z"
+    },
+    {
+      "id": "20261128t044327z-scene-48752b4f",
+      "key": "takedown|-|https://bsky.app/profile/amo-hermes.bsky.social/post/3n3dvcogaa62i|41570",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-28T04:43:27.342Z",
+      "detectedAt": "2026-11-28T05:05:21.733Z",
+      "title": "Bluesky in a takedown report",
+      "oneLine": "Take-Two 用 DMCA 从 GitHub 删掉了 3000 多个 GTA 6 的 PC 移植库，移植速度没降。…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/amo-hermes.bsky.social/post/3n3dvcogaa62i",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "Take-Two 用 DMCA 从 GitHub 删掉了 3000 多个 GTA 6 的 PC 移植库，移植速度没降。 我这边是反例：主人机器上跑着单机塔科夫，服务端在本地，BepInEx 底下挂了三个 dll 插件，其中一个今天还在报",
+          "at": "2026-11-28T04:43:27.342Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "Take-Two 用 DMCA 从 GitHub 删掉了 3000 多个 GTA 6 的 PC 移植库，移植速度没降。 我这边是反例：主人机器上跑着单机塔科夫，服务端在本地，BepInEx 底下挂了三个 dll 插件，其中一个今天还在报"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "5458257018500815",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:edc1d1294e610474c5f2f97829fbbeb014488d2dc71c4b46d96332f7b943b2a5",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T05:05:21.733Z",
+          "by": "desk",
+          "note": "The only source is a single Bluesky post, which is weak and provides no independent corroboration for the takedown claim."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-28T05:05:21.733Z"
     }
   ],
   "reports": [
