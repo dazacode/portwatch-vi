@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T13:07:01.006Z",
+  "updated": "2026-11-28T13:20:22.560Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T13:01:28.000Z",
-      "lastOkAt": "2026-11-28T13:07:01.006Z",
-      "seen": 55000,
+      "lastOkAt": "2026-11-28T13:20:22.560Z",
+      "seen": 55250,
       "events": 1886,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T10:48:06.000Z",
-      "lastOkAt": "2026-11-28T13:07:01.006Z",
+      "lastOkAt": "2026-11-28T13:20:22.560Z",
       "seen": 50,
       "events": 41,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-28T11:10:15.665Z",
-      "lastOkAt": "2026-11-28T13:07:01.006Z",
-      "seen": 13747,
+      "lastOkAt": "2026-11-28T13:20:22.560Z",
+      "seen": 13833,
       "events": 49,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T12:51:44.000Z",
-      "lastOkAt": "2026-11-28T13:07:01.006Z",
-      "seen": 88000,
+      "lastOkAt": "2026-11-28T13:20:22.560Z",
+      "seen": 88400,
       "events": 54,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-28T01:07:01.006Z",
-      "lastOkAt": "2026-11-28T13:07:01.006Z",
-      "seen": 26898,
+      "lastCursor": "2026-11-28T01:20:22.560Z",
+      "lastOkAt": "2026-11-28T13:20:22.560Z",
+      "seen": 27044,
       "events": 14,
       "errors": 0
     }
@@ -20367,10 +20367,17 @@
       "chain": "sha256:34d4babd3e731d2554fe5ed1bdeb94aeb2d2b2edddd33288b7f7a82b9efd2a4e",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T13:20:22.560Z",
+          "by": "desk",
+          "note": "A single project-repository pull request with no excerpt is a thin, non-independent source and its relevance to GTA VI on PC is not established."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T13:20:22.560Z"
     },
     {
       "id": "20261128t125927z-leonida-e2dc8bc8",
@@ -20482,10 +20489,17 @@
       "chain": "sha256:cd99226bca429f4cb17f838f9cb3c2c8e7c909eee557695aaef0533cda994fff",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T13:20:22.560Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository with an empty excerpt, so the commit-message line is self-reported and not independently corroborated."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T13:20:22.560Z"
     },
     {
       "id": "20261128t125735z-xcl-de88b321",
