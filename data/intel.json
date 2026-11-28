@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T05:50:22.345Z",
+  "updated": "2026-11-28T06:05:21.758Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T05:31:07.000Z",
-      "lastOkAt": "2026-11-28T05:50:22.345Z",
-      "seen": 47750,
-      "events": 1679,
+      "lastCursor": "2026-11-28T06:01:24.000Z",
+      "lastOkAt": "2026-11-28T06:05:21.758Z",
+      "seen": 48000,
+      "events": 1694,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T02:20:43.000Z",
-      "lastOkAt": "2026-11-28T05:50:22.345Z",
+      "lastOkAt": "2026-11-28T06:05:21.758Z",
       "seen": 46,
       "events": 37,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T17:50:22.345Z",
-      "lastOkAt": "2026-11-28T05:50:22.345Z",
-      "seen": 11728,
+      "lastCursor": "2026-11-27T18:05:21.758Z",
+      "lastOkAt": "2026-11-28T06:05:21.758Z",
+      "seen": 11791,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T05:10:28.540Z",
-      "lastOkAt": "2026-11-28T05:50:22.345Z",
-      "seen": 76400,
+      "lastCursor": "2026-11-28T05:58:08.000Z",
+      "lastOkAt": "2026-11-28T06:05:21.758Z",
+      "seen": 76800,
       "events": 51,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T05:50:22.345Z",
-      "seen": 23097,
+      "lastOkAt": "2026-11-28T06:05:21.758Z",
+      "seen": 23220,
       "events": 14,
       "errors": 0
     }
@@ -14930,12 +14930,17 @@
           "at": "2026-11-27T22:50:23.179Z",
           "by": "desk",
           "note": "The only source is the project’s own repository entry, which is primary but not independent and provides no excerpt or corroboration for the PR update."
+        },
+        {
+          "at": "2026-11-28T06:05:21.758Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository entry, which is primary but not independent and provides no excerpt beyond the PR title."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T22:50:23.179Z"
+      "deskAt": "2026-11-28T06:05:21.758Z"
     },
     {
       "id": "20261127t162333z-americaslauncher-5c399a13",
