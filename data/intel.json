@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T04:20:21.316Z",
+  "updated": "2026-11-28T04:36:37.195Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T04:01:24.000Z",
-      "lastOkAt": "2026-11-28T04:20:21.316Z",
-      "seen": 46250,
-      "events": 1631,
+      "lastCursor": "2026-11-28T04:31:01.000Z",
+      "lastOkAt": "2026-11-28T04:36:37.195Z",
+      "seen": 46500,
+      "events": 1649,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T02:20:43.000Z",
-      "lastOkAt": "2026-11-28T04:20:21.316Z",
+      "lastOkAt": "2026-11-28T04:36:37.195Z",
       "seen": 46,
       "events": 37,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T16:20:21.316Z",
-      "lastOkAt": "2026-11-28T04:20:21.316Z",
-      "seen": 11350,
+      "lastCursor": "2026-11-27T16:36:37.195Z",
+      "lastOkAt": "2026-11-28T04:36:37.195Z",
+      "seen": 11413,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T04:00:53.350Z",
-      "lastOkAt": "2026-11-28T04:20:21.316Z",
-      "seen": 74000,
-      "events": 49,
+      "lastCursor": "2026-11-28T04:21:00.000Z",
+      "lastOkAt": "2026-11-28T04:36:37.195Z",
+      "seen": 74400,
+      "events": 50,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T04:20:21.316Z",
-      "seen": 22359,
+      "lastOkAt": "2026-11-28T04:36:37.195Z",
+      "seen": 22482,
       "events": 14,
       "errors": 0
     }
@@ -15843,12 +15843,17 @@
           "at": "2026-11-27T22:35:20.704Z",
           "by": "desk",
           "note": "This is a routine pull-request title from the project's own repository with an empty excerpt, so the stored source is too thin to support the line as a standalone update."
+        },
+        {
+          "at": "2026-11-28T04:36:37.195Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the item rests on a single non-independent primary record that merely restates the PR title without independent corroboration."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-27T22:35:20.704Z"
+      "deskAt": "2026-11-28T04:36:37.195Z"
     },
     {
       "id": "20261127t223826z-gtavi-recomp-a007e7eb",
@@ -17685,6 +17690,64 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-28T03:38:45.982Z"
+    },
+    {
+      "id": "20261128t041617z-belobug-f71d75af",
+      "key": "claim|belobug|https://bsky.app/profile/de-nachrichten.bsky.social/post/3n3dts3xa3g2q|41570",
+      "kind": "claim",
+      "projectId": "belobug",
+      "projectName": "Belobug",
+      "at": "2026-11-28T04:16:17.748Z",
+      "detectedAt": "2026-11-28T04:36:37.195Z",
+      "title": "New claim about Belobug",
+      "oneLine": "GTA 6 für PC: Belobug erreicht laut PortWatch aktuell 22 Fps auf einer Radeon. PCGH…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/de-nachrichten.bsky.social/post/3n3dts3xa3g2q",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "GTA 6 für PC: Belobug erreicht laut PortWatch aktuell 22 Fps auf einer Radeon. PCGH ordnet die Messwerte der Ports und d",
+          "at": "2026-11-28T04:16:17.748Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "GTA 6 für PC: Belobug erreicht laut PortWatch aktuell 22 Fps auf einer Radeon. PCGH ordnet die Messwerte der Ports und d"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "belobug",
+        "words": [
+          "belobug"
+        ],
+        "hash": "0d719116b9348470",
+        "projectId": "belobug"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:bcea0d267d67349e9d33157c300ecbb2036e5fdca57cfc284066f306d7e1872a",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T04:36:37.195Z",
+          "by": "desk",
+          "note": "The only source is a single Bluesky post whose excerpt merely restates the headline, so the 22 Fps claim is unsupported by any independent or primary evidence."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-28T04:36:37.195Z"
     }
   ],
   "reports": [
