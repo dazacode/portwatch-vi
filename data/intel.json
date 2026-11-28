@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T00:50:26.423Z",
+  "updated": "2026-11-28T01:05:21.607Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T00:35:59.000Z",
-      "lastOkAt": "2026-11-28T00:50:26.423Z",
-      "seen": 43000,
-      "events": 1512,
+      "lastCursor": "2026-11-28T01:00:39.000Z",
+      "lastOkAt": "2026-11-28T01:05:21.607Z",
+      "seen": 43250,
+      "events": 1528,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T22:31:30.000Z",
-      "lastOkAt": "2026-11-28T00:50:26.423Z",
+      "lastOkAt": "2026-11-28T01:05:21.607Z",
       "seen": 45,
       "events": 36,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-28T00:50:26.423Z",
-      "seen": 10531,
+      "lastOkAt": "2026-11-28T01:05:21.607Z",
+      "seen": 10594,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T00:08:45.000Z",
-      "lastOkAt": "2026-11-28T00:50:26.423Z",
-      "seen": 68800,
-      "events": 46,
+      "lastCursor": "2026-11-28T01:00:16.541Z",
+      "lastOkAt": "2026-11-28T01:05:21.607Z",
+      "seen": 69200,
+      "events": 47,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T12:50:26.423Z",
-      "lastOkAt": "2026-11-28T00:50:26.423Z",
-      "seen": 20760,
+      "lastCursor": "2026-11-27T13:05:21.607Z",
+      "lastOkAt": "2026-11-28T01:05:21.607Z",
+      "seen": 20883,
       "events": 12,
       "errors": 0
     }
@@ -16724,10 +16724,17 @@
       "chain": "sha256:ff67e32104711cb0b5a8ba27abff1ccadd83627f29d1f64f997a0d7a50819050",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T01:05:21.607Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository with no excerpt, so the claim that Banana Theft Auto is a guided Windows menu built on Leonida is unverified and not independent."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T01:05:21.607Z"
     },
     {
       "id": "20261128t002200z-victory-gta6-09d42069",
@@ -17035,6 +17042,165 @@
       "heldReasons": [
         "a rate cap"
       ]
+    },
+    {
+      "id": "20261128t010031z-vitoriabr-4e971aeb",
+      "key": "update|vitoriabr|activity|41570",
+      "kind": "update",
+      "projectId": "vitoriabr",
+      "projectName": "Uilian",
+      "at": "2026-11-28T01:00:31Z",
+      "detectedAt": "2026-11-28T01:05:21.607Z",
+      "title": "Uilian opened pull request #108",
+      "oneLine": "shader: lower s_quadmask_b32 and s_quadmask_b64",
+      "sources": [
+        {
+          "url": "https://github.com/uiliannn/VItoriaBr/pull/108",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "shader: lower s_quadmask_b32 and s_quadmask_b64",
+          "at": "2026-11-28T01:00:31Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "uiliannn/vitoriabr",
+        "name": "uilian",
+        "words": [
+          "uilian",
+          "vitoriabr"
+        ],
+        "hash": "029198c819d10079",
+        "projectId": "vitoriabr"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:7f0858a3604876d4617753b70648ea636755a2034581e8375dde78764a3bd659",
+      "reportId": "20261128t010031z-vitoriabr-4e971aeb-report",
+      "discordAt": "2026-11-28T01:05:44.044Z",
+      "revisions": [],
+      "note": "model: overview has 108, which is not in a source; changed has 108, which is not in a source",
+      "publishedAt": "2026-11-28T01:05:21.607Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261128t010016z-leonida-2652f7b0",
+      "key": "takedown|leonida|https://bsky.app/profile/topicbase.bsky.social/post/3n3ditm2r6a24|41570",
+      "kind": "takedown",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-28T01:00:16.541Z",
+      "detectedAt": "2026-11-28T01:05:21.607Z",
+      "title": "Leonida in a takedown report",
+      "oneLine": "AnyPS5の成功を『GTA 6』のPC移植に結びつけ、適法性を問いかけたGitHubのX投稿は、公開後まもなく削除されました。…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/topicbase.bsky.social/post/3n3ditm2r6a24",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "AnyPS5の成功を『GTA 6』のPC移植に結びつけ、適法性を問いかけたGitHubのX投稿は、公開後まもなく削除されました。 Take-Twoは別の移植計画「Leonida」にDMCA通知を出し、関連リポジトリも削除対象となっています。",
+          "at": "2026-11-28T01:00:16.541Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "AnyPS5の成功を『GTA 6』のPC移植に結びつけ、適法性を問いかけたGitHubのX投稿は、公開後まもなく削除されました。 Take-Twoは別の移植計画「Leonida」にDMCA通知を出し、関連リポジトリも削除対象となっています。"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "13f505f6c458880f",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:7acf4753aa214b5f1f4491fe450b38b8f7b3284fea59cce7466073801de9d80d",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T01:05:21.607Z",
+          "by": "desk",
+          "note": "The item rests on a single Bluesky post that merely repeats the claim, with no independent or primary source corroborating the Leonida takedown details."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-28T01:05:21.607Z"
+    },
+    {
+      "id": "20261128t003927z-americaslauncher-a221dfd0",
+      "key": "update|americaslauncher|activity|41570",
+      "kind": "update",
+      "projectId": "americaslauncher",
+      "projectName": "AmericasLauncher",
+      "at": "2026-11-28T00:39:27Z",
+      "detectedAt": "2026-11-28T01:05:21.607Z",
+      "title": "AmericasLauncher opened pull request #68",
+      "oneLine": "Update README.md",
+      "sources": [
+        {
+          "url": "https://github.com/isaac-btw/AmericasLauncher/pull/68",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Update README.md",
+          "at": "2026-11-28T00:39:27Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "isaac-btw/americaslauncher",
+        "name": "americaslauncher",
+        "words": [
+          "americaslauncher"
+        ],
+        "hash": "0c860a9ad8788a11",
+        "projectId": "americaslauncher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:f596b4f20bdea35b997282af9c6989fa0fe3bc37127353f7f59eb84f44af3e99",
+      "reportId": "20261128t003927z-americaslauncher-a221dfd0-report",
+      "discordAt": "2026-11-28T01:05:44.044Z",
+      "revisions": [],
+      "note": "model: overview has 68, which is not in a source",
+      "publishedAt": "2026-11-28T01:05:21.607Z",
+      "heldReasons": []
     }
   ],
   "reports": [
@@ -17504,6 +17670,48 @@
           "outlet": "GitHub",
           "title": "Shaders: shorten long relative VGPR source selections",
           "at": "2026-11-28T00:35:10Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261128t010031z-vitoriabr-4e971aeb-report",
+      "itemId": "20261128t010031z-vitoriabr-4e971aeb",
+      "publishedAt": "2026-11-28T01:05:21.607Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "Uilian has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. shader: lower s_quadmask_b32 and s_quadmask_b64.",
+      "evidence": "The entry rests on one stored source, GitHub. shader: lower s_quadmask_b32 and s_quadmask_b64.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/uiliannn/VItoriaBr/pull/108",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "shader: lower s_quadmask_b32 and s_quadmask_b64",
+          "at": "2026-11-28T01:00:31Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261128t003927z-americaslauncher-a221dfd0-report",
+      "itemId": "20261128t003927z-americaslauncher-a221dfd0",
+      "publishedAt": "2026-11-28T01:05:21.607Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "AmericasLauncher has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. Update README.md.",
+      "evidence": "The entry rests on one stored source, GitHub. Update README.md.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/isaac-btw/AmericasLauncher/pull/68",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Update README.md",
+          "at": "2026-11-28T00:39:27Z",
           "kind": "primary"
         }
       ]
