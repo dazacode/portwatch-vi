@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T00:20:20.604Z",
+  "updated": "2026-11-28T00:39:13.747Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T00:01:24.000Z",
-      "lastOkAt": "2026-11-28T00:20:20.604Z",
-      "seen": 42500,
-      "events": 1491,
+      "lastCursor": "2026-11-28T00:35:59.000Z",
+      "lastOkAt": "2026-11-28T00:39:13.747Z",
+      "seen": 42750,
+      "events": 1512,
       "errors": 0
     },
     "evidence": {
-      "lastCursor": "2026-11-27T16:58:25.000Z",
-      "lastOkAt": "2026-11-28T00:20:20.604Z",
-      "seen": 44,
-      "events": 35,
+      "lastCursor": "2026-11-27T22:31:30.000Z",
+      "lastOkAt": "2026-11-28T00:39:13.747Z",
+      "seen": 45,
+      "events": 36,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-28T00:20:20.604Z",
-      "seen": 10405,
+      "lastOkAt": "2026-11-28T00:39:13.747Z",
+      "seen": 10468,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-27T23:57:05.053Z",
-      "lastOkAt": "2026-11-28T00:20:20.604Z",
-      "seen": 68000,
+      "lastCursor": "2026-11-28T00:08:45.000Z",
+      "lastOkAt": "2026-11-28T00:39:13.747Z",
+      "seen": 68400,
       "events": 46,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T12:20:20.604Z",
-      "lastOkAt": "2026-11-28T00:20:20.604Z",
-      "seen": 20514,
+      "lastCursor": "2026-11-27T12:39:13.747Z",
+      "lastOkAt": "2026-11-28T00:39:13.747Z",
+      "seen": 20637,
       "events": 12,
       "errors": 0
     }
@@ -16246,6 +16246,781 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-28T00:20:20.604Z"
+    },
+    {
+      "id": "20261128t003516z-xcl-7744ef54",
+      "key": "update|xcl|activity|41570",
+      "kind": "update",
+      "projectId": "xcl",
+      "projectName": "XCL",
+      "at": "2026-11-28T00:35:16Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "XCL opened pull request #2956",
+      "oneLine": "D3D12.X: make shadowed textures active again when a draw samples them",
+      "sources": [
+        {
+          "url": "https://github.com/xcl-dev/xcl/pull/2956",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "D3D12.X: make shadowed textures active again when a draw samples them",
+          "at": "2026-11-28T00:35:16Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "xcl-dev/xcl",
+        "name": "xcl",
+        "words": [
+          "xcl"
+        ],
+        "hash": "5402c0039d315a44",
+        "projectId": "xcl"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:cfb7b87956b2825d268d5f85140d39272cbd9bdb568cc09f724ab0d9d4fefdf8",
+      "reportId": "20261128t003516z-xcl-7744ef54-report",
+      "discordAt": "2026-11-28T00:39:38.509Z",
+      "revisions": [],
+      "note": "model: overview has 2956, which is not in a source; changed has 2956, which is not in a source",
+      "publishedAt": "2026-11-28T00:39:13.747Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261128t003514z-victory-nvidia-8fd55553",
+      "key": "update|victory-nvidia|activity|41570",
+      "kind": "update",
+      "projectId": "victory-nvidia",
+      "projectName": "VIctory-NVIDIA",
+      "at": "2026-11-28T00:35:14Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "VIctory-NVIDIA opened pull request #542",
+      "oneLine": "Leave VICTORY_CARD_AWAKE off by default in the launchers",
+      "sources": [
+        {
+          "url": "https://github.com/trustno1-coder/VIctory-NVIDIA/pull/542",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Leave VICTORY_CARD_AWAKE off by default in the launchers",
+          "at": "2026-11-28T00:35:14Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "trustno1-coder/victory-nvidia",
+        "name": "victory-nvidia",
+        "words": [
+          "victory-nvidia"
+        ],
+        "hash": "842141b130100641",
+        "projectId": "victory-nvidia"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d78280720b81d60cd4b4db6152e98a7c575b94a822f4269bbeb011fc681b6b99",
+      "reportId": "20261128t003514z-victory-nvidia-8fd55553-report",
+      "discordAt": "2026-11-28T00:39:38.509Z",
+      "revisions": [],
+      "note": "model: overview has 542, which is not in a source; changed has 542, which is not in a source",
+      "publishedAt": "2026-11-28T00:39:13.747Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261128t003510z-marvis-a1558b7a",
+      "key": "update|marvis|activity|41570",
+      "kind": "update",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-28T00:35:10Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "VIctory opened pull request #3630",
+      "oneLine": "Shaders: shorten long relative VGPR source selections",
+      "sources": [
+        {
+          "url": "https://github.com/Marvisak/VIctory/pull/3630",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Shaders: shorten long relative VGPR source selections",
+          "at": "2026-11-28T00:35:10Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "1141780380054693",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "published",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:5815d1e445d02fe4adc856acfed022bdab8a595aba45c84e4ae9bc09bc24b296",
+      "reportId": "20261128t003510z-marvis-a1558b7a-report",
+      "discordAt": "2026-11-28T00:39:38.509Z",
+      "revisions": [],
+      "publishedAt": "2026-11-28T00:39:13.747Z",
+      "heldReasons": []
+    },
+    {
+      "id": "20261128t003445z-xbox2windows-9789189d",
+      "key": "update|xbox2windows|activity|41570",
+      "kind": "update",
+      "projectId": "xbox2windows",
+      "projectName": "Xbox2Windows",
+      "at": "2026-11-28T00:34:45Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "Xbox2Windows opened pull request #3094",
+      "oneLine": "runtime: bind native shader requests and submit fixed mesh pipelines",
+      "sources": [
+        {
+          "url": "https://github.com/R0Y00/Xbox2Windows/pull/3094",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "runtime: bind native shader requests and submit fixed mesh pipelines",
+          "at": "2026-11-28T00:34:45Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "r0y00/xbox2windows",
+        "name": "xbox2windows",
+        "words": [
+          "xbox2windows"
+        ],
+        "hash": "5025cdfa7e7d0027",
+        "projectId": "xbox2windows"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:7785581c5b10fdd0194f4c7b4e2e99687644f7da53745332011b3419fafe84d7",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T00:39:13.747Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the one line rests on a non-independent title alone with no corroborating detail."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T00:39:13.747Z"
+    },
+    {
+      "id": "20261128t003413z-native-victory-macos-08928a22",
+      "key": "update|native-victory-macos|activity|41570",
+      "kind": "update",
+      "projectId": "native-victory-macos",
+      "projectName": "Native-Victory-macOS",
+      "at": "2026-11-28T00:34:13Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "Native-Victory-macOS opened pull request #512",
+      "oneLine": "shader: follow constant/uniform prefix terms, u32 products, and readfirstlane in wave sections",
+      "sources": [
+        {
+          "url": "https://github.com/LakshanSivakumar/Native-Victory-macOS/pull/512",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "shader: follow constant/uniform prefix terms, u32 products, and readfirstlane in wave sections",
+          "at": "2026-11-28T00:34:13Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "lakshansivakumar/native-victory-macos",
+        "name": "native-victory-macos",
+        "words": [
+          "native-victory-macos"
+        ],
+        "hash": "8335c00c596106d0",
+        "projectId": "native-victory-macos"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:ee669524cd996e10a9ea236b5f4c1a75ce36755eb893cec050a51328f0c14d43",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T00:39:13.747Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub entry with no excerpt, so it is primary but not independent and too thin to plainly verify the one-line claim."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T00:39:13.747Z"
+    },
+    {
+      "id": "20261128t003409z-marvis-04c852d4",
+      "key": "reference|marvis|activity|41570",
+      "kind": "reference",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-28T00:34:09Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "New reference to VIctory",
+      "oneLine": "Archive of Leonida, xcl and VIctory (GTA VI on PC projects), saved 2026-11-23",
+      "sources": [
+        {
+          "url": "https://github.com/Guernica4u/GTA6-PC-Port-Archive",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Guernica4u/GTA6-PC-Port-Archive",
+          "at": "2026-11-28T00:34:09Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "3057e5affa09d5bf",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:3a7924977bcd410a341aa8e9407c26b5e7bea44459e1ed9358fdf7bfbd3fd568",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t003146z-scene-4c691fe5",
+      "key": "reference|-|activity|41570",
+      "kind": "duplicate",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-28T00:31:46Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "A new repository may duplicate unknown",
+      "oneLine": "Xbox Series X|S games running natively on Windows. GTA VI progress tracked in the README.",
+      "sources": [
+        {
+          "url": "https://github.com/voidopcode/vilocity",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "voidopcode/vilocity",
+          "at": "2026-11-28T00:31:46Z",
+          "kind": "official"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "f77b6f4242e854cc",
+        "projectId": null
+      },
+      "similar": [
+        {
+          "effortId": "unknown",
+          "score": 1
+        }
+      ],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:5a403848ecd5c0bbf779b2599a939f9d93cd731268b9a9cef2623d71dfabe50e",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "duplicate build reference",
+        "low confidence"
+      ]
+    },
+    {
+      "id": "20261128t002951z-el1xr-68c23931",
+      "key": "update|el1xr|activity|41570",
+      "kind": "update",
+      "projectId": "el1xr",
+      "projectName": "El1xr",
+      "at": "2026-11-28T00:29:51Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "El1xr opened pull request #144",
+      "oneLine": "feedcard: release-lto profile (fat LTO, codegen-units 1) and A/B plumbing",
+      "sources": [
+        {
+          "url": "https://github.com/kylepelham/El1xr/pull/144",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "feedcard: release-lto profile (fat LTO, codegen-units 1) and A/B plumbing",
+          "at": "2026-11-28T00:29:51Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "kylepelham/el1xr",
+        "name": "el1xr",
+        "words": [
+          "el1xr"
+        ],
+        "hash": "40066e2062515ec8",
+        "projectId": "el1xr"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:999aa1352232ce93ee4ebb4591549a042afe7bdb03c1864cb247d2148dd91a7a",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t002436z-leonida-c21a9de1",
+      "key": "reference|leonida|activity|41570",
+      "kind": "reference",
+      "projectId": "leonida",
+      "projectName": "Leonida",
+      "at": "2026-11-28T00:24:36Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "New reference to Leonida",
+      "oneLine": "Banana Theft Auto: a guided Windows menu built on Leonida (GTA VI recompilation). Full credit to Leonida's authors.",
+      "sources": [
+        {
+          "url": "https://github.com/Click2x/BananaTheftAuto",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Click2x/BananaTheftAuto",
+          "at": "2026-11-28T00:24:36Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "itsnotrexed/leonida",
+        "name": "leonida",
+        "words": [
+          "leonida"
+        ],
+        "hash": "0281c2379e4800df",
+        "projectId": "leonida"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:ff67e32104711cb0b5a8ba27abff1ccadd83627f29d1f64f997a0d7a50819050",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t002200z-victory-gta6-09d42069",
+      "key": "update|victory-gta6|activity|41570",
+      "kind": "update",
+      "projectId": "victory-gta6",
+      "projectName": "hyphennn",
+      "at": "2026-11-28T00:22:00Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "hyphennn opened pull request #1280",
+      "oneLine": "victory-gpu: size-tiered card-buffer headroom and fence-safe LRU demotion (#1163)",
+      "sources": [
+        {
+          "url": "https://github.com/fxceless/victory-fork/pull/1280",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "victory-gpu: size-tiered card-buffer headroom and fence-safe LRU demotion (#1163)",
+          "at": "2026-11-28T00:22:00Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "fxceless/victory-fork",
+        "name": "hyphennn",
+        "words": [
+          "hyphennn",
+          "victory-gta6"
+        ],
+        "hash": "570541ba502d02e0",
+        "projectId": "victory-gta6"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:7ccb2e58dce2e3afeb4cc3757d680e48cf3e3b392e51627d2f1cd9a50be4ebbf",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t001052z-five-star-recomp-fdb7e9d4",
+      "key": "update|five-star-recomp|activity|41570",
+      "kind": "update",
+      "projectId": "five-star-recomp",
+      "projectName": "Five Star Recomp",
+      "at": "2026-11-28T00:10:52Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "Five Star Recomp opened pull request #70",
+      "oneLine": "Mesh fallback: pass buffer capacities as root constants instead of GetDimensions",
+      "sources": [
+        {
+          "url": "https://github.com/ThatRecompDev/five-star-recomp/pull/70",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Mesh fallback: pass buffer capacities as root constants instead of GetDimensions",
+          "at": "2026-11-28T00:10:52Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "thatrecompdev/five-star-recomp",
+        "name": "five star recomp",
+        "words": [
+          "five",
+          "star",
+          "recomp",
+          "five-star-recomp"
+        ],
+        "hash": "c218488d7d9a8a67",
+        "projectId": "five-star-recomp"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d528b7b8c906483ca2fb0d7d9e426adf6abc08e895c90fbe4122d315cd0ccf6f",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t000642z-dexnom-f3be8a18",
+      "key": "update|dexnom|activity|41570",
+      "kind": "update",
+      "projectId": "dexnom",
+      "projectName": "DexNom",
+      "at": "2026-11-28T00:06:42Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "DexNom opened pull request #130",
+      "oneLine": "Coolfox 16gb",
+      "sources": [
+        {
+          "url": "https://github.com/DexNom/VIctory/pull/130",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Coolfox 16gb",
+          "at": "2026-11-28T00:06:42Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "dexnom/victory",
+        "name": "dexnom",
+        "words": [
+          "dexnom"
+        ],
+        "hash": "8f46482e794407ea",
+        "projectId": "dexnom"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:b3f5756c852be9ad558326bd97d67175984943f3a609b4a47486b8b9ec92e5dc",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t000506z-launcher-39431497",
+      "key": "update|launcher|activity|41570",
+      "kind": "update",
+      "projectId": "launcher",
+      "projectName": "VILauncher",
+      "at": "2026-11-28T00:05:06Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "VILauncher opened pull request #68",
+      "oneLine": "Console do jogo do ScarlettPort na aba Log, sem janela do Wine",
+      "sources": [
+        {
+          "url": "https://github.com/SixLauncher/launcher/pull/68",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Console do jogo do ScarlettPort na aba Log, sem janela do Wine",
+          "at": "2026-11-28T00:05:06Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "sixlauncher/launcher",
+        "name": "vilauncher",
+        "words": [
+          "vilauncher",
+          "launcher"
+        ],
+        "hash": "9402c081601a86d8",
+        "projectId": "launcher"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:1d3055d00c25e5dac8817d258d0364bfcad8bae197676662a0abcc451f363cc6",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t000353z-hybridgt-63b24087",
+      "key": "update|hybridgt|activity|41570",
+      "kind": "update",
+      "projectId": "hybridgt",
+      "projectName": "HybridGt",
+      "at": "2026-11-28T00:03:53Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "HybridGt pushed 1 commit",
+      "oneLine": "HybridGt 0.3.0: launcher redesign, documentation set, shader validator fixes",
+      "sources": [
+        {
+          "url": "https://github.com/LowBacon/HybridGt/commit/6cac122deaba63f1a68bd068727ae22004476241",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "HybridGt 0.3.0: launcher redesign, documentation set, shader validator fixes",
+          "at": "2026-11-28T00:03:53Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "lowbacon/hybridgt",
+        "name": "hybridgt",
+        "words": [
+          "hybridgt"
+        ],
+        "hash": "612be982fa563e12",
+        "projectId": "hybridgt"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:d2b857cff04dd9825fb81f9634172cf7184047fa9f73401c17ce8bfa8f974dc8",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261127t223130z-anyxboxx-bfb5d074",
+      "key": "evidence|anyxboxx|loads|41569",
+      "kind": "evidence",
+      "projectId": "anyxboxx",
+      "projectName": "AnyXboxX",
+      "at": "2026-11-27T22:31:30Z",
+      "detectedAt": "2026-11-28T00:39:13.747Z",
+      "title": "New test evidence on AnyXboxX — loads",
+      "oneLine": "The game starts, shows a black screen for about a minute, then crashes.",
+      "sources": [
+        {
+          "url": "https://github.com/LooperSalty/AnyXboxX/issues/559",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "The game starts, shows a black screen for about a minute, then crashes.",
+          "at": "2026-11-27T22:31:30Z",
+          "kind": "primary",
+          "authorHash": "4040263f5853",
+          "excerpt": "The game starts, shows a black screen for about a minute, then crashes."
+        }
+      ],
+      "fingerprint": {
+        "repo": "loopersalty/anyxboxx",
+        "name": "anyxboxx",
+        "words": [
+          "anyxboxx"
+        ],
+        "hash": "2887c2506e52bd5b",
+        "projectId": "anyxboxx"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:abd21859ec1a003a5abafa14654b5d80a9bd9fe963479598256a10124dd32831",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
     }
   ],
   "reports": [
@@ -16652,6 +17427,69 @@
           "outlet": "GitHub",
           "title": "perf: the texture pool keeps only the empty blocks that fit under the 85 % line (8 GB: -512 MB at the peak, no 640 MB ch",
           "at": "2026-11-28T00:00:35Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261128t003516z-xcl-7744ef54-report",
+      "itemId": "20261128t003516z-xcl-7744ef54",
+      "publishedAt": "2026-11-28T00:39:13.747Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "XCL has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. D3D12.X: make shadowed textures active again when a draw samples them.",
+      "evidence": "The entry rests on one stored source, GitHub. D3D12.X: make shadowed textures active again when a draw samples them.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/xcl-dev/xcl/pull/2956",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "D3D12.X: make shadowed textures active again when a draw samples them",
+          "at": "2026-11-28T00:35:16Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261128t003514z-victory-nvidia-8fd55553-report",
+      "itemId": "20261128t003514z-victory-nvidia-8fd55553",
+      "publishedAt": "2026-11-28T00:39:13.747Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "VIctory-NVIDIA has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. Leave VICTORY_CARD_AWAKE off by default in the launchers.",
+      "evidence": "The entry rests on one stored source, GitHub. Leave VICTORY_CARD_AWAKE off by default in the launchers.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/trustno1-coder/VIctory-NVIDIA/pull/542",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Leave VICTORY_CARD_AWAKE off by default in the launchers",
+          "at": "2026-11-28T00:35:14Z",
+          "kind": "primary"
+        }
+      ]
+    },
+    {
+      "id": "20261128t003510z-marvis-a1558b7a-report",
+      "itemId": "20261128t003510z-marvis-a1558b7a",
+      "publishedAt": "2026-11-28T00:39:13.747Z",
+      "by": "rules",
+      "confidence": "moderate",
+      "overview": "VIctory has a change to its build record on VIPortLive. The entry is logged from public material and carries its confidence and sources below.",
+      "changed": "The project’s record moved. Shaders: shorten long relative VGPR source selections.",
+      "evidence": "The entry rests on one stored source, GitHub. Shaders: shorten long relative VGPR source selections.",
+      "unknown": "The build’s authenticity is not established by this entry, and neither is what it means for a release. Any figure above is what a source said, not a measurement we took.",
+      "sources": [
+        {
+          "url": "https://github.com/Marvisak/VIctory/pull/3630",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Shaders: shorten long relative VGPR source selections",
+          "at": "2026-11-28T00:35:10Z",
           "kind": "primary"
         }
       ]
