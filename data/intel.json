@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T02:20:23.012Z",
+  "updated": "2026-11-28T02:35:41.053Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T02:01:31.000Z",
-      "lastOkAt": "2026-11-28T02:20:23.012Z",
-      "seen": 44500,
-      "events": 1567,
+      "lastCursor": "2026-11-28T02:31:14.000Z",
+      "lastOkAt": "2026-11-28T02:35:41.053Z",
+      "seen": 44750,
+      "events": 1580,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T22:31:30.000Z",
-      "lastOkAt": "2026-11-28T02:20:23.012Z",
+      "lastOkAt": "2026-11-28T02:35:41.053Z",
       "seen": 45,
       "events": 36,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-28T02:20:23.012Z",
-      "seen": 10909,
+      "lastOkAt": "2026-11-28T02:35:41.053Z",
+      "seen": 10972,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T01:48:41.000Z",
-      "lastOkAt": "2026-11-28T02:20:23.012Z",
-      "seen": 71200,
-      "events": 48,
+      "lastCursor": "2026-11-28T02:30:14.345Z",
+      "lastOkAt": "2026-11-28T02:35:41.053Z",
+      "seen": 71600,
+      "events": 49,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T02:20:23.012Z",
-      "seen": 21498,
+      "lastOkAt": "2026-11-28T02:35:41.053Z",
+      "seen": 21621,
       "events": 14,
       "errors": 0
     }
@@ -17073,10 +17073,17 @@
       "chain": "sha256:abd21859ec1a003a5abafa14654b5d80a9bd9fe963479598256a10124dd32831",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T02:35:41.053Z",
+          "by": "desk",
+          "note": "The only stored source is the project's own repository, which is primary but not independent, so a single self-reported test result cannot be corroborated before publishing."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T02:35:41.053Z"
     },
     {
       "id": "20261128t010031z-vitoriabr-4e971aeb",
@@ -17466,6 +17473,62 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-28T02:20:23.012Z"
+    },
+    {
+      "id": "20261128t020539z-scene-22a4ee08",
+      "key": "takedown|-|https://bsky.app/profile/pubity.xmirror.bot/post/3n3dmij43d62l|41570",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-28T02:05:39.242Z",
+      "detectedAt": "2026-11-28T02:35:41.053Z",
+      "title": "Bluesky in a takedown report",
+      "oneLine": "Rockstar is fighting to take down the PC version of GTA 6, sending out over 3,000 DMCA…",
+      "sources": [
+        {
+          "url": "https://bsky.app/profile/pubity.xmirror.bot/post/3n3dmij43d62l",
+          "host": "bsky.app",
+          "outlet": "Bluesky",
+          "title": "Rockstar is fighting to take down the PC version of GTA 6, sending out over 3,000 DMCA takedowns to GitHub pages trying",
+          "at": "2026-11-28T02:05:39.242Z",
+          "kind": "outside",
+          "authorHash": "4ed485c714",
+          "excerpt": "Rockstar is fighting to take down the PC version of GTA 6, sending out over 3,000 DMCA takedowns to GitHub pages trying"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "16c6445e0cc840a1",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:f030ae152b89d69c641570df9de5084f5697709bfabca1c63beeeb2184a8c0f9",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T02:35:41.053Z",
+          "by": "desk",
+          "note": "The only source is a single, truncated Bluesky post, and a social post alone is too weak to support the specific claim about 3,000 DMCA takedowns."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-28T02:35:41.053Z"
     }
   ],
   "reports": [
