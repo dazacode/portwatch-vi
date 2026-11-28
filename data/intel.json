@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T08:20:24.550Z",
+  "updated": "2026-11-28T08:35:20.119Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T08:02:31.000Z",
-      "lastOkAt": "2026-11-28T08:20:24.550Z",
-      "seen": 50250,
-      "events": 1741,
+      "lastCursor": "2026-11-28T08:30:06.000Z",
+      "lastOkAt": "2026-11-28T08:35:20.119Z",
+      "seen": 50500,
+      "events": 1756,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T03:46:19.000Z",
-      "lastOkAt": "2026-11-28T08:20:24.550Z",
+      "lastOkAt": "2026-11-28T08:35:20.119Z",
       "seen": 47,
       "events": 38,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T20:20:24.550Z",
-      "lastOkAt": "2026-11-28T08:20:24.550Z",
-      "seen": 12358,
+      "lastCursor": "2026-11-27T20:35:20.119Z",
+      "lastOkAt": "2026-11-28T08:35:20.119Z",
+      "seen": 12421,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T07:17:55.771Z",
-      "lastOkAt": "2026-11-28T08:20:24.550Z",
-      "seen": 80400,
-      "events": 52,
+      "lastCursor": "2026-11-28T08:11:40.000Z",
+      "lastOkAt": "2026-11-28T08:35:20.119Z",
+      "seen": 80800,
+      "events": 53,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T08:20:24.550Z",
-      "seen": 24327,
+      "lastOkAt": "2026-11-28T08:35:20.119Z",
+      "seen": 24450,
       "events": 14,
       "errors": 0
     }
@@ -18233,6 +18233,112 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-28T08:06:06.829Z"
+    },
+    {
+      "id": "20261128t082443z-viper-abd85416",
+      "key": "update|viper|activity|41570",
+      "kind": "update",
+      "projectId": "viper",
+      "projectName": "viper",
+      "at": "2026-11-28T08:24:43Z",
+      "detectedAt": "2026-11-28T08:35:20.119Z",
+      "title": "viper opened pull request #1",
+      "oneLine": "Trainer: give cash (Ctrl+F7 / Ctrl+Shift+F7); Item::CASH",
+      "sources": [
+        {
+          "url": "https://github.com/viper-community/viper/pull/1",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Trainer: give cash (Ctrl+F7 / Ctrl+Shift+F7); Item::CASH",
+          "at": "2026-11-28T08:24:43Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "viper-community/viper",
+        "name": "viper",
+        "words": [
+          "viper"
+        ],
+        "hash": "991113207a401058",
+        "projectId": "viper"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:fbac4bc84b22ba14632ea6c46afaafdeff812b892c0c765e60b057c28b581645",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [],
+      "heldReasons": [
+        "a rate cap"
+      ]
+    },
+    {
+      "id": "20261128t081140z-scene-7dfa69d8",
+      "key": "takedown|-|https://news.google.com/rss/articles/cbmiqafbvv95cuxocmnkmvftn05jznjwmdvbv1l2ylznuklpcetucutesevlywhjdzrmeujwaf9hzfzsqjfxvnvgdejtd0o3v2dotfnnvkryrtblt2s2zgkywgnvr01taetkufbmddfjxzzcuxpomghurunhee52m2dxzzu0ymhlzjixy05srwjbzdqxrkiyvljrn2pra3gzu202cc1fdgixzglxtgxbsdruetq?oc=5|41570",
+      "kind": "takedown",
+      "projectId": null,
+      "projectName": null,
+      "at": "2026-11-28T08:11:40.000Z",
+      "detectedAt": "2026-11-28T08:35:20.119Z",
+      "title": "Daily Voice Of Asia in a takedown report",
+      "oneLine": "Rockstar Takedown Wipes 3,007 GitHub Repos of Unofficial GTA 6 PC Port",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcmNkMVFtN05jZnJwMDVBV1l2YlZNUklpcEtucUtESEVLYWhjdzRMeUJwaF9HZFZsQjFxVnVGdEJtd0o3V2dOTFNnVkRyRTBLT2s2ZGkyWGNvR01taEtkUFBmdDFJXzZCUXpoMGhURUNheE52M2dxZzU0YmhLZjIxY05SRWJBZDQxRkIyVlJRN2pRa3gzU202cC1FdGIxZGlxTGxBSDRUeTQ?oc=5",
+          "host": "news.google.com",
+          "outlet": "Daily Voice Of Asia",
+          "title": "Rockstar Takedown Wipes 3,007 GitHub Repos of Unofficial GTA 6 PC Port",
+          "at": "2026-11-28T08:11:40.000Z",
+          "kind": "outside",
+          "authorHash": "e37d608e2b",
+          "excerpt": "Rockstar Takedown Wipes 3,007 GitHub Repos of Unofficial GTA 6 PC Port"
+        }
+      ],
+      "fingerprint": {
+        "repo": null,
+        "name": "",
+        "words": [],
+        "hash": "f08dcf1705680a9e",
+        "projectId": null
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "low",
+        "score": 1,
+        "reasons": [
+          "1 outside source"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:f914e5faf46ca1e14afe368704ee203a3c4fb1744162fe15f581be8023cc0a26",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T08:35:20.119Z",
+          "by": "desk",
+          "note": "The item rests on a single outside report whose excerpt only repeats the headline, so the 3,007-repo takedown claim is not plainly supported by stored sources."
+        }
+      ],
+      "heldReasons": [
+        "low confidence"
+      ],
+      "deskAt": "2026-11-28T08:35:20.119Z"
     }
   ],
   "reports": [
