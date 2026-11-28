@@ -350,7 +350,7 @@ export default async function Page() {
           />
           <div className="relative">
             <h2 className="text-3xl font-bold text-balance sm:text-4xl">
-              Stop following readmes. Press Play.
+              Built for you, download
             </h2>
             <div className="mt-8">
               <Downloads release={release} />
