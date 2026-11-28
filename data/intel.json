@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T01:20:26.201Z",
+  "updated": "2026-11-28T01:35:22.978Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T01:00:39.000Z",
-      "lastOkAt": "2026-11-28T01:20:26.201Z",
-      "seen": 43500,
-      "events": 1528,
+      "lastCursor": "2026-11-28T01:31:12.000Z",
+      "lastOkAt": "2026-11-28T01:35:22.978Z",
+      "seen": 43750,
+      "events": 1546,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-27T22:31:30.000Z",
-      "lastOkAt": "2026-11-28T01:20:26.201Z",
+      "lastOkAt": "2026-11-28T01:35:22.978Z",
       "seen": 45,
       "events": 36,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-27T15:10:16.601Z",
-      "lastOkAt": "2026-11-28T01:20:26.201Z",
-      "seen": 10657,
+      "lastOkAt": "2026-11-28T01:35:22.978Z",
+      "seen": 10720,
       "events": 26,
       "errors": 0
     },
     "news": {
-      "lastCursor": "2026-11-28T01:00:16.541Z",
-      "lastOkAt": "2026-11-28T01:20:26.201Z",
-      "seen": 69600,
+      "lastCursor": "2026-11-28T01:24:37.970Z",
+      "lastOkAt": "2026-11-28T01:35:22.978Z",
+      "seen": 70000,
       "events": 47,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-27T13:20:26.201Z",
-      "lastOkAt": "2026-11-28T01:20:26.201Z",
-      "seen": 21006,
+      "lastCursor": "2026-11-27T13:35:22.978Z",
+      "lastOkAt": "2026-11-28T01:35:22.978Z",
+      "seen": 21129,
       "events": 12,
       "errors": 0
     }
@@ -16899,10 +16899,17 @@
       "chain": "sha256:b3f5756c852be9ad558326bd97d67175984943f3a609b4a47486b8b9ec92e5dc",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T01:35:22.978Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, and the one line merely repeats an opaque pull-request title (\"Coolfox 16gb\") that conveys no verifiable information."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T01:35:22.978Z"
     },
     {
       "id": "20261128t000506z-launcher-39431497",
@@ -16950,10 +16957,17 @@
       "chain": "sha256:1d3055d00c25e5dac8817d258d0364bfcad8bae197676662a0abcc451f363cc6",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T01:35:22.978Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository entry with an empty excerpt, which is primary but not independent and provides no stored text confirming the claim."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T01:35:22.978Z"
     },
     {
       "id": "20261128t000353z-hybridgt-63b24087",
