@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T12:35:36.228Z",
+  "updated": "2026-11-28T12:50:22.726Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T12:01:19.000Z",
-      "lastOkAt": "2026-11-28T12:35:36.228Z",
-      "seen": 54500,
+      "lastOkAt": "2026-11-28T12:50:22.726Z",
+      "seen": 54750,
       "events": 1862,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T10:48:06.000Z",
-      "lastOkAt": "2026-11-28T12:35:36.228Z",
+      "lastOkAt": "2026-11-28T12:50:22.726Z",
       "seen": 50,
       "events": 41,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-28T11:10:15.665Z",
-      "lastOkAt": "2026-11-28T12:35:36.228Z",
-      "seen": 13575,
+      "lastOkAt": "2026-11-28T12:50:22.726Z",
+      "seen": 13661,
       "events": 49,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T11:45:07.000Z",
-      "lastOkAt": "2026-11-28T12:35:36.228Z",
-      "seen": 87200,
+      "lastOkAt": "2026-11-28T12:50:22.726Z",
+      "seen": 87600,
       "events": 53,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-28T00:35:36.228Z",
-      "lastOkAt": "2026-11-28T12:35:36.228Z",
-      "seen": 26606,
+      "lastCursor": "2026-11-28T00:50:22.726Z",
+      "lastOkAt": "2026-11-28T12:50:22.726Z",
+      "seen": 26752,
       "events": 14,
       "errors": 0
     }
@@ -19075,10 +19075,17 @@
       "chain": "sha256:da0f31cb3ec43c836d550d60f2dc4fb18f4ba582062ddb88b2e36084584f6d01",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T12:50:22.726Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own repository with an empty excerpt, so the 0%→30% claim is not plainly supported by independent or verifiable material."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T12:50:22.726Z"
     },
     {
       "id": "20261128t111015z-azc-low-end-b2f29dfb",
@@ -19128,10 +19135,17 @@
       "chain": "sha256:074ff9867676391f2d41fbae0c427629097eeb5ac1252981f3b1fdc48cfb53d8",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T12:50:22.726Z",
+          "by": "desk",
+          "note": "The only support is the project's own repository with an empty excerpt, so nothing stored plainly substantiates the specific 0% to 69.9% figure and no independent source corroborates it."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T12:50:22.726Z"
     },
     {
       "id": "20261128t111015z-victory-lite-didgori-c113afe6",
