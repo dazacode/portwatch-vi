@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T07:35:21.788Z",
+  "updated": "2026-11-28T07:50:23.115Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T07:30:14.000Z",
-      "lastOkAt": "2026-11-28T07:35:21.788Z",
-      "seen": 49500,
+      "lastOkAt": "2026-11-28T07:50:23.115Z",
+      "seen": 49750,
       "events": 1724,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T03:46:19.000Z",
-      "lastOkAt": "2026-11-28T07:35:21.788Z",
+      "lastOkAt": "2026-11-28T07:50:23.115Z",
       "seen": 47,
       "events": 38,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T19:35:21.788Z",
-      "lastOkAt": "2026-11-28T07:35:21.788Z",
-      "seen": 12169,
+      "lastCursor": "2026-11-27T19:50:23.115Z",
+      "lastOkAt": "2026-11-28T07:50:23.115Z",
+      "seen": 12232,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T07:17:55.771Z",
-      "lastOkAt": "2026-11-28T07:35:21.788Z",
-      "seen": 79200,
+      "lastOkAt": "2026-11-28T07:50:23.115Z",
+      "seen": 79600,
       "events": 52,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T07:35:21.788Z",
-      "seen": 23958,
+      "lastOkAt": "2026-11-28T07:50:23.115Z",
+      "seen": 24081,
       "events": 14,
       "errors": 0
     }
@@ -16902,12 +16902,17 @@
           "at": "2026-11-28T01:20:26.201Z",
           "by": "desk",
           "note": "The one line restates the pull request title verbatim and the project's own repository is the authoritative record of that PR being opened, with no conflicting source."
+        },
+        {
+          "at": "2026-11-28T07:50:23.115Z",
+          "by": "desk",
+          "note": "The GitHub source title matches the one-line description but does not itself confirm that hyphennn opened pull request #1280, and the excerpt is empty."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-28T01:20:26.201Z"
+      "deskAt": "2026-11-28T07:50:23.115Z"
     },
     {
       "id": "20261128t001052z-five-star-recomp-fdb7e9d4",
@@ -16962,12 +16967,17 @@
           "at": "2026-11-28T01:20:26.201Z",
           "by": "desk",
           "note": "The item rests on a single non-independent source with an empty excerpt, so the one line is only the pull request title restated and is too thin to publish."
+        },
+        {
+          "at": "2026-11-28T07:50:23.115Z",
+          "by": "desk",
+          "note": "The project’s GitHub repository directly lists pull request #70 with the matching title, and no source contradicts it."
         }
       ],
       "heldReasons": [
         "a rate cap"
       ],
-      "deskAt": "2026-11-28T01:20:26.201Z"
+      "deskAt": "2026-11-28T07:50:23.115Z"
     },
     {
       "id": "20261128t000642z-dexnom-f3be8a18",
