@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-27T21:25:50.638Z",
+  "lastRun": "2026-11-28T00:25:47.045Z",
   "read": [
     "https://github.com/avatarmanz/VIctory-7900XTX/issues/76@2026-11-26T02:28:56Z",
     "https://github.com/avatarmanz/VIctory-7900XTX/issues/75@2026-11-26T02:09:56Z",
@@ -255,9 +255,35 @@
     "https://github.com/isaac-btw/AmericasLauncher/issues/58@2026-11-27T20:29:16Z",
     "https://github.com/stellarr-studio/kelvaroq/issues/9@2026-11-27T01:03:47Z",
     "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/344@2026-11-27T21:14:27Z",
-    "https://github.com/fxceless/victory-fork/issues/1451@2026-11-27T15:08:18Z"
+    "https://github.com/fxceless/victory-fork/issues/1451@2026-11-27T15:08:18Z",
+    "https://github.com/stellarr-studio/kelvaroq/issues/8@2026-11-27T22:14:46Z",
+    "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/529@2026-11-28T00:10:44Z",
+    "https://github.com/fxceless/victory-fork/issues/1420@2026-11-27T09:34:31Z",
+    "https://github.com/Marvisak/VIctory/issues/3618@2026-11-27T22:52:08Z",
+    "https://github.com/xcl-dev/xcl/issues/3077@2026-11-27T22:21:19Z",
+    "https://github.com/brcly/TuxBox/issues/292@2026-11-27T20:54:47Z",
+    "https://github.com/R0Y00/Xbox2Windows/issues/3212@2026-11-27T22:35:57Z",
+    "https://github.com/LooperSalty/AnyXboxX/issues/559@2026-11-27T22:40:22Z",
+    "https://github.com/ProjectLeonida/mandy/issues/2380@2026-11-26T16:36:01Z",
+    "https://github.com/isaac-btw/AmericasLauncher/issues/58@2026-11-27T21:53:43Z",
+    "https://github.com/trustno1-coder/VIctory-NVIDIA/issues/525@2026-11-28T00:23:11Z",
+    "https://github.com/fxceless/victory-fork/issues/1379@2026-11-27T15:14:05Z",
+    "https://github.com/Marvisak/VIctory/issues/3570@2026-11-27T21:21:24Z",
+    "https://github.com/xcl-dev/xcl/issues/3070@2026-11-28T00:03:39Z"
   ],
   "items": [
+    {
+      "effortId": "anyxboxx",
+      "kind": "free",
+      "stage": "loads",
+      "outcome": "reached",
+      "quote": "The game starts, shows a black screen for about a minute, then crashes.",
+      "commit": "bebcfb1",
+      "gpu": "RTX 5080",
+      "url": "https://github.com/LooperSalty/AnyXboxX/issues/559",
+      "at": "2026-11-27T22:31:30Z",
+      "by": "4040263f5853"
+    },
     {
       "effortId": "victory-gta6",
       "kind": "free",
@@ -395,7 +421,7 @@
       "kind": "free",
       "stage": "boots",
       "outcome": "reached",
-      "quote": "every run then ends on the story loading screen: VRAM fills, GTT climbs",
+      "quote": "every run then ends on the story loading screen",
       "commit": "d50a51c",
       "gpu": "RX 6700 XT",
       "url": "https://github.com/brcly/TuxBox/issues/292",
@@ -419,7 +445,7 @@
       "kind": "free",
       "stage": "world",
       "outcome": "reached",
-      "quote": "- 52ac4ec: plays fine, prologue and open world, long sessions.",
+      "quote": "52ac4ec: plays fine, prologue and open world, long sessions.",
       "commit": "52ac4ec",
       "gpu": "RTX 5080",
       "url": "https://github.com/fxceless/victory-fork/issues/1420",
@@ -581,6 +607,18 @@
       "url": "https://github.com/ubiquitarianism/leonida/issues/2380",
       "at": "2026-11-26T16:36:01Z",
       "by": "681c357ca79a"
+    },
+    {
+      "effortId": "mandy",
+      "kind": "free",
+      "stage": "boots",
+      "outcome": "reached",
+      "quote": "The FPS counter kept updating while the GTA VI title artwork stayed on screen.",
+      "commit": "56bdd7e",
+      "gpu": "RX 6800 XT",
+      "url": "https://github.com/ProjectLeonida/mandy/issues/2380",
+      "at": "2026-11-26T16:36:01Z",
+      "by": "3029dcc52dc5"
     },
     {
       "effortId": "kelvaroq",
