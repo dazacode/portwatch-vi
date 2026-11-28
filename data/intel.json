@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T12:20:21.569Z",
+  "updated": "2026-11-28T12:35:36.228Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
       "lastCursor": "2026-11-28T12:01:19.000Z",
-      "lastOkAt": "2026-11-28T12:20:21.569Z",
-      "seen": 54250,
+      "lastOkAt": "2026-11-28T12:35:36.228Z",
+      "seen": 54500,
       "events": 1862,
       "errors": 0
     },
     "evidence": {
-      "lastCursor": "2026-11-28T08:34:09.000Z",
-      "lastOkAt": "2026-11-28T12:20:21.569Z",
-      "seen": 48,
-      "events": 39,
+      "lastCursor": "2026-11-28T10:48:06.000Z",
+      "lastOkAt": "2026-11-28T12:35:36.228Z",
+      "seen": 50,
+      "events": 41,
       "errors": 0
     },
     "milestones": {
       "lastCursor": "2026-11-28T11:10:15.665Z",
-      "lastOkAt": "2026-11-28T12:20:21.569Z",
-      "seen": 13489,
+      "lastOkAt": "2026-11-28T12:35:36.228Z",
+      "seen": 13575,
       "events": 49,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T11:45:07.000Z",
-      "lastOkAt": "2026-11-28T12:20:21.569Z",
-      "seen": 86800,
+      "lastOkAt": "2026-11-28T12:35:36.228Z",
+      "seen": 87200,
       "events": 53,
       "errors": 0
     },
     "tracker": {
-      "lastCursor": "2026-11-28T00:20:21.569Z",
-      "lastOkAt": "2026-11-28T12:20:21.569Z",
-      "seen": 26460,
+      "lastCursor": "2026-11-28T00:35:36.228Z",
+      "lastOkAt": "2026-11-28T12:35:36.228Z",
+      "seen": 26606,
       "events": 14,
       "errors": 0
     }
@@ -20070,10 +20070,17 @@
       "chain": "sha256:f78d004a5ee923f80c03035a2ddaf059b47268984d0835d861f87d248fe235d7",
       "reportId": null,
       "discordAt": null,
-      "revisions": [],
+      "revisions": [
+        {
+          "at": "2026-11-28T12:35:36.228Z",
+          "by": "desk",
+          "note": "The only source is the project's own repository with an empty excerpt, so the one line rests on a PR title alone with no independent corroboration."
+        }
+      ],
       "heldReasons": [
         "a rate cap"
-      ]
+      ],
+      "deskAt": "2026-11-28T12:35:36.228Z"
     },
     {
       "id": "20261128t114147z-victory-lite-didgori-89141849",
@@ -20120,6 +20127,66 @@
       "sensitive": false,
       "audit": null,
       "chain": "sha256:e6ba638d7213a723c4effe86b1a2452f02a8bb5182b903fdb92415f03c9ce673",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T12:35:36.228Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub entry with an empty excerpt, so the 26-minute no-crash claim is not plainly supported beyond the title and lacks independent corroboration."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T12:35:36.228Z"
+    },
+    {
+      "id": "20261128t102940z-marvis-a8fcca6c",
+      "key": "evidence|marvis|world|41570",
+      "kind": "evidence",
+      "projectId": "marvis",
+      "projectName": "VIctory",
+      "at": "2026-11-28T10:29:40Z",
+      "detectedAt": "2026-11-28T12:35:36.228Z",
+      "title": "New test evidence on VIctory — world",
+      "oneLine": "When the world stream starts: hundreds of draws per frame; post-world frame times 932–3953 ms; many compute/mesh pipelines have no host pipeline.",
+      "sources": [
+        {
+          "url": "https://github.com/Marvisak/VIctory/issues/3711",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "When the world stream starts: hundreds of draws per frame; post-world frame times 932–3953 ms; many compute/mesh pipelin",
+          "at": "2026-11-28T10:29:40Z",
+          "kind": "primary",
+          "authorHash": "a55825249710",
+          "excerpt": "When the world stream starts: hundreds of draws per frame; post-world frame times 932–3953 ms; many compute/mesh pipelines have no host pipeline."
+        }
+      ],
+      "fingerprint": {
+        "repo": "marvisak/victory",
+        "name": "victory",
+        "words": [
+          "victory",
+          "marvis"
+        ],
+        "hash": "20e636be730ad631",
+        "projectId": "marvis"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:4694c38f40276a48d65c73cbea6df570eb52056846a5b29ccc7970f330e83c19",
       "reportId": null,
       "discordAt": null,
       "revisions": [],
