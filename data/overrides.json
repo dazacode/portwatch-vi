@@ -4009,6 +4009,81 @@
         }
       },
       "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [],
+        "highlights": [
+          "Tuned for NVIDIA RTX GPUs.",
+          "DLSS Super Resolution and DLSS Frame Generation."
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "VIctory-NVIDIA-LowStutter",
+        "summary": "Low-stutter, FPS-focused fork of trustno1-coder/VIctory-NVIDIA.",
+        "basedOn": [],
+        "id": "victory-nvidia-lowstutter",
+        "repo": "tiadiff/VIctory-NVIDIA-LowStutter",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-28T00:25:16Z",
+          "pushedAt": "2026-11-28T01:18:13Z"
+        }
+      },
+      "changes": []
+    },
+    {
+      "effort": {
+        "tier": "watchlist",
+        "verification": "self-reported",
+        "blockers": [
+          "Nothing is playable yet.",
+          "A first world frame has not been verified yet on any test machine."
+        ],
+        "highlights": [
+          "Shows the launch movie, first-run pages and landing prompt.",
+          "Runs the story load to its end and enters the world phase."
+        ],
+        "gta": {
+          "loads": 0,
+          "boots": 0,
+          "menu": 0,
+          "world": 0,
+          "playable": 0,
+          "story": 0,
+          "render": 0,
+          "fps": 0,
+          "stability": "unknown"
+        },
+        "assessedAt": "2026-11-28",
+        "assessedBy": "claude",
+        "claims": [],
+        "name": "Slys",
+        "summary": "On main, the game boots from your own copy on native Windows and Linux through Proton.",
+        "basedOn": [],
+        "id": "slys",
+        "repo": "afredas/Slys",
+        "stats": {
+          "stars": 0,
+          "createdAt": "2026-11-27T21:21:05Z",
+          "pushedAt": "2026-11-27T21:26:16Z"
+        }
+      },
+      "changes": []
     }
   ],
   "pick": {
@@ -4017,6 +4092,11 @@
     "reason": "Owner's call: its code went public on 26 Nov, at 25 fps reported on NVIDIA."
   },
   "ignored": [
+    {
+      "repo": "MacosPorters/betterxen",
+      "reason": "README says commercial Xbox game execution is not yet supported.",
+      "seenAt": "2026-11-28"
+    },
     {
       "repo": "jleybourne/triumph-rebuild",
       "reason": "README describes rebuilding an Xbox Series compatibility layer, but does not identify GTA VI.",
@@ -4305,7 +4385,10 @@
     "kylepelham/El1xr",
     "ToLIManl/VIctory-Hydra",
     "jleybourne/triumph-rebuild",
-    "ProjectLeonida/mandy"
+    "ProjectLeonida/mandy",
+    "MacosPorters/betterxen",
+    "tiadiff/VIctory-NVIDIA-LowStutter",
+    "afredas/Slys"
   ],
   "news": [
     {

@@ -1,6 +1,24 @@
 {
-  "lastRun": "2026-11-28T00:41:26.770Z",
+  "lastRun": "2026-11-28T01:42:37.430Z",
   "runs": [
+    {
+      "at": "2026-11-28T01:42:37.430Z",
+      "by": "Pollinations, gpt-6-luna-classic",
+      "applied": [
+        "candidate MacosPorters/betterxen",
+        "candidate tiadiff/VIctory-NVIDIA-LowStutter",
+        "candidate afredas/Slys"
+      ],
+      "skipped": [
+        "held: score anyxboxx gta.fps=24: proposed, from “About 24 fps median in the world”",
+        "held: candidate hello3928/Project-VI: has markup",
+        "held: candidate Amdavea/belobug-repost: describes access to the game",
+        "held: candidate RipcuBAN/victory-fork: describes access to the game",
+        "finding leonida: project already has 12 findings",
+        "finding leonida: project already has 12 findings"
+      ],
+      "note": null
+    },
     {
       "at": "2026-11-28T00:41:26.769Z",
       "by": "Pollinations, gpt-6-luna-classic",
@@ -463,23 +481,6 @@
         "held: candidate ExCorvus/whibwhi-own: describes access to the game",
         "held: candidate viper-community/viper: lure word",
         "held: candidate x6j1ZiqfbxA3u12HVk/Project-Americas: has markup"
-      ],
-      "note": null
-    },
-    {
-      "at": "2026-11-26T06:42:24.846Z",
-      "by": "Pollinations, gpt-oss-20b",
-      "applied": [
-        "finding leonida",
-        "candidate Dolberthi/neptune-dolberth-nvidia-8gb"
-      ],
-      "skipped": [
-        "held: score anyxboxx gta.fps=14: proposed, from “~14 fps in the world (Series X, RTX 4070 SUPER), measured 2026-11-25”",
-        "held: candidate ExCorvus/whibwhi-own: describes access to the game",
-        "held: candidate viper-community/viper: lure word",
-        "held: candidate x6j1ZiqfbxA3u12HVk/Project-Americas: has markup",
-        "held: candidate lucas-TagDev/VKarameloVI: a claim not in the source",
-        "held: candidate deepdev237/victory-mac: a number not in the source"
       ],
       "note": null
     }
