@@ -1,39 +1,39 @@
 {
-  "updated": "2026-11-28T07:50:23.115Z",
+  "updated": "2026-11-28T08:06:06.829Z",
   "baselineAt": "2026-11-26T04:38:24.588Z",
   "coverage": {
     "activity": {
-      "lastCursor": "2026-11-28T07:30:14.000Z",
-      "lastOkAt": "2026-11-28T07:50:23.115Z",
-      "seen": 49750,
-      "events": 1724,
+      "lastCursor": "2026-11-28T08:02:31.000Z",
+      "lastOkAt": "2026-11-28T08:06:06.829Z",
+      "seen": 50000,
+      "events": 1741,
       "errors": 0
     },
     "evidence": {
       "lastCursor": "2026-11-28T03:46:19.000Z",
-      "lastOkAt": "2026-11-28T07:50:23.115Z",
+      "lastOkAt": "2026-11-28T08:06:06.829Z",
       "seen": 47,
       "events": 38,
       "errors": 0
     },
     "milestones": {
-      "lastCursor": "2026-11-27T19:50:23.115Z",
-      "lastOkAt": "2026-11-28T07:50:23.115Z",
-      "seen": 12232,
+      "lastCursor": "2026-11-27T20:06:06.829Z",
+      "lastOkAt": "2026-11-28T08:06:06.829Z",
+      "seen": 12295,
       "events": 26,
       "errors": 0
     },
     "news": {
       "lastCursor": "2026-11-28T07:17:55.771Z",
-      "lastOkAt": "2026-11-28T07:50:23.115Z",
-      "seen": 79600,
+      "lastOkAt": "2026-11-28T08:06:06.829Z",
+      "seen": 80000,
       "events": 52,
       "errors": 0
     },
     "tracker": {
       "lastCursor": "2026-11-28T00:00:00.000Z",
-      "lastOkAt": "2026-11-28T07:50:23.115Z",
-      "seen": 24081,
+      "lastOkAt": "2026-11-28T08:06:06.829Z",
+      "seen": 24204,
       "events": 14,
       "errors": 0
     }
@@ -17539,12 +17539,17 @@
           "at": "2026-11-28T02:05:20.202Z",
           "by": "desk",
           "note": "A single outside source whose excerpt only restates its own headline gives no independent support for the 3,007-repo figure, so the line is thin rather than plainly supported."
+        },
+        {
+          "at": "2026-11-28T08:06:06.829Z",
+          "by": "desk",
+          "note": "The item rests on a single outside outlet whose excerpt merely repeats its own headline, giving no verifiable detail about the takedown and no independent corroboration."
         }
       ],
       "heldReasons": [
         "low confidence"
       ],
-      "deskAt": "2026-11-28T02:05:20.202Z"
+      "deskAt": "2026-11-28T08:06:06.829Z"
     },
     {
       "id": "20261128t013401z-launcher-04b0dab1",
@@ -18169,6 +18174,65 @@
         "a rate cap"
       ],
       "deskAt": "2026-11-28T07:35:21.788Z"
+    },
+    {
+      "id": "20261128t075812z-project-vi-a2fd0c16",
+      "key": "update|project-vi|activity|41570",
+      "kind": "update",
+      "projectId": "project-vi",
+      "projectName": "Project VI",
+      "at": "2026-11-28T07:58:12Z",
+      "detectedAt": "2026-11-28T08:06:06.829Z",
+      "title": "Project VI pushed 5 commits",
+      "oneLine": "Merge next: boot loop, the title reaches PresentX on pvi-next",
+      "sources": [
+        {
+          "url": "https://github.com/hello3928/Project-VI/commit/1a3ffbbc5abec9c997bd4069ae6d15ca0e916a4b",
+          "host": "github.com",
+          "outlet": "GitHub",
+          "title": "Merge next: boot loop, the title reaches PresentX on pvi-next",
+          "at": "2026-11-28T07:58:12Z",
+          "kind": "primary"
+        }
+      ],
+      "fingerprint": {
+        "repo": "hello3928/project-vi",
+        "name": "project vi",
+        "words": [
+          "project",
+          "vi",
+          "project-vi"
+        ],
+        "hash": "a54388a2f2008f78",
+        "projectId": "project-vi"
+      },
+      "similar": [],
+      "confidence": {
+        "bucket": "moderate",
+        "score": 1,
+        "reasons": [
+          "the project’s own repository",
+          "a record the pipeline already read"
+        ],
+        "conflict": false
+      },
+      "status": "held",
+      "sensitive": false,
+      "audit": null,
+      "chain": "sha256:5a3fbbf3a004824bddd55eaef3560817d9ae5fcab8683e4a280418acaf7dbc50",
+      "reportId": null,
+      "discordAt": null,
+      "revisions": [
+        {
+          "at": "2026-11-28T08:06:06.829Z",
+          "by": "desk",
+          "note": "The only stored source is the project’s own GitHub repository with no excerpt, so it is primary but not independent and too thin to verify the one-line claim."
+        }
+      ],
+      "heldReasons": [
+        "a rate cap"
+      ],
+      "deskAt": "2026-11-28T08:06:06.829Z"
     }
   ],
   "reports": [
